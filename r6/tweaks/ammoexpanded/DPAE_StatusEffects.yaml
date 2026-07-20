@@ -1,0 +1,1369 @@
+
+DPAE_StatusEffect.AP_Pierce_Mod:
+  $type: gamedataConstantStatModifier_Record
+  modifierType: Additive
+  statType: BaseStats.CanWeaponIgnoreArmor
+  value: 0.5
+
+DPAE_StatusEffect.AP_Pierce_Group:
+  $type: gamedataStatModifierGroup_Record
+  statModifiers:
+    - DPAE_StatusEffect.AP_Pierce_Mod
+
+DPAE_StatusEffect.AP_Pierce:
+  $base: BaseStatusEffect.Stat_Buff
+  statusEffectType: BaseStatusEffectTypes.PassiveBuff
+  VFX: []
+  duration:
+    $type: gamedataStatModifierGroup_Record
+    statModifiers:
+      - $type: gamedataConstantStatModifier_Record
+        statType: BaseStats.MaxDuration
+        modifierType: Additive
+        value: 9999
+  packages:
+    - $type: gamedataGameplayLogicPackage_Record
+      effectors:
+        - $base: Perks.ApplyEffectorOnPlayer
+          effectorToApply:
+            $base: Perks.ApplyStatGroupOnWeapon
+            statGroup: DPAE_StatusEffect.AP_Pierce_Group
+
+
+
+
+DPAE_StatusEffect.INC_Burn_ThermalGain:
+  $type: gamedataCombinedStatModifier_Record
+  modifierType: Additive
+  opSymbol: '*'
+  refObject: Self
+  refStat: BaseStats.DamagePerHit
+  statType: BaseStats.ThermalDamage
+  value: 0.3
+
+DPAE_StatusEffect.INC_Burn_Group:
+  $type: gamedataStatModifierGroup_Record
+  statModifiers:
+    - DPAE_StatusEffect.INC_Burn_ThermalGain
+
+DPAE_StatusEffect.INC_Burn:
+  $base: BaseStatusEffect.Stat_Buff
+  statusEffectType: BaseStatusEffectTypes.PassiveBuff
+  VFX: []
+  duration:
+    $type: gamedataStatModifierGroup_Record
+    statModifiers:
+      - $type: gamedataConstantStatModifier_Record
+        statType: BaseStats.MaxDuration
+        modifierType: Additive
+        value: 9999
+  packages:
+    - $type: gamedataGameplayLogicPackage_Record
+      effectors:
+        - $type: ApplyStatGroupEffector
+          applicationTarget: Weapon
+          removeWithEffector: true
+          statGroup: DPAE_StatusEffect.INC_Burn_Group
+
+DPAE_StatusEffect.INC_Burn_DoT:
+  $base: BaseStatusEffect.Stat_Buff
+  duration:
+    $type: gamedataStatModifierGroup_Record
+    statModifiers:
+      - $type: gamedataConstantStatModifier_Record
+        statType: BaseStats.MaxDuration
+        modifierType: Additive
+        value: 5
+  statusEffectType: BaseStatusEffectTypes.Burning
+  gameplayTags:
+    - Debuff
+  VFX:
+    - name: status_burning
+  uiData:
+    $type: gamedataStatusEffectUIData_Record
+    displayName: LocKey#40944
+    iconPath: burning_icon
+    priority: -3.0
+  packages:
+    - $type: gamedataGameplayLogicPackage_Record
+      stackable: true
+      effectors:
+        - $type: ContinuousAttackEffector
+          effectorClassName: TriggerContinuousAttackEffector
+          delayTime: 0.5
+          attackRecord: Attacks.ThermalDamageOverTime
+
+DPAE_StatusEffect.INC_Thermal_Debuff:
+  $base: BaseStatusEffect.Stat_Buff
+  duration:
+    $type: gamedataStatModifierGroup_Record
+    statModifiers:
+      - $type: gamedataConstantStatModifier_Record
+        statType: BaseStats.MaxDuration
+        modifierType: Additive
+        value: 5
+  statusEffectType: BaseStatusEffectTypes.PassiveDebuff
+  gameplayTags:
+    - Debuff
+  VFX: []
+  uiData:
+    $type: gamedataStatusEffectUIData_Record
+    displayName: Overheating
+    iconPath: decreased_stats_icon
+    priority: -8.0
+  packages:
+    - $type: gamedataGameplayLogicPackage_Record
+      stats:
+        - $type: gamedataConstantStatModifier_Record
+          statType: BaseStats.Armor
+          modifierType: Additive
+          value: -10
+        - $type: gamedataConstantStatModifier_Record
+          statType: BaseStats.Accuracy
+          modifierType: Multiplier
+          value: 0.7
+
+
+
+DPAE_StatusEffect.HP_Bleed_RateBoost:
+  $type: gamedataConstantStatModifier_Record
+  modifierType: Additive
+  statType: BaseStats.BleedingApplicationRate
+  value: 10
+
+DPAE_StatusEffect.HP_Bleed_Group:
+  $type: gamedataStatModifierGroup_Record
+  statModifiers:
+    - DPAE_StatusEffect.HP_Bleed_RateBoost
+
+DPAE_StatusEffect.HP_Bleed:
+  $base: BaseStatusEffect.Stat_Buff
+  statusEffectType: BaseStatusEffectTypes.PassiveBuff
+  VFX: []
+  duration:
+    $type: gamedataStatModifierGroup_Record
+    statModifiers:
+      - $type: gamedataConstantStatModifier_Record
+        statType: BaseStats.MaxDuration
+        modifierType: Additive
+        value: 9999
+  packages:
+    - $type: gamedataGameplayLogicPackage_Record
+      effectors:
+        - $type: ApplyStatGroupEffector
+          applicationTarget: Weapon
+          removeWithEffector: true
+          statGroup: DPAE_StatusEffect.HP_Bleed_Group
+
+DPAE_StatusEffect.HP_Bleed_NPCBonus_Rate:
+  $type: gamedataConstantStatModifier_Record
+  modifierType: Additive
+  statType: BaseStats.BleedingApplicationRate
+  value: 40
+
+DPAE_StatusEffect.HP_Bleed_NPCBonus_Group:
+  $type: gamedataStatModifierGroup_Record
+  statModifiers:
+    - DPAE_StatusEffect.HP_Bleed_NPCBonus_Rate
+
+DPAE_StatusEffect.HP_Bleed_NPCBonus:
+  $base: BaseStatusEffect.Stat_Buff
+  duration:
+    $type: gamedataStatModifierGroup_Record
+    statModifiers:
+      - $type: gamedataConstantStatModifier_Record
+        statType: BaseStats.MaxDuration
+        modifierType: Additive
+        value: 9999
+  packages:
+    - $type: gamedataGameplayLogicPackage_Record
+      effectors:
+        - $type: ApplyStatGroupEffector
+          applicationTarget: Weapon
+          removeWithEffector: true
+          statGroup: DPAE_StatusEffect.HP_Bleed_NPCBonus_Group
+
+
+DPAE_StatusEffect.EMP_Shock_ElectricGain:
+  $type: gamedataCombinedStatModifier_Record
+  modifierType: Additive
+  opSymbol: '*'
+  refObject: Self
+  refStat: BaseStats.DamagePerHit
+  statType: BaseStats.ElectricDamage
+  value: 0.3
+
+DPAE_StatusEffect.EMP_Shock_Group:
+  $type: gamedataStatModifierGroup_Record
+  statModifiers:
+    - DPAE_StatusEffect.EMP_Shock_ElectricGain
+
+DPAE_StatusEffect.EMP_Shock:
+  $base: BaseStatusEffect.Stat_Buff
+  statusEffectType: BaseStatusEffectTypes.PassiveBuff
+  VFX: []
+  duration:
+    $type: gamedataStatModifierGroup_Record
+    statModifiers:
+      - $type: gamedataConstantStatModifier_Record
+        statType: BaseStats.MaxDuration
+        modifierType: Additive
+        value: 9999
+  packages:
+    - $type: gamedataGameplayLogicPackage_Record
+      effectors:
+        - $type: ApplyStatGroupEffector
+          applicationTarget: Weapon
+          removeWithEffector: true
+          statGroup: DPAE_StatusEffect.EMP_Shock_Group
+
+
+
+DPAE_StatusEffect.CHEM_Poison_ChemicalGain:
+  $type: gamedataCombinedStatModifier_Record
+  modifierType: Additive
+  opSymbol: '*'
+  refObject: Self
+  refStat: BaseStats.DamagePerHit
+  statType: BaseStats.ChemicalDamage
+  value: 0.3
+
+DPAE_StatusEffect.CHEM_Poison_Group:
+  $type: gamedataStatModifierGroup_Record
+  statModifiers:
+    - DPAE_StatusEffect.CHEM_Poison_ChemicalGain
+
+DPAE_StatusEffect.CHEM_Poison:
+  $base: BaseStatusEffect.Stat_Buff
+  statusEffectType: BaseStatusEffectTypes.PassiveBuff
+  VFX: []
+  duration:
+    $type: gamedataStatModifierGroup_Record
+    statModifiers:
+      - $type: gamedataConstantStatModifier_Record
+        statType: BaseStats.MaxDuration
+        modifierType: Additive
+        value: 9999
+  packages:
+    - $type: gamedataGameplayLogicPackage_Record
+      effectors:
+        - $type: ApplyStatGroupEffector
+          applicationTarget: Weapon
+          removeWithEffector: true
+          statGroup: DPAE_StatusEffect.CHEM_Poison_Group
+
+DPAE_StatusEffect.CHEM_Poison_DoT:
+  $base: BaseStatusEffect.Stat_Buff
+  duration:
+    $type: gamedataStatModifierGroup_Record
+    statModifiers:
+      - $type: gamedataConstantStatModifier_Record
+        statType: BaseStats.MaxDuration
+        modifierType: Additive
+        value: 5
+  statusEffectType: BaseStatusEffectTypes.Poisoned
+  gameplayTags:
+    - Debuff
+    - Poison
+  VFX:
+    - name: status_drugged_low
+  uiData:
+    $type: gamedataStatusEffectUIData_Record
+    displayName: LocKey#40945
+    iconPath: poisoned
+    priority: -7.0
+  packages:
+    - $type: gamedataGameplayLogicPackage_Record
+      stackable: true
+      effectors:
+        - $type: ContinuousAttackEffector
+          effectorClassName: TriggerContinuousAttackEffector
+          delayTime: 0.5
+          attackRecord: Attacks.ChemicalDamageOverTime
+
+DPAE_StatusEffect.CHEM_Poison_Debuff:
+  $base: BaseStatusEffect.Stat_Buff
+  duration:
+    $type: gamedataStatModifierGroup_Record
+    statModifiers:
+      - $type: gamedataConstantStatModifier_Record
+        statType: BaseStats.MaxDuration
+        modifierType: Additive
+        value: 5
+  statusEffectType: BaseStatusEffectTypes.PassiveDebuff
+  gameplayTags:
+    - Debuff
+  VFX: []
+  uiData:
+    $type: gamedataStatusEffectUIData_Record
+    displayName: Corroded
+    iconPath: poisoned
+    priority: -7.0
+  packages:
+    - $type: gamedataGameplayLogicPackage_Record
+      stats:
+        - $type: gamedataConstantStatModifier_Record
+          statType: BaseStats.Armor
+          modifierType: Additive
+          value: -10
+        - $type: gamedataConstantStatModifier_Record
+          statType: BaseStats.CanSprint
+          modifierType: Multiplier
+          value: 0.0
+        - $type: gamedataConstantStatModifier_Record
+          statType: BaseStats.MaxSpeed
+          modifierType: Additive
+          value: -0.5
+
+
+
+
+DPAE_StatusEffect.IconicElectric_Bonus_ElectricGain:
+  $type: gamedataCombinedStatModifier_Record
+  modifierType: Additive
+  opSymbol: '*'
+  refObject: Self
+  refStat: BaseStats.DamagePerHit
+  statType: BaseStats.ElectricDamage
+  value: 0.4
+
+DPAE_StatusEffect.IconicElectric_Bonus_Group:
+  $type: gamedataStatModifierGroup_Record
+  statModifiers:
+    - DPAE_StatusEffect.IconicElectric_Bonus_ElectricGain
+
+DPAE_StatusEffect.IconicElectric_Bonus:
+  $base: BaseStatusEffect.Stat_Buff
+  duration:
+    $type: gamedataStatModifierGroup_Record
+    statModifiers:
+      - $type: gamedataConstantStatModifier_Record
+        statType: BaseStats.MaxDuration
+        modifierType: Additive
+        value: 9999
+  packages:
+    - $type: gamedataGameplayLogicPackage_Record
+      effectors:
+        - $type: ApplyStatGroupEffector
+          applicationTarget: Weapon
+          removeWithEffector: true
+          statGroup: DPAE_StatusEffect.IconicElectric_Bonus_Group
+
+DPAE_StatusEffect.IconicChemical_Bonus_ChemicalGain:
+  $type: gamedataCombinedStatModifier_Record
+  modifierType: Additive
+  opSymbol: '*'
+  refObject: Self
+  refStat: BaseStats.DamagePerHit
+  statType: BaseStats.ChemicalDamage
+  value: 0.4
+
+DPAE_StatusEffect.IconicChemical_Bonus_Group:
+  $type: gamedataStatModifierGroup_Record
+  statModifiers:
+    - DPAE_StatusEffect.IconicChemical_Bonus_ChemicalGain
+
+DPAE_StatusEffect.IconicChemical_Bonus:
+  $base: BaseStatusEffect.Stat_Buff
+  duration:
+    $type: gamedataStatModifierGroup_Record
+    statModifiers:
+      - $type: gamedataConstantStatModifier_Record
+        statType: BaseStats.MaxDuration
+        modifierType: Additive
+        value: 9999
+  packages:
+    - $type: gamedataGameplayLogicPackage_Record
+      effectors:
+        - $type: ApplyStatGroupEffector
+          applicationTarget: Weapon
+          removeWithEffector: true
+          statGroup: DPAE_StatusEffect.IconicChemical_Bonus_Group
+
+
+DPAE_StatusEffect.IconicThermal_Bonus_ThermalGain:
+  $type: gamedataCombinedStatModifier_Record
+  modifierType: Additive
+  opSymbol: '*'
+  refObject: Self
+  refStat: BaseStats.DamagePerHit
+  statType: BaseStats.ThermalDamage
+  value: 0.4
+
+DPAE_StatusEffect.IconicThermal_Bonus_Group:
+  $type: gamedataStatModifierGroup_Record
+  statModifiers:
+    - DPAE_StatusEffect.IconicThermal_Bonus_ThermalGain
+
+DPAE_StatusEffect.IconicThermal_Bonus:
+  $base: BaseStatusEffect.Stat_Buff
+  duration:
+    $type: gamedataStatModifierGroup_Record
+    statModifiers:
+      - $type: gamedataConstantStatModifier_Record
+        statType: BaseStats.MaxDuration
+        modifierType: Additive
+        value: 9999
+  packages:
+    - $type: gamedataGameplayLogicPackage_Record
+      effectors:
+        - $type: ApplyStatGroupEffector
+          applicationTarget: Weapon
+          removeWithEffector: true
+          statGroup: DPAE_StatusEffect.IconicThermal_Bonus_Group
+
+DPAE_StatusEffect.Sparky_RateBonus_Group:
+  $type: gamedataStatModifierGroup_Record
+  statModifiers: []
+
+DPAE_StatusEffect.Sparky_RateBonus:
+  $base: BaseStatusEffect.Stat_Buff
+  duration:
+    $type: gamedataStatModifierGroup_Record
+    statModifiers:
+      - $type: gamedataConstantStatModifier_Record
+        statType: BaseStats.MaxDuration
+        modifierType: Additive
+        value: 9999
+  packages:
+    - $type: gamedataGameplayLogicPackage_Record
+      effectors:
+        - $type: ApplyStatGroupEffector
+          applicationTarget: Weapon
+          removeWithEffector: true
+          statGroup: DPAE_StatusEffect.Sparky_RateBonus_Group
+
+DPAE_StatusEffect.Borzaya_RateBonus_Rate:
+  $type: gamedataConstantStatModifier_Record
+  modifierType: Additive
+  statType: BaseStats.BurningApplicationRate
+  value: 40
+
+DPAE_StatusEffect.Borzaya_RateBonus_Group:
+  $type: gamedataStatModifierGroup_Record
+  statModifiers:
+    - DPAE_StatusEffect.Borzaya_RateBonus_Rate
+
+DPAE_StatusEffect.Borzaya_RateBonus:
+  $base: BaseStatusEffect.Stat_Buff
+  duration:
+    $type: gamedataStatModifierGroup_Record
+    statModifiers:
+      - $type: gamedataConstantStatModifier_Record
+        statType: BaseStats.MaxDuration
+        modifierType: Additive
+        value: 9999
+  packages:
+    - $type: gamedataGameplayLogicPackage_Record
+      effectors:
+        - $type: ApplyStatGroupEffector
+          applicationTarget: Weapon
+          removeWithEffector: true
+          statGroup: DPAE_StatusEffect.Borzaya_RateBonus_Group
+
+DPAE_StatusEffect.BloodyMaria_RateBonus_Rate:
+  $type: gamedataConstantStatModifier_Record
+  modifierType: Additive
+  statType: BaseStats.BleedingApplicationRate
+  value: 10
+
+DPAE_StatusEffect.BloodyMaria_RateBonus_Group:
+  $type: gamedataStatModifierGroup_Record
+  statModifiers:
+    - DPAE_StatusEffect.BloodyMaria_RateBonus_Rate
+
+DPAE_StatusEffect.BloodyMaria_RateBonus:
+  $base: BaseStatusEffect.Stat_Buff
+  duration:
+    $type: gamedataStatModifierGroup_Record
+    statModifiers:
+      - $type: gamedataConstantStatModifier_Record
+        statType: BaseStats.MaxDuration
+        modifierType: Additive
+        value: 9999
+  packages:
+    - $type: gamedataGameplayLogicPackage_Record
+      effectors:
+        - $type: ApplyStatGroupEffector
+          applicationTarget: Weapon
+          removeWithEffector: true
+          statGroup: DPAE_StatusEffect.BloodyMaria_RateBonus_Group
+
+DPAE_StatusEffect.IconicChemical_RateBonus_Rate:
+  $type: gamedataConstantStatModifier_Record
+  modifierType: Additive
+  statType: BaseStats.PoisonedApplicationRate
+  value: 50
+
+DPAE_StatusEffect.IconicChemical_RateBonus_Group:
+  $type: gamedataStatModifierGroup_Record
+  statModifiers:
+    - DPAE_StatusEffect.IconicChemical_RateBonus_Rate
+
+DPAE_StatusEffect.IconicChemical_RateBonus:
+  $base: BaseStatusEffect.Stat_Buff
+  duration:
+    $type: gamedataStatModifierGroup_Record
+    statModifiers:
+      - $type: gamedataConstantStatModifier_Record
+        statType: BaseStats.MaxDuration
+        modifierType: Additive
+        value: 9999
+  packages:
+    - $type: gamedataGameplayLogicPackage_Record
+      effectors:
+        - $type: ApplyStatGroupEffector
+          applicationTarget: Weapon
+          removeWithEffector: true
+          statGroup: DPAE_StatusEffect.IconicChemical_RateBonus_Group
+
+DPAE_StatusEffect.IconicThermal_RateBonus_Rate:
+  $type: gamedataConstantStatModifier_Record
+  modifierType: Additive
+  statType: BaseStats.BurningApplicationRate
+  value: 50
+
+DPAE_StatusEffect.IconicThermal_RateBonus_Group:
+  $type: gamedataStatModifierGroup_Record
+  statModifiers:
+    - DPAE_StatusEffect.IconicThermal_RateBonus_Rate
+
+DPAE_StatusEffect.IconicThermal_RateBonus:
+  $base: BaseStatusEffect.Stat_Buff
+  duration:
+    $type: gamedataStatModifierGroup_Record
+    statModifiers:
+      - $type: gamedataConstantStatModifier_Record
+        statType: BaseStats.MaxDuration
+        modifierType: Additive
+        value: 9999
+  packages:
+    - $type: gamedataGameplayLogicPackage_Record
+      effectors:
+        - $type: ApplyStatGroupEffector
+          applicationTarget: Weapon
+          removeWithEffector: true
+          statGroup: DPAE_StatusEffect.IconicThermal_RateBonus_Group
+
+DPAE_StatusEffect.HE_Active:
+  $base: BaseStatusEffect.Stat_Buff
+  duration:
+    $type: gamedataStatModifierGroup_Record
+    statModifiers:
+      - $type: gamedataConstantStatModifier_Record
+        statType: BaseStats.MaxDuration
+        modifierType: Additive
+        value: 9999
+  packages: []
+
+
+
+DPAE_StatusEffect.INC_Burn_PyroBonus_T0_DamageGain:
+  $type: gamedataCombinedStatModifier_Record
+  modifierType: Additive
+  opSymbol: '*'
+  refObject: Self
+  refStat: BaseStats.DamagePerHit
+  statType: BaseStats.ThermalDamage
+  value: 0.1
+
+DPAE_StatusEffect.INC_Burn_PyroBonus_T0_Group:
+  $type: gamedataStatModifierGroup_Record
+  statModifiers:
+    - DPAE_StatusEffect.INC_Burn_PyroBonus_T0_DamageGain
+
+DPAE_StatusEffect.INC_Burn_PyroBonus_T0:
+  $base: BaseStatusEffect.Stat_Buff
+  duration:
+    $type: gamedataStatModifierGroup_Record
+    statModifiers:
+      - $type: gamedataConstantStatModifier_Record
+        statType: BaseStats.MaxDuration
+        modifierType: Additive
+        value: 9999
+  packages:
+    - $type: gamedataGameplayLogicPackage_Record
+      stackable: true
+      effectors:
+        - $type: ApplyStatGroupEffector
+          applicationTarget: Weapon
+          removeWithEffector: true
+          statGroup: DPAE_StatusEffect.INC_Burn_PyroBonus_T0_Group
+  maxStacks:
+    $type: gamedataStatModifierGroup_Record
+    statModifiers:
+      - $type: gamedataConstantStatModifier_Record
+        statType: BaseStats.MaxStacks
+        modifierType: Additive
+        value: 5
+
+DPAE_StatusEffect.INC_Burn_PyroBonus_T1_DamageGain:
+  $type: gamedataCombinedStatModifier_Record
+  modifierType: Additive
+  opSymbol: '*'
+  refObject: Self
+  refStat: BaseStats.DamagePerHit
+  statType: BaseStats.ThermalDamage
+  value: 0.12
+
+DPAE_StatusEffect.INC_Burn_PyroBonus_T1_Group:
+  $type: gamedataStatModifierGroup_Record
+  statModifiers:
+    - DPAE_StatusEffect.INC_Burn_PyroBonus_T1_DamageGain
+
+DPAE_StatusEffect.INC_Burn_PyroBonus_T1:
+  $base: BaseStatusEffect.Stat_Buff
+  duration:
+    $type: gamedataStatModifierGroup_Record
+    statModifiers:
+      - $type: gamedataConstantStatModifier_Record
+        statType: BaseStats.MaxDuration
+        modifierType: Additive
+        value: 9999
+  packages:
+    - $type: gamedataGameplayLogicPackage_Record
+      stackable: true
+      effectors:
+        - $type: ApplyStatGroupEffector
+          applicationTarget: Weapon
+          removeWithEffector: true
+          statGroup: DPAE_StatusEffect.INC_Burn_PyroBonus_T1_Group
+  maxStacks:
+    $type: gamedataStatModifierGroup_Record
+    statModifiers:
+      - $type: gamedataConstantStatModifier_Record
+        statType: BaseStats.MaxStacks
+        modifierType: Additive
+        value: 5
+
+DPAE_StatusEffect.INC_Burn_PyroBonus_T2_DamageGain:
+  $type: gamedataCombinedStatModifier_Record
+  modifierType: Additive
+  opSymbol: '*'
+  refObject: Self
+  refStat: BaseStats.DamagePerHit
+  statType: BaseStats.ThermalDamage
+  value: 0.15
+
+DPAE_StatusEffect.INC_Burn_PyroBonus_T2_Group:
+  $type: gamedataStatModifierGroup_Record
+  statModifiers:
+    - DPAE_StatusEffect.INC_Burn_PyroBonus_T2_DamageGain
+
+DPAE_StatusEffect.INC_Burn_PyroBonus_T2:
+  $base: BaseStatusEffect.Stat_Buff
+  duration:
+    $type: gamedataStatModifierGroup_Record
+    statModifiers:
+      - $type: gamedataConstantStatModifier_Record
+        statType: BaseStats.MaxDuration
+        modifierType: Additive
+        value: 9999
+  packages:
+    - $type: gamedataGameplayLogicPackage_Record
+      stackable: true
+      effectors:
+        - $type: ApplyStatGroupEffector
+          applicationTarget: Weapon
+          removeWithEffector: true
+          statGroup: DPAE_StatusEffect.INC_Burn_PyroBonus_T2_Group
+  maxStacks:
+    $type: gamedataStatModifierGroup_Record
+    statModifiers:
+      - $type: gamedataConstantStatModifier_Record
+        statType: BaseStats.MaxStacks
+        modifierType: Additive
+        value: 5
+
+DPAE_StatusEffect.INC_Burn_PyroBonus_T3_DamageGain:
+  $type: gamedataCombinedStatModifier_Record
+  modifierType: Additive
+  opSymbol: '*'
+  refObject: Self
+  refStat: BaseStats.DamagePerHit
+  statType: BaseStats.ThermalDamage
+  value: 0.18
+
+DPAE_StatusEffect.INC_Burn_PyroBonus_T3_Group:
+  $type: gamedataStatModifierGroup_Record
+  statModifiers:
+    - DPAE_StatusEffect.INC_Burn_PyroBonus_T3_DamageGain
+
+DPAE_StatusEffect.INC_Burn_PyroBonus_T3:
+  $base: BaseStatusEffect.Stat_Buff
+  duration:
+    $type: gamedataStatModifierGroup_Record
+    statModifiers:
+      - $type: gamedataConstantStatModifier_Record
+        statType: BaseStats.MaxDuration
+        modifierType: Additive
+        value: 9999
+  packages:
+    - $type: gamedataGameplayLogicPackage_Record
+      stackable: true
+      effectors:
+        - $type: ApplyStatGroupEffector
+          applicationTarget: Weapon
+          removeWithEffector: true
+          statGroup: DPAE_StatusEffect.INC_Burn_PyroBonus_T3_Group
+  maxStacks:
+    $type: gamedataStatModifierGroup_Record
+    statModifiers:
+      - $type: gamedataConstantStatModifier_Record
+        statType: BaseStats.MaxStacks
+        modifierType: Additive
+        value: 5
+
+DPAE_StatusEffect.INC_Burn_PyroBonus_T4_DamageGain:
+  $type: gamedataCombinedStatModifier_Record
+  modifierType: Additive
+  opSymbol: '*'
+  refObject: Self
+  refStat: BaseStats.DamagePerHit
+  statType: BaseStats.ThermalDamage
+  value: 0.2
+
+DPAE_StatusEffect.INC_Burn_PyroBonus_T4_Group:
+  $type: gamedataStatModifierGroup_Record
+  statModifiers:
+    - DPAE_StatusEffect.INC_Burn_PyroBonus_T4_DamageGain
+
+DPAE_StatusEffect.INC_Burn_PyroBonus_T4:
+  $base: BaseStatusEffect.Stat_Buff
+  duration:
+    $type: gamedataStatModifierGroup_Record
+    statModifiers:
+      - $type: gamedataConstantStatModifier_Record
+        statType: BaseStats.MaxDuration
+        modifierType: Additive
+        value: 9999
+  packages:
+    - $type: gamedataGameplayLogicPackage_Record
+      stackable: true
+      effectors:
+        - $type: ApplyStatGroupEffector
+          applicationTarget: Weapon
+          removeWithEffector: true
+          statGroup: DPAE_StatusEffect.INC_Burn_PyroBonus_T4_Group
+  maxStacks:
+    $type: gamedataStatModifierGroup_Record
+    statModifiers:
+      - $type: gamedataConstantStatModifier_Record
+        statType: BaseStats.MaxStacks
+        modifierType: Additive
+        value: 5
+
+DPAE_StatusEffect.HP_Bleed_PyroBonus_T0_RateBoost:
+  $type: gamedataConstantStatModifier_Record
+  modifierType: Additive
+  statType: BaseStats.BleedingApplicationRate
+  value: 10
+
+DPAE_StatusEffect.HP_Bleed_PyroBonus_T0_Group:
+  $type: gamedataStatModifierGroup_Record
+  statModifiers:
+    - DPAE_StatusEffect.HP_Bleed_PyroBonus_T0_RateBoost
+
+DPAE_StatusEffect.HP_Bleed_PyroBonus_T0:
+  $base: BaseStatusEffect.Stat_Buff
+  duration:
+    $type: gamedataStatModifierGroup_Record
+    statModifiers:
+      - $type: gamedataConstantStatModifier_Record
+        statType: BaseStats.MaxDuration
+        modifierType: Additive
+        value: 9999
+  packages:
+    - $type: gamedataGameplayLogicPackage_Record
+      stackable: true
+      effectors:
+        - $type: ApplyStatGroupEffector
+          applicationTarget: Weapon
+          removeWithEffector: true
+          statGroup: DPAE_StatusEffect.HP_Bleed_PyroBonus_T0_Group
+  maxStacks:
+    $type: gamedataStatModifierGroup_Record
+    statModifiers:
+      - $type: gamedataConstantStatModifier_Record
+        statType: BaseStats.MaxStacks
+        modifierType: Additive
+        value: 5
+
+DPAE_StatusEffect.HP_Bleed_PyroBonus_T1_RateBoost:
+  $type: gamedataConstantStatModifier_Record
+  modifierType: Additive
+  statType: BaseStats.BleedingApplicationRate
+  value: 20
+
+DPAE_StatusEffect.HP_Bleed_PyroBonus_T1_Group:
+  $type: gamedataStatModifierGroup_Record
+  statModifiers:
+    - DPAE_StatusEffect.HP_Bleed_PyroBonus_T1_RateBoost
+
+DPAE_StatusEffect.HP_Bleed_PyroBonus_T1:
+  $base: BaseStatusEffect.Stat_Buff
+  duration:
+    $type: gamedataStatModifierGroup_Record
+    statModifiers:
+      - $type: gamedataConstantStatModifier_Record
+        statType: BaseStats.MaxDuration
+        modifierType: Additive
+        value: 9999
+  packages:
+    - $type: gamedataGameplayLogicPackage_Record
+      stackable: true
+      effectors:
+        - $type: ApplyStatGroupEffector
+          applicationTarget: Weapon
+          removeWithEffector: true
+          statGroup: DPAE_StatusEffect.HP_Bleed_PyroBonus_T1_Group
+  maxStacks:
+    $type: gamedataStatModifierGroup_Record
+    statModifiers:
+      - $type: gamedataConstantStatModifier_Record
+        statType: BaseStats.MaxStacks
+        modifierType: Additive
+        value: 5
+
+DPAE_StatusEffect.HP_Bleed_PyroBonus_T2_RateBoost:
+  $type: gamedataConstantStatModifier_Record
+  modifierType: Additive
+  statType: BaseStats.BleedingApplicationRate
+  value: 30
+
+DPAE_StatusEffect.HP_Bleed_PyroBonus_T2_Group:
+  $type: gamedataStatModifierGroup_Record
+  statModifiers:
+    - DPAE_StatusEffect.HP_Bleed_PyroBonus_T2_RateBoost
+
+DPAE_StatusEffect.HP_Bleed_PyroBonus_T2:
+  $base: BaseStatusEffect.Stat_Buff
+  duration:
+    $type: gamedataStatModifierGroup_Record
+    statModifiers:
+      - $type: gamedataConstantStatModifier_Record
+        statType: BaseStats.MaxDuration
+        modifierType: Additive
+        value: 9999
+  packages:
+    - $type: gamedataGameplayLogicPackage_Record
+      stackable: true
+      effectors:
+        - $type: ApplyStatGroupEffector
+          applicationTarget: Weapon
+          removeWithEffector: true
+          statGroup: DPAE_StatusEffect.HP_Bleed_PyroBonus_T2_Group
+  maxStacks:
+    $type: gamedataStatModifierGroup_Record
+    statModifiers:
+      - $type: gamedataConstantStatModifier_Record
+        statType: BaseStats.MaxStacks
+        modifierType: Additive
+        value: 5
+
+DPAE_StatusEffect.HP_Bleed_PyroBonus_T3_RateBoost:
+  $type: gamedataConstantStatModifier_Record
+  modifierType: Additive
+  statType: BaseStats.BleedingApplicationRate
+  value: 40
+
+DPAE_StatusEffect.HP_Bleed_PyroBonus_T3_Group:
+  $type: gamedataStatModifierGroup_Record
+  statModifiers:
+    - DPAE_StatusEffect.HP_Bleed_PyroBonus_T3_RateBoost
+
+DPAE_StatusEffect.HP_Bleed_PyroBonus_T3:
+  $base: BaseStatusEffect.Stat_Buff
+  duration:
+    $type: gamedataStatModifierGroup_Record
+    statModifiers:
+      - $type: gamedataConstantStatModifier_Record
+        statType: BaseStats.MaxDuration
+        modifierType: Additive
+        value: 9999
+  packages:
+    - $type: gamedataGameplayLogicPackage_Record
+      stackable: true
+      effectors:
+        - $type: ApplyStatGroupEffector
+          applicationTarget: Weapon
+          removeWithEffector: true
+          statGroup: DPAE_StatusEffect.HP_Bleed_PyroBonus_T3_Group
+  maxStacks:
+    $type: gamedataStatModifierGroup_Record
+    statModifiers:
+      - $type: gamedataConstantStatModifier_Record
+        statType: BaseStats.MaxStacks
+        modifierType: Additive
+        value: 5
+
+DPAE_StatusEffect.HP_Bleed_PyroBonus_T4_RateBoost:
+  $type: gamedataConstantStatModifier_Record
+  modifierType: Additive
+  statType: BaseStats.BleedingApplicationRate
+  value: 50
+
+DPAE_StatusEffect.HP_Bleed_PyroBonus_T4_Group:
+  $type: gamedataStatModifierGroup_Record
+  statModifiers:
+    - DPAE_StatusEffect.HP_Bleed_PyroBonus_T4_RateBoost
+
+DPAE_StatusEffect.HP_Bleed_PyroBonus_T4:
+  $base: BaseStatusEffect.Stat_Buff
+  duration:
+    $type: gamedataStatModifierGroup_Record
+    statModifiers:
+      - $type: gamedataConstantStatModifier_Record
+        statType: BaseStats.MaxDuration
+        modifierType: Additive
+        value: 9999
+  packages:
+    - $type: gamedataGameplayLogicPackage_Record
+      stackable: true
+      effectors:
+        - $type: ApplyStatGroupEffector
+          applicationTarget: Weapon
+          removeWithEffector: true
+          statGroup: DPAE_StatusEffect.HP_Bleed_PyroBonus_T4_Group
+  maxStacks:
+    $type: gamedataStatModifierGroup_Record
+    statModifiers:
+      - $type: gamedataConstantStatModifier_Record
+        statType: BaseStats.MaxStacks
+        modifierType: Additive
+        value: 5
+
+DPAE_StatusEffect.EMP_Shock_PyroBonus_T0_DamageGain:
+  $type: gamedataCombinedStatModifier_Record
+  modifierType: Additive
+  opSymbol: '*'
+  refObject: Self
+  refStat: BaseStats.DamagePerHit
+  statType: BaseStats.ElectricDamage
+  value: 0.1
+
+DPAE_StatusEffect.EMP_Shock_PyroBonus_T0_Group:
+  $type: gamedataStatModifierGroup_Record
+  statModifiers:
+    - DPAE_StatusEffect.EMP_Shock_PyroBonus_T0_DamageGain
+
+DPAE_StatusEffect.EMP_Shock_PyroBonus_T0:
+  $base: BaseStatusEffect.Stat_Buff
+  duration:
+    $type: gamedataStatModifierGroup_Record
+    statModifiers:
+      - $type: gamedataConstantStatModifier_Record
+        statType: BaseStats.MaxDuration
+        modifierType: Additive
+        value: 9999
+  packages:
+    - $type: gamedataGameplayLogicPackage_Record
+      stackable: true
+      effectors:
+        - $type: ApplyStatGroupEffector
+          applicationTarget: Weapon
+          removeWithEffector: true
+          statGroup: DPAE_StatusEffect.EMP_Shock_PyroBonus_T0_Group
+  maxStacks:
+    $type: gamedataStatModifierGroup_Record
+    statModifiers:
+      - $type: gamedataConstantStatModifier_Record
+        statType: BaseStats.MaxStacks
+        modifierType: Additive
+        value: 5
+
+DPAE_StatusEffect.EMP_Shock_PyroBonus_T1_DamageGain:
+  $type: gamedataCombinedStatModifier_Record
+  modifierType: Additive
+  opSymbol: '*'
+  refObject: Self
+  refStat: BaseStats.DamagePerHit
+  statType: BaseStats.ElectricDamage
+  value: 0.12
+
+DPAE_StatusEffect.EMP_Shock_PyroBonus_T1_Group:
+  $type: gamedataStatModifierGroup_Record
+  statModifiers:
+    - DPAE_StatusEffect.EMP_Shock_PyroBonus_T1_DamageGain
+
+DPAE_StatusEffect.EMP_Shock_PyroBonus_T1:
+  $base: BaseStatusEffect.Stat_Buff
+  duration:
+    $type: gamedataStatModifierGroup_Record
+    statModifiers:
+      - $type: gamedataConstantStatModifier_Record
+        statType: BaseStats.MaxDuration
+        modifierType: Additive
+        value: 9999
+  packages:
+    - $type: gamedataGameplayLogicPackage_Record
+      stackable: true
+      effectors:
+        - $type: ApplyStatGroupEffector
+          applicationTarget: Weapon
+          removeWithEffector: true
+          statGroup: DPAE_StatusEffect.EMP_Shock_PyroBonus_T1_Group
+  maxStacks:
+    $type: gamedataStatModifierGroup_Record
+    statModifiers:
+      - $type: gamedataConstantStatModifier_Record
+        statType: BaseStats.MaxStacks
+        modifierType: Additive
+        value: 5
+
+DPAE_StatusEffect.EMP_Shock_PyroBonus_T2_DamageGain:
+  $type: gamedataCombinedStatModifier_Record
+  modifierType: Additive
+  opSymbol: '*'
+  refObject: Self
+  refStat: BaseStats.DamagePerHit
+  statType: BaseStats.ElectricDamage
+  value: 0.15
+
+DPAE_StatusEffect.EMP_Shock_PyroBonus_T2_Group:
+  $type: gamedataStatModifierGroup_Record
+  statModifiers:
+    - DPAE_StatusEffect.EMP_Shock_PyroBonus_T2_DamageGain
+
+DPAE_StatusEffect.EMP_Shock_PyroBonus_T2:
+  $base: BaseStatusEffect.Stat_Buff
+  duration:
+    $type: gamedataStatModifierGroup_Record
+    statModifiers:
+      - $type: gamedataConstantStatModifier_Record
+        statType: BaseStats.MaxDuration
+        modifierType: Additive
+        value: 9999
+  packages:
+    - $type: gamedataGameplayLogicPackage_Record
+      stackable: true
+      effectors:
+        - $type: ApplyStatGroupEffector
+          applicationTarget: Weapon
+          removeWithEffector: true
+          statGroup: DPAE_StatusEffect.EMP_Shock_PyroBonus_T2_Group
+  maxStacks:
+    $type: gamedataStatModifierGroup_Record
+    statModifiers:
+      - $type: gamedataConstantStatModifier_Record
+        statType: BaseStats.MaxStacks
+        modifierType: Additive
+        value: 5
+
+DPAE_StatusEffect.EMP_Shock_PyroBonus_T3_DamageGain:
+  $type: gamedataCombinedStatModifier_Record
+  modifierType: Additive
+  opSymbol: '*'
+  refObject: Self
+  refStat: BaseStats.DamagePerHit
+  statType: BaseStats.ElectricDamage
+  value: 0.18
+
+DPAE_StatusEffect.EMP_Shock_PyroBonus_T3_Group:
+  $type: gamedataStatModifierGroup_Record
+  statModifiers:
+    - DPAE_StatusEffect.EMP_Shock_PyroBonus_T3_DamageGain
+
+DPAE_StatusEffect.EMP_Shock_PyroBonus_T3:
+  $base: BaseStatusEffect.Stat_Buff
+  duration:
+    $type: gamedataStatModifierGroup_Record
+    statModifiers:
+      - $type: gamedataConstantStatModifier_Record
+        statType: BaseStats.MaxDuration
+        modifierType: Additive
+        value: 9999
+  packages:
+    - $type: gamedataGameplayLogicPackage_Record
+      stackable: true
+      effectors:
+        - $type: ApplyStatGroupEffector
+          applicationTarget: Weapon
+          removeWithEffector: true
+          statGroup: DPAE_StatusEffect.EMP_Shock_PyroBonus_T3_Group
+  maxStacks:
+    $type: gamedataStatModifierGroup_Record
+    statModifiers:
+      - $type: gamedataConstantStatModifier_Record
+        statType: BaseStats.MaxStacks
+        modifierType: Additive
+        value: 5
+
+DPAE_StatusEffect.EMP_Shock_PyroBonus_T4_DamageGain:
+  $type: gamedataCombinedStatModifier_Record
+  modifierType: Additive
+  opSymbol: '*'
+  refObject: Self
+  refStat: BaseStats.DamagePerHit
+  statType: BaseStats.ElectricDamage
+  value: 0.2
+
+DPAE_StatusEffect.EMP_Shock_PyroBonus_T4_Group:
+  $type: gamedataStatModifierGroup_Record
+  statModifiers:
+    - DPAE_StatusEffect.EMP_Shock_PyroBonus_T4_DamageGain
+
+DPAE_StatusEffect.EMP_Shock_PyroBonus_T4:
+  $base: BaseStatusEffect.Stat_Buff
+  duration:
+    $type: gamedataStatModifierGroup_Record
+    statModifiers:
+      - $type: gamedataConstantStatModifier_Record
+        statType: BaseStats.MaxDuration
+        modifierType: Additive
+        value: 9999
+  packages:
+    - $type: gamedataGameplayLogicPackage_Record
+      stackable: true
+      effectors:
+        - $type: ApplyStatGroupEffector
+          applicationTarget: Weapon
+          removeWithEffector: true
+          statGroup: DPAE_StatusEffect.EMP_Shock_PyroBonus_T4_Group
+  maxStacks:
+    $type: gamedataStatModifierGroup_Record
+    statModifiers:
+      - $type: gamedataConstantStatModifier_Record
+        statType: BaseStats.MaxStacks
+        modifierType: Additive
+        value: 5
+
+DPAE_StatusEffect.CHEM_Poison_PyroBonus_T0_DamageGain:
+  $type: gamedataCombinedStatModifier_Record
+  modifierType: Additive
+  opSymbol: '*'
+  refObject: Self
+  refStat: BaseStats.DamagePerHit
+  statType: BaseStats.ChemicalDamage
+  value: 0.1
+
+DPAE_StatusEffect.CHEM_Poison_PyroBonus_T0_Group:
+  $type: gamedataStatModifierGroup_Record
+  statModifiers:
+    - DPAE_StatusEffect.CHEM_Poison_PyroBonus_T0_DamageGain
+
+DPAE_StatusEffect.CHEM_Poison_PyroBonus_T0:
+  $base: BaseStatusEffect.Stat_Buff
+  duration:
+    $type: gamedataStatModifierGroup_Record
+    statModifiers:
+      - $type: gamedataConstantStatModifier_Record
+        statType: BaseStats.MaxDuration
+        modifierType: Additive
+        value: 9999
+  packages:
+    - $type: gamedataGameplayLogicPackage_Record
+      stackable: true
+      effectors:
+        - $type: ApplyStatGroupEffector
+          applicationTarget: Weapon
+          removeWithEffector: true
+          statGroup: DPAE_StatusEffect.CHEM_Poison_PyroBonus_T0_Group
+  maxStacks:
+    $type: gamedataStatModifierGroup_Record
+    statModifiers:
+      - $type: gamedataConstantStatModifier_Record
+        statType: BaseStats.MaxStacks
+        modifierType: Additive
+        value: 5
+
+DPAE_StatusEffect.CHEM_Poison_PyroBonus_T1_DamageGain:
+  $type: gamedataCombinedStatModifier_Record
+  modifierType: Additive
+  opSymbol: '*'
+  refObject: Self
+  refStat: BaseStats.DamagePerHit
+  statType: BaseStats.ChemicalDamage
+  value: 0.12
+
+DPAE_StatusEffect.CHEM_Poison_PyroBonus_T1_Group:
+  $type: gamedataStatModifierGroup_Record
+  statModifiers:
+    - DPAE_StatusEffect.CHEM_Poison_PyroBonus_T1_DamageGain
+
+DPAE_StatusEffect.CHEM_Poison_PyroBonus_T1:
+  $base: BaseStatusEffect.Stat_Buff
+  duration:
+    $type: gamedataStatModifierGroup_Record
+    statModifiers:
+      - $type: gamedataConstantStatModifier_Record
+        statType: BaseStats.MaxDuration
+        modifierType: Additive
+        value: 9999
+  packages:
+    - $type: gamedataGameplayLogicPackage_Record
+      stackable: true
+      effectors:
+        - $type: ApplyStatGroupEffector
+          applicationTarget: Weapon
+          removeWithEffector: true
+          statGroup: DPAE_StatusEffect.CHEM_Poison_PyroBonus_T1_Group
+  maxStacks:
+    $type: gamedataStatModifierGroup_Record
+    statModifiers:
+      - $type: gamedataConstantStatModifier_Record
+        statType: BaseStats.MaxStacks
+        modifierType: Additive
+        value: 5
+
+DPAE_StatusEffect.CHEM_Poison_PyroBonus_T2_DamageGain:
+  $type: gamedataCombinedStatModifier_Record
+  modifierType: Additive
+  opSymbol: '*'
+  refObject: Self
+  refStat: BaseStats.DamagePerHit
+  statType: BaseStats.ChemicalDamage
+  value: 0.15
+
+DPAE_StatusEffect.CHEM_Poison_PyroBonus_T2_Group:
+  $type: gamedataStatModifierGroup_Record
+  statModifiers:
+    - DPAE_StatusEffect.CHEM_Poison_PyroBonus_T2_DamageGain
+
+DPAE_StatusEffect.CHEM_Poison_PyroBonus_T2:
+  $base: BaseStatusEffect.Stat_Buff
+  duration:
+    $type: gamedataStatModifierGroup_Record
+    statModifiers:
+      - $type: gamedataConstantStatModifier_Record
+        statType: BaseStats.MaxDuration
+        modifierType: Additive
+        value: 9999
+  packages:
+    - $type: gamedataGameplayLogicPackage_Record
+      stackable: true
+      effectors:
+        - $type: ApplyStatGroupEffector
+          applicationTarget: Weapon
+          removeWithEffector: true
+          statGroup: DPAE_StatusEffect.CHEM_Poison_PyroBonus_T2_Group
+  maxStacks:
+    $type: gamedataStatModifierGroup_Record
+    statModifiers:
+      - $type: gamedataConstantStatModifier_Record
+        statType: BaseStats.MaxStacks
+        modifierType: Additive
+        value: 5
+
+DPAE_StatusEffect.CHEM_Poison_PyroBonus_T3_DamageGain:
+  $type: gamedataCombinedStatModifier_Record
+  modifierType: Additive
+  opSymbol: '*'
+  refObject: Self
+  refStat: BaseStats.DamagePerHit
+  statType: BaseStats.ChemicalDamage
+  value: 0.18
+
+DPAE_StatusEffect.CHEM_Poison_PyroBonus_T3_Group:
+  $type: gamedataStatModifierGroup_Record
+  statModifiers:
+    - DPAE_StatusEffect.CHEM_Poison_PyroBonus_T3_DamageGain
+
+DPAE_StatusEffect.CHEM_Poison_PyroBonus_T3:
+  $base: BaseStatusEffect.Stat_Buff
+  duration:
+    $type: gamedataStatModifierGroup_Record
+    statModifiers:
+      - $type: gamedataConstantStatModifier_Record
+        statType: BaseStats.MaxDuration
+        modifierType: Additive
+        value: 9999
+  packages:
+    - $type: gamedataGameplayLogicPackage_Record
+      stackable: true
+      effectors:
+        - $type: ApplyStatGroupEffector
+          applicationTarget: Weapon
+          removeWithEffector: true
+          statGroup: DPAE_StatusEffect.CHEM_Poison_PyroBonus_T3_Group
+  maxStacks:
+    $type: gamedataStatModifierGroup_Record
+    statModifiers:
+      - $type: gamedataConstantStatModifier_Record
+        statType: BaseStats.MaxStacks
+        modifierType: Additive
+        value: 5
+
+DPAE_StatusEffect.CHEM_Poison_PyroBonus_T4_DamageGain:
+  $type: gamedataCombinedStatModifier_Record
+  modifierType: Additive
+  opSymbol: '*'
+  refObject: Self
+  refStat: BaseStats.DamagePerHit
+  statType: BaseStats.ChemicalDamage
+  value: 0.2
+
+DPAE_StatusEffect.CHEM_Poison_PyroBonus_T4_Group:
+  $type: gamedataStatModifierGroup_Record
+  statModifiers:
+    - DPAE_StatusEffect.CHEM_Poison_PyroBonus_T4_DamageGain
+
+DPAE_StatusEffect.CHEM_Poison_PyroBonus_T4:
+  $base: BaseStatusEffect.Stat_Buff
+  duration:
+    $type: gamedataStatModifierGroup_Record
+    statModifiers:
+      - $type: gamedataConstantStatModifier_Record
+        statType: BaseStats.MaxDuration
+        modifierType: Additive
+        value: 9999
+  packages:
+    - $type: gamedataGameplayLogicPackage_Record
+      stackable: true
+      effectors:
+        - $type: ApplyStatGroupEffector
+          applicationTarget: Weapon
+          removeWithEffector: true
+          statGroup: DPAE_StatusEffect.CHEM_Poison_PyroBonus_T4_Group
+  maxStacks:
+    $type: gamedataStatModifierGroup_Record
+    statModifiers:
+      - $type: gamedataConstantStatModifier_Record
+        statType: BaseStats.MaxStacks
+        modifierType: Additive
+        value: 5
+
+DPAE_StatusEffect.EMP_CyberwareMalfunction:
+  $base: BaseStatusEffect.DisableCyberware
+  duration:
+    $type: gamedataStatModifierGroup_Record
+    statModifiers:
+      - $type: gamedataConstantStatModifier_Record
+        statType: BaseStats.MaxDuration
+        modifierType: Additive
+        value: 5
+  statusEffectType: BaseStatusEffectTypes.QuickHackStaggerCyberware
+  gameplayTags:
+    - Debuff
+  uiData:
+    $type: gamedataStatusEffectUIData_Record
+    displayName: LocKey#40978
+    iconPath: cyberware_disabled_icon
+    priority: -1.0
+
+DPAE_StatusEffect.EMP_ShockMalfunction_DoT:
+  $base: BaseStatusEffect.Stat_Buff
+  duration:
+    $type: gamedataStatModifierGroup_Record
+    statModifiers:
+      - $type: gamedataConstantStatModifier_Record
+        statType: BaseStats.MaxDuration
+        modifierType: Additive
+        value: 5
+  statusEffectType: BaseStatusEffectTypes.Electrocuted
+  gameplayTags:
+    - Debuff
+  VFX:
+    - name: status_electrocuted
+  uiData:
+    $type: gamedataStatusEffectUIData_Record
+    displayName: Shocked
+    iconPath: electricuted
+  packages:
+    - $type: gamedataGameplayLogicPackage_Record
+      stackable: true
+      effectors:
+        - $type: ContinuousAttackEffector
+          effectorClassName: TriggerContinuousAttackEffector
+          delayTime: 0.5
+          attackRecord: Attacks.ElectricDamageOverTime

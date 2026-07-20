@@ -1,0 +1,127 @@
+Ammo.Cal50BeowulfOni:
+  animationParameters: []
+  animFeatureName: ItemData
+  animName: ui_garment_pose
+  animSetResource: ''
+  appearanceSuffixes: []
+  appearanceSuffixesOwnerOverride: []
+  attachmentSlots: []
+  buyPrice:
+    - Price.Ammo
+    - Price.BuyPrice_StreetCred_Discount
+    - Price.PowerAmmo
+  cameraForward: {x: 0, y: 0, z: 0}
+  cameraUp: {x: 0, y: 0, z: 0}
+  canDrop: True
+  connections: []
+  CraftingData: Ammo.AmmoBase_inline0
+  crosshair: Crosshairs.None
+  deprecated: False
+  displayName: LocKey#8100338
+  dropObject: ammoDrop
+  effectors: []
+  enableNpcRPGData: False
+  entityName: ammo_box_handgun
+  equipAreas: []
+  equipPrereqs: []
+  friendlyName: '50_beowulf_oni'
+  gameplayRestrictions:
+    - GameplayRestriction.VehicleCombatNoInterruptions
+  garmentOffset: 0
+  hairSkinnedMeshComponents: []
+  icon: UIIcon.ItemIcon
+  iconPath: ''
+  isCached: False
+  isCoreCW: False
+  isCustomizable: False
+  isGarment: False
+  isPart: False
+  isSingleInstance: True
+  itemCategory: ItemCategory.General
+  itemType: ItemType.Con_Ammo
+  localizedDescription: LocKey#8100591
+  localizedName: ''
+  mass: 1
+  minigameInstance: minigame_v2.DefaultItemMinigame
+  objectActions:
+    - ItemAction.Drop
+    - ItemAction.Disassemble
+  OnAttach: []
+  OnEquip: []
+  OnLooted: []
+  parts: []
+  placementSlots: []
+  powerLevelDeterminedByParent: False
+  previewBBoxOverride: []
+  quality: Quality.Common
+  qualityRestrictedByParent: False
+  replicateWhenNotActive: False
+  requiredSlots: []
+  savable: False
+  sellPrice:
+    - Price.Ammo
+    - Price.PowerAmmo
+  slotPartList: []
+  slotPartListPreset: []
+  statModifierGroups: []
+  statPools: []
+  tags:
+    - Ammo
+    - ShowStackPrice
+    - Cal50BeowulfOni
+  $base: Ammo.RifleAmmo
+  upgradeCostMult: 1
+  useHeadgearGarmentAggregator: False
+  useNewSpawnMethod: False
+  usesVariants: False
+  variants: []
+  visualTags: []
+  weakspots: []
+
+Ammo.Cal50BeowulfOni_AP:
+  $base: Ammo.Cal50BeowulfOni
+  friendlyName: '50_beowulf_oni_armor_piercing'
+  displayName: LocKey#8100339
+  localizedDescription: LocKey#8100591
+  tags:
+    - !append-once DPAE_Cal50BeowulfOni_AP
+
+Ammo.Cal50BeowulfOni_HP:
+  $base: Ammo.Cal50BeowulfOni
+  friendlyName: '50_beowulf_oni_hollow_point'
+  displayName: LocKey#8100340
+  localizedDescription: LocKey#8100591
+  tags:
+    - !append-once DPAE_Cal50BeowulfOni_HP
+
+Ammo.Cal50BeowulfOni_EMP:
+  $base: Ammo.Cal50BeowulfOni
+  friendlyName: '50_beowulf_oni_emp'
+  displayName: LocKey#8100341
+  localizedDescription: LocKey#8100591
+  tags:
+    - !append-once DPAE_Cal50BeowulfOni_EMP
+
+Ammo.Cal50BeowulfOni_INC:
+  $base: Ammo.Cal50BeowulfOni
+  friendlyName: '50_beowulf_oni_incendiary'
+  displayName: LocKey#8100342
+  localizedDescription: LocKey#8100591
+  tags:
+    - !append-once DPAE_Cal50BeowulfOni_INC
+
+Ammo.Cal50BeowulfOni_CHEM:
+  $base: Ammo.Cal50BeowulfOni
+  friendlyName: '50_beowulf_oni_chemical'
+  displayName: LocKey#8100343
+  localizedDescription: LocKey#8100591
+  tags:
+    - !append-once DPAE_Cal50BeowulfOni_CHEM
+
+Ammo.Cal50BeowulfOni_NL:
+  $base: Ammo.Cal50BeowulfOni
+  friendlyName: '50_beowulf_oni_non-lethal'
+  displayName: LocKey#8100344
+  localizedDescription: LocKey#8100591
+  tags:
+    - !append-once DPAE_Cal50BeowulfOni_NL

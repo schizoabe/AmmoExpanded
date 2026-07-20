@@ -1,0 +1,104 @@
+Ammo.Cal4p7x10TF:
+  animationParameters: []
+  animFeatureName: ItemData
+  animName: ui_garment_pose
+  animSetResource: ''
+  appearanceSuffixes: []
+  appearanceSuffixesOwnerOverride: []
+  attachmentSlots: []
+  buyPrice:
+    - Price.Ammo
+    - Price.BuyPrice_StreetCred_Discount
+    - Price.PowerAmmo
+  cameraForward: {x: 0, y: 0, z: 0}
+  cameraUp: {x: 0, y: 0, z: 0}
+  canDrop: True
+  connections: []
+  CraftingData: Ammo.AmmoBase_inline0
+  crosshair: Crosshairs.None
+  deprecated: False
+  displayName: LocKey#8100427
+  dropObject: ammoDrop
+  effectors: []
+  enableNpcRPGData: False
+  entityName: ammo_box_handgun
+  equipAreas: []
+  equipPrereqs: []
+  friendlyName: '47x10mm_tungsten_flechettes'
+  gameplayRestrictions:
+    - GameplayRestriction.VehicleCombatNoInterruptions
+  garmentOffset: 0
+  hairSkinnedMeshComponents: []
+  icon: UIIcon.ItemIcon
+  iconPath: ''
+  isCached: False
+  isCoreCW: False
+  isCustomizable: False
+  isGarment: False
+  isPart: False
+  isSingleInstance: True
+  itemCategory: ItemCategory.General
+  itemType: ItemType.Con_Ammo
+  localizedDescription: LocKey#8100587
+  localizedName: ''
+  mass: 1
+  minigameInstance: minigame_v2.DefaultItemMinigame
+  objectActions:
+    - ItemAction.Drop
+    - ItemAction.Disassemble
+  OnAttach: []
+  OnEquip: []
+  OnLooted: []
+  parts: []
+  placementSlots: []
+  powerLevelDeterminedByParent: False
+  previewBBoxOverride: []
+  quality: Quality.Common
+  qualityRestrictedByParent: False
+  replicateWhenNotActive: False
+  requiredSlots: []
+  savable: False
+  sellPrice:
+    - Price.Ammo
+    - Price.PowerAmmo
+  slotPartList: []
+  slotPartListPreset: []
+  statModifierGroups: []
+  statPools: []
+  tags:
+    - Ammo
+    - ShowStackPrice
+    - Cal4p7x10TF
+  $base: Ammo.RifleAmmo
+  upgradeCostMult: 1
+  useHeadgearGarmentAggregator: False
+  useNewSpawnMethod: False
+  usesVariants: False
+  variants: []
+  visualTags: []
+  weakspots: []
+
+
+Ammo.Cal4p7x10TF_EMP:
+  $base: Ammo.Cal4p7x10TF
+  friendlyName: '47x10mm_tungsten_flechettes_emp'
+  displayName: LocKey#8100430
+  localizedDescription: LocKey#8100587
+  tags:
+    - !append-once DPAE_Cal4p7x10TF_EMP
+
+Ammo.Cal4p7x10TF_INC:
+  $base: Ammo.Cal4p7x10TF
+  friendlyName: '47x10mm_tungsten_flechettes_incendiary'
+  displayName: LocKey#8100431
+  localizedDescription: LocKey#8100587
+  tags:
+    - !append-once DPAE_Cal4p7x10TF_INC
+
+Ammo.Cal4p7x10TF_CHEM:
+  $base: Ammo.Cal4p7x10TF
+  friendlyName: '47x10mm_tungsten_flechettes_chemical'
+  displayName: LocKey#8100432
+  localizedDescription: LocKey#8100587
+  tags:
+    - !append-once DPAE_Cal4p7x10TF_CHEM

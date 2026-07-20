@@ -1,0 +1,96 @@
+Ammo.Cal12Gauge:
+  animationParameters: []
+  animFeatureName: ItemData
+  animName: ui_garment_pose
+  animSetResource: ''
+  appearanceSuffixes: []
+  appearanceSuffixesOwnerOverride: []
+  attachmentSlots: []
+  buyPrice:
+    - Price.Ammo
+    - Price.BuyPrice_StreetCred_Discount
+    - Price.PowerAmmo
+  cameraForward: {x: 0, y: 0, z: 0}
+  cameraUp: {x: 0, y: 0, z: 0}
+  canDrop: True
+  connections: []
+  CraftingData: Ammo.AmmoBase_inline0
+  crosshair: Crosshairs.None
+  deprecated: False
+  displayName: LocKey#8100381
+  dropObject: ammoDrop
+  effectors: []
+  enableNpcRPGData: False
+  entityName: ammo_box_shotgun
+  equipAreas: []
+  equipPrereqs: []
+  friendlyName: '12_gauge_buckshot'
+  gameplayRestrictions:
+    - GameplayRestriction.VehicleCombatNoInterruptions
+  garmentOffset: 0
+  hairSkinnedMeshComponents: []
+  icon: UIIcon.ItemIcon
+  iconPath: ''
+  isCached: False
+  isCoreCW: False
+  isCustomizable: False
+  isGarment: False
+  isPart: False
+  isSingleInstance: True
+  itemCategory: ItemCategory.General
+  itemType: ItemType.Con_Ammo
+  localizedDescription: LocKey#8100569
+  localizedName: ''
+  mass: 1
+  minigameInstance: minigame_v2.DefaultItemMinigame
+  objectActions:
+    - ItemAction.Drop
+    - ItemAction.Disassemble
+  OnAttach: []
+  OnEquip: []
+  OnLooted: []
+  parts: []
+  placementSlots: []
+  powerLevelDeterminedByParent: False
+  previewBBoxOverride: []
+  quality: Quality.Common
+  qualityRestrictedByParent: False
+  replicateWhenNotActive: False
+  requiredSlots: []
+  savable: False
+  sellPrice:
+    - Price.Ammo
+    - Price.PowerAmmo
+  slotPartList: []
+  slotPartListPreset: []
+  statModifierGroups: []
+  statPools: []
+  tags:
+    - Ammo
+    - ShowStackPrice
+    - Cal12Gauge
+  $base: Ammo.ShotgunAmmo
+  upgradeCostMult: 1
+  useHeadgearGarmentAggregator: False
+  useNewSpawnMethod: False
+  usesVariants: False
+  variants: []
+  visualTags: []
+  weakspots: []
+
+Ammo.Cal12Gauge_Slug:
+  $base: Ammo.Cal12Gauge
+  friendlyName: '12_gauge_buckshot_slug'
+  displayName: LocKey#8100382
+  localizedDescription: LocKey#8100569
+  tags:
+    - !append-once DPAE_Cal12Gauge_Slug
+
+Ammo.Cal12Gauge_INC:
+  $base: Ammo.Cal12Gauge
+  friendlyName: '12_gauge_buckshot_incendiary'
+  displayName: LocKey#8100383
+  localizedDescription: LocKey#8100569
+  tags:
+    - !append-once DPAE_Cal12Gauge_INC
+

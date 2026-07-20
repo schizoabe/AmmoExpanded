@@ -1,0 +1,239 @@
+
+Items.Base_Lexington:
+  tags:
+    - !append-once DPAE_Cal9x19
+
+Items.Base_Slaughtomatic:
+  tags:
+    - !append-once DPAE_Cal9x19
+
+Items.Base_Guillotine:
+  tags:
+    - !append-once DPAE_Cal9x19
+
+Items.Base_Saratoga:
+  tags:
+    - !append-once DPAE_Cal10mmAuto
+
+Items.Base_Liberty:
+  tags:
+    - !append-once DPAE_Cal45Super
+
+Items.Base_Unity:
+  tags:
+    - !append-once DPAE_Cal45Super
+
+Items.Base_Nue:
+  tags:
+    - !append-once DPAE_Cal45WinMag
+
+Items.Base_Overture:
+  tags:
+    - !append-once DPAE_Cal454Casull
+
+Items.Base_Nova:
+  tags:
+    - !append-once DPAE_Cal12p3x41UdaR
+
+Items.Base_Metel:
+  tags:
+    - !append-once DPAE_Cal50AE
+
+Items.Base_Kenshin:
+  tags:
+    - !append-once DPAE_Cal10x20TF
+
+Items.Base_Omaha:
+  tags:
+    - !append-once DPAE_Cal5p7x28TF
+
+Items.Base_Ticon:
+  tags:
+    - !append-once DPAE_Cal5p7x28TF
+
+Items.Base_Burya:
+  tags:
+    - !append-once DPAE_Cal14x40TSlug
+
+Items.Base_Silverhand:
+  tags:
+    - !append-once DPAE_Cal500Malour
+
+Items.Base_Borg4a:
+  tags:
+    - !append-once DPAE_Cal3x10FlechCluster
+
+Items.Base_Ajax:
+  tags:
+    - !append-once DPAE_Cal243Win
+
+Items.Base_Masamune:
+  tags:
+    - !append-once DPAE_Cal6p5Arasaka
+
+Items.Base_Copperhead:
+  tags:
+    - !append-once DPAE_Cal5p56CT
+
+Items.Base_Umbra:
+  tags:
+    - !append-once DPAE_Cal5p45CT
+
+Items.Base_Pulsar:
+  tags:
+    - !append-once DPAE_Cal7p62x39Sov
+
+Items.Base_MA70:
+  tags:
+    - !append-once DPAE_Cal7p62x39Sov
+
+Items.Base_Kyubi:
+  tags:
+    - !append-once DPAE_Cal7p62x39Sov
+
+Items.Base_Defender:
+  tags:
+    - !append-once DPAE_Cal5p56x45NUSA
+
+Items.Base_Achilles:
+  tags:
+    - !append-once DPAE_Cal4p7x10TF
+
+Items.Base_Sidewinder:
+  tags:
+    - !append-once DPAE_Cal10x40Rocket
+
+Items.Base_Hercules:
+  tags:
+    - !append-once DPAE_Cal12x45Rocket
+
+Items.Preset_HMG_Default:
+  tags:
+    - !append-once DPAE_Cal50BMG
+
+Items.Base_Sor22:
+  tags:
+    - !append-once DPAE_Cal50BMG
+
+Items.Base_Osprey:
+  tags:
+    - !append-once DPAE_Cal20x102Vulcan
+
+Items.Base_Kolac:
+  tags:
+    - !append-once DPAE_Cal22x126AC
+
+Items.Base_Grad:
+  tags:
+    - !append-once DPAE_Cal23x152Sov
+
+Items.Base_Nekomata:
+  tags:
+    - !append-once DPAE_Cal15x80TSpike
+
+Items.Base_Rasetsu:
+  tags:
+    - !append-once DPAE_Cal15x80TSpike
+
+Items.Base_Ashura:
+  tags:
+    - !append-once DPAE_Cal12p7x70Rocket
+    - !append-once DPAE_MaskedAmmo
+
+Items.Base_Palica:
+  tags:
+    - !append-once DPAE_Cal15x55Rocket
+
+Items.Base_Zhuo:
+  tags:
+    - !append-once DPAE_Cal18x70Rocket
+
+Items.Base_Chao:
+  tags:
+    - !append-once DPAE_Cal6p5x25Minirocket
+
+Items.Base_Kappa:
+  tags:
+    - !append-once DPAE_Cal6p5x25Minirocket
+
+Items.Base_Yukimura:
+  tags:
+    - !append-once DPAE_Cal6p5x25Minirocket
+
+Items.Base_Shingen:
+  tags:
+    - !append-once DPAE_Cal9p5x35Minirocket
+
+Items.Base_Dian:
+  tags:
+    - !append-once DPAE_Cal9p5x35Minirocket
+
+Items.Base_Warden:
+  tags:
+    - !append-once DPAE_Cal9p5x35Minirocket
+
+Items.Base_Senkoh:
+  tags:
+    - !append-once DPAE_Cal8x30RailF
+
+Items.Base_Quasar:
+  tags:
+    - !append-once DPAE_Cal8x30TShot
+
+Items.Base_Grit:
+  tags:
+    - !append-once DPAE_Cal9x30TF
+
+Items.Base_Pozhar:
+  tags:
+    - !append-once DPAE_Cal12Gauge
+
+Items.Base_Tactician:
+  tags:
+    - !append-once DPAE_Cal12Gauge
+    - !append-once DPAE_TubeFed
+
+Items.Base_Crusher:
+  tags:
+    - !append-once DPAE_Cal12Gauge
+
+Items.Base_Carnage:
+  tags:
+    - !append-once DPAE_Cal4Gauge
+    - !append-once DPAE_TubeFed
+
+Items.Base_Testera:
+  tags:
+    - !append-once DPAE_Cal10GaugeBuck
+    - !append-once DPAE_TubeFed
+
+Items.Base_Igla:
+  tags:
+    - !append-once DPAE_Cal10GaugeBuck
+    - !append-once DPAE_TubeFed
+
+Items.Base_Satara:
+  tags:
+    - !append-once DPAE_Cal10GaugeFlech
+    - !append-once DPAE_TubeFed
+
+
+Items.Preset_Liberty_Rogue:
+  tags:
+    - !append-once DPAE_Cal10mmAuto
+
+Items.Preset_Liberty_Yorinobu:
+  tags:
+    - !append-once DPAE_Cal45WinMag
+
+Items.Preset_Lexington_Wilson:
+  tags:
+    - !append-once DPAE_Cal45Super
+
+Items.Preset_Masamune_Rogue:
+  tags:
+    - !append-once DPAE_Cal50BeowulfOni
+
+Items.Preset_Burya_Comrade:
+  tags:
+    - !append-once DPAE_Cal14x70TSlugHE

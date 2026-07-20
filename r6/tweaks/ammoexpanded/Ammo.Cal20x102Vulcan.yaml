@@ -1,0 +1,95 @@
+Ammo.Cal20x102Vulcan:
+  animationParameters: []
+  animFeatureName: ItemData
+  animName: ui_garment_pose
+  animSetResource: ''
+  appearanceSuffixes: []
+  appearanceSuffixesOwnerOverride: []
+  attachmentSlots: []
+  buyPrice:
+    - Price.Ammo
+    - Price.BuyPrice_StreetCred_Discount
+    - Price.PowerAmmo
+  cameraForward: {x: 0, y: 0, z: 0}
+  cameraUp: {x: 0, y: 0, z: 0}
+  canDrop: True
+  connections: []
+  CraftingData: Ammo.AmmoBase_inline0
+  crosshair: Crosshairs.None
+  deprecated: False
+  displayName: LocKey#8100413
+  dropObject: ammoDrop
+  effectors: []
+  enableNpcRPGData: False
+  entityName: ammo_box_handgun
+  equipAreas: []
+  equipPrereqs: []
+  friendlyName: '20x102mm_vulcan'
+  gameplayRestrictions:
+    - GameplayRestriction.VehicleCombatNoInterruptions
+  garmentOffset: 0
+  hairSkinnedMeshComponents: []
+  icon: UIIcon.ItemIcon
+  iconPath: ''
+  isCached: False
+  isCoreCW: False
+  isCustomizable: False
+  isGarment: False
+  isPart: False
+  isSingleInstance: True
+  itemCategory: ItemCategory.General
+  itemType: ItemType.Con_Ammo
+  localizedDescription: LocKey#8100578
+  localizedName: ''
+  mass: 1
+  minigameInstance: minigame_v2.DefaultItemMinigame
+  objectActions:
+    - ItemAction.Drop
+    - ItemAction.Disassemble
+  OnAttach: []
+  OnEquip: []
+  OnLooted: []
+  parts: []
+  placementSlots: []
+  powerLevelDeterminedByParent: False
+  previewBBoxOverride: []
+  quality: Quality.Common
+  qualityRestrictedByParent: False
+  replicateWhenNotActive: False
+  requiredSlots: []
+  savable: False
+  sellPrice:
+    - Price.Ammo
+    - Price.PowerAmmo
+  slotPartList: []
+  slotPartListPreset: []
+  statModifierGroups: []
+  statPools: []
+  tags:
+    - Ammo
+    - ShowStackPrice
+    - Cal20x102Vulcan
+  $base: Ammo.SniperRifleAmmo
+  upgradeCostMult: 1
+  useHeadgearGarmentAggregator: False
+  useNewSpawnMethod: False
+  usesVariants: False
+  variants: []
+  visualTags: []
+  weakspots: []
+
+Ammo.Cal20x102Vulcan_HE:
+  $base: Ammo.Cal20x102Vulcan
+  friendlyName: '20x102mm_vulcan_high_explosive'
+  displayName: LocKey#8100414
+  localizedDescription: LocKey#8100578
+  tags:
+    - !append-once DPAE_Cal20x102Vulcan_HE
+
+Ammo.Cal20x102Vulcan_INC:
+  $base: Ammo.Cal20x102Vulcan
+  friendlyName: '20x102mm_vulcan_incendiary'
+  displayName: LocKey#8100415
+  localizedDescription: LocKey#8100578
+  tags:
+    - !append-once DPAE_Cal20x102Vulcan_INC

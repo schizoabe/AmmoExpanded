@@ -1,0 +1,6 @@
+Ammo.AmmoBase_inline0:
+  craftingExpModifier: 1
+  craftingRecipe:
+    - Ammo.AmmoBase_inline1
+  overcraftPenaltyModifier: 1
+  $type: gamedataCraftingPackage_Record

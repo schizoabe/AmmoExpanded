@@ -1,0 +1,127 @@
+Ammo.Cal12p3x41UdaR:
+  animationParameters: []
+  animFeatureName: ItemData
+  animName: ui_garment_pose
+  animSetResource: ''
+  appearanceSuffixes: []
+  appearanceSuffixesOwnerOverride: []
+  attachmentSlots: []
+  buyPrice:
+    - Price.Ammo
+    - Price.BuyPrice_StreetCred_Discount
+    - Price.PowerAmmo
+  cameraForward: {x: 0, y: 0, z: 0}
+  cameraUp: {x: 0, y: 0, z: 0}
+  canDrop: True
+  connections: []
+  CraftingData: Ammo.AmmoBase_inline0
+  crosshair: Crosshairs.None
+  deprecated: False
+  displayName: LocKey#8100384
+  dropObject: ammoDrop
+  effectors: []
+  enableNpcRPGData: False
+  entityName: ammo_box_handgun
+  equipAreas: []
+  equipPrereqs: []
+  friendlyName: '123x41mm_udar'
+  gameplayRestrictions:
+    - GameplayRestriction.VehicleCombatNoInterruptions
+  garmentOffset: 0
+  hairSkinnedMeshComponents: []
+  icon: UIIcon.ItemIcon
+  iconPath: ''
+  isCached: False
+  isCoreCW: False
+  isCustomizable: False
+  isGarment: False
+  isPart: False
+  isSingleInstance: True
+  itemCategory: ItemCategory.General
+  itemType: ItemType.Con_Ammo
+  localizedDescription: LocKey#8100570
+  localizedName: ''
+  mass: 1
+  minigameInstance: minigame_v2.DefaultItemMinigame
+  objectActions:
+    - ItemAction.Drop
+    - ItemAction.Disassemble
+  OnAttach: []
+  OnEquip: []
+  OnLooted: []
+  parts: []
+  placementSlots: []
+  powerLevelDeterminedByParent: False
+  previewBBoxOverride: []
+  quality: Quality.Common
+  qualityRestrictedByParent: False
+  replicateWhenNotActive: False
+  requiredSlots: []
+  savable: False
+  sellPrice:
+    - Price.Ammo
+    - Price.PowerAmmo
+  slotPartList: []
+  slotPartListPreset: []
+  statModifierGroups: []
+  statPools: []
+  tags:
+    - Ammo
+    - ShowStackPrice
+    - Cal12p3x41UdaR
+  $base: Ammo.HandgunAmmo
+  upgradeCostMult: 1
+  useHeadgearGarmentAggregator: False
+  useNewSpawnMethod: False
+  usesVariants: False
+  variants: []
+  visualTags: []
+  weakspots: []
+
+Ammo.Cal12p3x41UdaR_AP:
+  $base: Ammo.Cal12p3x41UdaR
+  friendlyName: '123x41mm_udar_armor_piercing'
+  displayName: LocKey#8100385
+  localizedDescription: LocKey#8100570
+  tags:
+    - !append-once DPAE_Cal12p3x41UdaR_AP
+
+Ammo.Cal12p3x41UdaR_HP:
+  $base: Ammo.Cal12p3x41UdaR
+  friendlyName: '123x41mm_udar_hollow_point'
+  displayName: LocKey#8100386
+  localizedDescription: LocKey#8100570
+  tags:
+    - !append-once DPAE_Cal12p3x41UdaR_HP
+
+Ammo.Cal12p3x41UdaR_INC:
+  $base: Ammo.Cal12p3x41UdaR
+  friendlyName: '123x41mm_udar_incendiary'
+  displayName: LocKey#8100387
+  localizedDescription: LocKey#8100570
+  tags:
+    - !append-once DPAE_Cal12p3x41UdaR_INC
+
+Ammo.Cal12p3x41UdaR_HE:
+  $base: Ammo.Cal12p3x41UdaR
+  friendlyName: '123x41mm_udar_high_explosive'
+  displayName: LocKey#8100555
+  localizedDescription: LocKey#8100570
+  tags:
+    - !append-once DPAE_Cal12p3x41UdaR_HE
+
+Ammo.Cal12p3x41UdaR_CHEM:
+  $base: Ammo.Cal12p3x41UdaR
+  friendlyName: '123x41mm_udar_chemical'
+  displayName: LocKey#8100559
+  localizedDescription: LocKey#8100570
+  tags:
+    - !append-once DPAE_Cal12p3x41UdaR_CHEM
+
+Ammo.Cal12p3x41UdaR_Snakeshot:
+  $base: Ammo.Cal12p3x41UdaR
+  friendlyName: '123x41mm_udar_snakeshot'
+  displayName: LocKey#8100619
+  localizedDescription: LocKey#8100570
+  tags:
+    - !append-once DPAE_Cal12p3x41UdaR_Snakeshot

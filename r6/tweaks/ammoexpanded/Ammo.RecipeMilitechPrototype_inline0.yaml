@@ -1,0 +1,4 @@
+Ammo.RecipeMilitechPrototype_inline0:
+  amount: 3
+  item: Ammo.MilitechPrototype
+  $type: gamedataCraftingResult_Record

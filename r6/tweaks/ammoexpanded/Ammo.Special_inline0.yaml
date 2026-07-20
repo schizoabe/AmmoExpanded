@@ -1,0 +1,5 @@
+Ammo.Special_inline0:
+  modifierType: Additive
+  statType: BaseStats.Price
+  $type: gamedataConstantStatModifier_Record
+  value: 1

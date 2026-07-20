@@ -1,0 +1,9 @@
+Ammo.DPAE_Dummy:
+  $base: Ammo.HandgunAmmo
+  displayName: LocKey#50354
+  localizedDescription: LocKey#50355
+  tags:
+    - Ammo
+    - ShowStackPrice
+    - HandgunAmmo
+  $type: gamedataItem_Record

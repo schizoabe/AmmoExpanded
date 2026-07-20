@@ -1,0 +1,242 @@
+
+
+Items.CausticMod1_Base:
+  $base: Items.PowerMod1_Base
+  displayName: LocKey#8100614
+  statModifiers: []
+  icon:
+    atlasResourcePath: base/gameplay/gui/common/icons/items/item_icons8.inkatlas
+    atlasPartName: power_03_epic
+
+Items.CausticMod1_Common:
+  $base: Items.CausticMod1_Base
+  quality: Quality.Common
+  OnLooted: [ Items.CausticMod1_Common_OnLooted ]
+
+Items.CausticMod1_Common_OnLooted:
+  $type: gamedataGameplayLogicPackage_Record
+  items:
+    - $type: gamedataInventoryItem_Record
+      chanceInCrowd: 0
+      item: Items.CausticMod1_Uncommon_Recipe
+      quantity: 1
+
+Items.CausticMod1_Uncommon_Recipe:
+  $base: Items.PowerMod1_Uncommon_Recipe
+  craftingResult:
+    amount: 1
+    item: Items.CausticMod1_Uncommon
+
+Items.CausticMod1_Uncommon:
+  $base: Items.CausticMod1_Base
+  quality: Quality.Uncommon
+  CraftingData:
+    $type: gamedataCraftingPackage_Record
+    craftingExpModifier: 1
+    overcraftPenaltyModifier: 1
+    craftingRecipe:
+      - $type: gamedataRecipeElement_Record
+        amount: 2
+        ingredient: Items.CausticMod1_Common
+  OnLooted: [ Items.CausticMod1_Uncommon_OnLooted ]
+
+Items.CausticMod1_Uncommon_OnLooted:
+  $type: gamedataGameplayLogicPackage_Record
+  items:
+    - $type: gamedataInventoryItem_Record
+      chanceInCrowd: 0
+      item: Items.CausticMod1_Rare_Recipe
+      quantity: 1
+
+Items.CausticMod1_Rare_Recipe:
+  $base: Items.PowerMod1_Rare_Recipe
+  craftingResult:
+    amount: 1
+    item: Items.CausticMod1_Rare
+
+Items.CausticMod1_Rare:
+  $base: Items.CausticMod1_Base
+  quality: Quality.Rare
+  CraftingData:
+    $type: gamedataCraftingPackage_Record
+    craftingExpModifier: 1
+    overcraftPenaltyModifier: 1
+    craftingRecipe:
+      - $type: gamedataRecipeElement_Record
+        amount: 2
+        ingredient: Items.CausticMod1_Uncommon
+  OnLooted: [ Items.CausticMod1_Rare_OnLooted ]
+
+Items.CausticMod1_Rare_OnLooted:
+  $type: gamedataGameplayLogicPackage_Record
+  items:
+    - $type: gamedataInventoryItem_Record
+      chanceInCrowd: 0
+      item: Items.CausticMod1_Epic_Recipe
+      quantity: 1
+
+Items.CausticMod1_Epic_Recipe:
+  $base: Items.PowerMod1_Epic_Recipe
+  craftingResult:
+    amount: 1
+    item: Items.CausticMod1_Epic
+
+Items.CausticMod1_Epic:
+  $base: Items.CausticMod1_Base
+  quality: Quality.Epic
+  CraftingData:
+    $type: gamedataCraftingPackage_Record
+    craftingExpModifier: 1
+    overcraftPenaltyModifier: 1
+    craftingRecipe:
+      - $type: gamedataRecipeElement_Record
+        amount: 2
+        ingredient: Items.CausticMod1_Rare
+  OnLooted: [ Items.CausticMod1_Epic_OnLooted ]
+
+Items.CausticMod1_Epic_OnLooted:
+  $type: gamedataGameplayLogicPackage_Record
+  items:
+    - $type: gamedataInventoryItem_Record
+      chanceInCrowd: 0
+      item: Items.CausticMod1_Legendary_Recipe
+      quantity: 1
+
+Items.CausticMod1_Legendary_Recipe:
+  $base: Items.PowerMod1_Legendary_Recipe
+  craftingResult:
+    amount: 1
+    item: Items.CausticMod1_Legendary
+
+Items.CausticMod1_Legendary:
+  $base: Items.CausticMod1_Base
+  quality: Quality.Legendary
+  CraftingData:
+    $type: gamedataCraftingPackage_Record
+    craftingExpModifier: 1
+    overcraftPenaltyModifier: 1
+    craftingRecipe:
+      - $type: gamedataRecipeElement_Record
+        amount: 2
+        ingredient: Items.CausticMod1_Epic
+
+
+Items.ArcMod1_Base:
+  $base: Items.PowerMod1_Base
+  displayName: LocKey#8100615
+  statModifiers: []
+  icon:
+    atlasResourcePath: base/gameplay/gui/common/icons/items/item_icons8.inkatlas
+    atlasPartName: power_03_epic
+
+Items.ArcMod1_Common:
+  $base: Items.ArcMod1_Base
+  quality: Quality.Common
+  OnLooted: [ Items.ArcMod1_Common_OnLooted ]
+
+Items.ArcMod1_Common_OnLooted:
+  $type: gamedataGameplayLogicPackage_Record
+  items:
+    - $type: gamedataInventoryItem_Record
+      chanceInCrowd: 0
+      item: Items.ArcMod1_Uncommon_Recipe
+      quantity: 1
+
+Items.ArcMod1_Uncommon_Recipe:
+  $base: Items.PowerMod1_Uncommon_Recipe
+  craftingResult:
+    amount: 1
+    item: Items.ArcMod1_Uncommon
+
+Items.ArcMod1_Uncommon:
+  $base: Items.ArcMod1_Base
+  quality: Quality.Uncommon
+  CraftingData:
+    $type: gamedataCraftingPackage_Record
+    craftingExpModifier: 1
+    overcraftPenaltyModifier: 1
+    craftingRecipe:
+      - $type: gamedataRecipeElement_Record
+        amount: 2
+        ingredient: Items.ArcMod1_Common
+  OnLooted: [ Items.ArcMod1_Uncommon_OnLooted ]
+
+Items.ArcMod1_Uncommon_OnLooted:
+  $type: gamedataGameplayLogicPackage_Record
+  items:
+    - $type: gamedataInventoryItem_Record
+      chanceInCrowd: 0
+      item: Items.ArcMod1_Rare_Recipe
+      quantity: 1
+
+Items.ArcMod1_Rare_Recipe:
+  $base: Items.PowerMod1_Rare_Recipe
+  craftingResult:
+    amount: 1
+    item: Items.ArcMod1_Rare
+
+Items.ArcMod1_Rare:
+  $base: Items.ArcMod1_Base
+  quality: Quality.Rare
+  CraftingData:
+    $type: gamedataCraftingPackage_Record
+    craftingExpModifier: 1
+    overcraftPenaltyModifier: 1
+    craftingRecipe:
+      - $type: gamedataRecipeElement_Record
+        amount: 2
+        ingredient: Items.ArcMod1_Uncommon
+  OnLooted: [ Items.ArcMod1_Rare_OnLooted ]
+
+Items.ArcMod1_Rare_OnLooted:
+  $type: gamedataGameplayLogicPackage_Record
+  items:
+    - $type: gamedataInventoryItem_Record
+      chanceInCrowd: 0
+      item: Items.ArcMod1_Epic_Recipe
+      quantity: 1
+
+Items.ArcMod1_Epic_Recipe:
+  $base: Items.PowerMod1_Epic_Recipe
+  craftingResult:
+    amount: 1
+    item: Items.ArcMod1_Epic
+
+Items.ArcMod1_Epic:
+  $base: Items.ArcMod1_Base
+  quality: Quality.Epic
+  CraftingData:
+    $type: gamedataCraftingPackage_Record
+    craftingExpModifier: 1
+    overcraftPenaltyModifier: 1
+    craftingRecipe:
+      - $type: gamedataRecipeElement_Record
+        amount: 2
+        ingredient: Items.ArcMod1_Rare
+  OnLooted: [ Items.ArcMod1_Epic_OnLooted ]
+
+Items.ArcMod1_Epic_OnLooted:
+  $type: gamedataGameplayLogicPackage_Record
+  items:
+    - $type: gamedataInventoryItem_Record
+      chanceInCrowd: 0
+      item: Items.ArcMod1_Legendary_Recipe
+      quantity: 1
+
+Items.ArcMod1_Legendary_Recipe:
+  $base: Items.PowerMod1_Legendary_Recipe
+  craftingResult:
+    amount: 1
+    item: Items.ArcMod1_Legendary
+
+Items.ArcMod1_Legendary:
+  $base: Items.ArcMod1_Base
+  quality: Quality.Legendary
+  CraftingData:
+    $type: gamedataCraftingPackage_Record
+    craftingExpModifier: 1
+    overcraftPenaltyModifier: 1
+    craftingRecipe:
+      - $type: gamedataRecipeElement_Record
+        amount: 2
+        ingredient: Items.ArcMod1_Epic

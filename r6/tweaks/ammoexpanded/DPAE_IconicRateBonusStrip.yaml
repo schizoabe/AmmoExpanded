@@ -1,0 +1,101 @@
+
+Items.PozharAirDropWeaponMod:
+  statModifiers:
+    - $type: gamedataConstantStatModifier_Record
+      statType: BaseStats.DamagePerHit
+      modifierType: Multiplier
+      value: 1.0486
+
+Items.GwentTiconWeaponMod:
+  statModifiers:
+    - $type: gamedataConstantStatModifier_Record
+      statType: BaseStats.ChargeTime
+      modifierType: AdditiveMultiplier
+      value: -0.2
+
+Items.TesteraNicolasWeaponMod:
+  statModifiers:
+    - $type: gamedataConstantStatModifier_Record
+      statType: BaseStats.EffectiveRange
+      modifierType: Multiplier
+      value: 0.6667
+    - $type: gamedataConstantStatModifier_Record
+      statType: BaseStats.ReloadTimeBonus
+      modifierType: Additive
+      value: 0.2
+    - $type: gamedataConstantStatModifier_Record
+      statType: BaseStats.HitDismembermentFactor
+      modifierType: Multiplier
+      value: 4
+    - $type: gamedataConstantStatModifier_Record
+      statType: BaseStats.HitWoundsFactor
+      modifierType: Multiplier
+      value: 4
+    - $type: gamedataConstantStatModifier_Record
+      statType: BaseStats.RicochetCount
+      modifierType: Multiplier
+      value: 0
+    - $type: gamedataConstantStatModifier_Record
+      statType: BaseStats.CanWeaponIgnoreArmor
+      modifierType: Additive
+      value: 0.25
+    - $type: gamedataConstantStatModifier_Record
+      statType: BaseStats.WeaponVehicleDamagePercentBonus
+      modifierType: Additive
+      value: 0.25
+
+Items.Preset_Grad_Scav:
+  tags:
+    - !append-once DPAE_IconicRateBonus_Sparky
+
+Items.GradScavWeaponMod:
+  statModifiers:
+    - $type: gamedataConstantStatModifier_Record
+      statType: BaseStats.ReloadTimeBonus
+      modifierType: Additive
+      value: -0.10
+    - $type: gamedataConstantStatModifier_Record
+      statType: BaseStats.HitDismembermentFactor
+      modifierType: Multiplier
+      value: 0
+    - $type: gamedataConstantStatModifier_Record
+      statType: BaseStats.HitWoundsFactor
+      modifierType: Multiplier
+      value: 0
+    - $type: gamedataConstantStatModifier_Record
+      statType: BaseStats.HeadshotDamageMultiplier
+      modifierType: Additive
+      value: -0.5
+
+Items.Preset_Grad_AirDrop:
+  tags:
+    - !append-once DPAE_IconicRateBonus_Borzaya
+
+Items.GradAirDropWeaponMod:
+  statModifiers:
+    - $type: gamedataConstantStatModifier_Record
+      statType: BaseStats.DamagePerHit
+      modifierType: Multiplier
+      value: 0.9
+
+Items.Preset_Tactician_Dino:
+  tags:
+    - !append-once DPAE_IconicRateBonus_BloodyMaria
+
+Items.TacticianDinoWeaponMod:
+  statModifiers:
+    - $type: gamedataConstantStatModifier_Record
+      statType: BaseStats.HitDismembermentFactor
+      modifierType: Multiplier
+      value: 6
+    - $type: gamedataConstantStatModifier_Record
+      statType: BaseStats.HitWoundsFactor
+      modifierType: Multiplier
+      value: 2
+    - $type: gamedataConstantStatModifier_Record
+      statType: BaseStats.KnockdownImpulse
+      modifierType: Additive
+      value: 10
+
+Items.SidewinderDividedWeaponMod:
+  statModifiers: []

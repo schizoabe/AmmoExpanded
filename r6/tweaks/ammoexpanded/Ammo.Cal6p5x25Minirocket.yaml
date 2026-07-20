@@ -1,0 +1,112 @@
+Ammo.Cal6p5x25Minirocket:
+  animationParameters: []
+  animFeatureName: ItemData
+  animName: ui_garment_pose
+  animSetResource: ''
+  appearanceSuffixes: []
+  appearanceSuffixesOwnerOverride: []
+  attachmentSlots: []
+  buyPrice:
+    - Price.Ammo
+    - Price.BuyPrice_StreetCred_Discount
+    - Price.PowerAmmo
+  cameraForward: {x: 0, y: 0, z: 0}
+  cameraUp: {x: 0, y: 0, z: 0}
+  canDrop: True
+  connections: []
+  CraftingData: Ammo.AmmoBase_inline0
+  crosshair: Crosshairs.None
+  deprecated: False
+  displayName: LocKey#8100460
+  dropObject: ammoDrop
+  effectors: []
+  enableNpcRPGData: False
+  entityName: ammo_box_handgun
+  equipAreas: []
+  equipPrereqs: []
+  friendlyName: '65x25mm_guided_minirocket'
+  gameplayRestrictions:
+    - GameplayRestriction.VehicleCombatNoInterruptions
+  garmentOffset: 0
+  hairSkinnedMeshComponents: []
+  icon: UIIcon.ItemIcon
+  iconPath: ''
+  isCached: False
+  isCoreCW: False
+  isCustomizable: False
+  isGarment: False
+  isPart: False
+  isSingleInstance: True
+  itemCategory: ItemCategory.General
+  itemType: ItemType.Con_Ammo
+  localizedDescription: LocKey#8100597
+  localizedName: ''
+  mass: 1
+  minigameInstance: minigame_v2.DefaultItemMinigame
+  objectActions:
+    - ItemAction.Drop
+    - ItemAction.Disassemble
+  OnAttach: []
+  OnEquip: []
+  OnLooted: []
+  parts: []
+  placementSlots: []
+  powerLevelDeterminedByParent: False
+  previewBBoxOverride: []
+  quality: Quality.Common
+  qualityRestrictedByParent: False
+  replicateWhenNotActive: False
+  requiredSlots: []
+  savable: False
+  sellPrice:
+    - Price.Ammo
+    - Price.PowerAmmo
+  slotPartList: []
+  slotPartListPreset: []
+  statModifierGroups: []
+  statPools: []
+  tags:
+    - Ammo
+    - ShowStackPrice
+    - Cal6p5x25Minirocket
+  $base: Ammo.HandgunAmmo
+  upgradeCostMult: 1
+  useHeadgearGarmentAggregator: False
+  useNewSpawnMethod: False
+  usesVariants: False
+  variants: []
+  visualTags: []
+  weakspots: []
+
+
+Ammo.Cal6p5x25Minirocket_EMP:
+  $base: Ammo.Cal6p5x25Minirocket
+  friendlyName: '65x25mm_guided_minirocket_emp'
+  displayName: LocKey#8100463
+  localizedDescription: LocKey#8100597
+  tags:
+    - !append-once DPAE_Cal6p5x25Minirocket_EMP
+
+Ammo.Cal6p5x25Minirocket_INC:
+  $base: Ammo.Cal6p5x25Minirocket
+  friendlyName: '65x25mm_guided_minirocket_incendiary'
+  displayName: LocKey#8100464
+  localizedDescription: LocKey#8100597
+  tags:
+    - !append-once DPAE_Cal6p5x25Minirocket_INC
+
+Ammo.Cal6p5x25Minirocket_CHEM:
+  $base: Ammo.Cal6p5x25Minirocket
+  friendlyName: '65x25mm_guided_minirocket_chemical'
+  displayName: LocKey#8100465
+  localizedDescription: LocKey#8100597
+  tags:
+    - !append-once DPAE_Cal6p5x25Minirocket_CHEM
+
+Ammo.Cal6p5x25Minirocket_HE:
+  $base: Ammo.Cal6p5x25Minirocket
+  friendlyName: '65x25mm_guided_minirocket_high_explosive'
+  displayName: LocKey#8100552
+  localizedDescription: LocKey#8100597
+  tags:
+    - !append-once DPAE_Cal6p5x25Minirocket_HE

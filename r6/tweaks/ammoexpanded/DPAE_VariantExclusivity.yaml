@@ -1,0 +1,24 @@
+
+Items.Preset_Grad_AirDrop:  # Borzaya — Cal23x152Sov
+  tags:
+    - !append-once DPAE_VariantExclusive_HE
+
+Items.Preset_Grad_Buck:  # O'Five — Cal23x152Sov
+  tags:
+    - !append-once DPAE_VariantExclusive_HE
+
+Items.Preset_Liberty_Padre:  # Seraph — Cal45Super (Liberty, Plan B, Unity, Her Majesty, Cheetah, Dying Night lose HE access)
+  tags:
+    - !append-once DPAE_VariantExclusive_HE
+
+Items.Preset_Nova_Doom_Doom:  # Doom Doom — Cal12p3x41UdaR (DR5 Nova, Mancinella lose HE access)
+  tags:
+    - !append-once DPAE_VariantExclusive_HE
+
+Items.Preset_Copperhead_Genesis:  # Psalm 11:6 — Cal5p56CT (D5 Copperhead loses HE access)
+  tags:
+    - !append-once DPAE_VariantExclusive_HE
+
+Items.Preset_Carnage_Mox:
+  tags:
+    - !append-once DPAE_VariantExclusive_EMP

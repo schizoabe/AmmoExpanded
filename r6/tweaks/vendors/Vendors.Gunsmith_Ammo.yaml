@@ -1,0 +1,613 @@
+Ammo.Cal9x19_VendorQty:
+  $type: gamedataConstantStatModifier_Record
+  modifierType: Additive
+  statType: BaseStats.Quantity
+  value: 600
+
+Ammo.Cal7p62x39Sov_VendorQty:
+  $type: gamedataConstantStatModifier_Record
+  modifierType: Additive
+  statType: BaseStats.Quantity
+  value: 600
+
+Ammo.Cal12Gauge_VendorQty:
+  $type: gamedataConstantStatModifier_Record
+  modifierType: Additive
+  statType: BaseStats.Quantity
+  value: 600
+
+Ammo.Cal6p5x25Minirocket_VendorQty:
+  $type: gamedataConstantStatModifier_Record
+  modifierType: Additive
+  statType: BaseStats.Quantity
+  value: 600
+
+Ammo.Cal9p5x35Minirocket_VendorQty:
+  $type: gamedataConstantStatModifier_Record
+  modifierType: Additive
+  statType: BaseStats.Quantity
+  value: 600
+
+Ammo.Cal45Super_VendorQty:
+  $type: gamedataConstantStatModifier_Record
+  modifierType: Additive
+  statType: BaseStats.Quantity
+  value: 600
+
+Ammo.Cal5p56x45NUSA_VendorQty:
+  $type: gamedataConstantStatModifier_Record
+  modifierType: Additive
+  statType: BaseStats.Quantity
+  value: 600
+
+Ammo.Cal5p56CT_VendorQty:
+  $type: gamedataConstantStatModifier_Record
+  modifierType: Additive
+  statType: BaseStats.Quantity
+  value: 600
+
+Ammo.Cal5p45CT_VendorQty:
+  $type: gamedataConstantStatModifier_Record
+  modifierType: Additive
+  statType: BaseStats.Quantity
+  value: 600
+
+Ammo.Cal45WinMag_VendorQty:
+  $type: gamedataConstantStatModifier_Record
+  modifierType: Additive
+  statType: BaseStats.Quantity
+  value: 300
+
+Ammo.Cal454Casull_VendorQty:
+  $type: gamedataConstantStatModifier_Record
+  modifierType: Additive
+  statType: BaseStats.Quantity
+  value: 300
+
+Ammo.Cal50AE_VendorQty:
+  $type: gamedataConstantStatModifier_Record
+  modifierType: Additive
+  statType: BaseStats.Quantity
+  value: 300
+
+Ammo.Cal50BeowulfOni_VendorQty:
+  $type: gamedataConstantStatModifier_Record
+  modifierType: Additive
+  statType: BaseStats.Quantity
+  value: 300
+
+Ammo.Cal10mmAuto_VendorQty:
+  $type: gamedataConstantStatModifier_Record
+  modifierType: Additive
+  statType: BaseStats.Quantity
+  value: 300
+
+Ammo.Cal10x20TF_VendorQty:
+  $type: gamedataConstantStatModifier_Record
+  modifierType: Additive
+  statType: BaseStats.Quantity
+  value: 300
+
+Ammo.Cal12p3x41UdaR_VendorQty:
+  $type: gamedataConstantStatModifier_Record
+  modifierType: Additive
+  statType: BaseStats.Quantity
+  value: 300
+
+Ammo.Cal10GaugeBuck_VendorQty:
+  $type: gamedataConstantStatModifier_Record
+  modifierType: Additive
+  statType: BaseStats.Quantity
+  value: 300
+
+Ammo.Cal10GaugeFlech_VendorQty:
+  $type: gamedataConstantStatModifier_Record
+  modifierType: Additive
+  statType: BaseStats.Quantity
+  value: 300
+
+Ammo.Cal4Gauge_VendorQty:
+  $type: gamedataConstantStatModifier_Record
+  modifierType: Additive
+  statType: BaseStats.Quantity
+  value: 300
+
+Ammo.Cal5p7x28TF_VendorQty:
+  $type: gamedataConstantStatModifier_Record
+  modifierType: Additive
+  statType: BaseStats.Quantity
+  value: 300
+
+Ammo.Cal6p5Arasaka_VendorQty:
+  $type: gamedataConstantStatModifier_Record
+  modifierType: Additive
+  statType: BaseStats.Quantity
+  value: 300
+
+Ammo.Cal243Win_VendorQty:
+  $type: gamedataConstantStatModifier_Record
+  modifierType: Additive
+  statType: BaseStats.Quantity
+  value: 300
+
+Ammo.Cal4p7x10TF_VendorQty:
+  $type: gamedataConstantStatModifier_Record
+  modifierType: Additive
+  statType: BaseStats.Quantity
+  value: 300
+
+Ammo.Cal8x30RailF_VendorQty:
+  $type: gamedataConstantStatModifier_Record
+  modifierType: Additive
+  statType: BaseStats.Quantity
+  value: 300
+
+Ammo.Cal8x30TShot_VendorQty:
+  $type: gamedataConstantStatModifier_Record
+  modifierType: Additive
+  statType: BaseStats.Quantity
+  value: 300
+
+Ammo.Cal9x30TF_VendorQty:
+  $type: gamedataConstantStatModifier_Record
+  modifierType: Additive
+  statType: BaseStats.Quantity
+  value: 300
+
+Ammo.Cal15x80TSpike_VendorQty:
+  $type: gamedataConstantStatModifier_Record
+  modifierType: Additive
+  statType: BaseStats.Quantity
+  value: 300
+
+Ammo.Cal50BMG_VendorQty:
+  $type: gamedataConstantStatModifier_Record
+  modifierType: Additive
+  statType: BaseStats.Quantity
+  value: 300
+
+Ammo.Cal500Malour_VendorQty:
+  $type: gamedataConstantStatModifier_Record
+  modifierType: Additive
+  statType: BaseStats.Quantity
+  value: 80
+
+Ammo.Cal10x40Rocket_VendorQty:
+  $type: gamedataConstantStatModifier_Record
+  modifierType: Additive
+  statType: BaseStats.Quantity
+  value: 80
+
+Ammo.Cal12p7x70Rocket_VendorQty:
+  $type: gamedataConstantStatModifier_Record
+  modifierType: Additive
+  statType: BaseStats.Quantity
+  value: 80
+
+Ammo.Cal12x45Rocket_VendorQty:
+  $type: gamedataConstantStatModifier_Record
+  modifierType: Additive
+  statType: BaseStats.Quantity
+  value: 80
+
+Ammo.Cal14x40TSlug_VendorQty:
+  $type: gamedataConstantStatModifier_Record
+  modifierType: Additive
+  statType: BaseStats.Quantity
+  value: 80
+
+Ammo.Cal14x70TSlugHE_VendorQty:
+  $type: gamedataConstantStatModifier_Record
+  modifierType: Additive
+  statType: BaseStats.Quantity
+  value: 80
+
+Ammo.Cal15x55Rocket_VendorQty:
+  $type: gamedataConstantStatModifier_Record
+  modifierType: Additive
+  statType: BaseStats.Quantity
+  value: 80
+
+Ammo.Cal18x70Rocket_VendorQty:
+  $type: gamedataConstantStatModifier_Record
+  modifierType: Additive
+  statType: BaseStats.Quantity
+  value: 80
+
+Ammo.Cal20x102Vulcan_VendorQty:
+  $type: gamedataConstantStatModifier_Record
+  modifierType: Additive
+  statType: BaseStats.Quantity
+  value: 80
+
+Ammo.Cal22x126AC_VendorQty:
+  $type: gamedataConstantStatModifier_Record
+  modifierType: Additive
+  statType: BaseStats.Quantity
+  value: 80
+
+Ammo.Cal23x152Sov_VendorQty:
+  $type: gamedataConstantStatModifier_Record
+  modifierType: Additive
+  statType: BaseStats.Quantity
+  value: 80
+
+Ammo.Cal3x10FlechCluster_VendorQty:
+  $type: gamedataRandomStatModifier_Record
+  min: 0.0
+  max: 15.0
+  useControlledRandom: False
+  modifierType: Additive
+  statType: BaseStats.Quantity
+
+Ammo.Cal9x19_VendorItem:
+  $type: gamedataVendorItem_Record
+  item: Ammo.Cal9x19
+  generationPrereqs: []
+  quantity:
+    - Ammo.Cal9x19_VendorQty
+
+Ammo.Cal7p62x39Sov_VendorItem:
+  $type: gamedataVendorItem_Record
+  item: Ammo.Cal7p62x39Sov
+  generationPrereqs: []
+  quantity:
+    - Ammo.Cal7p62x39Sov_VendorQty
+
+Ammo.Cal12Gauge_VendorItem:
+  $type: gamedataVendorItem_Record
+  item: Ammo.Cal12Gauge
+  generationPrereqs: []
+  quantity:
+    - Ammo.Cal12Gauge_VendorQty
+
+Ammo.Cal6p5x25Minirocket_VendorItem:
+  $type: gamedataVendorItem_Record
+  item: Ammo.Cal6p5x25Minirocket
+  generationPrereqs: []
+  quantity:
+    - Ammo.Cal6p5x25Minirocket_VendorQty
+
+Ammo.Cal9p5x35Minirocket_VendorItem:
+  $type: gamedataVendorItem_Record
+  item: Ammo.Cal9p5x35Minirocket
+  generationPrereqs: []
+  quantity:
+    - Ammo.Cal9p5x35Minirocket_VendorQty
+
+Ammo.Cal45Super_VendorItem:
+  $type: gamedataVendorItem_Record
+  item: Ammo.Cal45Super
+  generationPrereqs: []
+  quantity:
+    - Ammo.Cal45Super_VendorQty
+
+Ammo.Cal5p56x45NUSA_VendorItem:
+  $type: gamedataVendorItem_Record
+  item: Ammo.Cal5p56x45NUSA
+  generationPrereqs: []
+  quantity:
+    - Ammo.Cal5p56x45NUSA_VendorQty
+
+Ammo.Cal5p56CT_VendorItem:
+  $type: gamedataVendorItem_Record
+  item: Ammo.Cal5p56CT
+  generationPrereqs: []
+  quantity:
+    - Ammo.Cal5p56CT_VendorQty
+
+Ammo.Cal5p45CT_VendorItem:
+  $type: gamedataVendorItem_Record
+  item: Ammo.Cal5p45CT
+  generationPrereqs: []
+  quantity:
+    - Ammo.Cal5p45CT_VendorQty
+
+Ammo.Cal45WinMag_VendorItem:
+  $type: gamedataVendorItem_Record
+  item: Ammo.Cal45WinMag
+  generationPrereqs: []
+  quantity:
+    - Ammo.Cal45WinMag_VendorQty
+
+Ammo.Cal454Casull_VendorItem:
+  $type: gamedataVendorItem_Record
+  item: Ammo.Cal454Casull
+  generationPrereqs: []
+  quantity:
+    - Ammo.Cal454Casull_VendorQty
+
+Ammo.Cal50AE_VendorItem:
+  $type: gamedataVendorItem_Record
+  item: Ammo.Cal50AE
+  generationPrereqs: []
+  quantity:
+    - Ammo.Cal50AE_VendorQty
+
+Ammo.Cal50BeowulfOni_VendorItem:
+  $type: gamedataVendorItem_Record
+  item: Ammo.Cal50BeowulfOni
+  generationPrereqs: []
+  quantity:
+    - Ammo.Cal50BeowulfOni_VendorQty
+
+Ammo.Cal10mmAuto_VendorItem:
+  $type: gamedataVendorItem_Record
+  item: Ammo.Cal10mmAuto
+  generationPrereqs: []
+  quantity:
+    - Ammo.Cal10mmAuto_VendorQty
+
+Ammo.Cal10x20TF_VendorItem:
+  $type: gamedataVendorItem_Record
+  item: Ammo.Cal10x20TF
+  generationPrereqs: []
+  quantity:
+    - Ammo.Cal10x20TF_VendorQty
+
+Ammo.Cal12p3x41UdaR_VendorItem:
+  $type: gamedataVendorItem_Record
+  item: Ammo.Cal12p3x41UdaR
+  generationPrereqs: []
+  quantity:
+    - Ammo.Cal12p3x41UdaR_VendorQty
+
+Ammo.Cal10GaugeBuck_VendorItem:
+  $type: gamedataVendorItem_Record
+  item: Ammo.Cal10GaugeBuck
+  generationPrereqs: []
+  quantity:
+    - Ammo.Cal10GaugeBuck_VendorQty
+
+Ammo.Cal10GaugeFlech_VendorItem:
+  $type: gamedataVendorItem_Record
+  item: Ammo.Cal10GaugeFlech
+  generationPrereqs: []
+  quantity:
+    - Ammo.Cal10GaugeFlech_VendorQty
+
+Ammo.Cal4Gauge_VendorItem:
+  $type: gamedataVendorItem_Record
+  item: Ammo.Cal4Gauge
+  generationPrereqs: []
+  quantity:
+    - Ammo.Cal4Gauge_VendorQty
+
+Ammo.Cal5p7x28TF_VendorItem:
+  $type: gamedataVendorItem_Record
+  item: Ammo.Cal5p7x28TF
+  generationPrereqs: []
+  quantity:
+    - Ammo.Cal5p7x28TF_VendorQty
+
+Ammo.Cal6p5Arasaka_VendorItem:
+  $type: gamedataVendorItem_Record
+  item: Ammo.Cal6p5Arasaka
+  generationPrereqs: []
+  quantity:
+    - Ammo.Cal6p5Arasaka_VendorQty
+
+Ammo.Cal243Win_VendorItem:
+  $type: gamedataVendorItem_Record
+  item: Ammo.Cal243Win
+  generationPrereqs: []
+  quantity:
+    - Ammo.Cal243Win_VendorQty
+
+Ammo.Cal4p7x10TF_VendorItem:
+  $type: gamedataVendorItem_Record
+  item: Ammo.Cal4p7x10TF
+  generationPrereqs: []
+  quantity:
+    - Ammo.Cal4p7x10TF_VendorQty
+
+Ammo.Cal8x30RailF_VendorItem:
+  $type: gamedataVendorItem_Record
+  item: Ammo.Cal8x30RailF
+  generationPrereqs: []
+  quantity:
+    - Ammo.Cal8x30RailF_VendorQty
+
+Ammo.Cal8x30TShot_VendorItem:
+  $type: gamedataVendorItem_Record
+  item: Ammo.Cal8x30TShot
+  generationPrereqs: []
+  quantity:
+    - Ammo.Cal8x30TShot_VendorQty
+
+Ammo.Cal9x30TF_VendorItem:
+  $type: gamedataVendorItem_Record
+  item: Ammo.Cal9x30TF
+  generationPrereqs: []
+  quantity:
+    - Ammo.Cal9x30TF_VendorQty
+
+Ammo.Cal15x80TSpike_VendorItem:
+  $type: gamedataVendorItem_Record
+  item: Ammo.Cal15x80TSpike
+  generationPrereqs: []
+  quantity:
+    - Ammo.Cal15x80TSpike_VendorQty
+
+Ammo.Cal50BMG_VendorItem:
+  $type: gamedataVendorItem_Record
+  item: Ammo.Cal50BMG
+  generationPrereqs: []
+  quantity:
+    - Ammo.Cal50BMG_VendorQty
+
+Ammo.Cal500Malour_VendorItem:
+  $type: gamedataVendorItem_Record
+  item: Ammo.Cal500Malour
+  generationPrereqs: []
+  quantity:
+    - Ammo.Cal500Malour_VendorQty
+
+Ammo.Cal10x40Rocket_VendorItem:
+  $type: gamedataVendorItem_Record
+  item: Ammo.Cal10x40Rocket
+  generationPrereqs: []
+  quantity:
+    - Ammo.Cal10x40Rocket_VendorQty
+
+Ammo.Cal12p7x70Rocket_VendorItem:
+  $type: gamedataVendorItem_Record
+  item: Ammo.Cal12p7x70Rocket
+  generationPrereqs: []
+  quantity:
+    - Ammo.Cal12p7x70Rocket_VendorQty
+
+Ammo.Cal12x45Rocket_VendorItem:
+  $type: gamedataVendorItem_Record
+  item: Ammo.Cal12x45Rocket
+  generationPrereqs: []
+  quantity:
+    - Ammo.Cal12x45Rocket_VendorQty
+
+Ammo.Cal14x40TSlug_VendorItem:
+  $type: gamedataVendorItem_Record
+  item: Ammo.Cal14x40TSlug
+  generationPrereqs: []
+  quantity:
+    - Ammo.Cal14x40TSlug_VendorQty
+
+Ammo.Cal14x70TSlugHE_VendorItem:
+  $type: gamedataVendorItem_Record
+  item: Ammo.Cal14x70TSlugHE
+  generationPrereqs: []
+  quantity:
+    - Ammo.Cal14x70TSlugHE_VendorQty
+
+Ammo.Cal15x55Rocket_VendorItem:
+  $type: gamedataVendorItem_Record
+  item: Ammo.Cal15x55Rocket
+  generationPrereqs: []
+  quantity:
+    - Ammo.Cal15x55Rocket_VendorQty
+
+Ammo.Cal18x70Rocket_VendorItem:
+  $type: gamedataVendorItem_Record
+  item: Ammo.Cal18x70Rocket
+  generationPrereqs: []
+  quantity:
+    - Ammo.Cal18x70Rocket_VendorQty
+
+Ammo.Cal20x102Vulcan_VendorItem:
+  $type: gamedataVendorItem_Record
+  item: Ammo.Cal20x102Vulcan
+  generationPrereqs: []
+  quantity:
+    - Ammo.Cal20x102Vulcan_VendorQty
+
+Ammo.Cal22x126AC_VendorItem:
+  $type: gamedataVendorItem_Record
+  item: Ammo.Cal22x126AC
+  generationPrereqs: []
+  quantity:
+    - Ammo.Cal22x126AC_VendorQty
+
+Ammo.Cal23x152Sov_VendorItem:
+  $type: gamedataVendorItem_Record
+  item: Ammo.Cal23x152Sov
+  generationPrereqs: []
+  quantity:
+    - Ammo.Cal23x152Sov_VendorQty
+
+Ammo.Cal3x10FlechCluster_VendorItem:
+  $type: gamedataVendorItem_Record
+  item: Ammo.Cal3x10FlechCluster
+  generationPrereqs: []
+  quantity:
+    - Ammo.Cal3x10FlechCluster_VendorQty
+
+
+Vendors.$(sv):
+  $instances:
+    - { sv: wat_kab_gunsmith_01 }     # Watson / Kabuki
+    - { sv: wat_kab_gunsmith_02 }     # Watson / Kabuki — second shop
+    - { sv: wat_lch_gunsmith_01 }     # Watson / Little China — Wilson's 2nd Amendment
+    - { sv: wat_nid_gunsmith_01 }     # Watson / Northside Industrial
+    - { sv: hey_gle_gunsmith_01 }     # Heywood / The Glen
+    - { sv: hey_rey_gunsmith_01 }     # Heywood / Reynosa
+    - { sv: hey_spr_gunsmith_01 }     # Heywood / Vista del Rey
+    - { sv: wbr_jpn_gunsmith_01 }     # Westbrook / Japantown
+    - { sv: pac_wwd_gunsmith_01 }     # Pacifica / West Wind Estate
+    - { sv: std_arr_gunsmith_01 }     # Santo Domingo / Arroyo
+    - { sv: std_rcr_gunsmith_01 }     # Santo Domingo / Rancho Coronado
+    - { sv: cct_dtn_guns_01 }     # City Center / Downtown
+    - { sv: bls_ina_se1_gunsmith_02 }     # Dogtown — sector 1
+    - { sv: bls_ina_se5_gunsmith_01 }     # Dogtown — sector 5
+  itemStock:
+    - !append-once Ammo.Cal9x19_VendorItem
+    - !append-once Ammo.Cal7p62x39Sov_VendorItem
+    - !append-once Ammo.Cal12Gauge_VendorItem
+    - !append-once Ammo.Cal6p5x25Minirocket_VendorItem
+    - !append-once Ammo.Cal9p5x35Minirocket_VendorItem
+    - !append-once Ammo.Cal45Super_VendorItem
+    - !append-once Ammo.Cal5p56x45NUSA_VendorItem
+    - !append-once Ammo.Cal5p56CT_VendorItem
+    - !append-once Ammo.Cal5p45CT_VendorItem
+
+
+Vendors.$(mv):
+  $instances:
+    - { mv: wat_lch_gunsmith_01 }     # Watson / Little China — Wilson's 2nd Amendment
+    - { mv: wat_nid_gunsmith_01 }     # Watson / Northside Industrial
+    - { mv: hey_gle_gunsmith_01 }     # Heywood / The Glen
+    - { mv: hey_rey_gunsmith_01 }     # Heywood / Reynosa
+    - { mv: hey_spr_gunsmith_01 }     # Heywood / Vista del Rey
+    - { mv: wbr_jpn_gunsmith_01 }     # Westbrook / Japantown
+    - { mv: std_arr_gunsmith_01 }     # Santo Domingo / Arroyo
+    - { mv: std_rcr_gunsmith_01 }     # Santo Domingo / Rancho Coronado
+    - { mv: cct_dtn_guns_01 }     # City Center / Downtown
+    - { mv: bls_ina_se1_gunsmith_02 }     # Dogtown — sector 1
+  itemStock:
+    - !append-once Ammo.Cal45WinMag_VendorItem
+    - !append-once Ammo.Cal454Casull_VendorItem
+    - !append-once Ammo.Cal50AE_VendorItem
+    - !append-once Ammo.Cal50BeowulfOni_VendorItem
+    - !append-once Ammo.Cal10mmAuto_VendorItem
+    - !append-once Ammo.Cal10x20TF_VendorItem
+    - !append-once Ammo.Cal12p3x41UdaR_VendorItem
+    - !append-once Ammo.Cal10GaugeBuck_VendorItem
+    - !append-once Ammo.Cal10GaugeFlech_VendorItem
+    - !append-once Ammo.Cal4Gauge_VendorItem
+    - !append-once Ammo.Cal5p7x28TF_VendorItem
+    - !append-once Ammo.Cal6p5Arasaka_VendorItem
+    - !append-once Ammo.Cal243Win_VendorItem
+    - !append-once Ammo.Cal4p7x10TF_VendorItem
+    - !append-once Ammo.Cal8x30RailF_VendorItem
+    - !append-once Ammo.Cal8x30TShot_VendorItem
+    - !append-once Ammo.Cal9x30TF_VendorItem
+    - !append-once Ammo.Cal15x80TSpike_VendorItem
+    - !append-once Ammo.Cal50BMG_VendorItem
+
+
+Vendors.$(spv):
+  $instances:
+    - { spv: wbr_jpn_gunsmith_01 }     # Westbrook / Japantown
+    - { spv: hey_gle_gunsmith_01 }     # Heywood / The Glen
+    - { spv: cct_dtn_guns_01 }     # City Center / Downtown
+    - { spv: bls_ina_se1_gunsmith_02 }     # Dogtown — sector 1
+    - { spv: bls_ina_se5_gunsmith_01 }     # Dogtown — sector 5
+  itemStock:
+    - !append-once Ammo.Cal500Malour_VendorItem
+    - !append-once Ammo.Cal10x40Rocket_VendorItem
+    - !append-once Ammo.Cal12p7x70Rocket_VendorItem
+    - !append-once Ammo.Cal12x45Rocket_VendorItem
+    - !append-once Ammo.Cal14x40TSlug_VendorItem
+    - !append-once Ammo.Cal14x70TSlugHE_VendorItem
+    - !append-once Ammo.Cal15x55Rocket_VendorItem
+    - !append-once Ammo.Cal18x70Rocket_VendorItem
+    - !append-once Ammo.Cal20x102Vulcan_VendorItem
+    - !append-once Ammo.Cal22x126AC_VendorItem
+    - !append-once Ammo.Cal23x152Sov_VendorItem
+
+
+Vendors.cct_dtn_guns_01:
+  itemStock:
+    - !append-once Ammo.Cal3x10FlechCluster_VendorItem
+
+Vendors.bls_ina_se1_gunsmith_02:
+  itemStock:
+    - !append-once Ammo.Cal3x10FlechCluster_VendorItem

@@ -1,0 +1,441 @@
+# DPAE Weapon Caliber Tags
+# ---------------------------------------------------------------------------
+# Tags on base records propagate to ALL presets via TweakDB inheritance.
+# Only add a specific preset when an iconic needs to OVERRIDE its base caliber.
+#
+# Check-order rule (enforced in DPAE_GetCaliberFromEntity):
+#   When a preset inherits a base tag AND carries its own override tag, the
+#   override wins because it's checked first in the function. Two examples:
+#     Dying Night  → Preset_Lexington_Wilson gets Cal11p43x23 (overrides inherited Cal9x19)
+#     Hypercritical→ Preset_Kolac_Tiny_Mike gets Cal12p7x90R (overrides Cal12p7x83R)
+#     Death & Taxes→ Preset_Nue_Maiko gets Cal9x19 via DPAE_Cal9x19Prec (escapes inherited Cal11p43x23)
+#     Cheetah      → Preset_Unity_Angelica gets Cal9x19 via DPAE_Cal9x19Prec (escapes inherited Cal11p43x23)
+#     Nowaki       → Preset_Masamune_Arasaka gets Cal7p62x51 (overrides inherited Cal5p56x45)
+#
+# ---------------------------------------------------------------------------
+
+# ═══════════════════════════════════════════════════════════════════════════
+# Cal9x19 — 9x19mm Parabellum
+# Covers: M-10AF Lexington, Lexington X-MOD2, Rook, Slaught-O-Matic,
+#         Guillotine, Guillotine X-MOD2, M221 Saratoga, Problem Solver,
+#         Fenrir (Preset_Saratoga_Maelstrom), Shigure (Preset_Saratoga_Arasaka)
+# ═══════════════════════════════════════════════════════════════════════════
+
+Items.Base_Lexington:
+  tags:
+    - !append-once DPAE_Cal9x19
+
+Items.Base_Slaughtomatic:
+  tags:
+    - !append-once DPAE_Cal9x19
+
+Items.Base_Guillotine:
+  tags:
+    - !append-once DPAE_Cal9x19
+
+Items.Base_Saratoga:
+  tags:
+    - !append-once DPAE_Cal9x19
+
+# Override: Dying Night (Items.Preset_Lexington_Wilson) is Lexington-based and
+# inherits Cal9x19 from Base_Lexington, but DPAE reassigns it to .45 ACP.
+# Cal11p43x23 is checked first in DPAE_GetCaliberFromEntity, so it wins.
+# The Rare/Epic/Legendary quality tiers inherit from Preset_Lexington_Wilson
+# and will pick up this tag automatically.
+Items.Preset_Lexington_Wilson:
+  tags:
+    - !append-once DPAE_Cal11p43x23
+
+# Plan B (Items.Preset_Liberty_Dex) is Dex's Liberty — inherits Cal11p43x23
+# from Base_Liberty. No separate entry needed.
+
+# Pride (Items.Preset_Liberty_Rogue) is Rogue's Liberty — inherits Cal11p43x23.
+# Kongou (Items.Preset_Liberty_Yorinobu) is Yorinobu's Liberty — inherits Cal11p43x23.
+# Her Majesty (Items.Preset_Unity_Agent) is Unity-based — inherits Cal11p43x23.
+
+# Override: Death and Taxes (Preset_Nue_Maiko) inherits Cal11p43x23 from Base_Nue, but
+# DPAE reassigns it to 9mm. DPAE_Cal9x19Prec is checked first, before Cal11p43x23, so it
+# wins. Cheetah (Preset_Unity_Angelica) uses the same escape for the same reason.
+Items.Preset_Nue_Maiko:
+  tags:
+    - !append-once DPAE_Cal9x19Prec
+
+Items.Preset_Unity_Angelica:
+  tags:
+    - !append-once DPAE_Cal9x19Prec
+
+# ═══════════════════════════════════════════════════════════════════════════
+# Cal11p43x23 — .45 ACP
+# Covers: Liberty, Plan B (Preset_Liberty_Dex), Kongou, Pride, Seraph,
+#         Nue, La Chingona Dorada (Preset_Nue_Jackie), Riskit, Tamayura,
+#         Unity, Her Majesty (Preset_Unity_Agent), Dying Night (direct override)
+# Note: Death and Taxes and Cheetah are EXCLUDED — they escape to Cal9x19 via
+#       DPAE_Cal9x19Prec tags above.
+# ═══════════════════════════════════════════════════════════════════════════
+
+Items.Base_Liberty:
+  tags:
+    - !append-once DPAE_Cal11p43x23
+
+Items.Base_Nue:
+  tags:
+    - !append-once DPAE_Cal11p43x23
+
+Items.Base_Unity:
+  tags:
+    - !append-once DPAE_Cal11p43x23
+
+# ═══════════════════════════════════════════════════════════════════════════
+# Cal10p7x33 — 10.7x33mm Magnum
+# Covers: Overture, Archangel (Preset_Overture_Kerry), Amnesty, Crash,
+#         Ol' Reliable, Rosco
+# ═══════════════════════════════════════════════════════════════════════════
+
+Items.Base_Overture:
+  tags:
+    - !append-once DPAE_Cal10p7x33
+
+# ═══════════════════════════════════════════════════════════════════════════
+# Cal12p7x33 — 12.7x33mm AE
+# Covers: DR5 Nova, Doom Doom (Preset_Nova_Doom_Doom), Bald Eagle, Mancinella,
+#         Taigan, Metel
+# ═══════════════════════════════════════════════════════════════════════════
+
+Items.Base_Nova:
+  tags:
+    - !append-once DPAE_Cal12p7x33
+
+Items.Base_Metel:
+  tags:
+    - !append-once DPAE_Cal12p7x33
+
+# ═══════════════════════════════════════════════════════════════════════════
+# Cal14p7x40 — 12.7x41mm S&W
+# Covers: Malorian Arms 3516
+# ═══════════════════════════════════════════════════════════════════════════
+
+Items.Silverhand_Malorian:
+  tags:
+    - !append-once DPAE_Cal14p7x40
+
+# ═══════════════════════════════════════════════════════════════════════════
+# Cal5p56x45 — 5.56x45mm NATO
+# Covers: D5 Copperhead, Genesis (Preset_Copperhead_Genesis), HJSH-18 Masamune,
+#         Prejudice (Preset_Masamune_Rogue), DA8 Umbra, Umbra X-MOD2,
+#         Carmen (Preset_Umbra_Bebe), DS1 Pulsar, Buzzsaw (Preset_Pulsar_Buzzsaw)
+# ═══════════════════════════════════════════════════════════════════════════
+
+Items.Base_Copperhead:
+  tags:
+    - !append-once DPAE_Cal5p56x45
+
+Items.Base_Masamune:
+  tags:
+    - !append-once DPAE_Cal5p56x45
+
+Items.Base_Umbra:
+  tags:
+    - !append-once DPAE_Cal5p56x45
+
+Items.Base_Pulsar:
+  tags:
+    - !append-once DPAE_Cal5p56x45
+
+# ═══════════════════════════════════════════════════════════════════════════
+# Cal7p62x39 — 7.62x39mm Soviet
+# Covers: Kyubi, Kyubi X-MOD2, Hawk (Preset_Kyubi_Myers), Chinook
+# ═══════════════════════════════════════════════════════════════════════════
+
+Items.Base_Kyubi:
+  tags:
+    - !append-once DPAE_Cal7p62x39
+
+# ═══════════════════════════════════════════════════════════════════════════
+# Cal7p62x51 — 7.62x51mm NATO
+# Covers: M251S Ajax, Moron Labe (Preset_Ajax_Moron), Pit Bull (Preset_Ajax_Amazon),
+#         Nowaki (Preset_Masamune_Arasaka — override, see below)
+# ═══════════════════════════════════════════════════════════════════════════
+
+Items.Base_Ajax:
+  tags:
+    - !append-once DPAE_Cal7p62x51
+
+# Override: Nowaki (Preset_Masamune_Arasaka) inherits Cal5p56x45 from Base_Masamune,
+# but DPAE assigns it 7.62x51mm. Cal7p62x51 is checked before Cal5p56x45 in
+# DPAE_GetCaliberFromEntity, so this direct tag wins.
+Items.Preset_Masamune_Arasaka:
+  tags:
+    - !append-once DPAE_Cal7p62x51
+
+# ═══════════════════════════════════════════════════════════════════════════
+# Cal12p7x55 — 12.7x55mm NUSA
+# Covers: MK.31 HMG
+# ═══════════════════════════════════════════════════════════════════════════
+
+Items.Preset_HMG_Default:
+  tags:
+    - !append-once DPAE_Cal12p7x55
+
+# ═══════════════════════════════════════════════════════════════════════════
+# Cal6p5x52 — 6.5x52mm NUSA
+# Covers: Defender, M2067 Defender, Wild Dog (Preset_Defender_Kurt — inherits)
+# ═══════════════════════════════════════════════════════════════════════════
+
+Items.Base_Defender:
+  tags:
+    - !append-once DPAE_Cal6p5x52
+
+# ═══════════════════════════════════════════════════════════════════════════
+# Cal7p35x51 — 7.35x51mm NUSA
+# Covers: MA70 HB, MA70 HB X-MOD2, Preset_MA70_Collectible (inherits)
+# ═══════════════════════════════════════════════════════════════════════════
+
+Items.Base_MA70:
+  tags:
+    - !append-once DPAE_Cal7p35x51
+
+# ═══════════════════════════════════════════════════════════════════════════
+# Cal20x120 — 14.5x114mm Soviet
+# Covers: SPT32 Grad, Borzaya (Preset_Grad_AirDrop), O'Five (Preset_Grad_Buck),
+#         Overwatch (Preset_Grad_Panam), Sparky
+# ═══════════════════════════════════════════════════════════════════════════
+
+Items.Base_Grad:
+  tags:
+    - !append-once DPAE_Cal20x120
+
+# ═══════════════════════════════════════════════════════════════════════════
+# Cal22x126 — 22x126mm Nitro Express HE
+# Covers: NDI Osprey
+# ═══════════════════════════════════════════════════════════════════════════
+
+Items.Base_Osprey:
+  tags:
+    - !append-once DPAE_Cal22x126
+
+# ═══════════════════════════════════════════════════════════════════════════
+# Cal12p7x83R — 12.7x83mmR Nitro Express
+# Covers: SOR-22, Kolac (base)
+# Tiny Mike / Hypercritical is overridden below to Cal12p7x90R.
+# ═══════════════════════════════════════════════════════════════════════════
+
+Items.Base_Sor22:
+  tags:
+    - !append-once DPAE_Cal12p7x83R
+
+Items.Base_Kolac:
+  tags:
+    - !append-once DPAE_Cal12p7x83R
+
+# Override: Hypercritical uses the Tiny Mike preset (Kolac-based) but fires
+# Cal12p7x90R (HE only). Cal12p7x90R is checked first in the function, so
+# it wins over the Cal12p7x83R inherited from Base_Kolac.
+Items.Preset_Kolac_Tiny_Mike:
+  tags:
+    - !append-once DPAE_Cal12p7x90R
+
+# ═══════════════════════════════════════════════════════════════════════════
+# Gauge12 — 12 Gauge
+# Covers: VST-37 Pozhar, Pozhar X-MOD2, Alabai (Preset_Pozhar_AirDrop),
+#         M2038 Tactician, Bloody Maria (Preset_Tactician_Dino),
+#         Crusher, Amstaff (Preset_Crusher_Amazon)
+# Note: THE HEADSMAN is Tactician-based (Preset_Tactician_Headsman) — inherits
+#       Gauge12 but Sheet1 says "slug only". Slug is a Gauge12 variant, correct.
+# Tube-fed: Base_Tactician (Tactician, Bloody Maria, Headsman).
+#           Base_Pozhar and Base_Crusher are magazine-fed — no DPAE_TubeFed.
+# ═══════════════════════════════════════════════════════════════════════════
+
+Items.Base_Pozhar:
+  tags:
+    - !append-once DPAE_Gauge12
+
+Items.Base_Tactician:
+  tags:
+    - !append-once DPAE_Gauge12
+    - !append-once DPAE_TubeFed
+
+Items.Base_Crusher:
+  tags:
+    - !append-once DPAE_Gauge12
+
+# ═══════════════════════════════════════════════════════════════════════════
+# Gauge4 — 4 Gauge
+# Covers: Carnage, Guts (Preset_Carnage_Edgerunners), Mox (Preset_Carnage_Mox)
+# Tube-fed: Base_Carnage covers all three.
+# ═══════════════════════════════════════════════════════════════════════════
+
+Items.Base_Carnage:
+  tags:
+    - !append-once DPAE_Gauge4
+    - !append-once DPAE_TubeFed
+
+# ═══════════════════════════════════════════════════════════════════════════
+# Cal10Gauge — 10 Gauge
+# Covers: DB-2 Testera, Dezerter (Preset_Testera_Nicolas),
+#         DB-4 Igla, Sovereign (Preset_Igla_Sovereign),
+#         DB-2 Satara (tech shotgun), Order (Preset_Satara_Brick)
+# Tube-fed: all three bases are tube-fed.
+# ═══════════════════════════════════════════════════════════════════════════
+
+Items.Base_Testera:
+  tags:
+    - !append-once DPAE_Cal10Gauge
+    - !append-once DPAE_TubeFed
+
+Items.Base_Igla:
+  tags:
+    - !append-once DPAE_Cal10Gauge
+    - !append-once DPAE_TubeFed
+
+Items.Base_Satara:
+  tags:
+    - !append-once DPAE_Cal10Gauge
+    - !append-once DPAE_TubeFed
+
+# ═══════════════════════════════════════════════════════════════════════════
+# SMART WEAPONS — NPC loot only (no player variant picker)
+# ═══════════════════════════════════════════════════════════════════════════
+
+# Smart6p5x25 — 6.5x25mm Guided Minirocket
+# Covers: A-22B Chao, Crimestopper, Genjiroh,
+#         HJKE-11 Yukimura (Skippy = Preset_Yukimura_Skippy),
+#         Kappa, Kappa X-MOD2, Ogou
+Items.Base_Chao:
+  tags:
+    - !append-once DPAE_Smart6p5x25
+
+Items.Base_Kappa:
+  tags:
+    - !append-once DPAE_Smart6p5x25
+
+Items.Base_Yukimura:
+  tags:
+    - !append-once DPAE_Smart6p5x25
+
+# Smart9p5x35 — 9.5x35mm Guided Minirocket
+# Covers: TKI-20 Shingen (Prototype = Preset_Shingen_Prototype), G-58 Dian,
+#         Yinglong (Preset_Dian_Yinglong), TKI-20 Warden,
+#         Chesapeake, Pizdets
+Items.Base_Shingen:
+  tags:
+    - !append-once DPAE_Smart9p5x35
+
+Items.Base_Dian:
+  tags:
+    - !append-once DPAE_Smart9p5x35
+
+Items.Base_Warden:
+  tags:
+    - !append-once DPAE_Smart9p5x35
+
+# Smart10x40 — 10x40mm Guided Rocket
+# Covers: D5 Sidewinder, Divided We Stand (Preset_Sidewinder_Divided)
+Items.Base_Sidewinder:
+  tags:
+    - !append-once DPAE_Smart10x40
+
+# Smart12x45 — 12x45mm Guided Rocket
+# Covers: Hercules 3AX (Prototype = Preset_Hercules_Prototype)
+Items.Base_Hercules:
+  tags:
+    - !append-once DPAE_Smart12x45
+
+# Smart12p7x70 — 12.7x70mm Guided Rocket
+# Covers: Ashura, Yasha (Preset_Ashura_Twitch), Tamayura uses Nue-base so skip
+# Note: Base_Ashura also covers Twitch (Preset_Ashura_Twitch) via inheritance
+Items.Base_Ashura:
+  tags:
+    - !append-once DPAE_Smart12p7x70
+
+# Smart15x55 — 15x55mm Guided Rocket
+# Covers: DB-4 Palica
+Items.Base_Palica:
+  tags:
+    - !append-once DPAE_Smart15x55
+
+# Smart18x70 — 18x70mm Guided Rocket
+# Covers: L-69 Zhuo, Eight Star (Preset_Zhuo_Eight_Star),
+#         BA Xing Chong (verify base — may be Base_Zhuo or separate)
+Items.Base_Zhuo:
+  tags:
+    - !append-once DPAE_Smart18x70
+
+# ═══════════════════════════════════════════════════════════════════════════
+# TECH WEAPONS — NPC loot only (no player variant picker)
+# ═══════════════════════════════════════════════════════════════════════════
+
+# Tech8x30 — 8x30mm Rail Flechettes
+# Covers: Senkoh LX, Raiju (Preset_Senkoh_Prototype) — see Base_Senkoh below.
+# Quasar uses 8x30mm Tungsten Shot — separate DPAE ammo type, tagged Tech8x30TS.
+
+# Tech8x30TS — 8x30mm Tungsten Shot
+# Covers: DR-12 Quasar, Gris-Gris (Preset_Quasar_Baron)
+Items.Base_Quasar:
+  tags:
+    - !append-once DPAE_Tech8x30TS
+
+# Tech10x30 — 10x30mm Rail Flechettes (Omaha / Ticon)
+# Covers: M-76E Omaha, Lizzie (Preset_Omaha_Suzie),
+#         Militech Ticon, Pariah (Preset_Ticon_Reed), Scorch (Preset_Ticon_Gwent)
+# Grit moved to Tech9x30TF — separate ammo type in DPAE.
+Items.Base_Omaha:
+  tags:
+    - !append-once DPAE_Tech10x30
+
+Items.Base_Ticon:
+  tags:
+    - !append-once DPAE_Tech10x30
+
+Items.Base_Senkoh:
+  tags:
+    - !append-once DPAE_Tech8x30
+
+# Tech4p7TF — 4.7mm Caseless Tungsten (Achilles platform)
+# Covers: M-179E Achilles, Achilles X-MOD2, Widow Maker (Preset_Achilles_Nash)
+Items.Base_Achilles:
+  tags:
+    - !append-once DPAE_Tech4p7TF
+
+# Tech10x30TF — 10x30mm Tungsten Flechettes (Kenshin platform)
+# Covers: JKE-X2 Kenshin, Ambition (Preset_Kenshin_Spy), Chaos (Preset_Kenshin_Royce),
+#         Apparition (Preset_Kenshin_Frank)
+# Separate from Tech8x30 (Rail Flechettes) and Tech10x30 (Omaha/Ticon).
+Items.Base_Kenshin:
+  tags:
+    - !append-once DPAE_Tech10x30TF
+
+# Tech9x30TF — 9x30mm Tungsten Flechettes (Grit platform)
+# Covers: HA-4 Grit, Catahoula (Preset_Grit_Amazon)
+Items.Base_Grit:
+  tags:
+    - !append-once DPAE_Tech9x30TF
+
+# Tech14x40 — 14x40mm Tungsten Slug
+# Covers: RT-46 Burya, Laika (Burya preset — inherits via Base_Burya)
+# Comrade's Hammer overridden to Tech14x70 below.
+Items.Base_Burya:
+  tags:
+    - !append-once DPAE_Tech14x40
+
+# Override: Comrade's Hammer (Preset_Burya_Comrade) inherits Tech14x40 from Base_Burya,
+# but DPAE assigns it 14x70mm Tungsten Slug. Tech14x70 is checked before Tech14x40 in
+# DPAE_GetCaliberFromEntity so it wins.
+Items.Preset_Burya_Comrade:
+  tags:
+    - !append-once DPAE_Tech14x70
+
+# Tech15x80 — 15x80mm Tungsten Spike
+# Covers: Nekomata, Breakthrough (Preset_Nekomata_Breakthrough), Foxhound, Rasetsu
+Items.Base_Nekomata:
+  tags:
+    - !append-once DPAE_Tech15x80
+
+Items.Base_Rasetsu:
+  tags:
+    - !append-once DPAE_Tech15x80
+
+# TechMilProt — Militech Prototype (Erebus)
+# Covers: Erebus (Base_Borg4a / Preset_Borg4a_HauntedGun)
+Items.Base_Borg4a:
+  tags:
+    - !append-once DPAE_TechMilProt

@@ -1,0 +1,6 @@
+Ammo.HandicapRifleAmmoPreset:
+  handicapLimit: 120
+  handicapMaxQty: 150
+  handicapMinQty: 90
+  item: Ammo.RifleAmmo
+  $type: gamedataHandicapLootPreset_Record

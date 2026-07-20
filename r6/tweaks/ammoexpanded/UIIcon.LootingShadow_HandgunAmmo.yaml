@@ -1,0 +1,4 @@
+UIIcon.LootingShadow_HandgunAmmo:
+  atlasPartName: ammo_handgun
+  atlasResourcePath: base\gameplay\gui\common\icons\mappin_icons.inkatlas
+  $type: gamedataUIIcon_Record

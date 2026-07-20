@@ -1,0 +1,4 @@
+
+Items.Preset_Tactician_Headsman:
+  tags:
+    - !append-once DPAE_LockVariant_Slug

@@ -1,0 +1,143 @@
+Ammo.Cal45Super:
+  animationParameters: []
+  animFeatureName: ItemData
+  animName: ui_garment_pose
+  animSetResource: ''
+  appearanceSuffixes: []
+  appearanceSuffixesOwnerOverride: []
+  attachmentSlots: []
+  buyPrice:
+    - Price.Ammo
+    - Price.BuyPrice_StreetCred_Discount
+    - Price.PowerAmmo
+  cameraForward: {x: 0, y: 0, z: 0}
+  cameraUp: {x: 0, y: 0, z: 0}
+  canDrop: True
+  connections: []
+  CraftingData: Ammo.AmmoBase_inline0
+  crosshair: Crosshairs.None
+  deprecated: False
+  displayName: LocKey#8100310
+  dropObject: ammoDrop
+  effectors: []
+  enableNpcRPGData: False
+  entityName: ammo_box_handgun
+  equipAreas: []
+  equipPrereqs: []
+  friendlyName: '45_super'
+  gameplayRestrictions:
+    - GameplayRestriction.VehicleCombatNoInterruptions
+  garmentOffset: 0
+  hairSkinnedMeshComponents: []
+  icon: UIIcon.ItemIcon
+  iconPath: ''
+  isCached: False
+  isCoreCW: False
+  isCustomizable: False
+  isGarment: False
+  isPart: False
+  isSingleInstance: True
+  itemCategory: ItemCategory.General
+  itemType: ItemType.Con_Ammo
+  localizedDescription: LocKey#8100584
+  localizedName: ''
+  mass: 1
+  minigameInstance: minigame_v2.DefaultItemMinigame
+  objectActions:
+    - ItemAction.Drop
+    - ItemAction.Disassemble
+  OnAttach: []
+  OnEquip: []
+  OnLooted: []
+  parts: []
+  placementSlots: []
+  powerLevelDeterminedByParent: False
+  previewBBoxOverride: []
+  quality: Quality.Common
+  qualityRestrictedByParent: False
+  replicateWhenNotActive: False
+  requiredSlots: []
+  savable: False
+  sellPrice:
+    - Price.Ammo
+    - Price.PowerAmmo
+  slotPartList: []
+  slotPartListPreset: []
+  statModifierGroups: []
+  statPools: []
+  tags:
+    - Ammo
+    - ShowStackPrice
+    - Cal45Super
+  $base: Ammo.HandgunAmmo
+  upgradeCostMult: 1
+  useHeadgearGarmentAggregator: False
+  useNewSpawnMethod: False
+  usesVariants: False
+  variants: []
+  visualTags: []
+  weakspots: []
+
+Ammo.Cal45Super_AP:
+  $base: Ammo.Cal45Super
+  friendlyName: '45_super_armor_piercing'
+  displayName: LocKey#8100311
+  localizedDescription: LocKey#8100584
+  tags:
+    - !append-once DPAE_Cal45Super_AP
+
+Ammo.Cal45Super_HP:
+  $base: Ammo.Cal45Super
+  friendlyName: '45_super_hollow_point'
+  displayName: LocKey#8100312
+  localizedDescription: LocKey#8100584
+  tags:
+    - !append-once DPAE_Cal45Super_HP
+
+Ammo.Cal45Super_EMP:
+  $base: Ammo.Cal45Super
+  friendlyName: '45_super_emp'
+  displayName: LocKey#8100313
+  localizedDescription: LocKey#8100584
+  tags:
+    - !append-once DPAE_Cal45Super_EMP
+
+Ammo.Cal45Super_INC:
+  $base: Ammo.Cal45Super
+  friendlyName: '45_super_incendiary'
+  displayName: LocKey#8100314
+  localizedDescription: LocKey#8100584
+  tags:
+    - !append-once DPAE_Cal45Super_INC
+
+Ammo.Cal45Super_CHEM:
+  $base: Ammo.Cal45Super
+  friendlyName: '45_super_chemical'
+  displayName: LocKey#8100315
+  localizedDescription: LocKey#8100584
+  tags:
+    - !append-once DPAE_Cal45Super_CHEM
+
+Ammo.Cal45Super_NL:
+  $base: Ammo.Cal45Super
+  friendlyName: '45_super_non-lethal'
+  displayName: LocKey#8100316
+  localizedDescription: LocKey#8100584
+  tags:
+    - !append-once DPAE_Cal45Super_NL
+
+Ammo.Cal45Super_Snakeshot:
+  $base: Ammo.Cal45Super
+  friendlyName: '45_super_snakeshot'
+  displayName: LocKey#8100617
+  localizedDescription: LocKey#8100584
+  tags:
+    - !append-once DPAE_Cal45Super_Snakeshot
+
+Ammo.Cal45Super_HE:
+  $base: Ammo.Cal45Super
+  friendlyName: '45_super_high_explosive'
+  displayName: LocKey#8100511
+  localizedDescription: LocKey#8100584
+  tags:
+    - !append-once DPAE_Cal45Super_HE

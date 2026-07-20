@@ -1,0 +1,15 @@
+Ammo.HandgunAmmo:
+  tags:
+    - !append-once HideAtVendor
+
+Ammo.RifleAmmo:
+  tags:
+    - !append-once HideAtVendor
+
+Ammo.ShotgunAmmo:
+  tags:
+    - !append-once HideAtVendor
+
+Ammo.SniperRifleAmmo:
+  tags:
+    - !append-once HideAtVendor

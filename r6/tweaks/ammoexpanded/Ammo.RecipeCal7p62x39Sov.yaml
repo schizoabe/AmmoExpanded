@@ -1,0 +1,85 @@
+Ammo.RecipeCal7p62x39Sov:
+  animationParameters: []
+  animFeatureName: ItemData
+  animName: ui_garment_pose
+  animSetResource: ''
+  appearanceSuffixes: []
+  appearanceSuffixesOwnerOverride: []
+  attachmentSlots: []
+  buyPrice:
+    - Price.Recipe
+    - Price.ItemQualityMultiplier
+    - Price.BuyPrice_StreetCred_Discount
+  cameraForward: {x: 0, y: 0, z: 0}
+  cameraUp: {x: 0, y: 0, z: 0}
+  canDrop: True
+  connections: []
+  craftingResult: Ammo.RecipeCal7p62x39Sov_inline0
+  crosshair: Crosshairs.None
+  deprecated: False
+  displayName: LocKey#8100546
+  dropObject: defaultItemDrop
+  effectors: []
+  enableNpcRPGData: False
+  entityName: ammo_box_handgun
+  equipAreas: []
+  equipPrereqs: []
+  friendlyName: ''
+  gameplayRestrictions:
+    - GameplayRestriction.VehicleCombatNoInterruptions
+  garmentOffset: 0
+  hairSkinnedMeshComponents: []
+  hideOnItemsAdded: []
+  icon: UIIcon.ItemIcon
+  iconPath: ''
+  isCached: False
+  isCoreCW: False
+  isCustomizable: False
+  isGarment: False
+  isPart: False
+  isSingleInstance: True
+  itemType: ItemType.Gen_Misc
+  localizedName: ''
+  mass: 1
+  minigameInstance: minigame_v2.DefaultItemMinigame
+  objectActions:
+    - ItemAction.Drop
+    - ItemAction.Disassemble
+  OnAttach: []
+  OnEquip: []
+  OnLooted: []
+  parts: []
+  placementSlots: []
+  powerLevelDeterminedByParent: False
+  previewBBoxOverride: []
+  quality: Quality.Common
+  qualityRestrictedByParent: False
+  replicateWhenNotActive: False
+  requiredSlots: []
+  savable: False
+  sellPrice:
+    - Price.Recipe
+    - Price.ItemQualityMultiplier
+    - Price.SellMultiplier
+  slotPartList: []
+  slotPartListPreset: []
+  statModifierGroups: []
+  statModifiers: []
+  statPools: []
+  tags:
+    - Recipe
+    - SkipActivityLogOnRemove
+    - HideInBackpackUI
+  $type: gamedataItemRecipe_Record
+  upgradeCostMult: 1
+  useHeadgearGarmentAggregator: False
+  useNewSpawnMethod: False
+  usesVariants: False
+  variants: []
+  visualTags: []
+  weakspots: []
+
+Ammo.RecipeCal7p62x39Sov_inline0:
+  amount: 90
+  item: Ammo.Cal7p62x39Sov
+  $type: gamedataCraftingResult_Record

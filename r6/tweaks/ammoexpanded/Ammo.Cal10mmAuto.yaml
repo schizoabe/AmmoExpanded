@@ -1,0 +1,127 @@
+Ammo.Cal10mmAuto:
+  animationParameters: []
+  animFeatureName: ItemData
+  animName: ui_garment_pose
+  animSetResource: ''
+  appearanceSuffixes: []
+  appearanceSuffixesOwnerOverride: []
+  attachmentSlots: []
+  buyPrice:
+    - Price.Ammo
+    - Price.BuyPrice_StreetCred_Discount
+    - Price.PowerAmmo
+  cameraForward: {x: 0, y: 0, z: 0}
+  cameraUp: {x: 0, y: 0, z: 0}
+  canDrop: True
+  connections: []
+  CraftingData: Ammo.AmmoBase_inline0
+  crosshair: Crosshairs.None
+  deprecated: False
+  displayName: LocKey#8100368
+  dropObject: ammoDrop
+  effectors: []
+  enableNpcRPGData: False
+  entityName: ammo_box_handgun
+  equipAreas: []
+  equipPrereqs: []
+  friendlyName: '10mm_auto'
+  gameplayRestrictions:
+    - GameplayRestriction.VehicleCombatNoInterruptions
+  garmentOffset: 0
+  hairSkinnedMeshComponents: []
+  icon: UIIcon.ItemIcon
+  iconPath: ''
+  isCached: False
+  isCoreCW: False
+  isCustomizable: False
+  isGarment: False
+  isPart: False
+  isSingleInstance: True
+  itemCategory: ItemCategory.General
+  itemType: ItemType.Con_Ammo
+  localizedDescription: LocKey#8100566
+  localizedName: ''
+  mass: 1
+  minigameInstance: minigame_v2.DefaultItemMinigame
+  objectActions:
+    - ItemAction.Drop
+    - ItemAction.Disassemble
+  OnAttach: []
+  OnEquip: []
+  OnLooted: []
+  parts: []
+  placementSlots: []
+  powerLevelDeterminedByParent: False
+  previewBBoxOverride: []
+  quality: Quality.Common
+  qualityRestrictedByParent: False
+  replicateWhenNotActive: False
+  requiredSlots: []
+  savable: False
+  sellPrice:
+    - Price.Ammo
+    - Price.PowerAmmo
+  slotPartList: []
+  slotPartListPreset: []
+  statModifierGroups: []
+  statPools: []
+  tags:
+    - Ammo
+    - ShowStackPrice
+    - Cal10mmAuto
+  $base: Ammo.HandgunAmmo
+  upgradeCostMult: 1
+  useHeadgearGarmentAggregator: False
+  useNewSpawnMethod: False
+  usesVariants: False
+  variants: []
+  visualTags: []
+  weakspots: []
+
+Ammo.Cal10mmAuto_AP:
+  $base: Ammo.Cal10mmAuto
+  friendlyName: '10mm_auto_armor_piercing'
+  displayName: LocKey#8100369
+  localizedDescription: LocKey#8100566
+  tags:
+    - !append-once DPAE_Cal10mmAuto_AP
+
+Ammo.Cal10mmAuto_HP:
+  $base: Ammo.Cal10mmAuto
+  friendlyName: '10mm_auto_hollow_point'
+  displayName: LocKey#8100370
+  localizedDescription: LocKey#8100566
+  tags:
+    - !append-once DPAE_Cal10mmAuto_HP
+
+Ammo.Cal10mmAuto_EMP:
+  $base: Ammo.Cal10mmAuto
+  friendlyName: '10mm_auto_emp'
+  displayName: LocKey#8100371
+  localizedDescription: LocKey#8100566
+  tags:
+    - !append-once DPAE_Cal10mmAuto_EMP
+
+Ammo.Cal10mmAuto_INC:
+  $base: Ammo.Cal10mmAuto
+  friendlyName: '10mm_auto_incendiary'
+  displayName: LocKey#8100372
+  localizedDescription: LocKey#8100566
+  tags:
+    - !append-once DPAE_Cal10mmAuto_INC
+
+Ammo.Cal10mmAuto_CHEM:
+  $base: Ammo.Cal10mmAuto
+  friendlyName: '10mm_auto_chemical'
+  displayName: LocKey#8100373
+  localizedDescription: LocKey#8100566
+  tags:
+    - !append-once DPAE_Cal10mmAuto_CHEM
+
+Ammo.Cal10mmAuto_NL:
+  $base: Ammo.Cal10mmAuto
+  friendlyName: '10mm_auto_non-lethal'
+  displayName: LocKey#8100374
+  localizedDescription: LocKey#8100566
+  tags:
+    - !append-once DPAE_Cal10mmAuto_NL

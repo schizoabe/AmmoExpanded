@@ -1,0 +1,135 @@
+Ammo.Cal45WinMag:
+  animationParameters: []
+  animFeatureName: ItemData
+  animName: ui_garment_pose
+  animSetResource: ''
+  appearanceSuffixes: []
+  appearanceSuffixesOwnerOverride: []
+  attachmentSlots: []
+  buyPrice:
+    - Price.Ammo
+    - Price.BuyPrice_StreetCred_Discount
+    - Price.PowerAmmo
+  cameraForward: {x: 0, y: 0, z: 0}
+  cameraUp: {x: 0, y: 0, z: 0}
+  canDrop: True
+  connections: []
+  CraftingData: Ammo.AmmoBase_inline0
+  crosshair: Crosshairs.None
+  deprecated: False
+  displayName: LocKey#8100317
+  dropObject: ammoDrop
+  effectors: []
+  enableNpcRPGData: False
+  entityName: ammo_box_handgun
+  equipAreas: []
+  equipPrereqs: []
+  friendlyName: '45_winchester_magnum'
+  gameplayRestrictions:
+    - GameplayRestriction.VehicleCombatNoInterruptions
+  garmentOffset: 0
+  hairSkinnedMeshComponents: []
+  icon: UIIcon.ItemIcon
+  iconPath: ''
+  isCached: False
+  isCoreCW: False
+  isCustomizable: False
+  isGarment: False
+  isPart: False
+  isSingleInstance: True
+  itemCategory: ItemCategory.General
+  itemType: ItemType.Con_Ammo
+  localizedDescription: LocKey#8100585
+  localizedName: ''
+  mass: 1
+  minigameInstance: minigame_v2.DefaultItemMinigame
+  objectActions:
+    - ItemAction.Drop
+    - ItemAction.Disassemble
+  OnAttach: []
+  OnEquip: []
+  OnLooted: []
+  parts: []
+  placementSlots: []
+  powerLevelDeterminedByParent: False
+  previewBBoxOverride: []
+  quality: Quality.Common
+  qualityRestrictedByParent: False
+  replicateWhenNotActive: False
+  requiredSlots: []
+  savable: False
+  sellPrice:
+    - Price.Ammo
+    - Price.PowerAmmo
+  slotPartList: []
+  slotPartListPreset: []
+  statModifierGroups: []
+  statPools: []
+  tags:
+    - Ammo
+    - ShowStackPrice
+    - Cal45WinMag
+  $base: Ammo.HandgunAmmo
+  upgradeCostMult: 1
+  useHeadgearGarmentAggregator: False
+  useNewSpawnMethod: False
+  usesVariants: False
+  variants: []
+  visualTags: []
+  weakspots: []
+
+Ammo.Cal45WinMag_AP:
+  $base: Ammo.Cal45WinMag
+  friendlyName: '45_winchester_magnum_armor_piercing'
+  displayName: LocKey#8100318
+  localizedDescription: LocKey#8100585
+  tags:
+    - !append-once DPAE_Cal45WinMag_AP
+
+Ammo.Cal45WinMag_HP:
+  $base: Ammo.Cal45WinMag
+  friendlyName: '45_winchester_magnum_hollow_point'
+  displayName: LocKey#8100319
+  localizedDescription: LocKey#8100585
+  tags:
+    - !append-once DPAE_Cal45WinMag_HP
+
+Ammo.Cal45WinMag_EMP:
+  $base: Ammo.Cal45WinMag
+  friendlyName: '45_winchester_magnum_emp'
+  displayName: LocKey#8100320
+  localizedDescription: LocKey#8100585
+  tags:
+    - !append-once DPAE_Cal45WinMag_EMP
+
+Ammo.Cal45WinMag_INC:
+  $base: Ammo.Cal45WinMag
+  friendlyName: '45_winchester_magnum_incendiary'
+  displayName: LocKey#8100321
+  localizedDescription: LocKey#8100585
+  tags:
+    - !append-once DPAE_Cal45WinMag_INC
+
+Ammo.Cal45WinMag_CHEM:
+  $base: Ammo.Cal45WinMag
+  friendlyName: '45_winchester_magnum_chemical'
+  displayName: LocKey#8100322
+  localizedDescription: LocKey#8100585
+  tags:
+    - !append-once DPAE_Cal45WinMag_CHEM
+
+Ammo.Cal45WinMag_NL:
+  $base: Ammo.Cal45WinMag
+  friendlyName: '45_winchester_magnum_non-lethal'
+  displayName: LocKey#8100323
+  localizedDescription: LocKey#8100585
+  tags:
+    - !append-once DPAE_Cal45WinMag_NL
+
+Ammo.Cal45WinMag_Snakeshot:
+  $base: Ammo.Cal45WinMag
+  friendlyName: '45_winchester_magnum_snakeshot'
+  displayName: LocKey#8100618
+  localizedDescription: LocKey#8100585
+  tags:
+    - !append-once DPAE_Cal45WinMag_Snakeshot

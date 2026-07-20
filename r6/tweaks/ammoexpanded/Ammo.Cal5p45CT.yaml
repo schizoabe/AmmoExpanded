@@ -1,0 +1,127 @@
+Ammo.Cal5p45CT:
+  animationParameters: []
+  animFeatureName: ItemData
+  animName: ui_garment_pose
+  animSetResource: ''
+  appearanceSuffixes: []
+  appearanceSuffixesOwnerOverride: []
+  attachmentSlots: []
+  buyPrice:
+    - Price.Ammo
+    - Price.BuyPrice_StreetCred_Discount
+    - Price.PowerAmmo
+  cameraForward: {x: 0, y: 0, z: 0}
+  cameraUp: {x: 0, y: 0, z: 0}
+  canDrop: True
+  connections: []
+  CraftingData: Ammo.AmmoBase_inline0
+  crosshair: Crosshairs.None
+  deprecated: False
+  displayName: LocKey#8100433
+  dropObject: ammoDrop
+  effectors: []
+  enableNpcRPGData: False
+  entityName: ammo_box_handgun
+  equipAreas: []
+  equipPrereqs: []
+  friendlyName: '545mm_ct'
+  gameplayRestrictions:
+    - GameplayRestriction.VehicleCombatNoInterruptions
+  garmentOffset: 0
+  hairSkinnedMeshComponents: []
+  icon: UIIcon.ItemIcon
+  iconPath: ''
+  isCached: False
+  isCoreCW: False
+  isCustomizable: False
+  isGarment: False
+  isPart: False
+  isSingleInstance: True
+  itemCategory: ItemCategory.General
+  itemType: ItemType.Con_Ammo
+  localizedDescription: LocKey#8100592
+  localizedName: ''
+  mass: 1
+  minigameInstance: minigame_v2.DefaultItemMinigame
+  objectActions:
+    - ItemAction.Drop
+    - ItemAction.Disassemble
+  OnAttach: []
+  OnEquip: []
+  OnLooted: []
+  parts: []
+  placementSlots: []
+  powerLevelDeterminedByParent: False
+  previewBBoxOverride: []
+  quality: Quality.Common
+  qualityRestrictedByParent: False
+  replicateWhenNotActive: False
+  requiredSlots: []
+  savable: False
+  sellPrice:
+    - Price.Ammo
+    - Price.PowerAmmo
+  slotPartList: []
+  slotPartListPreset: []
+  statModifierGroups: []
+  statPools: []
+  tags:
+    - Ammo
+    - ShowStackPrice
+    - Cal5p45CT
+  $base: Ammo.RifleAmmo
+  upgradeCostMult: 1
+  useHeadgearGarmentAggregator: False
+  useNewSpawnMethod: False
+  usesVariants: False
+  variants: []
+  visualTags: []
+  weakspots: []
+
+Ammo.Cal5p45CT_AP:
+  $base: Ammo.Cal5p45CT
+  friendlyName: '545mm_ct_armor_piercing'
+  displayName: LocKey#8100434
+  localizedDescription: LocKey#8100592
+  tags:
+    - !append-once DPAE_Cal5p45CT_AP
+
+Ammo.Cal5p45CT_HP:
+  $base: Ammo.Cal5p45CT
+  friendlyName: '545mm_ct_hollow_point'
+  displayName: LocKey#8100435
+  localizedDescription: LocKey#8100592
+  tags:
+    - !append-once DPAE_Cal5p45CT_HP
+
+Ammo.Cal5p45CT_EMP:
+  $base: Ammo.Cal5p45CT
+  friendlyName: '545mm_ct_emp'
+  displayName: LocKey#8100436
+  localizedDescription: LocKey#8100592
+  tags:
+    - !append-once DPAE_Cal5p45CT_EMP
+
+Ammo.Cal5p45CT_INC:
+  $base: Ammo.Cal5p45CT
+  friendlyName: '545mm_ct_incendiary'
+  displayName: LocKey#8100437
+  localizedDescription: LocKey#8100592
+  tags:
+    - !append-once DPAE_Cal5p45CT_INC
+
+Ammo.Cal5p45CT_CHEM:
+  $base: Ammo.Cal5p45CT
+  friendlyName: '545mm_ct_chemical'
+  displayName: LocKey#8100438
+  localizedDescription: LocKey#8100592
+  tags:
+    - !append-once DPAE_Cal5p45CT_CHEM
+
+Ammo.Cal5p45CT_NL:
+  $base: Ammo.Cal5p45CT
+  friendlyName: '545mm_ct_non-lethal'
+  displayName: LocKey#8100439
+  localizedDescription: LocKey#8100592
+  tags:
+    - !append-once DPAE_Cal5p45CT_NL

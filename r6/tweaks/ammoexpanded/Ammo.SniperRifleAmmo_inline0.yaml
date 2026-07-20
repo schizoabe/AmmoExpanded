@@ -1,0 +1,5 @@
+Ammo.SniperRifleAmmo_inline0:
+  modifierType: Additive
+  statType: BaseStats.Quantity
+  $type: gamedataConstantStatModifier_Record
+  value: 75

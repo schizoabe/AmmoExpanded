@@ -1,0 +1,111 @@
+Ammo.Cal18x70Rocket:
+  animationParameters: []
+  animFeatureName: ItemData
+  animName: ui_garment_pose
+  animSetResource: ''
+  appearanceSuffixes: []
+  appearanceSuffixesOwnerOverride: []
+  attachmentSlots: []
+  buyPrice:
+    - Price.Ammo
+    - Price.BuyPrice_StreetCred_Discount
+    - Price.PowerAmmo
+  cameraForward: {x: 0, y: 0, z: 0}
+  cameraUp: {x: 0, y: 0, z: 0}
+  canDrop: True
+  connections: []
+  CraftingData: Ammo.AmmoBase_inline0
+  crosshair: Crosshairs.None
+  deprecated: False
+  displayName: LocKey#8100410
+  dropObject: ammoDrop
+  effectors: []
+  enableNpcRPGData: False
+  entityName: ammo_box_shotgun
+  equipAreas: []
+  equipPrereqs: []
+  friendlyName: '18x70mm_guided_rocket'
+  gameplayRestrictions:
+    - GameplayRestriction.VehicleCombatNoInterruptions
+  garmentOffset: 0
+  hairSkinnedMeshComponents: []
+  icon: UIIcon.ItemIcon
+  iconPath: ''
+  isCached: False
+  isCoreCW: False
+  isCustomizable: False
+  isGarment: False
+  isPart: False
+  isSingleInstance: True
+  itemCategory: ItemCategory.General
+  itemType: ItemType.Con_Ammo
+  localizedDescription: LocKey#8100577
+  localizedName: ''
+  mass: 1
+  minigameInstance: minigame_v2.DefaultItemMinigame
+  objectActions:
+    - ItemAction.Drop
+    - ItemAction.Disassemble
+  OnAttach: []
+  OnEquip: []
+  OnLooted: []
+  parts: []
+  placementSlots: []
+  powerLevelDeterminedByParent: False
+  previewBBoxOverride: []
+  quality: Quality.Common
+  qualityRestrictedByParent: False
+  replicateWhenNotActive: False
+  requiredSlots: []
+  savable: False
+  sellPrice:
+    - Price.Ammo
+    - Price.PowerAmmo
+  slotPartList: []
+  slotPartListPreset: []
+  statModifierGroups: []
+  statPools: []
+  tags:
+    - Ammo
+    - ShowStackPrice
+    - Cal18x70Rocket
+  $base: Ammo.ShotgunAmmo
+  upgradeCostMult: 1
+  useHeadgearGarmentAggregator: False
+  useNewSpawnMethod: False
+  usesVariants: False
+  variants: []
+  visualTags: []
+  weakspots: []
+
+Ammo.Cal18x70Rocket_HE:
+  $base: Ammo.Cal18x70Rocket
+  friendlyName: '18x70mm_guided_rocket_high_explosive'
+  displayName: LocKey#8100411
+  localizedDescription: LocKey#8100577
+  tags:
+    - !append-once DPAE_Cal18x70Rocket_HE
+
+Ammo.Cal18x70Rocket_INC:
+  $base: Ammo.Cal18x70Rocket
+  friendlyName: '18x70mm_guided_rocket_incendiary'
+  displayName: LocKey#8100412
+  localizedDescription: LocKey#8100577
+  tags:
+    - !append-once DPAE_Cal18x70Rocket_INC
+
+Ammo.Cal18x70Rocket_EMP:
+  $base: Ammo.Cal18x70Rocket
+  friendlyName: '18x70mm_guided_rocket_emp'
+  displayName: LocKey#8100611
+  localizedDescription: LocKey#8100577
+  tags:
+    - !append-once DPAE_Cal18x70Rocket_EMP
+
+Ammo.Cal18x70Rocket_CHEM:
+  $base: Ammo.Cal18x70Rocket
+  friendlyName: '18x70mm_guided_rocket_chemical'
+  displayName: LocKey#8100612
+  localizedDescription: LocKey#8100577
+  tags:
+    - !append-once DPAE_Cal18x70Rocket_CHEM

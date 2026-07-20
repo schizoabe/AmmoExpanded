@@ -1,0 +1,4 @@
+Ammo.RecipeHandgunAmmo_inline0:
+  amount: 90
+  item: Ammo.HandgunAmmo
+  $type: gamedataCraftingResult_Record

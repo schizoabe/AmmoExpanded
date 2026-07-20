@@ -1,0 +1,312 @@
+
+Items.Preset_Chao_VooDoo:
+  rangedAttacks: Attacks.SmartBulletHighPackage
+
+Items.Preset_Kappa_Legendary:
+  rangedAttacks: Attacks.SmartBulletHighPackage
+
+Items.Preset_Nova_Doom_Doom:
+  rangedAttacks: Attacks.PowerBulletsBulletPackage
+
+Items.Preset_Liberty_Padre:
+  rangedAttacks: Attacks.PowerBulletsBulletPackage
+  statModifierGroups:
+    - Items.IconicQualityRandomization
+    - Items.Base_Liberty_Technical_Stats
+    - Items.Base_Liberty_Handling_Stats
+    - Items.Base_Liberty_Recoil_Stats
+    - Items.Base_Liberty_Spread_Stats
+    - Items.Base_Liberty_Aim_Stats
+    - Items.Base_Liberty_Constant_Stats
+    - Items.Base_Liberty_Damage_Stats
+    - Items.Base_Power_Stats
+    - Items.Base_Power_Handgun_Mult_Stats
+    - Items.Base_Power_Handgun_Stats
+    - Items.Base_Handgun_RPG_Stats
+    - Items.Base_Handgun_Misc_Stats
+    - Items.Base_Handgun_Sway_Stats
+    - Items.Base_PlayerState_Spread_Stats
+    - Items.Base_Handgun_DeadReckoning_Stats
+    - Items.Base_Weapon_Damage_Type_Min_Max
+    - Items.Base_Weapon_Damage_Type_Physical
+
+Items.Preset_Burya_Comrade:
+  rangedAttacks: Attacks.PhysicalBulletPackage
+  statModifierGroups:
+    - Items.CraftableIconicQualityRandomisation
+    - Items.Base_Weapon_Status_Effect_Application_Stats
+    - Items.Base_Weapon_Damage_Type_Min_Max
+    - Items.Base_Revolver_RPG_Stats
+    - Items.Base_Revolver_Misc_Stats
+    - Items.Base_Revolver_Sway_Stats
+    - Items.Base_PlayerState_Spread_Stats
+    - Items.Base_Revolver_DeadReckoning_Stats
+    - Items.Base_Tech_Stats
+    - Items.Base_Tech_Revolver_Mult_Stats
+    - Items.Base_Burya_Comrade_Technical_Stats
+    - Items.Base_Burya_Handling_Stats
+    - Items.Base_Burya_Recoil_Stats
+    - Items.Base_Burya_Spread_Stats
+    - Items.Base_Burya_Comrade_Constant_Stats
+    - Items.Base_Burya_Aim_Stats
+    - Items.Base_Burya_Damage_Stats
+    - Items.Base_Weapon_Damage_Type_Physical
+
+Items.Preset_Shingen_Prototype:
+  rangedAttacks: Attacks.SmartBulletHighPackage
+  statModifierGroups:
+    - Items.IconicQualityRandomization
+    - Items.Base_Shingen_Technical_Stats
+    - Items.Base_Shingen_Handling_Stats
+    - Items.Base_Shingen_Recoil_Stats
+    - Items.Base_Shingen_Spread_Stats
+    - Items.Base_Shingen_Prototype_SmartGun_Stats
+    - Items.Base_Shingen_Prototype_SmartGun_SmartLink_Stats
+    - Items.Base_Shingen_SmartGun_Projectile_Stats
+    - Items.Base_Shingen_Flags
+    - Items.Base_Shingen_Aim_Stats
+    - Items.Base_Shingen_Constant_Stats
+    - Items.Base_Shingen_Damage_Stats
+    - Items.Base_Smart_Stats
+    - Items.Base_Smart_Submachinegun_Mult_Stats
+    - Items.Base_Smart_Submachinegun_No_Sway_Stats
+    - Items.Base_Submachinegun_RPG_Stats
+    - Items.Base_Submachinegun_Misc_Stats
+    - Items.Base_Submachinegun_DeadReckoning_Stats
+    - Items.Base_PlayerState_Spread_Stats
+    - Items.Base_Weapon_Status_Effect_Application_Stats
+    - Items.Base_Weapon_Damage_Type_Min_Max
+    - Items.Base_Weapon_Damage_Type_Physical
+
+Items.Preset_Zhuo_Eight_Star:
+  rangedAttacks: Attacks.SmartBulletHighPackage
+  statModifierGroups:
+    - Items.CraftableIconicQualityRandomisation
+    - Items.Base_Zhuo_Eight_Star_Technical_Stats
+    - Items.Base_Zhuo_Handling_Stats
+    - Items.Base_Zhuo_Recoil_Stats
+    - Items.Base_Zhuo_Eight_Star_Spread_Stats
+    - Items.Base_Zhuo_Eight_Star_SmartGun_Stats
+    - Items.Base_Zhuo_Eight_Star_SmartLink_Stats
+    - Items.Base_Zhuo_Eight_Star_SmartGun_Projectile_Stats
+    - Items.Base_Zhuo_Flags
+    - Items.Base_Zhuo_Aim_Stats
+    - Items.Base_Zhuo_Eight_Star_Constant_Stats
+    - Items.Base_Zhuo_Damage_Stats
+    - Items.Base_Smart_Stats
+    - Items.Base_Smart_Shotgun_Mult_Stats
+    - Items.Base_Smart_Shotgun_No_Sway_Stats
+    - Items.Base_Shotgun_RPG_Stats
+    - Items.Base_Shotgun_Misc_Stats
+    - Items.Base_PlayerState_Spread_Stats
+    - Items.Base_Weapon_Damage_Type_Min_Max
+    - Items.Base_Weapon_Damage_Type_Physical
+
+Items.Preset_Copperhead_Genesis:
+  rangedAttacks: Attacks.PowerRoundsBulletPackage
+  statModifierGroups:
+    - Items.CraftableIconicQualityRandomisation
+    - Items.Base_Copperhead_Technical_Stats
+    - Items.Base_Copperhead_Handling_Stats
+    - Items.Base_Copperhead_Recoil_Stats
+    - Items.Base_Copperhead_Spread_Stats
+    - Items.Base_Copperhead_Aim_Stats
+    - Items.Base_Copperhead_Constant_Stats
+    - Items.Base_Copperhead_Damage_Stats
+    - Items.Base_Power_Stats
+    - Items.Base_Power_Assault_Rifle_Mult_Stats
+    - Items.Base_Power_Assault_Rifle_Stats
+    - Items.Base_Assault_Rifle_RPG_Stats
+    - Items.Base_Assault_Rifle_Misc_Stats
+    - Items.Base_Assault_Rifle_Sway_Stats
+    - Items.Base_PlayerState_Spread_Stats
+    - Items.Base_Assault_Rifle_DeadReckoning_Stats
+    - Items.Base_Weapon_Status_Effect_Application_Stats
+    - Items.Base_Weapon_Damage_Type_Min_Max
+    - Items.Base_Weapon_Damage_Type_Physical
+
+Items.Preset_Kolac_Tiny_Mike:
+  rangedAttacks: Attacks.PowerRoundsBulletPackage
+  statModifierGroups:
+    - Items.IconicQualityRandomization
+    - Items.Base_Kolac_Technical_Stats
+    - Items.Base_Kolac_Handling_Stats
+    - Items.Base_Kolac_Recoil_Stats
+    - Items.Base_Kolac_Spread_Stats
+    - Items.Base_Kolac_Aim_Stats
+    - Items.Base_Kolac_Constant_Stats
+    - Items.Base_Kolac_Damage_Stats
+    - Items.Base_Power_Stats
+    - Items.Base_Power_Precision_Rifle_Stats
+    - Items.Base_Power_Precision_Rifle_Mult_Stats
+    - Items.Base_Precision_Rifle_RPG_Stats
+    - Items.Base_Precision_Rifle_Misc_Stats
+    - Items.Base_Precision_Rifle_Sway_Stats
+    - Items.Base_PlayerState_Spread_Stats
+    - Items.Base_Precision_Rifle_DeadReckoning_Stats
+    - Items.Base_Weapon_Damage_Type_Min_Max
+    - Items.Base_Weapon_Damage_Type_Physical
+
+Items.Preset_Grad_Buck:
+  rangedAttacks: Attacks.PowerRoundsBulletPackage
+  statModifierGroups:
+    - Items.IconicQualityRandomization
+    - Items.Base_Buck_Rifle_RPG_Stats
+    - Items.Base_Buck_Technical_Stats
+    - Items.Base_Buck_Handling_Stats
+    - Items.Base_Buck_Aim_Stats
+    - Items.Base_Buck_Constant_Stats
+    - Items.Base_Grad_Recoil_Stats
+    - Items.Base_Grad_Spread_Stats
+    - Items.Base_Grad_Damage_Stats
+    - Items.Base_Power_Stats
+    - Items.Base_Power_Sniper_Rifle_Mult_Stats
+    - Items.Base_Sniper_Rifle_Sway_Stats
+    - Items.Base_Sniper_Rifle_Misc_Stats
+    - Items.Base_PlayerState_Spread_Stats
+    - Items.Base_Sniper_Rifle_DeadReckoning_Stats
+    - Items.Base_Weapon_Status_Effect_Application_Stats
+    - Items.Base_Weapon_Damage_Type_Min_Max
+    - Items.Base_Weapon_Damage_Type_Physical
+
+Items.Preset_Osprey_Prototype:
+  rangedAttacks: Attacks.PowerRoundsBulletPackage
+  statModifierGroups:
+    - Items.IconicQualityRandomization
+    - Items.Base_Osprey_Technical_Stats
+    - Items.Base_Osprey_Handling_Stats
+    - Items.Base_Osprey_Recoil_Stats
+    - Items.Base_Osprey_Spread_Stats
+    - Items.Base_Osprey_Aim_Stats
+    - Items.Base_Osprey_Constant_Stats
+    - Items.Base_Osprey_Damage_Stats
+    - Items.Base_Power_Sniper_Rifle_Mult_Stats
+    - Items.Base_Power_Sniper_Rifle_Stats
+    - Items.Base_Sniper_Rifle_Sway_Stats
+    - Items.Base_Sniper_Rifle_RPG_Stats
+    - Items.Base_Sniper_Rifle_Misc_Stats
+    - Items.Base_PlayerState_Spread_Stats
+    - Items.Base_Sniper_Rifle_DeadReckoning_Stats
+    - Items.Base_Weapon_Damage_Type_Min_Max
+    - Items.Base_Weapon_Damage_Type_Physical
+
+Items.Preset_Grad_AirDrop:
+  rangedAttacks: Attacks.PowerRoundsBulletPackage
+  statModifierGroups:
+    - Items.IconicQualityRandomization
+    - Items.Base_Grad_AirDrop_Technical_Stats
+    - Items.Base_Grad_Handling_Stats
+    - Items.Base_Grad_Recoil_Stats
+    - Items.Base_Grad_Spread_Stats
+    - Items.Base_Grad_Aim_Stats
+    - Items.Base_Grad_AirDrop_Constant_Stats
+    - Items.Base_Grad_Damage_Stats
+    - Items.Base_Power_Stats
+    - Items.Base_Power_Sniper_Rifle_Mult_Stats
+    - Items.Base_Power_Sniper_Rifle_Stats
+    - Items.Base_Sniper_Rifle_Sway_Stats
+    - Items.Base_Sniper_Rifle_RPG_Stats
+    - Items.Base_Sniper_Rifle_Misc_Stats
+    - Items.Base_PlayerState_Spread_Stats
+    - Items.Base_Sniper_Rifle_DeadReckoning_Stats
+    - Items.Base_Weapon_Damage_Type_Min_Max
+    - Items.Base_Weapon_Damage_Type_Physical
+
+Items.Preset_Burya_AirDrop:
+  rangedAttacks: Attacks.PhysicalBulletPackage
+  statModifierGroups:
+    - Items.IconicQualityRandomization
+    - Items.Base_Weapon_Damage_Type_Min_Max
+    - Items.Base_Revolver_RPG_Stats
+    - Items.Base_Revolver_Misc_Stats
+    - Items.Base_Revolver_Sway_Stats
+    - Items.Base_PlayerState_Spread_Stats
+    - Items.Base_Revolver_DeadReckoning_Stats
+    - Items.Base_Tech_Stats
+    - Items.Base_Tech_Revolver_Mult_Stats
+    - Items.Base_Burya_AirDrop_Technical_Stats
+    - Items.Base_Burya_Handling_Stats
+    - Items.Base_Burya_Recoil_Stats
+    - Items.Base_Burya_Spread_Stats
+    - Items.Base_Burya_AirDrop_Constant_Stats
+    - Items.Base_Burya_Aim_Stats
+    - Items.Base_Burya_Damage_Stats
+    - Items.Base_Weapon_Damage_Type_Physical
+
+Items.Base_Metel:
+  rangedAttacks: Attacks.PowerBulletsBulletPackage
+
+Items.Preset_Metel_AirDrop:
+  rangedAttacks: Attacks.PowerBulletsBulletPackage
+  statModifierGroups:
+    - Items.IconicQualityRandomization
+    - Items.Base_Metel_AirDrop_Technical_Stats
+    - Items.Base_Metel_Handling_Stats
+    - Items.Base_Metel_Recoil_Stats
+    - Items.Base_Metel_Spread_Stats
+    - Items.Base_Metel_Aim_Stats
+    - Items.Base_Metel_AirDrop_Constant_Stats
+    - Items.Base_Metel_Damage_Stats
+    - Items.Base_Power_Stats
+    - Items.Base_Power_Revolver_Mult_Stats
+    - Items.Base_Power_Revolver_Stats
+    - Items.Base_Revolver_RPG_Stats
+    - Items.Base_Revolver_Misc_Stats
+    - Items.Base_Revolver_Sway_Stats
+    - Items.Base_PlayerState_Spread_Stats
+    - Items.Base_Revolver_DeadReckoning_Stats
+    - Items.Base_Weapon_Damage_Type_Min_Max
+    - Items.Base_Weapon_Damage_Type_Physical
+
+Items.Base_Hercules:
+  rangedAttacks: Attacks.SmartBulletLowPackage
+
+Items.Preset_Hercules_Prototype:
+  statModifierGroups:
+    - Items.IconicQualityRandomization
+    - Items.Base_Hercules_Technical_Stats
+    - Items.Base_Hercules_Handling_Stats
+    - Items.Base_Hercules_Recoil_Stats
+    - Items.Base_Hercules_Spread_Stats
+    - Items.Base_Hercules_SmartGun_Stats
+    - Items.Base_Hercules_SmartGun_SmartLink_Stats
+    - Items.Base_Hercules_SmartGun_Projectile_Stats
+    - Items.Base_Hercules_Flags
+    - Items.Base_Hercules_Aim_Stats
+    - Items.Base_Hercules_Constant_Stats
+    - Items.Base_Hercules_Damage_Stats
+    - Items.Base_Smart_Stats
+    - Items.Base_Smart_Assault_Rifle_Mult_Stats
+    - Items.Base_Smart_Assault_Rifle_No_Sway_Stats
+    - Items.Base_Assault_Rifle_RPG_Stats
+    - Items.Base_Assault_Rifle_Misc_Stats
+    - Items.Base_PlayerState_Spread_Stats
+    - Items.Base_Weapon_Status_Effect_Application_Stats
+    - Items.Base_Weapon_Damage_Type_Min_Max
+    - Items.Base_Weapon_Damage_Type_Physical
+
+Items.Preset_Testera_Nicolas:
+  rangedAttacks: Attacks.PowerBuckshotsBulletPackage
+  statModifierGroups:
+    - Items.IconicQualityRandomization
+    - Items.Base_Testera_Nicolas_Technical_Stats
+    - Items.Base_Testera_Handling_Stats
+    - Items.Base_Testera_Recoil_Stats
+    - Items.Base_Testera_Nicolas_Spread_Stats
+    - Items.Base_Testera_Aim_Stats
+    - Items.Base_Testera_Nicolas_Constant_Stats
+    - Items.Base_Testera_Damage_Stats
+    - Items.Base_Power_Stats
+    - Items.Base_Power_Shotgun_Stats
+    - Items.Base_Power_Shotgun_Mult_Stats
+    - Items.Base_Dual_Shotgun_RPG_Stats
+    - Items.Base_Shotgun_Sway_Stats
+    - Items.Base_Dual_Shotgun_Misc_Stats
+    - Items.Base_PlayerState_Spread_Stats
+    - Items.Base_Dual_Shotgun_DeadReckoning_Stats
+    - Items.Base_Weapon_Status_Effect_Application_Stats
+    - Items.Base_Weapon_Damage_Type_Min_Max
+    - Items.Base_Weapon_Damage_Type_Physical
+
+Items.Preset_MA70_Default:
+  rangedAttacks: Attacks.PowerRoundsBulletPackage

@@ -1,0 +1,482 @@
+
+Items.Base_Silverhand:
+  tags:
+    - !append-once DPAE_IconicElemental_Thermal
+    - !append-once DPAE_ThermalOnHE
+    - !append-once DPAE_IconicElementalRateBonus_Thermal
+  statModifierGroups:
+    - Items.Base_Weapon_Damage_Type_Min_Max
+    - Items.Base_Silverhand_Handling_Stats
+    - Items.Base_Silverhand_Recoil_Stats
+    - Items.Base_Silverhand_Spread_Stats
+    - Items.Base_Silverhand_Constant_Stats
+    - Items.Base_Silverhand_Aim_Stats
+    - Items.Base_Handgun_RPG_Stats
+    - Items.Base_Handgun_Misc_Stats
+    - Items.Base_PlayerState_Spread_Stats
+    - Items.Base_Handgun_DeadReckoning_Stats
+    - Items.Base_Silverhand_Damage_Stats
+
+Items.Preset_Yukimura_Kiji:
+  tags:
+    - !append-once DPAE_IconicElemental_Electric
+    - !append-once DPAE_IconicElementalRateBonus_Electric
+  statModifierGroups:
+    - Items.IconicQualityRandomization
+    - Items.Base_Yukimura_Technical_Stats
+    - Items.Base_Yukimura_Handling_Stats
+    - Items.Base_Yukimura_Recoil_Stats
+    - Items.Base_Yukimura_Kiji_SmartGun_Stats
+    - Items.Base_Yukimura_SmartGun_Kiji_SmartLink_Stats
+    - Items.Base_Yukimura_SmartGun_Projectile_Stats
+    - Items.Base_Yukimura_Flags
+    - Items.Base_Yukimura_Aim_Stats
+    - Items.Base_Yukimura_StatModifierGroup_SpreadStats
+    - Items.Base_Yukimura_Damage_Stats
+    - Items.Base_Smart_Stats
+    - Items.Base_Smart_Handgun_Mult_Stats
+    - Items.Base_Smart_Handgun_No_Sway_Stats
+    - Items.Base_Handgun_RPG_Stats
+    - Items.Base_Handgun_Misc_Stats
+    - Items.Base_PlayerState_Spread_Stats
+    - Items.Base_Weapon_Status_Effect_Application_Stats
+    - Items.Base_Weapon_Damage_Type_Min_Max
+    - Items.Base_Weapon_Damage_Type_Physical
+
+Items.Preset_Dian_Yinglong:
+  tags:
+    - !append-once DPAE_IconicElemental_Electric
+    - !append-once DPAE_IconicElementalRateBonus_Electric
+  statModifierGroups:
+    - Items.CraftableIconicQualityRandomisation
+    - Items.Base_Dian_Technical_Stats
+    - Items.Base_Dian_Handling_Stats
+    - Items.Base_Dian_Recoil_Stats
+    - Items.Base_Dian_SmartGun_Stats
+    - Items.Base_Dian_SmartGun_SmartLink_Stats
+    - Items.Base_Dian_SmartGun_Projectile_Stats
+    - Items.Base_Dian_Flags
+    - Items.Base_Dian_SpreadStats
+    - Items.Base_Dian_Aim_Stats
+    - Items.Base_Dian_Constant_Stats
+    - Items.Base_Dian_Damage_Stats
+    - Items.Base_Smart_Stats
+    - Items.Base_Smart_Submachinegun_Mult_Stats
+    - Items.Base_Smart_Submachinegun_No_Sway_Stats
+    - Items.Base_Submachinegun_DeadReckoning_Stats
+    - Items.Base_Submachinegun_RPG_Stats
+    - Items.Base_Submachinegun_Misc_Stats
+    - Items.Base_PlayerState_Spread_Stats
+    - Items.Base_Weapon_Status_Effect_Application_Stats
+    - Items.Base_Weapon_Damage_Type_Min_Max
+    - Items.Base_Weapon_Damage_Type_Physical
+
+Items.Preset_Saratoga_Maelstrom:
+  rangedAttacks: Attacks.PowerBulletsBulletPackage
+  tags:
+    - !append-once DPAE_IconicElemental_Electric
+    - !append-once DPAE_IconicElementalRateBonus_Electric
+  statModifierGroups:
+    - Items.IconicQualityRandomization
+    - Items.Base_Saratoga_Technical_Stats
+    - Items.Base_Saratoga_Handling_Stats
+    - Items.Base_Saratoga_Constant_Stats
+    - Items.Base_Saratoga_Recoil_Stats
+    - Items.Base_Saratoga_Aim_Stats
+    - Items.Base_Saratoga_Spread_Stats
+    - Items.Base_Saratoga_Damage_Stats
+    - Items.Base_Power_Stats
+    - Items.Base_Power_Submachinegun_Mult_Stats
+    - Items.Base_Power_Submachinegun_Stats
+    - Items.Base_Submachinegun_RPG_Stats
+    - Items.Base_Submachinegun_Misc_Stats
+    - Items.Base_Submachinegun_Sway_Stats
+    - Items.Base_PlayerState_Spread_Stats
+    - Items.Base_Submachinegun_DeadReckoning_Stats
+    - Items.Base_Weapon_Status_Effect_Application_Stats
+    - Items.Base_Weapon_Damage_Type_Min_Max
+    - Items.Base_Weapon_Damage_Type_Physical
+
+Items.Preset_Achilles_Nash:
+  tags:
+    - !append-once DPAE_IconicElemental_Chemical
+    - !append-once DPAE_IconicElementalRateBonus_Chemical
+  statModifierGroups:
+    - Items.IconicQualityRandomization
+    - Items.Base_Achilles_Nash_Technical_Stats
+    - Items.Base_Achilles_Handling_Stats
+    - Items.Base_Achilles_Recoil_Stats
+    - Items.Base_Achilles_Nash_Spread_Stats
+    - Items.Base_Achilles_Aim_Stats
+    - Items.Base_Achilles_Nash_Constant_Stats
+    - Items.Base_Achilles_Damage_Stats
+    - Items.Base_Tech_Stats
+    - Items.Base_Tech_Precision_Rifle_Mult_Stats
+    - Items.Base_Precision_Rifle_RPG_Stats
+    - Items.Base_Precision_Rifle_Misc_Stats
+    - Items.Base_Precision_Rifle_Sway_Stats
+    - Items.Base_PlayerState_Spread_Stats
+    - Items.Base_Precision_Rifle_DeadReckoning_Stats
+    - Items.Base_Weapon_Status_Effect_Application_Stats
+    - Items.Base_Weapon_Damage_Type_Min_Max
+    - Items.Base_Weapon_Damage_Type_Physical
+
+Items.Preset_Satara_Brick:
+  tags:
+    - !append-once DPAE_IconicElemental_Electric
+    - !append-once DPAE_IconicElementalRateBonus_Electric
+  statModifierGroups:
+    - Items.IconicQualityRandomization
+    - Items.Satara_Brick_Technical_Stats
+    - Items.Satara_Brick_Tech_Stats
+    - Items.Base_Satara_Handling_Stats
+    - Items.Base_Satara_Recoil_Stats
+    - Items.Base_Satara_Spread_Stats
+    - Items.Base_Satara_Aim_Stats
+    - Items.Base_Satara_Constant_Stats
+    - Items.Base_Satara_Damage_Stats
+    - Items.Base_Tech_Shotgun_Mult_Stats
+    - Items.Base_Dual_Shotgun_RPG_Stats
+    - Items.Base_Shotgun_Sway_Stats
+    - Items.Base_Dual_Shotgun_Misc_Stats
+    - Items.Base_PlayerState_Spread_Stats
+    - Items.Base_Dual_Shotgun_DeadReckoning_Stats
+    - Items.Base_Weapon_Status_Effect_Application_Stats
+    - Items.Base_Weapon_Damage_Type_Min_Max
+    - Items.Base_Weapon_Damage_Type_Physical
+
+Items.Preset_Carnage_Mox:
+  tags:
+    - !append-once DPAE_IconicElemental_Electric
+    - !append-once DPAE_IconicElementalRateBonus_Electric
+  statModifierGroups:
+    - Items.IconicQualityRandomization
+    - Items.Base_Carnage_Mox_Technical_Stats
+    - Items.Base_Carnage_Handling_Stats
+    - Items.Base_Carnage_Mox_Recoil_Stats
+    - Items.Base_Carnage_Mox_Spread_Stats
+    - Items.Base_Carnage_Mox_Constant_Stats
+    - Items.Base_Carnage_Aim_Stats
+    - Items.Base_Carnage_Damage_Stats
+    - Items.Base_Power_Stats
+    - Items.Base_Power_Shotgun_Mult_Stats
+    - Items.Base_Power_Shotgun_Stats
+    - Items.Base_Shotgun_RPG_Stats
+    - Items.Base_Shotgun_Misc_Stats
+    - Items.Base_Shotgun_Sway_Stats
+    - Items.Base_PlayerState_Spread_Stats
+    - Items.Base_Shotgun_DeadReckoning_Stats
+    - Items.Base_Weapon_Damage_Type_Min_Max
+    - Items.Base_Weapon_Damage_Type_Physical
+
+Items.Preset_Overture_Kerry:
+  tags:
+    - !append-once DPAE_IconicElemental_Electric
+    - !append-once DPAE_IconicElementalRateBonus_Electric
+  statModifierGroups:
+    - Items.IconicQualityRandomization
+    - Items.Base_Overture_Kerry_Technical_Stats
+    - Items.Base_Overture_Handling_Stats
+    - Items.Base_Overture_Recoil_Stats
+    - Items.Base_Overture_Spread_Stats
+    - Items.Base_Overture_Aim_Stats
+    - Items.Base_Overture_Kerry_Constant_Stats
+    - Items.Base_Overture_Damage_Stats
+    - Items.Base_Power_Stats
+    - Items.Base_Power_Revolver_Mult_Stats
+    - Items.Base_Power_Revolver_Stats
+    - Items.Base_Revolver_RPG_Stats
+    - Items.Base_Revolver_Misc_Stats
+    - Items.Base_Revolver_Sway_Stats
+    - Items.Base_PlayerState_Spread_Stats
+    - Items.Base_Revolver_DeadReckoning_Stats
+    - Items.Base_Weapon_Status_Effect_Application_Stats
+    - Items.Base_Weapon_Damage_Type_Min_Max
+    - Items.Base_Weapon_Damage_Type_Physical
+
+Items.Preset_Pozhar_AirDrop:
+  tags:
+    - !append-once DPAE_IconicElemental_Thermal
+    - !append-once DPAE_IconicElementalRateBonus_Thermal
+  statModifierGroups:
+    - Items.IconicQualityRandomization
+    - Items.Base_Pozhar_AirDrop_Technical_Stats
+    - Items.Base_Pozhar_Handling_Stats
+    - Items.Base_Pozhar_Recoil_Stats
+    - Items.Base_Pozhar_Spread_Stats
+    - Items.Base_Pozhar_Aim_Stats
+    - Items.Base_Pozhar_AirDrop_Constant_Stats
+    - Items.Base_Pozhar_Damage_Stats
+    - Items.Base_Power_Stats
+    - Items.Base_Power_Shotgun_Mult_Stats
+    - Items.Base_Power_Shotgun_Stats
+    - Items.Base_Shotgun_RPG_Stats
+    - Items.Base_Shotgun_Misc_Stats
+    - Items.Base_Shotgun_Sway_Stats
+    - Items.Base_PlayerState_Spread_Stats
+    - Items.Base_Shotgun_DeadReckoning_Stats
+    - Items.Base_Weapon_Damage_Type_Min_Max
+    - Items.Base_Weapon_Damage_Type_Physical
+
+Items.Preset_Kenshin_Spy:
+  tags:
+    - !append-once DPAE_IconicElemental_Electric
+    - !append-once DPAE_IconicElementalRateBonus_Electric
+  statModifierGroups:
+    - Items.IconicQualityRandomization
+    - Items.Base_Kenshin_Spy_Technical_Stats
+    - Items.Base_Kenshin_Handling_Stats
+    - Items.Base_Kenshin_Recoil_Stats
+    - Items.Base_Kenshin_Spread_Stats
+    - Items.Base_Kenshin_Aim_Stats
+    - Items.Base_Kenshin_Spy_Constant_Stats
+    - Items.Base_Kenshin_Damage_Stats
+    - Items.Base_Tech_Stats
+    - Items.Base_Tech_Handgun_Mult_Stats
+    - Items.Base_Handgun_RPG_Stats
+    - Items.Base_Handgun_Misc_Stats
+    - Items.Base_Handgun_Sway_Stats
+    - Items.Base_PlayerState_Spread_Stats
+    - Items.Base_Weapon_Damage_Type_Min_Max
+    - Items.Base_Weapon_Damage_Type_Physical
+
+Items.Preset_Nue_Jackie:
+  tags:
+    - !append-once DPAE_IconicElemental_Thermal
+    - !append-once DPAE_IconicElementalRateBonus_Thermal
+  statModifierGroups:
+    - Items.IconicQualityRandomization
+    - Items.Base_Nue_Technical_Stats
+    - Items.Base_Nue_Handling_Stats
+    - Items.Base_Nue_Recoil_Stats
+    - Items.Base_Nue_Spread_Stats
+    - Items.Base_Nue_Aim_Stats
+    - Items.Base_Nue_Constant_Stats
+    - Items.Base_Nue_Damage_Stats
+    - Items.Base_Power_Stats
+    - Items.Base_Power_Handgun_Mult_Stats
+    - Items.Base_Power_Handgun_Stats
+    - Items.Base_Handgun_RPG_Stats
+    - Items.Base_Handgun_Misc_Stats
+    - Items.Base_Handgun_Sway_Stats
+    - Items.Base_PlayerState_Spread_Stats
+    - Items.Base_Handgun_DeadReckoning_Stats
+    - Items.Base_Weapon_Damage_Type_Min_Max
+    - Items.Base_Weapon_Damage_Type_Physical
+
+Items.Preset_Ticon_Gwent:
+  tags:
+    - !append-once DPAE_IconicElemental_Thermal
+    - !append-once DPAE_IconicElementalRateBonus_Thermal
+  statModifierGroups:
+    - Items.IconicQualityRandomization
+    - Items.Base_Ticon_Technical_Stats
+    - Items.Base_Ticon_Handling_Stats
+    - Items.Base_Ticon_Recoil_Stats
+    - Items.Base_Ticon_Spread_Stats
+    - Items.Base_Ticon_Aim_Stats
+    - Items.Base_Ticon_Constant_Stats
+    - Items.Base_Ticon_Damage_Stats
+    - Items.Base_Tech_Stats
+    - Items.Base_Tech_Handgun_Mult_Stats
+    - Items.Base_Handgun_RPG_Stats
+    - Items.Base_Handgun_Misc_Stats
+    - Items.Base_Handgun_Sway_Stats
+    - Items.Base_PlayerState_Spread_Stats
+    - Items.Base_Handgun_DeadReckoning_Stats
+    - Items.Base_Weapon_Status_Effect_Application_Stats
+    - Items.Base_Weapon_Damage_Type_Min_Max
+    - Items.Base_Weapon_Damage_Type_Physical
+
+Items.Preset_Grad_Scav:
+  tags:
+    - !append-once DPAE_IconicElemental_Electric
+    - !append-once DPAE_IconicElementalRateBonus_Electric
+  statModifierGroups:
+    - Items.IconicQualityRandomization
+    - Items.Base_Grad_Technical_Stats
+    - Items.Base_Grad_Handling_Stats
+    - Items.Base_Grad_Recoil_Stats
+    - Items.Base_Grad_Spread_Stats
+    - Items.Base_Grad_Aim_Stats
+    - Items.Base_Grad_Scav_Constant_Stats
+    - Items.Base_Grad_Damage_Stats
+    - Items.Base_Power_Stats
+    - Items.Base_Power_Sniper_Rifle_Mult_Stats
+    - Items.Base_Power_Sniper_Rifle_Stats
+    - Items.Base_Sniper_Rifle_Sway_Stats
+    - Items.Base_Sniper_Rifle_RPG_Stats
+    - Items.Base_Sniper_Rifle_Misc_Stats
+    - Items.Base_PlayerState_Spread_Stats
+    - Items.Base_Sniper_Rifle_DeadReckoning_Stats
+    - Items.Base_Weapon_Status_Effect_Application_Stats
+    - Items.Base_Weapon_Damage_Type_Min_Max
+    - Items.Base_Weapon_Damage_Type_Physical
+
+Items.Preset_Lexington_Wilson:
+  tags:
+    - !append-once DPAE_IconicElemental_Electric
+    - !append-once DPAE_IconicElementalRateBonus_Electric
+  statModifierGroups:
+    - Items.IconicQualityRandomization
+    - Items.Base_Lexington_Technical_Stats
+    - Items.Base_Lexington_Handling_Stats
+    - Items.Base_Lexington_Recoil_Stats
+    - Items.Base_Lexington_Spread_Stats
+    - Items.Base_Lexington_Aim_Stats
+    - Items.Base_Lexington_Wilson_Constant_Stats
+    - Items.Base_Lexington_Damage_Stats
+    - Items.Base_Power_Stats
+    - Items.Base_Power_Handgun_Mult_Stats
+    - Items.Base_Power_Handgun_Stats
+    - Items.Base_Handgun_RPG_Stats
+    - Items.Base_Handgun_Misc_Stats
+    - Items.Base_Handgun_Sway_Stats
+    - Items.Base_PlayerState_Spread_Stats
+    - Items.Base_Handgun_DeadReckoning_Stats
+    - Items.Base_Weapon_Damage_Type_Min_Max
+    - Items.Base_Weapon_Damage_Type_Physical
+
+Items.Preset_Nue_Maiko:
+  tags:
+    - !append-once DPAE_IconicElemental_Chemical
+    - !append-once DPAE_IconicElementalRateBonus_Chemical
+  statModifierGroups:
+    - Items.IconicQualityRandomization
+    - Items.Base_Nue_Maiko_Technical_Stats
+    - Items.Base_Nue_Handling_Stats
+    - Items.Base_Nue_Maiko_Recoil_Stats
+    - Items.Base_Nue_Spread_Stats
+    - Items.Base_Nue_Aim_Stats
+    - Items.Base_Nue_Maiko_Constant_Stats
+    - Items.Base_Nue_Damage_Stats
+    - Items.Base_Power_Handgun_Mult_Stats
+    - Items.Base_Power_Handgun_Stats
+    - Items.Base_Handgun_RPG_Stats
+    - Items.Base_Handgun_Misc_Stats
+    - Items.Base_Handgun_Sway_Stats
+    - Items.Base_PlayerState_Spread_Stats
+    - Items.Base_Handgun_DeadReckoning_Stats
+    - Items.Base_Weapon_Damage_Type_Min_Max
+    - Items.Base_Weapon_Damage_Type_Physical
+
+Items.Preset_Sidewinder_Divided:
+  tags:
+    - !append-once DPAE_IconicElemental_Chemical
+    - !append-once DPAE_IconicElementalRateBonus_Chemical
+  statModifierGroups:
+    - Items.IconicQualityRandomization
+    - Items.Base_Sidewinder_Technical_Stats
+    - Items.Base_Sidewinder_Handling_Stats
+    - Items.Base_Sidewinder_Recoil_Stats
+    - Items.Base_Sidewinder_Divided_SmartGun_Stats
+    - Items.Base_Sidewinder_Divided_SmartGun_SmartLink_Stats
+    - Items.Base_Sidewinder_Divided_SmartGun_Projectile_Stats
+    - Items.Base_Sidewinder_Spread_Stats
+    - Items.Base_Sidewinder_Flags
+    - Items.Base_Sidewinder_Aim_Stats
+    - Items.Base_Sidewinder_Constant_Stats
+    - Items.Base_Sidewinder_Damage_Stats
+    - Items.Base_Smart_Stats
+    - Items.Base_Smart_Assault_Rifle_Mult_Stats
+    - Items.Base_Smart_Assault_Rifle_No_Sway_Stats
+    - Items.Base_Assault_Rifle_RPG_Stats
+    - Items.Base_Assault_Rifle_Misc_Stats
+    - Items.Base_PlayerState_Spread_Stats
+    - Items.Base_Weapon_Status_Effect_Application_Stats
+    - Items.Base_Weapon_Damage_Type_Min_Max
+    - Items.Base_Weapon_Damage_Type_Physical
+
+Items.Preset_Igla_Sovereign:
+  statModifierGroups:
+    - Items.CraftableIconicQualityRandomisation
+    - Items.Base_Sovereign_Igla_Technical_Stats
+    - Items.Base_Igla_Handling_Stats
+    - Items.Base_Igla_Recoil_Stats
+    - Items.Base_Igla_Spread_Stats
+    - Items.Base_Igla_Aim_Stats
+    - Items.Base_Sovereign_Igla_Constant_Stats
+    - Items.Base_Igla_Damage_Stats
+    - Items.Base_Power_Stats
+    - Items.Base_Power_Shotgun_Stats
+    - Items.Base_Power_Shotgun_Mult_Stats
+    - Items.Base_Dual_Shotgun_RPG_Stats
+    - Items.Base_Shotgun_Sway_Stats
+    - Items.Base_Dual_Shotgun_Misc_Stats
+    - Items.Base_PlayerState_Spread_Stats
+    - Items.Base_Dual_Shotgun_DeadReckoning_Stats
+    - Items.Base_Weapon_Damage_Type_Min_Max
+    - Items.Base_Weapon_Damage_Type_Physical
+
+Items.Preset_Rasetsu_Prototype:
+  tags:
+    - !append-once DPAE_IconicElemental_Electric
+    - !append-once DPAE_IconicElementalRateBonus_Electric
+  statModifierGroups:
+    - Items.IconicQualityRandomization
+    - Items.Base_Rasetsu_Technical_Stats
+    - Items.Base_Rasetsu_Handling_Stats
+    - Items.Base_Rasetsu_Recoil_Stats
+    - Items.Base_Rasetsu_Spread_Stats
+    - Items.Base_Rasetsu_Aim_Stats
+    - Items.Base_Rasetsu_Prototype_Constant_Stats
+    - Items.Base_Rasetsu_Damage_Stats
+    - Items.Base_Tech_Sniper_Stats
+    - Items.Base_Tech_Sniper_Rifle_Mult_Stats
+    - Items.Base_Sniper_Rifle_Sway_Stats
+    - Items.Base_Sniper_Rifle_RPG_Stats
+    - Items.Base_Sniper_Rifle_Misc_Stats
+    - Items.Base_PlayerState_Spread_Stats
+    - Items.Base_Sniper_Rifle_DeadReckoning_Stats
+    - Items.Base_Weapon_Damage_Type_Min_Max
+    - Items.Base_Weapon_Damage_Type_Physical
+
+Items.Preset_Kappa_George:
+  tags:
+    - !append-once DPAE_IconicElemental_Electric
+    - !append-once DPAE_IconicElementalRateBonus_Electric
+  statModifierGroups:
+    - Items.IconicQualityRandomization
+    - Items.Base_Kappa_George_Technical_Stats
+    - Items.Base_Kappa_Handling_Stats
+    - Items.Base_Kappa_Recoil_Stats
+    - Items.Base_Kappa_George_SmartGun_Stats
+    - Items.Base_Kappa_George_SmartGun_SmartLink_Stats
+    - Items.Base_Kappa_SmartGun_Projectile_Stats
+    - Items.Base_Kappa_Flags
+    - Items.Base_Kappa_Aim_Stats
+    - Items.Base_Kappa_StatModifierGroup_SpreadStats
+    - Items.Base_Kappa_George_Constant_Stats
+    - Items.Base_Kappa_Damage_Stats
+    - Items.Base_Smart_Stats
+    - Items.Base_Smart_Handgun_Mult_Stats
+    - Items.Base_Smart_Handgun_No_Sway_Stats
+    - Items.Base_Handgun_RPG_Stats
+    - Items.Base_Handgun_Misc_Stats
+    - Items.Base_PlayerState_Spread_Stats
+    - Items.Base_Weapon_Damage_Type_Min_Max
+    - Items.Base_Weapon_Damage_Type_Physical
+
+Items.Preset_Nova_Hitman:
+  tags:
+    - !append-once DPAE_IconicElemental_Chemical
+    - !append-once DPAE_IconicElementalRateBonus_Chemical
+  statModifierGroups:
+    - Items.IconicQualityRandomization
+    - Items.Base_Nova_Technical_Stats
+    - Items.Base_Nova_Handling_Stats
+    - Items.Base_Nova_Recoil_Stats
+    - Items.Base_Nova_Spread_Stats
+    - Items.Base_Nova_Aim_Stats
+    - Items.Base_Nova_Hitman_Constant_Stats
+    - Items.Base_Nova_Damage_Stats
+    - Items.Base_Power_Stats
+    - Items.Base_Power_Revolver_Mult_Stats
+    - Items.Base_Power_Revolver_Stats
+    - Items.Base_Revolver_RPG_Stats
+    - Items.Base_Revolver_Misc_Stats
+    - Items.Base_Revolver_Sway_Stats
+    - Items.Base_PlayerState_Spread_Stats
+    - Items.Base_Revolver_DeadReckoning_Stats
+    - Items.Base_Weapon_Damage_Type_Min_Max
+    - Items.Base_Weapon_Damage_Type_Physical

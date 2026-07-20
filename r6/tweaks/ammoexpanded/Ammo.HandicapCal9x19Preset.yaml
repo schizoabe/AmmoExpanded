@@ -1,0 +1,6 @@
+﻿Ammo.HandicapCal9x19Preset:
+  handicapLimit: 120
+  handicapMaxQty: 0
+  handicapMinQty: 0
+  item: Ammo.Cal9x19
+  $type: gamedataHandicapLootPreset_Record

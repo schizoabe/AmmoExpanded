@@ -1,0 +1,140 @@
+
+
+Items.Base_Sidewinder:  # Cal10x40Rocket -> SmartBulletLowExplosivePackage (2m)
+  attacks:
+    - !append-once Attacks.SmartBulletHighExplosive
+    - !append-once DPAE_HE.SmartBulletLowExplosive
+
+Items.Base_Ashura:  # Cal12p7x70Rocket -> SmartBulletMedExplosivePackage (2.5m)
+  attacks:
+    - !append-once Attacks.SmartBulletHighExplosive
+    - !append-once DPAE_HE.SmartBulletMedExplosive
+
+Items.Base_Hercules:  # Cal12x45Rocket -> HerculesBulletPackage (2m, Hercules's own native explosive chain)
+  attacks:
+    - !append-once Attacks.HerculesProjectile
+    - !append-once DPAE_HE.HerculesProjectile
+
+Items.Base_Palica:  # Cal15x55Rocket -> SmartBulletTwoStageExplosivePackage (3m)
+  attacks:
+    - !append-once Attacks.SmartBulletHighExplosive
+    - !append-once DPAE_HE.SmartBulletTwoStageExplosive
+
+Items.Base_Grad:  # Cal23x152Sov -> RocketProjectilePackage (5m, matches O'Five's own native package). O'Five locks to HE; SPT32 Grad/Overwatch/Sparky/Borzaya can select or already use it.
+  attacks:
+    - !append-once Attacks.RocketEffect
+    - !append-once DPAE_HE.RocketEffect
+
+Items.Base_Zhuo:  # Cal18x70Rocket -> ZhuoBulletHighExplosivePackage (4m, matches Ba Xing Chong's own native package — corrected 2026-07-09, was previously assumed RocketProjectilePackage).
+  attacks:
+    - !append-once Attacks.ZhuoBulletHighExplosive
+    - !append-once DPAE_HE.ZhuoBulletHighExplosive
+
+Items.Base_Osprey:  # Cal20x102Vulcan -> ExplodingBulletLightPackage (3m, matches NDI Osprey's own native package — corrected 2026-07-09, was previously assumed Medium).
+  attacks:
+    - !append-once Attacks.ExplodingBulletLightEffect
+    - !append-once Attacks.ExplodingBulletLightProjectile
+    - !append-once DPAE_HE.ExplodingBulletLightEffect
+
+Items.Base_Kolac:  # Cal22x126AC -> ExplodingBulletLightPackage (3m). Hypercritical locks to HE; Kolac itself can select it too.
+  attacks:
+    - !append-once Attacks.ExplodingBulletLightEffect
+    - !append-once Attacks.ExplodingBulletLightProjectile
+    - !append-once DPAE_HE.ExplodingBulletLightEffect
+
+Items.Base_Carnage:  # Cal4Gauge -> ExplodingBulletLightPackage (3m)
+  attacks:
+    - !append-once Attacks.ExplodingBulletLightEffect
+    - !append-once Attacks.ExplodingBulletLightProjectile
+    - !append-once DPAE_HE.ExplodingBulletLightEffect
+
+Items.Base_Burya:  # Cal14x40TSlug -> ExplodingBulletLightPackage (3m, matches Laika's own native package, Preset_Burya_AirDrop — Category 3 discovery, was never on the Category 1 list). HE is a normal caliber option, not locked to Laika; base-level registration covers any Burya (incl. Comrade's Hammer, which is on a separate exclusive caliber and unaffected) loading it.
+  attacks:
+    - !append-once Attacks.ExplodingBulletLightEffect
+    - !append-once Attacks.ExplodingBulletLightProjectile
+    - !append-once DPAE_HE.ExplodingBulletLightEffect
+
+Items.Base_Metel:  # Cal50AE -> ExplodingBulletLightPackage (3m, matches Taigan's own native package, Preset_Metel_AirDrop — Category 3 discovery, was never on the Category 1 list). HE is a normal caliber option, not locked to Taigan; base-level registration covers any Metel loading it.
+  attacks:
+    - !append-once Attacks.ExplodingBulletLightEffect
+    - !append-once Attacks.ExplodingBulletLightProjectile
+    - !append-once DPAE_HE.ExplodingBulletLightEffect
+
+Items.Preset_Burya_Comrade:  # Cal14x70TSlugHE -> ExplodingBulletMediumPackage (4m), Comrade's Hammer exclusive. Vanilla leaves already present natively; DPAE_HE.* buffed leaf needs its own explicit entry (brand-new record ID, not on any platform's attacks[] before).
+  attacks:
+    - !append-once DPAE_HE.ExplodingBulletMediumEffect
+
+Items.Base_Chao:  # Cal6p5x25Minirocket -> SmartBulletHighExplosivePackage (1m, matches Ogou's own native package). HE is a normal caliber option, not locked to Ogou; base-level registration covers any Chao (iconic or not) loading it.
+  attacks:
+    - !append-once Attacks.SmartBulletHighExplosive
+    - !append-once DPAE_HE.SmartBulletHighExplosive
+
+Items.Base_Kappa:  # Cal6p5x25Minirocket (Kappa, Kappa X-MOD2, Crimestopper). Fixed 2026-07-10 — never registered for the vanilla leaf at all until now (pre-existing gap, unrelated to the buff — found while auditing this file).
+  attacks:
+    - !append-once Attacks.SmartBulletHighExplosive
+    - !append-once DPAE_HE.SmartBulletHighExplosive
+
+Items.Base_Yukimura:  # Cal6p5x25Minirocket (HJKE-11 Yukimura, Genjiroh, Skippy). Fixed 2026-07-10 — same pre-existing gap as Base_Kappa above.
+  attacks:
+    - !append-once Attacks.SmartBulletHighExplosive
+    - !append-once DPAE_HE.SmartBulletHighExplosive
+
+Items.Base_Shingen:  # Cal9p5x35Minirocket -> SmartBulletHighExplosivePackage (1m, matches Shingen Mark V's own native package). HE is a normal caliber option, not locked to Shingen Mark V; base-level registration covers any Shingen (iconic or not) loading it.
+  attacks:
+    - !append-once Attacks.SmartBulletHighExplosive
+    - !append-once DPAE_HE.SmartBulletHighExplosive
+
+Items.Base_Dian:  # Cal9p5x35Minirocket (G-58 Dian, Yinglong). Fixed 2026-07-10 — same pre-existing gap as Base_Kappa above.
+  attacks:
+    - !append-once Attacks.SmartBulletHighExplosive
+    - !append-once DPAE_HE.SmartBulletHighExplosive
+
+Items.Base_Warden:  # Cal9p5x35Minirocket (Warden, Chesapeake, Pizdets). Fixed 2026-07-10 — same pre-existing gap as Base_Kappa above.
+  attacks:
+    - !append-once Attacks.SmartBulletHighExplosive
+    - !append-once DPAE_HE.SmartBulletHighExplosive
+
+
+Items.Silverhand_Malorian:  # Cal500Malour
+  attacks:
+    - !append-once DPAE_HE.ExplosiveBulletEffect
+
+Items.Base_Testera:  # Cal10GaugeBuck (DB-2 Testera, Dezerter)
+  attacks:
+    - !append-once DPAE_HE.ExplosiveBulletEffect
+
+Items.Base_Igla:  # Cal10GaugeBuck (DB-4 Igla, Sovereign)
+  attacks:
+    - !append-once DPAE_HE.ExplosiveBulletEffect
+
+Items.Base_Liberty:  # Cal45Super (Liberty, Plan B, Seraph)
+  attacks:
+    - !append-once DPAE_HE.ExplosiveBulletEffect
+
+Items.Base_Unity:  # Cal45Super (Unity, Her Majesty, Cheetah)
+  attacks:
+    - !append-once DPAE_HE.ExplosiveBulletEffect
+
+Items.Preset_Lexington_Wilson:  # Cal45Super (Dying Night — reassigned from Cal9x19)
+  attacks:
+    - !append-once DPAE_HE.ExplosiveBulletEffect
+
+Items.Base_Copperhead:  # Cal5p56CT (D5 Copperhead, Psalm 11:6)
+  attacks:
+    - !append-once DPAE_HE.ExplosiveBulletEffect
+
+Items.Base_Nova:  # Cal12p3x41UdaR (DR5 Nova, Doom Doom, Mancinella)
+  attacks:
+    - !append-once DPAE_HE.ExplosiveBulletEffect
+
+Items.Base_Pulsar:
+  attacks:
+    - !append-once DPAE_HE.ExplosiveBulletEffect
+
+Items.Base_MA70:
+  attacks:
+    - !append-once DPAE_HE.ExplosiveBulletEffect
+
+Items.Base_Kyubi:
+  attacks:
+    - !append-once DPAE_HE.ExplosiveBulletEffect

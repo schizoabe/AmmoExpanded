@@ -1,0 +1,605 @@
+
+
+DPAE_HE.BulletSmartBulletHighExplosion:
+  $base: Attacks.BulletSmartBulletHighExplosion
+  statModifiers:
+    - AttackModifier.BaseBulletExplosionDamage
+    - $type: gamedataConstantStatModifier_Record
+      statType: BaseStats.PhysicalDamage
+      modifierType: Multiplier
+      value: 1.5
+    - $type: gamedataConstantStatModifier_Record
+      statType: BaseStats.ThermalDamage
+      modifierType: Multiplier
+      value: 1.5
+    - $type: gamedataConstantStatModifier_Record
+      statType: BaseStats.ChemicalDamage
+      modifierType: Multiplier
+      value: 1.5
+    - $type: gamedataConstantStatModifier_Record
+      statType: BaseStats.ElectricDamage
+      modifierType: Multiplier
+      value: 1.5
+
+DPAE_HE.SmartBulletHighExplosive:
+  $base: Attacks.SmartBulletHighExplosive
+  explosionAttack: DPAE_HE.BulletSmartBulletHighExplosion
+  statModifiers:
+    - $type: gamedataConstantStatModifier_Record
+      statType: BaseStats.PhysicalDamage
+      modifierType: Multiplier
+      value: 1.5
+    - $type: gamedataConstantStatModifier_Record
+      statType: BaseStats.ThermalDamage
+      modifierType: Multiplier
+      value: 1.5
+    - $type: gamedataConstantStatModifier_Record
+      statType: BaseStats.ChemicalDamage
+      modifierType: Multiplier
+      value: 1.5
+    - $type: gamedataConstantStatModifier_Record
+      statType: BaseStats.ElectricDamage
+      modifierType: Multiplier
+      value: 1.5
+
+DPAE_HE.SmartBulletHighExplosiveFire:
+  $base: Attacks.SmartBulletHighExplosiveFire
+  playerAttack: DPAE_HE.SmartBulletHighExplosive
+  playerTimeDilated: DPAE_HE.SmartBulletHighExplosive
+
+DPAE_HE.SmartBulletHighExplosivePackage:
+  $base: Attacks.SmartBulletHighExplosivePackage
+  defaultFire: DPAE_HE.SmartBulletHighExplosiveFire
+  chargeFire: DPAE_HE.SmartBulletHighExplosiveFire
+
+
+
+DPAE_HE.BulletSmartLowExplosion:
+  $base: Attacks.BulletSmartBulletHighExplosion
+  range: 2.0
+  statModifiers:
+    - AttackModifier.BaseBulletExplosionDamage
+    - $type: gamedataConstantStatModifier_Record
+      statType: BaseStats.PhysicalDamage
+      modifierType: Multiplier
+      value: 1.5
+    - $type: gamedataConstantStatModifier_Record
+      statType: BaseStats.ThermalDamage
+      modifierType: Multiplier
+      value: 1.5
+    - $type: gamedataConstantStatModifier_Record
+      statType: BaseStats.ChemicalDamage
+      modifierType: Multiplier
+      value: 1.5
+    - $type: gamedataConstantStatModifier_Record
+      statType: BaseStats.ElectricDamage
+      modifierType: Multiplier
+      value: 1.5
+
+DPAE_HE.SmartBulletLowExplosive:
+  $base: Attacks.SmartBulletHighExplosive
+  explosionAttack: DPAE_HE.BulletSmartLowExplosion
+  statModifiers:
+    - $type: gamedataConstantStatModifier_Record
+      statType: BaseStats.PhysicalDamage
+      modifierType: Multiplier
+      value: 1.5
+    - $type: gamedataConstantStatModifier_Record
+      statType: BaseStats.ThermalDamage
+      modifierType: Multiplier
+      value: 1.5
+    - $type: gamedataConstantStatModifier_Record
+      statType: BaseStats.ChemicalDamage
+      modifierType: Multiplier
+      value: 1.5
+    - $type: gamedataConstantStatModifier_Record
+      statType: BaseStats.ElectricDamage
+      modifierType: Multiplier
+      value: 1.5
+
+DPAE_HE.SmartBulletLowExplosiveFire:
+  $base: Attacks.SmartBulletHighExplosiveFire
+  playerAttack: DPAE_HE.SmartBulletLowExplosive
+  playerTimeDilated: DPAE_HE.SmartBulletLowExplosive
+
+DPAE_HE.SmartBulletLowExplosivePackage:
+  $base: Attacks.SmartBulletHighExplosivePackage
+  defaultFire: DPAE_HE.SmartBulletLowExplosiveFire
+  chargeFire: DPAE_HE.SmartBulletLowExplosiveFire
+
+
+DPAE_HE.BulletSmartMedExplosion:
+  $base: Attacks.BulletSmartBulletHighExplosion
+  range: 2.5
+  statModifiers:
+    - AttackModifier.BaseBulletExplosionDamage
+    - $type: gamedataConstantStatModifier_Record
+      statType: BaseStats.PhysicalDamage
+      modifierType: Multiplier
+      value: 1.5
+    - $type: gamedataConstantStatModifier_Record
+      statType: BaseStats.ThermalDamage
+      modifierType: Multiplier
+      value: 1.5
+    - $type: gamedataConstantStatModifier_Record
+      statType: BaseStats.ChemicalDamage
+      modifierType: Multiplier
+      value: 1.5
+    - $type: gamedataConstantStatModifier_Record
+      statType: BaseStats.ElectricDamage
+      modifierType: Multiplier
+      value: 1.5
+
+DPAE_HE.SmartBulletMedExplosive:
+  $base: Attacks.SmartBulletHighExplosive
+  explosionAttack: DPAE_HE.BulletSmartMedExplosion
+  statModifiers:
+    - $type: gamedataConstantStatModifier_Record
+      statType: BaseStats.PhysicalDamage
+      modifierType: Multiplier
+      value: 1.5
+    - $type: gamedataConstantStatModifier_Record
+      statType: BaseStats.ThermalDamage
+      modifierType: Multiplier
+      value: 1.5
+    - $type: gamedataConstantStatModifier_Record
+      statType: BaseStats.ChemicalDamage
+      modifierType: Multiplier
+      value: 1.5
+    - $type: gamedataConstantStatModifier_Record
+      statType: BaseStats.ElectricDamage
+      modifierType: Multiplier
+      value: 1.5
+
+DPAE_HE.SmartBulletMedExplosiveFire:
+  $base: Attacks.SmartBulletHighExplosiveFire
+  playerAttack: DPAE_HE.SmartBulletMedExplosive
+  playerTimeDilated: DPAE_HE.SmartBulletMedExplosive
+
+DPAE_HE.SmartBulletMedExplosivePackage:
+  $base: Attacks.SmartBulletHighExplosivePackage
+  defaultFire: DPAE_HE.SmartBulletMedExplosiveFire
+  chargeFire: DPAE_HE.SmartBulletMedExplosiveFire
+
+
+DPAE_HE.BulletSmartTwoStageExplosion:
+  $base: Attacks.BulletSmartBulletHighExplosion
+  range: 3.0
+  statModifiers:
+    - AttackModifier.BaseBulletExplosionDamage
+    - $type: gamedataConstantStatModifier_Record
+      statType: BaseStats.PhysicalDamage
+      modifierType: Multiplier
+      value: 1.5
+    - $type: gamedataConstantStatModifier_Record
+      statType: BaseStats.ThermalDamage
+      modifierType: Multiplier
+      value: 1.5
+    - $type: gamedataConstantStatModifier_Record
+      statType: BaseStats.ChemicalDamage
+      modifierType: Multiplier
+      value: 1.5
+    - $type: gamedataConstantStatModifier_Record
+      statType: BaseStats.ElectricDamage
+      modifierType: Multiplier
+      value: 1.5
+
+DPAE_HE.SmartBulletTwoStageExplosive:
+  $base: Attacks.SmartBulletHighExplosive
+  explosionAttack: DPAE_HE.BulletSmartTwoStageExplosion
+  statModifiers:
+    - $type: gamedataConstantStatModifier_Record
+      statType: BaseStats.PhysicalDamage
+      modifierType: Multiplier
+      value: 1.5
+    - $type: gamedataConstantStatModifier_Record
+      statType: BaseStats.ThermalDamage
+      modifierType: Multiplier
+      value: 1.5
+    - $type: gamedataConstantStatModifier_Record
+      statType: BaseStats.ChemicalDamage
+      modifierType: Multiplier
+      value: 1.5
+    - $type: gamedataConstantStatModifier_Record
+      statType: BaseStats.ElectricDamage
+      modifierType: Multiplier
+      value: 1.5
+
+DPAE_HE.SmartBulletTwoStageExplosiveFire:
+  $base: Attacks.SmartBulletHighExplosiveFire
+  playerAttack: DPAE_HE.SmartBulletTwoStageExplosive
+  playerTimeDilated: DPAE_HE.SmartBulletTwoStageExplosive
+
+DPAE_HE.SmartBulletTwoStageExplosivePackage:
+  $base: Attacks.SmartBulletHighExplosivePackage
+  defaultFire: DPAE_HE.SmartBulletTwoStageExplosiveFire
+  chargeFire: DPAE_HE.SmartBulletTwoStageExplosiveFire
+
+
+DPAE_HE.HerculesHipBulletExplosion:
+  $base: Attacks.HerculesHipBulletExplosion
+  statModifiers:
+    - AttackModifier.BaseBulletExplosionDamage
+    - $type: gamedataConstantStatModifier_Record
+      statType: BaseStats.PhysicalDamage
+      modifierType: Multiplier
+      value: 1.5
+    - $type: gamedataConstantStatModifier_Record
+      statType: BaseStats.ThermalDamage
+      modifierType: Multiplier
+      value: 1.5
+    - $type: gamedataConstantStatModifier_Record
+      statType: BaseStats.ChemicalDamage
+      modifierType: Multiplier
+      value: 1.5
+    - $type: gamedataConstantStatModifier_Record
+      statType: BaseStats.ElectricDamage
+      modifierType: Multiplier
+      value: 1.5
+
+DPAE_HE.HerculesProjectile:
+  $base: Attacks.HerculesProjectile
+  explosionAttack: DPAE_HE.HerculesHipBulletExplosion
+  statModifiers:
+    - $type: gamedataConstantStatModifier_Record
+      statType: BaseStats.PhysicalDamage
+      modifierType: Multiplier
+      value: 1.5
+    - $type: gamedataConstantStatModifier_Record
+      statType: BaseStats.ThermalDamage
+      modifierType: Multiplier
+      value: 1.5
+    - $type: gamedataConstantStatModifier_Record
+      statType: BaseStats.ChemicalDamage
+      modifierType: Multiplier
+      value: 1.5
+    - $type: gamedataConstantStatModifier_Record
+      statType: BaseStats.ElectricDamage
+      modifierType: Multiplier
+      value: 1.5
+
+DPAE_HE.HerculesBulletFire:
+  $base: Attacks.HerculesBulletFire
+  playerAttack: DPAE_HE.HerculesProjectile
+  playerTimeDilated: DPAE_HE.HerculesProjectile
+
+DPAE_HE.HerculesBulletPackage:
+  $base: Attacks.HerculesBulletPackage
+  defaultFire: DPAE_HE.HerculesBulletFire
+  chargeFire: DPAE_HE.HerculesBulletFire
+
+
+DPAE_HE.BulletExplosion:
+  $base: Attacks.BulletExplosion
+  statModifiers:
+    - AttackModifier.BaseBulletExplosionDamage
+    - $type: gamedataConstantStatModifier_Record
+      statType: BaseStats.PhysicalDamage
+      modifierType: Multiplier
+      value: 1.5
+    - $type: gamedataConstantStatModifier_Record
+      statType: BaseStats.ThermalDamage
+      modifierType: Multiplier
+      value: 1.5
+    - $type: gamedataConstantStatModifier_Record
+      statType: BaseStats.ChemicalDamage
+      modifierType: Multiplier
+      value: 1.5
+    - $type: gamedataConstantStatModifier_Record
+      statType: BaseStats.ElectricDamage
+      modifierType: Multiplier
+      value: 1.5
+    - $type: gamedataCombinedStatModifier_Record
+      statType: BaseStats.PhysicalDamage
+      modifierType: AdditiveMultiplier
+      refStat: BaseStats.PhysicalDamageAdditiveMultiplier
+      refObject: Root
+      opSymbol: '*'
+      value: 1
+    - $type: gamedataCombinedStatModifier_Record
+      statType: BaseStats.ThermalDamage
+      modifierType: AdditiveMultiplier
+      refStat: BaseStats.ThermalDamageAdditiveMultiplier
+      refObject: Root
+      opSymbol: '*'
+      value: 1
+    - $type: gamedataCombinedStatModifier_Record
+      statType: BaseStats.ChemicalDamage
+      modifierType: AdditiveMultiplier
+      refStat: BaseStats.ChemicalDamageAdditiveMultiplier
+      refObject: Root
+      opSymbol: '*'
+      value: 1
+    - $type: gamedataCombinedStatModifier_Record
+      statType: BaseStats.ElectricDamage
+      modifierType: AdditiveMultiplier
+      refStat: BaseStats.ElectricDamageAdditiveMultiplier
+      refObject: Root
+      opSymbol: '*'
+      value: 1
+
+DPAE_HE.ExplosiveBulletEffect:
+  $base: Attacks.ExplosiveBulletEffect
+  explosionAttack: DPAE_HE.BulletExplosion
+  statModifiers:
+    - $type: gamedataConstantStatModifier_Record
+      statType: BaseStats.PhysicalDamage
+      modifierType: Multiplier
+      value: 1.5
+    - $type: gamedataConstantStatModifier_Record
+      statType: BaseStats.ThermalDamage
+      modifierType: Multiplier
+      value: 1.5
+    - $type: gamedataConstantStatModifier_Record
+      statType: BaseStats.ChemicalDamage
+      modifierType: Multiplier
+      value: 1.5
+    - $type: gamedataConstantStatModifier_Record
+      statType: BaseStats.ElectricDamage
+      modifierType: Multiplier
+      value: 1.5
+
+DPAE_HE.PhysicalExplosiveBullet:
+  $base: Attacks.PhysicalExplosiveBullet
+  playerAttack: DPAE_HE.ExplosiveBulletEffect
+
+DPAE_HE.PhysicalExplosiveBulletPackage:
+  $base: Attacks.PhysicalExplosiveBulletPackage
+  defaultFire: DPAE_HE.PhysicalExplosiveBullet
+  chargeFire: DPAE_HE.PhysicalExplosiveBullet
+
+
+DPAE_HE.BulletLightExplosion:
+  $base: Attacks.BulletLightExplosion
+  statModifiers:
+    - AttackModifier.BaseBulletExplosionDamage
+    - $type: gamedataConstantStatModifier_Record
+      statType: BaseStats.PhysicalDamage
+      modifierType: Multiplier
+      value: 1.5
+    - $type: gamedataConstantStatModifier_Record
+      statType: BaseStats.ThermalDamage
+      modifierType: Multiplier
+      value: 1.5
+    - $type: gamedataConstantStatModifier_Record
+      statType: BaseStats.ChemicalDamage
+      modifierType: Multiplier
+      value: 1.5
+    - $type: gamedataConstantStatModifier_Record
+      statType: BaseStats.ElectricDamage
+      modifierType: Multiplier
+      value: 1.5
+
+DPAE_HE.ExplodingBulletLightEffect:
+  $base: Attacks.ExplodingBulletLightEffect
+  explosionAttack: DPAE_HE.BulletLightExplosion
+  statModifiers:
+    - $type: gamedataConstantStatModifier_Record
+      statType: BaseStats.PhysicalDamage
+      modifierType: Multiplier
+      value: 1.5
+    - $type: gamedataConstantStatModifier_Record
+      statType: BaseStats.ThermalDamage
+      modifierType: Multiplier
+      value: 1.5
+    - $type: gamedataConstantStatModifier_Record
+      statType: BaseStats.ChemicalDamage
+      modifierType: Multiplier
+      value: 1.5
+    - $type: gamedataConstantStatModifier_Record
+      statType: BaseStats.ElectricDamage
+      modifierType: Multiplier
+      value: 1.5
+
+DPAE_HE.ExplodingBulletLight:
+  $base: Attacks.ExplodingBulletLight
+  playerAttack: DPAE_HE.ExplodingBulletLightEffect
+
+DPAE_HE.ExplodingBulletLightPackage:
+  $base: Attacks.ExplodingBulletLightPackage
+  defaultFire: DPAE_HE.ExplodingBulletLight
+  chargeFire: DPAE_HE.ExplodingBulletLight
+
+
+DPAE_HE.BulletMediumExplosion:
+  $base: Attacks.BulletMediumExplosion
+  statModifiers:
+    - AttackModifier.BaseBulletExplosionDamage
+    - $type: gamedataConstantStatModifier_Record
+      statType: BaseStats.PhysicalDamage
+      modifierType: Multiplier
+      value: 1.5
+    - $type: gamedataConstantStatModifier_Record
+      statType: BaseStats.ThermalDamage
+      modifierType: Multiplier
+      value: 1.5
+    - $type: gamedataConstantStatModifier_Record
+      statType: BaseStats.ChemicalDamage
+      modifierType: Multiplier
+      value: 1.5
+    - $type: gamedataConstantStatModifier_Record
+      statType: BaseStats.ElectricDamage
+      modifierType: Multiplier
+      value: 1.5
+
+DPAE_HE.ExplodingBulletMediumEffect:
+  $base: Attacks.ExplodingBulletMediumEffect
+  explosionAttack: DPAE_HE.BulletMediumExplosion
+  statModifiers:
+    - $type: gamedataConstantStatModifier_Record
+      statType: BaseStats.PhysicalDamage
+      modifierType: Multiplier
+      value: 1.5
+    - $type: gamedataConstantStatModifier_Record
+      statType: BaseStats.ThermalDamage
+      modifierType: Multiplier
+      value: 1.5
+    - $type: gamedataConstantStatModifier_Record
+      statType: BaseStats.ChemicalDamage
+      modifierType: Multiplier
+      value: 1.5
+    - $type: gamedataConstantStatModifier_Record
+      statType: BaseStats.ElectricDamage
+      modifierType: Multiplier
+      value: 1.5
+
+DPAE_HE.ExplodingBulletMedium:
+  $base: Attacks.ExplodingBulletMedium
+  playerAttack: DPAE_HE.ExplodingBulletMediumEffect
+
+DPAE_HE.ExplodingBulletMediumPackage:
+  $base: Attacks.ExplodingBulletMediumPackage
+  defaultFire: DPAE_HE.ExplodingBulletMedium
+  chargeFire: DPAE_HE.ExplodingBulletMedium
+
+
+DPAE_HE.ZhuoBulletHighExplosion:
+  $base: Attacks.ZhuoBulletHighExplosion
+  statModifiers:
+    - AttackModifier.BaseBulletExplosionDamage
+    - $type: gamedataConstantStatModifier_Record
+      statType: BaseStats.PhysicalDamage
+      modifierType: Multiplier
+      value: 1.5
+    - $type: gamedataConstantStatModifier_Record
+      statType: BaseStats.ThermalDamage
+      modifierType: Multiplier
+      value: 1.5
+    - $type: gamedataConstantStatModifier_Record
+      statType: BaseStats.ChemicalDamage
+      modifierType: Multiplier
+      value: 1.5
+    - $type: gamedataConstantStatModifier_Record
+      statType: BaseStats.ElectricDamage
+      modifierType: Multiplier
+      value: 1.5
+
+DPAE_HE.ZhuoBulletHighExplosive:
+  $base: Attacks.ZhuoBulletHighExplosive
+  explosionAttack: DPAE_HE.ZhuoBulletHighExplosion
+  statModifiers:
+    - $type: gamedataConstantStatModifier_Record
+      statType: BaseStats.PhysicalDamage
+      modifierType: Multiplier
+      value: 1.5
+    - $type: gamedataConstantStatModifier_Record
+      statType: BaseStats.ThermalDamage
+      modifierType: Multiplier
+      value: 1.5
+    - $type: gamedataConstantStatModifier_Record
+      statType: BaseStats.ChemicalDamage
+      modifierType: Multiplier
+      value: 1.5
+    - $type: gamedataConstantStatModifier_Record
+      statType: BaseStats.ElectricDamage
+      modifierType: Multiplier
+      value: 1.5
+
+DPAE_HE.ZhuoBulletHighExplosiveFire:
+  $base: Attacks.ZhuoBulletHighExplosiveFire
+  playerAttack: DPAE_HE.ZhuoBulletHighExplosive
+  playerTimeDilated: DPAE_HE.ZhuoBulletHighExplosive
+
+DPAE_HE.ZhuoBulletHighExplosivePackage:
+  $base: Attacks.ZhuoBulletHighExplosivePackage
+  defaultFire: DPAE_HE.ZhuoBulletHighExplosiveFire
+  chargeFire: DPAE_HE.ZhuoBulletHighExplosiveFire
+
+
+DPAE_HE.RocketExplosion:
+  $base: Attacks.RocketExplosion
+  statModifiers:
+    - AttackModifier.BaseBulletExplosionDamage
+    - $type: gamedataConstantStatModifier_Record
+      statType: BaseStats.PhysicalDamage
+      modifierType: Multiplier
+      value: 1.5
+    - $type: gamedataConstantStatModifier_Record
+      statType: BaseStats.ThermalDamage
+      modifierType: Multiplier
+      value: 1.5
+    - $type: gamedataConstantStatModifier_Record
+      statType: BaseStats.ChemicalDamage
+      modifierType: Multiplier
+      value: 1.5
+    - $type: gamedataConstantStatModifier_Record
+      statType: BaseStats.ElectricDamage
+      modifierType: Multiplier
+      value: 1.5
+
+DPAE_HE.RocketEffect:
+  $base: Attacks.RocketEffect
+  explosionAttack: DPAE_HE.RocketExplosion
+  statModifiers:
+    - $type: gamedataConstantStatModifier_Record
+      statType: BaseStats.PhysicalDamage
+      modifierType: Multiplier
+      value: 1.5
+    - $type: gamedataConstantStatModifier_Record
+      statType: BaseStats.ThermalDamage
+      modifierType: Multiplier
+      value: 1.5
+    - $type: gamedataConstantStatModifier_Record
+      statType: BaseStats.ChemicalDamage
+      modifierType: Multiplier
+      value: 1.5
+    - $type: gamedataConstantStatModifier_Record
+      statType: BaseStats.ElectricDamage
+      modifierType: Multiplier
+      value: 1.5
+
+DPAE_HE.RocketAttack:
+  $base: Attacks.RocketAttack
+  playerAttack: DPAE_HE.RocketEffect
+
+DPAE_HE.RocketChargedExplosion:
+  $base: Attacks.RocketChargedExplosion
+  statModifiers:
+    - AttackModifier.BaseBulletExplosionDamage
+    - $type: gamedataConstantStatModifier_Record
+      statType: BaseStats.PhysicalDamage
+      modifierType: Multiplier
+      value: 1.5
+    - $type: gamedataConstantStatModifier_Record
+      statType: BaseStats.ThermalDamage
+      modifierType: Multiplier
+      value: 1.5
+    - $type: gamedataConstantStatModifier_Record
+      statType: BaseStats.ChemicalDamage
+      modifierType: Multiplier
+      value: 1.5
+    - $type: gamedataConstantStatModifier_Record
+      statType: BaseStats.ElectricDamage
+      modifierType: Multiplier
+      value: 1.5
+
+DPAE_HE.RocketChargedEffect:
+  $base: Attacks.RocketChargedEffect
+  explosionAttack: DPAE_HE.RocketChargedExplosion
+  statModifiers:
+    - $type: gamedataConstantStatModifier_Record
+      statType: BaseStats.PhysicalDamage
+      modifierType: Multiplier
+      value: 1.5
+    - $type: gamedataConstantStatModifier_Record
+      statType: BaseStats.ThermalDamage
+      modifierType: Multiplier
+      value: 1.5
+    - $type: gamedataConstantStatModifier_Record
+      statType: BaseStats.ChemicalDamage
+      modifierType: Multiplier
+      value: 1.5
+    - $type: gamedataConstantStatModifier_Record
+      statType: BaseStats.ElectricDamage
+      modifierType: Multiplier
+      value: 1.5
+
+DPAE_HE.RocketChargedAttack:
+  $base: Attacks.RocketChargedAttack
+  playerAttack: DPAE_HE.RocketChargedEffect
+  explosionAttack: DPAE_HE.RocketChargedExplosion
+
+DPAE_HE.RocketProjectilePackage:
+  $base: Attacks.RocketProjectilePackage
+  defaultFire: DPAE_HE.RocketAttack
+  chargeFire: DPAE_HE.RocketChargedAttack

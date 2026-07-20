@@ -1,0 +1,3562 @@
+{
+  "Header": {
+    "WolvenKitVersion": "8.17.4-nightly.2026-03-09",
+    "WKitJsonVersion": "0.0.9",
+    "GameVersion": 2310,
+    "ExportedDateTime": "2026-06-27T02:02:16.7008741Z",
+    "DataType": "CR2W",
+    "ArchiveFileName": "C:\\Users\\Pierre\\Documents\\AmmoExpanded\\source\\archive\\user\\pierre\\ammoexpanded\\localization\\en-us.json"
+  },
+  "Data": {
+    "Version": 195,
+    "BuildVersion": 0,
+    "RootChunk": {
+      "$type": "JsonResource",
+      "cookingPlatform": "PLATFORM_PC",
+      "root": {
+        "HandleId": "0",
+        "Data": {
+          "$type": "localizationPersistenceOnScreenEntries",
+          "entries": [
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "9x19mm Parabellum",
+              "maleVariant": "",
+              "primaryKey": "8100001",
+              "secondaryKey": "AmmoExpanded-Cal9x19-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "Standard 9mm pistol ammunition.",
+              "maleVariant": "",
+              "primaryKey": "8100002",
+              "secondaryKey": "AmmoExpanded-Cal9x19-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "11.43x23mm ACP",
+              "maleVariant": "",
+              "primaryKey": "8100003",
+              "secondaryKey": "AmmoExpanded-Cal11p43x23-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "High-caliber pistol ammunition.",
+              "maleVariant": "",
+              "primaryKey": "8100004",
+              "secondaryKey": "AmmoExpanded-Cal11p43x23-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "12.7x41mm S&W",
+              "maleVariant": "",
+              "primaryKey": "8100005",
+              "secondaryKey": "AmmoExpanded-Cal14p7x40-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "Exotic heavy pistol round exclusive to the Malorian Arms 3516.",
+              "maleVariant": "",
+              "primaryKey": "8100006",
+              "secondaryKey": "AmmoExpanded-Cal14p7x40-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "6.5x25mm Guided Minirocket",
+              "maleVariant": "",
+              "primaryKey": "8100007",
+              "secondaryKey": "AmmoExpanded-Smart6p5x25-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "Self-guided micro-rockets fired by smart pistols.",
+              "maleVariant": "",
+              "primaryKey": "8100008",
+              "secondaryKey": "AmmoExpanded-Smart6p5x25-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "8x30mm Rail Flechettes",
+              "maleVariant": "",
+              "primaryKey": "8100009",
+              "secondaryKey": "AmmoExpanded-Tech8x30-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "Magnetically accelerated flechettes for tech sidearms.",
+              "maleVariant": "",
+              "primaryKey": "8100010",
+              "secondaryKey": "AmmoExpanded-Tech8x30-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "10x30mm Rail Flechettes",
+              "maleVariant": "",
+              "primaryKey": "8100011",
+              "secondaryKey": "AmmoExpanded-Tech10x30-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "Magnetically accelerated flechettes for tech pistols.",
+              "maleVariant": "",
+              "primaryKey": "8100012",
+              "secondaryKey": "AmmoExpanded-Tech10x30-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "12 Gauge Buckshot",
+              "maleVariant": "",
+              "primaryKey": "8100013",
+              "secondaryKey": "AmmoExpanded-Gauge12-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "Standard shotgun shells. Devastating at close range.",
+              "maleVariant": "",
+              "primaryKey": "8100014",
+              "secondaryKey": "AmmoExpanded-Gauge12-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "4 Gauge Buckshot",
+              "maleVariant": "",
+              "primaryKey": "8100015",
+              "secondaryKey": "AmmoExpanded-Gauge4-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "Massive bore double-barrel shells. Extreme stopping power.",
+              "maleVariant": "",
+              "primaryKey": "8100016",
+              "secondaryKey": "AmmoExpanded-Gauge4-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "15x55mm Guided Rockets",
+              "maleVariant": "",
+              "primaryKey": "8100017",
+              "secondaryKey": "AmmoExpanded-Smart15x55-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "Self-guided micro-rockets for smart shotguns.",
+              "maleVariant": "",
+              "primaryKey": "8100018",
+              "secondaryKey": "AmmoExpanded-Smart15x55-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "18x70mm Heavy Rockets",
+              "maleVariant": "",
+              "primaryKey": "8100019",
+              "secondaryKey": "AmmoExpanded-Smart18x70-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "Heavy guided rockets for smart heavy shotguns.",
+              "maleVariant": "",
+              "primaryKey": "8100020",
+              "secondaryKey": "AmmoExpanded-Smart18x70-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "10.7x33mm Magnum",
+              "maleVariant": "",
+              "primaryKey": "8100021",
+              "secondaryKey": "AmmoExpanded-Cal10p7x33-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "Heavy revolver rounds. Reliable stopping power.",
+              "maleVariant": "",
+              "primaryKey": "8100022",
+              "secondaryKey": "AmmoExpanded-Cal10p7x33-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "12.7x33mm AE",
+              "maleVariant": "",
+              "primaryKey": "8100023",
+              "secondaryKey": "AmmoExpanded-Cal12p7x33-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "Massive bore revolver rounds. Devastating power.",
+              "maleVariant": "",
+              "primaryKey": "8100024",
+              "secondaryKey": "AmmoExpanded-Cal12p7x33-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "Tech 14x40mm",
+              "maleVariant": "",
+              "primaryKey": "8100025",
+              "secondaryKey": "AmmoExpanded-Tech14x40-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "Electromagnetically accelerated heavy revolver rounds.",
+              "maleVariant": "",
+              "primaryKey": "8100026",
+              "secondaryKey": "AmmoExpanded-Tech14x40-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "Tech 14x70mm HE",
+              "maleVariant": "",
+              "primaryKey": "8100027",
+              "secondaryKey": "AmmoExpanded-Tech14x70HE-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "Single high-explosive round. Comrade's Hammer exclusive.",
+              "maleVariant": "",
+              "primaryKey": "8100028",
+              "secondaryKey": "AmmoExpanded-Tech14x70HE-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "5.56x45mm NATO FMJ",
+              "maleVariant": "",
+              "primaryKey": "8100029",
+              "secondaryKey": "AmmoExpanded-Cal5p56x45-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "Standard rifle ammunition. Used in the most common assault rifles and SMGs.",
+              "maleVariant": "",
+              "primaryKey": "8100030",
+              "secondaryKey": "AmmoExpanded-Cal5p56x45-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "7.62x39mm Soviet FMJ",
+              "maleVariant": "",
+              "primaryKey": "8100031",
+              "secondaryKey": "AmmoExpanded-Cal7p62x39-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "Heavy intermediate rifle round. Superior stopping power at medium range.",
+              "maleVariant": "",
+              "primaryKey": "8100032",
+              "secondaryKey": "AmmoExpanded-Cal7p62x39-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "7.62x51mm NATO FMJ",
+              "maleVariant": "",
+              "primaryKey": "8100033",
+              "secondaryKey": "AmmoExpanded-Cal7p62x51-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "Full-power battle rifle cartridge. Exceptional range and penetration.",
+              "maleVariant": "",
+              "primaryKey": "8100034",
+              "secondaryKey": "AmmoExpanded-Cal7p62x51-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "12.7x55mm NUSA FMJ",
+              "maleVariant": "",
+              "primaryKey": "8100035",
+              "secondaryKey": "AmmoExpanded-Cal12p7x55-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "Heavy machine gun ammunition. Penetrates light armor with ease.",
+              "maleVariant": "",
+              "primaryKey": "8100036",
+              "secondaryKey": "AmmoExpanded-Cal12p7x55-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "14.5x114mm Soviet",
+              "maleVariant": "",
+              "primaryKey": "8100037",
+              "secondaryKey": "AmmoExpanded-Cal20x120-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "Autocannon rounds for heavy machine guns. Shreds through armor plating.",
+              "maleVariant": "",
+              "primaryKey": "8100038",
+              "secondaryKey": "AmmoExpanded-Cal20x120-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "22x126mm Nitro Express HE",
+              "maleVariant": "",
+              "primaryKey": "8100039",
+              "secondaryKey": "AmmoExpanded-Cal22x126-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "Extreme-caliber rounds for mounted heavy weapons. Devastating at any range.",
+              "maleVariant": "",
+              "primaryKey": "8100040",
+              "secondaryKey": "AmmoExpanded-Cal22x126-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "10x40mm Guided Rockets",
+              "maleVariant": "",
+              "primaryKey": "8100041",
+              "secondaryKey": "AmmoExpanded-Smart10x40-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "Self-guided micro-rockets for smart submachine guns.",
+              "maleVariant": "",
+              "primaryKey": "8100042",
+              "secondaryKey": "AmmoExpanded-Smart10x40-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "12x45mm Guided Rockets",
+              "maleVariant": "",
+              "primaryKey": "8100043",
+              "secondaryKey": "AmmoExpanded-Smart12x45-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "Self-guided rockets for smart rifles. Auto-tracks moving targets.",
+              "maleVariant": "",
+              "primaryKey": "8100044",
+              "secondaryKey": "AmmoExpanded-Smart12x45-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "12.7x70mm Smart Slugs",
+              "maleVariant": "",
+              "primaryKey": "8100045",
+              "secondaryKey": "AmmoExpanded-Smart12p7x70-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "Heavy guided projectiles for smart sniper rifles.",
+              "maleVariant": "",
+              "primaryKey": "8100046",
+              "secondaryKey": "AmmoExpanded-Smart12p7x70-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "12.7x50mm Rail Flechettes",
+              "maleVariant": "",
+              "primaryKey": "8100047",
+              "secondaryKey": "AmmoExpanded-Tech12p7x50-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "Magnetically accelerated flechettes for tech submachine guns.",
+              "maleVariant": "",
+              "primaryKey": "8100048",
+              "secondaryKey": "AmmoExpanded-Tech12p7x50-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "15x80mm Rail Slugs",
+              "maleVariant": "",
+              "primaryKey": "8100049",
+              "secondaryKey": "AmmoExpanded-Tech15x80-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "High-velocity electromagnetic slugs for tech sniper rifles.",
+              "maleVariant": "",
+              "primaryKey": "8100050",
+              "secondaryKey": "AmmoExpanded-Tech15x80-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "Militech Prototype Rounds",
+              "maleVariant": "",
+              "primaryKey": "8100051",
+              "secondaryKey": "AmmoExpanded-MilitechPrototype-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "Experimental ammunition for Militech prototype weapons. Extremely rare.",
+              "maleVariant": "",
+              "primaryKey": "8100052",
+              "secondaryKey": "AmmoExpanded-MilitechPrototype-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "9.5x35mm Guided Minirockets",
+              "maleVariant": "",
+              "primaryKey": "8100053",
+              "secondaryKey": "AmmoExpanded-Smart9p5x35-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "Self-guided minirockets for smart SMGs. Tracks targets through obstacles.",
+              "maleVariant": "",
+              "primaryKey": "8100054",
+              "secondaryKey": "AmmoExpanded-Smart9p5x35-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "11.43x23mm ACP HP",
+              "maleVariant": "",
+              "primaryKey": "8100055",
+              "secondaryKey": "AmmoExpanded-Cal11p43x23HP-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "Expanding rounds designed to maximize tissue damage at the cost of penetration.",
+              "maleVariant": "",
+              "primaryKey": "8100056",
+              "secondaryKey": "AmmoExpanded-Cal11p43x23HP-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "11.43x23mm ACP AP",
+              "maleVariant": "",
+              "primaryKey": "8100057",
+              "secondaryKey": "AmmoExpanded-Cal11p43x23AP-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "Hardened core rounds that punch through body armor and plating.",
+              "maleVariant": "",
+              "primaryKey": "8100058",
+              "secondaryKey": "AmmoExpanded-Cal11p43x23AP-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "11.43x23mm ACP Non-Lethal",
+              "maleVariant": "",
+              "primaryKey": "8100059",
+              "secondaryKey": "AmmoExpanded-Cal11p43x23NL-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "Low-velocity rubber rounds. Incapacitates without lethal damage.",
+              "maleVariant": "",
+              "primaryKey": "8100060",
+              "secondaryKey": "AmmoExpanded-Cal11p43x23NL-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "11.43x23mm ACP EMP",
+              "maleVariant": "",
+              "primaryKey": "8100061",
+              "secondaryKey": "AmmoExpanded-Cal11p43x23EMP-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "Delivers an electromagnetic pulse on impact. Effective against cyberware and drones.",
+              "maleVariant": "",
+              "primaryKey": "8100062",
+              "secondaryKey": "AmmoExpanded-Cal11p43x23EMP-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "11.43x23mm ACP Incendiary",
+              "maleVariant": "",
+              "primaryKey": "8100063",
+              "secondaryKey": "AmmoExpanded-Cal11p43x23INC-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "Thermite-coated rounds that ignite targets on impact.",
+              "maleVariant": "",
+              "primaryKey": "8100064",
+              "secondaryKey": "AmmoExpanded-Cal11p43x23INC-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "9x19mm Parabellum HP",
+              "maleVariant": "",
+              "primaryKey": "8100065",
+              "secondaryKey": "AmmoExpanded-Cal9x19HP-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "Expanding rounds for maximized close-range tissue damage.",
+              "maleVariant": "",
+              "primaryKey": "8100066",
+              "secondaryKey": "AmmoExpanded-Cal9x19HP-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "9x19mm Parabellum AP",
+              "maleVariant": "",
+              "primaryKey": "8100067",
+              "secondaryKey": "AmmoExpanded-Cal9x19AP-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "Hardened core rounds that punch through body armor.",
+              "maleVariant": "",
+              "primaryKey": "8100068",
+              "secondaryKey": "AmmoExpanded-Cal9x19AP-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "9x19mm Parabellum Non-Lethal",
+              "maleVariant": "",
+              "primaryKey": "8100069",
+              "secondaryKey": "AmmoExpanded-Cal9x19NL-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "Low-velocity rubber rounds for non-lethal takedowns.",
+              "maleVariant": "",
+              "primaryKey": "8100070",
+              "secondaryKey": "AmmoExpanded-Cal9x19NL-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "9x19mm Parabellum EMP",
+              "maleVariant": "",
+              "primaryKey": "8100071",
+              "secondaryKey": "AmmoExpanded-Cal9x19EMP-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "Delivers an electromagnetic pulse on impact.",
+              "maleVariant": "",
+              "primaryKey": "8100072",
+              "secondaryKey": "AmmoExpanded-Cal9x19EMP-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "9x19mm Parabellum Incendiary",
+              "maleVariant": "",
+              "primaryKey": "8100073",
+              "secondaryKey": "AmmoExpanded-Cal9x19INC-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "Thermite-coated rounds that ignite targets on impact.",
+              "maleVariant": "",
+              "primaryKey": "8100074",
+              "secondaryKey": "AmmoExpanded-Cal9x19INC-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "10.7x33mm Magnum HP",
+              "maleVariant": "",
+              "primaryKey": "8100075",
+              "secondaryKey": "AmmoExpanded-Cal10p7x33HP-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "Expanding rounds for maximized tissue damage.",
+              "maleVariant": "",
+              "primaryKey": "8100076",
+              "secondaryKey": "AmmoExpanded-Cal10p7x33HP-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "10.7x33mm Magnum AP",
+              "maleVariant": "",
+              "primaryKey": "8100077",
+              "secondaryKey": "AmmoExpanded-Cal10p7x33AP-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "Hardened core rounds that punch through body armor.",
+              "maleVariant": "",
+              "primaryKey": "8100078",
+              "secondaryKey": "AmmoExpanded-Cal10p7x33AP-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "10.7x33mm Magnum Non-Lethal",
+              "maleVariant": "",
+              "primaryKey": "8100079",
+              "secondaryKey": "AmmoExpanded-Cal10p7x33NL-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "Low-velocity rubber rounds for non-lethal takedowns.",
+              "maleVariant": "",
+              "primaryKey": "8100080",
+              "secondaryKey": "AmmoExpanded-Cal10p7x33NL-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "10.7x33mm Magnum EMP",
+              "maleVariant": "",
+              "primaryKey": "8100081",
+              "secondaryKey": "AmmoExpanded-Cal10p7x33EMP-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "Delivers an electromagnetic pulse on impact.",
+              "maleVariant": "",
+              "primaryKey": "8100082",
+              "secondaryKey": "AmmoExpanded-Cal10p7x33EMP-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "10.7x33mm Magnum Incendiary",
+              "maleVariant": "",
+              "primaryKey": "8100083",
+              "secondaryKey": "AmmoExpanded-Cal10p7x33INC-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "Thermite-coated rounds that ignite targets on impact.",
+              "maleVariant": "",
+              "primaryKey": "8100084",
+              "secondaryKey": "AmmoExpanded-Cal10p7x33INC-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "12.7x33mm AE HP",
+              "maleVariant": "",
+              "primaryKey": "8100085",
+              "secondaryKey": "AmmoExpanded-Cal12p7x33HP-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "Expanding rounds for maximized tissue damage.",
+              "maleVariant": "",
+              "primaryKey": "8100086",
+              "secondaryKey": "AmmoExpanded-Cal12p7x33HP-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "12.7x33mm AE AP",
+              "maleVariant": "",
+              "primaryKey": "8100087",
+              "secondaryKey": "AmmoExpanded-Cal12p7x33AP-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "Hardened core rounds that punch through body armor.",
+              "maleVariant": "",
+              "primaryKey": "8100088",
+              "secondaryKey": "AmmoExpanded-Cal12p7x33AP-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "12.7x33mm AE Non-Lethal",
+              "maleVariant": "",
+              "primaryKey": "8100089",
+              "secondaryKey": "AmmoExpanded-Cal12p7x33NL-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "Low-velocity rubber rounds for non-lethal takedowns.",
+              "maleVariant": "",
+              "primaryKey": "8100090",
+              "secondaryKey": "AmmoExpanded-Cal12p7x33NL-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "12.7x33mm AE EMP",
+              "maleVariant": "",
+              "primaryKey": "8100091",
+              "secondaryKey": "AmmoExpanded-Cal12p7x33EMP-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "Delivers an electromagnetic pulse on impact.",
+              "maleVariant": "",
+              "primaryKey": "8100092",
+              "secondaryKey": "AmmoExpanded-Cal12p7x33EMP-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "12.7x33mm AE Incendiary",
+              "maleVariant": "",
+              "primaryKey": "8100093",
+              "secondaryKey": "AmmoExpanded-Cal12p7x33INC-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "Thermite-coated rounds that ignite targets on impact.",
+              "maleVariant": "",
+              "primaryKey": "8100094",
+              "secondaryKey": "AmmoExpanded-Cal12p7x33INC-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "12.7x55mm NUSA FMJ HP",
+              "maleVariant": "",
+              "primaryKey": "8100095",
+              "secondaryKey": "AmmoExpanded-Cal12p7x55HP-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "Expanding rounds for maximized tissue damage.",
+              "maleVariant": "",
+              "primaryKey": "8100096",
+              "secondaryKey": "AmmoExpanded-Cal12p7x55HP-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "12.7x55mm NUSA FMJ AP",
+              "maleVariant": "",
+              "primaryKey": "8100097",
+              "secondaryKey": "AmmoExpanded-Cal12p7x55AP-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "Hardened core rounds for armor penetration at range.",
+              "maleVariant": "",
+              "primaryKey": "8100098",
+              "secondaryKey": "AmmoExpanded-Cal12p7x55AP-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "12.7x55mm NUSA FMJ Non-Lethal",
+              "maleVariant": "",
+              "primaryKey": "8100099",
+              "secondaryKey": "AmmoExpanded-Cal12p7x55NL-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "Low-velocity rubber rounds for non-lethal suppression.",
+              "maleVariant": "",
+              "primaryKey": "8100100",
+              "secondaryKey": "AmmoExpanded-Cal12p7x55NL-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "12.7x55mm NUSA FMJ EMP",
+              "maleVariant": "",
+              "primaryKey": "8100101",
+              "secondaryKey": "AmmoExpanded-Cal12p7x55EMP-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "Delivers an electromagnetic pulse on impact.",
+              "maleVariant": "",
+              "primaryKey": "8100102",
+              "secondaryKey": "AmmoExpanded-Cal12p7x55EMP-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "12.7x55mm NUSA FMJ Incendiary",
+              "maleVariant": "",
+              "primaryKey": "8100103",
+              "secondaryKey": "AmmoExpanded-Cal12p7x55INC-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "Thermite-coated rounds that ignite targets on impact.",
+              "maleVariant": "",
+              "primaryKey": "8100104",
+              "secondaryKey": "AmmoExpanded-Cal12p7x55INC-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "5.56x45mm NATO FMJ HP",
+              "maleVariant": "",
+              "primaryKey": "8100105",
+              "secondaryKey": "AmmoExpanded-Cal5p56x45HP-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "Expanding rounds for maximized tissue damage.",
+              "maleVariant": "",
+              "primaryKey": "8100106",
+              "secondaryKey": "AmmoExpanded-Cal5p56x45HP-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "5.56x45mm NATO FMJ AP",
+              "maleVariant": "",
+              "primaryKey": "8100107",
+              "secondaryKey": "AmmoExpanded-Cal5p56x45AP-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "Hardened core rounds for light armor penetration.",
+              "maleVariant": "",
+              "primaryKey": "8100108",
+              "secondaryKey": "AmmoExpanded-Cal5p56x45AP-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "5.56x45mm NATO FMJ Non-Lethal",
+              "maleVariant": "",
+              "primaryKey": "8100109",
+              "secondaryKey": "AmmoExpanded-Cal5p56x45NL-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "Low-velocity rubber rounds for non-lethal takedowns.",
+              "maleVariant": "",
+              "primaryKey": "8100110",
+              "secondaryKey": "AmmoExpanded-Cal5p56x45NL-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "5.56x45mm NATO FMJ EMP",
+              "maleVariant": "",
+              "primaryKey": "8100111",
+              "secondaryKey": "AmmoExpanded-Cal5p56x45EMP-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "Delivers an electromagnetic pulse on impact.",
+              "maleVariant": "",
+              "primaryKey": "8100112",
+              "secondaryKey": "AmmoExpanded-Cal5p56x45EMP-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "5.56x45mm NATO FMJ Incendiary",
+              "maleVariant": "",
+              "primaryKey": "8100113",
+              "secondaryKey": "AmmoExpanded-Cal5p56x45INC-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "Thermite-coated rounds that ignite targets on impact.",
+              "maleVariant": "",
+              "primaryKey": "8100114",
+              "secondaryKey": "AmmoExpanded-Cal5p56x45INC-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "7.62x39mm Soviet FMJ HP",
+              "maleVariant": "",
+              "primaryKey": "8100115",
+              "secondaryKey": "AmmoExpanded-Cal7p62x39HP-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "Expanding rounds for maximized tissue damage.",
+              "maleVariant": "",
+              "primaryKey": "8100116",
+              "secondaryKey": "AmmoExpanded-Cal7p62x39HP-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "7.62x39mm Soviet FMJ AP",
+              "maleVariant": "",
+              "primaryKey": "8100117",
+              "secondaryKey": "AmmoExpanded-Cal7p62x39AP-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "Hardened core rounds for armor penetration at medium range.",
+              "maleVariant": "",
+              "primaryKey": "8100118",
+              "secondaryKey": "AmmoExpanded-Cal7p62x39AP-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "7.62x39mm Soviet FMJ Non-Lethal",
+              "maleVariant": "",
+              "primaryKey": "8100119",
+              "secondaryKey": "AmmoExpanded-Cal7p62x39NL-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "Low-velocity rubber rounds for non-lethal takedowns.",
+              "maleVariant": "",
+              "primaryKey": "8100120",
+              "secondaryKey": "AmmoExpanded-Cal7p62x39NL-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "7.62x39mm Soviet FMJ EMP",
+              "maleVariant": "",
+              "primaryKey": "8100121",
+              "secondaryKey": "AmmoExpanded-Cal7p62x39EMP-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "Delivers an electromagnetic pulse on impact.",
+              "maleVariant": "",
+              "primaryKey": "8100122",
+              "secondaryKey": "AmmoExpanded-Cal7p62x39EMP-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "7.62x39mm Soviet FMJ Incendiary",
+              "maleVariant": "",
+              "primaryKey": "8100123",
+              "secondaryKey": "AmmoExpanded-Cal7p62x39INC-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "Thermite-coated rounds that ignite targets on impact.",
+              "maleVariant": "",
+              "primaryKey": "8100124",
+              "secondaryKey": "AmmoExpanded-Cal7p62x39INC-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "7.62x51mm NATO FMJ HP",
+              "maleVariant": "",
+              "primaryKey": "8100125",
+              "secondaryKey": "AmmoExpanded-Cal7p62x51HP-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "Expanding rounds for maximized tissue damage.",
+              "maleVariant": "",
+              "primaryKey": "8100126",
+              "secondaryKey": "AmmoExpanded-Cal7p62x51HP-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "7.62x51mm NATO FMJ AP",
+              "maleVariant": "",
+              "primaryKey": "8100127",
+              "secondaryKey": "AmmoExpanded-Cal7p62x51AP-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "Hardened core rounds for armor penetration at long range.",
+              "maleVariant": "",
+              "primaryKey": "8100128",
+              "secondaryKey": "AmmoExpanded-Cal7p62x51AP-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "7.62x51mm NATO FMJ Non-Lethal",
+              "maleVariant": "",
+              "primaryKey": "8100129",
+              "secondaryKey": "AmmoExpanded-Cal7p62x51NL-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "Low-velocity rubber rounds for non-lethal takedowns.",
+              "maleVariant": "",
+              "primaryKey": "8100130",
+              "secondaryKey": "AmmoExpanded-Cal7p62x51NL-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "7.62x51mm NATO FMJ EMP",
+              "maleVariant": "",
+              "primaryKey": "8100131",
+              "secondaryKey": "AmmoExpanded-Cal7p62x51EMP-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "Delivers an electromagnetic pulse on impact.",
+              "maleVariant": "",
+              "primaryKey": "8100132",
+              "secondaryKey": "AmmoExpanded-Cal7p62x51EMP-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "7.62x51mm NATO FMJ Incendiary",
+              "maleVariant": "",
+              "primaryKey": "8100133",
+              "secondaryKey": "AmmoExpanded-Cal7p62x51INC-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "Thermite-coated rounds that ignite targets on impact.",
+              "maleVariant": "",
+              "primaryKey": "8100134",
+              "secondaryKey": "AmmoExpanded-Cal7p62x51INC-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "12.7x41mm S&W HP",
+              "maleVariant": "",
+              "primaryKey": "8100135",
+              "secondaryKey": "AmmoExpanded-Cal14p7x40HP-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "Expanding rounds for maximized tissue damage.",
+              "maleVariant": "",
+              "primaryKey": "8100136",
+              "secondaryKey": "AmmoExpanded-Cal14p7x40HP-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "12.7x41mm S&W AP",
+              "maleVariant": "",
+              "primaryKey": "8100137",
+              "secondaryKey": "AmmoExpanded-Cal14p7x40AP-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "Hardened core rounds that punch through heavy plating.",
+              "maleVariant": "",
+              "primaryKey": "8100138",
+              "secondaryKey": "AmmoExpanded-Cal14p7x40AP-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "12.7x41mm S&W Non-Lethal",
+              "maleVariant": "",
+              "primaryKey": "8100139",
+              "secondaryKey": "AmmoExpanded-Cal14p7x40NL-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "Low-velocity rubber rounds for non-lethal takedowns.",
+              "maleVariant": "",
+              "primaryKey": "8100140",
+              "secondaryKey": "AmmoExpanded-Cal14p7x40NL-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "12.7x41mm S&W EMP",
+              "maleVariant": "",
+              "primaryKey": "8100141",
+              "secondaryKey": "AmmoExpanded-Cal14p7x40EMP-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "Delivers an electromagnetic pulse on impact.",
+              "maleVariant": "",
+              "primaryKey": "8100142",
+              "secondaryKey": "AmmoExpanded-Cal14p7x40EMP-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "12.7x41mm S&W Incendiary",
+              "maleVariant": "",
+              "primaryKey": "8100143",
+              "secondaryKey": "AmmoExpanded-Cal14p7x40INC-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "Thermite-coated rounds that ignite targets on impact.",
+              "maleVariant": "",
+              "primaryKey": "8100144",
+              "secondaryKey": "AmmoExpanded-Cal14p7x40INC-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "14.5x114mm Soviet AP",
+              "maleVariant": "",
+              "primaryKey": "8100145",
+              "secondaryKey": "AmmoExpanded-Cal20x120AP-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "Armor-piercing rounds designed for vehicle armor and heavy cyborgs.",
+              "maleVariant": "",
+              "primaryKey": "8100146",
+              "secondaryKey": "AmmoExpanded-Cal20x120AP-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "14.5x114mm Soviet HE",
+              "maleVariant": "",
+              "primaryKey": "8100147",
+              "secondaryKey": "AmmoExpanded-Cal20x120HE-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "High-explosive rounds detonating on impact. Devastating against groups.",
+              "maleVariant": "",
+              "primaryKey": "8100148",
+              "secondaryKey": "AmmoExpanded-Cal20x120HE-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "14.5x114mm Soviet Incendiary",
+              "maleVariant": "",
+              "primaryKey": "8100149",
+              "secondaryKey": "AmmoExpanded-Cal20x120INC-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "Thermite-core rounds that ignite targets and spread fire on detonation.",
+              "maleVariant": "",
+              "primaryKey": "8100150",
+              "secondaryKey": "AmmoExpanded-Cal20x120INC-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "12 Gauge Slug",
+              "maleVariant": "",
+              "primaryKey": "8100151",
+              "secondaryKey": "AmmoExpanded-Gauge12Slug-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "Single dense projectile for maximum range and penetration.",
+              "maleVariant": "",
+              "primaryKey": "8100152",
+              "secondaryKey": "AmmoExpanded-Gauge12Slug-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "4 Gauge Slug",
+              "maleVariant": "",
+              "primaryKey": "8100153",
+              "secondaryKey": "AmmoExpanded-Gauge4Slug-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "Massive single slug for extreme stopping power at range.",
+              "maleVariant": "",
+              "primaryKey": "8100154",
+              "secondaryKey": "AmmoExpanded-Gauge4Slug-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "6.5x52mm NUSA FMJ",
+              "maleVariant": "",
+              "primaryKey": "8100155",
+              "secondaryKey": "AmmoExpanded-Cal6p5x52-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "NUSA-standard intermediate cartridge for squad automatic weapons.",
+              "maleVariant": "",
+              "primaryKey": "8100156",
+              "secondaryKey": "AmmoExpanded-Cal6p5x52-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "6.5x52mm NUSA FMJ HP",
+              "maleVariant": "",
+              "primaryKey": "8100157",
+              "secondaryKey": "AmmoExpanded-Cal6p5x52HP-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "Expanding rounds for maximized tissue damage.",
+              "maleVariant": "",
+              "primaryKey": "8100158",
+              "secondaryKey": "AmmoExpanded-Cal6p5x52HP-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "6.5x52mm NUSA FMJ AP",
+              "maleVariant": "",
+              "primaryKey": "8100159",
+              "secondaryKey": "AmmoExpanded-Cal6p5x52AP-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "Hardened core rounds for armor penetration at range.",
+              "maleVariant": "",
+              "primaryKey": "8100160",
+              "secondaryKey": "AmmoExpanded-Cal6p5x52AP-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "6.5x52mm NUSA FMJ Non-Lethal",
+              "maleVariant": "",
+              "primaryKey": "8100161",
+              "secondaryKey": "AmmoExpanded-Cal6p5x52NL-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "Low-velocity rubber rounds for non-lethal suppression.",
+              "maleVariant": "",
+              "primaryKey": "8100162",
+              "secondaryKey": "AmmoExpanded-Cal6p5x52NL-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "6.5x52mm NUSA FMJ EMP",
+              "maleVariant": "",
+              "primaryKey": "8100163",
+              "secondaryKey": "AmmoExpanded-Cal6p5x52EMP-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "Delivers an electromagnetic pulse on impact.",
+              "maleVariant": "",
+              "primaryKey": "8100164",
+              "secondaryKey": "AmmoExpanded-Cal6p5x52EMP-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "6.5x52mm NUSA FMJ Incendiary",
+              "maleVariant": "",
+              "primaryKey": "8100165",
+              "secondaryKey": "AmmoExpanded-Cal6p5x52INC-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "Thermite-coated rounds that ignite targets on impact.",
+              "maleVariant": "",
+              "primaryKey": "8100166",
+              "secondaryKey": "AmmoExpanded-Cal6p5x52INC-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "7.35x51mm NUSA FMJ",
+              "maleVariant": "",
+              "primaryKey": "8100167",
+              "secondaryKey": "AmmoExpanded-Cal7p35x51-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "NUSA-standard heavy intermediate cartridge for sustained fire platforms.",
+              "maleVariant": "",
+              "primaryKey": "8100168",
+              "secondaryKey": "AmmoExpanded-Cal7p35x51-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "7.35x51mm NUSA FMJ HP",
+              "maleVariant": "",
+              "primaryKey": "8100169",
+              "secondaryKey": "AmmoExpanded-Cal7p35x51HP-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "Expanding rounds for maximized tissue damage.",
+              "maleVariant": "",
+              "primaryKey": "8100170",
+              "secondaryKey": "AmmoExpanded-Cal7p35x51HP-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "7.35x51mm NUSA FMJ AP",
+              "maleVariant": "",
+              "primaryKey": "8100171",
+              "secondaryKey": "AmmoExpanded-Cal7p35x51AP-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "Hardened core rounds for armor penetration at range.",
+              "maleVariant": "",
+              "primaryKey": "8100172",
+              "secondaryKey": "AmmoExpanded-Cal7p35x51AP-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "7.35x51mm NUSA FMJ Non-Lethal",
+              "maleVariant": "",
+              "primaryKey": "8100173",
+              "secondaryKey": "AmmoExpanded-Cal7p35x51NL-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "Low-velocity rubber rounds for non-lethal suppression.",
+              "maleVariant": "",
+              "primaryKey": "8100174",
+              "secondaryKey": "AmmoExpanded-Cal7p35x51NL-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "7.35x51mm NUSA FMJ EMP",
+              "maleVariant": "",
+              "primaryKey": "8100175",
+              "secondaryKey": "AmmoExpanded-Cal7p35x51EMP-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "Delivers an electromagnetic pulse on impact.",
+              "maleVariant": "",
+              "primaryKey": "8100176",
+              "secondaryKey": "AmmoExpanded-Cal7p35x51EMP-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "7.35x51mm NUSA FMJ Incendiary",
+              "maleVariant": "",
+              "primaryKey": "8100177",
+              "secondaryKey": "AmmoExpanded-Cal7p35x51INC-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "Thermite-coated rounds that ignite targets on impact.",
+              "maleVariant": "",
+              "primaryKey": "8100178",
+              "secondaryKey": "AmmoExpanded-Cal7p35x51INC-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "12.7x83mmR Nitro Express",
+              "maleVariant": "",
+              "primaryKey": "8100179",
+              "secondaryKey": "AmmoExpanded-Cal12p7x83R-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "Rimmed magnum cartridge delivering extreme downrange energy.",
+              "maleVariant": "",
+              "primaryKey": "8100180",
+              "secondaryKey": "AmmoExpanded-Cal12p7x83R-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "12.7x83mmR Nitro Express HP",
+              "maleVariant": "",
+              "primaryKey": "8100181",
+              "secondaryKey": "AmmoExpanded-Cal12p7x83RHP-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "Expanding rounds for catastrophic tissue damage at range.",
+              "maleVariant": "",
+              "primaryKey": "8100182",
+              "secondaryKey": "AmmoExpanded-Cal12p7x83RHP-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "12.7x83mmR Nitro Express AP",
+              "maleVariant": "",
+              "primaryKey": "8100183",
+              "secondaryKey": "AmmoExpanded-Cal12p7x83RAP-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "Hardened core rounds for defeating heavy armor at long range.",
+              "maleVariant": "",
+              "primaryKey": "8100184",
+              "secondaryKey": "AmmoExpanded-Cal12p7x83RAP-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "12.7x83mmR Nitro Express Non-Lethal",
+              "maleVariant": "",
+              "primaryKey": "8100185",
+              "secondaryKey": "AmmoExpanded-Cal12p7x83RNL-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "Low-velocity rubber rounds for non-lethal incapacitation.",
+              "maleVariant": "",
+              "primaryKey": "8100186",
+              "secondaryKey": "AmmoExpanded-Cal12p7x83RNL-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "12.7x83mmR Nitro Express EMP",
+              "maleVariant": "",
+              "primaryKey": "8100187",
+              "secondaryKey": "AmmoExpanded-Cal12p7x83REMP-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "Delivers a focused electromagnetic pulse on impact.",
+              "maleVariant": "",
+              "primaryKey": "8100188",
+              "secondaryKey": "AmmoExpanded-Cal12p7x83REMP-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "12.7x83mmR Nitro Express Incendiary",
+              "maleVariant": "",
+              "primaryKey": "8100189",
+              "secondaryKey": "AmmoExpanded-Cal12p7x83RINC-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "Thermite-core rounds that ignite targets on impact.",
+              "maleVariant": "",
+              "primaryKey": "8100190",
+              "secondaryKey": "AmmoExpanded-Cal12p7x83RINC-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "12.7x90mmR Nitro Express HE",
+              "maleVariant": "",
+              "primaryKey": "8100191",
+              "secondaryKey": "AmmoExpanded-Cal12p7x90R-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "Oversized rimmed HE round. Single high-explosive charge per chamber.",
+              "maleVariant": "",
+              "primaryKey": "8100192",
+              "secondaryKey": "AmmoExpanded-Cal12p7x90R-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "10 Gauge Buckshot",
+              "maleVariant": "",
+              "primaryKey": "8100193",
+              "secondaryKey": "AmmoExpanded-Cal10Gauge-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "Large bore shotgun shells. More power per load than 12-gauge.",
+              "maleVariant": "",
+              "primaryKey": "8100194",
+              "secondaryKey": "AmmoExpanded-Cal10Gauge-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "10 Gauge Slug",
+              "maleVariant": "",
+              "primaryKey": "8100195",
+              "secondaryKey": "AmmoExpanded-Cal10GaugeSlug-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "Single dense projectile for maximum range and penetration.",
+              "maleVariant": "",
+              "primaryKey": "8100196",
+              "secondaryKey": "AmmoExpanded-Cal10GaugeSlug-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "10x30mm Tungsten Flechettes",
+              "maleVariant": "",
+              "primaryKey": "8100197",
+              "secondaryKey": "AmmoExpanded-Tech10x30TF-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "High-velocity tungsten flechette rounds for the Kenshin platform.",
+              "maleVariant": "",
+              "primaryKey": "8100198",
+              "secondaryKey": "AmmoExpanded-Tech10x30TF-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "9x30mm Tungsten Flechettes",
+              "maleVariant": "",
+              "primaryKey": "8100199",
+              "secondaryKey": "AmmoExpanded-Tech9x30TF-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "Sub-caliber tungsten penetrators for compact tech weapons.",
+              "maleVariant": "",
+              "primaryKey": "8100200",
+              "secondaryKey": "AmmoExpanded-Tech9x30TF-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "4.7mm Caseless Tungsten",
+              "maleVariant": "",
+              "primaryKey": "8100201",
+              "secondaryKey": "AmmoExpanded-Tech4p7TF-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "Miniaturized caseless rounds optimized for the Achilles rail platform.",
+              "maleVariant": "",
+              "primaryKey": "8100202",
+              "secondaryKey": "AmmoExpanded-Tech4p7TF-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "14x70mm Tungsten Slug",
+              "maleVariant": "",
+              "primaryKey": "8100203",
+              "secondaryKey": "AmmoExpanded-Tech14x70-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "Oversized single-shot tungsten slug. Catastrophic kinetic energy on impact.",
+              "maleVariant": "",
+              "primaryKey": "8100204",
+              "secondaryKey": "AmmoExpanded-Tech14x70-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "Militech Prototype",
+              "maleVariant": "",
+              "primaryKey": "8100205",
+              "secondaryKey": "AmmoExpanded-TechMilProt-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "Classified Militech-spec hypersonic flechettes. Recovery not recommended.",
+              "maleVariant": "",
+              "primaryKey": "8100206",
+              "secondaryKey": "AmmoExpanded-TechMilProt-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "8x30mm Tungsten Shot",
+              "maleVariant": "",
+              "primaryKey": "8100207",
+              "secondaryKey": "AmmoExpanded-Tech8x30TS-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "Dense tungsten pellets for the Quasar platform.",
+              "maleVariant": "",
+              "primaryKey": "8100208",
+              "secondaryKey": "AmmoExpanded-Tech8x30TS-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "Chemical Rounds",
+              "maleVariant": "",
+              "primaryKey": "8100300",
+              "secondaryKey": "AmmoExpanded-Cal9x19-CHEM-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "Rounds coated in a fast-acting toxin. Poisons on impact.",
+              "maleVariant": "",
+              "primaryKey": "8100301",
+              "secondaryKey": "AmmoExpanded-Cal9x19-CHEM-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "Ammo description pending.",
+              "maleVariant": "",
+              "primaryKey": "8100302",
+              "secondaryKey": "AmmoExpanded-PendingDesc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": ".243 Winchester",
+              "maleVariant": "",
+              "primaryKey": "8100303",
+              "secondaryKey": "AmmoExpanded-Cal243Win-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": ".243 Winchester Armor Piercing",
+              "maleVariant": "",
+              "primaryKey": "8100304",
+              "secondaryKey": "AmmoExpanded-Cal243Win-AP-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": ".243 Winchester Hollow Point",
+              "maleVariant": "",
+              "primaryKey": "8100305",
+              "secondaryKey": "AmmoExpanded-Cal243Win-HP-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": ".243 Winchester EMP",
+              "maleVariant": "",
+              "primaryKey": "8100306",
+              "secondaryKey": "AmmoExpanded-Cal243Win-EMP-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": ".243 Winchester Incendiary",
+              "maleVariant": "",
+              "primaryKey": "8100307",
+              "secondaryKey": "AmmoExpanded-Cal243Win-INC-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": ".243 Winchester Chemical",
+              "maleVariant": "",
+              "primaryKey": "8100308",
+              "secondaryKey": "AmmoExpanded-Cal243Win-CHEM-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": ".243 Winchester Non-Lethal",
+              "maleVariant": "",
+              "primaryKey": "8100309",
+              "secondaryKey": "AmmoExpanded-Cal243Win-NL-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": ".45 Super",
+              "maleVariant": "",
+              "primaryKey": "8100310",
+              "secondaryKey": "AmmoExpanded-Cal45Super-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": ".45 Super Armor Piercing",
+              "maleVariant": "",
+              "primaryKey": "8100311",
+              "secondaryKey": "AmmoExpanded-Cal45Super-AP-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": ".45 Super Hollow Point",
+              "maleVariant": "",
+              "primaryKey": "8100312",
+              "secondaryKey": "AmmoExpanded-Cal45Super-HP-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": ".45 Super EMP",
+              "maleVariant": "",
+              "primaryKey": "8100313",
+              "secondaryKey": "AmmoExpanded-Cal45Super-EMP-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": ".45 Super Incendiary",
+              "maleVariant": "",
+              "primaryKey": "8100314",
+              "secondaryKey": "AmmoExpanded-Cal45Super-INC-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": ".45 Super Chemical",
+              "maleVariant": "",
+              "primaryKey": "8100315",
+              "secondaryKey": "AmmoExpanded-Cal45Super-CHEM-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": ".45 Super Non-Lethal",
+              "maleVariant": "",
+              "primaryKey": "8100316",
+              "secondaryKey": "AmmoExpanded-Cal45Super-NL-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": ".45 Winchester Magnum",
+              "maleVariant": "",
+              "primaryKey": "8100317",
+              "secondaryKey": "AmmoExpanded-Cal45WinMag-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": ".45 Winchester Magnum Armor Piercing",
+              "maleVariant": "",
+              "primaryKey": "8100318",
+              "secondaryKey": "AmmoExpanded-Cal45WinMag-AP-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": ".45 Winchester Magnum Hollow Point",
+              "maleVariant": "",
+              "primaryKey": "8100319",
+              "secondaryKey": "AmmoExpanded-Cal45WinMag-HP-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": ".45 Winchester Magnum EMP",
+              "maleVariant": "",
+              "primaryKey": "8100320",
+              "secondaryKey": "AmmoExpanded-Cal45WinMag-EMP-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": ".45 Winchester Magnum Incendiary",
+              "maleVariant": "",
+              "primaryKey": "8100321",
+              "secondaryKey": "AmmoExpanded-Cal45WinMag-INC-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": ".45 Winchester Magnum Chemical",
+              "maleVariant": "",
+              "primaryKey": "8100322",
+              "secondaryKey": "AmmoExpanded-Cal45WinMag-CHEM-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": ".45 Winchester Magnum Non-Lethal",
+              "maleVariant": "",
+              "primaryKey": "8100323",
+              "secondaryKey": "AmmoExpanded-Cal45WinMag-NL-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": ".454 Casull",
+              "maleVariant": "",
+              "primaryKey": "8100324",
+              "secondaryKey": "AmmoExpanded-Cal454Casull-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": ".454 Casull Armor Piercing",
+              "maleVariant": "",
+              "primaryKey": "8100325",
+              "secondaryKey": "AmmoExpanded-Cal454Casull-AP-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": ".454 Casull Hollow Point",
+              "maleVariant": "",
+              "primaryKey": "8100326",
+              "secondaryKey": "AmmoExpanded-Cal454Casull-HP-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": ".454 Casull EMP",
+              "maleVariant": "",
+              "primaryKey": "8100327",
+              "secondaryKey": "AmmoExpanded-Cal454Casull-EMP-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": ".454 Casull Incendiary",
+              "maleVariant": "",
+              "primaryKey": "8100328",
+              "secondaryKey": "AmmoExpanded-Cal454Casull-INC-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": ".454 Casull Chemical",
+              "maleVariant": "",
+              "primaryKey": "8100329",
+              "secondaryKey": "AmmoExpanded-Cal454Casull-CHEM-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": ".454 Casull Non-Lethal",
+              "maleVariant": "",
+              "primaryKey": "8100330",
+              "secondaryKey": "AmmoExpanded-Cal454Casull-NL-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": ".50 AE",
+              "maleVariant": "",
+              "primaryKey": "8100331",
+              "secondaryKey": "AmmoExpanded-Cal50AE-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": ".50 AE Armor Piercing",
+              "maleVariant": "",
+              "primaryKey": "8100332",
+              "secondaryKey": "AmmoExpanded-Cal50AE-AP-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": ".50 AE Hollow Point",
+              "maleVariant": "",
+              "primaryKey": "8100333",
+              "secondaryKey": "AmmoExpanded-Cal50AE-HP-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": ".50 AE EMP",
+              "maleVariant": "",
+              "primaryKey": "8100334",
+              "secondaryKey": "AmmoExpanded-Cal50AE-EMP-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": ".50 AE Incendiary",
+              "maleVariant": "",
+              "primaryKey": "8100335",
+              "secondaryKey": "AmmoExpanded-Cal50AE-INC-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": ".50 AE Chemical",
+              "maleVariant": "",
+              "primaryKey": "8100336",
+              "secondaryKey": "AmmoExpanded-Cal50AE-CHEM-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": ".50 AE Non-Lethal",
+              "maleVariant": "",
+              "primaryKey": "8100337",
+              "secondaryKey": "AmmoExpanded-Cal50AE-NL-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": ".50 Beowulf Oni",
+              "maleVariant": "",
+              "primaryKey": "8100338",
+              "secondaryKey": "AmmoExpanded-Cal50BeowulfOni-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": ".50 Beowulf Oni Armor Piercing",
+              "maleVariant": "",
+              "primaryKey": "8100339",
+              "secondaryKey": "AmmoExpanded-Cal50BeowulfOni-AP-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": ".50 Beowulf Oni Hollow Point",
+              "maleVariant": "",
+              "primaryKey": "8100340",
+              "secondaryKey": "AmmoExpanded-Cal50BeowulfOni-HP-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": ".50 Beowulf Oni EMP",
+              "maleVariant": "",
+              "primaryKey": "8100341",
+              "secondaryKey": "AmmoExpanded-Cal50BeowulfOni-EMP-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": ".50 Beowulf Oni Incendiary",
+              "maleVariant": "",
+              "primaryKey": "8100342",
+              "secondaryKey": "AmmoExpanded-Cal50BeowulfOni-INC-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": ".50 Beowulf Oni Chemical",
+              "maleVariant": "",
+              "primaryKey": "8100343",
+              "secondaryKey": "AmmoExpanded-Cal50BeowulfOni-CHEM-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": ".50 Beowulf Oni Non-Lethal",
+              "maleVariant": "",
+              "primaryKey": "8100344",
+              "secondaryKey": "AmmoExpanded-Cal50BeowulfOni-NL-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": ".50 BMG NUSA",
+              "maleVariant": "",
+              "primaryKey": "8100345",
+              "secondaryKey": "AmmoExpanded-Cal50BMG-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": ".50 BMG NUSA Armor Piercing",
+              "maleVariant": "",
+              "primaryKey": "8100346",
+              "secondaryKey": "AmmoExpanded-Cal50BMG-AP-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": ".50 BMG NUSA Hollow Point",
+              "maleVariant": "",
+              "primaryKey": "8100347",
+              "secondaryKey": "AmmoExpanded-Cal50BMG-HP-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": ".50 BMG NUSA EMP",
+              "maleVariant": "",
+              "primaryKey": "8100348",
+              "secondaryKey": "AmmoExpanded-Cal50BMG-EMP-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": ".50 BMG NUSA Incendiary",
+              "maleVariant": "",
+              "primaryKey": "8100349",
+              "secondaryKey": "AmmoExpanded-Cal50BMG-INC-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": ".50 BMG NUSA Chemical",
+              "maleVariant": "",
+              "primaryKey": "8100350",
+              "secondaryKey": "AmmoExpanded-Cal50BMG-CHEM-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": ".50 BMG NUSA Non-Lethal",
+              "maleVariant": "",
+              "primaryKey": "8100351",
+              "secondaryKey": "AmmoExpanded-Cal50BMG-NL-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": ".500 Malour",
+              "maleVariant": "",
+              "primaryKey": "8100352",
+              "secondaryKey": "AmmoExpanded-Cal500Malour-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": ".500 Malour Armor Piercing",
+              "maleVariant": "",
+              "primaryKey": "8100353",
+              "secondaryKey": "AmmoExpanded-Cal500Malour-AP-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": ".500 Malour Incendiary",
+              "maleVariant": "",
+              "primaryKey": "8100354",
+              "secondaryKey": "AmmoExpanded-Cal500Malour-INC-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": ".500 Malour High Explosive",
+              "maleVariant": "",
+              "primaryKey": "8100355",
+              "secondaryKey": "AmmoExpanded-Cal500Malour-HE-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "10 Gauge Buckshot",
+              "maleVariant": "",
+              "primaryKey": "8100356",
+              "secondaryKey": "AmmoExpanded-Cal10GaugeBuck-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "10 Gauge Slug",
+              "maleVariant": "",
+              "primaryKey": "8100357",
+              "secondaryKey": "AmmoExpanded-Cal10GaugeBuck-Slug-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "10 Gauge Buckshot Incendiary",
+              "maleVariant": "",
+              "primaryKey": "8100358",
+              "secondaryKey": "AmmoExpanded-Cal10GaugeBuck-INC-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "10 Gauge Flechettes",
+              "maleVariant": "",
+              "primaryKey": "8100359",
+              "secondaryKey": "AmmoExpanded-Cal10GaugeFlech-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "10 Gauge Flechettes EMP",
+              "maleVariant": "",
+              "primaryKey": "8100362",
+              "secondaryKey": "AmmoExpanded-Cal10GaugeFlech-EMP-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "10 Gauge Flechettes Incendiary",
+              "maleVariant": "",
+              "primaryKey": "8100363",
+              "secondaryKey": "AmmoExpanded-Cal10GaugeFlech-INC-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "10 Gauge Flechettes Chemical",
+              "maleVariant": "",
+              "primaryKey": "8100364",
+              "secondaryKey": "AmmoExpanded-Cal10GaugeFlech-CHEM-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "10x40mm Guided Rocket",
+              "maleVariant": "",
+              "primaryKey": "8100365",
+              "secondaryKey": "AmmoExpanded-Cal10x40Rocket-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "10x40mm Guided Rocket High Explosive",
+              "maleVariant": "",
+              "primaryKey": "8100366",
+              "secondaryKey": "AmmoExpanded-Cal10x40Rocket-HE-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "10x40mm Guided Rocket Incendiary",
+              "maleVariant": "",
+              "primaryKey": "8100367",
+              "secondaryKey": "AmmoExpanded-Cal10x40Rocket-INC-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "10mm Auto",
+              "maleVariant": "",
+              "primaryKey": "8100368",
+              "secondaryKey": "AmmoExpanded-Cal10mmAuto-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "10mm Auto Armor Piercing",
+              "maleVariant": "",
+              "primaryKey": "8100369",
+              "secondaryKey": "AmmoExpanded-Cal10mmAuto-AP-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "10mm Auto Hollow Point",
+              "maleVariant": "",
+              "primaryKey": "8100370",
+              "secondaryKey": "AmmoExpanded-Cal10mmAuto-HP-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "10mm Auto EMP",
+              "maleVariant": "",
+              "primaryKey": "8100371",
+              "secondaryKey": "AmmoExpanded-Cal10mmAuto-EMP-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "10mm Auto Incendiary",
+              "maleVariant": "",
+              "primaryKey": "8100372",
+              "secondaryKey": "AmmoExpanded-Cal10mmAuto-INC-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "10mm Auto Chemical",
+              "maleVariant": "",
+              "primaryKey": "8100373",
+              "secondaryKey": "AmmoExpanded-Cal10mmAuto-CHEM-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "10mm Auto Non-Lethal",
+              "maleVariant": "",
+              "primaryKey": "8100374",
+              "secondaryKey": "AmmoExpanded-Cal10mmAuto-NL-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "10x20mm Tungsten Flechettes",
+              "maleVariant": "",
+              "primaryKey": "8100375",
+              "secondaryKey": "AmmoExpanded-Cal10x20TF-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "10x20mm Tungsten Flechettes EMP",
+              "maleVariant": "",
+              "primaryKey": "8100378",
+              "secondaryKey": "AmmoExpanded-Cal10x20TF-EMP-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "10x20mm Tungsten Flechettes Incendiary",
+              "maleVariant": "",
+              "primaryKey": "8100379",
+              "secondaryKey": "AmmoExpanded-Cal10x20TF-INC-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "10x20mm Tungsten Flechettes Chemical",
+              "maleVariant": "",
+              "primaryKey": "8100380",
+              "secondaryKey": "AmmoExpanded-Cal10x20TF-CHEM-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "12 Gauge Buckshot",
+              "maleVariant": "",
+              "primaryKey": "8100381",
+              "secondaryKey": "AmmoExpanded-Cal12Gauge-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "12 Gauge Slug",
+              "maleVariant": "",
+              "primaryKey": "8100382",
+              "secondaryKey": "AmmoExpanded-Cal12Gauge-Slug-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "12 Gauge Buckshot Incendiary",
+              "maleVariant": "",
+              "primaryKey": "8100383",
+              "secondaryKey": "AmmoExpanded-Cal12Gauge-INC-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "12.3x41mm UdaR",
+              "maleVariant": "",
+              "primaryKey": "8100384",
+              "secondaryKey": "AmmoExpanded-Cal12p3x41UdaR-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "12.3x41mm UdaR Armor Piercing",
+              "maleVariant": "",
+              "primaryKey": "8100385",
+              "secondaryKey": "AmmoExpanded-Cal12p3x41UdaR-AP-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "12.3x41mm UdaR Hollow Point",
+              "maleVariant": "",
+              "primaryKey": "8100386",
+              "secondaryKey": "AmmoExpanded-Cal12p3x41UdaR-HP-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "12.3x41mm UdaR Incendiary",
+              "maleVariant": "",
+              "primaryKey": "8100387",
+              "secondaryKey": "AmmoExpanded-Cal12p3x41UdaR-INC-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "12.7x70mm Guided Rocket",
+              "maleVariant": "",
+              "primaryKey": "8100388",
+              "secondaryKey": "AmmoExpanded-Cal12p7x70Rocket-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "12.7x70mm Guided Rocket High Explosive",
+              "maleVariant": "",
+              "primaryKey": "8100389",
+              "secondaryKey": "AmmoExpanded-Cal12p7x70Rocket-HE-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "12.7x70mm Guided Rocket Incendiary",
+              "maleVariant": "",
+              "primaryKey": "8100390",
+              "secondaryKey": "AmmoExpanded-Cal12p7x70Rocket-INC-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "12x45mm Guided Rocket",
+              "maleVariant": "",
+              "primaryKey": "8100391",
+              "secondaryKey": "AmmoExpanded-Cal12x45Rocket-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "12x45mm Guided Rocket High Explosive",
+              "maleVariant": "",
+              "primaryKey": "8100392",
+              "secondaryKey": "AmmoExpanded-Cal12x45Rocket-HE-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "12x45mm Guided Rocket Incendiary",
+              "maleVariant": "",
+              "primaryKey": "8100393",
+              "secondaryKey": "AmmoExpanded-Cal12x45Rocket-INC-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "14x40mm Tungsten Slug",
+              "maleVariant": "",
+              "primaryKey": "8100394",
+              "secondaryKey": "AmmoExpanded-Cal14x40TSlug-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "14x40mm Tungsten Slug EMP",
+              "maleVariant": "",
+              "primaryKey": "8100397",
+              "secondaryKey": "AmmoExpanded-Cal14x40TSlug-EMP-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "14x40mm Tungsten Slug Incendiary",
+              "maleVariant": "",
+              "primaryKey": "8100398",
+              "secondaryKey": "AmmoExpanded-Cal14x40TSlug-INC-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "14x40mm Tungsten Slug Chemical",
+              "maleVariant": "",
+              "primaryKey": "8100399",
+              "secondaryKey": "AmmoExpanded-Cal14x40TSlug-CHEM-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "14x70mm Tungsten Slug",
+              "maleVariant": "",
+              "primaryKey": "8100400",
+              "secondaryKey": "AmmoExpanded-Cal14x70TSlugHE-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "15x55mm Guided Rocket",
+              "maleVariant": "",
+              "primaryKey": "8100401",
+              "secondaryKey": "AmmoExpanded-Cal15x55Rocket-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "15x55mm Guided Rocket High Explosive",
+              "maleVariant": "",
+              "primaryKey": "8100402",
+              "secondaryKey": "AmmoExpanded-Cal15x55Rocket-HE-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "15x55mm Guided Rocket Incendiary",
+              "maleVariant": "",
+              "primaryKey": "8100403",
+              "secondaryKey": "AmmoExpanded-Cal15x55Rocket-INC-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "15x80mm Tungsten Spike",
+              "maleVariant": "",
+              "primaryKey": "8100404",
+              "secondaryKey": "AmmoExpanded-Cal15x80TSpike-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "15x80mm Tungsten Spike EMP",
+              "maleVariant": "",
+              "primaryKey": "8100407",
+              "secondaryKey": "AmmoExpanded-Cal15x80TSpike-EMP-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "15x80mm Tungsten Spike Incendiary",
+              "maleVariant": "",
+              "primaryKey": "8100408",
+              "secondaryKey": "AmmoExpanded-Cal15x80TSpike-INC-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "15x80mm Tungsten Spike Chemical",
+              "maleVariant": "",
+              "primaryKey": "8100409",
+              "secondaryKey": "AmmoExpanded-Cal15x80TSpike-CHEM-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "18x70mm Guided Rocket",
+              "maleVariant": "",
+              "primaryKey": "8100410",
+              "secondaryKey": "AmmoExpanded-Cal18x70Rocket-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "18x70mm Guided Rocket High Explosive",
+              "maleVariant": "",
+              "primaryKey": "8100411",
+              "secondaryKey": "AmmoExpanded-Cal18x70Rocket-HE-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "18x70mm Guided Rocket Incendiary",
+              "maleVariant": "",
+              "primaryKey": "8100412",
+              "secondaryKey": "AmmoExpanded-Cal18x70Rocket-INC-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "20x102mm Vulcan",
+              "maleVariant": "",
+              "primaryKey": "8100413",
+              "secondaryKey": "AmmoExpanded-Cal20x102Vulcan-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "20x102mm Vulcan High Explosive",
+              "maleVariant": "",
+              "primaryKey": "8100414",
+              "secondaryKey": "AmmoExpanded-Cal20x102Vulcan-HE-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "20x102mm Vulcan Incendiary",
+              "maleVariant": "",
+              "primaryKey": "8100415",
+              "secondaryKey": "AmmoExpanded-Cal20x102Vulcan-INC-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "22x126mm AC",
+              "maleVariant": "",
+              "primaryKey": "8100416",
+              "secondaryKey": "AmmoExpanded-Cal22x126AC-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "22x126mm AC High Explosive",
+              "maleVariant": "",
+              "primaryKey": "8100417",
+              "secondaryKey": "AmmoExpanded-Cal22x126AC-HE-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "22x126mm AC Incendiary",
+              "maleVariant": "",
+              "primaryKey": "8100418",
+              "secondaryKey": "AmmoExpanded-Cal22x126AC-INC-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "23x152mm Soviet",
+              "maleVariant": "",
+              "primaryKey": "8100419",
+              "secondaryKey": "AmmoExpanded-Cal23x152Sov-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "23x152mm Soviet High Explosive",
+              "maleVariant": "",
+              "primaryKey": "8100420",
+              "secondaryKey": "AmmoExpanded-Cal23x152Sov-HE-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "23x152mm Soviet Incendiary",
+              "maleVariant": "",
+              "primaryKey": "8100421",
+              "secondaryKey": "AmmoExpanded-Cal23x152Sov-INC-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "3x10mm Flechette Cluster",
+              "maleVariant": "",
+              "primaryKey": "8100422",
+              "secondaryKey": "AmmoExpanded-Cal3x10FlechCluster-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "4 Gauge Buckshot",
+              "maleVariant": "",
+              "primaryKey": "8100423",
+              "secondaryKey": "AmmoExpanded-Cal4Gauge-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "4 Gauge Slug",
+              "maleVariant": "",
+              "primaryKey": "8100424",
+              "secondaryKey": "AmmoExpanded-Cal4Gauge-Slug-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "4 Gauge Buckshot Incendiary",
+              "maleVariant": "",
+              "primaryKey": "8100425",
+              "secondaryKey": "AmmoExpanded-Cal4Gauge-INC-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "4 Gauge Buckshot High Explosive",
+              "maleVariant": "",
+              "primaryKey": "8100426",
+              "secondaryKey": "AmmoExpanded-Cal4Gauge-HE-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "4.7x10mm Tungsten Flechettes",
+              "maleVariant": "",
+              "primaryKey": "8100427",
+              "secondaryKey": "AmmoExpanded-Cal4p7x10TF-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "4.7x10mm Tungsten Flechettes EMP",
+              "maleVariant": "",
+              "primaryKey": "8100430",
+              "secondaryKey": "AmmoExpanded-Cal4p7x10TF-EMP-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "4.7x10mm Tungsten Flechettes Incendiary",
+              "maleVariant": "",
+              "primaryKey": "8100431",
+              "secondaryKey": "AmmoExpanded-Cal4p7x10TF-INC-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "4.7x10mm Tungsten Flechettes Chemical",
+              "maleVariant": "",
+              "primaryKey": "8100432",
+              "secondaryKey": "AmmoExpanded-Cal4p7x10TF-CHEM-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "5.45mm CT",
+              "maleVariant": "",
+              "primaryKey": "8100433",
+              "secondaryKey": "AmmoExpanded-Cal5p45CT-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "5.45mm CT Armor Piercing",
+              "maleVariant": "",
+              "primaryKey": "8100434",
+              "secondaryKey": "AmmoExpanded-Cal5p45CT-AP-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "5.45mm CT Hollow Point",
+              "maleVariant": "",
+              "primaryKey": "8100435",
+              "secondaryKey": "AmmoExpanded-Cal5p45CT-HP-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "5.45mm CT EMP",
+              "maleVariant": "",
+              "primaryKey": "8100436",
+              "secondaryKey": "AmmoExpanded-Cal5p45CT-EMP-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "5.45mm CT Incendiary",
+              "maleVariant": "",
+              "primaryKey": "8100437",
+              "secondaryKey": "AmmoExpanded-Cal5p45CT-INC-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "5.45mm CT Chemical",
+              "maleVariant": "",
+              "primaryKey": "8100438",
+              "secondaryKey": "AmmoExpanded-Cal5p45CT-CHEM-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "5.45mm CT Non-Lethal",
+              "maleVariant": "",
+              "primaryKey": "8100439",
+              "secondaryKey": "AmmoExpanded-Cal5p45CT-NL-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "5.56x45mm NUSA",
+              "maleVariant": "",
+              "primaryKey": "8100440",
+              "secondaryKey": "AmmoExpanded-Cal5p56x45NUSA-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "5.56x45mm NUSA Armor Piercing",
+              "maleVariant": "",
+              "primaryKey": "8100441",
+              "secondaryKey": "AmmoExpanded-Cal5p56x45NUSA-AP-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "5.56x45mm NUSA Hollow Point",
+              "maleVariant": "",
+              "primaryKey": "8100442",
+              "secondaryKey": "AmmoExpanded-Cal5p56x45NUSA-HP-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "5.56x45mm NUSA EMP",
+              "maleVariant": "",
+              "primaryKey": "8100443",
+              "secondaryKey": "AmmoExpanded-Cal5p56x45NUSA-EMP-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "5.56x45mm NUSA Incendiary",
+              "maleVariant": "",
+              "primaryKey": "8100444",
+              "secondaryKey": "AmmoExpanded-Cal5p56x45NUSA-INC-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "5.56x45mm NUSA Chemical",
+              "maleVariant": "",
+              "primaryKey": "8100445",
+              "secondaryKey": "AmmoExpanded-Cal5p56x45NUSA-CHEM-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "5.56x45mm NUSA Non-Lethal",
+              "maleVariant": "",
+              "primaryKey": "8100446",
+              "secondaryKey": "AmmoExpanded-Cal5p56x45NUSA-NL-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "5.56mm CT",
+              "maleVariant": "",
+              "primaryKey": "8100447",
+              "secondaryKey": "AmmoExpanded-Cal5p56CT-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "5.56mm CT Armor Piercing",
+              "maleVariant": "",
+              "primaryKey": "8100448",
+              "secondaryKey": "AmmoExpanded-Cal5p56CT-AP-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "5.56mm CT Hollow Point",
+              "maleVariant": "",
+              "primaryKey": "8100449",
+              "secondaryKey": "AmmoExpanded-Cal5p56CT-HP-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "5.56mm CT EMP",
+              "maleVariant": "",
+              "primaryKey": "8100450",
+              "secondaryKey": "AmmoExpanded-Cal5p56CT-EMP-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "5.56mm CT Incendiary",
+              "maleVariant": "",
+              "primaryKey": "8100451",
+              "secondaryKey": "AmmoExpanded-Cal5p56CT-INC-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "5.56mm CT Chemical",
+              "maleVariant": "",
+              "primaryKey": "8100452",
+              "secondaryKey": "AmmoExpanded-Cal5p56CT-CHEM-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "5.56mm CT Non-Lethal",
+              "maleVariant": "",
+              "primaryKey": "8100453",
+              "secondaryKey": "AmmoExpanded-Cal5p56CT-NL-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "5.7x28mm Tungsten Flechettes",
+              "maleVariant": "",
+              "primaryKey": "8100454",
+              "secondaryKey": "AmmoExpanded-Cal5p7x28TF-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "5.7x28mm Tungsten Flechettes EMP",
+              "maleVariant": "",
+              "primaryKey": "8100457",
+              "secondaryKey": "AmmoExpanded-Cal5p7x28TF-EMP-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "5.7x28mm Tungsten Flechettes Incendiary",
+              "maleVariant": "",
+              "primaryKey": "8100458",
+              "secondaryKey": "AmmoExpanded-Cal5p7x28TF-INC-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "5.7x28mm Tungsten Flechettes Chemical",
+              "maleVariant": "",
+              "primaryKey": "8100459",
+              "secondaryKey": "AmmoExpanded-Cal5p7x28TF-CHEM-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "6.5x25mm Guided Minirocket",
+              "maleVariant": "",
+              "primaryKey": "8100460",
+              "secondaryKey": "AmmoExpanded-Cal6p5x25Minirocket-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "6.5x25mm Guided Minirocket EMP",
+              "maleVariant": "",
+              "primaryKey": "8100463",
+              "secondaryKey": "AmmoExpanded-Cal6p5x25Minirocket-EMP-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "6.5x25mm Guided Minirocket Incendiary",
+              "maleVariant": "",
+              "primaryKey": "8100464",
+              "secondaryKey": "AmmoExpanded-Cal6p5x25Minirocket-INC-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "6.5x25mm Guided Minirocket Chemical",
+              "maleVariant": "",
+              "primaryKey": "8100465",
+              "secondaryKey": "AmmoExpanded-Cal6p5x25Minirocket-CHEM-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "6.5mm Arasaka",
+              "maleVariant": "",
+              "primaryKey": "8100466",
+              "secondaryKey": "AmmoExpanded-Cal6p5Arasaka-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "6.5mm Arasaka Armor Piercing",
+              "maleVariant": "",
+              "primaryKey": "8100467",
+              "secondaryKey": "AmmoExpanded-Cal6p5Arasaka-AP-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "6.5mm Arasaka Hollow Point",
+              "maleVariant": "",
+              "primaryKey": "8100468",
+              "secondaryKey": "AmmoExpanded-Cal6p5Arasaka-HP-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "6.5mm Arasaka EMP",
+              "maleVariant": "",
+              "primaryKey": "8100469",
+              "secondaryKey": "AmmoExpanded-Cal6p5Arasaka-EMP-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "6.5mm Arasaka Incendiary",
+              "maleVariant": "",
+              "primaryKey": "8100470",
+              "secondaryKey": "AmmoExpanded-Cal6p5Arasaka-INC-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "6.5mm Arasaka Chemical",
+              "maleVariant": "",
+              "primaryKey": "8100471",
+              "secondaryKey": "AmmoExpanded-Cal6p5Arasaka-CHEM-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "6.5mm Arasaka Non-Lethal",
+              "maleVariant": "",
+              "primaryKey": "8100472",
+              "secondaryKey": "AmmoExpanded-Cal6p5Arasaka-NL-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "7.62x39mm Soviet",
+              "maleVariant": "",
+              "primaryKey": "8100473",
+              "secondaryKey": "AmmoExpanded-Cal7p62x39Sov-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "7.62x39mm Soviet Armor Piercing",
+              "maleVariant": "",
+              "primaryKey": "8100474",
+              "secondaryKey": "AmmoExpanded-Cal7p62x39Sov-AP-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "7.62x39mm Soviet Hollow Point",
+              "maleVariant": "",
+              "primaryKey": "8100475",
+              "secondaryKey": "AmmoExpanded-Cal7p62x39Sov-HP-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "7.62x39mm Soviet EMP",
+              "maleVariant": "",
+              "primaryKey": "8100476",
+              "secondaryKey": "AmmoExpanded-Cal7p62x39Sov-EMP-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "7.62x39mm Soviet Incendiary",
+              "maleVariant": "",
+              "primaryKey": "8100477",
+              "secondaryKey": "AmmoExpanded-Cal7p62x39Sov-INC-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "7.62x39mm Soviet Chemical",
+              "maleVariant": "",
+              "primaryKey": "8100478",
+              "secondaryKey": "AmmoExpanded-Cal7p62x39Sov-CHEM-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "7.62x39mm Soviet Non-Lethal",
+              "maleVariant": "",
+              "primaryKey": "8100479",
+              "secondaryKey": "AmmoExpanded-Cal7p62x39Sov-NL-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "8x30mm Rail Flechettes",
+              "maleVariant": "",
+              "primaryKey": "8100480",
+              "secondaryKey": "AmmoExpanded-Cal8x30RailF-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "8x30mm Rail Flechettes EMP",
+              "maleVariant": "",
+              "primaryKey": "8100483",
+              "secondaryKey": "AmmoExpanded-Cal8x30RailF-EMP-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "8x30mm Rail Flechettes Incendiary",
+              "maleVariant": "",
+              "primaryKey": "8100484",
+              "secondaryKey": "AmmoExpanded-Cal8x30RailF-INC-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "8x30mm Rail Flechettes Chemical",
+              "maleVariant": "",
+              "primaryKey": "8100485",
+              "secondaryKey": "AmmoExpanded-Cal8x30RailF-CHEM-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "8x30mm Tungsten Shot",
+              "maleVariant": "",
+              "primaryKey": "8100486",
+              "secondaryKey": "AmmoExpanded-Cal8x30TShot-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "8x30mm Tungsten Shot EMP",
+              "maleVariant": "",
+              "primaryKey": "8100489",
+              "secondaryKey": "AmmoExpanded-Cal8x30TShot-EMP-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "8x30mm Tungsten Shot Incendiary",
+              "maleVariant": "",
+              "primaryKey": "8100490",
+              "secondaryKey": "AmmoExpanded-Cal8x30TShot-INC-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "8x30mm Tungsten Shot Chemical",
+              "maleVariant": "",
+              "primaryKey": "8100491",
+              "secondaryKey": "AmmoExpanded-Cal8x30TShot-CHEM-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "9.5x35mm Guided Minirocket",
+              "maleVariant": "",
+              "primaryKey": "8100492",
+              "secondaryKey": "AmmoExpanded-Cal9p5x35Minirocket-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "9.5x35mm Guided Minirocket EMP",
+              "maleVariant": "",
+              "primaryKey": "8100495",
+              "secondaryKey": "AmmoExpanded-Cal9p5x35Minirocket-EMP-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "9.5x35mm Guided Minirocket Incendiary",
+              "maleVariant": "",
+              "primaryKey": "8100496",
+              "secondaryKey": "AmmoExpanded-Cal9p5x35Minirocket-INC-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "9.5x35mm Guided Minirocket Chemical",
+              "maleVariant": "",
+              "primaryKey": "8100497",
+              "secondaryKey": "AmmoExpanded-Cal9p5x35Minirocket-CHEM-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "9x19mm Parabellum",
+              "maleVariant": "",
+              "primaryKey": "8100498",
+              "secondaryKey": "AmmoExpanded-Cal9x19-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "9x19mm Parabellum Armor Piercing",
+              "maleVariant": "",
+              "primaryKey": "8100499",
+              "secondaryKey": "AmmoExpanded-Cal9x19-AP-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "9x19mm Parabellum Hollow Point",
+              "maleVariant": "",
+              "primaryKey": "8100500",
+              "secondaryKey": "AmmoExpanded-Cal9x19-HP-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "9x19mm Parabellum EMP",
+              "maleVariant": "",
+              "primaryKey": "8100501",
+              "secondaryKey": "AmmoExpanded-Cal9x19-EMP-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "9x19mm Parabellum Incendiary",
+              "maleVariant": "",
+              "primaryKey": "8100502",
+              "secondaryKey": "AmmoExpanded-Cal9x19-INC-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "9x19mm Parabellum Chemical",
+              "maleVariant": "",
+              "primaryKey": "8100503",
+              "secondaryKey": "AmmoExpanded-Cal9x19-CHEM-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "9x19mm Parabellum Non-Lethal",
+              "maleVariant": "",
+              "primaryKey": "8100504",
+              "secondaryKey": "AmmoExpanded-Cal9x19-NL-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "9x30mm Tungsten Flechettes",
+              "maleVariant": "",
+              "primaryKey": "8100505",
+              "secondaryKey": "AmmoExpanded-Cal9x30TF-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "9x30mm Tungsten Flechettes EMP",
+              "maleVariant": "",
+              "primaryKey": "8100508",
+              "secondaryKey": "AmmoExpanded-Cal9x30TF-EMP-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "9x30mm Tungsten Flechettes Incendiary",
+              "maleVariant": "",
+              "primaryKey": "8100509",
+              "secondaryKey": "AmmoExpanded-Cal9x30TF-INC-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "9x30mm Tungsten Flechettes Chemical",
+              "maleVariant": "",
+              "primaryKey": "8100510",
+              "secondaryKey": "AmmoExpanded-Cal9x30TF-CHEM-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": ".45 Super High Explosive",
+              "maleVariant": "",
+              "primaryKey": "8100511",
+              "secondaryKey": "AmmoExpanded-Cal45Super-HE-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "Cal243Win Ammo Recipe",
+              "maleVariant": "",
+              "primaryKey": "8100512",
+              "secondaryKey": "AmmoExpanded-RecipeCal243Win-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "Cal45Super Ammo Recipe",
+              "maleVariant": "",
+              "primaryKey": "8100513",
+              "secondaryKey": "AmmoExpanded-RecipeCal45Super-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "Cal45WinMag Ammo Recipe",
+              "maleVariant": "",
+              "primaryKey": "8100514",
+              "secondaryKey": "AmmoExpanded-RecipeCal45WinMag-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "Cal454Casull Ammo Recipe",
+              "maleVariant": "",
+              "primaryKey": "8100515",
+              "secondaryKey": "AmmoExpanded-RecipeCal454Casull-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "Cal50AE Ammo Recipe",
+              "maleVariant": "",
+              "primaryKey": "8100516",
+              "secondaryKey": "AmmoExpanded-RecipeCal50AE-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "Cal50BeowulfOni Ammo Recipe",
+              "maleVariant": "",
+              "primaryKey": "8100517",
+              "secondaryKey": "AmmoExpanded-RecipeCal50BeowulfOni-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "Cal50BMG Ammo Recipe",
+              "maleVariant": "",
+              "primaryKey": "8100518",
+              "secondaryKey": "AmmoExpanded-RecipeCal50BMG-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "Cal500Malour Ammo Recipe",
+              "maleVariant": "",
+              "primaryKey": "8100519",
+              "secondaryKey": "AmmoExpanded-RecipeCal500Malour-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "Cal10GaugeBuck Ammo Recipe",
+              "maleVariant": "",
+              "primaryKey": "8100520",
+              "secondaryKey": "AmmoExpanded-RecipeCal10GaugeBuck-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "Cal10GaugeFlech Ammo Recipe",
+              "maleVariant": "",
+              "primaryKey": "8100521",
+              "secondaryKey": "AmmoExpanded-RecipeCal10GaugeFlech-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "Cal10x40Rocket Ammo Recipe",
+              "maleVariant": "",
+              "primaryKey": "8100522",
+              "secondaryKey": "AmmoExpanded-RecipeCal10x40Rocket-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "Cal10mmAuto Ammo Recipe",
+              "maleVariant": "",
+              "primaryKey": "8100523",
+              "secondaryKey": "AmmoExpanded-RecipeCal10mmAuto-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "Cal10x20TF Ammo Recipe",
+              "maleVariant": "",
+              "primaryKey": "8100524",
+              "secondaryKey": "AmmoExpanded-RecipeCal10x20TF-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "Cal12Gauge Ammo Recipe",
+              "maleVariant": "",
+              "primaryKey": "8100525",
+              "secondaryKey": "AmmoExpanded-RecipeCal12Gauge-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "Cal12p3x41UdaR Ammo Recipe",
+              "maleVariant": "",
+              "primaryKey": "8100526",
+              "secondaryKey": "AmmoExpanded-RecipeCal12p3x41UdaR-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "Cal12p7x70Rocket Ammo Recipe",
+              "maleVariant": "",
+              "primaryKey": "8100527",
+              "secondaryKey": "AmmoExpanded-RecipeCal12p7x70Rocket-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "Cal12x45Rocket Ammo Recipe",
+              "maleVariant": "",
+              "primaryKey": "8100528",
+              "secondaryKey": "AmmoExpanded-RecipeCal12x45Rocket-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "Cal14x40TSlug Ammo Recipe",
+              "maleVariant": "",
+              "primaryKey": "8100529",
+              "secondaryKey": "AmmoExpanded-RecipeCal14x40TSlug-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "Cal14x70TSlugHE Ammo Recipe",
+              "maleVariant": "",
+              "primaryKey": "8100530",
+              "secondaryKey": "AmmoExpanded-RecipeCal14x70TSlugHE-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "Cal15x55Rocket Ammo Recipe",
+              "maleVariant": "",
+              "primaryKey": "8100531",
+              "secondaryKey": "AmmoExpanded-RecipeCal15x55Rocket-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "Cal15x80TSpike Ammo Recipe",
+              "maleVariant": "",
+              "primaryKey": "8100532",
+              "secondaryKey": "AmmoExpanded-RecipeCal15x80TSpike-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "Cal18x70Rocket Ammo Recipe",
+              "maleVariant": "",
+              "primaryKey": "8100533",
+              "secondaryKey": "AmmoExpanded-RecipeCal18x70Rocket-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "Cal20x102Vulcan Ammo Recipe",
+              "maleVariant": "",
+              "primaryKey": "8100534",
+              "secondaryKey": "AmmoExpanded-RecipeCal20x102Vulcan-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "Cal22x126AC Ammo Recipe",
+              "maleVariant": "",
+              "primaryKey": "8100535",
+              "secondaryKey": "AmmoExpanded-RecipeCal22x126AC-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "Cal23x152Sov Ammo Recipe",
+              "maleVariant": "",
+              "primaryKey": "8100536",
+              "secondaryKey": "AmmoExpanded-RecipeCal23x152Sov-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "Cal3x10FlechCluster Ammo Recipe",
+              "maleVariant": "",
+              "primaryKey": "8100537",
+              "secondaryKey": "AmmoExpanded-RecipeCal3x10FlechCluster-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "Cal4Gauge Ammo Recipe",
+              "maleVariant": "",
+              "primaryKey": "8100538",
+              "secondaryKey": "AmmoExpanded-RecipeCal4Gauge-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "Cal4p7x10TF Ammo Recipe",
+              "maleVariant": "",
+              "primaryKey": "8100539",
+              "secondaryKey": "AmmoExpanded-RecipeCal4p7x10TF-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "Cal5p45CT Ammo Recipe",
+              "maleVariant": "",
+              "primaryKey": "8100540",
+              "secondaryKey": "AmmoExpanded-RecipeCal5p45CT-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "Cal5p56x45NUSA Ammo Recipe",
+              "maleVariant": "",
+              "primaryKey": "8100541",
+              "secondaryKey": "AmmoExpanded-RecipeCal5p56x45NUSA-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "Cal5p56CT Ammo Recipe",
+              "maleVariant": "",
+              "primaryKey": "8100542",
+              "secondaryKey": "AmmoExpanded-RecipeCal5p56CT-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "Cal5p7x28TF Ammo Recipe",
+              "maleVariant": "",
+              "primaryKey": "8100543",
+              "secondaryKey": "AmmoExpanded-RecipeCal5p7x28TF-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "Cal6p5x25Minirocket Ammo Recipe",
+              "maleVariant": "",
+              "primaryKey": "8100544",
+              "secondaryKey": "AmmoExpanded-RecipeCal6p5x25Minirocket-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "Cal6p5Arasaka Ammo Recipe",
+              "maleVariant": "",
+              "primaryKey": "8100545",
+              "secondaryKey": "AmmoExpanded-RecipeCal6p5Arasaka-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "Cal7p62x39Sov Ammo Recipe",
+              "maleVariant": "",
+              "primaryKey": "8100546",
+              "secondaryKey": "AmmoExpanded-RecipeCal7p62x39Sov-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "Cal8x30RailF Ammo Recipe",
+              "maleVariant": "",
+              "primaryKey": "8100547",
+              "secondaryKey": "AmmoExpanded-RecipeCal8x30RailF-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "Cal8x30TShot Ammo Recipe",
+              "maleVariant": "",
+              "primaryKey": "8100548",
+              "secondaryKey": "AmmoExpanded-RecipeCal8x30TShot-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "Cal9p5x35Minirocket Ammo Recipe",
+              "maleVariant": "",
+              "primaryKey": "8100549",
+              "secondaryKey": "AmmoExpanded-RecipeCal9p5x35Minirocket-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "Cal9x19 Ammo Recipe",
+              "maleVariant": "",
+              "primaryKey": "8100550",
+              "secondaryKey": "AmmoExpanded-RecipeCal9x19-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "Cal9x30TF Ammo Recipe",
+              "maleVariant": "",
+              "primaryKey": "8100551",
+              "secondaryKey": "AmmoExpanded-RecipeCal9x30TF-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "6.5x25mm Guided Minirocket High Explosive",
+              "maleVariant": "",
+              "primaryKey": "8100552",
+              "secondaryKey": "AmmoExpanded-Cal6p5x25Minirocket-HE-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "9.5x35mm Guided Minirocket High Explosive",
+              "maleVariant": "",
+              "primaryKey": "8100553",
+              "secondaryKey": "AmmoExpanded-Cal9p5x35Minirocket-HE-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "5.56mm CT High Explosive",
+              "maleVariant": "",
+              "primaryKey": "8100554",
+              "secondaryKey": "AmmoExpanded-Cal5p56CT-HE-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "12.3x41mm UDAR High Explosive",
+              "maleVariant": "",
+              "primaryKey": "8100555",
+              "secondaryKey": "AmmoExpanded-Cal12p3x41UdaR-HE-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "4 Gauge EMP",
+              "maleVariant": "",
+              "primaryKey": "8100556",
+              "secondaryKey": "AmmoExpanded-Cal4Gauge-EMP-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "23x152mm Soviet EMP",
+              "maleVariant": "",
+              "primaryKey": "8100557",
+              "secondaryKey": "AmmoExpanded-Cal23x152Sov-EMP-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "10x40mm Guided Rocket Chemical",
+              "maleVariant": "",
+              "primaryKey": "8100558",
+              "secondaryKey": "AmmoExpanded-Cal10x40Rocket-CHEM-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "12.3x41mm UDAR Chemical",
+              "maleVariant": "",
+              "primaryKey": "8100559",
+              "secondaryKey": "AmmoExpanded-Cal12p3x41UdaR-CHEM-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "14x40mm Tungsten Slug High Explosive",
+              "maleVariant": "",
+              "primaryKey": "8100561",
+              "secondaryKey": "AmmoExpanded-Cal14x40TSlug-HE-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "50 AE High Explosive",
+              "maleVariant": "",
+              "primaryKey": "8100562",
+              "secondaryKey": "AmmoExpanded-Cal50AE-HE-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "10 Gauge Buckshot High Explosive",
+              "maleVariant": "",
+              "primaryKey": "8100563",
+              "secondaryKey": "AmmoExpanded-Cal10GaugeBuck-HE-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "10 gauge shell loaded with lead shot. Over the past 40 years the cartridge has been primarily used for crowd control due to high stopping power, especially against cybernetically augmented rioters.",
+              "maleVariant": "",
+              "primaryKey": "8100564",
+              "secondaryKey": "AmmoExpanded-Cal10GaugeBuck-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "10 gauge shell loaded with fourteen tungsten flechettes. A custom load for the Satara, a magrail enhanced Igla platform. The Satara's external rails are capable of accelerating the flechettes to velocities exceeding 2700 meters per second. While standard buckshot excels in close-quarters riot control, it sees reduced performance against more armored targets. The tungsten flechette load for the Satara, when accelerated, are capable of penetrating through the highest grades of subdermal armor.",
+              "maleVariant": "",
+              "primaryKey": "8100565",
+              "secondaryKey": "AmmoExpanded-Cal10GaugeFlech-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "10mm copper-jacketed lead projectile housed in a high-tensile brass-alloy casing. Adopted by the FBI in 1989 as a direct response to the 1986 Miami shootout, where the insufficient stopping power of the service-issue 9mm proved fatal for two special agents. Later, the cartridge was adopted by Militech for their M221 Saratoga submachine gun, where stopping power is critical against cybernetically augmented threats.",
+              "maleVariant": "",
+              "primaryKey": "8100566",
+              "secondaryKey": "AmmoExpanded-Cal10mmAuto-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "10x20mm caseless tungsten flechettes engineered for the Arasaka JKE-X2 Kenshin platform. Its integrated magrail system accelerates these high-density projectiles to hyper-velocities exceeding 2700 meters per second. The flechettes effortlessly penetrate mid grades of subdermal armor.",
+              "maleVariant": "",
+              "primaryKey": "8100567",
+              "secondaryKey": "AmmoExpanded-Cal10x20TF-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "10x40mm guided minirocket. Composed of a lead projectile encapsulated in polymer, and a fin stabilized guidance system synced to the weapons onboard computer and users smart implant. The rocket is propelled by a compressed CHOO2 derivative at subsonic velocities. Max effective range of 500 meters. Primarily used in smart handguns.",
+              "maleVariant": "",
+              "primaryKey": "8100568",
+              "secondaryKey": "AmmoExpanded-Cal10x40Rocket-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "12 gauge shell loaded with lead shot. Historically developed for medium-to-large game hunting, such as deer and wild boar. The platform has seen a significant shift in its primary application, becoming a standard choice for personal and home defense.",
+              "maleVariant": "",
+              "primaryKey": "8100569",
+              "secondaryKey": "AmmoExpanded-Cal12Gauge-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "12.3x41mm copper-jacketed lead projectile housed in a high-tensile brass-alloy casing. High velocity handgun cartridge. Darra Polytechnic aquired the schematics for the Udar revolver and it's related cartridges in 2055 after purchasing the defunct KBP Instrument Design Bureau. After several redesigns of both the revolver to reduce cost, and a shortening of the cartridge by several milimeters, the corporation released the DR-5 Nova to the public. It's compact size, powerful cartridge, and",
+              "maleVariant": "",
+              "primaryKey": "8100570",
+              "secondaryKey": "AmmoExpanded-Cal12p3x41UdaR-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "Kang Tao proprietary 12.7x70mm guided rocket. Composed of a heavy lead projectile encapsulated in a polymer jacket as well as a fin stabilized guidance system synced to the weapons onboard computer and users smart implant. The rocket is propelled by a compressed CHOO2 derivative. Max effective range of 1km. Purpose-built for counter-drone operations and hunting FBCs and ACPA units in all environments.",
+              "maleVariant": "",
+              "primaryKey": "8100571",
+              "secondaryKey": "AmmoExpanded-Cal12p7x70Rocket-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "Militech proprietary 12x45mm guided rocket with a microtransmitter. Rocket engineered for the Hercules 3AX, a prototype smart assault rifle. Composed of a lead projectile encapsulated in polymer, and a fin stabilized guidance system synced to the weapons onboard computer. Unlike other smart weapons, the rockets are guided solely by the weapon's internal onboard computer and do not require the user to posess a specialized smart implant. The rocket is propelled by a CHOO2 derivative at subsonic velocities. Max effective range of 800 meters.",
+              "maleVariant": "",
+              "primaryKey": "8100572",
+              "secondaryKey": "AmmoExpanded-Cal12x45Rocket-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "14x40mm tungsten slug. Engineered by Techtronika for the RT-46 Burya, a magrail revolver capable of chambering four slugs. Each slug, when accelerated by the magrail system, penetrates high grades of subdermal armor with ease.",
+              "maleVariant": "",
+              "primaryKey": "8100573",
+              "secondaryKey": "AmmoExpanded-Cal14x40TSlug-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "14x70mm rail slug, machined specifically for a jurryrigged RT-46 Burya, capable of only chambering one slug at a time. Nicknamed Comrades Hammer by it's owner. This slug, when accelerated by the magrail system, penetrates high grades of subdermal armor with ease and is capable of stopping a sprinting Militech Commando.",
+              "maleVariant": "",
+              "primaryKey": "8100574",
+              "secondaryKey": "AmmoExpanded-Cal14x70TSlugHE-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "15x55mm guided rocket. Composed of a lead projectile encapsulated in polymer, and a fin stabilized guidance system synced to the weapons onboard computer and users smart implant. The rocket is propelled by a compressed CHOO2 derivative at subsonic velocities. Max effective range of 50 meters. Prominently used in the Serbian Rostovic DB-4 Palica.",
+              "maleVariant": "",
+              "primaryKey": "8100575",
+              "secondaryKey": "AmmoExpanded-Cal15x55Rocket-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "15x80mm tungsten spike. Chambered in the Tsunami Nekomata, a magrail sniper rifle. Acclerated to velocities exceeding 2700 meters per second, it is capable of shattering titanium bones and penetrating the outer-plating of a Militech Dragoon.",
+              "maleVariant": "",
+              "primaryKey": "8100576",
+              "secondaryKey": "AmmoExpanded-Cal15x80TSpike-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "18x70mm guided rocket. Composed of a lead projectile encapsulated in polymer, and a fin stabilized guidance system synced to the weapons onboard computer and users smart implant. The rocket is propelled by a compressed CHOO2 derivative at subsonic velocities. Max effective range of 500 meters. Only used in the L-69 Zhou platform.",
+              "maleVariant": "",
+              "primaryKey": "8100577",
+              "secondaryKey": "AmmoExpanded-Cal18x70Rocket-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "20x102mm steel-jacketed lead projectile housed in a high tensile strength brass-alloy casing. Anti-borg and vehicle cartridge chambered in the Nokota NDI Osprey, a shoulder mounted autocannon capable of both burst and semiautomatic fire.",
+              "maleVariant": "",
+              "primaryKey": "8100578",
+              "secondaryKey": "AmmoExpanded-Cal20x102Vulcan-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "22x126mm cartridge composed of a steel-jacketed lead projectile housed in a high-tensile strength brass-alloy casing. Anti-borg and vehicle cartridge, seeing its first adoption in a military capacity by the Serbian military.",
+              "maleVariant": "",
+              "primaryKey": "8100579",
+              "secondaryKey": "AmmoExpanded-Cal22x126AC-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "23x152mm steel-jacketed tungsten projectile housed in a high tensile strength brass alloy casing. Due to the rise of cybernetically augmented threats, particuarly ACPA units and FBCs, the Soviet Union's VPK (Military-Industrial Commission) tasked the Techtronika corporation with devising a new sniper rifle that could reliably deal with these emerging threats. In 2001, Techtronika produced the SPT32 Grad, a bolt action, magazine fed sniper rifle chambering an anti-aircraft cartridge, 23x152mm. Initially, 300 units were provided to the KGB, but in the modern day these rifles can be found globally. Due to the lag in technological develop following the 4th Corporate War, especially in material science, this cartridge is still relevant for anti-borg operations.",
+              "maleVariant": "",
+              "primaryKey": "8100580",
+              "secondaryKey": "AmmoExpanded-Cal23x152Sov-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "6.2x52mm polymer-jacketed lead projectile housed in a thermo-polymer casing. High stopping power, and can remove limbs with ease. Chambered in the Militech M251s Ajax.",
+              "maleVariant": "",
+              "primaryKey": "8100581",
+              "secondaryKey": "AmmoExpanded-Cal243Win-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "Midnight Arms proprietary 20 Gauge 3mm flechettes designed for a prototype weapon. Militech, for Project Cynosure, aquired the both the schematics for the weapon and the flechettes. Each flechette contains a microtransmitter which, upon being fired and penetrating the target, opens a link to Cynosure's core. This allows for rogue AI's from beyond the Blackwall to infect the target. Before the connection is cut by the Blackwall itself, the target experiences total neurological collapse and death.",
+              "maleVariant": "",
+              "primaryKey": "8100582",
+              "secondaryKey": "AmmoExpanded-Cal3x10FlechCluster-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "11.5x35mm copper-jacketed lead projectile housed in a brass case. Famously chambered in large revolvers, like the Taurus Raging Bull and Ruger Super Redhawk. Malorian continued the trend with their Overture platform, still a common sight on the streets and in the holsters of backcountry sheriffs.",
+              "maleVariant": "",
+              "primaryKey": "8100583",
+              "secondaryKey": "AmmoExpanded-Cal454Casull-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "11.43x23mm copper-jacketed lead projectile housed in a high tensile strength brass-alloy casing, allowing for higher pressure loads compared to the base cartridge. High velocity handgun cartridge. The resulting increased projectile velocity and improved stopping power is a neccesity in the modern world, where once standard threats have become significantly more dangerous due to the prevalence of cheaper grades of subdermal armor. Constituional Arms recommends all owners of their Liberty and Unity handguns to use this higher power cartridge.",
+              "maleVariant": "",
+              "primaryKey": "8100584",
+              "secondaryKey": "AmmoExpanded-Cal45Super-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "11.5x30.4mm copper-jacketed lead projectile housed in a high tensile strength brass-alloy casing. Longer than the base ACP casing by a few millimeters, allowing for higher pressure loads. Unlike the super variant, this cartridge can only fit in platforms specifically engineered to chamber and fire it. Tsunami is the only such manufacturer, engineering their Nue handgun with this cartridge in mind.",
+              "maleVariant": "",
+              "primaryKey": "8100585",
+              "secondaryKey": "AmmoExpanded-Cal45WinMag-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "4-gauge shell loaded with tungsten shot. This standard load was originally designed for hunting waterfowl. Due to global ecological collapse during the early 21st century, all species of waterfowl went extinct. Budget Arms, a few decades later, adopted the manufacturing specifications for various 4 gauge loads and the cartridge was repurposed for the Carnage platform.",
+              "maleVariant": "",
+              "primaryKey": "8100586",
+              "secondaryKey": "AmmoExpanded-Cal4Gauge-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "Proprietary 4.7mm caseless tungsten flechettes engineered specifically for the Militech M-179 Achilles. The flechettes, when acclerated by the magrail system, exceed 2700 meters per second and are capable of penetrating high grades of subdermal armor and lightly armored vehicles.",
+              "maleVariant": "",
+              "primaryKey": "8100587",
+              "secondaryKey": "AmmoExpanded-Cal4p7x10TF-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "12.7x41mm steel-alloy jacketed, lead-encased tungsten projectile housed in a high-tensile strength nickel-alloy casing. Developed by Eran Malour, initially from design schematics for the 12.7x41mm S&W. Engineered specifically for the Malorian Arms 3516, a custom commission for the rockstar Johnny Silverhand in late 2022. Silverhand sought a handgun that packed a cartrigde big enough to stop a raging cyberpsycho fan at 10 paces, and he got it.",
+              "maleVariant": "",
+              "primaryKey": "8100588",
+              "secondaryKey": "AmmoExpanded-Cal500Malour-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "12.7x33mm copper-jacketed lead projectile housed in a high-tensile brass-alloy casing. High velocity handgun cartridge. Famously chambered in the Desert Eagle, developed by Magnum Research Inc. Eran Malour, the founder of Malorian Arms, also chambered several custom handguns for rockstar Johnny Silverhand in this cartridge.",
+              "maleVariant": "",
+              "primaryKey": "8100589",
+              "secondaryKey": "AmmoExpanded-Cal50AE-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "12.7x99mm copper-jacketed lead projectile housed in a high-tensile strength brass-alloy casing. Originally developed as an anti-aircraft and vehicle round, it has remained in active service for over 150 years due to its enduring practicality. Primarily used today in anti-borg and drone operations, it's standard for eliminating more problematic cybernetically augmented threats.",
+              "maleVariant": "",
+              "primaryKey": "8100590",
+              "secondaryKey": "AmmoExpanded-Cal50BMG-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "12.7x42mm copper-jacketed lead projectile housed in a brass-alloy casing. This cartridge was originally developed to immobilize vehicles at Arasaka checkpoints, but has been practically phased out of corporation service. However, experienced mercs sometimes convert standard rifles to this caliber as despite the far higher recoil, its stopping power is near unbeatable.",
+              "maleVariant": "",
+              "primaryKey": "8100591",
+              "secondaryKey": "AmmoExpanded-Cal50BeowulfOni-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "5.45mm lead-core polymer jacketed projectile enveloped in propellant and then housed directly in a thermo-polymer casing with an aluminum base. Developed to replace legacy steel and brass cased cartridges, it never truly entered the market until 90 years after its initial conception. The telescoped design allows for the same capacity of propellant as traditional cartridges while also weighing 20-30% less due to extensive use of polymer in the casing and jacket.",
+              "maleVariant": "",
+              "primaryKey": "8100592",
+              "secondaryKey": "AmmoExpanded-Cal5p45CT-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "5.56mm lead-core polymer jacketed projectile enveloped in propellant and then housed directly in a thermo-polymer casing with an aluminum base. Developed to replace legacy steel and brass cased cartridges, it never truly entered the market until 85 years after its initial conception. Traditional cartridges, like 7.62x39, have mostly fallen in popularity globally and so have their platforms. The Nokota D5 Copperhead, chambered in 5.56mm CT, completely supplanted the niche the Kalashnikov held for more than 90 years. The telescoped design allows for the same capacity of propellant as traditional cartridges while also weighing 20-30% less due to extensive use of polymer in the casing and jacket.",
+              "maleVariant": "",
+              "primaryKey": "8100593",
+              "secondaryKey": "AmmoExpanded-Cal5p56CT-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "5.56x45mm copper-jacketed lead projectile housed in a brass casing. Designed for accurate automatic fire. As of the present day, it remains the standard-issue NUSA cartridge.",
+              "maleVariant": "",
+              "primaryKey": "8100594",
+              "secondaryKey": "AmmoExpanded-Cal5p56x45NUSA-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "5.7x28mm caseless tungsten flechettes engineered for the Militech M76-E Omaha platform. Its integrated magrail system accelerates these high-density projectiles to hyper-velocities exceeding 2700 meters per second. The flechettes effortlessly penetrate mid to high grades of subdermal armor.",
+              "maleVariant": "",
+              "primaryKey": "8100595",
+              "secondaryKey": "AmmoExpanded-Cal5p7x28TF-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "Proprietary 6.5mm steel-jacketed lead projectile housed in a brass-alloy casing. Reflecting the chauvinism of the zaibatsu-dominated Japanese government, Japanese security firms maintain a strict preference for domestically produced technologies, especially arms and ammunition. Consequently, Arasaka mandates proprietary gear for its security forces to ensure brand loyalty, advertisement, and most of all, top of the line performance. Cartridge chambered in the HJSH-18 Masamune and Nowaki.",
+              "maleVariant": "",
+              "primaryKey": "8100596",
+              "secondaryKey": "AmmoExpanded-Cal6p5Arasaka-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "6.5x25mm guided minirocket. Composed of a lead projectile encapsulated in polymer, and a fin stabilized guidance system synced to the weapons onboard computer and users smart implant. The rocket is propelled by a compressed CHOO2 derivative at subsonic velocities. Max effective range of 100 meters. Primarily used in smart handguns.",
+              "maleVariant": "",
+              "primaryKey": "8100597",
+              "secondaryKey": "AmmoExpanded-Cal6p5x25Minirocket-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "7.62x39mm copper-jacketed lead projectile housed in a steel casing. Renowned by revolutionists the world over as the \"round of the revolution\", this intermediate cartridge was once a staple of Soviet-bloc arsenals, though it has seen a sharp decline in global popularity following the widespread obsolescence of the platforms designed to fire it. Notably, except for the Tsunami Kyubi, which continues to chamber this cartridge. Tsunami has offered no public justification for its continued use of this legacy chambering.",
+              "maleVariant": "",
+              "primaryKey": "8100598",
+              "secondaryKey": "AmmoExpanded-Cal7p62x39Sov-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "8x30mm caseless tungsten flechettes. This flechette size is engineering for the Senkoh LX platform, a compact magrail submachine gun, capable of acclerating flechettes to velocities exceeding 2700 meters per second. At these speeds, most mid level grades of subdermal armor and concrete barricades are penetrated with ease.",
+              "maleVariant": "",
+              "primaryKey": "8100599",
+              "secondaryKey": "AmmoExpanded-Cal8x30RailF-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "8x30mm tungsten shot. Chambered in cylindircal cartridges capable of holding twenty of the tungsten pellets. Primarily used in the Darra Polytechnic DR-12 Quasar. When acclerated by the magrail system, the tungsten balls are capable of penetrating most low to mid grades of subdermal armor.",
+              "maleVariant": "",
+              "primaryKey": "8100600",
+              "secondaryKey": "AmmoExpanded-Cal8x30TShot-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "9.5x35mm guided minirocket. Composed of a lead projectile encapsulated in polymer, and a fin stabilized guidance system synced to the weapons onboard computer and users smart implant. The rocket is propelled by a compressed CHOO2 derivative at subsonic velocities. Max effective range of 300 meters. Primarily used in smart submachine guns.",
+              "maleVariant": "",
+              "primaryKey": "8100601",
+              "secondaryKey": "AmmoExpanded-Cal9p5x35Minirocket-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "9x19mm copper-jacketed lead projectile housed in a brass casing. While it has remained in service for over 150 years, its efficacy has declined significantly over the last half-century due to the widespread adoption of cheaper grades of subdermal armor. Despite these limitations in stopping power, it has served as the primary chambering for the Lexington line of machine pistols since the 2030s, the standard-issue sidearm for NCPD patrol officers.",
+              "maleVariant": "",
+              "primaryKey": "8100602",
+              "secondaryKey": "AmmoExpanded-Cal9x19-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "9x30mm caseless tungsten flechettes accelerated to velocities exceeding 2700 meters per second. At these speeds, the projectile is capable of penetrating a several 2 meter wide concrete barricades in less than a second.",
+              "maleVariant": "",
+              "primaryKey": "8100603",
+              "secondaryKey": "AmmoExpanded-Cal9x30TF-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "12x45mm Guided Rocket Chemical",
+              "maleVariant": "",
+              "primaryKey": "8100604",
+              "secondaryKey": "AmmoExpanded-Cal12x45Rocket-CHEM-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "10x40mm Guided Rocket EMP",
+              "maleVariant": "",
+              "primaryKey": "8100605",
+              "secondaryKey": "AmmoExpanded-Cal10x40Rocket-EMP-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "12x45mm Guided Rocket EMP",
+              "maleVariant": "",
+              "primaryKey": "8100606",
+              "secondaryKey": "AmmoExpanded-Cal12x45Rocket-EMP-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "12.7x70mm Guided Rocket EMP",
+              "maleVariant": "",
+              "primaryKey": "8100607",
+              "secondaryKey": "AmmoExpanded-Cal12p7x70Rocket-EMP-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "12.7x70mm Guided Rocket Chemical",
+              "maleVariant": "",
+              "primaryKey": "8100608",
+              "secondaryKey": "AmmoExpanded-Cal12p7x70Rocket-CHEM-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "15x55mm Guided Rocket EMP",
+              "maleVariant": "",
+              "primaryKey": "8100609",
+              "secondaryKey": "AmmoExpanded-Cal15x55Rocket-EMP-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "15x55mm Guided Rocket Chemical",
+              "maleVariant": "",
+              "primaryKey": "8100610",
+              "secondaryKey": "AmmoExpanded-Cal15x55Rocket-CHEM-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "18x70mm Guided Rocket EMP",
+              "maleVariant": "",
+              "primaryKey": "8100611",
+              "secondaryKey": "AmmoExpanded-Cal18x70Rocket-EMP-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "18x70mm Guided Rocket Chemical",
+              "maleVariant": "",
+              "primaryKey": "8100612",
+              "secondaryKey": "AmmoExpanded-Cal18x70Rocket-CHEM-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "7.62x39mm Soviet High Explosive",
+              "maleVariant": "",
+              "primaryKey": "8100613",
+              "secondaryKey": "AmmoExpanded-Cal7p62x39Sov-HE-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "Caustic",
+              "maleVariant": "",
+              "primaryKey": "8100614",
+              "secondaryKey": "AmmoExpanded-CausticMod1-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "Arc",
+              "maleVariant": "",
+              "primaryKey": "8100615",
+              "secondaryKey": "AmmoExpanded-ArcMod1-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": ".454 Casull Snakeshot",
+              "maleVariant": "",
+              "primaryKey": "8100616",
+              "secondaryKey": "AmmoExpanded-Cal454Casull-Snakeshot-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": ".45 Super Snakeshot",
+              "maleVariant": "",
+              "primaryKey": "8100617",
+              "secondaryKey": "AmmoExpanded-Cal45Super-Snakeshot-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": ".45 Winchester Magnum Snakeshot",
+              "maleVariant": "",
+              "primaryKey": "8100618",
+              "secondaryKey": "AmmoExpanded-Cal45WinMag-Snakeshot-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "12.3x41mm UdaR Snakeshot",
+              "maleVariant": "",
+              "primaryKey": "8100619",
+              "secondaryKey": "AmmoExpanded-Cal12p3x41UdaR-Snakeshot-Name"
+            }
+          ]
+        }
+      }
+    },
+    "EmbeddedFiles": []
+  }
+}

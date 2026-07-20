@@ -1,0 +1,6 @@
+﻿Ammo.HandicapMilitechPrototypePreset:
+  handicapLimit: 20
+  handicapMaxQty: 0
+  handicapMinQty: 0
+  item: Ammo.MilitechPrototype
+  $type: gamedataHandicapLootPreset_Record

@@ -1,0 +1,162 @@
+Ammo.AmmoLootTable:
+  lootItems:
+    - dropChance: 0.0139
+      dropCountMin: 90
+      dropCountMax: 180
+      itemID: Ammo.Cal10mmAuto
+    - dropChance: 0.0139
+      dropCountMin: 90
+      dropCountMax: 180
+      itemID: Ammo.Cal10x20TF
+    - dropChance: 0.0139
+      dropCountMin: 90
+      dropCountMax: 180
+      itemID: Ammo.Cal12p3x41UdaR
+    - dropChance: 0.0139
+      dropCountMin: 90
+      dropCountMax: 180
+      itemID: Ammo.Cal14x40TSlug
+    - dropChance: 0.0139
+      dropCountMin: 90
+      dropCountMax: 180
+      itemID: Ammo.Cal14x70TSlugHE
+    - dropChance: 0.0139
+      dropCountMin: 90
+      dropCountMax: 180
+      itemID: Ammo.Cal3x10FlechCluster
+    - dropChance: 0.0139
+      dropCountMin: 90
+      dropCountMax: 180
+      itemID: Ammo.Cal454Casull
+    - dropChance: 0.0139
+      dropCountMin: 90
+      dropCountMax: 180
+      itemID: Ammo.Cal45Super
+    - dropChance: 0.0139
+      dropCountMin: 90
+      dropCountMax: 180
+      itemID: Ammo.Cal45WinMag
+    - dropChance: 0.0139
+      dropCountMin: 90
+      dropCountMax: 180
+      itemID: Ammo.Cal500Malour
+    - dropChance: 0.0139
+      dropCountMin: 90
+      dropCountMax: 180
+      itemID: Ammo.Cal50AE
+    - dropChance: 0.0139
+      dropCountMin: 90
+      dropCountMax: 180
+      itemID: Ammo.Cal5p7x28TF
+    - dropChance: 0.0139
+      dropCountMin: 90
+      dropCountMax: 180
+      itemID: Ammo.Cal6p5x25Minirocket
+    - dropChance: 0.0139
+      dropCountMin: 90
+      dropCountMax: 180
+      itemID: Ammo.Cal8x30RailF
+    - dropChance: 0.0139
+      dropCountMin: 90
+      dropCountMax: 180
+      itemID: Ammo.Cal8x30TShot
+    - dropChance: 0.0139
+      dropCountMin: 90
+      dropCountMax: 180
+      itemID: Ammo.Cal9p5x35Minirocket
+    - dropChance: 0.0139
+      dropCountMin: 90
+      dropCountMax: 180
+      itemID: Ammo.Cal9x19
+    - dropChance: 0.0139
+      dropCountMin: 90
+      dropCountMax: 180
+      itemID: Ammo.Cal9x30TF
+    - dropChance: 0.0208
+      dropCountMin: 90
+      dropCountMax: 180
+      itemID: Ammo.Cal10x40Rocket
+    - dropChance: 0.0208
+      dropCountMin: 90
+      dropCountMax: 180
+      itemID: Ammo.Cal12x45Rocket
+    - dropChance: 0.0208
+      dropCountMin: 90
+      dropCountMax: 180
+      itemID: Ammo.Cal23x152Sov
+    - dropChance: 0.0208
+      dropCountMin: 90
+      dropCountMax: 180
+      itemID: Ammo.Cal243Win
+    - dropChance: 0.0208
+      dropCountMin: 90
+      dropCountMax: 180
+      itemID: Ammo.Cal4p7x10TF
+    - dropChance: 0.0208
+      dropCountMin: 90
+      dropCountMax: 180
+      itemID: Ammo.Cal50BMG
+    - dropChance: 0.0208
+      dropCountMin: 90
+      dropCountMax: 180
+      itemID: Ammo.Cal50BeowulfOni
+    - dropChance: 0.0208
+      dropCountMin: 90
+      dropCountMax: 180
+      itemID: Ammo.Cal5p45CT
+    - dropChance: 0.0208
+      dropCountMin: 90
+      dropCountMax: 180
+      itemID: Ammo.Cal5p56CT
+    - dropChance: 0.0208
+      dropCountMin: 90
+      dropCountMax: 180
+      itemID: Ammo.Cal5p56x45NUSA
+    - dropChance: 0.0208
+      dropCountMin: 90
+      dropCountMax: 180
+      itemID: Ammo.Cal6p5Arasaka
+    - dropChance: 0.0208
+      dropCountMin: 90
+      dropCountMax: 180
+      itemID: Ammo.Cal7p62x39Sov
+    - dropChance: 0.0625
+      dropCountMin: 24
+      dropCountMax: 32
+      itemID: Ammo.Cal12p7x70Rocket
+    - dropChance: 0.0625
+      dropCountMin: 24
+      dropCountMax: 32
+      itemID: Ammo.Cal15x80TSpike
+    - dropChance: 0.0625
+      dropCountMin: 24
+      dropCountMax: 32
+      itemID: Ammo.Cal20x102Vulcan
+    - dropChance: 0.0625
+      dropCountMin: 24
+      dropCountMax: 32
+      itemID: Ammo.Cal22x126AC
+    - dropChance: 0.0417
+      dropCountMin: 40
+      dropCountMax: 80
+      itemID: Ammo.Cal10GaugeBuck
+    - dropChance: 0.0417
+      dropCountMin: 40
+      dropCountMax: 80
+      itemID: Ammo.Cal10GaugeFlech
+    - dropChance: 0.0417
+      dropCountMin: 40
+      dropCountMax: 80
+      itemID: Ammo.Cal12Gauge
+    - dropChance: 0.0417
+      dropCountMin: 40
+      dropCountMax: 80
+      itemID: Ammo.Cal15x55Rocket
+    - dropChance: 0.0417
+      dropCountMin: 40
+      dropCountMax: 80
+      itemID: Ammo.Cal18x70Rocket
+    - dropChance: 0.0417
+      dropCountMin: 40
+      dropCountMax: 80
+      itemID: Ammo.Cal4Gauge

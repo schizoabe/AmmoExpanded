@@ -1,0 +1,4 @@
+Ammo.AmmoBase_inline1:
+  amount: 2
+  ingredient: Items.CommonMaterial1
+  $type: gamedataRecipeElement_Record
