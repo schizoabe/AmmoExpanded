@@ -107,10 +107,6 @@ Items.Base_Hercules:
   tags:
     - !append-once DPAE_Cal12x45Rocket
 
-Items.Preset_HMG_Default:
-  tags:
-    - !append-once DPAE_Cal50BMG
-
 Items.Base_Sor22:
   tags:
     - !append-once DPAE_Cal50BMG

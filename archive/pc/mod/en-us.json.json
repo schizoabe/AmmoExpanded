@@ -3552,6 +3552,20 @@
               "maleVariant": "",
               "primaryKey": "8100619",
               "secondaryKey": "AmmoExpanded-Cal12p3x41UdaR-Snakeshot-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": ".50 BMG APHET-IL",
+              "maleVariant": "",
+              "primaryKey": "8100620",
+              "secondaryKey": "AmmoExpanded-Cal50APHETIL-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "Armor-Piercing High-Explosive Tracer, Integrated Link. Proprietary Militech linked-belt ammunition manufactured exclusively for the MK.31 platform — the belt itself is machined to a Militech-only feed spec, incompatible with any other .50-caliber weapon. Comes pre-loaded on the belt; no aftermarket supply exists.",
+              "maleVariant": "",
+              "primaryKey": "8100621",
+              "secondaryKey": "AmmoExpanded-Cal50APHETIL-Desc"
             }
           ]
         }

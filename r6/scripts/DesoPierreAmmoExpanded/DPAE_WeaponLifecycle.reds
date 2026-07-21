@@ -190,6 +190,8 @@ protected cb func OnItemRemovedFromSlot(evt: ref<ItemRemovedFromSlot>) -> Bool {
 
   let ts = GameInstance.GetTransactionSystem(this.GetGame());
 
+  if ts.HasTag(this, n"HMG", itemID) { return result; }
+
   let rightWeapon = ts.GetItemInSlot(this, t"AttachmentSlots.WeaponRight") as WeaponObject;
   if IsDefined(rightWeapon) && rightWeapon.GetItemID() != itemID && Equals(ItemID.GetTDBID(WeaponObject.GetAmmoType(rightWeapon)), nativeAmmoTDBID) {
     return result;

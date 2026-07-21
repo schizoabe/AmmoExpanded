@@ -680,6 +680,19 @@ local function updateHUD(p)
     local sys = getAmmoHUDSystem()
     if not sys then return end
 
+    -- MK.31 HMG (2026-07-21) — not DPAE-managed at all (no caliber, no pool,
+    -- see WeaponCaliberTags.yaml's Cal50BMG section), so currentCal is always
+    -- nil for it. Still worth reporting on the HUD, just as a fixed display
+    -- instead of the normal variant/caliber pair.
+    if p:DPAE_IsHMGEquipped() then
+        if lastHUDVariant ~= "Belt-Fed" then
+            lastHUDVariant = "Belt-Fed"
+            lastHUDQty     = nil
+            sys:UpdateDisplay(".50 BMG APHET-IL", "Belt-Fed", 0, 1.0, 0.75, 0.35)
+        end
+        return
+    end
+
     if not currentCal or localActiveID == "" then
         if lastHUDVariant ~= nil then
             sys:HideDisplay()

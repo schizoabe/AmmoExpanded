@@ -103,6 +103,19 @@ public func DPAE_GetCaliberString() -> String {
   return "";
 }
 
+@addMethod(PlayerPuppet)
+public func DPAE_IsHMGEquipped() -> Bool {
+  let ts = GameInstance.GetTransactionSystem(this.GetGame());
+  let weaponObj = ts.GetItemInSlot(this, t"AttachmentSlots.WeaponRight") as WeaponObject;
+  if !IsDefined(weaponObj) {
+    weaponObj = ts.GetItemInSlot(this, t"AttachmentSlots.WeaponLeft") as WeaponObject;
+  }
+  if !IsDefined(weaponObj) { return false; }
+  let itemID = weaponObj.GetItemID();
+  if !ItemID.IsValid(itemID) { return false; }
+  return ts.HasTag(this, n"HMG", itemID);
+}
+
 
 @addMethod(PlayerPuppet)
 public func DPAE_GetDummyItemID() -> ItemID {

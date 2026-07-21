@@ -163,6 +163,9 @@ public func DPAE_CacheAmmoDropData() -> Void {
   if !IsDefined(weapon) { weapon = ScriptedPuppet.GetWeaponLeft(this); }
   if !IsDefined(weapon) || weapon.IsMelee() { return; }
 
+  let ts = GameInstance.GetTransactionSystem(this.GetGame());
+  if ts.HasTag(this, n"HMG", weapon.GetItemID()) { return; }
+
   let weaponRecord = TweakDBInterface.GetItemRecord(ItemID.GetTDBID(weapon.GetItemID())) as WeaponItem_Record;
   if !IsDefined(weaponRecord) { return; }
 
