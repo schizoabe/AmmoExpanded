@@ -1,0 +1,10 @@
+Items.GenericMod1_Base:
+  OnAttach:
+    - effectors:
+        - $base: Perks.MultiplyDamage
+          prereqRecord:
+            $base: Prereqs.ANDPrereq
+            nestedPrereqs:
+              - Perks.IsPlayerOutOfCombatOrInStealthPSMState
+              - Perks.IsHitTargetAlive
+          value: 1.2

@@ -8,13 +8,29 @@ func DPAE_QtyMaxPct() -> Float { return 1.00; }
 public let dpae_hasAmmoData: Bool;
 
 @addField(NPCPuppet)
-public let dpae_ammoTDBID: TweakDBID;
+public let dpae_recorded_weapon_ids: array<ItemID>;
 
 @addField(NPCPuppet)
-public let dpae_weaponItemType: gamedataItemType;
+public let dpae_ammoTDBIDs: array<TweakDBID>;
+
+@addField(NPCPuppet)
+public let dpae_weaponItemTypes: array<gamedataItemType>;
 
 @addField(NPCPuppet)
 public let dpae_npc_ammo: TweakDBID;
+
+@addMethod(NPCPuppet)
+private func DPAE_RecordAmmoRoll(weaponItemID: ItemID, ammoTDBID: TweakDBID, weaponItemType: gamedataItemType) -> Void {
+  if !ItemID.IsValid(weaponItemID) || !TDBID.IsValid(ammoTDBID) { return; }
+  let i = 0;
+  while i < ArraySize(this.dpae_recorded_weapon_ids) {
+    if this.dpae_recorded_weapon_ids[i] == weaponItemID { return; }
+    i += 1;
+  }
+  ArrayPush(this.dpae_recorded_weapon_ids, weaponItemID);
+  ArrayPush(this.dpae_ammoTDBIDs, ammoTDBID);
+  ArrayPush(this.dpae_weaponItemTypes, weaponItemType);
+}
 
 
 func DPAE_GetSpecialVariants(caliberTDBID: TweakDBID) -> array<TweakDBID> {
@@ -126,6 +142,11 @@ protected cb func OnItemAddedToSlot(evt: ref<ItemAddedToSlot>) -> Bool {
   let lockedVariant = DPAE_GetLockedVariant(this, weaponItemID, caliberTDBID);
   this.dpae_npc_ammo = TDBID.IsValid(lockedVariant) ? lockedVariant : DPAE_RollNPCAmmoVariant(caliberTDBID);
 
+  let recordItemType = TweakDBInterface.GetItemRecord(ItemID.GetTDBID(weaponItemID)) as WeaponItem_Record;
+  if IsDefined(recordItemType) {
+    this.DPAE_RecordAmmoRoll(weaponItemID, this.dpae_npc_ammo, recordItemType.ItemType().Type());
+  }
+
   let npcAmmoStrHE = TDBID.ToStringDEBUG(this.dpae_npc_ammo);
   if StrEndsWith(npcAmmoStrHE, "HE") {
     weaponObj.OverrideRangedAttackPackage(TweakDBInterface.GetRangedAttackPackageRecord(DPAE_GetExplosivePackageForRound(npcAmmoStrHE)));
@@ -161,33 +182,27 @@ public func DPAE_CacheAmmoDropData() -> Void {
   let weapon = ScriptedPuppet.GetActiveWeapon(this);
   if !IsDefined(weapon) { weapon = ScriptedPuppet.GetWeaponRight(this); }
   if !IsDefined(weapon) { weapon = ScriptedPuppet.GetWeaponLeft(this); }
-  if !IsDefined(weapon) || weapon.IsMelee() { return; }
-
-  let ts = GameInstance.GetTransactionSystem(this.GetGame());
-  if ts.HasTag(this, n"HMG", weapon.GetItemID()) { return; }
-
-  let weaponRecord = TweakDBInterface.GetItemRecord(ItemID.GetTDBID(weapon.GetItemID())) as WeaponItem_Record;
-  if !IsDefined(weaponRecord) { return; }
-
-  let ammoRecord = weaponRecord.Ammo();
-  if !IsDefined(ammoRecord) { return; }
-
-  let ammoTDBID = ammoRecord.GetID();
-  if !TDBID.IsValid(ammoTDBID) { return; }
-
-  this.dpae_ammoTDBID = ammoTDBID;
-
-  if TDBID.IsValid(this.dpae_npc_ammo) {
-    this.dpae_ammoTDBID = this.dpae_npc_ammo;
-  } else {
-    let dpaeCaliberTDBID = DPAE_GetCaliberFromEntity(this, weapon.GetItemID());
-    if TDBID.IsValid(dpaeCaliberTDBID) {
-      this.dpae_ammoTDBID = dpaeCaliberTDBID;
+  if IsDefined(weapon) && !weapon.IsMelee() {
+    let ts = GameInstance.GetTransactionSystem(this.GetGame());
+    if !ts.HasTag(this, n"HMG", weapon.GetItemID()) {
+      let weaponRecord = TweakDBInterface.GetItemRecord(ItemID.GetTDBID(weapon.GetItemID())) as WeaponItem_Record;
+      if IsDefined(weaponRecord) {
+        let ammoRecord = weaponRecord.Ammo();
+        if IsDefined(ammoRecord) && TDBID.IsValid(ammoRecord.GetID()) {
+          let fallbackAmmoTDBID = ammoRecord.GetID();
+          if TDBID.IsValid(this.dpae_npc_ammo) {
+            fallbackAmmoTDBID = this.dpae_npc_ammo;
+          } else {
+            let dpaeCaliberTDBID = DPAE_GetCaliberFromEntity(this, weapon.GetItemID());
+            if TDBID.IsValid(dpaeCaliberTDBID) { fallbackAmmoTDBID = dpaeCaliberTDBID; }
+          }
+          this.DPAE_RecordAmmoRoll(weapon.GetItemID(), fallbackAmmoTDBID, weaponRecord.ItemType().Type());
+        }
+      }
     }
   }
 
-  this.dpae_weaponItemType = weaponRecord.ItemType().Type();
-  this.dpae_hasAmmoData = true;
+  this.dpae_hasAmmoData = ArraySize(this.dpae_ammoTDBIDs) > 0;
 }
 
 @wrapMethod(NPCPuppet)
@@ -222,14 +237,18 @@ private final func EvaluateLootQuality() -> Bool {
   if IsDefined(npc) && npc.dpae_hasAmmoData {
     npc.dpae_hasAmmoData = false;
 
-    let dropRoll = RandF();
-    if dropRoll <= DPAE_DropChance() {
-      let baseQty = DPAE_AmmoBaseQty(npc.dpae_weaponItemType);
-      let pct = DPAE_QtyMinPct() + RandF() * (DPAE_QtyMaxPct() - DPAE_QtyMinPct());
-      let qty = Max(1, RoundMath(Cast<Float>(baseQty) * pct));
+    let ts = GameInstance.GetTransactionSystem(this.GetGame());
+    let i = 0;
+    while i < ArraySize(npc.dpae_ammoTDBIDs) {
+      let dropRoll = RandF();
+      if dropRoll <= DPAE_DropChance() {
+        let baseQty = DPAE_AmmoBaseQty(npc.dpae_weaponItemTypes[i]);
+        let pct = DPAE_QtyMinPct() + RandF() * (DPAE_QtyMaxPct() - DPAE_QtyMinPct());
+        let qty = Max(1, RoundMath(Cast<Float>(baseQty) * pct));
 
-      GameInstance.GetTransactionSystem(this.GetGame())
-        .GiveItem(this, ItemID.FromTDBID(npc.dpae_ammoTDBID), qty);
+        ts.GiveItem(this, ItemID.FromTDBID(npc.dpae_ammoTDBIDs[i]), qty);
+      }
+      i += 1;
     }
   }
 

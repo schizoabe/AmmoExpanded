@@ -16,6 +16,7 @@ local ROUND_COLORS = {
     SLUG = { 0.95, 0.85, 0.50 },
     TECH  = { 1.00, 0.70, 0.30 },
     CHEM  = { 0.55, 0.90, 0.35 },
+    SNAKE = { 0.55, 0.85, 0.25 },
 }
 
 -- ── Caliber variant tables (NEW AMMO V2 roster — 40 calibers) ─────────────────
@@ -47,6 +48,7 @@ local CALIBER_VARIANTS = {
             { id = "Ammo.Cal45Super", label = "FMJ", short = "FMJ" },
             { id = "Ammo.Cal45Super_AP", label = "Armor Pierce", short = "AP" },
             { id = "Ammo.Cal45Super_HP", label = "Hollow Point", short = "HP" },
+            { id = "Ammo.Cal45Super_Snakeshot", label = "Snakeshot", short = "SNAKE" },
             { id = "Ammo.Cal45Super_EMP", label = "EMP", short = "EMP" },
             { id = "Ammo.Cal45Super_INC", label = "Incendiary", short = "INC" },
             { id = "Ammo.Cal45Super_CHEM", label = "Chemical", short = "CHEM" },
@@ -60,6 +62,7 @@ local CALIBER_VARIANTS = {
             { id = "Ammo.Cal45WinMag", label = "FMJ", short = "FMJ" },
             { id = "Ammo.Cal45WinMag_AP", label = "Armor Pierce", short = "AP" },
             { id = "Ammo.Cal45WinMag_HP", label = "Hollow Point", short = "HP" },
+            { id = "Ammo.Cal45WinMag_Snakeshot", label = "Snakeshot", short = "SNAKE" },
             { id = "Ammo.Cal45WinMag_EMP", label = "EMP", short = "EMP" },
             { id = "Ammo.Cal45WinMag_INC", label = "Incendiary", short = "INC" },
             { id = "Ammo.Cal45WinMag_CHEM", label = "Chemical", short = "CHEM" },
@@ -72,6 +75,7 @@ local CALIBER_VARIANTS = {
             { id = "Ammo.Cal454Casull", label = "FMJ", short = "FMJ" },
             { id = "Ammo.Cal454Casull_AP", label = "Armor Pierce", short = "AP" },
             { id = "Ammo.Cal454Casull_HP", label = "Hollow Point", short = "HP" },
+            { id = "Ammo.Cal454Casull_Snakeshot", label = "Snakeshot", short = "SNAKE" },
             { id = "Ammo.Cal454Casull_EMP", label = "EMP", short = "EMP" },
             { id = "Ammo.Cal454Casull_INC", label = "Incendiary", short = "INC" },
             { id = "Ammo.Cal454Casull_CHEM", label = "Chemical", short = "CHEM" },
@@ -186,6 +190,7 @@ local CALIBER_VARIANTS = {
             { id = "Ammo.Cal12p3x41UdaR", label = "FMJ", short = "FMJ" },
             { id = "Ammo.Cal12p3x41UdaR_AP", label = "Armor Pierce", short = "AP" },
             { id = "Ammo.Cal12p3x41UdaR_HP", label = "Hollow Point", short = "HP" },
+            { id = "Ammo.Cal12p3x41UdaR_Snakeshot", label = "Snakeshot", short = "SNAKE" },
             { id = "Ammo.Cal12p3x41UdaR_INC", label = "Incendiary", short = "INC" },
             { id = "Ammo.Cal12p3x41UdaR_HE", label = "High Explosive", short = "HE" },
             { id = "Ammo.Cal12p3x41UdaR_CHEM", label = "Chemical", short = "CHEM" },
