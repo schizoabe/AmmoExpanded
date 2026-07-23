@@ -67,6 +67,8 @@ DPAE_StatusEffect.INC_Burn:
 
 DPAE_StatusEffect.INC_Burn_DoT:
   $base: BaseStatusEffect.Stat_Buff
+  immunityStats:
+    - BaseStats.BurningImmunity
   duration:
     $type: gamedataStatModifierGroup_Record
     statModifiers:
@@ -260,6 +262,8 @@ DPAE_StatusEffect.CHEM_Poison:
 
 DPAE_StatusEffect.CHEM_Poison_DoT:
   $base: BaseStatusEffect.Stat_Buff
+  immunityStats:
+    - BaseStats.PoisonImmunity
   duration:
     $type: gamedataStatModifierGroup_Record
     statModifiers:
@@ -1351,6 +1355,8 @@ DPAE_StatusEffect.EMP_CyberwareMalfunction:
 
 DPAE_StatusEffect.EMP_ShockMalfunction_DoT:
   $base: BaseStatusEffect.Stat_Buff
+  immunityStats:
+    - BaseStats.ElectrocuteImmunity
   duration:
     $type: gamedataStatModifierGroup_Record
     statModifiers:
