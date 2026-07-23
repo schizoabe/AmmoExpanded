@@ -9,8 +9,8 @@ Items.MoxCarnageWeaponModAbility:
             distanceRequired: 3.0
             comparisonType: LessOrEqual
           - $base: Prereqs.StatusEffectPresentHitPrereqCondition
-            statusEffect: DPAE_StatusEffect.EMP_Shock
-            checkType: CheckType.Record
+            tagToCheck: DPAE_EMP_Active
+            checkType: CheckType.Tag
             objectToCheck: Instigator
       statusEffect: BaseStatusEffect.Electrocuted
       applicationChance:
@@ -40,8 +40,8 @@ Items.KenshinSpyWeaponModAbility:
             checkType: CheckType.Record
             invert: true
           - $base: Prereqs.StatusEffectPresentHitPrereqCondition
-            statusEffect: DPAE_StatusEffect.EMP_Shock
-            checkType: CheckType.Record
+            tagToCheck: DPAE_EMP_Active
+            checkType: CheckType.Tag
             objectToCheck: Instigator
       objectAction: QuickHack.BlindHack
       uploadChance: 0.15
@@ -56,8 +56,8 @@ Items.UnityAngelicaWeaponModAbility:
             distanceRequired: 10.0
             comparisonType: LessOrEqual
           - $base: Prereqs.StatusEffectPresentHitPrereqCondition
-            statusEffect: DPAE_StatusEffect.HP_Bleed
-            checkType: CheckType.Record
+            tagToCheck: DPAE_HP_Active
+            checkType: CheckType.Tag
             objectToCheck: Instigator
       statusEffect: BaseStatusEffect.Bleeding
       applicationChance:
@@ -91,8 +91,8 @@ Items.HitmanNovaWeaponModAbility:
           - $base: Prereqs.AttackTypeHitPrereqCondition
             attackType: Ranged
           - $base: Prereqs.StatusEffectPresentHitPrereqCondition
-            statusEffect: DPAE_StatusEffect.CHEM_Poison
-            checkType: CheckType.Record
+            tagToCheck: DPAE_CHEM_Active
+            checkType: CheckType.Tag
             objectToCheck: Instigator
       statusEffect: BaseStatusEffect.Poisoned
       applicationChance:
@@ -109,8 +109,8 @@ Items.SidewinderDividedWeaponModAbility:
           - $base: Prereqs.ProcessHitTriggered
             conditions:
               - $base: Prereqs.StatusEffectPresentHitPrereqCondition
-                statusEffect: DPAE_StatusEffect.CHEM_Poison
-                checkType: CheckType.Record
+                tagToCheck: DPAE_CHEM_Active
+                checkType: CheckType.Tag
                 objectToCheck: Instigator
       attackRecord: Attacks.BiotechGrenadeV2
       isRandom: true
@@ -126,8 +126,8 @@ Items.DianYinglongWeaponModAbility:
           - $base: Prereqs.ProcessHitTriggered
             conditions:
               - $base: Prereqs.StatusEffectPresentHitPrereqCondition
-                statusEffect: DPAE_StatusEffect.EMP_Shock
-                checkType: CheckType.Record
+                tagToCheck: DPAE_EMP_Active
+                checkType: CheckType.Tag
                 objectToCheck: Instigator
       attackRecord: Attacks.YinglongEMP
       isRandom: true
@@ -165,8 +165,8 @@ Items.PrototypeHerculesWeaponModAbility:
           - $base: Prereqs.ProcessHitTriggered
             conditions:
               - $base: Prereqs.StatusEffectPresentHitPrereqCondition
-                statusEffect: DPAE_StatusEffect.CHEM_Poison
-                checkType: CheckType.Record
+                tagToCheck: DPAE_CHEM_Active
+                checkType: CheckType.Tag
                 objectToCheck: Instigator
       attackRecord: Attacks.BiotechHerculesPoison
       triggerHitReaction: true
@@ -208,8 +208,8 @@ Items.GradScavWeaponModAbility:
             - $base: Prereqs.BodyPartHitPrereqCondition
               bodyPart: Head
             - $base: Prereqs.StatusEffectPresentHitPrereqCondition
-              statusEffect: DPAE_StatusEffect.EMP_Shock
-              checkType: CheckType.Record
+              tagToCheck: DPAE_EMP_Active
+              checkType: CheckType.Tag
               objectToCheck: Instigator
         attackRecord: Attacks.ScavChainLightning
         playVFXOnHitTargets: electric_hit
@@ -234,8 +234,8 @@ Items.GradScavWeaponModAbility:
             - $base: Prereqs.BodyPartHitPrereqCondition
               bodyPart: Head
             - $base: Prereqs.StatusEffectPresentHitPrereqCondition
-              statusEffect: DPAE_StatusEffect.EMP_Shock
-              checkType: CheckType.Record
+              tagToCheck: DPAE_EMP_Active
+              checkType: CheckType.Tag
               objectToCheck: Instigator
         attackRecord: Attacks.ScavChainLightningTech55
         playVFXOnHitTargets: electric_hit
@@ -277,8 +277,8 @@ Items.BrickSataraWeaponModAbility:
                 attackType: Ranged
                 onlyOncePerShot: true
               - $base: Prereqs.StatusEffectPresentHitPrereqCondition
-                statusEffect: DPAE_StatusEffect.EMP_Shock
-                checkType: CheckType.Record
+                tagToCheck: DPAE_EMP_Active
+                checkType: CheckType.Tag
                 objectToCheck: Instigator
       attackRecord: Attacks.EMPBrick
       isRandom: true
@@ -309,8 +309,8 @@ Items.TesteraNicolasWeaponModAbility:
           - $base: Prereqs.WeaponTypeHitPrereqCondition
             weaponType: Ranged
           - $base: Prereqs.StatusEffectPresentHitPrereqCondition
-            statusEffect: DPAE_StatusEffect.HE_Active
-            checkType: CheckType.Record
+            tagToCheck: DPAE_HE_Active_Tag
+            checkType: CheckType.Tag
             objectToCheck: Instigator
       attackRecord: Attacks.TesteraExplosionAttack
       isRandom: true

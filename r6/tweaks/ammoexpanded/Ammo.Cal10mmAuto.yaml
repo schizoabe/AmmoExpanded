@@ -125,3 +125,11 @@ Ammo.Cal10mmAuto_NL:
   localizedDescription: LocKey#8100566
   tags:
     - !append-once DPAE_Cal10mmAuto_NL
+
+Ammo.Cal10mmAuto_HE:
+  $base: Ammo.Cal10mmAuto
+  friendlyName: '10mm_auto_high_explosive'
+  displayName: LocKey#8100628
+  localizedDescription: LocKey#8100566
+  tags:
+    - !append-once DPAE_Cal10mmAuto_HE

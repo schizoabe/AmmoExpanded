@@ -93,3 +93,19 @@ Ammo.Cal20x102Vulcan_INC:
   localizedDescription: LocKey#8100578
   tags:
     - !append-once DPAE_Cal20x102Vulcan_INC
+
+Ammo.Cal20x102Vulcan_CHEM:
+  $base: Ammo.Cal20x102Vulcan
+  friendlyName: '20x102mm_vulcan_chemical'
+  displayName: LocKey#8100622
+  localizedDescription: LocKey#8100578
+  tags:
+    - !append-once DPAE_Cal20x102Vulcan_CHEM
+
+Ammo.Cal20x102Vulcan_EMP:
+  $base: Ammo.Cal20x102Vulcan
+  friendlyName: '20x102mm_vulcan_emp'
+  displayName: LocKey#8100623
+  localizedDescription: LocKey#8100578
+  tags:
+    - !append-once DPAE_Cal20x102Vulcan_EMP

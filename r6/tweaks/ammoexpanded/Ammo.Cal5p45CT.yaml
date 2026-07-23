@@ -125,3 +125,11 @@ Ammo.Cal5p45CT_NL:
   localizedDescription: LocKey#8100592
   tags:
     - !append-once DPAE_Cal5p45CT_NL
+
+Ammo.Cal5p45CT_HE:
+  $base: Ammo.Cal5p45CT
+  friendlyName: '545mm_ct_high_explosive'
+  displayName: LocKey#8100635
+  localizedDescription: LocKey#8100592
+  tags:
+    - !append-once DPAE_Cal5p45CT_HE

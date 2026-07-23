@@ -93,3 +93,19 @@ Ammo.Cal22x126AC_INC:
   localizedDescription: LocKey#8100579
   tags:
     - !append-once DPAE_Cal22x126AC_INC
+
+Ammo.Cal22x126AC_CHEM:
+  $base: Ammo.Cal22x126AC
+  friendlyName: '22x126mm_ac_chemical'
+  displayName: LocKey#8100624
+  localizedDescription: LocKey#8100579
+  tags:
+    - !append-once DPAE_Cal22x126AC_CHEM
+
+Ammo.Cal22x126AC_EMP:
+  $base: Ammo.Cal22x126AC
+  friendlyName: '22x126mm_ac_emp'
+  displayName: LocKey#8100625
+  localizedDescription: LocKey#8100579
+  tags:
+    - !append-once DPAE_Cal22x126AC_EMP

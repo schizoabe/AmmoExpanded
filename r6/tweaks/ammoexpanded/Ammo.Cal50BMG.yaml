@@ -125,3 +125,11 @@ Ammo.Cal50BMG_NL:
   localizedDescription: LocKey#8100590
   tags:
     - !append-once DPAE_Cal50BMG_NL
+
+Ammo.Cal50BMG_HE:
+  $base: Ammo.Cal50BMG
+  friendlyName: '50_bmg_nusa_high_explosive'
+  displayName: LocKey#8100634
+  localizedDescription: LocKey#8100590
+  tags:
+    - !append-once DPAE_Cal50BMG_HE

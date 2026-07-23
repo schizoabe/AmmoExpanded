@@ -1,0 +1,5 @@
+Items.ChimeraPowerMod:
+  OnAttach:
+    - UIData:
+        localizedDescription: LocKey#89261
+    - Items.ChimeraModIconicPromo

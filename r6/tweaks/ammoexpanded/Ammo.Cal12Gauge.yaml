@@ -94,3 +94,11 @@ Ammo.Cal12Gauge_INC:
   tags:
     - !append-once DPAE_Cal12Gauge_INC
 
+Ammo.Cal12Gauge_HE:
+  $base: Ammo.Cal12Gauge
+  friendlyName: '12_gauge_buckshot_high_explosive'
+  displayName: LocKey#8100629
+  localizedDescription: LocKey#8100569
+  tags:
+    - !append-once DPAE_Cal12Gauge_HE
+

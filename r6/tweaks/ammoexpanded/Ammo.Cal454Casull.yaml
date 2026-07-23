@@ -133,3 +133,11 @@ Ammo.Cal454Casull_Snakeshot:
   localizedDescription: LocKey#8100583
   tags:
     - !append-once DPAE_Cal454Casull_Snakeshot
+
+Ammo.Cal454Casull_HE:
+  $base: Ammo.Cal454Casull
+  friendlyName: '454_casull_high_explosive'
+  displayName: LocKey#8100631
+  localizedDescription: LocKey#8100583
+  tags:
+    - !append-once DPAE_Cal454Casull_HE

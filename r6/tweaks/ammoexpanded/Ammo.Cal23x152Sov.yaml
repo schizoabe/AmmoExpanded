@@ -101,3 +101,11 @@ Ammo.Cal23x152Sov_EMP:
   localizedDescription: LocKey#8100580
   tags:
     - !append-once DPAE_Cal23x152Sov_EMP
+
+Ammo.Cal23x152Sov_CHEM:
+  $base: Ammo.Cal23x152Sov
+  friendlyName: '23x152mm_soviet_chemical'
+  displayName: LocKey#8100626
+  localizedDescription: LocKey#8100580
+  tags:
+    - !append-once DPAE_Cal23x152Sov_CHEM

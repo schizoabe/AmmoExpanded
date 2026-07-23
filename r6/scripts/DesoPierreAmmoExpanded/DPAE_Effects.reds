@@ -258,6 +258,17 @@ public func DPAE_GetExplosivePackageForRound(activeStr: String) -> TweakDBID {
   if StrEndsWith(activeStr, "Cal14x40TSlug_HE")   { return t"DPAE_HE.ExplodingBulletLightPackage"; }
   if StrEndsWith(activeStr, "Cal50AE_HE")         { return t"DPAE_HE.ExplodingBulletLightPackage"; }
   if StrEndsWith(activeStr, "Cal10GaugeBuck_HE")  { return t"DPAE_HE.PhysicalExplosiveBulletPackage"; }
+  if StrEndsWith(activeStr, "Cal9x19_HE")          { return t"DPAE_HE.PhysicalExplosiveBulletPackage"; }
+  if StrEndsWith(activeStr, "Cal10mmAuto_HE")      { return t"DPAE_HE.PhysicalExplosiveBulletPackage"; }
+  if StrEndsWith(activeStr, "Cal12Gauge_HE")       { return t"DPAE_HE.PhysicalExplosiveBulletPackage"; }
+  if StrEndsWith(activeStr, "Cal243Win_HE")        { return t"DPAE_HE.PhysicalExplosiveBulletPackage"; }
+  if StrEndsWith(activeStr, "Cal454Casull_HE")     { return t"DPAE_HE.PhysicalExplosiveBulletPackage"; }
+  if StrEndsWith(activeStr, "Cal45WinMag_HE")      { return t"DPAE_HE.PhysicalExplosiveBulletPackage"; }
+  if StrEndsWith(activeStr, "Cal50BeowulfOni_HE")  { return t"DPAE_HE.PhysicalExplosiveBulletPackage"; }
+  if StrEndsWith(activeStr, "Cal50BMG_HE")         { return t"DPAE_HE.PhysicalExplosiveBulletPackage"; }
+  if StrEndsWith(activeStr, "Cal5p45CT_HE")        { return t"DPAE_HE.PhysicalExplosiveBulletPackage"; }
+  if StrEndsWith(activeStr, "Cal5p56x45NUSA_HE")   { return t"DPAE_HE.PhysicalExplosiveBulletPackage"; }
+  if StrEndsWith(activeStr, "Cal6p5Arasaka_HE")    { return t"DPAE_HE.PhysicalExplosiveBulletPackage"; }
   return t"DPAE_HE.ExplodingBulletLightPackage";
 }
 

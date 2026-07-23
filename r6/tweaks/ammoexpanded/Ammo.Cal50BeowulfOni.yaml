@@ -125,3 +125,11 @@ Ammo.Cal50BeowulfOni_NL:
   localizedDescription: LocKey#8100591
   tags:
     - !append-once DPAE_Cal50BeowulfOni_NL
+
+Ammo.Cal50BeowulfOni_HE:
+  $base: Ammo.Cal50BeowulfOni
+  friendlyName: '50_beowulf_oni_high_explosive'
+  displayName: LocKey#8100633
+  localizedDescription: LocKey#8100591
+  tags:
+    - !append-once DPAE_Cal50BeowulfOni_HE

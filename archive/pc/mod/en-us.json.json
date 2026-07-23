@@ -3566,6 +3566,118 @@
               "maleVariant": "",
               "primaryKey": "8100621",
               "secondaryKey": "AmmoExpanded-Cal50APHETIL-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "20x102mm Vulcan Chemical",
+              "maleVariant": "",
+              "primaryKey": "8100622",
+              "secondaryKey": "AmmoExpanded-Cal20x102Vulcan-CHEM-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "20x102mm Vulcan EMP",
+              "maleVariant": "",
+              "primaryKey": "8100623",
+              "secondaryKey": "AmmoExpanded-Cal20x102Vulcan-EMP-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "22x126mm AC Chemical",
+              "maleVariant": "",
+              "primaryKey": "8100624",
+              "secondaryKey": "AmmoExpanded-Cal22x126AC-CHEM-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "22x126mm AC EMP",
+              "maleVariant": "",
+              "primaryKey": "8100625",
+              "secondaryKey": "AmmoExpanded-Cal22x126AC-EMP-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "23x152mm Soviet Chemical",
+              "maleVariant": "",
+              "primaryKey": "8100626",
+              "secondaryKey": "AmmoExpanded-Cal23x152Sov-CHEM-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "9x19mm Parabellum High Explosive",
+              "maleVariant": "",
+              "primaryKey": "8100627",
+              "secondaryKey": "AmmoExpanded-Cal9x19-HE-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "10mm Auto High Explosive",
+              "maleVariant": "",
+              "primaryKey": "8100628",
+              "secondaryKey": "AmmoExpanded-Cal10mmAuto-HE-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "12 Gauge Buckshot High Explosive",
+              "maleVariant": "",
+              "primaryKey": "8100629",
+              "secondaryKey": "AmmoExpanded-Cal12Gauge-HE-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": ".243 Winchester High Explosive",
+              "maleVariant": "",
+              "primaryKey": "8100630",
+              "secondaryKey": "AmmoExpanded-Cal243Win-HE-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": ".454 Casull High Explosive",
+              "maleVariant": "",
+              "primaryKey": "8100631",
+              "secondaryKey": "AmmoExpanded-Cal454Casull-HE-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": ".45 Winchester Magnum High Explosive",
+              "maleVariant": "",
+              "primaryKey": "8100632",
+              "secondaryKey": "AmmoExpanded-Cal45WinMag-HE-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": ".50 Beowulf Oni High Explosive",
+              "maleVariant": "",
+              "primaryKey": "8100633",
+              "secondaryKey": "AmmoExpanded-Cal50BeowulfOni-HE-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": ".50 BMG NUSA High Explosive",
+              "maleVariant": "",
+              "primaryKey": "8100634",
+              "secondaryKey": "AmmoExpanded-Cal50BMG-HE-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "5.45mm CT High Explosive",
+              "maleVariant": "",
+              "primaryKey": "8100635",
+              "secondaryKey": "AmmoExpanded-Cal5p45CT-HE-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "5.56x45mm NUSA High Explosive",
+              "maleVariant": "",
+              "primaryKey": "8100636",
+              "secondaryKey": "AmmoExpanded-Cal5p56x45NUSA-HE-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "6.5mm Arasaka High Explosive",
+              "maleVariant": "",
+              "primaryKey": "8100637",
+              "secondaryKey": "AmmoExpanded-Cal6p5Arasaka-HE-Name"
             }
           ]
         }

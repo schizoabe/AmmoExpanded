@@ -133,3 +133,11 @@ Ammo.Cal45WinMag_Snakeshot:
   localizedDescription: LocKey#8100585
   tags:
     - !append-once DPAE_Cal45WinMag_Snakeshot
+
+Ammo.Cal45WinMag_HE:
+  $base: Ammo.Cal45WinMag
+  friendlyName: '45_winchester_magnum_high_explosive'
+  displayName: LocKey#8100632
+  localizedDescription: LocKey#8100585
+  tags:
+    - !append-once DPAE_Cal45WinMag_HE

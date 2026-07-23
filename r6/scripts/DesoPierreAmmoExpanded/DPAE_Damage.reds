@@ -1,4 +1,6 @@
 
+func DPAE_FirecrackerHEDamageBonus() -> Float { return 0.5; }
+
 func DPAE_ComputeConversionPercent(instigator: wref<GameObject>, weapon: ref<WeaponObject>, elementalType: gamedataDamageType) -> Float {
   let pct = 0.3;
   let player = instigator as PlayerPuppet;
@@ -102,6 +104,20 @@ public final func ProcessArmor(hitEvent: ref<gameHitEvent>) -> Void {
             hitEvent.attackComputed.SetAttackValue(physVal * (1.0 + hpBonus), gamedataDamageType.Physical);
             StatusEffectHelper.ApplyStatusEffect(target, t"BaseStatusEffect.Bleeding", hpInstigator.GetEntityID());
           };
+        };
+      };
+    };
+  };
+
+  if IsDefined(hitEvent.attackData) && !AttackData.IsDoT(hitEvent.attackData) {
+    let fcInstigator = hitEvent.attackData.GetInstigator() as PlayerPuppet;
+    if IsDefined(fcInstigator) {
+      let fcAmmoStr = DPAE_GetInstigatorAmmoString(fcInstigator);
+      if StrEndsWith(fcAmmoStr, "_HE") {
+        let fcWeapon = hitEvent.attackData.GetWeapon();
+        if IsDefined(fcWeapon) && ArraySize(fcInstigator.DPAE_GetAttachedModQualities(fcWeapon, "Items.ChimeraPowerMod")) > 0 {
+          let fcPhysVal = hitEvent.attackComputed.GetAttackValue(gamedataDamageType.Physical);
+          hitEvent.attackComputed.SetAttackValue(fcPhysVal * (1.0 + DPAE_FirecrackerHEDamageBonus()), gamedataDamageType.Physical);
         };
       };
     };

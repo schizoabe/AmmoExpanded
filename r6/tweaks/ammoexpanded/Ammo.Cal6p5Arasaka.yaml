@@ -125,3 +125,11 @@ Ammo.Cal6p5Arasaka_NL:
   localizedDescription: LocKey#8100596
   tags:
     - !append-once DPAE_Cal6p5Arasaka_NL
+
+Ammo.Cal6p5Arasaka_HE:
+  $base: Ammo.Cal6p5Arasaka
+  friendlyName: '65mm_arasaka_high_explosive'
+  displayName: LocKey#8100637
+  localizedDescription: LocKey#8100596
+  tags:
+    - !append-once DPAE_Cal6p5Arasaka_HE

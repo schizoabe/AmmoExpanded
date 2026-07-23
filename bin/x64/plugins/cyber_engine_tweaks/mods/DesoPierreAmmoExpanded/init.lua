@@ -40,6 +40,7 @@ local CALIBER_VARIANTS = {
             { id = "Ammo.Cal243Win_INC", label = "Incendiary", short = "INC" },
             { id = "Ammo.Cal243Win_CHEM", label = "Chemical", short = "CHEM" },
             { id = "Ammo.Cal243Win_NL", label = "Non-Lethal", short = "NL" },
+            { id = "Ammo.Cal243Win_HE", label = "High Explosive", short = "HE" },
         },
     },
     Cal45Super = {
@@ -67,6 +68,7 @@ local CALIBER_VARIANTS = {
             { id = "Ammo.Cal45WinMag_INC", label = "Incendiary", short = "INC" },
             { id = "Ammo.Cal45WinMag_CHEM", label = "Chemical", short = "CHEM" },
             { id = "Ammo.Cal45WinMag_NL", label = "Non-Lethal", short = "NL" },
+            { id = "Ammo.Cal45WinMag_HE", label = "High Explosive", short = "HE" },
         },
     },
     Cal454Casull = {
@@ -80,6 +82,7 @@ local CALIBER_VARIANTS = {
             { id = "Ammo.Cal454Casull_INC", label = "Incendiary", short = "INC" },
             { id = "Ammo.Cal454Casull_CHEM", label = "Chemical", short = "CHEM" },
             { id = "Ammo.Cal454Casull_NL", label = "Non-Lethal", short = "NL" },
+            { id = "Ammo.Cal454Casull_HE", label = "High Explosive", short = "HE" },
         },
     },
     Cal50AE = {
@@ -105,6 +108,7 @@ local CALIBER_VARIANTS = {
             { id = "Ammo.Cal50BeowulfOni_INC", label = "Incendiary", short = "INC" },
             { id = "Ammo.Cal50BeowulfOni_CHEM", label = "Chemical", short = "CHEM" },
             { id = "Ammo.Cal50BeowulfOni_NL", label = "Non-Lethal", short = "NL" },
+            { id = "Ammo.Cal50BeowulfOni_HE", label = "High Explosive", short = "HE" },
         },
     },
     Cal50BMG = {
@@ -117,6 +121,7 @@ local CALIBER_VARIANTS = {
             { id = "Ammo.Cal50BMG_INC", label = "Incendiary", short = "INC" },
             { id = "Ammo.Cal50BMG_CHEM", label = "Chemical", short = "CHEM" },
             { id = "Ammo.Cal50BMG_NL", label = "Non-Lethal", short = "NL" },
+            { id = "Ammo.Cal50BMG_HE", label = "High Explosive", short = "HE" },
         },
     },
     Cal500Malour = {
@@ -153,6 +158,7 @@ local CALIBER_VARIANTS = {
             { id = "Ammo.Cal10x40Rocket_HE", label = "High Explosive", short = "HE" },
             { id = "Ammo.Cal10x40Rocket_INC", label = "Incendiary", short = "INC" },
             { id = "Ammo.Cal10x40Rocket_CHEM", label = "Chemical", short = "CHEM" },
+            { id = "Ammo.Cal10x40Rocket_EMP", label = "EMP", short = "EMP" },
         },
     },
     Cal10mmAuto = {
@@ -165,6 +171,7 @@ local CALIBER_VARIANTS = {
             { id = "Ammo.Cal10mmAuto_INC", label = "Incendiary", short = "INC" },
             { id = "Ammo.Cal10mmAuto_CHEM", label = "Chemical", short = "CHEM" },
             { id = "Ammo.Cal10mmAuto_NL", label = "Non-Lethal", short = "NL" },
+            { id = "Ammo.Cal10mmAuto_HE", label = "High Explosive", short = "HE" },
         },
     },
     Cal10x20TF = {
@@ -182,6 +189,7 @@ local CALIBER_VARIANTS = {
             { id = "Ammo.Cal12Gauge", label = "Buckshot", short = "BUCK" },
             { id = "Ammo.Cal12Gauge_Slug", label = "Slug", short = "SLUG" },
             { id = "Ammo.Cal12Gauge_INC", label = "Incendiary", short = "INC" },
+            { id = "Ammo.Cal12Gauge_HE", label = "High Explosive", short = "HE" },
         },
     },
     Cal12p3x41UdaR = {
@@ -202,6 +210,8 @@ local CALIBER_VARIANTS = {
             { id = "Ammo.Cal12p7x70Rocket", label = "Generic", short = "GEN" },
             { id = "Ammo.Cal12p7x70Rocket_HE", label = "High Explosive", short = "HE" },
             { id = "Ammo.Cal12p7x70Rocket_INC", label = "Incendiary", short = "INC" },
+            { id = "Ammo.Cal12p7x70Rocket_CHEM", label = "Chemical", short = "CHEM" },
+            { id = "Ammo.Cal12p7x70Rocket_EMP", label = "EMP", short = "EMP" },
         },
     },
     Cal12x45Rocket = {
@@ -210,6 +220,8 @@ local CALIBER_VARIANTS = {
             { id = "Ammo.Cal12x45Rocket", label = "Generic", short = "GEN" },
             { id = "Ammo.Cal12x45Rocket_HE", label = "High Explosive", short = "HE" },
             { id = "Ammo.Cal12x45Rocket_INC", label = "Incendiary", short = "INC" },
+            { id = "Ammo.Cal12x45Rocket_CHEM", label = "Chemical", short = "CHEM" },
+            { id = "Ammo.Cal12x45Rocket_EMP", label = "EMP", short = "EMP" },
         },
     },
     Cal14x40TSlug = {
@@ -234,6 +246,8 @@ local CALIBER_VARIANTS = {
             { id = "Ammo.Cal15x55Rocket", label = "Generic", short = "GEN" },
             { id = "Ammo.Cal15x55Rocket_HE", label = "High Explosive", short = "HE" },
             { id = "Ammo.Cal15x55Rocket_INC", label = "Incendiary", short = "INC" },
+            { id = "Ammo.Cal15x55Rocket_CHEM", label = "Chemical", short = "CHEM" },
+            { id = "Ammo.Cal15x55Rocket_EMP", label = "EMP", short = "EMP" },
         },
     },
     Cal15x80TSpike = {
@@ -251,6 +265,8 @@ local CALIBER_VARIANTS = {
             { id = "Ammo.Cal18x70Rocket", label = "Generic", short = "GEN" },
             { id = "Ammo.Cal18x70Rocket_HE", label = "High Explosive", short = "HE" },
             { id = "Ammo.Cal18x70Rocket_INC", label = "Incendiary", short = "INC" },
+            { id = "Ammo.Cal18x70Rocket_CHEM", label = "Chemical", short = "CHEM" },
+            { id = "Ammo.Cal18x70Rocket_EMP", label = "EMP", short = "EMP" },
         },
     },
     Cal20x102Vulcan = {
@@ -259,6 +275,8 @@ local CALIBER_VARIANTS = {
             { id = "Ammo.Cal20x102Vulcan", label = "Standard (Armor-Piercing)", short = "AP" },
             { id = "Ammo.Cal20x102Vulcan_HE", label = "High Explosive", short = "HE" },
             { id = "Ammo.Cal20x102Vulcan_INC", label = "Incendiary", short = "INC" },
+            { id = "Ammo.Cal20x102Vulcan_CHEM", label = "Chemical", short = "CHEM" },
+            { id = "Ammo.Cal20x102Vulcan_EMP", label = "EMP", short = "EMP" },
         },
     },
     Cal22x126AC = {
@@ -267,6 +285,8 @@ local CALIBER_VARIANTS = {
             { id = "Ammo.Cal22x126AC", label = "Standard (Armor-Piercing)", short = "AP" },
             { id = "Ammo.Cal22x126AC_HE", label = "High Explosive", short = "HE" },
             { id = "Ammo.Cal22x126AC_INC", label = "Incendiary", short = "INC" },
+            { id = "Ammo.Cal22x126AC_CHEM", label = "Chemical", short = "CHEM" },
+            { id = "Ammo.Cal22x126AC_EMP", label = "EMP", short = "EMP" },
         },
     },
     Cal23x152Sov = {
@@ -276,6 +296,7 @@ local CALIBER_VARIANTS = {
             { id = "Ammo.Cal23x152Sov_HE", label = "High Explosive", short = "HE" },
             { id = "Ammo.Cal23x152Sov_INC", label = "Incendiary", short = "INC" },
             { id = "Ammo.Cal23x152Sov_EMP", label = "EMP", short = "EMP" },
+            { id = "Ammo.Cal23x152Sov_CHEM", label = "Chemical", short = "CHEM" },
         },
     },
     Cal3x10FlechCluster = {
@@ -313,6 +334,7 @@ local CALIBER_VARIANTS = {
             { id = "Ammo.Cal5p45CT_INC", label = "Incendiary", short = "INC" },
             { id = "Ammo.Cal5p45CT_CHEM", label = "Chemical", short = "CHEM" },
             { id = "Ammo.Cal5p45CT_NL", label = "Non-Lethal", short = "NL" },
+            { id = "Ammo.Cal5p45CT_HE", label = "High Explosive", short = "HE" },
         },
     },
     Cal5p56x45NUSA = {
@@ -325,6 +347,7 @@ local CALIBER_VARIANTS = {
             { id = "Ammo.Cal5p56x45NUSA_INC", label = "Incendiary", short = "INC" },
             { id = "Ammo.Cal5p56x45NUSA_CHEM", label = "Chemical", short = "CHEM" },
             { id = "Ammo.Cal5p56x45NUSA_NL", label = "Non-Lethal", short = "NL" },
+            { id = "Ammo.Cal5p56x45NUSA_HE", label = "High Explosive", short = "HE" },
         },
     },
     Cal5p56CT = {
@@ -369,6 +392,7 @@ local CALIBER_VARIANTS = {
             { id = "Ammo.Cal6p5Arasaka_INC", label = "Incendiary", short = "INC" },
             { id = "Ammo.Cal6p5Arasaka_CHEM", label = "Chemical", short = "CHEM" },
             { id = "Ammo.Cal6p5Arasaka_NL", label = "Non-Lethal", short = "NL" },
+            { id = "Ammo.Cal6p5Arasaka_HE", label = "High Explosive", short = "HE" },
         },
     },
     Cal7p62x39Sov = {
@@ -377,6 +401,7 @@ local CALIBER_VARIANTS = {
             { id = "Ammo.Cal7p62x39Sov", label = "FMJ", short = "FMJ" },
             { id = "Ammo.Cal7p62x39Sov_AP", label = "Armor Pierce", short = "AP" },
             { id = "Ammo.Cal7p62x39Sov_HP", label = "Hollow Point", short = "HP" },
+            { id = "Ammo.Cal7p62x39Sov_HE", label = "High Explosive", short = "HE" },
             { id = "Ammo.Cal7p62x39Sov_EMP", label = "EMP", short = "EMP" },
             { id = "Ammo.Cal7p62x39Sov_INC", label = "Incendiary", short = "INC" },
             { id = "Ammo.Cal7p62x39Sov_CHEM", label = "Chemical", short = "CHEM" },
@@ -421,6 +446,7 @@ local CALIBER_VARIANTS = {
             { id = "Ammo.Cal9x19_INC", label = "Incendiary", short = "INC" },
             { id = "Ammo.Cal9x19_CHEM", label = "Chemical", short = "CHEM" },
             { id = "Ammo.Cal9x19_NL", label = "Non-Lethal", short = "NL" },
+            { id = "Ammo.Cal9x19_HE", label = "High Explosive", short = "HE" },
         },
     },
     Cal9x30TF = {

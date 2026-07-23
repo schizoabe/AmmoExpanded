@@ -140,6 +140,8 @@ DPAE_StatusEffect.HP_Bleed:
   $base: BaseStatusEffect.Stat_Buff
   statusEffectType: BaseStatusEffectTypes.PassiveBuff
   VFX: []
+  gameplayTags:
+    - DPAE_HP_Active
   duration:
     $type: gamedataStatModifierGroup_Record
     statModifiers:
@@ -202,6 +204,8 @@ DPAE_StatusEffect.EMP_Shock:
   $base: BaseStatusEffect.Stat_Buff
   statusEffectType: BaseStatusEffectTypes.PassiveBuff
   VFX: []
+  gameplayTags:
+    - DPAE_EMP_Active
   duration:
     $type: gamedataStatModifierGroup_Record
     statModifiers:
@@ -237,6 +241,8 @@ DPAE_StatusEffect.CHEM_Poison:
   $base: BaseStatusEffect.Stat_Buff
   statusEffectType: BaseStatusEffectTypes.PassiveBuff
   VFX: []
+  gameplayTags:
+    - DPAE_CHEM_Active
   duration:
     $type: gamedataStatModifierGroup_Record
     statModifiers:
@@ -555,6 +561,8 @@ DPAE_StatusEffect.HE_Active:
         modifierType: Additive
         value: 9999
   packages: []
+  gameplayTags:
+    - DPAE_HE_Active_Tag
 
 
 

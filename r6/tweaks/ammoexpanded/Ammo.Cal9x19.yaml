@@ -125,3 +125,11 @@ Ammo.Cal9x19_NL:
   localizedDescription: LocKey#8100602
   tags:
     - !append-once DPAE_Cal9x19_NL
+
+Ammo.Cal9x19_HE:
+  $base: Ammo.Cal9x19
+  friendlyName: '9x19mm_parabellum_high_explosive'
+  displayName: LocKey#8100627
+  localizedDescription: LocKey#8100602
+  tags:
+    - !append-once DPAE_Cal9x19_HE

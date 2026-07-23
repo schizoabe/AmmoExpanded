@@ -125,3 +125,11 @@ Ammo.Cal5p56x45NUSA_NL:
   localizedDescription: LocKey#8100594
   tags:
     - !append-once DPAE_Cal5p56x45NUSA_NL
+
+Ammo.Cal5p56x45NUSA_HE:
+  $base: Ammo.Cal5p56x45NUSA
+  friendlyName: '556x45mm_nusa_high_explosive'
+  displayName: LocKey#8100636
+  localizedDescription: LocKey#8100594
+  tags:
+    - !append-once DPAE_Cal5p56x45NUSA_HE
