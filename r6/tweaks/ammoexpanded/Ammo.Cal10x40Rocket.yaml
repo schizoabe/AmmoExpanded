@@ -109,3 +109,11 @@ Ammo.Cal10x40Rocket_CHEM:
   localizedDescription: LocKey#8100568
   tags:
     - !append-once DPAE_Cal10x40Rocket_CHEM
+
+Ammo.Cal10x40Rocket_Divided_CHEM:
+  $base: Ammo.Cal10x40Rocket_CHEM
+  friendlyName: '10x40mm_guided_rocket_divided_signature'
+  displayName: LocKey#8100638
+  localizedDescription: LocKey#8100639
+  tags:
+    - !append-once DPAE_Cal10x40Rocket_Divided_CHEM

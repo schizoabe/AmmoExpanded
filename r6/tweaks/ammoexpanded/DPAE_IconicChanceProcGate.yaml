@@ -60,7 +60,7 @@ Items.SidewinderDividedWeaponModAbility:
           - $base: Prereqs.AttackTypeHitPrereqCondition
             attackType: Ranged
           - $base: Prereqs.StatusEffectPresentHitPrereqCondition
-            tagToCheck: DPAE_CHEM_Active
+            tagToCheck: DPAE_Divided_Signature_Active
             checkType: CheckType.Tag
             objectToCheck: Instigator
       attackRecord: Attacks.BiotechGrenadeV2
@@ -76,7 +76,7 @@ Items.DianYinglongWeaponModAbility:
           - $base: Prereqs.AttackTypeHitPrereqCondition
             attackType: Ranged
           - $base: Prereqs.StatusEffectPresentHitPrereqCondition
-            tagToCheck: DPAE_EMP_Active
+            tagToCheck: DPAE_Yinglong_Signature_Active
             checkType: CheckType.Tag
             objectToCheck: Instigator
       attackRecord: Attacks.YinglongEMP
@@ -102,7 +102,7 @@ Items.PrototypeHerculesWeaponModAbility:
               - $base: Prereqs.TargetNPCTypeHitPrereqCondition
                 npcType: Human
               - $base: Prereqs.StatusEffectPresentHitPrereqCondition
-                tagToCheck: DPAE_CHEM_Active
+                tagToCheck: DPAE_Hercules_Signature_Active
                 checkType: CheckType.Tag
                 objectToCheck: Instigator
           - $base: Prereqs.PostProcessHitTriggered
@@ -115,7 +115,7 @@ Items.PrototypeHerculesWeaponModAbility:
               - $base: Prereqs.TargetNPCTypeHitPrereqCondition
                 npcType: Human
               - $base: Prereqs.StatusEffectPresentHitPrereqCondition
-                tagToCheck: DPAE_CHEM_Active
+                tagToCheck: DPAE_Hercules_Signature_Active
                 checkType: CheckType.Tag
                 objectToCheck: Instigator
       attackRecord: Attacks.BiotechHerculesPoison
@@ -158,7 +158,7 @@ Items.GradScavWeaponModAbility:
             - $base: Prereqs.BodyPartHitPrereqCondition
               bodyPart: Head
             - $base: Prereqs.StatusEffectPresentHitPrereqCondition
-              tagToCheck: DPAE_EMP_Active
+              tagToCheck: DPAE_Sparky_Signature_Active
               checkType: CheckType.Tag
               objectToCheck: Instigator
         attackRecord: Attacks.ScavChainLightning
@@ -184,7 +184,7 @@ Items.GradScavWeaponModAbility:
             - $base: Prereqs.BodyPartHitPrereqCondition
               bodyPart: Head
             - $base: Prereqs.StatusEffectPresentHitPrereqCondition
-              tagToCheck: DPAE_EMP_Active
+              tagToCheck: DPAE_Sparky_Signature_Active
               checkType: CheckType.Tag
               objectToCheck: Instigator
         attackRecord: Attacks.ScavChainLightningTech55
@@ -219,7 +219,7 @@ Items.TesteraNicolasWeaponModAbility:
           - $base: Prereqs.WeaponTypeHitPrereqCondition
             weaponType: Ranged
           - $base: Prereqs.StatusEffectPresentHitPrereqCondition
-            tagToCheck: DPAE_HE_Active_Tag
+            tagToCheck: DPAE_Dezerter_Signature_Active
             checkType: CheckType.Tag
             objectToCheck: Instigator
       attackRecord: Attacks.TesteraExplosionAttack

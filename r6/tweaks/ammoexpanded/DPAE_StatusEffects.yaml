@@ -568,6 +568,71 @@ DPAE_StatusEffect.HE_Active:
   gameplayTags:
     - DPAE_HE_Active_Tag
 
+DPAE_StatusEffect.DividedSignature_Active:
+  $base: BaseStatusEffect.Stat_Buff
+  duration:
+    $type: gamedataStatModifierGroup_Record
+    statModifiers:
+      - $type: gamedataConstantStatModifier_Record
+        statType: BaseStats.MaxDuration
+        modifierType: Additive
+        value: 9999
+  packages: []
+  gameplayTags:
+    - DPAE_Divided_Signature_Active
+
+DPAE_StatusEffect.YinglongSignature_Active:
+  $base: BaseStatusEffect.Stat_Buff
+  duration:
+    $type: gamedataStatModifierGroup_Record
+    statModifiers:
+      - $type: gamedataConstantStatModifier_Record
+        statType: BaseStats.MaxDuration
+        modifierType: Additive
+        value: 9999
+  packages: []
+  gameplayTags:
+    - DPAE_Yinglong_Signature_Active
+
+DPAE_StatusEffect.HerculesSignature_Active:
+  $base: BaseStatusEffect.Stat_Buff
+  duration:
+    $type: gamedataStatModifierGroup_Record
+    statModifiers:
+      - $type: gamedataConstantStatModifier_Record
+        statType: BaseStats.MaxDuration
+        modifierType: Additive
+        value: 9999
+  packages: []
+  gameplayTags:
+    - DPAE_Hercules_Signature_Active
+
+DPAE_StatusEffect.SparkySignature_Active:
+  $base: BaseStatusEffect.Stat_Buff
+  duration:
+    $type: gamedataStatModifierGroup_Record
+    statModifiers:
+      - $type: gamedataConstantStatModifier_Record
+        statType: BaseStats.MaxDuration
+        modifierType: Additive
+        value: 9999
+  packages: []
+  gameplayTags:
+    - DPAE_Sparky_Signature_Active
+
+DPAE_StatusEffect.DezerterSignature_Active:
+  $base: BaseStatusEffect.Stat_Buff
+  duration:
+    $type: gamedataStatModifierGroup_Record
+    statModifiers:
+      - $type: gamedataConstantStatModifier_Record
+        statType: BaseStats.MaxDuration
+        modifierType: Additive
+        value: 9999
+  packages: []
+  gameplayTags:
+    - DPAE_Dezerter_Signature_Active
+
 
 
 DPAE_StatusEffect.INC_Burn_PyroBonus_T0_DamageGain:

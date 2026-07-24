@@ -101,3 +101,11 @@ Ammo.Cal10GaugeBuck_HE:
   localizedDescription: LocKey#8100564
   tags:
     - !append-once DPAE_Cal10GaugeBuck_HE
+
+Ammo.Cal10GaugeBuck_Dezerter_HE:
+  $base: Ammo.Cal10GaugeBuck_HE
+  friendlyName: '10_gauge_buckshot_dezerter_signature'
+  displayName: LocKey#8100646
+  localizedDescription: LocKey#8100647
+  tags:
+    - !append-once DPAE_Cal10GaugeBuck_Dezerter_HE

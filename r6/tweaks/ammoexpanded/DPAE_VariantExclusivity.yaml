@@ -22,3 +22,23 @@ Items.Preset_Copperhead_Genesis:  # Psalm 11:6 — Cal5p56CT (D5 Copperhead lose
 Items.Preset_Carnage_Mox:
   tags:
     - !append-once DPAE_VariantExclusive_EMP
+
+Items.Preset_Sidewinder_Divided:  # Divided We Stand — Cal10x40Rocket. Exclusive to its own NEW
+  tags:
+    - !append-once DPAE_VariantExclusive_Divided
+
+Items.Preset_Dian_Yinglong:  # Yinglong — Cal9p5x35Minirocket. Exclusive to its own NEW
+  tags:
+    - !append-once DPAE_VariantExclusive_Yinglong
+
+Items.Preset_Hercules_Prototype:  # Hercules — Cal12x45Rocket. Exclusive to its own NEW
+  tags:
+    - !append-once DPAE_VariantExclusive_Hercules
+
+Items.Preset_Grad_Scav:  # Sparky — Cal23x152Sov. Exclusive to its own NEW
+  tags:
+    - !append-once DPAE_VariantExclusive_Sparky
+
+Items.Preset_Testera_Nicolas:  # Dezerter — Cal10GaugeBuck. Exclusive to its own NEW
+  tags:
+    - !append-once DPAE_VariantExclusive_Dezerter

@@ -16,6 +16,8 @@
 @addField(PlayerPuppet) public let dpae_known_weapons: array<ItemID>;
 @addField(PlayerPuppet) public let dpae_known_weapon_ammo: array<TweakDBID>;
 @addField(PlayerPuppet) public let dpae_known_weapon_chamber: array<Uint32>;
+@addField(PlayerPuppet) public let dpae_current_weapon_right: ItemID;
+@addField(PlayerPuppet) public let dpae_current_weapon_left: ItemID;
 @addField(PlayerPuppet) public let dpae_pyro_qualities: array<Int32>;
 @addField(PlayerPuppet) public let dpae_caustic_qualities: array<Int32>;
 @addField(PlayerPuppet) public let dpae_arc_qualities: array<Int32>;

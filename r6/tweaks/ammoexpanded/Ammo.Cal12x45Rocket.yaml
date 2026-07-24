@@ -102,6 +102,14 @@ Ammo.Cal12x45Rocket_CHEM:
   tags:
     - !append-once DPAE_Cal12x45Rocket_CHEM
 
+Ammo.Cal12x45Rocket_Hercules_CHEM:
+  $base: Ammo.Cal12x45Rocket_CHEM
+  friendlyName: '12x45mm_guided_rocket_hercules_signature'
+  displayName: LocKey#8100642
+  localizedDescription: LocKey#8100643
+  tags:
+    - !append-once DPAE_Cal12x45Rocket_Hercules_CHEM
+
 Ammo.Cal12x45Rocket_EMP:
   $base: Ammo.Cal12x45Rocket
   friendlyName: '12x45mm_guided_rocket_emp'

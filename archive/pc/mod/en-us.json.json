@@ -3678,6 +3678,76 @@
               "maleVariant": "",
               "primaryKey": "8100637",
               "secondaryKey": "AmmoExpanded-Cal6p5Arasaka-HE-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "PLACEHOLDER — Toxin Rounds",
+              "maleVariant": "",
+              "primaryKey": "8100638",
+              "secondaryKey": "AmmoExpanded-Cal10x40Rocket-CHEM-SignatureName"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "PLACEHOLDER — flavor text for Divided We Stand's signature 10x40mm rocket chemical round.",
+              "maleVariant": "",
+              "primaryKey": "8100639",
+              "secondaryKey": "AmmoExpanded-Cal10x40Rocket-CHEM-SignatureDesc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "PLACEHOLDER — Yinglong Signature Round",
+              "maleVariant": "",
+              "primaryKey": "8100640",
+              "secondaryKey": "AmmoExpanded-Cal9p5x35Minirocket-EMP-SignatureName"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "PLACEHOLDER — flavor text for Yinglong's signature 9.5x35mm minirocket EMP round.",
+              "maleVariant": "",
+              "primaryKey": "8100641",
+              "secondaryKey": "AmmoExpanded-Cal9p5x35Minirocket-EMP-SignatureDesc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "PLACEHOLDER — Hercules Signature Round",
+              "maleVariant": "",
+              "primaryKey": "8100642",
+              "secondaryKey": "AmmoExpanded-Cal12x45Rocket-CHEM-SignatureName"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "PLACEHOLDER — flavor text for Hercules's signature 12x45mm rocket chemical round.",
+              "maleVariant": "",
+              "primaryKey": "8100643",
+              "secondaryKey": "AmmoExpanded-Cal12x45Rocket-CHEM-SignatureDesc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "PLACEHOLDER — Sparky Signature Round",
+              "maleVariant": "",
+              "primaryKey": "8100644",
+              "secondaryKey": "AmmoExpanded-Cal23x152Sov-EMP-SignatureName"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "PLACEHOLDER — flavor text for Sparky's signature 23x152mm Soviet EMP round.",
+              "maleVariant": "",
+              "primaryKey": "8100645",
+              "secondaryKey": "AmmoExpanded-Cal23x152Sov-EMP-SignatureDesc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "PLACEHOLDER — Dezerter Signature Round",
+              "maleVariant": "",
+              "primaryKey": "8100646",
+              "secondaryKey": "AmmoExpanded-Cal10GaugeBuck-HE-SignatureName"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "PLACEHOLDER — flavor text for Dezerter's signature 10 Gauge buckshot HE round.",
+              "maleVariant": "",
+              "primaryKey": "8100647",
+              "secondaryKey": "AmmoExpanded-Cal10GaugeBuck-HE-SignatureDesc"
             }
           ]
         }

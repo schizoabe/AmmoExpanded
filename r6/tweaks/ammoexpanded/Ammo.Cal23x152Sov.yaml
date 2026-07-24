@@ -102,6 +102,14 @@ Ammo.Cal23x152Sov_EMP:
   tags:
     - !append-once DPAE_Cal23x152Sov_EMP
 
+Ammo.Cal23x152Sov_Sparky_EMP:
+  $base: Ammo.Cal23x152Sov_EMP
+  friendlyName: '23x152mm_soviet_sparky_signature'
+  displayName: LocKey#8100644
+  localizedDescription: LocKey#8100645
+  tags:
+    - !append-once DPAE_Cal23x152Sov_Sparky_EMP
+
 Ammo.Cal23x152Sov_CHEM:
   $base: Ammo.Cal23x152Sov
   friendlyName: '23x152mm_soviet_chemical'

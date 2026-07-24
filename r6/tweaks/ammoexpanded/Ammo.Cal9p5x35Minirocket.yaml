@@ -87,6 +87,14 @@ Ammo.Cal9p5x35Minirocket_EMP:
   tags:
     - !append-once DPAE_Cal9p5x35Minirocket_EMP
 
+Ammo.Cal9p5x35Minirocket_Yinglong_EMP:
+  $base: Ammo.Cal9p5x35Minirocket_EMP
+  friendlyName: '95x35mm_guided_minirocket_yinglong_signature'
+  displayName: LocKey#8100640
+  localizedDescription: LocKey#8100641
+  tags:
+    - !append-once DPAE_Cal9p5x35Minirocket_Yinglong_EMP
+
 Ammo.Cal9p5x35Minirocket_INC:
   $base: Ammo.Cal9p5x35Minirocket
   friendlyName: '95x35mm_guided_minirocket_incendiary'

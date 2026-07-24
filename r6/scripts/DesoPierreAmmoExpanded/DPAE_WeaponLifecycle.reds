@@ -31,6 +31,11 @@ public func DPAE_ResolveAmmoSelection(caliberTDBID: TweakDBID) -> Void {
       StatusEffectHelper.RemoveStatusEffect(this, t"DPAE_StatusEffect.Sparky_RateBonus");
       StatusEffectHelper.RemoveStatusEffect(this, t"DPAE_StatusEffect.Borzaya_RateBonus");
       StatusEffectHelper.RemoveStatusEffect(this, t"DPAE_StatusEffect.BloodyMaria_RateBonus");
+      StatusEffectHelper.RemoveStatusEffect(this, t"DPAE_StatusEffect.DividedSignature_Active");
+      StatusEffectHelper.RemoveStatusEffect(this, t"DPAE_StatusEffect.YinglongSignature_Active");
+      StatusEffectHelper.RemoveStatusEffect(this, t"DPAE_StatusEffect.HerculesSignature_Active");
+      StatusEffectHelper.RemoveStatusEffect(this, t"DPAE_StatusEffect.SparkySignature_Active");
+      StatusEffectHelper.RemoveStatusEffect(this, t"DPAE_StatusEffect.DezerterSignature_Active");
       this.DPAE_ClearAllPyroBonuses();
       let weaponObj = ts.GetItemInSlot(this, t"AttachmentSlots.WeaponRight") as WeaponObject;
       if !IsDefined(weaponObj) {
@@ -61,6 +66,22 @@ protected cb func DPAE_OnResumeSelect(evt: ref<DPAE_ResumeSelectEvent>) -> Bool 
 @addMethod(PlayerPuppet)
 private func DPAE_HandleWeaponSlotEvent(slotID: TweakDBID) -> Void {
   let ts      = GameInstance.GetTransactionSystem(this.GetGame());
+
+  let isRightSlot = Equals(slotID, t"AttachmentSlots.WeaponRight");
+  let weaponObjPeek = ts.GetItemInSlot(this, slotID) as WeaponObject;
+  let peekItemID: ItemID;
+  if IsDefined(weaponObjPeek) { peekItemID = weaponObjPeek.GetItemID(); }
+
+  let previousItemID = isRightSlot ? this.dpae_current_weapon_right : this.dpae_current_weapon_left;
+  if ItemID.IsValid(peekItemID) && peekItemID == previousItemID {
+    return;
+  }
+  if isRightSlot {
+    this.dpae_current_weapon_right = peekItemID;
+  } else {
+    this.dpae_current_weapon_left = peekItemID;
+  }
+
   let dummyID = this.DPAE_GetDummyItemID();
 
   let leftover = ts.GetItemQuantity(this, dummyID);
@@ -73,10 +94,10 @@ private func DPAE_HandleWeaponSlotEvent(slotID: TweakDBID) -> Void {
   this.DPAE_RemoveArmorPenModifier();
   this.DPAE_RemoveSnakeshotModifiers();
 
-  let weaponObj = ts.GetItemInSlot(this, slotID) as WeaponObject;
+  let weaponObj = weaponObjPeek;
   if !IsDefined(weaponObj) { return; }
 
-  let weaponItemID = weaponObj.GetItemID();
+  let weaponItemID = peekItemID;
   if !ItemID.IsValid(weaponItemID) { return; }
 
   let caliberTDBID = DPAE_GetCaliberFromEntity(this, weaponItemID);
@@ -99,6 +120,11 @@ private func DPAE_HandleWeaponSlotEvent(slotID: TweakDBID) -> Void {
     StatusEffectHelper.RemoveStatusEffect(this, t"DPAE_StatusEffect.Sparky_RateBonus");
     StatusEffectHelper.RemoveStatusEffect(this, t"DPAE_StatusEffect.Borzaya_RateBonus");
     StatusEffectHelper.RemoveStatusEffect(this, t"DPAE_StatusEffect.BloodyMaria_RateBonus");
+    StatusEffectHelper.RemoveStatusEffect(this, t"DPAE_StatusEffect.DividedSignature_Active");
+    StatusEffectHelper.RemoveStatusEffect(this, t"DPAE_StatusEffect.YinglongSignature_Active");
+    StatusEffectHelper.RemoveStatusEffect(this, t"DPAE_StatusEffect.HerculesSignature_Active");
+    StatusEffectHelper.RemoveStatusEffect(this, t"DPAE_StatusEffect.SparkySignature_Active");
+    StatusEffectHelper.RemoveStatusEffect(this, t"DPAE_StatusEffect.DezerterSignature_Active");
     this.DPAE_ClearAllPyroBonuses();
     weaponObj.DefaultRangedAttackPackage();
     return;
@@ -174,6 +200,13 @@ protected cb func OnItemRemovedFromSlot(evt: ref<ItemRemovedFromSlot>) -> Bool {
   let slotID = evt.GetSlotID();
   if !Equals(slotID, t"AttachmentSlots.WeaponRight") && !Equals(slotID, t"AttachmentSlots.WeaponLeft") {
     return result;
+  }
+
+  let clearedID: ItemID;
+  if Equals(slotID, t"AttachmentSlots.WeaponRight") {
+    this.dpae_current_weapon_right = clearedID;
+  } else {
+    this.dpae_current_weapon_left = clearedID;
   }
 
   let itemID = evt.GetItemID();

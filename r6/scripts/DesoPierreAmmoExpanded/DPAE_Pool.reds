@@ -111,19 +111,25 @@ public func DPAE_SelectAmmo(activeTDBID: TweakDBID) -> Void {
   }
 
   let caliberStr = TDBID.ToStringDEBUG(this.dpae_caliber);
-  let exclusiveSuffix = DPAE_GetExclusiveVariantSuffix(caliberStr);
-  if !Equals(exclusiveSuffix, "") && StrEndsWith(TDBID.ToStringDEBUG(requestedTDBID), exclusiveSuffix) {
-    let exclusiveTag = Equals(exclusiveSuffix, "_EMP") ? n"DPAE_VariantExclusive_EMP" : n"DPAE_VariantExclusive_HE";
-    let hasPermission = false;
-    if IsDefined(weaponObj) {
-      let weaponItemIDCheck = weaponObj.GetItemID();
-      if ItemID.IsValid(weaponItemIDCheck) {
-        hasPermission = ts.HasTag(this, exclusiveTag, weaponItemIDCheck);
+  let exclusiveSuffixes = DPAE_GetExclusiveVariantSuffixes(caliberStr);
+  let requestedStr = TDBID.ToStringDEBUG(requestedTDBID);
+  let exclusiveIdx = 0;
+  while exclusiveIdx < ArraySize(exclusiveSuffixes) {
+    let suffix = exclusiveSuffixes[exclusiveIdx];
+    if StrEndsWith(requestedStr, suffix) {
+      let hasPermission = false;
+      if IsDefined(weaponObj) {
+        let weaponItemIDCheck = weaponObj.GetItemID();
+        if ItemID.IsValid(weaponItemIDCheck) {
+          hasPermission = ts.HasTag(this, DPAE_SuffixToExclusiveTag(suffix), weaponItemIDCheck);
+        }
       }
+      if !hasPermission {
+        requestedTDBID = this.dpae_caliber;
+      }
+      break;
     }
-    if !hasPermission {
-      requestedTDBID = this.dpae_caliber;
-    }
+    exclusiveIdx += 1;
   }
 
   let activeItemID = ItemID.FromTDBID(requestedTDBID);
@@ -204,6 +210,7 @@ public func DPAE_SelectAmmo(activeTDBID: TweakDBID) -> Void {
   this.DPAE_UpdateIconicElementalBonus(activeStr, weaponObj);
   this.DPAE_UpdateIconicRateBonus(activeStr, weaponObj);
   this.DPAE_UpdateExplosiveOverride(activeStr, weaponObj);
+  this.DPAE_UpdateIconicSignatureAmmo(activeStr);
   this.dpae_test_active = true;
   this.DPAE_RememberAmmo(this.dpae_caliber, requestedTDBID);
 
@@ -243,6 +250,11 @@ public func DPAE_ClearAmmo() -> Void {
   StatusEffectHelper.RemoveStatusEffect(this, t"DPAE_StatusEffect.Sparky_RateBonus");
   StatusEffectHelper.RemoveStatusEffect(this, t"DPAE_StatusEffect.Borzaya_RateBonus");
   StatusEffectHelper.RemoveStatusEffect(this, t"DPAE_StatusEffect.BloodyMaria_RateBonus");
+  StatusEffectHelper.RemoveStatusEffect(this, t"DPAE_StatusEffect.DividedSignature_Active");
+  StatusEffectHelper.RemoveStatusEffect(this, t"DPAE_StatusEffect.YinglongSignature_Active");
+  StatusEffectHelper.RemoveStatusEffect(this, t"DPAE_StatusEffect.HerculesSignature_Active");
+  StatusEffectHelper.RemoveStatusEffect(this, t"DPAE_StatusEffect.SparkySignature_Active");
+  StatusEffectHelper.RemoveStatusEffect(this, t"DPAE_StatusEffect.DezerterSignature_Active");
   this.DPAE_ClearAllPyroBonuses();
   if IsDefined(weaponObj) { weaponObj.DefaultRangedAttackPackage(); }
   this.dpae_test_active = false;
@@ -268,38 +280,108 @@ public func DPAE_GetLockedVariantID() -> String {
   return TDBID.ToStringDEBUG(this.dpae_locked_variant);
 }
 
+@addMethod(PlayerPuppet)
+public func DPAE_UpdateIconicSignatureAmmo(activeStr: String) -> Void {
+  StatusEffectHelper.RemoveStatusEffect(this, t"DPAE_StatusEffect.DividedSignature_Active");
+  StatusEffectHelper.RemoveStatusEffect(this, t"DPAE_StatusEffect.YinglongSignature_Active");
+  StatusEffectHelper.RemoveStatusEffect(this, t"DPAE_StatusEffect.HerculesSignature_Active");
+  StatusEffectHelper.RemoveStatusEffect(this, t"DPAE_StatusEffect.SparkySignature_Active");
+  StatusEffectHelper.RemoveStatusEffect(this, t"DPAE_StatusEffect.DezerterSignature_Active");
+  if StrEndsWith(activeStr, "_Divided_CHEM") {
+    StatusEffectHelper.ApplyStatusEffect(this, t"DPAE_StatusEffect.DividedSignature_Active", this.GetEntityID());
+  } else if StrEndsWith(activeStr, "_Yinglong_EMP") {
+    StatusEffectHelper.ApplyStatusEffect(this, t"DPAE_StatusEffect.YinglongSignature_Active", this.GetEntityID());
+  } else if StrEndsWith(activeStr, "_Hercules_CHEM") {
+    StatusEffectHelper.ApplyStatusEffect(this, t"DPAE_StatusEffect.HerculesSignature_Active", this.GetEntityID());
+  } else if StrEndsWith(activeStr, "_Sparky_EMP") {
+    StatusEffectHelper.ApplyStatusEffect(this, t"DPAE_StatusEffect.SparkySignature_Active", this.GetEntityID());
+  } else if StrEndsWith(activeStr, "_Dezerter_HE") {
+    StatusEffectHelper.ApplyStatusEffect(this, t"DPAE_StatusEffect.DezerterSignature_Active", this.GetEntityID());
+  }
+}
 
-func DPAE_GetExclusiveVariantSuffix(caliberStr: String) -> String {
-  if Equals(caliberStr, "Ammo.Cal23x152Sov")
-    || Equals(caliberStr, "Ammo.Cal45Super")
-    || Equals(caliberStr, "Ammo.Cal12p3x41UdaR")
-    || Equals(caliberStr, "Ammo.Cal5p56CT") {
-    return "_HE";
+
+func DPAE_SuffixToExclusiveTag(suffix: String) -> CName {
+  if Equals(suffix, "_EMP") {
+    return n"DPAE_VariantExclusive_EMP";
   }
-  if Equals(caliberStr, "Ammo.Cal4Gauge") {
-    return "_EMP";
+  if Equals(suffix, "_CHEM") {
+    return n"DPAE_VariantExclusive_CHEM";
   }
-  return "";
+  if Equals(suffix, "_Divided_CHEM") {
+    return n"DPAE_VariantExclusive_Divided";
+  }
+  if Equals(suffix, "_Yinglong_EMP") {
+    return n"DPAE_VariantExclusive_Yinglong";
+  }
+  if Equals(suffix, "_Hercules_CHEM") {
+    return n"DPAE_VariantExclusive_Hercules";
+  }
+  if Equals(suffix, "_Sparky_EMP") {
+    return n"DPAE_VariantExclusive_Sparky";
+  }
+  if Equals(suffix, "_Dezerter_HE") {
+    return n"DPAE_VariantExclusive_Dezerter";
+  }
+  return n"DPAE_VariantExclusive_HE";
+}
+
+func DPAE_GetExclusiveVariantSuffixes(caliberStr: String) -> array<String> {
+  let suffixes: array<String>;
+  if Equals(caliberStr, "Ammo.Cal23x152Sov") {
+    ArrayPush(suffixes, "_HE");         // Borzaya / O'Five (pre-existing, unrelated)
+    ArrayPush(suffixes, "_Sparky_EMP"); // Sparky's own signature round
+  } else if Equals(caliberStr, "Ammo.Cal45Super") {
+    ArrayPush(suffixes, "_HE");   // Seraph
+  } else if Equals(caliberStr, "Ammo.Cal12p3x41UdaR") {
+    ArrayPush(suffixes, "_HE");   // Doom Doom
+  } else if Equals(caliberStr, "Ammo.Cal5p56CT") {
+    ArrayPush(suffixes, "_HE");   // Psalm 11:6
+  } else if Equals(caliberStr, "Ammo.Cal4Gauge") {
+    ArrayPush(suffixes, "_EMP");  // Mox
+  } else if Equals(caliberStr, "Ammo.Cal10x40Rocket") {
+    ArrayPush(suffixes, "_Divided_CHEM");  // Divided We Stand's own signature round
+  } else if Equals(caliberStr, "Ammo.Cal9p5x35Minirocket") {
+    ArrayPush(suffixes, "_Yinglong_EMP");  // Yinglong's own signature round
+  } else if Equals(caliberStr, "Ammo.Cal12x45Rocket") {
+    ArrayPush(suffixes, "_Hercules_CHEM"); // Hercules's own signature round
+  } else if Equals(caliberStr, "Ammo.Cal10GaugeBuck") {
+    ArrayPush(suffixes, "_Dezerter_HE");   // Dezerter's own signature round
+  }
+  return suffixes;
 }
 
 @addMethod(PlayerPuppet)
-public func DPAE_GetRestrictedVariantSuffix() -> String {
+public func DPAE_GetRestrictedVariantSuffixes() -> String {
   let caliberStr = TDBID.ToStringDEBUG(this.dpae_caliber);
-  let exclusiveSuffix = DPAE_GetExclusiveVariantSuffix(caliberStr);
-  if !Equals(exclusiveSuffix, "") {
-    let exclusiveTag = Equals(exclusiveSuffix, "_EMP") ? n"DPAE_VariantExclusive_EMP" : n"DPAE_VariantExclusive_HE";
-    let ts = GameInstance.GetTransactionSystem(this.GetGame());
-    let weaponObj = ts.GetItemInSlot(this, t"AttachmentSlots.WeaponRight") as WeaponObject;
-    if !IsDefined(weaponObj) {
-      weaponObj = ts.GetItemInSlot(this, t"AttachmentSlots.WeaponLeft") as WeaponObject;
-    }
-    if IsDefined(weaponObj) {
-      let weaponItemID = weaponObj.GetItemID();
-      if ItemID.IsValid(weaponItemID) && !ts.HasTag(this, exclusiveTag, weaponItemID) {
-        return exclusiveSuffix;
-      }
-    }
+  let exclusiveSuffixes = DPAE_GetExclusiveVariantSuffixes(caliberStr);
+  if ArraySize(exclusiveSuffixes) == 0 {
+    return "";
   }
-  return "";
+  let ts = GameInstance.GetTransactionSystem(this.GetGame());
+  let weaponObj = ts.GetItemInSlot(this, t"AttachmentSlots.WeaponRight") as WeaponObject;
+  if !IsDefined(weaponObj) {
+    weaponObj = ts.GetItemInSlot(this, t"AttachmentSlots.WeaponLeft") as WeaponObject;
+  }
+  let hasWeapon = false;
+  let weaponItemID: ItemID;
+  if IsDefined(weaponObj) {
+    weaponItemID = weaponObj.GetItemID();
+    hasWeapon = ItemID.IsValid(weaponItemID);
+  }
+  let result = "";
+  let i = 0;
+  while i < ArraySize(exclusiveSuffixes) {
+    let suffix = exclusiveSuffixes[i];
+    let hasPermission = hasWeapon && ts.HasTag(this, DPAE_SuffixToExclusiveTag(suffix), weaponItemID);
+    if !hasPermission {
+      if !Equals(result, "") {
+        result += ",";
+      }
+      result += suffix;
+    }
+    i += 1;
+  }
+  return result;
 }
 

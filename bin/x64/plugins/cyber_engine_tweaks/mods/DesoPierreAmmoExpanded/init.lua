@@ -17,6 +17,10 @@ local ROUND_COLORS = {
     TECH  = { 1.00, 0.70, 0.30 },
     CHEM  = { 0.55, 0.90, 0.35 },
     SNAKE = { 0.55, 0.85, 0.25 },
+    -- Iconic signature rounds (2026-07-25) — a genuinely new ammo item per
+    -- iconic, distinct from the generic element it's based on, so it gets
+    -- its own color rather than reusing CHEM/EMP/HE's.
+    SIG   = { 1.00, 0.95, 0.55 },
 }
 
 -- ── Caliber variant tables (NEW AMMO V2 roster — 40 calibers) ─────────────────
@@ -140,6 +144,9 @@ local CALIBER_VARIANTS = {
             { id = "Ammo.Cal10GaugeBuck_Slug", label = "Slug", short = "SLUG" },
             { id = "Ammo.Cal10GaugeBuck_INC", label = "Incendiary", short = "INC" },
             { id = "Ammo.Cal10GaugeBuck_HE", label = "High Explosive", short = "HE" },
+            -- Dezerter's exclusive signature round (2026-07-25) — filtered out of every
+            -- other weapon's picker by getEffectiveVariants/DPAE_VariantExclusivity.yaml.
+            { id = "Ammo.Cal10GaugeBuck_Dezerter_HE", label = "Signature Round", short = "SIG" },
         },
     },
     Cal10GaugeFlech = {
@@ -159,6 +166,9 @@ local CALIBER_VARIANTS = {
             { id = "Ammo.Cal10x40Rocket_INC", label = "Incendiary", short = "INC" },
             { id = "Ammo.Cal10x40Rocket_CHEM", label = "Chemical", short = "CHEM" },
             { id = "Ammo.Cal10x40Rocket_EMP", label = "EMP", short = "EMP" },
+            -- Divided We Stand's exclusive signature round (2026-07-25) — filtered out
+            -- of every other weapon's picker by getEffectiveVariants/DPAE_VariantExclusivity.yaml.
+            { id = "Ammo.Cal10x40Rocket_Divided_CHEM", label = "Signature Round", short = "SIG" },
         },
     },
     Cal10mmAuto = {
@@ -222,6 +232,9 @@ local CALIBER_VARIANTS = {
             { id = "Ammo.Cal12x45Rocket_INC", label = "Incendiary", short = "INC" },
             { id = "Ammo.Cal12x45Rocket_CHEM", label = "Chemical", short = "CHEM" },
             { id = "Ammo.Cal12x45Rocket_EMP", label = "EMP", short = "EMP" },
+            -- Hercules's exclusive signature round (2026-07-25) — filtered out of every
+            -- other weapon's picker by getEffectiveVariants/DPAE_VariantExclusivity.yaml.
+            { id = "Ammo.Cal12x45Rocket_Hercules_CHEM", label = "Signature Round", short = "SIG" },
         },
     },
     Cal14x40TSlug = {
@@ -297,6 +310,10 @@ local CALIBER_VARIANTS = {
             { id = "Ammo.Cal23x152Sov_INC", label = "Incendiary", short = "INC" },
             { id = "Ammo.Cal23x152Sov_EMP", label = "EMP", short = "EMP" },
             { id = "Ammo.Cal23x152Sov_CHEM", label = "Chemical", short = "CHEM" },
+            -- Sparky's exclusive signature round (2026-07-25) — filtered out of every
+            -- other weapon's picker by getEffectiveVariants/DPAE_VariantExclusivity.yaml.
+            -- Note: HE above is separately, unrelatedly exclusive to Borzaya/O'Five.
+            { id = "Ammo.Cal23x152Sov_Sparky_EMP", label = "Signature Round", short = "SIG" },
         },
     },
     Cal3x10FlechCluster = {
@@ -434,6 +451,9 @@ local CALIBER_VARIANTS = {
             { id = "Ammo.Cal9p5x35Minirocket_INC", label = "Incendiary", short = "INC" },
             { id = "Ammo.Cal9p5x35Minirocket_CHEM", label = "Chemical", short = "CHEM" },
             { id = "Ammo.Cal9p5x35Minirocket_HE", label = "High Explosive", short = "HE" },
+            -- Yinglong's exclusive signature round (2026-07-25) — filtered out of every
+            -- other weapon's picker by getEffectiveVariants/DPAE_VariantExclusivity.yaml.
+            { id = "Ammo.Cal9p5x35Minirocket_Yinglong_EMP", label = "Signature Round", short = "SIG" },
         },
     },
     Cal9x19 = {
@@ -566,24 +586,39 @@ end
 -- Shared by the picker UI and the cycle hotkey so both agree on exactly which
 -- variants this specific weapon may select — locked weapons collapse to their
 -- one permitted variant, otherwise the caliber's full list minus whatever
--- DPAE_GetRestrictedVariantSuffix says this weapon isn't permitted to fire
--- (e.g. Cal23x152Sov_HE -> Borzaya/O'Five, Cal4Gauge_EMP -> Mox). Without this shared
--- helper, the cycle hotkey (which used to read currentCal.variants directly)
--- could land on a restricted variant that DPAE_SelectAmmo's own redscript-side
--- enforcement then silently falls back away from, desyncing the UI's
--- "selected" label from the weapon's actual active ammo.
+-- DPAE_GetRestrictedVariantSuffixes says this weapon isn't permitted to fire
+-- (e.g. Cal23x152Sov_HE -> Borzaya/O'Five, Cal4Gauge_EMP -> Mox). A caliber
+-- can now hide MORE THAN ONE suffix from a given weapon at once (e.g. SPT32
+-- Grad on Cal23x152Sov holds neither Borzaya/O'Five's HE tag nor Sparky's EMP
+-- tag) — the redscript side returns a comma-delimited list, split here into a
+-- lookup set. Without this shared helper, the cycle hotkey (which used to
+-- read currentCal.variants directly) could land on a restricted variant that
+-- DPAE_SelectAmmo's own redscript-side enforcement then silently falls back
+-- away from, desyncing the UI's "selected" label from the weapon's actual
+-- active ammo.
 local function getEffectiveVariants(p, cal, calLabel)
     local lockedID = p:DPAE_GetLockedVariantID()
     if lockedID ~= "" then
         return { describeLockedVariant(lockedID, calLabel) }, lockedID
     end
-    local restrictedSuffix = p:DPAE_GetRestrictedVariantSuffix()
-    if restrictedSuffix == "" then
+    local restrictedSuffixes = p:DPAE_GetRestrictedVariantSuffixes()
+    if restrictedSuffixes == "" then
         return cal.variants, lockedID
+    end
+    local restrictedSet = {}
+    for suffix in restrictedSuffixes:gmatch("[^,]+") do
+        restrictedSet[suffix] = true
     end
     local filtered = {}
     for _, v in ipairs(cal.variants) do
-        if not endsWith(v.id, restrictedSuffix) then
+        local isRestricted = false
+        for suffix in pairs(restrictedSet) do
+            if endsWith(v.id, suffix) then
+                isRestricted = true
+                break
+            end
+        end
+        if not isRestricted then
             table.insert(filtered, v)
         end
     end
