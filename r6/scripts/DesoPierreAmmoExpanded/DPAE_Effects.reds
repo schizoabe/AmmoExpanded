@@ -272,10 +272,32 @@ public func DPAE_GetExplosivePackageForRound(activeStr: String) -> TweakDBID {
   return t"DPAE_HE.ExplodingBulletLightPackage";
 }
 
+public func DPAE_IsFirecrackerGatedHE(activeStr: String) -> Bool {
+  if StrEndsWith(activeStr, "Cal9x19_HE") { return true; }
+  if StrEndsWith(activeStr, "Cal10mmAuto_HE") { return true; }
+  if StrEndsWith(activeStr, "Cal12Gauge_HE") { return true; }
+  if StrEndsWith(activeStr, "Cal243Win_HE") { return true; }
+  if StrEndsWith(activeStr, "Cal454Casull_HE") { return true; }
+  if StrEndsWith(activeStr, "Cal45WinMag_HE") { return true; }
+  if StrEndsWith(activeStr, "Cal50BeowulfOni_HE") { return true; }
+  if StrEndsWith(activeStr, "Cal50BMG_HE") { return true; }
+  if StrEndsWith(activeStr, "Cal5p45CT_HE") { return true; }
+  if StrEndsWith(activeStr, "Cal5p56x45NUSA_HE") { return true; }
+  if StrEndsWith(activeStr, "Cal6p5Arasaka_HE") { return true; }
+  return false;
+}
+
 @addMethod(PlayerPuppet)
 public func DPAE_UpdateExplosiveOverride(activeStr: String, weapon: ref<WeaponObject>) -> Void {
   if !IsDefined(weapon) { return; }
-  if StrEndsWith(activeStr, "HE") {
+  let isHE = StrEndsWith(activeStr, "HE");
+  if isHE && DPAE_IsFirecrackerGatedHE(activeStr) {
+    let firecrackerQualities = this.DPAE_GetAttachedModQualities(weapon, "Items.ChimeraPowerMod");
+    if ArraySize(firecrackerQualities) <= 0 {
+      isHE = false;
+    }
+  }
+  if isHE {
     weapon.OverrideRangedAttackPackage(TweakDBInterface.GetRangedAttackPackageRecord(DPAE_GetExplosivePackageForRound(activeStr)));
     StatusEffectHelper.ApplyStatusEffect(this, t"DPAE_StatusEffect.HE_Active", this.GetEntityID());
   } else {

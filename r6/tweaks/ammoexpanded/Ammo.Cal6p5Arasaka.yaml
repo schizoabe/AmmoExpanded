@@ -7,9 +7,8 @@ Ammo.Cal6p5Arasaka:
   appearanceSuffixesOwnerOverride: []
   attachmentSlots: []
   buyPrice:
-    - Price.Ammo
+    - DPAE_Price.Cal6p5Arasaka_Base
     - Price.BuyPrice_StreetCred_Discount
-    - Price.PowerAmmo
   cameraForward: {x: 0, y: 0, z: 0}
   cameraUp: {x: 0, y: 0, z: 0}
   canDrop: True
@@ -59,8 +58,7 @@ Ammo.Cal6p5Arasaka:
   requiredSlots: []
   savable: False
   sellPrice:
-    - Price.Ammo
-    - Price.PowerAmmo
+    - DPAE_Price.Cal6p5Arasaka_Base
   slotPartList: []
   slotPartListPreset: []
   statModifierGroups: []
@@ -79,57 +77,99 @@ Ammo.Cal6p5Arasaka:
   weakspots: []
 
 Ammo.Cal6p5Arasaka_AP:
+
+  buyPrice:
+    - !append-once DPAE_Price.TierUncommon
+  sellPrice:
+    - !append-once DPAE_Price.TierUncommon
+  quality: Quality.Uncommon
   $base: Ammo.Cal6p5Arasaka
   friendlyName: '65mm_arasaka_armor_piercing'
   displayName: LocKey#8100467
-  localizedDescription: LocKey#8100596
+  localizedDescription: LocKey#8100804
   tags:
     - !append-once DPAE_Cal6p5Arasaka_AP
 
 Ammo.Cal6p5Arasaka_HP:
+
+  buyPrice:
+    - !append-once DPAE_Price.TierUncommon
+  sellPrice:
+    - !append-once DPAE_Price.TierUncommon
+  quality: Quality.Uncommon
   $base: Ammo.Cal6p5Arasaka
   friendlyName: '65mm_arasaka_hollow_point'
   displayName: LocKey#8100468
-  localizedDescription: LocKey#8100596
+  localizedDescription: LocKey#8100803
   tags:
     - !append-once DPAE_Cal6p5Arasaka_HP
 
 Ammo.Cal6p5Arasaka_EMP:
+
+  buyPrice:
+    - !append-once DPAE_Price.TierRare
+  sellPrice:
+    - !append-once DPAE_Price.TierRare
+  quality: Quality.Rare
   $base: Ammo.Cal6p5Arasaka
   friendlyName: '65mm_arasaka_emp'
   displayName: LocKey#8100469
-  localizedDescription: LocKey#8100596
+  localizedDescription: LocKey#8100802
   tags:
     - !append-once DPAE_Cal6p5Arasaka_EMP
 
 Ammo.Cal6p5Arasaka_INC:
+
+  buyPrice:
+    - !append-once DPAE_Price.TierRare
+  sellPrice:
+    - !append-once DPAE_Price.TierRare
+  quality: Quality.Rare
   $base: Ammo.Cal6p5Arasaka
   friendlyName: '65mm_arasaka_incendiary'
   displayName: LocKey#8100470
-  localizedDescription: LocKey#8100596
+  localizedDescription: LocKey#8100801
   tags:
     - !append-once DPAE_Cal6p5Arasaka_INC
 
 Ammo.Cal6p5Arasaka_CHEM:
+
+  buyPrice:
+    - !append-once DPAE_Price.TierRare
+  sellPrice:
+    - !append-once DPAE_Price.TierRare
+  quality: Quality.Rare
   $base: Ammo.Cal6p5Arasaka
   friendlyName: '65mm_arasaka_chemical'
   displayName: LocKey#8100471
-  localizedDescription: LocKey#8100596
+  localizedDescription: LocKey#8100800
   tags:
     - !append-once DPAE_Cal6p5Arasaka_CHEM
 
 Ammo.Cal6p5Arasaka_NL:
+
+  buyPrice:
+    - !append-once DPAE_Price.TierUncommon
+  sellPrice:
+    - !append-once DPAE_Price.TierUncommon
+  quality: Quality.Uncommon
   $base: Ammo.Cal6p5Arasaka
   friendlyName: '65mm_arasaka_non-lethal'
   displayName: LocKey#8100472
-  localizedDescription: LocKey#8100596
+  localizedDescription: LocKey#8100799
   tags:
     - !append-once DPAE_Cal6p5Arasaka_NL
 
 Ammo.Cal6p5Arasaka_HE:
+
+  buyPrice:
+    - !append-once DPAE_Price.TierEpic
+  sellPrice:
+    - !append-once DPAE_Price.TierEpic
+  quality: Quality.Epic
   $base: Ammo.Cal6p5Arasaka
   friendlyName: '65mm_arasaka_high_explosive'
   displayName: LocKey#8100637
-  localizedDescription: LocKey#8100596
+  localizedDescription: LocKey#8100798
   tags:
     - !append-once DPAE_Cal6p5Arasaka_HE

@@ -7,9 +7,8 @@ Ammo.Cal500Malour:
   appearanceSuffixesOwnerOverride: []
   attachmentSlots: []
   buyPrice:
-    - Price.Ammo
+    - DPAE_Price.Cal500Malour_Base
     - Price.BuyPrice_StreetCred_Discount
-    - Price.PowerAmmo
   cameraForward: {x: 0, y: 0, z: 0}
   cameraUp: {x: 0, y: 0, z: 0}
   canDrop: True
@@ -59,8 +58,7 @@ Ammo.Cal500Malour:
   requiredSlots: []
   savable: False
   sellPrice:
-    - Price.Ammo
-    - Price.PowerAmmo
+    - DPAE_Price.Cal500Malour_Base
   slotPartList: []
   slotPartListPreset: []
   statModifierGroups: []
@@ -79,25 +77,43 @@ Ammo.Cal500Malour:
   weakspots: []
 
 Ammo.Cal500Malour_AP:
+
+  buyPrice:
+    - !append-once DPAE_Price.TierUncommon
+  sellPrice:
+    - !append-once DPAE_Price.TierUncommon
+  quality: Quality.Uncommon
   $base: Ammo.Cal500Malour
   friendlyName: '500_malour_armor_piercing'
   displayName: LocKey#8100353
-  localizedDescription: LocKey#8100588
+  localizedDescription: LocKey#8100752
   tags:
     - !append-once DPAE_Cal500Malour_AP
 
 Ammo.Cal500Malour_INC:
+
+  buyPrice:
+    - !append-once DPAE_Price.TierRare
+  sellPrice:
+    - !append-once DPAE_Price.TierRare
+  quality: Quality.Rare
   $base: Ammo.Cal500Malour
   friendlyName: '500_malour_incendiary'
   displayName: LocKey#8100354
-  localizedDescription: LocKey#8100588
+  localizedDescription: LocKey#8100751
   tags:
     - !append-once DPAE_Cal500Malour_INC
 
 Ammo.Cal500Malour_HE:
+
+  buyPrice:
+    - !append-once DPAE_Price.TierEpic
+  sellPrice:
+    - !append-once DPAE_Price.TierEpic
+  quality: Quality.Epic
   $base: Ammo.Cal500Malour
   friendlyName: '500_malour_high_explosive'
   displayName: LocKey#8100355
-  localizedDescription: LocKey#8100588
+  localizedDescription: LocKey#8100750
   tags:
     - !append-once DPAE_Cal500Malour_HE

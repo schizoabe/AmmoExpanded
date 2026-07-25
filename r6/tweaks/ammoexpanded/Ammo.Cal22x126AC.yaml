@@ -7,9 +7,8 @@ Ammo.Cal22x126AC:
   appearanceSuffixesOwnerOverride: []
   attachmentSlots: []
   buyPrice:
-    - Price.Ammo
+    - DPAE_Price.Cal22x126AC_Base
     - Price.BuyPrice_StreetCred_Discount
-    - Price.PowerAmmo
   cameraForward: {x: 0, y: 0, z: 0}
   cameraUp: {x: 0, y: 0, z: 0}
   canDrop: True
@@ -59,8 +58,7 @@ Ammo.Cal22x126AC:
   requiredSlots: []
   savable: False
   sellPrice:
-    - Price.Ammo
-    - Price.PowerAmmo
+    - DPAE_Price.Cal22x126AC_Base
   slotPartList: []
   slotPartListPreset: []
   statModifierGroups: []
@@ -79,33 +77,57 @@ Ammo.Cal22x126AC:
   weakspots: []
 
 Ammo.Cal22x126AC_HE:
+
+  buyPrice:
+    - !append-once DPAE_Price.TierEpic
+  sellPrice:
+    - !append-once DPAE_Price.TierEpic
+  quality: Quality.Epic
   $base: Ammo.Cal22x126AC
   friendlyName: '22x126mm_ac_high_explosive'
   displayName: LocKey#8100417
-  localizedDescription: LocKey#8100579
+  localizedDescription: LocKey#8100707
   tags:
     - !append-once DPAE_Cal22x126AC_HE
 
 Ammo.Cal22x126AC_INC:
+
+  buyPrice:
+    - !append-once DPAE_Price.TierRare
+  sellPrice:
+    - !append-once DPAE_Price.TierRare
+  quality: Quality.Rare
   $base: Ammo.Cal22x126AC
   friendlyName: '22x126mm_ac_incendiary'
   displayName: LocKey#8100418
-  localizedDescription: LocKey#8100579
+  localizedDescription: LocKey#8100706
   tags:
     - !append-once DPAE_Cal22x126AC_INC
 
 Ammo.Cal22x126AC_CHEM:
+
+  buyPrice:
+    - !append-once DPAE_Price.TierRare
+  sellPrice:
+    - !append-once DPAE_Price.TierRare
+  quality: Quality.Rare
   $base: Ammo.Cal22x126AC
   friendlyName: '22x126mm_ac_chemical'
   displayName: LocKey#8100624
-  localizedDescription: LocKey#8100579
+  localizedDescription: LocKey#8100705
   tags:
     - !append-once DPAE_Cal22x126AC_CHEM
 
 Ammo.Cal22x126AC_EMP:
+
+  buyPrice:
+    - !append-once DPAE_Price.TierRare
+  sellPrice:
+    - !append-once DPAE_Price.TierRare
+  quality: Quality.Rare
   $base: Ammo.Cal22x126AC
   friendlyName: '22x126mm_ac_emp'
   displayName: LocKey#8100625
-  localizedDescription: LocKey#8100579
+  localizedDescription: LocKey#8100704
   tags:
     - !append-once DPAE_Cal22x126AC_EMP

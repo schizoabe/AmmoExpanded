@@ -7,9 +7,8 @@ Ammo.Cal15x80TSpike:
   appearanceSuffixesOwnerOverride: []
   attachmentSlots: []
   buyPrice:
-    - Price.Ammo
+    - DPAE_Price.Cal15x80TSpike_Base
     - Price.BuyPrice_StreetCred_Discount
-    - Price.PowerAmmo
   cameraForward: {x: 0, y: 0, z: 0}
   cameraUp: {x: 0, y: 0, z: 0}
   canDrop: True
@@ -59,8 +58,7 @@ Ammo.Cal15x80TSpike:
   requiredSlots: []
   savable: False
   sellPrice:
-    - Price.Ammo
-    - Price.PowerAmmo
+    - DPAE_Price.Cal15x80TSpike_Base
   slotPartList: []
   slotPartListPreset: []
   statModifierGroups: []
@@ -80,25 +78,43 @@ Ammo.Cal15x80TSpike:
 
 
 Ammo.Cal15x80TSpike_EMP:
+
+  buyPrice:
+    - !append-once DPAE_Price.TierRare
+  sellPrice:
+    - !append-once DPAE_Price.TierRare
+  quality: Quality.Rare
   $base: Ammo.Cal15x80TSpike
   friendlyName: '15x80mm_tungsten_spike_emp'
   displayName: LocKey#8100407
-  localizedDescription: LocKey#8100576
+  localizedDescription: LocKey#8100695
   tags:
     - !append-once DPAE_Cal15x80TSpike_EMP
 
 Ammo.Cal15x80TSpike_INC:
+
+  buyPrice:
+    - !append-once DPAE_Price.TierRare
+  sellPrice:
+    - !append-once DPAE_Price.TierRare
+  quality: Quality.Rare
   $base: Ammo.Cal15x80TSpike
   friendlyName: '15x80mm_tungsten_spike_incendiary'
   displayName: LocKey#8100408
-  localizedDescription: LocKey#8100576
+  localizedDescription: LocKey#8100694
   tags:
     - !append-once DPAE_Cal15x80TSpike_INC
 
 Ammo.Cal15x80TSpike_CHEM:
+
+  buyPrice:
+    - !append-once DPAE_Price.TierRare
+  sellPrice:
+    - !append-once DPAE_Price.TierRare
+  quality: Quality.Rare
   $base: Ammo.Cal15x80TSpike
   friendlyName: '15x80mm_tungsten_spike_chemical'
   displayName: LocKey#8100409
-  localizedDescription: LocKey#8100576
+  localizedDescription: LocKey#8100693
   tags:
     - !append-once DPAE_Cal15x80TSpike_CHEM

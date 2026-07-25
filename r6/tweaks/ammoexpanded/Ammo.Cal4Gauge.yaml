@@ -7,9 +7,8 @@ Ammo.Cal4Gauge:
   appearanceSuffixesOwnerOverride: []
   attachmentSlots: []
   buyPrice:
-    - Price.Ammo
+    - DPAE_Price.Cal4Gauge_Base
     - Price.BuyPrice_StreetCred_Discount
-    - Price.PowerAmmo
   cameraForward: {x: 0, y: 0, z: 0}
   cameraUp: {x: 0, y: 0, z: 0}
   canDrop: True
@@ -59,8 +58,7 @@ Ammo.Cal4Gauge:
   requiredSlots: []
   savable: False
   sellPrice:
-    - Price.Ammo
-    - Price.PowerAmmo
+    - DPAE_Price.Cal4Gauge_Base
   slotPartList: []
   slotPartListPreset: []
   statModifierGroups: []
@@ -79,33 +77,57 @@ Ammo.Cal4Gauge:
   weakspots: []
 
 Ammo.Cal4Gauge_Slug:
+
+  buyPrice:
+    - !append-once DPAE_Price.TierUncommon
+  sellPrice:
+    - !append-once DPAE_Price.TierUncommon
+  quality: Quality.Uncommon
   $base: Ammo.Cal4Gauge
   friendlyName: '4_gauge_buckshot_slug'
   displayName: LocKey#8100424
-  localizedDescription: LocKey#8100586
+  localizedDescription: LocKey#8100746
   tags:
     - !append-once DPAE_Cal4Gauge_Slug
 
 Ammo.Cal4Gauge_INC:
+
+  buyPrice:
+    - !append-once DPAE_Price.TierRare
+  sellPrice:
+    - !append-once DPAE_Price.TierRare
+  quality: Quality.Rare
   $base: Ammo.Cal4Gauge
   friendlyName: '4_gauge_buckshot_incendiary'
   displayName: LocKey#8100425
-  localizedDescription: LocKey#8100586
+  localizedDescription: LocKey#8100745
   tags:
     - !append-once DPAE_Cal4Gauge_INC
 
 Ammo.Cal4Gauge_HE:
+
+  buyPrice:
+    - !append-once DPAE_Price.TierEpic
+  sellPrice:
+    - !append-once DPAE_Price.TierEpic
+  quality: Quality.Epic
   $base: Ammo.Cal4Gauge
   friendlyName: '4_gauge_buckshot_high_explosive'
   displayName: LocKey#8100426
-  localizedDescription: LocKey#8100586
+  localizedDescription: LocKey#8100744
   tags:
     - !append-once DPAE_Cal4Gauge_HE
 
 Ammo.Cal4Gauge_EMP:
+
+  buyPrice:
+    - !append-once DPAE_Price.TierRare
+  sellPrice:
+    - !append-once DPAE_Price.TierRare
+  quality: Quality.Rare
   $base: Ammo.Cal4Gauge
   friendlyName: '4_gauge_buckshot_emp'
   displayName: LocKey#8100556
-  localizedDescription: LocKey#8100586
+  localizedDescription: LocKey#8100743
   tags:
     - !append-once DPAE_Cal4Gauge_EMP

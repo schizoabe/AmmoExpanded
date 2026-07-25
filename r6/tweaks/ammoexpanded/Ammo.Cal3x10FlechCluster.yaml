@@ -7,9 +7,9 @@ Ammo.Cal3x10FlechCluster:
   appearanceSuffixesOwnerOverride: []
   attachmentSlots: []
   buyPrice:
-    - Price.Ammo
+    - DPAE_Price.Cal3x10FlechCluster_Base
     - Price.BuyPrice_StreetCred_Discount
-    - Price.PowerAmmo
+    - DPAE_Price.TierLegendary
   cameraForward: {x: 0, y: 0, z: 0}
   cameraUp: {x: 0, y: 0, z: 0}
   canDrop: True
@@ -53,14 +53,14 @@ Ammo.Cal3x10FlechCluster:
   placementSlots: []
   powerLevelDeterminedByParent: False
   previewBBoxOverride: []
-  quality: Quality.Common
+  quality: Quality.Legendary
   qualityRestrictedByParent: False
   replicateWhenNotActive: False
   requiredSlots: []
   savable: False
   sellPrice:
-    - Price.Ammo
-    - Price.PowerAmmo
+    - DPAE_Price.Cal3x10FlechCluster_Base
+    - DPAE_Price.TierLegendary
   slotPartList: []
   slotPartListPreset: []
   statModifierGroups: []

@@ -7,9 +7,8 @@ Ammo.Cal8x30RailF:
   appearanceSuffixesOwnerOverride: []
   attachmentSlots: []
   buyPrice:
-    - Price.Ammo
+    - DPAE_Price.Cal8x30RailF_Base
     - Price.BuyPrice_StreetCred_Discount
-    - Price.PowerAmmo
   cameraForward: {x: 0, y: 0, z: 0}
   cameraUp: {x: 0, y: 0, z: 0}
   canDrop: True
@@ -59,8 +58,7 @@ Ammo.Cal8x30RailF:
   requiredSlots: []
   savable: False
   sellPrice:
-    - Price.Ammo
-    - Price.PowerAmmo
+    - DPAE_Price.Cal8x30RailF_Base
   slotPartList: []
   slotPartListPreset: []
   statModifierGroups: []
@@ -80,25 +78,43 @@ Ammo.Cal8x30RailF:
 
 
 Ammo.Cal8x30RailF_EMP:
+
+  buyPrice:
+    - !append-once DPAE_Price.TierRare
+  sellPrice:
+    - !append-once DPAE_Price.TierRare
+  quality: Quality.Rare
   $base: Ammo.Cal8x30RailF
   friendlyName: '8x30mm_rail_flechettes_emp'
   displayName: LocKey#8100483
-  localizedDescription: LocKey#8100599
+  localizedDescription: LocKey#8100818
   tags:
     - !append-once DPAE_Cal8x30RailF_EMP
 
 Ammo.Cal8x30RailF_INC:
+
+  buyPrice:
+    - !append-once DPAE_Price.TierRare
+  sellPrice:
+    - !append-once DPAE_Price.TierRare
+  quality: Quality.Rare
   $base: Ammo.Cal8x30RailF
   friendlyName: '8x30mm_rail_flechettes_incendiary'
   displayName: LocKey#8100484
-  localizedDescription: LocKey#8100599
+  localizedDescription: LocKey#8100817
   tags:
     - !append-once DPAE_Cal8x30RailF_INC
 
 Ammo.Cal8x30RailF_CHEM:
+
+  buyPrice:
+    - !append-once DPAE_Price.TierRare
+  sellPrice:
+    - !append-once DPAE_Price.TierRare
+  quality: Quality.Rare
   $base: Ammo.Cal8x30RailF
   friendlyName: '8x30mm_rail_flechettes_chemical'
   displayName: LocKey#8100485
-  localizedDescription: LocKey#8100599
+  localizedDescription: LocKey#8100816
   tags:
     - !append-once DPAE_Cal8x30RailF_CHEM

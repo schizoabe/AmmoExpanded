@@ -7,9 +7,8 @@ Ammo.Cal5p7x28TF:
   appearanceSuffixesOwnerOverride: []
   attachmentSlots: []
   buyPrice:
-    - Price.Ammo
+    - DPAE_Price.Cal5p7x28TF_Base
     - Price.BuyPrice_StreetCred_Discount
-    - Price.PowerAmmo
   cameraForward: {x: 0, y: 0, z: 0}
   cameraUp: {x: 0, y: 0, z: 0}
   canDrop: True
@@ -59,8 +58,7 @@ Ammo.Cal5p7x28TF:
   requiredSlots: []
   savable: False
   sellPrice:
-    - Price.Ammo
-    - Price.PowerAmmo
+    - DPAE_Price.Cal5p7x28TF_Base
   slotPartList: []
   slotPartListPreset: []
   statModifierGroups: []
@@ -80,25 +78,43 @@ Ammo.Cal5p7x28TF:
 
 
 Ammo.Cal5p7x28TF_EMP:
+
+  buyPrice:
+    - !append-once DPAE_Price.TierRare
+  sellPrice:
+    - !append-once DPAE_Price.TierRare
+  quality: Quality.Rare
   $base: Ammo.Cal5p7x28TF
   friendlyName: '57x28mm_tungsten_flechettes_emp'
   displayName: LocKey#8100457
-  localizedDescription: LocKey#8100595
+  localizedDescription: LocKey#8100797
   tags:
     - !append-once DPAE_Cal5p7x28TF_EMP
 
 Ammo.Cal5p7x28TF_INC:
+
+  buyPrice:
+    - !append-once DPAE_Price.TierRare
+  sellPrice:
+    - !append-once DPAE_Price.TierRare
+  quality: Quality.Rare
   $base: Ammo.Cal5p7x28TF
   friendlyName: '57x28mm_tungsten_flechettes_incendiary'
   displayName: LocKey#8100458
-  localizedDescription: LocKey#8100595
+  localizedDescription: LocKey#8100796
   tags:
     - !append-once DPAE_Cal5p7x28TF_INC
 
 Ammo.Cal5p7x28TF_CHEM:
+
+  buyPrice:
+    - !append-once DPAE_Price.TierRare
+  sellPrice:
+    - !append-once DPAE_Price.TierRare
+  quality: Quality.Rare
   $base: Ammo.Cal5p7x28TF
   friendlyName: '57x28mm_tungsten_flechettes_chemical'
   displayName: LocKey#8100459
-  localizedDescription: LocKey#8100595
+  localizedDescription: LocKey#8100795
   tags:
     - !append-once DPAE_Cal5p7x28TF_CHEM

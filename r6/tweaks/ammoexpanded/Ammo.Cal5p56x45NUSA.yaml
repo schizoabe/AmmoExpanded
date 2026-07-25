@@ -7,9 +7,8 @@ Ammo.Cal5p56x45NUSA:
   appearanceSuffixesOwnerOverride: []
   attachmentSlots: []
   buyPrice:
-    - Price.Ammo
+    - DPAE_Price.Cal5p56x45NUSA_Base
     - Price.BuyPrice_StreetCred_Discount
-    - Price.PowerAmmo
   cameraForward: {x: 0, y: 0, z: 0}
   cameraUp: {x: 0, y: 0, z: 0}
   canDrop: True
@@ -59,8 +58,7 @@ Ammo.Cal5p56x45NUSA:
   requiredSlots: []
   savable: False
   sellPrice:
-    - Price.Ammo
-    - Price.PowerAmmo
+    - DPAE_Price.Cal5p56x45NUSA_Base
   slotPartList: []
   slotPartListPreset: []
   statModifierGroups: []
@@ -79,57 +77,99 @@ Ammo.Cal5p56x45NUSA:
   weakspots: []
 
 Ammo.Cal5p56x45NUSA_AP:
+
+  buyPrice:
+    - !append-once DPAE_Price.TierUncommon
+  sellPrice:
+    - !append-once DPAE_Price.TierUncommon
+  quality: Quality.Uncommon
   $base: Ammo.Cal5p56x45NUSA
   friendlyName: '556x45mm_nusa_armor_piercing'
   displayName: LocKey#8100441
-  localizedDescription: LocKey#8100594
+  localizedDescription: LocKey#8100794
   tags:
     - !append-once DPAE_Cal5p56x45NUSA_AP
 
 Ammo.Cal5p56x45NUSA_HP:
+
+  buyPrice:
+    - !append-once DPAE_Price.TierUncommon
+  sellPrice:
+    - !append-once DPAE_Price.TierUncommon
+  quality: Quality.Uncommon
   $base: Ammo.Cal5p56x45NUSA
   friendlyName: '556x45mm_nusa_hollow_point'
   displayName: LocKey#8100442
-  localizedDescription: LocKey#8100594
+  localizedDescription: LocKey#8100793
   tags:
     - !append-once DPAE_Cal5p56x45NUSA_HP
 
 Ammo.Cal5p56x45NUSA_EMP:
+
+  buyPrice:
+    - !append-once DPAE_Price.TierRare
+  sellPrice:
+    - !append-once DPAE_Price.TierRare
+  quality: Quality.Rare
   $base: Ammo.Cal5p56x45NUSA
   friendlyName: '556x45mm_nusa_emp'
   displayName: LocKey#8100443
-  localizedDescription: LocKey#8100594
+  localizedDescription: LocKey#8100792
   tags:
     - !append-once DPAE_Cal5p56x45NUSA_EMP
 
 Ammo.Cal5p56x45NUSA_INC:
+
+  buyPrice:
+    - !append-once DPAE_Price.TierRare
+  sellPrice:
+    - !append-once DPAE_Price.TierRare
+  quality: Quality.Rare
   $base: Ammo.Cal5p56x45NUSA
   friendlyName: '556x45mm_nusa_incendiary'
   displayName: LocKey#8100444
-  localizedDescription: LocKey#8100594
+  localizedDescription: LocKey#8100791
   tags:
     - !append-once DPAE_Cal5p56x45NUSA_INC
 
 Ammo.Cal5p56x45NUSA_CHEM:
+
+  buyPrice:
+    - !append-once DPAE_Price.TierRare
+  sellPrice:
+    - !append-once DPAE_Price.TierRare
+  quality: Quality.Rare
   $base: Ammo.Cal5p56x45NUSA
   friendlyName: '556x45mm_nusa_chemical'
   displayName: LocKey#8100445
-  localizedDescription: LocKey#8100594
+  localizedDescription: LocKey#8100790
   tags:
     - !append-once DPAE_Cal5p56x45NUSA_CHEM
 
 Ammo.Cal5p56x45NUSA_NL:
+
+  buyPrice:
+    - !append-once DPAE_Price.TierUncommon
+  sellPrice:
+    - !append-once DPAE_Price.TierUncommon
+  quality: Quality.Uncommon
   $base: Ammo.Cal5p56x45NUSA
   friendlyName: '556x45mm_nusa_non-lethal'
   displayName: LocKey#8100446
-  localizedDescription: LocKey#8100594
+  localizedDescription: LocKey#8100789
   tags:
     - !append-once DPAE_Cal5p56x45NUSA_NL
 
 Ammo.Cal5p56x45NUSA_HE:
+
+  buyPrice:
+    - !append-once DPAE_Price.TierEpic
+  sellPrice:
+    - !append-once DPAE_Price.TierEpic
+  quality: Quality.Epic
   $base: Ammo.Cal5p56x45NUSA
   friendlyName: '556x45mm_nusa_high_explosive'
   displayName: LocKey#8100636
-  localizedDescription: LocKey#8100594
+  localizedDescription: LocKey#8100788
   tags:
     - !append-once DPAE_Cal5p56x45NUSA_HE

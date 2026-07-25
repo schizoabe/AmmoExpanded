@@ -7,9 +7,8 @@ Ammo.Cal9x19:
   appearanceSuffixesOwnerOverride: []
   attachmentSlots: []
   buyPrice:
-    - Price.Ammo
+    - DPAE_Price.Cal9x19_Base
     - Price.BuyPrice_StreetCred_Discount
-    - Price.PowerAmmo
   cameraForward: {x: 0, y: 0, z: 0}
   cameraUp: {x: 0, y: 0, z: 0}
   canDrop: True
@@ -59,8 +58,7 @@ Ammo.Cal9x19:
   requiredSlots: []
   savable: False
   sellPrice:
-    - Price.Ammo
-    - Price.PowerAmmo
+    - DPAE_Price.Cal9x19_Base
   slotPartList: []
   slotPartListPreset: []
   statModifierGroups: []
@@ -79,57 +77,99 @@ Ammo.Cal9x19:
   weakspots: []
 
 Ammo.Cal9x19_AP:
+
+  buyPrice:
+    - !append-once DPAE_Price.TierUncommon
+  sellPrice:
+    - !append-once DPAE_Price.TierUncommon
+  quality: Quality.Uncommon
   $base: Ammo.Cal9x19
   friendlyName: '9x19mm_parabellum_armor_piercing'
   displayName: LocKey#8100499
-  localizedDescription: LocKey#8100602
+  localizedDescription: LocKey#8100832
   tags:
     - !append-once DPAE_Cal9x19_AP
 
 Ammo.Cal9x19_HP:
+
+  buyPrice:
+    - !append-once DPAE_Price.TierUncommon
+  sellPrice:
+    - !append-once DPAE_Price.TierUncommon
+  quality: Quality.Uncommon
   $base: Ammo.Cal9x19
   friendlyName: '9x19mm_parabellum_hollow_point'
   displayName: LocKey#8100500
-  localizedDescription: LocKey#8100602
+  localizedDescription: LocKey#8100831
   tags:
     - !append-once DPAE_Cal9x19_HP
 
 Ammo.Cal9x19_EMP:
+
+  buyPrice:
+    - !append-once DPAE_Price.TierRare
+  sellPrice:
+    - !append-once DPAE_Price.TierRare
+  quality: Quality.Rare
   $base: Ammo.Cal9x19
   friendlyName: '9x19mm_parabellum_emp'
   displayName: LocKey#8100501
-  localizedDescription: LocKey#8100602
+  localizedDescription: LocKey#8100830
   tags:
     - !append-once DPAE_Cal9x19_EMP
 
 Ammo.Cal9x19_INC:
+
+  buyPrice:
+    - !append-once DPAE_Price.TierRare
+  sellPrice:
+    - !append-once DPAE_Price.TierRare
+  quality: Quality.Rare
   $base: Ammo.Cal9x19
   friendlyName: '9x19mm_parabellum_incendiary'
   displayName: LocKey#8100502
-  localizedDescription: LocKey#8100602
+  localizedDescription: LocKey#8100829
   tags:
     - !append-once DPAE_Cal9x19_INC
 
 Ammo.Cal9x19_CHEM:
+
+  buyPrice:
+    - !append-once DPAE_Price.TierRare
+  sellPrice:
+    - !append-once DPAE_Price.TierRare
+  quality: Quality.Rare
   $base: Ammo.Cal9x19
   friendlyName: '9x19mm_parabellum_chemical'
   displayName: LocKey#8100503
-  localizedDescription: LocKey#8100602
+  localizedDescription: LocKey#8100828
   tags:
     - !append-once DPAE_Cal9x19_CHEM
 
 Ammo.Cal9x19_NL:
+
+  buyPrice:
+    - !append-once DPAE_Price.TierUncommon
+  sellPrice:
+    - !append-once DPAE_Price.TierUncommon
+  quality: Quality.Uncommon
   $base: Ammo.Cal9x19
   friendlyName: '9x19mm_parabellum_non-lethal'
   displayName: LocKey#8100504
-  localizedDescription: LocKey#8100602
+  localizedDescription: LocKey#8100827
   tags:
     - !append-once DPAE_Cal9x19_NL
 
 Ammo.Cal9x19_HE:
+
+  buyPrice:
+    - !append-once DPAE_Price.TierEpic
+  sellPrice:
+    - !append-once DPAE_Price.TierEpic
+  quality: Quality.Epic
   $base: Ammo.Cal9x19
   friendlyName: '9x19mm_parabellum_high_explosive'
   displayName: LocKey#8100627
-  localizedDescription: LocKey#8100602
+  localizedDescription: LocKey#8100826
   tags:
     - !append-once DPAE_Cal9x19_HE

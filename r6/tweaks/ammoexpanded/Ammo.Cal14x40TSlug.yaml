@@ -7,9 +7,8 @@ Ammo.Cal14x40TSlug:
   appearanceSuffixesOwnerOverride: []
   attachmentSlots: []
   buyPrice:
-    - Price.Ammo
+    - DPAE_Price.Cal14x40TSlug_Base
     - Price.BuyPrice_StreetCred_Discount
-    - Price.PowerAmmo
   cameraForward: {x: 0, y: 0, z: 0}
   cameraUp: {x: 0, y: 0, z: 0}
   canDrop: True
@@ -59,8 +58,7 @@ Ammo.Cal14x40TSlug:
   requiredSlots: []
   savable: False
   sellPrice:
-    - Price.Ammo
-    - Price.PowerAmmo
+    - DPAE_Price.Cal14x40TSlug_Base
   slotPartList: []
   slotPartListPreset: []
   statModifierGroups: []
@@ -80,33 +78,57 @@ Ammo.Cal14x40TSlug:
 
 
 Ammo.Cal14x40TSlug_EMP:
+
+  buyPrice:
+    - !append-once DPAE_Price.TierRare
+  sellPrice:
+    - !append-once DPAE_Price.TierRare
+  quality: Quality.Rare
   $base: Ammo.Cal14x40TSlug
   friendlyName: '14x40mm_tungsten_slug_emp'
   displayName: LocKey#8100397
-  localizedDescription: LocKey#8100573
+  localizedDescription: LocKey#8100688
   tags:
     - !append-once DPAE_Cal14x40TSlug_EMP
 
 Ammo.Cal14x40TSlug_INC:
+
+  buyPrice:
+    - !append-once DPAE_Price.TierRare
+  sellPrice:
+    - !append-once DPAE_Price.TierRare
+  quality: Quality.Rare
   $base: Ammo.Cal14x40TSlug
   friendlyName: '14x40mm_tungsten_slug_incendiary'
   displayName: LocKey#8100398
-  localizedDescription: LocKey#8100573
+  localizedDescription: LocKey#8100687
   tags:
     - !append-once DPAE_Cal14x40TSlug_INC
 
 Ammo.Cal14x40TSlug_CHEM:
+
+  buyPrice:
+    - !append-once DPAE_Price.TierRare
+  sellPrice:
+    - !append-once DPAE_Price.TierRare
+  quality: Quality.Rare
   $base: Ammo.Cal14x40TSlug
   friendlyName: '14x40mm_tungsten_slug_chemical'
   displayName: LocKey#8100399
-  localizedDescription: LocKey#8100573
+  localizedDescription: LocKey#8100686
   tags:
     - !append-once DPAE_Cal14x40TSlug_CHEM
 
 Ammo.Cal14x40TSlug_HE:
+
+  buyPrice:
+    - !append-once DPAE_Price.TierEpic
+  sellPrice:
+    - !append-once DPAE_Price.TierEpic
+  quality: Quality.Epic
   $base: Ammo.Cal14x40TSlug
   friendlyName: '14x40mm_tungsten_slug_high_explosive'
   displayName: LocKey#8100561
-  localizedDescription: LocKey#8100573
+  localizedDescription: LocKey#8100685
   tags:
     - !append-once DPAE_Cal14x40TSlug_HE

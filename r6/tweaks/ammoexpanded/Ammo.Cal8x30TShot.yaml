@@ -7,9 +7,8 @@ Ammo.Cal8x30TShot:
   appearanceSuffixesOwnerOverride: []
   attachmentSlots: []
   buyPrice:
-    - Price.Ammo
+    - DPAE_Price.Cal8x30TShot_Base
     - Price.BuyPrice_StreetCred_Discount
-    - Price.PowerAmmo
   cameraForward: {x: 0, y: 0, z: 0}
   cameraUp: {x: 0, y: 0, z: 0}
   canDrop: True
@@ -59,8 +58,7 @@ Ammo.Cal8x30TShot:
   requiredSlots: []
   savable: False
   sellPrice:
-    - Price.Ammo
-    - Price.PowerAmmo
+    - DPAE_Price.Cal8x30TShot_Base
   slotPartList: []
   slotPartListPreset: []
   statModifierGroups: []
@@ -80,25 +78,43 @@ Ammo.Cal8x30TShot:
 
 
 Ammo.Cal8x30TShot_EMP:
+
+  buyPrice:
+    - !append-once DPAE_Price.TierRare
+  sellPrice:
+    - !append-once DPAE_Price.TierRare
+  quality: Quality.Rare
   $base: Ammo.Cal8x30TShot
   friendlyName: '8x30mm_tungsten_shot_emp'
   displayName: LocKey#8100489
-  localizedDescription: LocKey#8100600
+  localizedDescription: LocKey#8100821
   tags:
     - !append-once DPAE_Cal8x30TShot_EMP
 
 Ammo.Cal8x30TShot_INC:
+
+  buyPrice:
+    - !append-once DPAE_Price.TierRare
+  sellPrice:
+    - !append-once DPAE_Price.TierRare
+  quality: Quality.Rare
   $base: Ammo.Cal8x30TShot
   friendlyName: '8x30mm_tungsten_shot_incendiary'
   displayName: LocKey#8100490
-  localizedDescription: LocKey#8100600
+  localizedDescription: LocKey#8100820
   tags:
     - !append-once DPAE_Cal8x30TShot_INC
 
 Ammo.Cal8x30TShot_CHEM:
+
+  buyPrice:
+    - !append-once DPAE_Price.TierRare
+  sellPrice:
+    - !append-once DPAE_Price.TierRare
+  quality: Quality.Rare
   $base: Ammo.Cal8x30TShot
   friendlyName: '8x30mm_tungsten_shot_chemical'
   displayName: LocKey#8100491
-  localizedDescription: LocKey#8100600
+  localizedDescription: LocKey#8100819
   tags:
     - !append-once DPAE_Cal8x30TShot_CHEM

@@ -7,9 +7,8 @@ Ammo.Cal10x40Rocket:
   appearanceSuffixesOwnerOverride: []
   attachmentSlots: []
   buyPrice:
-    - Price.Ammo
+    - DPAE_Price.Cal10x40Rocket_Base
     - Price.BuyPrice_StreetCred_Discount
-    - Price.PowerAmmo
   cameraForward: {x: 0, y: 0, z: 0}
   cameraUp: {x: 0, y: 0, z: 0}
   canDrop: True
@@ -59,8 +58,7 @@ Ammo.Cal10x40Rocket:
   requiredSlots: []
   savable: False
   sellPrice:
-    - Price.Ammo
-    - Price.PowerAmmo
+    - DPAE_Price.Cal10x40Rocket_Base
   slotPartList: []
   slotPartListPreset: []
   statModifierGroups: []
@@ -79,38 +77,71 @@ Ammo.Cal10x40Rocket:
   weakspots: []
 
 Ammo.Cal10x40Rocket_HE:
+
+  buyPrice:
+    - !append-once DPAE_Price.TierEpic
+  sellPrice:
+    - !append-once DPAE_Price.TierEpic
+  quality: Quality.Epic
   $base: Ammo.Cal10x40Rocket
   friendlyName: '10x40mm_guided_rocket_high_explosive'
   displayName: LocKey#8100366
-  localizedDescription: LocKey#8100568
+  localizedDescription: LocKey#8100667
   tags:
     - !append-once DPAE_Cal10x40Rocket_HE
 
 Ammo.Cal10x40Rocket_INC:
+
+  buyPrice:
+    - !append-once DPAE_Price.TierRare
+  sellPrice:
+    - !append-once DPAE_Price.TierRare
+  quality: Quality.Rare
   $base: Ammo.Cal10x40Rocket
   friendlyName: '10x40mm_guided_rocket_incendiary'
   displayName: LocKey#8100367
-  localizedDescription: LocKey#8100568
+  localizedDescription: LocKey#8100666
   tags:
     - !append-once DPAE_Cal10x40Rocket_INC
 
 Ammo.Cal10x40Rocket_EMP:
+
+  buyPrice:
+    - !append-once DPAE_Price.TierRare
+  sellPrice:
+    - !append-once DPAE_Price.TierRare
+  quality: Quality.Rare
   $base: Ammo.Cal10x40Rocket
   friendlyName: '10x40mm_guided_rocket_emp'
   displayName: LocKey#8100605
-  localizedDescription: LocKey#8100568
+  localizedDescription: LocKey#8100665
   tags:
     - !append-once DPAE_Cal10x40Rocket_EMP
 
 Ammo.Cal10x40Rocket_CHEM:
+
+  buyPrice:
+    - !append-once DPAE_Price.TierRare
+  sellPrice:
+    - !append-once DPAE_Price.TierRare
+  quality: Quality.Rare
   $base: Ammo.Cal10x40Rocket
   friendlyName: '10x40mm_guided_rocket_chemical'
   displayName: LocKey#8100558
-  localizedDescription: LocKey#8100568
+  localizedDescription: LocKey#8100664
   tags:
     - !append-once DPAE_Cal10x40Rocket_CHEM
 
 Ammo.Cal10x40Rocket_Divided_CHEM:
+
+  buyPrice:
+    - DPAE_Price.Cal10x40Rocket_Base
+    - Price.BuyPrice_StreetCred_Discount
+    - DPAE_Price.TierLegendary
+  sellPrice:
+    - DPAE_Price.Cal10x40Rocket_Base
+    - DPAE_Price.TierLegendary
+  quality: Quality.Legendary
   $base: Ammo.Cal10x40Rocket_CHEM
   friendlyName: '10x40mm_guided_rocket_divided_signature'
   displayName: LocKey#8100638

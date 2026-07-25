@@ -7,9 +7,8 @@ Ammo.Cal7p62x39Sov:
   appearanceSuffixesOwnerOverride: []
   attachmentSlots: []
   buyPrice:
-    - Price.Ammo
+    - DPAE_Price.Cal7p62x39Sov_Base
     - Price.BuyPrice_StreetCred_Discount
-    - Price.PowerAmmo
   cameraForward: {x: 0, y: 0, z: 0}
   cameraUp: {x: 0, y: 0, z: 0}
   canDrop: True
@@ -59,8 +58,7 @@ Ammo.Cal7p62x39Sov:
   requiredSlots: []
   savable: False
   sellPrice:
-    - Price.Ammo
-    - Price.PowerAmmo
+    - DPAE_Price.Cal7p62x39Sov_Base
   slotPartList: []
   slotPartListPreset: []
   statModifierGroups: []
@@ -79,57 +77,99 @@ Ammo.Cal7p62x39Sov:
   weakspots: []
 
 Ammo.Cal7p62x39Sov_AP:
+
+  buyPrice:
+    - !append-once DPAE_Price.TierUncommon
+  sellPrice:
+    - !append-once DPAE_Price.TierUncommon
+  quality: Quality.Uncommon
   $base: Ammo.Cal7p62x39Sov
   friendlyName: '762x39mm_soviet_armor_piercing'
   displayName: LocKey#8100474
-  localizedDescription: LocKey#8100598
+  localizedDescription: LocKey#8100815
   tags:
     - !append-once DPAE_Cal7p62x39Sov_AP
 
 Ammo.Cal7p62x39Sov_HP:
+
+  buyPrice:
+    - !append-once DPAE_Price.TierUncommon
+  sellPrice:
+    - !append-once DPAE_Price.TierUncommon
+  quality: Quality.Uncommon
   $base: Ammo.Cal7p62x39Sov
   friendlyName: '762x39mm_soviet_hollow_point'
   displayName: LocKey#8100475
-  localizedDescription: LocKey#8100598
+  localizedDescription: LocKey#8100814
   tags:
     - !append-once DPAE_Cal7p62x39Sov_HP
 
 Ammo.Cal7p62x39Sov_EMP:
+
+  buyPrice:
+    - !append-once DPAE_Price.TierRare
+  sellPrice:
+    - !append-once DPAE_Price.TierRare
+  quality: Quality.Rare
   $base: Ammo.Cal7p62x39Sov
   friendlyName: '762x39mm_soviet_emp'
   displayName: LocKey#8100476
-  localizedDescription: LocKey#8100598
+  localizedDescription: LocKey#8100813
   tags:
     - !append-once DPAE_Cal7p62x39Sov_EMP
 
 Ammo.Cal7p62x39Sov_INC:
+
+  buyPrice:
+    - !append-once DPAE_Price.TierRare
+  sellPrice:
+    - !append-once DPAE_Price.TierRare
+  quality: Quality.Rare
   $base: Ammo.Cal7p62x39Sov
   friendlyName: '762x39mm_soviet_incendiary'
   displayName: LocKey#8100477
-  localizedDescription: LocKey#8100598
+  localizedDescription: LocKey#8100812
   tags:
     - !append-once DPAE_Cal7p62x39Sov_INC
 
 Ammo.Cal7p62x39Sov_CHEM:
+
+  buyPrice:
+    - !append-once DPAE_Price.TierRare
+  sellPrice:
+    - !append-once DPAE_Price.TierRare
+  quality: Quality.Rare
   $base: Ammo.Cal7p62x39Sov
   friendlyName: '762x39mm_soviet_chemical'
   displayName: LocKey#8100478
-  localizedDescription: LocKey#8100598
+  localizedDescription: LocKey#8100811
   tags:
     - !append-once DPAE_Cal7p62x39Sov_CHEM
 
 Ammo.Cal7p62x39Sov_NL:
+
+  buyPrice:
+    - !append-once DPAE_Price.TierUncommon
+  sellPrice:
+    - !append-once DPAE_Price.TierUncommon
+  quality: Quality.Uncommon
   $base: Ammo.Cal7p62x39Sov
   friendlyName: '762x39mm_soviet_non-lethal'
   displayName: LocKey#8100479
-  localizedDescription: LocKey#8100598
+  localizedDescription: LocKey#8100810
   tags:
     - !append-once DPAE_Cal7p62x39Sov_NL
 
 Ammo.Cal7p62x39Sov_HE:
+
+  buyPrice:
+    - !append-once DPAE_Price.TierEpic
+  sellPrice:
+    - !append-once DPAE_Price.TierEpic
+  quality: Quality.Epic
   $base: Ammo.Cal7p62x39Sov
   friendlyName: '762x39mm_soviet_high_explosive'
   displayName: LocKey#8100613
-  localizedDescription: LocKey#8100598
+  localizedDescription: LocKey#8100809
   tags:
     - !append-once DPAE_Cal7p62x39Sov_HE

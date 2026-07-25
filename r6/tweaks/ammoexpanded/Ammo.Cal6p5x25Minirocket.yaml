@@ -7,9 +7,8 @@ Ammo.Cal6p5x25Minirocket:
   appearanceSuffixesOwnerOverride: []
   attachmentSlots: []
   buyPrice:
-    - Price.Ammo
+    - DPAE_Price.Cal6p5x25Minirocket_Base
     - Price.BuyPrice_StreetCred_Discount
-    - Price.PowerAmmo
   cameraForward: {x: 0, y: 0, z: 0}
   cameraUp: {x: 0, y: 0, z: 0}
   canDrop: True
@@ -59,8 +58,7 @@ Ammo.Cal6p5x25Minirocket:
   requiredSlots: []
   savable: False
   sellPrice:
-    - Price.Ammo
-    - Price.PowerAmmo
+    - DPAE_Price.Cal6p5x25Minirocket_Base
   slotPartList: []
   slotPartListPreset: []
   statModifierGroups: []
@@ -80,33 +78,57 @@ Ammo.Cal6p5x25Minirocket:
 
 
 Ammo.Cal6p5x25Minirocket_EMP:
+
+  buyPrice:
+    - !append-once DPAE_Price.TierRare
+  sellPrice:
+    - !append-once DPAE_Price.TierRare
+  quality: Quality.Rare
   $base: Ammo.Cal6p5x25Minirocket
   friendlyName: '65x25mm_guided_minirocket_emp'
   displayName: LocKey#8100463
-  localizedDescription: LocKey#8100597
+  localizedDescription: LocKey#8100808
   tags:
     - !append-once DPAE_Cal6p5x25Minirocket_EMP
 
 Ammo.Cal6p5x25Minirocket_INC:
+
+  buyPrice:
+    - !append-once DPAE_Price.TierRare
+  sellPrice:
+    - !append-once DPAE_Price.TierRare
+  quality: Quality.Rare
   $base: Ammo.Cal6p5x25Minirocket
   friendlyName: '65x25mm_guided_minirocket_incendiary'
   displayName: LocKey#8100464
-  localizedDescription: LocKey#8100597
+  localizedDescription: LocKey#8100807
   tags:
     - !append-once DPAE_Cal6p5x25Minirocket_INC
 
 Ammo.Cal6p5x25Minirocket_CHEM:
+
+  buyPrice:
+    - !append-once DPAE_Price.TierRare
+  sellPrice:
+    - !append-once DPAE_Price.TierRare
+  quality: Quality.Rare
   $base: Ammo.Cal6p5x25Minirocket
   friendlyName: '65x25mm_guided_minirocket_chemical'
   displayName: LocKey#8100465
-  localizedDescription: LocKey#8100597
+  localizedDescription: LocKey#8100806
   tags:
     - !append-once DPAE_Cal6p5x25Minirocket_CHEM
 
 Ammo.Cal6p5x25Minirocket_HE:
+
+  buyPrice:
+    - !append-once DPAE_Price.TierEpic
+  sellPrice:
+    - !append-once DPAE_Price.TierEpic
+  quality: Quality.Epic
   $base: Ammo.Cal6p5x25Minirocket
   friendlyName: '65x25mm_guided_minirocket_high_explosive'
   displayName: LocKey#8100552
-  localizedDescription: LocKey#8100597
+  localizedDescription: LocKey#8100805
   tags:
     - !append-once DPAE_Cal6p5x25Minirocket_HE

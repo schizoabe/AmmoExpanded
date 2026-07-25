@@ -7,9 +7,8 @@ Ammo.Cal12p7x70Rocket:
   appearanceSuffixesOwnerOverride: []
   attachmentSlots: []
   buyPrice:
-    - Price.Ammo
+    - DPAE_Price.Cal12p7x70Rocket_Base
     - Price.BuyPrice_StreetCred_Discount
-    - Price.PowerAmmo
   cameraForward: {x: 0, y: 0, z: 0}
   cameraUp: {x: 0, y: 0, z: 0}
   canDrop: True
@@ -59,8 +58,7 @@ Ammo.Cal12p7x70Rocket:
   requiredSlots: []
   savable: False
   sellPrice:
-    - Price.Ammo
-    - Price.PowerAmmo
+    - DPAE_Price.Cal12p7x70Rocket_Base
   slotPartList: []
   slotPartListPreset: []
   statModifierGroups: []
@@ -79,33 +77,57 @@ Ammo.Cal12p7x70Rocket:
   weakspots: []
 
 Ammo.Cal12p7x70Rocket_HE:
+
+  buyPrice:
+    - !append-once DPAE_Price.TierEpic
+  sellPrice:
+    - !append-once DPAE_Price.TierEpic
+  quality: Quality.Epic
   $base: Ammo.Cal12p7x70Rocket
   friendlyName: '127x70mm_guided_rocket_high_explosive'
   displayName: LocKey#8100389
-  localizedDescription: LocKey#8100571
+  localizedDescription: LocKey#8100680
   tags:
     - !append-once DPAE_Cal12p7x70Rocket_HE
 
 Ammo.Cal12p7x70Rocket_INC:
+
+  buyPrice:
+    - !append-once DPAE_Price.TierRare
+  sellPrice:
+    - !append-once DPAE_Price.TierRare
+  quality: Quality.Rare
   $base: Ammo.Cal12p7x70Rocket
   friendlyName: '127x70mm_guided_rocket_incendiary'
   displayName: LocKey#8100390
-  localizedDescription: LocKey#8100571
+  localizedDescription: LocKey#8100679
   tags:
     - !append-once DPAE_Cal12p7x70Rocket_INC
 
 Ammo.Cal12p7x70Rocket_EMP:
+
+  buyPrice:
+    - !append-once DPAE_Price.TierRare
+  sellPrice:
+    - !append-once DPAE_Price.TierRare
+  quality: Quality.Rare
   $base: Ammo.Cal12p7x70Rocket
   friendlyName: '127x70mm_guided_rocket_emp'
   displayName: LocKey#8100607
-  localizedDescription: LocKey#8100571
+  localizedDescription: LocKey#8100678
   tags:
     - !append-once DPAE_Cal12p7x70Rocket_EMP
 
 Ammo.Cal12p7x70Rocket_CHEM:
+
+  buyPrice:
+    - !append-once DPAE_Price.TierRare
+  sellPrice:
+    - !append-once DPAE_Price.TierRare
+  quality: Quality.Rare
   $base: Ammo.Cal12p7x70Rocket
   friendlyName: '127x70mm_guided_rocket_chemical'
   displayName: LocKey#8100608
-  localizedDescription: LocKey#8100571
+  localizedDescription: LocKey#8100677
   tags:
     - !append-once DPAE_Cal12p7x70Rocket_CHEM

@@ -39,6 +39,9 @@ func DPAE_ComputeConversionPercent(instigator: wref<GameObject>, weapon: ref<Wea
 
 func DPAE_ApplyConversion(hitEvent: ref<gameHitEvent>, elementalType: gamedataDamageType, pct: Float) -> Void {
   let physicalValue = hitEvent.attackComputed.GetAttackValue(gamedataDamageType.Physical);
+  if physicalValue <= 0.0 {
+    return;
+  }
   let impliedBase = physicalValue / 0.7;
   let elementalAmount = impliedBase * pct;
   let newPhysical = MaxF(0.0, physicalValue - elementalAmount);

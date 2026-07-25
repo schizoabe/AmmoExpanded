@@ -140,7 +140,12 @@ protected cb func OnItemAddedToSlot(evt: ref<ItemAddedToSlot>) -> Bool {
   }
 
   let lockedVariant = DPAE_GetLockedVariant(this, weaponItemID, caliberTDBID);
-  this.dpae_npc_ammo = TDBID.IsValid(lockedVariant) ? lockedVariant : DPAE_RollNPCAmmoVariant(caliberTDBID);
+  if TDBID.IsValid(lockedVariant) {
+    this.dpae_npc_ammo = lockedVariant;
+  } else {
+    let forcedVariant = DPAE_GetNPCForcedVariant(this, weaponItemID, caliberTDBID);
+    this.dpae_npc_ammo = TDBID.IsValid(forcedVariant) ? forcedVariant : DPAE_RollNPCAmmoVariant(caliberTDBID);
+  }
 
   let recordItemType = TweakDBInterface.GetItemRecord(ItemID.GetTDBID(weaponItemID)) as WeaponItem_Record;
   if IsDefined(recordItemType) {

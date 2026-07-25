@@ -7,9 +7,8 @@ Ammo.Cal50BMG:
   appearanceSuffixesOwnerOverride: []
   attachmentSlots: []
   buyPrice:
-    - Price.Ammo
+    - DPAE_Price.Cal50BMG_Base
     - Price.BuyPrice_StreetCred_Discount
-    - Price.PowerAmmo
   cameraForward: {x: 0, y: 0, z: 0}
   cameraUp: {x: 0, y: 0, z: 0}
   canDrop: True
@@ -59,8 +58,7 @@ Ammo.Cal50BMG:
   requiredSlots: []
   savable: False
   sellPrice:
-    - Price.Ammo
-    - Price.PowerAmmo
+    - DPAE_Price.Cal50BMG_Base
   slotPartList: []
   slotPartListPreset: []
   statModifierGroups: []
@@ -79,57 +77,99 @@ Ammo.Cal50BMG:
   weakspots: []
 
 Ammo.Cal50BMG_AP:
+
+  buyPrice:
+    - !append-once DPAE_Price.TierUncommon
+  sellPrice:
+    - !append-once DPAE_Price.TierUncommon
+  quality: Quality.Uncommon
   $base: Ammo.Cal50BMG
   friendlyName: '50_bmg_nusa_armor_piercing'
   displayName: LocKey#8100346
-  localizedDescription: LocKey#8100590
+  localizedDescription: LocKey#8100766
   tags:
     - !append-once DPAE_Cal50BMG_AP
 
 Ammo.Cal50BMG_HP:
+
+  buyPrice:
+    - !append-once DPAE_Price.TierUncommon
+  sellPrice:
+    - !append-once DPAE_Price.TierUncommon
+  quality: Quality.Uncommon
   $base: Ammo.Cal50BMG
   friendlyName: '50_bmg_nusa_hollow_point'
   displayName: LocKey#8100347
-  localizedDescription: LocKey#8100590
+  localizedDescription: LocKey#8100765
   tags:
     - !append-once DPAE_Cal50BMG_HP
 
 Ammo.Cal50BMG_EMP:
+
+  buyPrice:
+    - !append-once DPAE_Price.TierRare
+  sellPrice:
+    - !append-once DPAE_Price.TierRare
+  quality: Quality.Rare
   $base: Ammo.Cal50BMG
   friendlyName: '50_bmg_nusa_emp'
   displayName: LocKey#8100348
-  localizedDescription: LocKey#8100590
+  localizedDescription: LocKey#8100764
   tags:
     - !append-once DPAE_Cal50BMG_EMP
 
 Ammo.Cal50BMG_INC:
+
+  buyPrice:
+    - !append-once DPAE_Price.TierRare
+  sellPrice:
+    - !append-once DPAE_Price.TierRare
+  quality: Quality.Rare
   $base: Ammo.Cal50BMG
   friendlyName: '50_bmg_nusa_incendiary'
   displayName: LocKey#8100349
-  localizedDescription: LocKey#8100590
+  localizedDescription: LocKey#8100763
   tags:
     - !append-once DPAE_Cal50BMG_INC
 
 Ammo.Cal50BMG_CHEM:
+
+  buyPrice:
+    - !append-once DPAE_Price.TierRare
+  sellPrice:
+    - !append-once DPAE_Price.TierRare
+  quality: Quality.Rare
   $base: Ammo.Cal50BMG
   friendlyName: '50_bmg_nusa_chemical'
   displayName: LocKey#8100350
-  localizedDescription: LocKey#8100590
+  localizedDescription: LocKey#8100762
   tags:
     - !append-once DPAE_Cal50BMG_CHEM
 
 Ammo.Cal50BMG_NL:
+
+  buyPrice:
+    - !append-once DPAE_Price.TierUncommon
+  sellPrice:
+    - !append-once DPAE_Price.TierUncommon
+  quality: Quality.Uncommon
   $base: Ammo.Cal50BMG
   friendlyName: '50_bmg_nusa_non-lethal'
   displayName: LocKey#8100351
-  localizedDescription: LocKey#8100590
+  localizedDescription: LocKey#8100761
   tags:
     - !append-once DPAE_Cal50BMG_NL
 
 Ammo.Cal50BMG_HE:
+
+  buyPrice:
+    - !append-once DPAE_Price.TierEpic
+  sellPrice:
+    - !append-once DPAE_Price.TierEpic
+  quality: Quality.Epic
   $base: Ammo.Cal50BMG
   friendlyName: '50_bmg_nusa_high_explosive'
   displayName: LocKey#8100634
-  localizedDescription: LocKey#8100590
+  localizedDescription: LocKey#8100760
   tags:
     - !append-once DPAE_Cal50BMG_HE

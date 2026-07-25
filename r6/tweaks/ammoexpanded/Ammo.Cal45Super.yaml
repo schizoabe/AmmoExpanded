@@ -7,9 +7,8 @@ Ammo.Cal45Super:
   appearanceSuffixesOwnerOverride: []
   attachmentSlots: []
   buyPrice:
-    - Price.Ammo
+    - DPAE_Price.Cal45Super_Base
     - Price.BuyPrice_StreetCred_Discount
-    - Price.PowerAmmo
   cameraForward: {x: 0, y: 0, z: 0}
   cameraUp: {x: 0, y: 0, z: 0}
   canDrop: True
@@ -59,8 +58,7 @@ Ammo.Cal45Super:
   requiredSlots: []
   savable: False
   sellPrice:
-    - Price.Ammo
-    - Price.PowerAmmo
+    - DPAE_Price.Cal45Super_Base
   slotPartList: []
   slotPartListPreset: []
   statModifierGroups: []
@@ -79,65 +77,113 @@ Ammo.Cal45Super:
   weakspots: []
 
 Ammo.Cal45Super_AP:
+
+  buyPrice:
+    - !append-once DPAE_Price.TierUncommon
+  sellPrice:
+    - !append-once DPAE_Price.TierUncommon
+  quality: Quality.Uncommon
   $base: Ammo.Cal45Super
   friendlyName: '45_super_armor_piercing'
   displayName: LocKey#8100311
-  localizedDescription: LocKey#8100584
+  localizedDescription: LocKey#8100734
   tags:
     - !append-once DPAE_Cal45Super_AP
 
 Ammo.Cal45Super_HP:
+
+  buyPrice:
+    - !append-once DPAE_Price.TierUncommon
+  sellPrice:
+    - !append-once DPAE_Price.TierUncommon
+  quality: Quality.Uncommon
   $base: Ammo.Cal45Super
   friendlyName: '45_super_hollow_point'
   displayName: LocKey#8100312
-  localizedDescription: LocKey#8100584
+  localizedDescription: LocKey#8100733
   tags:
     - !append-once DPAE_Cal45Super_HP
 
 Ammo.Cal45Super_EMP:
+
+  buyPrice:
+    - !append-once DPAE_Price.TierRare
+  sellPrice:
+    - !append-once DPAE_Price.TierRare
+  quality: Quality.Rare
   $base: Ammo.Cal45Super
   friendlyName: '45_super_emp'
   displayName: LocKey#8100313
-  localizedDescription: LocKey#8100584
+  localizedDescription: LocKey#8100732
   tags:
     - !append-once DPAE_Cal45Super_EMP
 
 Ammo.Cal45Super_INC:
+
+  buyPrice:
+    - !append-once DPAE_Price.TierRare
+  sellPrice:
+    - !append-once DPAE_Price.TierRare
+  quality: Quality.Rare
   $base: Ammo.Cal45Super
   friendlyName: '45_super_incendiary'
   displayName: LocKey#8100314
-  localizedDescription: LocKey#8100584
+  localizedDescription: LocKey#8100731
   tags:
     - !append-once DPAE_Cal45Super_INC
 
 Ammo.Cal45Super_CHEM:
+
+  buyPrice:
+    - !append-once DPAE_Price.TierRare
+  sellPrice:
+    - !append-once DPAE_Price.TierRare
+  quality: Quality.Rare
   $base: Ammo.Cal45Super
   friendlyName: '45_super_chemical'
   displayName: LocKey#8100315
-  localizedDescription: LocKey#8100584
+  localizedDescription: LocKey#8100730
   tags:
     - !append-once DPAE_Cal45Super_CHEM
 
 Ammo.Cal45Super_NL:
+
+  buyPrice:
+    - !append-once DPAE_Price.TierUncommon
+  sellPrice:
+    - !append-once DPAE_Price.TierUncommon
+  quality: Quality.Uncommon
   $base: Ammo.Cal45Super
   friendlyName: '45_super_non-lethal'
   displayName: LocKey#8100316
-  localizedDescription: LocKey#8100584
+  localizedDescription: LocKey#8100729
   tags:
     - !append-once DPAE_Cal45Super_NL
 
 Ammo.Cal45Super_Snakeshot:
+
+  buyPrice:
+    - !append-once DPAE_Price.TierUncommon
+  sellPrice:
+    - !append-once DPAE_Price.TierUncommon
+  quality: Quality.Uncommon
   $base: Ammo.Cal45Super
   friendlyName: '45_super_snakeshot'
   displayName: LocKey#8100617
-  localizedDescription: LocKey#8100584
+  localizedDescription: LocKey#8100728
   tags:
     - !append-once DPAE_Cal45Super_Snakeshot
 
 Ammo.Cal45Super_HE:
+
+  buyPrice:
+    - !append-once DPAE_Price.TierEpic
+  sellPrice:
+    - !append-once DPAE_Price.TierEpic
+  quality: Quality.Epic
   $base: Ammo.Cal45Super
   friendlyName: '45_super_high_explosive'
   displayName: LocKey#8100511
-  localizedDescription: LocKey#8100584
+  localizedDescription: LocKey#8100727
   tags:
     - !append-once DPAE_Cal45Super_HE

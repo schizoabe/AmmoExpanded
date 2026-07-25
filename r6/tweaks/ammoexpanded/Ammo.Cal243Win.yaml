@@ -7,9 +7,8 @@ Ammo.Cal243Win:
   appearanceSuffixesOwnerOverride: []
   attachmentSlots: []
   buyPrice:
-    - Price.Ammo
+    - DPAE_Price.Cal243Win_Base
     - Price.BuyPrice_StreetCred_Discount
-    - Price.PowerAmmo
   cameraForward: {x: 0, y: 0, z: 0}
   cameraUp: {x: 0, y: 0, z: 0}
   canDrop: True
@@ -59,8 +58,7 @@ Ammo.Cal243Win:
   requiredSlots: []
   savable: False
   sellPrice:
-    - Price.Ammo
-    - Price.PowerAmmo
+    - DPAE_Price.Cal243Win_Base
   slotPartList: []
   slotPartListPreset: []
   statModifierGroups: []
@@ -79,57 +77,99 @@ Ammo.Cal243Win:
   weakspots: []
 
 Ammo.Cal243Win_AP:
+
+  buyPrice:
+    - !append-once DPAE_Price.TierUncommon
+  sellPrice:
+    - !append-once DPAE_Price.TierUncommon
+  quality: Quality.Uncommon
   $base: Ammo.Cal243Win
   friendlyName: '243_winchester_armor_piercing'
   displayName: LocKey#8100304
-  localizedDescription: LocKey#8100581
+  localizedDescription: LocKey#8100718
   tags:
     - !append-once DPAE_Cal243Win_AP
 
 Ammo.Cal243Win_HP:
+
+  buyPrice:
+    - !append-once DPAE_Price.TierUncommon
+  sellPrice:
+    - !append-once DPAE_Price.TierUncommon
+  quality: Quality.Uncommon
   $base: Ammo.Cal243Win
   friendlyName: '243_winchester_hollow_point'
   displayName: LocKey#8100305
-  localizedDescription: LocKey#8100581
+  localizedDescription: LocKey#8100717
   tags:
     - !append-once DPAE_Cal243Win_HP
 
 Ammo.Cal243Win_EMP:
+
+  buyPrice:
+    - !append-once DPAE_Price.TierRare
+  sellPrice:
+    - !append-once DPAE_Price.TierRare
+  quality: Quality.Rare
   $base: Ammo.Cal243Win
   friendlyName: '243_winchester_emp'
   displayName: LocKey#8100306
-  localizedDescription: LocKey#8100581
+  localizedDescription: LocKey#8100716
   tags:
     - !append-once DPAE_Cal243Win_EMP
 
 Ammo.Cal243Win_INC:
+
+  buyPrice:
+    - !append-once DPAE_Price.TierRare
+  sellPrice:
+    - !append-once DPAE_Price.TierRare
+  quality: Quality.Rare
   $base: Ammo.Cal243Win
   friendlyName: '243_winchester_incendiary'
   displayName: LocKey#8100307
-  localizedDescription: LocKey#8100581
+  localizedDescription: LocKey#8100715
   tags:
     - !append-once DPAE_Cal243Win_INC
 
 Ammo.Cal243Win_CHEM:
+
+  buyPrice:
+    - !append-once DPAE_Price.TierRare
+  sellPrice:
+    - !append-once DPAE_Price.TierRare
+  quality: Quality.Rare
   $base: Ammo.Cal243Win
   friendlyName: '243_winchester_chemical'
   displayName: LocKey#8100308
-  localizedDescription: LocKey#8100581
+  localizedDescription: LocKey#8100714
   tags:
     - !append-once DPAE_Cal243Win_CHEM
 
 Ammo.Cal243Win_NL:
+
+  buyPrice:
+    - !append-once DPAE_Price.TierUncommon
+  sellPrice:
+    - !append-once DPAE_Price.TierUncommon
+  quality: Quality.Uncommon
   $base: Ammo.Cal243Win
   friendlyName: '243_winchester_non-lethal'
   displayName: LocKey#8100309
-  localizedDescription: LocKey#8100581
+  localizedDescription: LocKey#8100713
   tags:
     - !append-once DPAE_Cal243Win_NL
 
 Ammo.Cal243Win_HE:
+
+  buyPrice:
+    - !append-once DPAE_Price.TierEpic
+  sellPrice:
+    - !append-once DPAE_Price.TierEpic
+  quality: Quality.Epic
   $base: Ammo.Cal243Win
   friendlyName: '243_winchester_high_explosive'
   displayName: LocKey#8100630
-  localizedDescription: LocKey#8100581
+  localizedDescription: LocKey#8100712
   tags:
     - !append-once DPAE_Cal243Win_HE

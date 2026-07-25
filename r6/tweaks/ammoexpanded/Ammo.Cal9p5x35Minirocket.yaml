@@ -7,9 +7,8 @@ Ammo.Cal9p5x35Minirocket:
   appearanceSuffixesOwnerOverride: []
   attachmentSlots: []
   buyPrice:
-    - Price.Ammo
+    - DPAE_Price.Cal9p5x35Minirocket_Base
     - Price.BuyPrice_StreetCred_Discount
-    - Price.PowerAmmo
   cameraForward: {x: 0, y: 0, z: 0}
   cameraUp: {x: 0, y: 0, z: 0}
   canDrop: True
@@ -59,8 +58,7 @@ Ammo.Cal9p5x35Minirocket:
   requiredSlots: []
   savable: False
   sellPrice:
-    - Price.Ammo
-    - Price.PowerAmmo
+    - DPAE_Price.Cal9p5x35Minirocket_Base
   slotPartList: []
   slotPartListPreset: []
   statModifierGroups: []
@@ -80,14 +78,29 @@ Ammo.Cal9p5x35Minirocket:
 
 
 Ammo.Cal9p5x35Minirocket_EMP:
+
+  buyPrice:
+    - !append-once DPAE_Price.TierRare
+  sellPrice:
+    - !append-once DPAE_Price.TierRare
+  quality: Quality.Rare
   $base: Ammo.Cal9p5x35Minirocket
   friendlyName: '95x35mm_guided_minirocket_emp'
   displayName: LocKey#8100495
-  localizedDescription: LocKey#8100601
+  localizedDescription: LocKey#8100825
   tags:
     - !append-once DPAE_Cal9p5x35Minirocket_EMP
 
 Ammo.Cal9p5x35Minirocket_Yinglong_EMP:
+
+  buyPrice:
+    - DPAE_Price.Cal9p5x35Minirocket_Base
+    - Price.BuyPrice_StreetCred_Discount
+    - DPAE_Price.TierLegendary
+  sellPrice:
+    - DPAE_Price.Cal9p5x35Minirocket_Base
+    - DPAE_Price.TierLegendary
+  quality: Quality.Legendary
   $base: Ammo.Cal9p5x35Minirocket_EMP
   friendlyName: '95x35mm_guided_minirocket_yinglong_signature'
   displayName: LocKey#8100640
@@ -96,25 +109,43 @@ Ammo.Cal9p5x35Minirocket_Yinglong_EMP:
     - !append-once DPAE_Cal9p5x35Minirocket_Yinglong_EMP
 
 Ammo.Cal9p5x35Minirocket_INC:
+
+  buyPrice:
+    - !append-once DPAE_Price.TierRare
+  sellPrice:
+    - !append-once DPAE_Price.TierRare
+  quality: Quality.Rare
   $base: Ammo.Cal9p5x35Minirocket
   friendlyName: '95x35mm_guided_minirocket_incendiary'
   displayName: LocKey#8100496
-  localizedDescription: LocKey#8100601
+  localizedDescription: LocKey#8100824
   tags:
     - !append-once DPAE_Cal9p5x35Minirocket_INC
 
 Ammo.Cal9p5x35Minirocket_CHEM:
+
+  buyPrice:
+    - !append-once DPAE_Price.TierRare
+  sellPrice:
+    - !append-once DPAE_Price.TierRare
+  quality: Quality.Rare
   $base: Ammo.Cal9p5x35Minirocket
   friendlyName: '95x35mm_guided_minirocket_chemical'
   displayName: LocKey#8100497
-  localizedDescription: LocKey#8100601
+  localizedDescription: LocKey#8100823
   tags:
     - !append-once DPAE_Cal9p5x35Minirocket_CHEM
 
 Ammo.Cal9p5x35Minirocket_HE:
+
+  buyPrice:
+    - !append-once DPAE_Price.TierEpic
+  sellPrice:
+    - !append-once DPAE_Price.TierEpic
+  quality: Quality.Epic
   $base: Ammo.Cal9p5x35Minirocket
   friendlyName: '95x35mm_guided_minirocket_high_explosive'
   displayName: LocKey#8100553
-  localizedDescription: LocKey#8100601
+  localizedDescription: LocKey#8100822
   tags:
     - !append-once DPAE_Cal9p5x35Minirocket_HE

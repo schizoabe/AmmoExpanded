@@ -7,9 +7,8 @@ Ammo.Cal12p3x41UdaR:
   appearanceSuffixesOwnerOverride: []
   attachmentSlots: []
   buyPrice:
-    - Price.Ammo
+    - DPAE_Price.Cal12p3x41UdaR_Base
     - Price.BuyPrice_StreetCred_Discount
-    - Price.PowerAmmo
   cameraForward: {x: 0, y: 0, z: 0}
   cameraUp: {x: 0, y: 0, z: 0}
   canDrop: True
@@ -59,8 +58,7 @@ Ammo.Cal12p3x41UdaR:
   requiredSlots: []
   savable: False
   sellPrice:
-    - Price.Ammo
-    - Price.PowerAmmo
+    - DPAE_Price.Cal12p3x41UdaR_Base
   slotPartList: []
   slotPartListPreset: []
   statModifierGroups: []
@@ -79,49 +77,85 @@ Ammo.Cal12p3x41UdaR:
   weakspots: []
 
 Ammo.Cal12p3x41UdaR_AP:
+
+  buyPrice:
+    - !append-once DPAE_Price.TierUncommon
+  sellPrice:
+    - !append-once DPAE_Price.TierUncommon
+  quality: Quality.Uncommon
   $base: Ammo.Cal12p3x41UdaR
   friendlyName: '123x41mm_udar_armor_piercing'
   displayName: LocKey#8100385
-  localizedDescription: LocKey#8100570
+  localizedDescription: LocKey#8100676
   tags:
     - !append-once DPAE_Cal12p3x41UdaR_AP
 
 Ammo.Cal12p3x41UdaR_HP:
+
+  buyPrice:
+    - !append-once DPAE_Price.TierUncommon
+  sellPrice:
+    - !append-once DPAE_Price.TierUncommon
+  quality: Quality.Uncommon
   $base: Ammo.Cal12p3x41UdaR
   friendlyName: '123x41mm_udar_hollow_point'
   displayName: LocKey#8100386
-  localizedDescription: LocKey#8100570
+  localizedDescription: LocKey#8100675
   tags:
     - !append-once DPAE_Cal12p3x41UdaR_HP
 
 Ammo.Cal12p3x41UdaR_INC:
+
+  buyPrice:
+    - !append-once DPAE_Price.TierRare
+  sellPrice:
+    - !append-once DPAE_Price.TierRare
+  quality: Quality.Rare
   $base: Ammo.Cal12p3x41UdaR
   friendlyName: '123x41mm_udar_incendiary'
   displayName: LocKey#8100387
-  localizedDescription: LocKey#8100570
+  localizedDescription: LocKey#8100674
   tags:
     - !append-once DPAE_Cal12p3x41UdaR_INC
 
 Ammo.Cal12p3x41UdaR_HE:
+
+  buyPrice:
+    - !append-once DPAE_Price.TierEpic
+  sellPrice:
+    - !append-once DPAE_Price.TierEpic
+  quality: Quality.Epic
   $base: Ammo.Cal12p3x41UdaR
   friendlyName: '123x41mm_udar_high_explosive'
   displayName: LocKey#8100555
-  localizedDescription: LocKey#8100570
+  localizedDescription: LocKey#8100673
   tags:
     - !append-once DPAE_Cal12p3x41UdaR_HE
 
 Ammo.Cal12p3x41UdaR_CHEM:
+
+  buyPrice:
+    - !append-once DPAE_Price.TierRare
+  sellPrice:
+    - !append-once DPAE_Price.TierRare
+  quality: Quality.Rare
   $base: Ammo.Cal12p3x41UdaR
   friendlyName: '123x41mm_udar_chemical'
   displayName: LocKey#8100559
-  localizedDescription: LocKey#8100570
+  localizedDescription: LocKey#8100672
   tags:
     - !append-once DPAE_Cal12p3x41UdaR_CHEM
 
 Ammo.Cal12p3x41UdaR_Snakeshot:
+
+  buyPrice:
+    - !append-once DPAE_Price.TierUncommon
+  sellPrice:
+    - !append-once DPAE_Price.TierUncommon
+  quality: Quality.Uncommon
   $base: Ammo.Cal12p3x41UdaR
   friendlyName: '123x41mm_udar_snakeshot'
   displayName: LocKey#8100619
-  localizedDescription: LocKey#8100570
+  localizedDescription: LocKey#8100671
   tags:
     - !append-once DPAE_Cal12p3x41UdaR_Snakeshot

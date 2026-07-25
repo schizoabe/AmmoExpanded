@@ -7,9 +7,8 @@ Ammo.Cal10GaugeBuck:
   appearanceSuffixesOwnerOverride: []
   attachmentSlots: []
   buyPrice:
-    - Price.Ammo
+    - DPAE_Price.Cal10GaugeBuck_Base
     - Price.BuyPrice_StreetCred_Discount
-    - Price.PowerAmmo
   cameraForward: {x: 0, y: 0, z: 0}
   cameraUp: {x: 0, y: 0, z: 0}
   canDrop: True
@@ -59,8 +58,7 @@ Ammo.Cal10GaugeBuck:
   requiredSlots: []
   savable: False
   sellPrice:
-    - Price.Ammo
-    - Price.PowerAmmo
+    - DPAE_Price.Cal10GaugeBuck_Base
   slotPartList: []
   slotPartListPreset: []
   statModifierGroups: []
@@ -79,30 +77,57 @@ Ammo.Cal10GaugeBuck:
   weakspots: []
 
 Ammo.Cal10GaugeBuck_Slug:
+
+  buyPrice:
+    - !append-once DPAE_Price.TierUncommon
+  sellPrice:
+    - !append-once DPAE_Price.TierUncommon
+  quality: Quality.Uncommon
   $base: Ammo.Cal10GaugeBuck
   friendlyName: '10_gauge_buckshot_slug'
   displayName: LocKey#8100357
-  localizedDescription: LocKey#8100564
+  localizedDescription: LocKey#8100650
   tags:
     - !append-once DPAE_Cal10GaugeBuck_Slug
 
 Ammo.Cal10GaugeBuck_INC:
+
+  buyPrice:
+    - !append-once DPAE_Price.TierRare
+  sellPrice:
+    - !append-once DPAE_Price.TierRare
+  quality: Quality.Rare
   $base: Ammo.Cal10GaugeBuck
   friendlyName: '10_gauge_buckshot_incendiary'
   displayName: LocKey#8100358
-  localizedDescription: LocKey#8100564
+  localizedDescription: LocKey#8100649
   tags:
     - !append-once DPAE_Cal10GaugeBuck_INC
 
 Ammo.Cal10GaugeBuck_HE:
+
+  buyPrice:
+    - !append-once DPAE_Price.TierEpic
+  sellPrice:
+    - !append-once DPAE_Price.TierEpic
+  quality: Quality.Epic
   $base: Ammo.Cal10GaugeBuck
   friendlyName: '10_gauge_buckshot_high_explosive'
   displayName: LocKey#8100563
-  localizedDescription: LocKey#8100564
+  localizedDescription: LocKey#8100648
   tags:
     - !append-once DPAE_Cal10GaugeBuck_HE
 
 Ammo.Cal10GaugeBuck_Dezerter_HE:
+
+  buyPrice:
+    - DPAE_Price.Cal10GaugeBuck_Base
+    - Price.BuyPrice_StreetCred_Discount
+    - DPAE_Price.TierLegendary
+  sellPrice:
+    - DPAE_Price.Cal10GaugeBuck_Base
+    - DPAE_Price.TierLegendary
+  quality: Quality.Legendary
   $base: Ammo.Cal10GaugeBuck_HE
   friendlyName: '10_gauge_buckshot_dezerter_signature'
   displayName: LocKey#8100646

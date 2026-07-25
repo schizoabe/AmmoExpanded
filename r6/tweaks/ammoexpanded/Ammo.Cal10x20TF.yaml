@@ -7,9 +7,8 @@ Ammo.Cal10x20TF:
   appearanceSuffixesOwnerOverride: []
   attachmentSlots: []
   buyPrice:
-    - Price.Ammo
+    - DPAE_Price.Cal10x20TF_Base
     - Price.BuyPrice_StreetCred_Discount
-    - Price.PowerAmmo
   cameraForward: {x: 0, y: 0, z: 0}
   cameraUp: {x: 0, y: 0, z: 0}
   canDrop: True
@@ -59,8 +58,7 @@ Ammo.Cal10x20TF:
   requiredSlots: []
   savable: False
   sellPrice:
-    - Price.Ammo
-    - Price.PowerAmmo
+    - DPAE_Price.Cal10x20TF_Base
   slotPartList: []
   slotPartListPreset: []
   statModifierGroups: []
@@ -80,25 +78,43 @@ Ammo.Cal10x20TF:
 
 
 Ammo.Cal10x20TF_EMP:
+
+  buyPrice:
+    - !append-once DPAE_Price.TierRare
+  sellPrice:
+    - !append-once DPAE_Price.TierRare
+  quality: Quality.Rare
   $base: Ammo.Cal10x20TF
   friendlyName: '10x20mm_tungsten_flechettes_emp'
   displayName: LocKey#8100378
-  localizedDescription: LocKey#8100567
+  localizedDescription: LocKey#8100663
   tags:
     - !append-once DPAE_Cal10x20TF_EMP
 
 Ammo.Cal10x20TF_INC:
+
+  buyPrice:
+    - !append-once DPAE_Price.TierRare
+  sellPrice:
+    - !append-once DPAE_Price.TierRare
+  quality: Quality.Rare
   $base: Ammo.Cal10x20TF
   friendlyName: '10x20mm_tungsten_flechettes_incendiary'
   displayName: LocKey#8100379
-  localizedDescription: LocKey#8100567
+  localizedDescription: LocKey#8100662
   tags:
     - !append-once DPAE_Cal10x20TF_INC
 
 Ammo.Cal10x20TF_CHEM:
+
+  buyPrice:
+    - !append-once DPAE_Price.TierRare
+  sellPrice:
+    - !append-once DPAE_Price.TierRare
+  quality: Quality.Rare
   $base: Ammo.Cal10x20TF
   friendlyName: '10x20mm_tungsten_flechettes_chemical'
   displayName: LocKey#8100380
-  localizedDescription: LocKey#8100567
+  localizedDescription: LocKey#8100661
   tags:
     - !append-once DPAE_Cal10x20TF_CHEM

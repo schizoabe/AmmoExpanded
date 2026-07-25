@@ -1,0 +1,176 @@
+
+DPAE_Price.TierUncommon:
+  $base: Price.PriceMultiplier
+  value: 1.5
+
+DPAE_Price.TierRare:
+  $base: Price.PriceMultiplier
+  value: 2.5
+
+DPAE_Price.TierEpic:
+  $base: Price.PriceMultiplier
+  value: 4.0
+
+DPAE_Price.TierLegendary:
+  $base: Price.PriceMultiplier
+  value: 8.0
+
+DPAE_Price.Cal10GaugeBuck_Base:
+  $base: Price.PriceAdditive
+  value: 5
+
+DPAE_Price.Cal10GaugeFlech_Base:
+  $base: Price.PriceAdditive
+  value: 7
+
+DPAE_Price.Cal10mmAuto_Base:
+  $base: Price.PriceAdditive
+  value: 4
+
+DPAE_Price.Cal10x20TF_Base:
+  $base: Price.PriceAdditive
+  value: 4
+
+DPAE_Price.Cal10x40Rocket_Base:
+  $base: Price.PriceAdditive
+  value: 18
+
+DPAE_Price.Cal12Gauge_Base:
+  $base: Price.PriceAdditive
+  value: 4
+
+DPAE_Price.Cal12p3x41UdaR_Base:
+  $base: Price.PriceAdditive
+  value: 7
+
+DPAE_Price.Cal12p7x70Rocket_Base:
+  $base: Price.PriceAdditive
+  value: 50
+
+DPAE_Price.Cal12x45Rocket_Base:
+  $base: Price.PriceAdditive
+  value: 35
+
+DPAE_Price.Cal14x40TSlug_Base:
+  $base: Price.PriceAdditive
+  value: 15
+
+DPAE_Price.Cal14x70TSlugHE_Base:
+  $base: Price.PriceAdditive
+  value: 20
+
+DPAE_Price.Cal15x55Rocket_Base:
+  $base: Price.PriceAdditive
+  value: 40
+
+DPAE_Price.Cal15x80TSpike_Base:
+  $base: Price.PriceAdditive
+  value: 15
+
+DPAE_Price.Cal18x70Rocket_Base:
+  $base: Price.PriceAdditive
+  value: 50
+
+DPAE_Price.Cal20x102Vulcan_Base:
+  $base: Price.PriceAdditive
+  value: 100
+
+DPAE_Price.Cal22x126AC_Base:
+  $base: Price.PriceAdditive
+  value: 130
+
+DPAE_Price.Cal23x152Sov_Base:
+  $base: Price.PriceAdditive
+  value: 150
+
+DPAE_Price.Cal243Win_Base:
+  $base: Price.PriceAdditive
+  value: 10
+
+DPAE_Price.Cal3x10FlechCluster_Base:
+  $base: Price.PriceAdditive
+  value: 16
+
+DPAE_Price.Cal454Casull_Base:
+  $base: Price.PriceAdditive
+  value: 4
+
+DPAE_Price.Cal45Super_Base:
+  $base: Price.PriceAdditive
+  value: 2
+
+DPAE_Price.Cal45WinMag_Base:
+  $base: Price.PriceAdditive
+  value: 3
+
+DPAE_Price.Cal4Gauge_Base:
+  $base: Price.PriceAdditive
+  value: 18
+
+DPAE_Price.Cal4p7x10TF_Base:
+  $base: Price.PriceAdditive
+  value: 9
+
+DPAE_Price.Cal500Malour_Base:
+  $base: Price.PriceAdditive
+  value: 8
+
+DPAE_Price.Cal50AE_Base:
+  $base: Price.PriceAdditive
+  value: 6
+
+DPAE_Price.Cal50BMG_Base:
+  $base: Price.PriceAdditive
+  value: 20
+
+DPAE_Price.Cal50BeowulfOni_Base:
+  $base: Price.PriceAdditive
+  value: 7
+
+DPAE_Price.Cal5p45CT_Base:
+  $base: Price.PriceAdditive
+  value: 4
+
+DPAE_Price.Cal5p56CT_Base:
+  $base: Price.PriceAdditive
+  value: 4
+
+DPAE_Price.Cal5p56x45NUSA_Base:
+  $base: Price.PriceAdditive
+  value: 4
+
+DPAE_Price.Cal5p7x28TF_Base:
+  $base: Price.PriceAdditive
+  value: 4
+
+DPAE_Price.Cal6p5Arasaka_Base:
+  $base: Price.PriceAdditive
+  value: 6
+
+DPAE_Price.Cal6p5x25Minirocket_Base:
+  $base: Price.PriceAdditive
+  value: 15
+
+DPAE_Price.Cal7p62x39Sov_Base:
+  $base: Price.PriceAdditive
+  value: 5
+
+DPAE_Price.Cal8x30RailF_Base:
+  $base: Price.PriceAdditive
+  value: 5
+
+DPAE_Price.Cal8x30TShot_Base:
+  $base: Price.PriceAdditive
+  value: 5
+
+DPAE_Price.Cal9p5x35Minirocket_Base:
+  $base: Price.PriceAdditive
+  value: 12
+
+DPAE_Price.Cal9x19_Base:
+  $base: Price.PriceAdditive
+  value: 2
+
+DPAE_Price.Cal9x30TF_Base:
+  $base: Price.PriceAdditive
+  value: 3

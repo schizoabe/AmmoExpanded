@@ -3748,6 +3748,1322 @@
               "maleVariant": "",
               "primaryKey": "8100647",
               "secondaryKey": "AmmoExpanded-Cal10GaugeBuck-HE-SignatureDesc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "10 gauge shell loaded with lead shot. Over the past 40 years the cartridge has been primarily used for crowd control due to high stopping power, especially against cybernetically augmented rioters.",
+              "maleVariant": "",
+              "primaryKey": "8100648",
+              "secondaryKey": "AmmoExpanded-Cal10GaugeBuck-HE-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "10 gauge shell loaded with lead shot. Over the past 40 years the cartridge has been primarily used for crowd control due to high stopping power, especially against cybernetically augmented rioters.",
+              "maleVariant": "",
+              "primaryKey": "8100649",
+              "secondaryKey": "AmmoExpanded-Cal10GaugeBuck-INC-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "10 gauge shell loaded with lead shot. Over the past 40 years the cartridge has been primarily used for crowd control due to high stopping power, especially against cybernetically augmented rioters.",
+              "maleVariant": "",
+              "primaryKey": "8100650",
+              "secondaryKey": "AmmoExpanded-Cal10GaugeBuck-Slug-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "10 gauge shell loaded with fourteen tungsten flechettes. A custom load for the Satara, a magrail enhanced Igla platform. The Satara's external rails are capable of accelerating the flechettes to velocities exceeding 2700 meters per second. While standard buckshot excels in close-quarters riot control, it sees reduced performance against more armored targets. The tungsten flechette load for the Satara, when accelerated, are capable of penetrating through the highest grades of subdermal armor.",
+              "maleVariant": "",
+              "primaryKey": "8100651",
+              "secondaryKey": "AmmoExpanded-Cal10GaugeFlech-CHEM-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "10 gauge shell loaded with fourteen tungsten flechettes. A custom load for the Satara, a magrail enhanced Igla platform. The Satara's external rails are capable of accelerating the flechettes to velocities exceeding 2700 meters per second. While standard buckshot excels in close-quarters riot control, it sees reduced performance against more armored targets. The tungsten flechette load for the Satara, when accelerated, are capable of penetrating through the highest grades of subdermal armor.",
+              "maleVariant": "",
+              "primaryKey": "8100652",
+              "secondaryKey": "AmmoExpanded-Cal10GaugeFlech-INC-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "10 gauge shell loaded with fourteen tungsten flechettes. A custom load for the Satara, a magrail enhanced Igla platform. The Satara's external rails are capable of accelerating the flechettes to velocities exceeding 2700 meters per second. While standard buckshot excels in close-quarters riot control, it sees reduced performance against more armored targets. The tungsten flechette load for the Satara, when accelerated, are capable of penetrating through the highest grades of subdermal armor.",
+              "maleVariant": "",
+              "primaryKey": "8100653",
+              "secondaryKey": "AmmoExpanded-Cal10GaugeFlech-EMP-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "10mm copper-jacketed lead projectile housed in a high-tensile brass-alloy casing. Adopted by the FBI in 1989 as a direct response to the 1986 Miami shootout, where the insufficient stopping power of the service-issue 9mm proved fatal for two special agents. Later, the cartridge was adopted by Militech for their M221 Saratoga submachine gun, where stopping power is critical against cybernetically augmented threats.",
+              "maleVariant": "",
+              "primaryKey": "8100654",
+              "secondaryKey": "AmmoExpanded-Cal10mmAuto-HE-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "10mm copper-jacketed lead projectile housed in a high-tensile brass-alloy casing. Adopted by the FBI in 1989 as a direct response to the 1986 Miami shootout, where the insufficient stopping power of the service-issue 9mm proved fatal for two special agents. Later, the cartridge was adopted by Militech for their M221 Saratoga submachine gun, where stopping power is critical against cybernetically augmented threats.",
+              "maleVariant": "",
+              "primaryKey": "8100655",
+              "secondaryKey": "AmmoExpanded-Cal10mmAuto-NL-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "10mm copper-jacketed lead projectile housed in a high-tensile brass-alloy casing. Adopted by the FBI in 1989 as a direct response to the 1986 Miami shootout, where the insufficient stopping power of the service-issue 9mm proved fatal for two special agents. Later, the cartridge was adopted by Militech for their M221 Saratoga submachine gun, where stopping power is critical against cybernetically augmented threats.",
+              "maleVariant": "",
+              "primaryKey": "8100656",
+              "secondaryKey": "AmmoExpanded-Cal10mmAuto-CHEM-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "10mm copper-jacketed lead projectile housed in a high-tensile brass-alloy casing. Adopted by the FBI in 1989 as a direct response to the 1986 Miami shootout, where the insufficient stopping power of the service-issue 9mm proved fatal for two special agents. Later, the cartridge was adopted by Militech for their M221 Saratoga submachine gun, where stopping power is critical against cybernetically augmented threats.",
+              "maleVariant": "",
+              "primaryKey": "8100657",
+              "secondaryKey": "AmmoExpanded-Cal10mmAuto-INC-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "10mm copper-jacketed lead projectile housed in a high-tensile brass-alloy casing. Adopted by the FBI in 1989 as a direct response to the 1986 Miami shootout, where the insufficient stopping power of the service-issue 9mm proved fatal for two special agents. Later, the cartridge was adopted by Militech for their M221 Saratoga submachine gun, where stopping power is critical against cybernetically augmented threats.",
+              "maleVariant": "",
+              "primaryKey": "8100658",
+              "secondaryKey": "AmmoExpanded-Cal10mmAuto-EMP-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "10mm copper-jacketed lead projectile housed in a high-tensile brass-alloy casing. Adopted by the FBI in 1989 as a direct response to the 1986 Miami shootout, where the insufficient stopping power of the service-issue 9mm proved fatal for two special agents. Later, the cartridge was adopted by Militech for their M221 Saratoga submachine gun, where stopping power is critical against cybernetically augmented threats.",
+              "maleVariant": "",
+              "primaryKey": "8100659",
+              "secondaryKey": "AmmoExpanded-Cal10mmAuto-HP-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "10mm copper-jacketed lead projectile housed in a high-tensile brass-alloy casing. Adopted by the FBI in 1989 as a direct response to the 1986 Miami shootout, where the insufficient stopping power of the service-issue 9mm proved fatal for two special agents. Later, the cartridge was adopted by Militech for their M221 Saratoga submachine gun, where stopping power is critical against cybernetically augmented threats.",
+              "maleVariant": "",
+              "primaryKey": "8100660",
+              "secondaryKey": "AmmoExpanded-Cal10mmAuto-AP-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "10x20mm caseless tungsten flechettes engineered for the Arasaka JKE-X2 Kenshin platform. Its integrated magrail system accelerates these high-density projectiles to hyper-velocities exceeding 2700 meters per second. The flechettes effortlessly penetrate mid grades of subdermal armor.",
+              "maleVariant": "",
+              "primaryKey": "8100661",
+              "secondaryKey": "AmmoExpanded-Cal10x20TF-CHEM-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "10x20mm caseless tungsten flechettes engineered for the Arasaka JKE-X2 Kenshin platform. Its integrated magrail system accelerates these high-density projectiles to hyper-velocities exceeding 2700 meters per second. The flechettes effortlessly penetrate mid grades of subdermal armor.",
+              "maleVariant": "",
+              "primaryKey": "8100662",
+              "secondaryKey": "AmmoExpanded-Cal10x20TF-INC-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "10x20mm caseless tungsten flechettes engineered for the Arasaka JKE-X2 Kenshin platform. Its integrated magrail system accelerates these high-density projectiles to hyper-velocities exceeding 2700 meters per second. The flechettes effortlessly penetrate mid grades of subdermal armor.",
+              "maleVariant": "",
+              "primaryKey": "8100663",
+              "secondaryKey": "AmmoExpanded-Cal10x20TF-EMP-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "10x40mm guided minirocket. Composed of a lead projectile encapsulated in polymer, and a fin stabilized guidance system synced to the weapons onboard computer and users smart implant. The rocket is propelled by a compressed CHOO2 derivative at subsonic velocities. Max effective range of 500 meters. Primarily used in smart handguns.",
+              "maleVariant": "",
+              "primaryKey": "8100664",
+              "secondaryKey": "AmmoExpanded-Cal10x40Rocket-CHEM-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "10x40mm guided minirocket. Composed of a lead projectile encapsulated in polymer, and a fin stabilized guidance system synced to the weapons onboard computer and users smart implant. The rocket is propelled by a compressed CHOO2 derivative at subsonic velocities. Max effective range of 500 meters. Primarily used in smart handguns.",
+              "maleVariant": "",
+              "primaryKey": "8100665",
+              "secondaryKey": "AmmoExpanded-Cal10x40Rocket-EMP-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "10x40mm guided minirocket. Composed of a lead projectile encapsulated in polymer, and a fin stabilized guidance system synced to the weapons onboard computer and users smart implant. The rocket is propelled by a compressed CHOO2 derivative at subsonic velocities. Max effective range of 500 meters. Primarily used in smart handguns.",
+              "maleVariant": "",
+              "primaryKey": "8100666",
+              "secondaryKey": "AmmoExpanded-Cal10x40Rocket-INC-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "10x40mm guided minirocket. Composed of a lead projectile encapsulated in polymer, and a fin stabilized guidance system synced to the weapons onboard computer and users smart implant. The rocket is propelled by a compressed CHOO2 derivative at subsonic velocities. Max effective range of 500 meters. Primarily used in smart handguns.",
+              "maleVariant": "",
+              "primaryKey": "8100667",
+              "secondaryKey": "AmmoExpanded-Cal10x40Rocket-HE-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "12 gauge shell loaded with lead shot. Historically developed for medium-to-large game hunting, such as deer and wild boar. The platform has seen a significant shift in its primary application, becoming a standard choice for personal and home defense.",
+              "maleVariant": "",
+              "primaryKey": "8100668",
+              "secondaryKey": "AmmoExpanded-Cal12Gauge-HE-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "12 gauge shell loaded with lead shot. Historically developed for medium-to-large game hunting, such as deer and wild boar. The platform has seen a significant shift in its primary application, becoming a standard choice for personal and home defense.",
+              "maleVariant": "",
+              "primaryKey": "8100669",
+              "secondaryKey": "AmmoExpanded-Cal12Gauge-INC-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "12 gauge shell loaded with lead shot. Historically developed for medium-to-large game hunting, such as deer and wild boar. The platform has seen a significant shift in its primary application, becoming a standard choice for personal and home defense.",
+              "maleVariant": "",
+              "primaryKey": "8100670",
+              "secondaryKey": "AmmoExpanded-Cal12Gauge-Slug-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "12.3x41mm copper-jacketed lead projectile housed in a high-tensile brass-alloy casing. High velocity handgun cartridge. Darra Polytechnic aquired the schematics for the Udar revolver and it's related cartridges in 2055 after purchasing the defunct KBP Instrument Design Bureau. After several redesigns of both the revolver to reduce cost, and a shortening of the cartridge by several milimeters, the corporation released the DR-5 Nova to the public. It's compact size, powerful cartridge, and",
+              "maleVariant": "",
+              "primaryKey": "8100671",
+              "secondaryKey": "AmmoExpanded-Cal12p3x41UdaR-Snakeshot-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "12.3x41mm copper-jacketed lead projectile housed in a high-tensile brass-alloy casing. High velocity handgun cartridge. Darra Polytechnic aquired the schematics for the Udar revolver and it's related cartridges in 2055 after purchasing the defunct KBP Instrument Design Bureau. After several redesigns of both the revolver to reduce cost, and a shortening of the cartridge by several milimeters, the corporation released the DR-5 Nova to the public. It's compact size, powerful cartridge, and",
+              "maleVariant": "",
+              "primaryKey": "8100672",
+              "secondaryKey": "AmmoExpanded-Cal12p3x41UdaR-CHEM-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "12.3x41mm copper-jacketed lead projectile housed in a high-tensile brass-alloy casing. High velocity handgun cartridge. Darra Polytechnic aquired the schematics for the Udar revolver and it's related cartridges in 2055 after purchasing the defunct KBP Instrument Design Bureau. After several redesigns of both the revolver to reduce cost, and a shortening of the cartridge by several milimeters, the corporation released the DR-5 Nova to the public. It's compact size, powerful cartridge, and",
+              "maleVariant": "",
+              "primaryKey": "8100673",
+              "secondaryKey": "AmmoExpanded-Cal12p3x41UdaR-HE-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "12.3x41mm copper-jacketed lead projectile housed in a high-tensile brass-alloy casing. High velocity handgun cartridge. Darra Polytechnic aquired the schematics for the Udar revolver and it's related cartridges in 2055 after purchasing the defunct KBP Instrument Design Bureau. After several redesigns of both the revolver to reduce cost, and a shortening of the cartridge by several milimeters, the corporation released the DR-5 Nova to the public. It's compact size, powerful cartridge, and",
+              "maleVariant": "",
+              "primaryKey": "8100674",
+              "secondaryKey": "AmmoExpanded-Cal12p3x41UdaR-INC-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "12.3x41mm copper-jacketed lead projectile housed in a high-tensile brass-alloy casing. High velocity handgun cartridge. Darra Polytechnic aquired the schematics for the Udar revolver and it's related cartridges in 2055 after purchasing the defunct KBP Instrument Design Bureau. After several redesigns of both the revolver to reduce cost, and a shortening of the cartridge by several milimeters, the corporation released the DR-5 Nova to the public. It's compact size, powerful cartridge, and",
+              "maleVariant": "",
+              "primaryKey": "8100675",
+              "secondaryKey": "AmmoExpanded-Cal12p3x41UdaR-HP-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "12.3x41mm copper-jacketed lead projectile housed in a high-tensile brass-alloy casing. High velocity handgun cartridge. Darra Polytechnic aquired the schematics for the Udar revolver and it's related cartridges in 2055 after purchasing the defunct KBP Instrument Design Bureau. After several redesigns of both the revolver to reduce cost, and a shortening of the cartridge by several milimeters, the corporation released the DR-5 Nova to the public. It's compact size, powerful cartridge, and",
+              "maleVariant": "",
+              "primaryKey": "8100676",
+              "secondaryKey": "AmmoExpanded-Cal12p3x41UdaR-AP-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "Kang Tao proprietary 12.7x70mm guided rocket. Composed of a heavy lead projectile encapsulated in a polymer jacket as well as a fin stabilized guidance system synced to the weapons onboard computer and users smart implant. The rocket is propelled by a compressed CHOO2 derivative. Max effective range of 1km. Purpose-built for counter-drone operations and hunting FBCs and ACPA units in all environments.",
+              "maleVariant": "",
+              "primaryKey": "8100677",
+              "secondaryKey": "AmmoExpanded-Cal12p7x70Rocket-CHEM-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "Kang Tao proprietary 12.7x70mm guided rocket. Composed of a heavy lead projectile encapsulated in a polymer jacket as well as a fin stabilized guidance system synced to the weapons onboard computer and users smart implant. The rocket is propelled by a compressed CHOO2 derivative. Max effective range of 1km. Purpose-built for counter-drone operations and hunting FBCs and ACPA units in all environments.",
+              "maleVariant": "",
+              "primaryKey": "8100678",
+              "secondaryKey": "AmmoExpanded-Cal12p7x70Rocket-EMP-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "Kang Tao proprietary 12.7x70mm guided rocket. Composed of a heavy lead projectile encapsulated in a polymer jacket as well as a fin stabilized guidance system synced to the weapons onboard computer and users smart implant. The rocket is propelled by a compressed CHOO2 derivative. Max effective range of 1km. Purpose-built for counter-drone operations and hunting FBCs and ACPA units in all environments.",
+              "maleVariant": "",
+              "primaryKey": "8100679",
+              "secondaryKey": "AmmoExpanded-Cal12p7x70Rocket-INC-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "Kang Tao proprietary 12.7x70mm guided rocket. Composed of a heavy lead projectile encapsulated in a polymer jacket as well as a fin stabilized guidance system synced to the weapons onboard computer and users smart implant. The rocket is propelled by a compressed CHOO2 derivative. Max effective range of 1km. Purpose-built for counter-drone operations and hunting FBCs and ACPA units in all environments.",
+              "maleVariant": "",
+              "primaryKey": "8100680",
+              "secondaryKey": "AmmoExpanded-Cal12p7x70Rocket-HE-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "Militech proprietary 12x45mm guided rocket with a microtransmitter. Rocket engineered for the Hercules 3AX, a prototype smart assault rifle. Composed of a lead projectile encapsulated in polymer, and a fin stabilized guidance system synced to the weapons onboard computer. Unlike other smart weapons, the rockets are guided solely by the weapon's internal onboard computer and do not require the user to posess a specialized smart implant. The rocket is propelled by a CHOO2 derivative at subsonic velocities. Max effective range of 800 meters.",
+              "maleVariant": "",
+              "primaryKey": "8100681",
+              "secondaryKey": "AmmoExpanded-Cal12x45Rocket-EMP-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "Militech proprietary 12x45mm guided rocket with a microtransmitter. Rocket engineered for the Hercules 3AX, a prototype smart assault rifle. Composed of a lead projectile encapsulated in polymer, and a fin stabilized guidance system synced to the weapons onboard computer. Unlike other smart weapons, the rockets are guided solely by the weapon's internal onboard computer and do not require the user to posess a specialized smart implant. The rocket is propelled by a CHOO2 derivative at subsonic velocities. Max effective range of 800 meters.",
+              "maleVariant": "",
+              "primaryKey": "8100682",
+              "secondaryKey": "AmmoExpanded-Cal12x45Rocket-CHEM-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "Militech proprietary 12x45mm guided rocket with a microtransmitter. Rocket engineered for the Hercules 3AX, a prototype smart assault rifle. Composed of a lead projectile encapsulated in polymer, and a fin stabilized guidance system synced to the weapons onboard computer. Unlike other smart weapons, the rockets are guided solely by the weapon's internal onboard computer and do not require the user to posess a specialized smart implant. The rocket is propelled by a CHOO2 derivative at subsonic velocities. Max effective range of 800 meters.",
+              "maleVariant": "",
+              "primaryKey": "8100683",
+              "secondaryKey": "AmmoExpanded-Cal12x45Rocket-INC-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "Militech proprietary 12x45mm guided rocket with a microtransmitter. Rocket engineered for the Hercules 3AX, a prototype smart assault rifle. Composed of a lead projectile encapsulated in polymer, and a fin stabilized guidance system synced to the weapons onboard computer. Unlike other smart weapons, the rockets are guided solely by the weapon's internal onboard computer and do not require the user to posess a specialized smart implant. The rocket is propelled by a CHOO2 derivative at subsonic velocities. Max effective range of 800 meters.",
+              "maleVariant": "",
+              "primaryKey": "8100684",
+              "secondaryKey": "AmmoExpanded-Cal12x45Rocket-HE-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "14x40mm tungsten slug. Engineered by Techtronika for the RT-46 Burya, a magrail revolver capable of chambering four slugs. Each slug, when accelerated by the magrail system, penetrates high grades of subdermal armor with ease.",
+              "maleVariant": "",
+              "primaryKey": "8100685",
+              "secondaryKey": "AmmoExpanded-Cal14x40TSlug-HE-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "14x40mm tungsten slug. Engineered by Techtronika for the RT-46 Burya, a magrail revolver capable of chambering four slugs. Each slug, when accelerated by the magrail system, penetrates high grades of subdermal armor with ease.",
+              "maleVariant": "",
+              "primaryKey": "8100686",
+              "secondaryKey": "AmmoExpanded-Cal14x40TSlug-CHEM-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "14x40mm tungsten slug. Engineered by Techtronika for the RT-46 Burya, a magrail revolver capable of chambering four slugs. Each slug, when accelerated by the magrail system, penetrates high grades of subdermal armor with ease.",
+              "maleVariant": "",
+              "primaryKey": "8100687",
+              "secondaryKey": "AmmoExpanded-Cal14x40TSlug-INC-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "14x40mm tungsten slug. Engineered by Techtronika for the RT-46 Burya, a magrail revolver capable of chambering four slugs. Each slug, when accelerated by the magrail system, penetrates high grades of subdermal armor with ease.",
+              "maleVariant": "",
+              "primaryKey": "8100688",
+              "secondaryKey": "AmmoExpanded-Cal14x40TSlug-EMP-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "15x55mm guided rocket. Composed of a lead projectile encapsulated in polymer, and a fin stabilized guidance system synced to the weapons onboard computer and users smart implant. The rocket is propelled by a compressed CHOO2 derivative at subsonic velocities. Max effective range of 50 meters. Prominently used in the Serbian Rostovic DB-4 Palica.",
+              "maleVariant": "",
+              "primaryKey": "8100689",
+              "secondaryKey": "AmmoExpanded-Cal15x55Rocket-CHEM-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "15x55mm guided rocket. Composed of a lead projectile encapsulated in polymer, and a fin stabilized guidance system synced to the weapons onboard computer and users smart implant. The rocket is propelled by a compressed CHOO2 derivative at subsonic velocities. Max effective range of 50 meters. Prominently used in the Serbian Rostovic DB-4 Palica.",
+              "maleVariant": "",
+              "primaryKey": "8100690",
+              "secondaryKey": "AmmoExpanded-Cal15x55Rocket-EMP-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "15x55mm guided rocket. Composed of a lead projectile encapsulated in polymer, and a fin stabilized guidance system synced to the weapons onboard computer and users smart implant. The rocket is propelled by a compressed CHOO2 derivative at subsonic velocities. Max effective range of 50 meters. Prominently used in the Serbian Rostovic DB-4 Palica.",
+              "maleVariant": "",
+              "primaryKey": "8100691",
+              "secondaryKey": "AmmoExpanded-Cal15x55Rocket-INC-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "15x55mm guided rocket. Composed of a lead projectile encapsulated in polymer, and a fin stabilized guidance system synced to the weapons onboard computer and users smart implant. The rocket is propelled by a compressed CHOO2 derivative at subsonic velocities. Max effective range of 50 meters. Prominently used in the Serbian Rostovic DB-4 Palica.",
+              "maleVariant": "",
+              "primaryKey": "8100692",
+              "secondaryKey": "AmmoExpanded-Cal15x55Rocket-HE-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "15x80mm tungsten spike. Chambered in the Tsunami Nekomata, a magrail sniper rifle. Acclerated to velocities exceeding 2700 meters per second, it is capable of shattering titanium bones and penetrating the outer-plating of a Militech Dragoon.",
+              "maleVariant": "",
+              "primaryKey": "8100693",
+              "secondaryKey": "AmmoExpanded-Cal15x80TSpike-CHEM-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "15x80mm tungsten spike. Chambered in the Tsunami Nekomata, a magrail sniper rifle. Acclerated to velocities exceeding 2700 meters per second, it is capable of shattering titanium bones and penetrating the outer-plating of a Militech Dragoon.",
+              "maleVariant": "",
+              "primaryKey": "8100694",
+              "secondaryKey": "AmmoExpanded-Cal15x80TSpike-INC-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "15x80mm tungsten spike. Chambered in the Tsunami Nekomata, a magrail sniper rifle. Acclerated to velocities exceeding 2700 meters per second, it is capable of shattering titanium bones and penetrating the outer-plating of a Militech Dragoon.",
+              "maleVariant": "",
+              "primaryKey": "8100695",
+              "secondaryKey": "AmmoExpanded-Cal15x80TSpike-EMP-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "18x70mm guided rocket. Composed of a lead projectile encapsulated in polymer, and a fin stabilized guidance system synced to the weapons onboard computer and users smart implant. The rocket is propelled by a compressed CHOO2 derivative at subsonic velocities. Max effective range of 500 meters. Only used in the L-69 Zhou platform.",
+              "maleVariant": "",
+              "primaryKey": "8100696",
+              "secondaryKey": "AmmoExpanded-Cal18x70Rocket-CHEM-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "18x70mm guided rocket. Composed of a lead projectile encapsulated in polymer, and a fin stabilized guidance system synced to the weapons onboard computer and users smart implant. The rocket is propelled by a compressed CHOO2 derivative at subsonic velocities. Max effective range of 500 meters. Only used in the L-69 Zhou platform.",
+              "maleVariant": "",
+              "primaryKey": "8100697",
+              "secondaryKey": "AmmoExpanded-Cal18x70Rocket-EMP-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "18x70mm guided rocket. Composed of a lead projectile encapsulated in polymer, and a fin stabilized guidance system synced to the weapons onboard computer and users smart implant. The rocket is propelled by a compressed CHOO2 derivative at subsonic velocities. Max effective range of 500 meters. Only used in the L-69 Zhou platform.",
+              "maleVariant": "",
+              "primaryKey": "8100698",
+              "secondaryKey": "AmmoExpanded-Cal18x70Rocket-INC-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "18x70mm guided rocket. Composed of a lead projectile encapsulated in polymer, and a fin stabilized guidance system synced to the weapons onboard computer and users smart implant. The rocket is propelled by a compressed CHOO2 derivative at subsonic velocities. Max effective range of 500 meters. Only used in the L-69 Zhou platform.",
+              "maleVariant": "",
+              "primaryKey": "8100699",
+              "secondaryKey": "AmmoExpanded-Cal18x70Rocket-HE-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "20x102mm steel-jacketed lead projectile housed in a high tensile strength brass-alloy casing. Anti-borg and vehicle cartridge chambered in the Nokota NDI Osprey, a shoulder mounted autocannon capable of both burst and semiautomatic fire.",
+              "maleVariant": "",
+              "primaryKey": "8100700",
+              "secondaryKey": "AmmoExpanded-Cal20x102Vulcan-EMP-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "20x102mm steel-jacketed lead projectile housed in a high tensile strength brass-alloy casing. Anti-borg and vehicle cartridge chambered in the Nokota NDI Osprey, a shoulder mounted autocannon capable of both burst and semiautomatic fire.",
+              "maleVariant": "",
+              "primaryKey": "8100701",
+              "secondaryKey": "AmmoExpanded-Cal20x102Vulcan-CHEM-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "20x102mm steel-jacketed lead projectile housed in a high tensile strength brass-alloy casing. Anti-borg and vehicle cartridge chambered in the Nokota NDI Osprey, a shoulder mounted autocannon capable of both burst and semiautomatic fire.",
+              "maleVariant": "",
+              "primaryKey": "8100702",
+              "secondaryKey": "AmmoExpanded-Cal20x102Vulcan-INC-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "20x102mm steel-jacketed lead projectile housed in a high tensile strength brass-alloy casing. Anti-borg and vehicle cartridge chambered in the Nokota NDI Osprey, a shoulder mounted autocannon capable of both burst and semiautomatic fire.",
+              "maleVariant": "",
+              "primaryKey": "8100703",
+              "secondaryKey": "AmmoExpanded-Cal20x102Vulcan-HE-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "22x126mm cartridge composed of a steel-jacketed lead projectile housed in a high-tensile strength brass-alloy casing. Anti-borg and vehicle cartridge, seeing its first adoption in a military capacity by the Serbian military.",
+              "maleVariant": "",
+              "primaryKey": "8100704",
+              "secondaryKey": "AmmoExpanded-Cal22x126AC-EMP-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "22x126mm cartridge composed of a steel-jacketed lead projectile housed in a high-tensile strength brass-alloy casing. Anti-borg and vehicle cartridge, seeing its first adoption in a military capacity by the Serbian military.",
+              "maleVariant": "",
+              "primaryKey": "8100705",
+              "secondaryKey": "AmmoExpanded-Cal22x126AC-CHEM-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "22x126mm cartridge composed of a steel-jacketed lead projectile housed in a high-tensile strength brass-alloy casing. Anti-borg and vehicle cartridge, seeing its first adoption in a military capacity by the Serbian military.",
+              "maleVariant": "",
+              "primaryKey": "8100706",
+              "secondaryKey": "AmmoExpanded-Cal22x126AC-INC-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "22x126mm cartridge composed of a steel-jacketed lead projectile housed in a high-tensile strength brass-alloy casing. Anti-borg and vehicle cartridge, seeing its first adoption in a military capacity by the Serbian military.",
+              "maleVariant": "",
+              "primaryKey": "8100707",
+              "secondaryKey": "AmmoExpanded-Cal22x126AC-HE-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "23x152mm steel-jacketed tungsten projectile housed in a high tensile strength brass alloy casing. Due to the rise of cybernetically augmented threats, particuarly ACPA units and FBCs, the Soviet Union's VPK (Military-Industrial Commission) tasked the Techtronika corporation with devising a new sniper rifle that could reliably deal with these emerging threats. In 2001, Techtronika produced the SPT32 Grad, a bolt action, magazine fed sniper rifle chambering an anti-aircraft cartridge, 23x152mm. Initially, 300 units were provided to the KGB, but in the modern day these rifles can be found globally. Due to the lag in technological develop following the 4th Corporate War, especially in material science, this cartridge is still relevant for anti-borg operations.",
+              "maleVariant": "",
+              "primaryKey": "8100708",
+              "secondaryKey": "AmmoExpanded-Cal23x152Sov-CHEM-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "23x152mm steel-jacketed tungsten projectile housed in a high tensile strength brass alloy casing. Due to the rise of cybernetically augmented threats, particuarly ACPA units and FBCs, the Soviet Union's VPK (Military-Industrial Commission) tasked the Techtronika corporation with devising a new sniper rifle that could reliably deal with these emerging threats. In 2001, Techtronika produced the SPT32 Grad, a bolt action, magazine fed sniper rifle chambering an anti-aircraft cartridge, 23x152mm. Initially, 300 units were provided to the KGB, but in the modern day these rifles can be found globally. Due to the lag in technological develop following the 4th Corporate War, especially in material science, this cartridge is still relevant for anti-borg operations.",
+              "maleVariant": "",
+              "primaryKey": "8100709",
+              "secondaryKey": "AmmoExpanded-Cal23x152Sov-EMP-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "23x152mm steel-jacketed tungsten projectile housed in a high tensile strength brass alloy casing. Due to the rise of cybernetically augmented threats, particuarly ACPA units and FBCs, the Soviet Union's VPK (Military-Industrial Commission) tasked the Techtronika corporation with devising a new sniper rifle that could reliably deal with these emerging threats. In 2001, Techtronika produced the SPT32 Grad, a bolt action, magazine fed sniper rifle chambering an anti-aircraft cartridge, 23x152mm. Initially, 300 units were provided to the KGB, but in the modern day these rifles can be found globally. Due to the lag in technological develop following the 4th Corporate War, especially in material science, this cartridge is still relevant for anti-borg operations.",
+              "maleVariant": "",
+              "primaryKey": "8100710",
+              "secondaryKey": "AmmoExpanded-Cal23x152Sov-INC-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "23x152mm steel-jacketed tungsten projectile housed in a high tensile strength brass alloy casing. Due to the rise of cybernetically augmented threats, particuarly ACPA units and FBCs, the Soviet Union's VPK (Military-Industrial Commission) tasked the Techtronika corporation with devising a new sniper rifle that could reliably deal with these emerging threats. In 2001, Techtronika produced the SPT32 Grad, a bolt action, magazine fed sniper rifle chambering an anti-aircraft cartridge, 23x152mm. Initially, 300 units were provided to the KGB, but in the modern day these rifles can be found globally. Due to the lag in technological develop following the 4th Corporate War, especially in material science, this cartridge is still relevant for anti-borg operations.",
+              "maleVariant": "",
+              "primaryKey": "8100711",
+              "secondaryKey": "AmmoExpanded-Cal23x152Sov-HE-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "6.2x52mm polymer-jacketed lead projectile housed in a thermo-polymer casing. High stopping power, and can remove limbs with ease. Chambered in the Militech M251s Ajax.",
+              "maleVariant": "",
+              "primaryKey": "8100712",
+              "secondaryKey": "AmmoExpanded-Cal243Win-HE-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "6.2x52mm polymer-jacketed lead projectile housed in a thermo-polymer casing. High stopping power, and can remove limbs with ease. Chambered in the Militech M251s Ajax.",
+              "maleVariant": "",
+              "primaryKey": "8100713",
+              "secondaryKey": "AmmoExpanded-Cal243Win-NL-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "6.2x52mm polymer-jacketed lead projectile housed in a thermo-polymer casing. High stopping power, and can remove limbs with ease. Chambered in the Militech M251s Ajax.",
+              "maleVariant": "",
+              "primaryKey": "8100714",
+              "secondaryKey": "AmmoExpanded-Cal243Win-CHEM-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "6.2x52mm polymer-jacketed lead projectile housed in a thermo-polymer casing. High stopping power, and can remove limbs with ease. Chambered in the Militech M251s Ajax.",
+              "maleVariant": "",
+              "primaryKey": "8100715",
+              "secondaryKey": "AmmoExpanded-Cal243Win-INC-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "6.2x52mm polymer-jacketed lead projectile housed in a thermo-polymer casing. High stopping power, and can remove limbs with ease. Chambered in the Militech M251s Ajax.",
+              "maleVariant": "",
+              "primaryKey": "8100716",
+              "secondaryKey": "AmmoExpanded-Cal243Win-EMP-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "6.2x52mm polymer-jacketed lead projectile housed in a thermo-polymer casing. High stopping power, and can remove limbs with ease. Chambered in the Militech M251s Ajax.",
+              "maleVariant": "",
+              "primaryKey": "8100717",
+              "secondaryKey": "AmmoExpanded-Cal243Win-HP-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "6.2x52mm polymer-jacketed lead projectile housed in a thermo-polymer casing. High stopping power, and can remove limbs with ease. Chambered in the Militech M251s Ajax.",
+              "maleVariant": "",
+              "primaryKey": "8100718",
+              "secondaryKey": "AmmoExpanded-Cal243Win-AP-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "11.5x35mm copper-jacketed lead projectile housed in a brass case. Famously chambered in large revolvers, like the Taurus Raging Bull and Ruger Super Redhawk. Malorian continued the trend with their Overture platform, still a common sight on the streets and in the holsters of backcountry sheriffs.",
+              "maleVariant": "",
+              "primaryKey": "8100719",
+              "secondaryKey": "AmmoExpanded-Cal454Casull-HE-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "11.5x35mm copper-jacketed lead projectile housed in a brass case. Famously chambered in large revolvers, like the Taurus Raging Bull and Ruger Super Redhawk. Malorian continued the trend with their Overture platform, still a common sight on the streets and in the holsters of backcountry sheriffs.",
+              "maleVariant": "",
+              "primaryKey": "8100720",
+              "secondaryKey": "AmmoExpanded-Cal454Casull-Snakeshot-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "11.5x35mm copper-jacketed lead projectile housed in a brass case. Famously chambered in large revolvers, like the Taurus Raging Bull and Ruger Super Redhawk. Malorian continued the trend with their Overture platform, still a common sight on the streets and in the holsters of backcountry sheriffs.",
+              "maleVariant": "",
+              "primaryKey": "8100721",
+              "secondaryKey": "AmmoExpanded-Cal454Casull-NL-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "11.5x35mm copper-jacketed lead projectile housed in a brass case. Famously chambered in large revolvers, like the Taurus Raging Bull and Ruger Super Redhawk. Malorian continued the trend with their Overture platform, still a common sight on the streets and in the holsters of backcountry sheriffs.",
+              "maleVariant": "",
+              "primaryKey": "8100722",
+              "secondaryKey": "AmmoExpanded-Cal454Casull-CHEM-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "11.5x35mm copper-jacketed lead projectile housed in a brass case. Famously chambered in large revolvers, like the Taurus Raging Bull and Ruger Super Redhawk. Malorian continued the trend with their Overture platform, still a common sight on the streets and in the holsters of backcountry sheriffs.",
+              "maleVariant": "",
+              "primaryKey": "8100723",
+              "secondaryKey": "AmmoExpanded-Cal454Casull-INC-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "11.5x35mm copper-jacketed lead projectile housed in a brass case. Famously chambered in large revolvers, like the Taurus Raging Bull and Ruger Super Redhawk. Malorian continued the trend with their Overture platform, still a common sight on the streets and in the holsters of backcountry sheriffs.",
+              "maleVariant": "",
+              "primaryKey": "8100724",
+              "secondaryKey": "AmmoExpanded-Cal454Casull-EMP-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "11.5x35mm copper-jacketed lead projectile housed in a brass case. Famously chambered in large revolvers, like the Taurus Raging Bull and Ruger Super Redhawk. Malorian continued the trend with their Overture platform, still a common sight on the streets and in the holsters of backcountry sheriffs.",
+              "maleVariant": "",
+              "primaryKey": "8100725",
+              "secondaryKey": "AmmoExpanded-Cal454Casull-HP-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "11.5x35mm copper-jacketed lead projectile housed in a brass case. Famously chambered in large revolvers, like the Taurus Raging Bull and Ruger Super Redhawk. Malorian continued the trend with their Overture platform, still a common sight on the streets and in the holsters of backcountry sheriffs.",
+              "maleVariant": "",
+              "primaryKey": "8100726",
+              "secondaryKey": "AmmoExpanded-Cal454Casull-AP-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "11.43x23mm copper-jacketed lead projectile housed in a high tensile strength brass-alloy casing, allowing for higher pressure loads compared to the base cartridge. High velocity handgun cartridge. The resulting increased projectile velocity and improved stopping power is a neccesity in the modern world, where once standard threats have become significantly more dangerous due to the prevalence of cheaper grades of subdermal armor. Constituional Arms recommends all owners of their Liberty and Unity handguns to use this higher power cartridge.",
+              "maleVariant": "",
+              "primaryKey": "8100727",
+              "secondaryKey": "AmmoExpanded-Cal45Super-HE-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "11.43x23mm copper-jacketed lead projectile housed in a high tensile strength brass-alloy casing, allowing for higher pressure loads compared to the base cartridge. High velocity handgun cartridge. The resulting increased projectile velocity and improved stopping power is a neccesity in the modern world, where once standard threats have become significantly more dangerous due to the prevalence of cheaper grades of subdermal armor. Constituional Arms recommends all owners of their Liberty and Unity handguns to use this higher power cartridge.",
+              "maleVariant": "",
+              "primaryKey": "8100728",
+              "secondaryKey": "AmmoExpanded-Cal45Super-Snakeshot-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "11.43x23mm copper-jacketed lead projectile housed in a high tensile strength brass-alloy casing, allowing for higher pressure loads compared to the base cartridge. High velocity handgun cartridge. The resulting increased projectile velocity and improved stopping power is a neccesity in the modern world, where once standard threats have become significantly more dangerous due to the prevalence of cheaper grades of subdermal armor. Constituional Arms recommends all owners of their Liberty and Unity handguns to use this higher power cartridge.",
+              "maleVariant": "",
+              "primaryKey": "8100729",
+              "secondaryKey": "AmmoExpanded-Cal45Super-NL-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "11.43x23mm copper-jacketed lead projectile housed in a high tensile strength brass-alloy casing, allowing for higher pressure loads compared to the base cartridge. High velocity handgun cartridge. The resulting increased projectile velocity and improved stopping power is a neccesity in the modern world, where once standard threats have become significantly more dangerous due to the prevalence of cheaper grades of subdermal armor. Constituional Arms recommends all owners of their Liberty and Unity handguns to use this higher power cartridge.",
+              "maleVariant": "",
+              "primaryKey": "8100730",
+              "secondaryKey": "AmmoExpanded-Cal45Super-CHEM-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "11.43x23mm copper-jacketed lead projectile housed in a high tensile strength brass-alloy casing, allowing for higher pressure loads compared to the base cartridge. High velocity handgun cartridge. The resulting increased projectile velocity and improved stopping power is a neccesity in the modern world, where once standard threats have become significantly more dangerous due to the prevalence of cheaper grades of subdermal armor. Constituional Arms recommends all owners of their Liberty and Unity handguns to use this higher power cartridge.",
+              "maleVariant": "",
+              "primaryKey": "8100731",
+              "secondaryKey": "AmmoExpanded-Cal45Super-INC-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "11.43x23mm copper-jacketed lead projectile housed in a high tensile strength brass-alloy casing, allowing for higher pressure loads compared to the base cartridge. High velocity handgun cartridge. The resulting increased projectile velocity and improved stopping power is a neccesity in the modern world, where once standard threats have become significantly more dangerous due to the prevalence of cheaper grades of subdermal armor. Constituional Arms recommends all owners of their Liberty and Unity handguns to use this higher power cartridge.",
+              "maleVariant": "",
+              "primaryKey": "8100732",
+              "secondaryKey": "AmmoExpanded-Cal45Super-EMP-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "11.43x23mm copper-jacketed lead projectile housed in a high tensile strength brass-alloy casing, allowing for higher pressure loads compared to the base cartridge. High velocity handgun cartridge. The resulting increased projectile velocity and improved stopping power is a neccesity in the modern world, where once standard threats have become significantly more dangerous due to the prevalence of cheaper grades of subdermal armor. Constituional Arms recommends all owners of their Liberty and Unity handguns to use this higher power cartridge.",
+              "maleVariant": "",
+              "primaryKey": "8100733",
+              "secondaryKey": "AmmoExpanded-Cal45Super-HP-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "11.43x23mm copper-jacketed lead projectile housed in a high tensile strength brass-alloy casing, allowing for higher pressure loads compared to the base cartridge. High velocity handgun cartridge. The resulting increased projectile velocity and improved stopping power is a neccesity in the modern world, where once standard threats have become significantly more dangerous due to the prevalence of cheaper grades of subdermal armor. Constituional Arms recommends all owners of their Liberty and Unity handguns to use this higher power cartridge.",
+              "maleVariant": "",
+              "primaryKey": "8100734",
+              "secondaryKey": "AmmoExpanded-Cal45Super-AP-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "11.5x30.4mm copper-jacketed lead projectile housed in a high tensile strength brass-alloy casing. Longer than the base ACP casing by a few millimeters, allowing for higher pressure loads. Unlike the super variant, this cartridge can only fit in platforms specifically engineered to chamber and fire it. Tsunami is the only such manufacturer, engineering their Nue handgun with this cartridge in mind.",
+              "maleVariant": "",
+              "primaryKey": "8100735",
+              "secondaryKey": "AmmoExpanded-Cal45WinMag-HE-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "11.5x30.4mm copper-jacketed lead projectile housed in a high tensile strength brass-alloy casing. Longer than the base ACP casing by a few millimeters, allowing for higher pressure loads. Unlike the super variant, this cartridge can only fit in platforms specifically engineered to chamber and fire it. Tsunami is the only such manufacturer, engineering their Nue handgun with this cartridge in mind.",
+              "maleVariant": "",
+              "primaryKey": "8100736",
+              "secondaryKey": "AmmoExpanded-Cal45WinMag-Snakeshot-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "11.5x30.4mm copper-jacketed lead projectile housed in a high tensile strength brass-alloy casing. Longer than the base ACP casing by a few millimeters, allowing for higher pressure loads. Unlike the super variant, this cartridge can only fit in platforms specifically engineered to chamber and fire it. Tsunami is the only such manufacturer, engineering their Nue handgun with this cartridge in mind.",
+              "maleVariant": "",
+              "primaryKey": "8100737",
+              "secondaryKey": "AmmoExpanded-Cal45WinMag-NL-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "11.5x30.4mm copper-jacketed lead projectile housed in a high tensile strength brass-alloy casing. Longer than the base ACP casing by a few millimeters, allowing for higher pressure loads. Unlike the super variant, this cartridge can only fit in platforms specifically engineered to chamber and fire it. Tsunami is the only such manufacturer, engineering their Nue handgun with this cartridge in mind.",
+              "maleVariant": "",
+              "primaryKey": "8100738",
+              "secondaryKey": "AmmoExpanded-Cal45WinMag-CHEM-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "11.5x30.4mm copper-jacketed lead projectile housed in a high tensile strength brass-alloy casing. Longer than the base ACP casing by a few millimeters, allowing for higher pressure loads. Unlike the super variant, this cartridge can only fit in platforms specifically engineered to chamber and fire it. Tsunami is the only such manufacturer, engineering their Nue handgun with this cartridge in mind.",
+              "maleVariant": "",
+              "primaryKey": "8100739",
+              "secondaryKey": "AmmoExpanded-Cal45WinMag-INC-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "11.5x30.4mm copper-jacketed lead projectile housed in a high tensile strength brass-alloy casing. Longer than the base ACP casing by a few millimeters, allowing for higher pressure loads. Unlike the super variant, this cartridge can only fit in platforms specifically engineered to chamber and fire it. Tsunami is the only such manufacturer, engineering their Nue handgun with this cartridge in mind.",
+              "maleVariant": "",
+              "primaryKey": "8100740",
+              "secondaryKey": "AmmoExpanded-Cal45WinMag-EMP-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "11.5x30.4mm copper-jacketed lead projectile housed in a high tensile strength brass-alloy casing. Longer than the base ACP casing by a few millimeters, allowing for higher pressure loads. Unlike the super variant, this cartridge can only fit in platforms specifically engineered to chamber and fire it. Tsunami is the only such manufacturer, engineering their Nue handgun with this cartridge in mind.",
+              "maleVariant": "",
+              "primaryKey": "8100741",
+              "secondaryKey": "AmmoExpanded-Cal45WinMag-HP-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "11.5x30.4mm copper-jacketed lead projectile housed in a high tensile strength brass-alloy casing. Longer than the base ACP casing by a few millimeters, allowing for higher pressure loads. Unlike the super variant, this cartridge can only fit in platforms specifically engineered to chamber and fire it. Tsunami is the only such manufacturer, engineering their Nue handgun with this cartridge in mind.",
+              "maleVariant": "",
+              "primaryKey": "8100742",
+              "secondaryKey": "AmmoExpanded-Cal45WinMag-AP-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "4-gauge shell loaded with tungsten shot. This standard load was originally designed for hunting waterfowl. Due to global ecological collapse during the early 21st century, all species of waterfowl went extinct. Budget Arms, a few decades later, adopted the manufacturing specifications for various 4 gauge loads and the cartridge was repurposed for the Carnage platform.",
+              "maleVariant": "",
+              "primaryKey": "8100743",
+              "secondaryKey": "AmmoExpanded-Cal4Gauge-EMP-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "4-gauge shell loaded with tungsten shot. This standard load was originally designed for hunting waterfowl. Due to global ecological collapse during the early 21st century, all species of waterfowl went extinct. Budget Arms, a few decades later, adopted the manufacturing specifications for various 4 gauge loads and the cartridge was repurposed for the Carnage platform.",
+              "maleVariant": "",
+              "primaryKey": "8100744",
+              "secondaryKey": "AmmoExpanded-Cal4Gauge-HE-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "4-gauge shell loaded with tungsten shot. This standard load was originally designed for hunting waterfowl. Due to global ecological collapse during the early 21st century, all species of waterfowl went extinct. Budget Arms, a few decades later, adopted the manufacturing specifications for various 4 gauge loads and the cartridge was repurposed for the Carnage platform.",
+              "maleVariant": "",
+              "primaryKey": "8100745",
+              "secondaryKey": "AmmoExpanded-Cal4Gauge-INC-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "4-gauge shell loaded with tungsten shot. This standard load was originally designed for hunting waterfowl. Due to global ecological collapse during the early 21st century, all species of waterfowl went extinct. Budget Arms, a few decades later, adopted the manufacturing specifications for various 4 gauge loads and the cartridge was repurposed for the Carnage platform.",
+              "maleVariant": "",
+              "primaryKey": "8100746",
+              "secondaryKey": "AmmoExpanded-Cal4Gauge-Slug-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "Proprietary 4.7mm caseless tungsten flechettes engineered specifically for the Militech M-179 Achilles. The flechettes, when acclerated by the magrail system, exceed 2700 meters per second and are capable of penetrating high grades of subdermal armor and lightly armored vehicles.",
+              "maleVariant": "",
+              "primaryKey": "8100747",
+              "secondaryKey": "AmmoExpanded-Cal4p7x10TF-CHEM-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "Proprietary 4.7mm caseless tungsten flechettes engineered specifically for the Militech M-179 Achilles. The flechettes, when acclerated by the magrail system, exceed 2700 meters per second and are capable of penetrating high grades of subdermal armor and lightly armored vehicles.",
+              "maleVariant": "",
+              "primaryKey": "8100748",
+              "secondaryKey": "AmmoExpanded-Cal4p7x10TF-INC-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "Proprietary 4.7mm caseless tungsten flechettes engineered specifically for the Militech M-179 Achilles. The flechettes, when acclerated by the magrail system, exceed 2700 meters per second and are capable of penetrating high grades of subdermal armor and lightly armored vehicles.",
+              "maleVariant": "",
+              "primaryKey": "8100749",
+              "secondaryKey": "AmmoExpanded-Cal4p7x10TF-EMP-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "12.7x41mm steel-alloy jacketed, lead-encased tungsten projectile housed in a high-tensile strength nickel-alloy casing. Developed by Eran Malour, initially from design schematics for the 12.7x41mm S&W. Engineered specifically for the Malorian Arms 3516, a custom commission for the rockstar Johnny Silverhand in late 2022. Silverhand sought a handgun that packed a cartrigde big enough to stop a raging cyberpsycho fan at 10 paces, and he got it.",
+              "maleVariant": "",
+              "primaryKey": "8100750",
+              "secondaryKey": "AmmoExpanded-Cal500Malour-HE-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "12.7x41mm steel-alloy jacketed, lead-encased tungsten projectile housed in a high-tensile strength nickel-alloy casing. Developed by Eran Malour, initially from design schematics for the 12.7x41mm S&W. Engineered specifically for the Malorian Arms 3516, a custom commission for the rockstar Johnny Silverhand in late 2022. Silverhand sought a handgun that packed a cartrigde big enough to stop a raging cyberpsycho fan at 10 paces, and he got it.",
+              "maleVariant": "",
+              "primaryKey": "8100751",
+              "secondaryKey": "AmmoExpanded-Cal500Malour-INC-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "12.7x41mm steel-alloy jacketed, lead-encased tungsten projectile housed in a high-tensile strength nickel-alloy casing. Developed by Eran Malour, initially from design schematics for the 12.7x41mm S&W. Engineered specifically for the Malorian Arms 3516, a custom commission for the rockstar Johnny Silverhand in late 2022. Silverhand sought a handgun that packed a cartrigde big enough to stop a raging cyberpsycho fan at 10 paces, and he got it.",
+              "maleVariant": "",
+              "primaryKey": "8100752",
+              "secondaryKey": "AmmoExpanded-Cal500Malour-AP-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "12.7x33mm copper-jacketed lead projectile housed in a high-tensile brass-alloy casing. High velocity handgun cartridge. Famously chambered in the Desert Eagle, developed by Magnum Research Inc. Eran Malour, the founder of Malorian Arms, also chambered several custom handguns for rockstar Johnny Silverhand in this cartridge.",
+              "maleVariant": "",
+              "primaryKey": "8100753",
+              "secondaryKey": "AmmoExpanded-Cal50AE-HE-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "12.7x33mm copper-jacketed lead projectile housed in a high-tensile brass-alloy casing. High velocity handgun cartridge. Famously chambered in the Desert Eagle, developed by Magnum Research Inc. Eran Malour, the founder of Malorian Arms, also chambered several custom handguns for rockstar Johnny Silverhand in this cartridge.",
+              "maleVariant": "",
+              "primaryKey": "8100754",
+              "secondaryKey": "AmmoExpanded-Cal50AE-NL-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "12.7x33mm copper-jacketed lead projectile housed in a high-tensile brass-alloy casing. High velocity handgun cartridge. Famously chambered in the Desert Eagle, developed by Magnum Research Inc. Eran Malour, the founder of Malorian Arms, also chambered several custom handguns for rockstar Johnny Silverhand in this cartridge.",
+              "maleVariant": "",
+              "primaryKey": "8100755",
+              "secondaryKey": "AmmoExpanded-Cal50AE-CHEM-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "12.7x33mm copper-jacketed lead projectile housed in a high-tensile brass-alloy casing. High velocity handgun cartridge. Famously chambered in the Desert Eagle, developed by Magnum Research Inc. Eran Malour, the founder of Malorian Arms, also chambered several custom handguns for rockstar Johnny Silverhand in this cartridge.",
+              "maleVariant": "",
+              "primaryKey": "8100756",
+              "secondaryKey": "AmmoExpanded-Cal50AE-INC-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "12.7x33mm copper-jacketed lead projectile housed in a high-tensile brass-alloy casing. High velocity handgun cartridge. Famously chambered in the Desert Eagle, developed by Magnum Research Inc. Eran Malour, the founder of Malorian Arms, also chambered several custom handguns for rockstar Johnny Silverhand in this cartridge.",
+              "maleVariant": "",
+              "primaryKey": "8100757",
+              "secondaryKey": "AmmoExpanded-Cal50AE-EMP-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "12.7x33mm copper-jacketed lead projectile housed in a high-tensile brass-alloy casing. High velocity handgun cartridge. Famously chambered in the Desert Eagle, developed by Magnum Research Inc. Eran Malour, the founder of Malorian Arms, also chambered several custom handguns for rockstar Johnny Silverhand in this cartridge.",
+              "maleVariant": "",
+              "primaryKey": "8100758",
+              "secondaryKey": "AmmoExpanded-Cal50AE-HP-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "12.7x33mm copper-jacketed lead projectile housed in a high-tensile brass-alloy casing. High velocity handgun cartridge. Famously chambered in the Desert Eagle, developed by Magnum Research Inc. Eran Malour, the founder of Malorian Arms, also chambered several custom handguns for rockstar Johnny Silverhand in this cartridge.",
+              "maleVariant": "",
+              "primaryKey": "8100759",
+              "secondaryKey": "AmmoExpanded-Cal50AE-AP-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "12.7x99mm copper-jacketed lead projectile housed in a high-tensile strength brass-alloy casing. Originally developed as an anti-aircraft and vehicle round, it has remained in active service for over 150 years due to its enduring practicality. Primarily used today in anti-borg and drone operations, it's standard for eliminating more problematic cybernetically augmented threats.",
+              "maleVariant": "",
+              "primaryKey": "8100760",
+              "secondaryKey": "AmmoExpanded-Cal50BMG-HE-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "12.7x99mm copper-jacketed lead projectile housed in a high-tensile strength brass-alloy casing. Originally developed as an anti-aircraft and vehicle round, it has remained in active service for over 150 years due to its enduring practicality. Primarily used today in anti-borg and drone operations, it's standard for eliminating more problematic cybernetically augmented threats.",
+              "maleVariant": "",
+              "primaryKey": "8100761",
+              "secondaryKey": "AmmoExpanded-Cal50BMG-NL-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "12.7x99mm copper-jacketed lead projectile housed in a high-tensile strength brass-alloy casing. Originally developed as an anti-aircraft and vehicle round, it has remained in active service for over 150 years due to its enduring practicality. Primarily used today in anti-borg and drone operations, it's standard for eliminating more problematic cybernetically augmented threats.",
+              "maleVariant": "",
+              "primaryKey": "8100762",
+              "secondaryKey": "AmmoExpanded-Cal50BMG-CHEM-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "12.7x99mm copper-jacketed lead projectile housed in a high-tensile strength brass-alloy casing. Originally developed as an anti-aircraft and vehicle round, it has remained in active service for over 150 years due to its enduring practicality. Primarily used today in anti-borg and drone operations, it's standard for eliminating more problematic cybernetically augmented threats.",
+              "maleVariant": "",
+              "primaryKey": "8100763",
+              "secondaryKey": "AmmoExpanded-Cal50BMG-INC-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "12.7x99mm copper-jacketed lead projectile housed in a high-tensile strength brass-alloy casing. Originally developed as an anti-aircraft and vehicle round, it has remained in active service for over 150 years due to its enduring practicality. Primarily used today in anti-borg and drone operations, it's standard for eliminating more problematic cybernetically augmented threats.",
+              "maleVariant": "",
+              "primaryKey": "8100764",
+              "secondaryKey": "AmmoExpanded-Cal50BMG-EMP-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "12.7x99mm copper-jacketed lead projectile housed in a high-tensile strength brass-alloy casing. Originally developed as an anti-aircraft and vehicle round, it has remained in active service for over 150 years due to its enduring practicality. Primarily used today in anti-borg and drone operations, it's standard for eliminating more problematic cybernetically augmented threats.",
+              "maleVariant": "",
+              "primaryKey": "8100765",
+              "secondaryKey": "AmmoExpanded-Cal50BMG-HP-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "12.7x99mm copper-jacketed lead projectile housed in a high-tensile strength brass-alloy casing. Originally developed as an anti-aircraft and vehicle round, it has remained in active service for over 150 years due to its enduring practicality. Primarily used today in anti-borg and drone operations, it's standard for eliminating more problematic cybernetically augmented threats.",
+              "maleVariant": "",
+              "primaryKey": "8100766",
+              "secondaryKey": "AmmoExpanded-Cal50BMG-AP-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "12.7x42mm copper-jacketed lead projectile housed in a brass-alloy casing. This cartridge was originally developed to immobilize vehicles at Arasaka checkpoints, but has been practically phased out of corporation service. However, experienced mercs sometimes convert standard rifles to this caliber as despite the far higher recoil, its stopping power is near unbeatable.",
+              "maleVariant": "",
+              "primaryKey": "8100767",
+              "secondaryKey": "AmmoExpanded-Cal50BeowulfOni-HE-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "12.7x42mm copper-jacketed lead projectile housed in a brass-alloy casing. This cartridge was originally developed to immobilize vehicles at Arasaka checkpoints, but has been practically phased out of corporation service. However, experienced mercs sometimes convert standard rifles to this caliber as despite the far higher recoil, its stopping power is near unbeatable.",
+              "maleVariant": "",
+              "primaryKey": "8100768",
+              "secondaryKey": "AmmoExpanded-Cal50BeowulfOni-NL-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "12.7x42mm copper-jacketed lead projectile housed in a brass-alloy casing. This cartridge was originally developed to immobilize vehicles at Arasaka checkpoints, but has been practically phased out of corporation service. However, experienced mercs sometimes convert standard rifles to this caliber as despite the far higher recoil, its stopping power is near unbeatable.",
+              "maleVariant": "",
+              "primaryKey": "8100769",
+              "secondaryKey": "AmmoExpanded-Cal50BeowulfOni-CHEM-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "12.7x42mm copper-jacketed lead projectile housed in a brass-alloy casing. This cartridge was originally developed to immobilize vehicles at Arasaka checkpoints, but has been practically phased out of corporation service. However, experienced mercs sometimes convert standard rifles to this caliber as despite the far higher recoil, its stopping power is near unbeatable.",
+              "maleVariant": "",
+              "primaryKey": "8100770",
+              "secondaryKey": "AmmoExpanded-Cal50BeowulfOni-INC-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "12.7x42mm copper-jacketed lead projectile housed in a brass-alloy casing. This cartridge was originally developed to immobilize vehicles at Arasaka checkpoints, but has been practically phased out of corporation service. However, experienced mercs sometimes convert standard rifles to this caliber as despite the far higher recoil, its stopping power is near unbeatable.",
+              "maleVariant": "",
+              "primaryKey": "8100771",
+              "secondaryKey": "AmmoExpanded-Cal50BeowulfOni-EMP-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "12.7x42mm copper-jacketed lead projectile housed in a brass-alloy casing. This cartridge was originally developed to immobilize vehicles at Arasaka checkpoints, but has been practically phased out of corporation service. However, experienced mercs sometimes convert standard rifles to this caliber as despite the far higher recoil, its stopping power is near unbeatable.",
+              "maleVariant": "",
+              "primaryKey": "8100772",
+              "secondaryKey": "AmmoExpanded-Cal50BeowulfOni-HP-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "12.7x42mm copper-jacketed lead projectile housed in a brass-alloy casing. This cartridge was originally developed to immobilize vehicles at Arasaka checkpoints, but has been practically phased out of corporation service. However, experienced mercs sometimes convert standard rifles to this caliber as despite the far higher recoil, its stopping power is near unbeatable.",
+              "maleVariant": "",
+              "primaryKey": "8100773",
+              "secondaryKey": "AmmoExpanded-Cal50BeowulfOni-AP-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "5.45mm lead-core polymer jacketed projectile enveloped in propellant and then housed directly in a thermo-polymer casing with an aluminum base. Developed to replace legacy steel and brass cased cartridges, it never truly entered the market until 90 years after its initial conception. The telescoped design allows for the same capacity of propellant as traditional cartridges while also weighing 20-30% less due to extensive use of polymer in the casing and jacket.",
+              "maleVariant": "",
+              "primaryKey": "8100774",
+              "secondaryKey": "AmmoExpanded-Cal5p45CT-HE-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "5.45mm lead-core polymer jacketed projectile enveloped in propellant and then housed directly in a thermo-polymer casing with an aluminum base. Developed to replace legacy steel and brass cased cartridges, it never truly entered the market until 90 years after its initial conception. The telescoped design allows for the same capacity of propellant as traditional cartridges while also weighing 20-30% less due to extensive use of polymer in the casing and jacket.",
+              "maleVariant": "",
+              "primaryKey": "8100775",
+              "secondaryKey": "AmmoExpanded-Cal5p45CT-NL-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "5.45mm lead-core polymer jacketed projectile enveloped in propellant and then housed directly in a thermo-polymer casing with an aluminum base. Developed to replace legacy steel and brass cased cartridges, it never truly entered the market until 90 years after its initial conception. The telescoped design allows for the same capacity of propellant as traditional cartridges while also weighing 20-30% less due to extensive use of polymer in the casing and jacket.",
+              "maleVariant": "",
+              "primaryKey": "8100776",
+              "secondaryKey": "AmmoExpanded-Cal5p45CT-CHEM-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "5.45mm lead-core polymer jacketed projectile enveloped in propellant and then housed directly in a thermo-polymer casing with an aluminum base. Developed to replace legacy steel and brass cased cartridges, it never truly entered the market until 90 years after its initial conception. The telescoped design allows for the same capacity of propellant as traditional cartridges while also weighing 20-30% less due to extensive use of polymer in the casing and jacket.",
+              "maleVariant": "",
+              "primaryKey": "8100777",
+              "secondaryKey": "AmmoExpanded-Cal5p45CT-INC-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "5.45mm lead-core polymer jacketed projectile enveloped in propellant and then housed directly in a thermo-polymer casing with an aluminum base. Developed to replace legacy steel and brass cased cartridges, it never truly entered the market until 90 years after its initial conception. The telescoped design allows for the same capacity of propellant as traditional cartridges while also weighing 20-30% less due to extensive use of polymer in the casing and jacket.",
+              "maleVariant": "",
+              "primaryKey": "8100778",
+              "secondaryKey": "AmmoExpanded-Cal5p45CT-EMP-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "5.45mm lead-core polymer jacketed projectile enveloped in propellant and then housed directly in a thermo-polymer casing with an aluminum base. Developed to replace legacy steel and brass cased cartridges, it never truly entered the market until 90 years after its initial conception. The telescoped design allows for the same capacity of propellant as traditional cartridges while also weighing 20-30% less due to extensive use of polymer in the casing and jacket.",
+              "maleVariant": "",
+              "primaryKey": "8100779",
+              "secondaryKey": "AmmoExpanded-Cal5p45CT-HP-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "5.45mm lead-core polymer jacketed projectile enveloped in propellant and then housed directly in a thermo-polymer casing with an aluminum base. Developed to replace legacy steel and brass cased cartridges, it never truly entered the market until 90 years after its initial conception. The telescoped design allows for the same capacity of propellant as traditional cartridges while also weighing 20-30% less due to extensive use of polymer in the casing and jacket.",
+              "maleVariant": "",
+              "primaryKey": "8100780",
+              "secondaryKey": "AmmoExpanded-Cal5p45CT-AP-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "5.56mm lead-core polymer jacketed projectile enveloped in propellant and then housed directly in a thermo-polymer casing with an aluminum base. Developed to replace legacy steel and brass cased cartridges, it never truly entered the market until 85 years after its initial conception. Traditional cartridges, like 7.62x39, have mostly fallen in popularity globally and so have their platforms. The Nokota D5 Copperhead, chambered in 5.56mm CT, completely supplanted the niche the Kalashnikov held for more than 90 years. The telescoped design allows for the same capacity of propellant as traditional cartridges while also weighing 20-30% less due to extensive use of polymer in the casing and jacket.",
+              "maleVariant": "",
+              "primaryKey": "8100781",
+              "secondaryKey": "AmmoExpanded-Cal5p56CT-HE-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "5.56mm lead-core polymer jacketed projectile enveloped in propellant and then housed directly in a thermo-polymer casing with an aluminum base. Developed to replace legacy steel and brass cased cartridges, it never truly entered the market until 85 years after its initial conception. Traditional cartridges, like 7.62x39, have mostly fallen in popularity globally and so have their platforms. The Nokota D5 Copperhead, chambered in 5.56mm CT, completely supplanted the niche the Kalashnikov held for more than 90 years. The telescoped design allows for the same capacity of propellant as traditional cartridges while also weighing 20-30% less due to extensive use of polymer in the casing and jacket.",
+              "maleVariant": "",
+              "primaryKey": "8100782",
+              "secondaryKey": "AmmoExpanded-Cal5p56CT-NL-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "5.56mm lead-core polymer jacketed projectile enveloped in propellant and then housed directly in a thermo-polymer casing with an aluminum base. Developed to replace legacy steel and brass cased cartridges, it never truly entered the market until 85 years after its initial conception. Traditional cartridges, like 7.62x39, have mostly fallen in popularity globally and so have their platforms. The Nokota D5 Copperhead, chambered in 5.56mm CT, completely supplanted the niche the Kalashnikov held for more than 90 years. The telescoped design allows for the same capacity of propellant as traditional cartridges while also weighing 20-30% less due to extensive use of polymer in the casing and jacket.",
+              "maleVariant": "",
+              "primaryKey": "8100783",
+              "secondaryKey": "AmmoExpanded-Cal5p56CT-CHEM-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "5.56mm lead-core polymer jacketed projectile enveloped in propellant and then housed directly in a thermo-polymer casing with an aluminum base. Developed to replace legacy steel and brass cased cartridges, it never truly entered the market until 85 years after its initial conception. Traditional cartridges, like 7.62x39, have mostly fallen in popularity globally and so have their platforms. The Nokota D5 Copperhead, chambered in 5.56mm CT, completely supplanted the niche the Kalashnikov held for more than 90 years. The telescoped design allows for the same capacity of propellant as traditional cartridges while also weighing 20-30% less due to extensive use of polymer in the casing and jacket.",
+              "maleVariant": "",
+              "primaryKey": "8100784",
+              "secondaryKey": "AmmoExpanded-Cal5p56CT-INC-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "5.56mm lead-core polymer jacketed projectile enveloped in propellant and then housed directly in a thermo-polymer casing with an aluminum base. Developed to replace legacy steel and brass cased cartridges, it never truly entered the market until 85 years after its initial conception. Traditional cartridges, like 7.62x39, have mostly fallen in popularity globally and so have their platforms. The Nokota D5 Copperhead, chambered in 5.56mm CT, completely supplanted the niche the Kalashnikov held for more than 90 years. The telescoped design allows for the same capacity of propellant as traditional cartridges while also weighing 20-30% less due to extensive use of polymer in the casing and jacket.",
+              "maleVariant": "",
+              "primaryKey": "8100785",
+              "secondaryKey": "AmmoExpanded-Cal5p56CT-EMP-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "5.56mm lead-core polymer jacketed projectile enveloped in propellant and then housed directly in a thermo-polymer casing with an aluminum base. Developed to replace legacy steel and brass cased cartridges, it never truly entered the market until 85 years after its initial conception. Traditional cartridges, like 7.62x39, have mostly fallen in popularity globally and so have their platforms. The Nokota D5 Copperhead, chambered in 5.56mm CT, completely supplanted the niche the Kalashnikov held for more than 90 years. The telescoped design allows for the same capacity of propellant as traditional cartridges while also weighing 20-30% less due to extensive use of polymer in the casing and jacket.",
+              "maleVariant": "",
+              "primaryKey": "8100786",
+              "secondaryKey": "AmmoExpanded-Cal5p56CT-HP-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "5.56mm lead-core polymer jacketed projectile enveloped in propellant and then housed directly in a thermo-polymer casing with an aluminum base. Developed to replace legacy steel and brass cased cartridges, it never truly entered the market until 85 years after its initial conception. Traditional cartridges, like 7.62x39, have mostly fallen in popularity globally and so have their platforms. The Nokota D5 Copperhead, chambered in 5.56mm CT, completely supplanted the niche the Kalashnikov held for more than 90 years. The telescoped design allows for the same capacity of propellant as traditional cartridges while also weighing 20-30% less due to extensive use of polymer in the casing and jacket.",
+              "maleVariant": "",
+              "primaryKey": "8100787",
+              "secondaryKey": "AmmoExpanded-Cal5p56CT-AP-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "5.56x45mm copper-jacketed lead projectile housed in a brass casing. Designed for accurate automatic fire. As of the present day, it remains the standard-issue NUSA cartridge.",
+              "maleVariant": "",
+              "primaryKey": "8100788",
+              "secondaryKey": "AmmoExpanded-Cal5p56x45NUSA-HE-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "5.56x45mm copper-jacketed lead projectile housed in a brass casing. Designed for accurate automatic fire. As of the present day, it remains the standard-issue NUSA cartridge.",
+              "maleVariant": "",
+              "primaryKey": "8100789",
+              "secondaryKey": "AmmoExpanded-Cal5p56x45NUSA-NL-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "5.56x45mm copper-jacketed lead projectile housed in a brass casing. Designed for accurate automatic fire. As of the present day, it remains the standard-issue NUSA cartridge.",
+              "maleVariant": "",
+              "primaryKey": "8100790",
+              "secondaryKey": "AmmoExpanded-Cal5p56x45NUSA-CHEM-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "5.56x45mm copper-jacketed lead projectile housed in a brass casing. Designed for accurate automatic fire. As of the present day, it remains the standard-issue NUSA cartridge.",
+              "maleVariant": "",
+              "primaryKey": "8100791",
+              "secondaryKey": "AmmoExpanded-Cal5p56x45NUSA-INC-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "5.56x45mm copper-jacketed lead projectile housed in a brass casing. Designed for accurate automatic fire. As of the present day, it remains the standard-issue NUSA cartridge.",
+              "maleVariant": "",
+              "primaryKey": "8100792",
+              "secondaryKey": "AmmoExpanded-Cal5p56x45NUSA-EMP-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "5.56x45mm copper-jacketed lead projectile housed in a brass casing. Designed for accurate automatic fire. As of the present day, it remains the standard-issue NUSA cartridge.",
+              "maleVariant": "",
+              "primaryKey": "8100793",
+              "secondaryKey": "AmmoExpanded-Cal5p56x45NUSA-HP-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "5.56x45mm copper-jacketed lead projectile housed in a brass casing. Designed for accurate automatic fire. As of the present day, it remains the standard-issue NUSA cartridge.",
+              "maleVariant": "",
+              "primaryKey": "8100794",
+              "secondaryKey": "AmmoExpanded-Cal5p56x45NUSA-AP-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "5.7x28mm caseless tungsten flechettes engineered for the Militech M76-E Omaha platform. Its integrated magrail system accelerates these high-density projectiles to hyper-velocities exceeding 2700 meters per second. The flechettes effortlessly penetrate mid to high grades of subdermal armor.",
+              "maleVariant": "",
+              "primaryKey": "8100795",
+              "secondaryKey": "AmmoExpanded-Cal5p7x28TF-CHEM-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "5.7x28mm caseless tungsten flechettes engineered for the Militech M76-E Omaha platform. Its integrated magrail system accelerates these high-density projectiles to hyper-velocities exceeding 2700 meters per second. The flechettes effortlessly penetrate mid to high grades of subdermal armor.",
+              "maleVariant": "",
+              "primaryKey": "8100796",
+              "secondaryKey": "AmmoExpanded-Cal5p7x28TF-INC-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "5.7x28mm caseless tungsten flechettes engineered for the Militech M76-E Omaha platform. Its integrated magrail system accelerates these high-density projectiles to hyper-velocities exceeding 2700 meters per second. The flechettes effortlessly penetrate mid to high grades of subdermal armor.",
+              "maleVariant": "",
+              "primaryKey": "8100797",
+              "secondaryKey": "AmmoExpanded-Cal5p7x28TF-EMP-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "Proprietary 6.5mm steel-jacketed lead projectile housed in a brass-alloy casing. Reflecting the chauvinism of the zaibatsu-dominated Japanese government, Japanese security firms maintain a strict preference for domestically produced technologies, especially arms and ammunition. Consequently, Arasaka mandates proprietary gear for its security forces to ensure brand loyalty, advertisement, and most of all, top of the line performance. Cartridge chambered in the HJSH-18 Masamune and Nowaki.",
+              "maleVariant": "",
+              "primaryKey": "8100798",
+              "secondaryKey": "AmmoExpanded-Cal6p5Arasaka-HE-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "Proprietary 6.5mm steel-jacketed lead projectile housed in a brass-alloy casing. Reflecting the chauvinism of the zaibatsu-dominated Japanese government, Japanese security firms maintain a strict preference for domestically produced technologies, especially arms and ammunition. Consequently, Arasaka mandates proprietary gear for its security forces to ensure brand loyalty, advertisement, and most of all, top of the line performance. Cartridge chambered in the HJSH-18 Masamune and Nowaki.",
+              "maleVariant": "",
+              "primaryKey": "8100799",
+              "secondaryKey": "AmmoExpanded-Cal6p5Arasaka-NL-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "Proprietary 6.5mm steel-jacketed lead projectile housed in a brass-alloy casing. Reflecting the chauvinism of the zaibatsu-dominated Japanese government, Japanese security firms maintain a strict preference for domestically produced technologies, especially arms and ammunition. Consequently, Arasaka mandates proprietary gear for its security forces to ensure brand loyalty, advertisement, and most of all, top of the line performance. Cartridge chambered in the HJSH-18 Masamune and Nowaki.",
+              "maleVariant": "",
+              "primaryKey": "8100800",
+              "secondaryKey": "AmmoExpanded-Cal6p5Arasaka-CHEM-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "Proprietary 6.5mm steel-jacketed lead projectile housed in a brass-alloy casing. Reflecting the chauvinism of the zaibatsu-dominated Japanese government, Japanese security firms maintain a strict preference for domestically produced technologies, especially arms and ammunition. Consequently, Arasaka mandates proprietary gear for its security forces to ensure brand loyalty, advertisement, and most of all, top of the line performance. Cartridge chambered in the HJSH-18 Masamune and Nowaki.",
+              "maleVariant": "",
+              "primaryKey": "8100801",
+              "secondaryKey": "AmmoExpanded-Cal6p5Arasaka-INC-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "Proprietary 6.5mm steel-jacketed lead projectile housed in a brass-alloy casing. Reflecting the chauvinism of the zaibatsu-dominated Japanese government, Japanese security firms maintain a strict preference for domestically produced technologies, especially arms and ammunition. Consequently, Arasaka mandates proprietary gear for its security forces to ensure brand loyalty, advertisement, and most of all, top of the line performance. Cartridge chambered in the HJSH-18 Masamune and Nowaki.",
+              "maleVariant": "",
+              "primaryKey": "8100802",
+              "secondaryKey": "AmmoExpanded-Cal6p5Arasaka-EMP-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "Proprietary 6.5mm steel-jacketed lead projectile housed in a brass-alloy casing. Reflecting the chauvinism of the zaibatsu-dominated Japanese government, Japanese security firms maintain a strict preference for domestically produced technologies, especially arms and ammunition. Consequently, Arasaka mandates proprietary gear for its security forces to ensure brand loyalty, advertisement, and most of all, top of the line performance. Cartridge chambered in the HJSH-18 Masamune and Nowaki.",
+              "maleVariant": "",
+              "primaryKey": "8100803",
+              "secondaryKey": "AmmoExpanded-Cal6p5Arasaka-HP-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "Proprietary 6.5mm steel-jacketed lead projectile housed in a brass-alloy casing. Reflecting the chauvinism of the zaibatsu-dominated Japanese government, Japanese security firms maintain a strict preference for domestically produced technologies, especially arms and ammunition. Consequently, Arasaka mandates proprietary gear for its security forces to ensure brand loyalty, advertisement, and most of all, top of the line performance. Cartridge chambered in the HJSH-18 Masamune and Nowaki.",
+              "maleVariant": "",
+              "primaryKey": "8100804",
+              "secondaryKey": "AmmoExpanded-Cal6p5Arasaka-AP-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "6.5x25mm guided minirocket. Composed of a lead projectile encapsulated in polymer, and a fin stabilized guidance system synced to the weapons onboard computer and users smart implant. The rocket is propelled by a compressed CHOO2 derivative at subsonic velocities. Max effective range of 100 meters. Primarily used in smart handguns.",
+              "maleVariant": "",
+              "primaryKey": "8100805",
+              "secondaryKey": "AmmoExpanded-Cal6p5x25Minirocket-HE-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "6.5x25mm guided minirocket. Composed of a lead projectile encapsulated in polymer, and a fin stabilized guidance system synced to the weapons onboard computer and users smart implant. The rocket is propelled by a compressed CHOO2 derivative at subsonic velocities. Max effective range of 100 meters. Primarily used in smart handguns.",
+              "maleVariant": "",
+              "primaryKey": "8100806",
+              "secondaryKey": "AmmoExpanded-Cal6p5x25Minirocket-CHEM-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "6.5x25mm guided minirocket. Composed of a lead projectile encapsulated in polymer, and a fin stabilized guidance system synced to the weapons onboard computer and users smart implant. The rocket is propelled by a compressed CHOO2 derivative at subsonic velocities. Max effective range of 100 meters. Primarily used in smart handguns.",
+              "maleVariant": "",
+              "primaryKey": "8100807",
+              "secondaryKey": "AmmoExpanded-Cal6p5x25Minirocket-INC-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "6.5x25mm guided minirocket. Composed of a lead projectile encapsulated in polymer, and a fin stabilized guidance system synced to the weapons onboard computer and users smart implant. The rocket is propelled by a compressed CHOO2 derivative at subsonic velocities. Max effective range of 100 meters. Primarily used in smart handguns.",
+              "maleVariant": "",
+              "primaryKey": "8100808",
+              "secondaryKey": "AmmoExpanded-Cal6p5x25Minirocket-EMP-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "7.62x39mm copper-jacketed lead projectile housed in a steel casing. Renowned by revolutionists the world over as the \"round of the revolution\", this intermediate cartridge was once a staple of Soviet-bloc arsenals, though it has seen a sharp decline in global popularity following the widespread obsolescence of the platforms designed to fire it. Notably, except for the Tsunami Kyubi, which continues to chamber this cartridge. Tsunami has offered no public justification for its continued use of this legacy chambering.",
+              "maleVariant": "",
+              "primaryKey": "8100809",
+              "secondaryKey": "AmmoExpanded-Cal7p62x39Sov-HE-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "7.62x39mm copper-jacketed lead projectile housed in a steel casing. Renowned by revolutionists the world over as the \"round of the revolution\", this intermediate cartridge was once a staple of Soviet-bloc arsenals, though it has seen a sharp decline in global popularity following the widespread obsolescence of the platforms designed to fire it. Notably, except for the Tsunami Kyubi, which continues to chamber this cartridge. Tsunami has offered no public justification for its continued use of this legacy chambering.",
+              "maleVariant": "",
+              "primaryKey": "8100810",
+              "secondaryKey": "AmmoExpanded-Cal7p62x39Sov-NL-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "7.62x39mm copper-jacketed lead projectile housed in a steel casing. Renowned by revolutionists the world over as the \"round of the revolution\", this intermediate cartridge was once a staple of Soviet-bloc arsenals, though it has seen a sharp decline in global popularity following the widespread obsolescence of the platforms designed to fire it. Notably, except for the Tsunami Kyubi, which continues to chamber this cartridge. Tsunami has offered no public justification for its continued use of this legacy chambering.",
+              "maleVariant": "",
+              "primaryKey": "8100811",
+              "secondaryKey": "AmmoExpanded-Cal7p62x39Sov-CHEM-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "7.62x39mm copper-jacketed lead projectile housed in a steel casing. Renowned by revolutionists the world over as the \"round of the revolution\", this intermediate cartridge was once a staple of Soviet-bloc arsenals, though it has seen a sharp decline in global popularity following the widespread obsolescence of the platforms designed to fire it. Notably, except for the Tsunami Kyubi, which continues to chamber this cartridge. Tsunami has offered no public justification for its continued use of this legacy chambering.",
+              "maleVariant": "",
+              "primaryKey": "8100812",
+              "secondaryKey": "AmmoExpanded-Cal7p62x39Sov-INC-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "7.62x39mm copper-jacketed lead projectile housed in a steel casing. Renowned by revolutionists the world over as the \"round of the revolution\", this intermediate cartridge was once a staple of Soviet-bloc arsenals, though it has seen a sharp decline in global popularity following the widespread obsolescence of the platforms designed to fire it. Notably, except for the Tsunami Kyubi, which continues to chamber this cartridge. Tsunami has offered no public justification for its continued use of this legacy chambering.",
+              "maleVariant": "",
+              "primaryKey": "8100813",
+              "secondaryKey": "AmmoExpanded-Cal7p62x39Sov-EMP-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "7.62x39mm copper-jacketed lead projectile housed in a steel casing. Renowned by revolutionists the world over as the \"round of the revolution\", this intermediate cartridge was once a staple of Soviet-bloc arsenals, though it has seen a sharp decline in global popularity following the widespread obsolescence of the platforms designed to fire it. Notably, except for the Tsunami Kyubi, which continues to chamber this cartridge. Tsunami has offered no public justification for its continued use of this legacy chambering.",
+              "maleVariant": "",
+              "primaryKey": "8100814",
+              "secondaryKey": "AmmoExpanded-Cal7p62x39Sov-HP-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "7.62x39mm copper-jacketed lead projectile housed in a steel casing. Renowned by revolutionists the world over as the \"round of the revolution\", this intermediate cartridge was once a staple of Soviet-bloc arsenals, though it has seen a sharp decline in global popularity following the widespread obsolescence of the platforms designed to fire it. Notably, except for the Tsunami Kyubi, which continues to chamber this cartridge. Tsunami has offered no public justification for its continued use of this legacy chambering.",
+              "maleVariant": "",
+              "primaryKey": "8100815",
+              "secondaryKey": "AmmoExpanded-Cal7p62x39Sov-AP-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "8x30mm caseless tungsten flechettes. This flechette size is engineering for the Senkoh LX platform, a compact magrail submachine gun, capable of acclerating flechettes to velocities exceeding 2700 meters per second. At these speeds, most mid level grades of subdermal armor and concrete barricades are penetrated with ease.",
+              "maleVariant": "",
+              "primaryKey": "8100816",
+              "secondaryKey": "AmmoExpanded-Cal8x30RailF-CHEM-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "8x30mm caseless tungsten flechettes. This flechette size is engineering for the Senkoh LX platform, a compact magrail submachine gun, capable of acclerating flechettes to velocities exceeding 2700 meters per second. At these speeds, most mid level grades of subdermal armor and concrete barricades are penetrated with ease.",
+              "maleVariant": "",
+              "primaryKey": "8100817",
+              "secondaryKey": "AmmoExpanded-Cal8x30RailF-INC-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "8x30mm caseless tungsten flechettes. This flechette size is engineering for the Senkoh LX platform, a compact magrail submachine gun, capable of acclerating flechettes to velocities exceeding 2700 meters per second. At these speeds, most mid level grades of subdermal armor and concrete barricades are penetrated with ease.",
+              "maleVariant": "",
+              "primaryKey": "8100818",
+              "secondaryKey": "AmmoExpanded-Cal8x30RailF-EMP-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "8x30mm tungsten shot. Chambered in cylindircal cartridges capable of holding twenty of the tungsten pellets. Primarily used in the Darra Polytechnic DR-12 Quasar. When acclerated by the magrail system, the tungsten balls are capable of penetrating most low to mid grades of subdermal armor.",
+              "maleVariant": "",
+              "primaryKey": "8100819",
+              "secondaryKey": "AmmoExpanded-Cal8x30TShot-CHEM-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "8x30mm tungsten shot. Chambered in cylindircal cartridges capable of holding twenty of the tungsten pellets. Primarily used in the Darra Polytechnic DR-12 Quasar. When acclerated by the magrail system, the tungsten balls are capable of penetrating most low to mid grades of subdermal armor.",
+              "maleVariant": "",
+              "primaryKey": "8100820",
+              "secondaryKey": "AmmoExpanded-Cal8x30TShot-INC-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "8x30mm tungsten shot. Chambered in cylindircal cartridges capable of holding twenty of the tungsten pellets. Primarily used in the Darra Polytechnic DR-12 Quasar. When acclerated by the magrail system, the tungsten balls are capable of penetrating most low to mid grades of subdermal armor.",
+              "maleVariant": "",
+              "primaryKey": "8100821",
+              "secondaryKey": "AmmoExpanded-Cal8x30TShot-EMP-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "9.5x35mm guided minirocket. Composed of a lead projectile encapsulated in polymer, and a fin stabilized guidance system synced to the weapons onboard computer and users smart implant. The rocket is propelled by a compressed CHOO2 derivative at subsonic velocities. Max effective range of 300 meters. Primarily used in smart submachine guns.",
+              "maleVariant": "",
+              "primaryKey": "8100822",
+              "secondaryKey": "AmmoExpanded-Cal9p5x35Minirocket-HE-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "9.5x35mm guided minirocket. Composed of a lead projectile encapsulated in polymer, and a fin stabilized guidance system synced to the weapons onboard computer and users smart implant. The rocket is propelled by a compressed CHOO2 derivative at subsonic velocities. Max effective range of 300 meters. Primarily used in smart submachine guns.",
+              "maleVariant": "",
+              "primaryKey": "8100823",
+              "secondaryKey": "AmmoExpanded-Cal9p5x35Minirocket-CHEM-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "9.5x35mm guided minirocket. Composed of a lead projectile encapsulated in polymer, and a fin stabilized guidance system synced to the weapons onboard computer and users smart implant. The rocket is propelled by a compressed CHOO2 derivative at subsonic velocities. Max effective range of 300 meters. Primarily used in smart submachine guns.",
+              "maleVariant": "",
+              "primaryKey": "8100824",
+              "secondaryKey": "AmmoExpanded-Cal9p5x35Minirocket-INC-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "9.5x35mm guided minirocket. Composed of a lead projectile encapsulated in polymer, and a fin stabilized guidance system synced to the weapons onboard computer and users smart implant. The rocket is propelled by a compressed CHOO2 derivative at subsonic velocities. Max effective range of 300 meters. Primarily used in smart submachine guns.",
+              "maleVariant": "",
+              "primaryKey": "8100825",
+              "secondaryKey": "AmmoExpanded-Cal9p5x35Minirocket-EMP-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "9x19mm copper-jacketed lead projectile housed in a brass casing. While it has remained in service for over 150 years, its efficacy has declined significantly over the last half-century due to the widespread adoption of cheaper grades of subdermal armor. Despite these limitations in stopping power, it has served as the primary chambering for the Lexington line of machine pistols since the 2030s, the standard-issue sidearm for NCPD patrol officers.",
+              "maleVariant": "",
+              "primaryKey": "8100826",
+              "secondaryKey": "AmmoExpanded-Cal9x19-HE-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "9x19mm copper-jacketed lead projectile housed in a brass casing. While it has remained in service for over 150 years, its efficacy has declined significantly over the last half-century due to the widespread adoption of cheaper grades of subdermal armor. Despite these limitations in stopping power, it has served as the primary chambering for the Lexington line of machine pistols since the 2030s, the standard-issue sidearm for NCPD patrol officers.",
+              "maleVariant": "",
+              "primaryKey": "8100827",
+              "secondaryKey": "AmmoExpanded-Cal9x19-NL-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "9x19mm copper-jacketed lead projectile housed in a brass casing. While it has remained in service for over 150 years, its efficacy has declined significantly over the last half-century due to the widespread adoption of cheaper grades of subdermal armor. Despite these limitations in stopping power, it has served as the primary chambering for the Lexington line of machine pistols since the 2030s, the standard-issue sidearm for NCPD patrol officers.",
+              "maleVariant": "",
+              "primaryKey": "8100828",
+              "secondaryKey": "AmmoExpanded-Cal9x19-CHEM-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "9x19mm copper-jacketed lead projectile housed in a brass casing. While it has remained in service for over 150 years, its efficacy has declined significantly over the last half-century due to the widespread adoption of cheaper grades of subdermal armor. Despite these limitations in stopping power, it has served as the primary chambering for the Lexington line of machine pistols since the 2030s, the standard-issue sidearm for NCPD patrol officers.",
+              "maleVariant": "",
+              "primaryKey": "8100829",
+              "secondaryKey": "AmmoExpanded-Cal9x19-INC-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "9x19mm copper-jacketed lead projectile housed in a brass casing. While it has remained in service for over 150 years, its efficacy has declined significantly over the last half-century due to the widespread adoption of cheaper grades of subdermal armor. Despite these limitations in stopping power, it has served as the primary chambering for the Lexington line of machine pistols since the 2030s, the standard-issue sidearm for NCPD patrol officers.",
+              "maleVariant": "",
+              "primaryKey": "8100830",
+              "secondaryKey": "AmmoExpanded-Cal9x19-EMP-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "9x19mm copper-jacketed lead projectile housed in a brass casing. While it has remained in service for over 150 years, its efficacy has declined significantly over the last half-century due to the widespread adoption of cheaper grades of subdermal armor. Despite these limitations in stopping power, it has served as the primary chambering for the Lexington line of machine pistols since the 2030s, the standard-issue sidearm for NCPD patrol officers.",
+              "maleVariant": "",
+              "primaryKey": "8100831",
+              "secondaryKey": "AmmoExpanded-Cal9x19-HP-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "9x19mm copper-jacketed lead projectile housed in a brass casing. While it has remained in service for over 150 years, its efficacy has declined significantly over the last half-century due to the widespread adoption of cheaper grades of subdermal armor. Despite these limitations in stopping power, it has served as the primary chambering for the Lexington line of machine pistols since the 2030s, the standard-issue sidearm for NCPD patrol officers.",
+              "maleVariant": "",
+              "primaryKey": "8100832",
+              "secondaryKey": "AmmoExpanded-Cal9x19-AP-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "9x30mm caseless tungsten flechettes accelerated to velocities exceeding 2700 meters per second. At these speeds, the projectile is capable of penetrating a several 2 meter wide concrete barricades in less than a second.",
+              "maleVariant": "",
+              "primaryKey": "8100833",
+              "secondaryKey": "AmmoExpanded-Cal9x30TF-CHEM-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "9x30mm caseless tungsten flechettes accelerated to velocities exceeding 2700 meters per second. At these speeds, the projectile is capable of penetrating a several 2 meter wide concrete barricades in less than a second.",
+              "maleVariant": "",
+              "primaryKey": "8100834",
+              "secondaryKey": "AmmoExpanded-Cal9x30TF-INC-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "9x30mm caseless tungsten flechettes accelerated to velocities exceeding 2700 meters per second. At these speeds, the projectile is capable of penetrating a several 2 meter wide concrete barricades in less than a second.",
+              "maleVariant": "",
+              "primaryKey": "8100835",
+              "secondaryKey": "AmmoExpanded-Cal9x30TF-EMP-Desc"
             }
           ]
         }

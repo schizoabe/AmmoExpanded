@@ -7,9 +7,8 @@ Ammo.Cal10GaugeFlech:
   appearanceSuffixesOwnerOverride: []
   attachmentSlots: []
   buyPrice:
-    - Price.Ammo
+    - DPAE_Price.Cal10GaugeFlech_Base
     - Price.BuyPrice_StreetCred_Discount
-    - Price.PowerAmmo
   cameraForward: {x: 0, y: 0, z: 0}
   cameraUp: {x: 0, y: 0, z: 0}
   canDrop: True
@@ -59,8 +58,7 @@ Ammo.Cal10GaugeFlech:
   requiredSlots: []
   savable: False
   sellPrice:
-    - Price.Ammo
-    - Price.PowerAmmo
+    - DPAE_Price.Cal10GaugeFlech_Base
   slotPartList: []
   slotPartListPreset: []
   statModifierGroups: []
@@ -80,25 +78,43 @@ Ammo.Cal10GaugeFlech:
 
 
 Ammo.Cal10GaugeFlech_EMP:
+
+  buyPrice:
+    - !append-once DPAE_Price.TierRare
+  sellPrice:
+    - !append-once DPAE_Price.TierRare
+  quality: Quality.Rare
   $base: Ammo.Cal10GaugeFlech
   friendlyName: '10_gauge_flechettes_emp'
   displayName: LocKey#8100362
-  localizedDescription: LocKey#8100565
+  localizedDescription: LocKey#8100653
   tags:
     - !append-once DPAE_Cal10GaugeFlech_EMP
 
 Ammo.Cal10GaugeFlech_INC:
+
+  buyPrice:
+    - !append-once DPAE_Price.TierRare
+  sellPrice:
+    - !append-once DPAE_Price.TierRare
+  quality: Quality.Rare
   $base: Ammo.Cal10GaugeFlech
   friendlyName: '10_gauge_flechettes_incendiary'
   displayName: LocKey#8100363
-  localizedDescription: LocKey#8100565
+  localizedDescription: LocKey#8100652
   tags:
     - !append-once DPAE_Cal10GaugeFlech_INC
 
 Ammo.Cal10GaugeFlech_CHEM:
+
+  buyPrice:
+    - !append-once DPAE_Price.TierRare
+  sellPrice:
+    - !append-once DPAE_Price.TierRare
+  quality: Quality.Rare
   $base: Ammo.Cal10GaugeFlech
   friendlyName: '10_gauge_flechettes_chemical'
   displayName: LocKey#8100364
-  localizedDescription: LocKey#8100565
+  localizedDescription: LocKey#8100651
   tags:
     - !append-once DPAE_Cal10GaugeFlech_CHEM

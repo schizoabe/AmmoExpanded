@@ -56,6 +56,14 @@ public func DPAE_GetLockedVariant(entity: ref<GameObject>, itemID: ItemID, calib
   return TDBID.None();
 }
 
+public func DPAE_GetNPCForcedVariant(entity: ref<GameObject>, itemID: ItemID, caliberTDBID: TweakDBID) -> TweakDBID {
+  if !TDBID.IsValid(caliberTDBID) { return TDBID.None(); }
+  let ts = GameInstance.GetTransactionSystem(entity.GetGame());
+  let baseStr = TDBID.ToStringDEBUG(caliberTDBID);
+  if ts.HasTag(entity, n"DPAE_NPCForcedAmmo_INC", itemID) { return TDBID.Create(baseStr + "_INC"); }
+  return TDBID.None();
+}
+
 
 @addMethod(PlayerPuppet)
 public func DPAE_GetCaliberString() -> String {

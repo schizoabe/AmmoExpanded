@@ -7,9 +7,8 @@ Ammo.Cal15x55Rocket:
   appearanceSuffixesOwnerOverride: []
   attachmentSlots: []
   buyPrice:
-    - Price.Ammo
+    - DPAE_Price.Cal15x55Rocket_Base
     - Price.BuyPrice_StreetCred_Discount
-    - Price.PowerAmmo
   cameraForward: {x: 0, y: 0, z: 0}
   cameraUp: {x: 0, y: 0, z: 0}
   canDrop: True
@@ -59,8 +58,7 @@ Ammo.Cal15x55Rocket:
   requiredSlots: []
   savable: False
   sellPrice:
-    - Price.Ammo
-    - Price.PowerAmmo
+    - DPAE_Price.Cal15x55Rocket_Base
   slotPartList: []
   slotPartListPreset: []
   statModifierGroups: []
@@ -79,33 +77,57 @@ Ammo.Cal15x55Rocket:
   weakspots: []
 
 Ammo.Cal15x55Rocket_HE:
+
+  buyPrice:
+    - !append-once DPAE_Price.TierEpic
+  sellPrice:
+    - !append-once DPAE_Price.TierEpic
+  quality: Quality.Epic
   $base: Ammo.Cal15x55Rocket
   friendlyName: '15x55mm_guided_rocket_high_explosive'
   displayName: LocKey#8100402
-  localizedDescription: LocKey#8100575
+  localizedDescription: LocKey#8100692
   tags:
     - !append-once DPAE_Cal15x55Rocket_HE
 
 Ammo.Cal15x55Rocket_INC:
+
+  buyPrice:
+    - !append-once DPAE_Price.TierRare
+  sellPrice:
+    - !append-once DPAE_Price.TierRare
+  quality: Quality.Rare
   $base: Ammo.Cal15x55Rocket
   friendlyName: '15x55mm_guided_rocket_incendiary'
   displayName: LocKey#8100403
-  localizedDescription: LocKey#8100575
+  localizedDescription: LocKey#8100691
   tags:
     - !append-once DPAE_Cal15x55Rocket_INC
 
 Ammo.Cal15x55Rocket_EMP:
+
+  buyPrice:
+    - !append-once DPAE_Price.TierRare
+  sellPrice:
+    - !append-once DPAE_Price.TierRare
+  quality: Quality.Rare
   $base: Ammo.Cal15x55Rocket
   friendlyName: '15x55mm_guided_rocket_emp'
   displayName: LocKey#8100609
-  localizedDescription: LocKey#8100575
+  localizedDescription: LocKey#8100690
   tags:
     - !append-once DPAE_Cal15x55Rocket_EMP
 
 Ammo.Cal15x55Rocket_CHEM:
+
+  buyPrice:
+    - !append-once DPAE_Price.TierRare
+  sellPrice:
+    - !append-once DPAE_Price.TierRare
+  quality: Quality.Rare
   $base: Ammo.Cal15x55Rocket
   friendlyName: '15x55mm_guided_rocket_chemical'
   displayName: LocKey#8100610
-  localizedDescription: LocKey#8100575
+  localizedDescription: LocKey#8100689
   tags:
     - !append-once DPAE_Cal15x55Rocket_CHEM

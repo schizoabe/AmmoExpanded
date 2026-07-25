@@ -1,0 +1,4 @@
+
+Items.Preset_Nue_Jackie:  # Jackie's own copy of La Chingona Dorada — Cal45WinMag, always Incendiary
+  tags:
+    - !append-once DPAE_NPCForcedAmmo_INC

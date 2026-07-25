@@ -7,9 +7,8 @@ Ammo.Cal5p56CT:
   appearanceSuffixesOwnerOverride: []
   attachmentSlots: []
   buyPrice:
-    - Price.Ammo
+    - DPAE_Price.Cal5p56CT_Base
     - Price.BuyPrice_StreetCred_Discount
-    - Price.PowerAmmo
   cameraForward: {x: 0, y: 0, z: 0}
   cameraUp: {x: 0, y: 0, z: 0}
   canDrop: True
@@ -59,8 +58,7 @@ Ammo.Cal5p56CT:
   requiredSlots: []
   savable: False
   sellPrice:
-    - Price.Ammo
-    - Price.PowerAmmo
+    - DPAE_Price.Cal5p56CT_Base
   slotPartList: []
   slotPartListPreset: []
   statModifierGroups: []
@@ -79,57 +77,99 @@ Ammo.Cal5p56CT:
   weakspots: []
 
 Ammo.Cal5p56CT_AP:
+
+  buyPrice:
+    - !append-once DPAE_Price.TierUncommon
+  sellPrice:
+    - !append-once DPAE_Price.TierUncommon
+  quality: Quality.Uncommon
   $base: Ammo.Cal5p56CT
   friendlyName: '556mm_ct_armor_piercing'
   displayName: LocKey#8100448
-  localizedDescription: LocKey#8100593
+  localizedDescription: LocKey#8100787
   tags:
     - !append-once DPAE_Cal5p56CT_AP
 
 Ammo.Cal5p56CT_HP:
+
+  buyPrice:
+    - !append-once DPAE_Price.TierUncommon
+  sellPrice:
+    - !append-once DPAE_Price.TierUncommon
+  quality: Quality.Uncommon
   $base: Ammo.Cal5p56CT
   friendlyName: '556mm_ct_hollow_point'
   displayName: LocKey#8100449
-  localizedDescription: LocKey#8100593
+  localizedDescription: LocKey#8100786
   tags:
     - !append-once DPAE_Cal5p56CT_HP
 
 Ammo.Cal5p56CT_EMP:
+
+  buyPrice:
+    - !append-once DPAE_Price.TierRare
+  sellPrice:
+    - !append-once DPAE_Price.TierRare
+  quality: Quality.Rare
   $base: Ammo.Cal5p56CT
   friendlyName: '556mm_ct_emp'
   displayName: LocKey#8100450
-  localizedDescription: LocKey#8100593
+  localizedDescription: LocKey#8100785
   tags:
     - !append-once DPAE_Cal5p56CT_EMP
 
 Ammo.Cal5p56CT_INC:
+
+  buyPrice:
+    - !append-once DPAE_Price.TierRare
+  sellPrice:
+    - !append-once DPAE_Price.TierRare
+  quality: Quality.Rare
   $base: Ammo.Cal5p56CT
   friendlyName: '556mm_ct_incendiary'
   displayName: LocKey#8100451
-  localizedDescription: LocKey#8100593
+  localizedDescription: LocKey#8100784
   tags:
     - !append-once DPAE_Cal5p56CT_INC
 
 Ammo.Cal5p56CT_CHEM:
+
+  buyPrice:
+    - !append-once DPAE_Price.TierRare
+  sellPrice:
+    - !append-once DPAE_Price.TierRare
+  quality: Quality.Rare
   $base: Ammo.Cal5p56CT
   friendlyName: '556mm_ct_chemical'
   displayName: LocKey#8100452
-  localizedDescription: LocKey#8100593
+  localizedDescription: LocKey#8100783
   tags:
     - !append-once DPAE_Cal5p56CT_CHEM
 
 Ammo.Cal5p56CT_NL:
+
+  buyPrice:
+    - !append-once DPAE_Price.TierUncommon
+  sellPrice:
+    - !append-once DPAE_Price.TierUncommon
+  quality: Quality.Uncommon
   $base: Ammo.Cal5p56CT
   friendlyName: '556mm_ct_non-lethal'
   displayName: LocKey#8100453
-  localizedDescription: LocKey#8100593
+  localizedDescription: LocKey#8100782
   tags:
     - !append-once DPAE_Cal5p56CT_NL
 
 Ammo.Cal5p56CT_HE:
+
+  buyPrice:
+    - !append-once DPAE_Price.TierEpic
+  sellPrice:
+    - !append-once DPAE_Price.TierEpic
+  quality: Quality.Epic
   $base: Ammo.Cal5p56CT
   friendlyName: '556mm_ct_high_explosive'
   displayName: LocKey#8100554
-  localizedDescription: LocKey#8100593
+  localizedDescription: LocKey#8100781
   tags:
     - !append-once DPAE_Cal5p56CT_HE

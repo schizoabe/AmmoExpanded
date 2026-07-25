@@ -7,9 +7,8 @@ Ammo.Cal23x152Sov:
   appearanceSuffixesOwnerOverride: []
   attachmentSlots: []
   buyPrice:
-    - Price.Ammo
+    - DPAE_Price.Cal23x152Sov_Base
     - Price.BuyPrice_StreetCred_Discount
-    - Price.PowerAmmo
   cameraForward: {x: 0, y: 0, z: 0}
   cameraUp: {x: 0, y: 0, z: 0}
   canDrop: True
@@ -59,8 +58,7 @@ Ammo.Cal23x152Sov:
   requiredSlots: []
   savable: False
   sellPrice:
-    - Price.Ammo
-    - Price.PowerAmmo
+    - DPAE_Price.Cal23x152Sov_Base
   slotPartList: []
   slotPartListPreset: []
   statModifierGroups: []
@@ -79,41 +77,74 @@ Ammo.Cal23x152Sov:
   weakspots: []
 
 Ammo.Cal23x152Sov_HE:
+
+  buyPrice:
+    - !append-once DPAE_Price.TierEpic
+  sellPrice:
+    - !append-once DPAE_Price.TierEpic
+  quality: Quality.Epic
   $base: Ammo.Cal23x152Sov
   friendlyName: '23x152mm_soviet_high_explosive'
   displayName: LocKey#8100420
-  localizedDescription: LocKey#8100580
+  localizedDescription: LocKey#8100711
   tags:
     - !append-once DPAE_Cal23x152Sov_HE
 
 Ammo.Cal23x152Sov_INC:
+
+  buyPrice:
+    - !append-once DPAE_Price.TierRare
+  sellPrice:
+    - !append-once DPAE_Price.TierRare
+  quality: Quality.Rare
   $base: Ammo.Cal23x152Sov
   friendlyName: '23x152mm_soviet_incendiary'
   displayName: LocKey#8100421
-  localizedDescription: LocKey#8100580
+  localizedDescription: LocKey#8100710
   tags:
     - !append-once DPAE_Cal23x152Sov_INC
 
 Ammo.Cal23x152Sov_EMP:
+
+  buyPrice:
+    - !append-once DPAE_Price.TierRare
+  sellPrice:
+    - !append-once DPAE_Price.TierRare
+  quality: Quality.Rare
   $base: Ammo.Cal23x152Sov
   friendlyName: '23x152mm_soviet_emp'
   displayName: LocKey#8100557
-  localizedDescription: LocKey#8100580
+  localizedDescription: LocKey#8100709
   tags:
     - !append-once DPAE_Cal23x152Sov_EMP
 
 Ammo.Cal23x152Sov_Sparky_EMP:
+
+  buyPrice:
+    - DPAE_Price.Cal23x152Sov_Base
+    - Price.BuyPrice_StreetCred_Discount
+    - DPAE_Price.TierLegendary
+  sellPrice:
+    - DPAE_Price.Cal23x152Sov_Base
+    - DPAE_Price.TierLegendary
   $base: Ammo.Cal23x152Sov_EMP
   friendlyName: '23x152mm_soviet_sparky_signature'
   displayName: LocKey#8100644
   localizedDescription: LocKey#8100645
+  quality: Quality.Legendary
   tags:
     - !append-once DPAE_Cal23x152Sov_Sparky_EMP
 
 Ammo.Cal23x152Sov_CHEM:
+
+  buyPrice:
+    - !append-once DPAE_Price.TierRare
+  sellPrice:
+    - !append-once DPAE_Price.TierRare
+  quality: Quality.Rare
   $base: Ammo.Cal23x152Sov
   friendlyName: '23x152mm_soviet_chemical'
   displayName: LocKey#8100626
-  localizedDescription: LocKey#8100580
+  localizedDescription: LocKey#8100708
   tags:
     - !append-once DPAE_Cal23x152Sov_CHEM

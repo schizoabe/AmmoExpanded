@@ -7,9 +7,8 @@ Ammo.Cal20x102Vulcan:
   appearanceSuffixesOwnerOverride: []
   attachmentSlots: []
   buyPrice:
-    - Price.Ammo
+    - DPAE_Price.Cal20x102Vulcan_Base
     - Price.BuyPrice_StreetCred_Discount
-    - Price.PowerAmmo
   cameraForward: {x: 0, y: 0, z: 0}
   cameraUp: {x: 0, y: 0, z: 0}
   canDrop: True
@@ -59,8 +58,7 @@ Ammo.Cal20x102Vulcan:
   requiredSlots: []
   savable: False
   sellPrice:
-    - Price.Ammo
-    - Price.PowerAmmo
+    - DPAE_Price.Cal20x102Vulcan_Base
   slotPartList: []
   slotPartListPreset: []
   statModifierGroups: []
@@ -79,33 +77,57 @@ Ammo.Cal20x102Vulcan:
   weakspots: []
 
 Ammo.Cal20x102Vulcan_HE:
+
+  buyPrice:
+    - !append-once DPAE_Price.TierEpic
+  sellPrice:
+    - !append-once DPAE_Price.TierEpic
+  quality: Quality.Epic
   $base: Ammo.Cal20x102Vulcan
   friendlyName: '20x102mm_vulcan_high_explosive'
   displayName: LocKey#8100414
-  localizedDescription: LocKey#8100578
+  localizedDescription: LocKey#8100703
   tags:
     - !append-once DPAE_Cal20x102Vulcan_HE
 
 Ammo.Cal20x102Vulcan_INC:
+
+  buyPrice:
+    - !append-once DPAE_Price.TierRare
+  sellPrice:
+    - !append-once DPAE_Price.TierRare
+  quality: Quality.Rare
   $base: Ammo.Cal20x102Vulcan
   friendlyName: '20x102mm_vulcan_incendiary'
   displayName: LocKey#8100415
-  localizedDescription: LocKey#8100578
+  localizedDescription: LocKey#8100702
   tags:
     - !append-once DPAE_Cal20x102Vulcan_INC
 
 Ammo.Cal20x102Vulcan_CHEM:
+
+  buyPrice:
+    - !append-once DPAE_Price.TierRare
+  sellPrice:
+    - !append-once DPAE_Price.TierRare
+  quality: Quality.Rare
   $base: Ammo.Cal20x102Vulcan
   friendlyName: '20x102mm_vulcan_chemical'
   displayName: LocKey#8100622
-  localizedDescription: LocKey#8100578
+  localizedDescription: LocKey#8100701
   tags:
     - !append-once DPAE_Cal20x102Vulcan_CHEM
 
 Ammo.Cal20x102Vulcan_EMP:
+
+  buyPrice:
+    - !append-once DPAE_Price.TierRare
+  sellPrice:
+    - !append-once DPAE_Price.TierRare
+  quality: Quality.Rare
   $base: Ammo.Cal20x102Vulcan
   friendlyName: '20x102mm_vulcan_emp'
   displayName: LocKey#8100623
-  localizedDescription: LocKey#8100578
+  localizedDescription: LocKey#8100700
   tags:
     - !append-once DPAE_Cal20x102Vulcan_EMP

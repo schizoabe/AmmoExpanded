@@ -7,9 +7,8 @@ Ammo.Cal5p45CT:
   appearanceSuffixesOwnerOverride: []
   attachmentSlots: []
   buyPrice:
-    - Price.Ammo
+    - DPAE_Price.Cal5p45CT_Base
     - Price.BuyPrice_StreetCred_Discount
-    - Price.PowerAmmo
   cameraForward: {x: 0, y: 0, z: 0}
   cameraUp: {x: 0, y: 0, z: 0}
   canDrop: True
@@ -59,8 +58,7 @@ Ammo.Cal5p45CT:
   requiredSlots: []
   savable: False
   sellPrice:
-    - Price.Ammo
-    - Price.PowerAmmo
+    - DPAE_Price.Cal5p45CT_Base
   slotPartList: []
   slotPartListPreset: []
   statModifierGroups: []
@@ -79,57 +77,99 @@ Ammo.Cal5p45CT:
   weakspots: []
 
 Ammo.Cal5p45CT_AP:
+
+  buyPrice:
+    - !append-once DPAE_Price.TierUncommon
+  sellPrice:
+    - !append-once DPAE_Price.TierUncommon
+  quality: Quality.Uncommon
   $base: Ammo.Cal5p45CT
   friendlyName: '545mm_ct_armor_piercing'
   displayName: LocKey#8100434
-  localizedDescription: LocKey#8100592
+  localizedDescription: LocKey#8100780
   tags:
     - !append-once DPAE_Cal5p45CT_AP
 
 Ammo.Cal5p45CT_HP:
+
+  buyPrice:
+    - !append-once DPAE_Price.TierUncommon
+  sellPrice:
+    - !append-once DPAE_Price.TierUncommon
+  quality: Quality.Uncommon
   $base: Ammo.Cal5p45CT
   friendlyName: '545mm_ct_hollow_point'
   displayName: LocKey#8100435
-  localizedDescription: LocKey#8100592
+  localizedDescription: LocKey#8100779
   tags:
     - !append-once DPAE_Cal5p45CT_HP
 
 Ammo.Cal5p45CT_EMP:
+
+  buyPrice:
+    - !append-once DPAE_Price.TierRare
+  sellPrice:
+    - !append-once DPAE_Price.TierRare
+  quality: Quality.Rare
   $base: Ammo.Cal5p45CT
   friendlyName: '545mm_ct_emp'
   displayName: LocKey#8100436
-  localizedDescription: LocKey#8100592
+  localizedDescription: LocKey#8100778
   tags:
     - !append-once DPAE_Cal5p45CT_EMP
 
 Ammo.Cal5p45CT_INC:
+
+  buyPrice:
+    - !append-once DPAE_Price.TierRare
+  sellPrice:
+    - !append-once DPAE_Price.TierRare
+  quality: Quality.Rare
   $base: Ammo.Cal5p45CT
   friendlyName: '545mm_ct_incendiary'
   displayName: LocKey#8100437
-  localizedDescription: LocKey#8100592
+  localizedDescription: LocKey#8100777
   tags:
     - !append-once DPAE_Cal5p45CT_INC
 
 Ammo.Cal5p45CT_CHEM:
+
+  buyPrice:
+    - !append-once DPAE_Price.TierRare
+  sellPrice:
+    - !append-once DPAE_Price.TierRare
+  quality: Quality.Rare
   $base: Ammo.Cal5p45CT
   friendlyName: '545mm_ct_chemical'
   displayName: LocKey#8100438
-  localizedDescription: LocKey#8100592
+  localizedDescription: LocKey#8100776
   tags:
     - !append-once DPAE_Cal5p45CT_CHEM
 
 Ammo.Cal5p45CT_NL:
+
+  buyPrice:
+    - !append-once DPAE_Price.TierUncommon
+  sellPrice:
+    - !append-once DPAE_Price.TierUncommon
+  quality: Quality.Uncommon
   $base: Ammo.Cal5p45CT
   friendlyName: '545mm_ct_non-lethal'
   displayName: LocKey#8100439
-  localizedDescription: LocKey#8100592
+  localizedDescription: LocKey#8100775
   tags:
     - !append-once DPAE_Cal5p45CT_NL
 
 Ammo.Cal5p45CT_HE:
+
+  buyPrice:
+    - !append-once DPAE_Price.TierEpic
+  sellPrice:
+    - !append-once DPAE_Price.TierEpic
+  quality: Quality.Epic
   $base: Ammo.Cal5p45CT
   friendlyName: '545mm_ct_high_explosive'
   displayName: LocKey#8100635
-  localizedDescription: LocKey#8100592
+  localizedDescription: LocKey#8100774
   tags:
     - !append-once DPAE_Cal5p45CT_HE

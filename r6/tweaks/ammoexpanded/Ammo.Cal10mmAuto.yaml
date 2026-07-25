@@ -7,9 +7,8 @@ Ammo.Cal10mmAuto:
   appearanceSuffixesOwnerOverride: []
   attachmentSlots: []
   buyPrice:
-    - Price.Ammo
+    - DPAE_Price.Cal10mmAuto_Base
     - Price.BuyPrice_StreetCred_Discount
-    - Price.PowerAmmo
   cameraForward: {x: 0, y: 0, z: 0}
   cameraUp: {x: 0, y: 0, z: 0}
   canDrop: True
@@ -59,8 +58,7 @@ Ammo.Cal10mmAuto:
   requiredSlots: []
   savable: False
   sellPrice:
-    - Price.Ammo
-    - Price.PowerAmmo
+    - DPAE_Price.Cal10mmAuto_Base
   slotPartList: []
   slotPartListPreset: []
   statModifierGroups: []
@@ -79,57 +77,99 @@ Ammo.Cal10mmAuto:
   weakspots: []
 
 Ammo.Cal10mmAuto_AP:
+
+  buyPrice:
+    - !append-once DPAE_Price.TierUncommon
+  sellPrice:
+    - !append-once DPAE_Price.TierUncommon
+  quality: Quality.Uncommon
   $base: Ammo.Cal10mmAuto
   friendlyName: '10mm_auto_armor_piercing'
   displayName: LocKey#8100369
-  localizedDescription: LocKey#8100566
+  localizedDescription: LocKey#8100660
   tags:
     - !append-once DPAE_Cal10mmAuto_AP
 
 Ammo.Cal10mmAuto_HP:
+
+  buyPrice:
+    - !append-once DPAE_Price.TierUncommon
+  sellPrice:
+    - !append-once DPAE_Price.TierUncommon
+  quality: Quality.Uncommon
   $base: Ammo.Cal10mmAuto
   friendlyName: '10mm_auto_hollow_point'
   displayName: LocKey#8100370
-  localizedDescription: LocKey#8100566
+  localizedDescription: LocKey#8100659
   tags:
     - !append-once DPAE_Cal10mmAuto_HP
 
 Ammo.Cal10mmAuto_EMP:
+
+  buyPrice:
+    - !append-once DPAE_Price.TierRare
+  sellPrice:
+    - !append-once DPAE_Price.TierRare
+  quality: Quality.Rare
   $base: Ammo.Cal10mmAuto
   friendlyName: '10mm_auto_emp'
   displayName: LocKey#8100371
-  localizedDescription: LocKey#8100566
+  localizedDescription: LocKey#8100658
   tags:
     - !append-once DPAE_Cal10mmAuto_EMP
 
 Ammo.Cal10mmAuto_INC:
+
+  buyPrice:
+    - !append-once DPAE_Price.TierRare
+  sellPrice:
+    - !append-once DPAE_Price.TierRare
+  quality: Quality.Rare
   $base: Ammo.Cal10mmAuto
   friendlyName: '10mm_auto_incendiary'
   displayName: LocKey#8100372
-  localizedDescription: LocKey#8100566
+  localizedDescription: LocKey#8100657
   tags:
     - !append-once DPAE_Cal10mmAuto_INC
 
 Ammo.Cal10mmAuto_CHEM:
+
+  buyPrice:
+    - !append-once DPAE_Price.TierRare
+  sellPrice:
+    - !append-once DPAE_Price.TierRare
+  quality: Quality.Rare
   $base: Ammo.Cal10mmAuto
   friendlyName: '10mm_auto_chemical'
   displayName: LocKey#8100373
-  localizedDescription: LocKey#8100566
+  localizedDescription: LocKey#8100656
   tags:
     - !append-once DPAE_Cal10mmAuto_CHEM
 
 Ammo.Cal10mmAuto_NL:
+
+  buyPrice:
+    - !append-once DPAE_Price.TierUncommon
+  sellPrice:
+    - !append-once DPAE_Price.TierUncommon
+  quality: Quality.Uncommon
   $base: Ammo.Cal10mmAuto
   friendlyName: '10mm_auto_non-lethal'
   displayName: LocKey#8100374
-  localizedDescription: LocKey#8100566
+  localizedDescription: LocKey#8100655
   tags:
     - !append-once DPAE_Cal10mmAuto_NL
 
 Ammo.Cal10mmAuto_HE:
+
+  buyPrice:
+    - !append-once DPAE_Price.TierEpic
+  sellPrice:
+    - !append-once DPAE_Price.TierEpic
+  quality: Quality.Epic
   $base: Ammo.Cal10mmAuto
   friendlyName: '10mm_auto_high_explosive'
   displayName: LocKey#8100628
-  localizedDescription: LocKey#8100566
+  localizedDescription: LocKey#8100654
   tags:
     - !append-once DPAE_Cal10mmAuto_HE

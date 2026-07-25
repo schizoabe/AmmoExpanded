@@ -7,9 +7,9 @@ Ammo.Cal14x70TSlugHE:
   appearanceSuffixesOwnerOverride: []
   attachmentSlots: []
   buyPrice:
-    - Price.Ammo
+    - DPAE_Price.Cal14x70TSlugHE_Base
     - Price.BuyPrice_StreetCred_Discount
-    - Price.PowerAmmo
+    - DPAE_Price.TierEpic
   cameraForward: {x: 0, y: 0, z: 0}
   cameraUp: {x: 0, y: 0, z: 0}
   canDrop: True
@@ -53,14 +53,14 @@ Ammo.Cal14x70TSlugHE:
   placementSlots: []
   powerLevelDeterminedByParent: False
   previewBBoxOverride: []
-  quality: Quality.Common
+  quality: Quality.Epic
   qualityRestrictedByParent: False
   replicateWhenNotActive: False
   requiredSlots: []
   savable: False
   sellPrice:
-    - Price.Ammo
-    - Price.PowerAmmo
+    - DPAE_Price.Cal14x70TSlugHE_Base
+    - DPAE_Price.TierEpic
   slotPartList: []
   slotPartListPreset: []
   statModifierGroups: []
