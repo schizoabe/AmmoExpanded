@@ -78,6 +78,17 @@ Ammo.Cal50BMG:
 
 Ammo.Cal50BMG_AP:
 
+  CraftingData:
+    $type: gamedataCraftingPackage_Record
+    craftingExpModifier: 1
+    overcraftPenaltyModifier: 1
+    craftingRecipe:
+      - $type: gamedataRecipeElement_Record
+        amount: 1
+        ingredient: Ammo.Cal50BMG
+      - $type: gamedataRecipeElement_Record
+        amount: 2
+        ingredient: Items.UncommonMaterial1
   buyPrice:
     - !append-once DPAE_Price.TierUncommon
   sellPrice:
@@ -92,6 +103,17 @@ Ammo.Cal50BMG_AP:
 
 Ammo.Cal50BMG_HP:
 
+  CraftingData:
+    $type: gamedataCraftingPackage_Record
+    craftingExpModifier: 1
+    overcraftPenaltyModifier: 1
+    craftingRecipe:
+      - $type: gamedataRecipeElement_Record
+        amount: 1
+        ingredient: Ammo.Cal50BMG
+      - $type: gamedataRecipeElement_Record
+        amount: 2
+        ingredient: Items.UncommonMaterial1
   buyPrice:
     - !append-once DPAE_Price.TierUncommon
   sellPrice:
@@ -106,6 +128,17 @@ Ammo.Cal50BMG_HP:
 
 Ammo.Cal50BMG_EMP:
 
+  CraftingData:
+    $type: gamedataCraftingPackage_Record
+    craftingExpModifier: 1
+    overcraftPenaltyModifier: 1
+    craftingRecipe:
+      - $type: gamedataRecipeElement_Record
+        amount: 1
+        ingredient: Ammo.Cal50BMG
+      - $type: gamedataRecipeElement_Record
+        amount: 3
+        ingredient: Items.RareMaterial1
   buyPrice:
     - !append-once DPAE_Price.TierRare
   sellPrice:
@@ -120,6 +153,17 @@ Ammo.Cal50BMG_EMP:
 
 Ammo.Cal50BMG_INC:
 
+  CraftingData:
+    $type: gamedataCraftingPackage_Record
+    craftingExpModifier: 1
+    overcraftPenaltyModifier: 1
+    craftingRecipe:
+      - $type: gamedataRecipeElement_Record
+        amount: 1
+        ingredient: Ammo.Cal50BMG
+      - $type: gamedataRecipeElement_Record
+        amount: 3
+        ingredient: Items.RareMaterial1
   buyPrice:
     - !append-once DPAE_Price.TierRare
   sellPrice:
@@ -134,6 +178,17 @@ Ammo.Cal50BMG_INC:
 
 Ammo.Cal50BMG_CHEM:
 
+  CraftingData:
+    $type: gamedataCraftingPackage_Record
+    craftingExpModifier: 1
+    overcraftPenaltyModifier: 1
+    craftingRecipe:
+      - $type: gamedataRecipeElement_Record
+        amount: 1
+        ingredient: Ammo.Cal50BMG
+      - $type: gamedataRecipeElement_Record
+        amount: 3
+        ingredient: Items.RareMaterial1
   buyPrice:
     - !append-once DPAE_Price.TierRare
   sellPrice:
@@ -148,6 +203,17 @@ Ammo.Cal50BMG_CHEM:
 
 Ammo.Cal50BMG_NL:
 
+  CraftingData:
+    $type: gamedataCraftingPackage_Record
+    craftingExpModifier: 1
+    overcraftPenaltyModifier: 1
+    craftingRecipe:
+      - $type: gamedataRecipeElement_Record
+        amount: 1
+        ingredient: Ammo.Cal50BMG
+      - $type: gamedataRecipeElement_Record
+        amount: 2
+        ingredient: Items.UncommonMaterial1
   buyPrice:
     - !append-once DPAE_Price.TierUncommon
   sellPrice:
@@ -162,6 +228,17 @@ Ammo.Cal50BMG_NL:
 
 Ammo.Cal50BMG_HE:
 
+  CraftingData:
+    $type: gamedataCraftingPackage_Record
+    craftingExpModifier: 1
+    overcraftPenaltyModifier: 1
+    craftingRecipe:
+      - $type: gamedataRecipeElement_Record
+        amount: 1
+        ingredient: Ammo.Cal50BMG
+      - $type: gamedataRecipeElement_Record
+        amount: 4
+        ingredient: Items.EpicMaterial1
   buyPrice:
     - !append-once DPAE_Price.TierEpic
   sellPrice:

@@ -79,6 +79,17 @@ Ammo.Cal14x40TSlug:
 
 Ammo.Cal14x40TSlug_EMP:
 
+  CraftingData:
+    $type: gamedataCraftingPackage_Record
+    craftingExpModifier: 1
+    overcraftPenaltyModifier: 1
+    craftingRecipe:
+      - $type: gamedataRecipeElement_Record
+        amount: 1
+        ingredient: Ammo.Cal14x40TSlug
+      - $type: gamedataRecipeElement_Record
+        amount: 3
+        ingredient: Items.RareMaterial1
   buyPrice:
     - !append-once DPAE_Price.TierRare
   sellPrice:
@@ -93,6 +104,17 @@ Ammo.Cal14x40TSlug_EMP:
 
 Ammo.Cal14x40TSlug_INC:
 
+  CraftingData:
+    $type: gamedataCraftingPackage_Record
+    craftingExpModifier: 1
+    overcraftPenaltyModifier: 1
+    craftingRecipe:
+      - $type: gamedataRecipeElement_Record
+        amount: 1
+        ingredient: Ammo.Cal14x40TSlug
+      - $type: gamedataRecipeElement_Record
+        amount: 3
+        ingredient: Items.RareMaterial1
   buyPrice:
     - !append-once DPAE_Price.TierRare
   sellPrice:
@@ -107,6 +129,17 @@ Ammo.Cal14x40TSlug_INC:
 
 Ammo.Cal14x40TSlug_CHEM:
 
+  CraftingData:
+    $type: gamedataCraftingPackage_Record
+    craftingExpModifier: 1
+    overcraftPenaltyModifier: 1
+    craftingRecipe:
+      - $type: gamedataRecipeElement_Record
+        amount: 1
+        ingredient: Ammo.Cal14x40TSlug
+      - $type: gamedataRecipeElement_Record
+        amount: 3
+        ingredient: Items.RareMaterial1
   buyPrice:
     - !append-once DPAE_Price.TierRare
   sellPrice:
@@ -121,6 +154,17 @@ Ammo.Cal14x40TSlug_CHEM:
 
 Ammo.Cal14x40TSlug_HE:
 
+  CraftingData:
+    $type: gamedataCraftingPackage_Record
+    craftingExpModifier: 1
+    overcraftPenaltyModifier: 1
+    craftingRecipe:
+      - $type: gamedataRecipeElement_Record
+        amount: 1
+        ingredient: Ammo.Cal14x40TSlug
+      - $type: gamedataRecipeElement_Record
+        amount: 4
+        ingredient: Items.EpicMaterial1
   buyPrice:
     - !append-once DPAE_Price.TierEpic
   sellPrice:

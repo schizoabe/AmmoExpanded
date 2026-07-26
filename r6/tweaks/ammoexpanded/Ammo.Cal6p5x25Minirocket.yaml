@@ -79,6 +79,17 @@ Ammo.Cal6p5x25Minirocket:
 
 Ammo.Cal6p5x25Minirocket_EMP:
 
+  CraftingData:
+    $type: gamedataCraftingPackage_Record
+    craftingExpModifier: 1
+    overcraftPenaltyModifier: 1
+    craftingRecipe:
+      - $type: gamedataRecipeElement_Record
+        amount: 1
+        ingredient: Ammo.Cal6p5x25Minirocket
+      - $type: gamedataRecipeElement_Record
+        amount: 3
+        ingredient: Items.RareMaterial1
   buyPrice:
     - !append-once DPAE_Price.TierRare
   sellPrice:
@@ -93,6 +104,17 @@ Ammo.Cal6p5x25Minirocket_EMP:
 
 Ammo.Cal6p5x25Minirocket_INC:
 
+  CraftingData:
+    $type: gamedataCraftingPackage_Record
+    craftingExpModifier: 1
+    overcraftPenaltyModifier: 1
+    craftingRecipe:
+      - $type: gamedataRecipeElement_Record
+        amount: 1
+        ingredient: Ammo.Cal6p5x25Minirocket
+      - $type: gamedataRecipeElement_Record
+        amount: 3
+        ingredient: Items.RareMaterial1
   buyPrice:
     - !append-once DPAE_Price.TierRare
   sellPrice:
@@ -107,6 +129,17 @@ Ammo.Cal6p5x25Minirocket_INC:
 
 Ammo.Cal6p5x25Minirocket_CHEM:
 
+  CraftingData:
+    $type: gamedataCraftingPackage_Record
+    craftingExpModifier: 1
+    overcraftPenaltyModifier: 1
+    craftingRecipe:
+      - $type: gamedataRecipeElement_Record
+        amount: 1
+        ingredient: Ammo.Cal6p5x25Minirocket
+      - $type: gamedataRecipeElement_Record
+        amount: 3
+        ingredient: Items.RareMaterial1
   buyPrice:
     - !append-once DPAE_Price.TierRare
   sellPrice:
@@ -121,6 +154,17 @@ Ammo.Cal6p5x25Minirocket_CHEM:
 
 Ammo.Cal6p5x25Minirocket_HE:
 
+  CraftingData:
+    $type: gamedataCraftingPackage_Record
+    craftingExpModifier: 1
+    overcraftPenaltyModifier: 1
+    craftingRecipe:
+      - $type: gamedataRecipeElement_Record
+        amount: 1
+        ingredient: Ammo.Cal6p5x25Minirocket
+      - $type: gamedataRecipeElement_Record
+        amount: 4
+        ingredient: Items.EpicMaterial1
   buyPrice:
     - !append-once DPAE_Price.TierEpic
   sellPrice:

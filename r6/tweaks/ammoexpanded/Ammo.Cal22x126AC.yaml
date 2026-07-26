@@ -78,6 +78,17 @@ Ammo.Cal22x126AC:
 
 Ammo.Cal22x126AC_HE:
 
+  CraftingData:
+    $type: gamedataCraftingPackage_Record
+    craftingExpModifier: 1
+    overcraftPenaltyModifier: 1
+    craftingRecipe:
+      - $type: gamedataRecipeElement_Record
+        amount: 1
+        ingredient: Ammo.Cal22x126AC
+      - $type: gamedataRecipeElement_Record
+        amount: 4
+        ingredient: Items.EpicMaterial1
   buyPrice:
     - !append-once DPAE_Price.TierEpic
   sellPrice:
@@ -92,6 +103,17 @@ Ammo.Cal22x126AC_HE:
 
 Ammo.Cal22x126AC_INC:
 
+  CraftingData:
+    $type: gamedataCraftingPackage_Record
+    craftingExpModifier: 1
+    overcraftPenaltyModifier: 1
+    craftingRecipe:
+      - $type: gamedataRecipeElement_Record
+        amount: 1
+        ingredient: Ammo.Cal22x126AC
+      - $type: gamedataRecipeElement_Record
+        amount: 3
+        ingredient: Items.RareMaterial1
   buyPrice:
     - !append-once DPAE_Price.TierRare
   sellPrice:
@@ -106,6 +128,17 @@ Ammo.Cal22x126AC_INC:
 
 Ammo.Cal22x126AC_CHEM:
 
+  CraftingData:
+    $type: gamedataCraftingPackage_Record
+    craftingExpModifier: 1
+    overcraftPenaltyModifier: 1
+    craftingRecipe:
+      - $type: gamedataRecipeElement_Record
+        amount: 1
+        ingredient: Ammo.Cal22x126AC
+      - $type: gamedataRecipeElement_Record
+        amount: 3
+        ingredient: Items.RareMaterial1
   buyPrice:
     - !append-once DPAE_Price.TierRare
   sellPrice:
@@ -120,6 +153,17 @@ Ammo.Cal22x126AC_CHEM:
 
 Ammo.Cal22x126AC_EMP:
 
+  CraftingData:
+    $type: gamedataCraftingPackage_Record
+    craftingExpModifier: 1
+    overcraftPenaltyModifier: 1
+    craftingRecipe:
+      - $type: gamedataRecipeElement_Record
+        amount: 1
+        ingredient: Ammo.Cal22x126AC
+      - $type: gamedataRecipeElement_Record
+        amount: 3
+        ingredient: Items.RareMaterial1
   buyPrice:
     - !append-once DPAE_Price.TierRare
   sellPrice:
