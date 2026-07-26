@@ -1,0 +1,53 @@
+
+StreetKidStarting:
+  startingItems:
+    - item: Items.money
+      quantity: 300
+    - item: Items.FirstAidWhiffV0
+      quantity: 1
+    - item: Items.BonesMcCoy70V0
+      quantity: 1
+    - item: Items.GrenadeFragRegular
+      quantity: 1
+    - item: Items.GrenadeEMPRegular
+      quantity: 1
+    - item: Items.GrenadeFlashRegular
+      quantity: 1
+
+CorporateStarting:
+  startingItems:
+    - item: Items.money
+      quantity: 121994
+    - item: Items.FirstAidWhiffV0
+      quantity: 1
+    - item: Items.BonesMcCoy70V0
+      quantity: 1
+    - item: Items.GrenadeFragRegular
+      quantity: 1
+    - item: Items.GrenadeEMPRegular
+      quantity: 1
+    - item: Items.GrenadeFlashRegular
+      quantity: 1
+
+NomadStarting:
+  startingItems:
+    - item: Items.money
+      quantity: 300
+    - item: Items.NomadsDrink1
+      quantity: 3
+    - item: Items.NomadsFood1
+      quantity: 3
+    - item: Items.CommonMaterial1
+      quantity: 10
+    - item: Items.UncommonMaterial1
+      quantity: 5
+    - item: Items.FirstAidWhiffV0
+      quantity: 1
+    - item: Items.BonesMcCoy70V0
+      quantity: 1
+    - item: Items.GrenadeFragRegular
+      quantity: 1
+    - item: Items.GrenadeEMPRegular
+      quantity: 1
+    - item: Items.GrenadeFlashRegular
+      quantity: 1

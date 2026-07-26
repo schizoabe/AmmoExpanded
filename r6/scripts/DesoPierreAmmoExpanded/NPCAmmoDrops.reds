@@ -257,6 +257,18 @@ private final func EvaluateLootQuality() -> Bool {
     }
   }
 
+  let ts = GameInstance.GetTransactionSystem(this.GetGame());
+  let standardID = ItemID.FromTDBID(t"Ammo.Standard");
+  let standardQty = ts.GetItemQuantity(this, standardID);
+  if standardQty > 0 {
+    ts.RemoveItem(this, standardID, standardQty);
+  }
+  let specialID = ItemID.FromTDBID(t"Ammo.Special");
+  let specialQty = ts.GetItemQuantity(this, specialID);
+  if specialQty > 0 {
+    ts.RemoveItem(this, specialID, specialQty);
+  }
+
   return wrappedMethod();
 }
 

@@ -1,0 +1,85 @@
+
+Vendors.Gunsmith:
+  itemQueries:
+    - !append-once
+      item: Items.CausticMod1_Common
+      quantity:
+        - Vendors.Commonly_Present
+      generationPrereqs:
+        - LootPrereqs.PlayerLevelCommonWeaponModsPrereq
+    - !append-once
+      item: Items.CausticMod1_Uncommon
+      quantity:
+        - Vendors.Commonly_Present
+      generationPrereqs:
+        - LootPrereqs.PlayerLevelUncommonWeaponModsPrereq
+    - !append-once
+      item: Items.CausticMod1_Rare
+      quantity:
+        - Vendors.Commonly_Present
+      generationPrereqs:
+        - LootPrereqs.PlayerLevelRareWeaponModsPrereq
+    - !append-once
+      item: Items.ArcMod1_Common
+      quantity:
+        - Vendors.Commonly_Present
+      generationPrereqs:
+        - LootPrereqs.PlayerLevelCommonWeaponModsPrereq
+    - !append-once
+      item: Items.ArcMod1_Uncommon
+      quantity:
+        - Vendors.Commonly_Present
+      generationPrereqs:
+        - LootPrereqs.PlayerLevelUncommonWeaponModsPrereq
+    - !append-once
+      item: Items.ArcMod1_Rare
+      quantity:
+        - Vendors.Commonly_Present
+      generationPrereqs:
+        - LootPrereqs.PlayerLevelRareWeaponModsPrereq
+
+LootTables.GenericTreasureChest:
+  lootItems:
+    - !append-once
+      playerPrereqID:
+        $type: PlayerLevel_Tier_4_Start_Prereq
+        comparisonType: Less
+      dropChance: 0.01
+      itemID: Items.CausticMod1_Rare
+    - !append-once
+      playerPrereqID: LootPrereqs.PlayerLevel_Tier_3_to_4_Exclusion_Prereq
+      dropChance: 0.01
+      itemID: Items.CausticMod1_Epic
+    - !append-once
+      playerPrereqID: LootPrereqs.PlayerLevel_Tier_5_Start_Prereq
+      dropChance: 0.01
+      itemID: Items.CausticMod1_Legendary
+    - !append-once
+      playerPrereqID:
+        $type: PlayerLevel_Tier_4_Start_Prereq
+        comparisonType: Less
+      dropChance: 0.01
+      itemID: Items.ArcMod1_Rare
+    - !append-once
+      playerPrereqID: LootPrereqs.PlayerLevel_Tier_3_to_4_Exclusion_Prereq
+      dropChance: 0.01
+      itemID: Items.ArcMod1_Epic
+    - !append-once
+      playerPrereqID: LootPrereqs.PlayerLevel_Tier_5_Start_Prereq
+      dropChance: 0.01
+      itemID: Items.ArcMod1_Legendary
+
+ControlledLoot.NPCWeaponModsLimiterLootSet:
+  lootItems:
+    - !append-once
+      itemID: Items.CausticMod1_Common
+    - !append-once
+      itemID: Items.CausticMod1_Uncommon
+    - !append-once
+      itemID: Items.CausticMod1_Rare
+    - !append-once
+      itemID: Items.ArcMod1_Common
+    - !append-once
+      itemID: Items.ArcMod1_Uncommon
+    - !append-once
+      itemID: Items.ArcMod1_Rare

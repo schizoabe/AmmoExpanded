@@ -4,9 +4,12 @@ Items.CausticMod1_Base:
   $base: Items.PowerMod1_Base
   displayName: LocKey#8100614
   statModifiers: []
+  OnAttach:
+    - UIData:
+        localizedDescription: LocKey#8100838
   icon:
-    atlasResourcePath: base/gameplay/gui/common/icons/items/item_icons8.inkatlas
-    atlasPartName: power_03_epic
+    atlasResourcePath: ammoexpanded\icons\ammoextended-mods-icons.inkatlas
+    atlasPartName: slot_02
 
 Items.CausticMod1_Common:
   $base: Items.CausticMod1_Base
@@ -125,9 +128,12 @@ Items.ArcMod1_Base:
   $base: Items.PowerMod1_Base
   displayName: LocKey#8100615
   statModifiers: []
+  OnAttach:
+    - UIData:
+        localizedDescription: LocKey#8100837
   icon:
-    atlasResourcePath: base/gameplay/gui/common/icons/items/item_icons8.inkatlas
-    atlasPartName: power_03_epic
+    atlasResourcePath: ammoexpanded\icons\ammoextended-mods-icons.inkatlas
+    atlasPartName: slot_01
 
 Items.ArcMod1_Common:
   $base: Items.ArcMod1_Base

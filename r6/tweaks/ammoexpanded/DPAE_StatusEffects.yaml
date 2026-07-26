@@ -96,7 +96,8 @@ DPAE_StatusEffect.INC_Burn_DoT:
           attackRecord: Attacks.ThermalDamageOverTime
 
 DPAE_StatusEffect.INC_Thermal_Debuff:
-  $base: BaseStatusEffect.Stat_Buff
+  $base: BaseStatusEffect.VulnerableStatusEffect
+  immunityStats: []
   duration:
     $type: gamedataStatModifierGroup_Record
     statModifiers:
@@ -292,7 +293,8 @@ DPAE_StatusEffect.CHEM_Poison_DoT:
           attackRecord: Attacks.ChemicalDamageOverTime
 
 DPAE_StatusEffect.CHEM_Poison_Debuff:
-  $base: BaseStatusEffect.Stat_Buff
+  $base: BaseStatusEffect.VulnerableStatusEffect
+  immunityStats: []
   duration:
     $type: gamedataStatModifierGroup_Record
     statModifiers:
@@ -307,7 +309,7 @@ DPAE_StatusEffect.CHEM_Poison_Debuff:
   uiData:
     $type: gamedataStatusEffectUIData_Record
     displayName: Corroded
-    iconPath: poisoned
+    iconPath: decreased_stats_icon
     priority: -7.0
   packages:
     - $type: gamedataGameplayLogicPackage_Record
