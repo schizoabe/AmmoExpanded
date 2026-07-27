@@ -67,6 +67,7 @@ protected cb func OnAmmoStateChangeEvent(evt: ref<AmmoStateChangeEvent>) -> Bool
                 if residual > 0 { ts.RemoveItem(player, player.DPAE_GetDummyItemID(), residual); }
               }
             } else if player.dpae_is_masked_ammo && Cast<Int32>(magCapacity + 0.5) == 1 && dummyLeft <= 1 {
+              player.dpae_pending_internal_dummy_qty += 5 - dummyLeft;
               ts.GiveItem(player, player.DPAE_GetDummyItemID(), 5 - dummyLeft);
             }
           }
@@ -86,11 +87,90 @@ protected cb func OnAmmoStateChangeEvent(evt: ref<AmmoStateChangeEvent>) -> Bool
 @wrapMethod(PlayerPuppet)
 protected cb func OnItemChangedEvent(evt: ref<ItemChangedEvent>) -> Bool {
   let result = wrappedMethod(evt);
+
+  if evt.difference > 0 && ItemID.IsValid(evt.itemID) {
+    let changedTDBID = ItemID.GetTDBID(evt.itemID);
+    if this.dpae_pending_internal_dummy_qty > 0 {
+      let consumed = Min(evt.difference, this.dpae_pending_internal_dummy_qty);
+      this.dpae_pending_internal_dummy_qty -= consumed;
+    } else {
+      let vanillaClass = DPAE_VanillaAmmoClassOf(changedTDBID);
+      if !Equals(vanillaClass, "") {
+        let replacement = TDBID.None();
+        if TDBID.IsValid(this.dpae_pending_disassembly_caliber)
+          && Equals(DPAE_ClassOfCaliber(this.dpae_pending_disassembly_caliber), vanillaClass) {
+          replacement = this.dpae_pending_disassembly_caliber;
+        } else {
+          replacement = DPAE_RandomCaliberForClass(vanillaClass);
+        }
+        this.dpae_pending_disassembly_caliber = TDBID.None();
+        if TDBID.IsValid(replacement) {
+          let ts = GameInstance.GetTransactionSystem(this.GetGame());
+          ts.RemoveItem(this, evt.itemID, evt.difference);
+          ts.GiveItem(this, ItemID.FromTDBID(replacement), evt.difference);
+        }
+      }
+    }
+  }
+
   if this.dpae_test_active && evt.difference > 0 && ItemID.IsValid(evt.itemID) && TDBID.IsValid(this.dpae_active_ammo)
     && Equals(ItemID.GetTDBID(evt.itemID), this.dpae_active_ammo) {
+    this.dpae_pending_internal_dummy_qty += evt.difference;
     GameInstance.GetTransactionSystem(this.GetGame()).GiveItem(this, this.DPAE_GetDummyItemID(), evt.difference);
   }
   return result;
+}
+
+func DPAE_VanillaAmmoClassOf(tdbid: TweakDBID) -> String {
+  if Equals(tdbid, t"Ammo.HandgunAmmo") { return "Handgun"; }
+  if Equals(tdbid, t"Ammo.RifleAmmo") { return "Rifle"; }
+  if Equals(tdbid, t"Ammo.ShotgunAmmo") { return "Shotgun"; }
+  if Equals(tdbid, t"Ammo.SniperRifleAmmo") { return "SniperRifle"; }
+  return "";
+}
+
+func DPAE_GetCaliberBucket(ammoClass: String) -> array<String> {
+  let bucket: array<String>;
+  if Equals(ammoClass, "Handgun") {
+    bucket = ["Ammo.Cal10mmAuto", "Ammo.Cal10x20TF", "Ammo.Cal12p3x41UdaR", "Ammo.Cal14x40TSlug",
+              "Ammo.Cal454Casull", "Ammo.Cal45Super", "Ammo.Cal45WinMag", "Ammo.Cal500Malour",
+              "Ammo.Cal50AE", "Ammo.Cal5p7x28TF", "Ammo.Cal6p5x25Minirocket", "Ammo.Cal8x30RailF",
+              "Ammo.Cal8x30TShot", "Ammo.Cal9p5x35Minirocket", "Ammo.Cal9x19", "Ammo.Cal9x30TF"];
+  } else if Equals(ammoClass, "Rifle") {
+    bucket = ["Ammo.Cal10x40Rocket", "Ammo.Cal12x45Rocket", "Ammo.Cal23x152Sov", "Ammo.Cal243Win",
+              "Ammo.Cal4p7x10TF", "Ammo.Cal50APHETIL", "Ammo.Cal50BMG", "Ammo.Cal50BeowulfOni",
+              "Ammo.Cal5p45CT", "Ammo.Cal5p56CT", "Ammo.Cal5p56x45NUSA", "Ammo.Cal6p5Arasaka",
+              "Ammo.Cal7p62x39Sov"];
+  } else if Equals(ammoClass, "Shotgun") {
+    bucket = ["Ammo.Cal10GaugeBuck", "Ammo.Cal10GaugeFlech", "Ammo.Cal12Gauge",
+              "Ammo.Cal15x55Rocket", "Ammo.Cal18x70Rocket", "Ammo.Cal4Gauge"];
+  } else if Equals(ammoClass, "SniperRifle") {
+    bucket = ["Ammo.Cal12p7x70Rocket", "Ammo.Cal15x80TSpike", "Ammo.Cal20x102Vulcan", "Ammo.Cal22x126AC"];
+  }
+  return bucket;
+}
+
+func DPAE_RandomCaliberForClass(ammoClass: String) -> TweakDBID {
+  let bucket = DPAE_GetCaliberBucket(ammoClass);
+  let size = ArraySize(bucket);
+  if size == 0 { return TDBID.None(); }
+  let idx = Cast<Int32>(RandF() * Cast<Float>(size));
+  if idx >= size { idx = size - 1; }
+  return TDBID.Create(bucket[idx]);
+}
+
+func DPAE_ClassOfCaliber(caliber: TweakDBID) -> String {
+  let caliberStr = TDBID.ToStringDEBUG(caliber);
+  let classes: array<String> = ["Handgun", "Rifle", "Shotgun", "SniperRifle"];
+  let c = 0;
+  while c < ArraySize(classes) {
+    let bucket = DPAE_GetCaliberBucket(classes[c]);
+    if ArrayContains(bucket, caliberStr) {
+      return classes[c];
+    }
+    c += 1;
+  }
+  return "";
 }
 
 
@@ -185,6 +265,7 @@ public func DPAE_SelectAmmo(activeTDBID: TweakDBID) -> Void {
 
   let leftover = ts.GetItemQuantity(this, dummyID);
   if leftover > 0 { ts.RemoveItem(this, dummyID, leftover); }
+  this.dpae_pending_internal_dummy_qty += giveQty;
   ts.GiveItem(this, dummyID, giveQty);
 
   this.dpae_prev_mag_pct   = IsDefined(weaponObj) ? WeaponObject.GetMagazinePercentage(weaponObj) : 0.0;

@@ -4,6 +4,8 @@
 @addField(PlayerPuppet) public let dpae_prev_mag_pct: Float;
 @addField(PlayerPuppet) public let dpae_prev_dummy_qty: Int32;
 @addField(PlayerPuppet) public let dpae_dummy_ammo: TweakDBID;
+@addField(PlayerPuppet) public let dpae_pending_internal_dummy_qty: Int32;
+@addField(PlayerPuppet) public let dpae_pending_disassembly_caliber: TweakDBID;
 @addField(PlayerPuppet) public let dpae_caliber: TweakDBID;
 @addField(PlayerPuppet) public let dpae_locked_variant: TweakDBID;
 @addField(PlayerPuppet) public let dpae_is_tube_fed: Bool;

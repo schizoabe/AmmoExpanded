@@ -1,0 +1,596 @@
+
+DPAE_QuestLootFix.q115_pistol_bucket:
+  minItemsToLoot: 1
+  maxItemsToLoot: 1
+  lootItems:
+  - itemID: Ammo.Cal10mmAuto
+    dropCountMin: 250
+    dropCountMax: 250
+  - itemID: Ammo.Cal10x20TF
+    dropCountMin: 250
+    dropCountMax: 250
+  - itemID: Ammo.Cal12p3x41UdaR
+    dropCountMin: 250
+    dropCountMax: 250
+  - itemID: Ammo.Cal14x40TSlug
+    dropCountMin: 250
+    dropCountMax: 250
+  - itemID: Ammo.Cal454Casull
+    dropCountMin: 250
+    dropCountMax: 250
+  - itemID: Ammo.Cal45Super
+    dropCountMin: 250
+    dropCountMax: 250
+  - itemID: Ammo.Cal45WinMag
+    dropCountMin: 250
+    dropCountMax: 250
+  - itemID: Ammo.Cal500Malour
+    dropCountMin: 250
+    dropCountMax: 250
+  - itemID: Ammo.Cal50AE
+    dropCountMin: 250
+    dropCountMax: 250
+  - itemID: Ammo.Cal5p7x28TF
+    dropCountMin: 250
+    dropCountMax: 250
+  - itemID: Ammo.Cal6p5x25Minirocket
+    dropCountMin: 250
+    dropCountMax: 250
+  - itemID: Ammo.Cal8x30RailF
+    dropCountMin: 250
+    dropCountMax: 250
+  - itemID: Ammo.Cal8x30TShot
+    dropCountMin: 250
+    dropCountMax: 250
+  - itemID: Ammo.Cal9p5x35Minirocket
+    dropCountMin: 250
+    dropCountMax: 250
+  - itemID: Ammo.Cal9x19
+    dropCountMin: 250
+    dropCountMax: 250
+  - itemID: Ammo.Cal9x30TF
+    dropCountMin: 250
+    dropCountMax: 250
+
+DPAE_QuestLootFix.q115_shotgun_bucket:
+  minItemsToLoot: 1
+  maxItemsToLoot: 1
+  lootItems:
+  - itemID: Ammo.Cal10GaugeBuck
+    dropCountMin: 50
+    dropCountMax: 50
+  - itemID: Ammo.Cal10GaugeFlech
+    dropCountMin: 50
+    dropCountMax: 50
+  - itemID: Ammo.Cal12Gauge
+    dropCountMin: 50
+    dropCountMax: 50
+  - itemID: Ammo.Cal15x55Rocket
+    dropCountMin: 50
+    dropCountMax: 50
+  - itemID: Ammo.Cal18x70Rocket
+    dropCountMin: 50
+    dropCountMax: 50
+  - itemID: Ammo.Cal4Gauge
+    dropCountMin: 50
+    dropCountMax: 50
+
+DPAE_QuestLootFix.q115_rifle_bucket:
+  minItemsToLoot: 1
+  maxItemsToLoot: 1
+  lootItems:
+  - itemID: Ammo.Cal10x40Rocket
+    dropCountMin: 350
+    dropCountMax: 350
+  - itemID: Ammo.Cal12x45Rocket
+    dropCountMin: 350
+    dropCountMax: 350
+  - itemID: Ammo.Cal23x152Sov
+    dropCountMin: 350
+    dropCountMax: 350
+  - itemID: Ammo.Cal243Win
+    dropCountMin: 350
+    dropCountMax: 350
+  - itemID: Ammo.Cal4p7x10TF
+    dropCountMin: 350
+    dropCountMax: 350
+  - itemID: Ammo.Cal50APHETIL
+    dropCountMin: 350
+    dropCountMax: 350
+  - itemID: Ammo.Cal50BMG
+    dropCountMin: 350
+    dropCountMax: 350
+  - itemID: Ammo.Cal50BeowulfOni
+    dropCountMin: 350
+    dropCountMax: 350
+  - itemID: Ammo.Cal5p45CT
+    dropCountMin: 350
+    dropCountMax: 350
+  - itemID: Ammo.Cal5p56CT
+    dropCountMin: 350
+    dropCountMax: 350
+  - itemID: Ammo.Cal5p56x45NUSA
+    dropCountMin: 350
+    dropCountMax: 350
+  - itemID: Ammo.Cal6p5Arasaka
+    dropCountMin: 350
+    dropCountMax: 350
+  - itemID: Ammo.Cal7p62x39Sov
+    dropCountMin: 350
+    dropCountMax: 350
+
+LootTables.q115_ammo_pile:
+  lootItems: []
+  lootTableInclusions:
+    - DPAE_QuestLootFix.q115_pistol_bucket
+    - DPAE_QuestLootFix.q115_shotgun_bucket
+    - DPAE_QuestLootFix.q115_rifle_bucket
+
+DPAE_QuestLootFix.mq008_pistol_bucket:
+  minItemsToLoot: 1
+  maxItemsToLoot: 1
+  lootItems:
+  - itemID: Ammo.Cal10mmAuto
+    dropCountMin: 30
+    dropCountMax: 30
+  - itemID: Ammo.Cal10x20TF
+    dropCountMin: 30
+    dropCountMax: 30
+  - itemID: Ammo.Cal12p3x41UdaR
+    dropCountMin: 30
+    dropCountMax: 30
+  - itemID: Ammo.Cal14x40TSlug
+    dropCountMin: 30
+    dropCountMax: 30
+  - itemID: Ammo.Cal454Casull
+    dropCountMin: 30
+    dropCountMax: 30
+  - itemID: Ammo.Cal45Super
+    dropCountMin: 30
+    dropCountMax: 30
+  - itemID: Ammo.Cal45WinMag
+    dropCountMin: 30
+    dropCountMax: 30
+  - itemID: Ammo.Cal500Malour
+    dropCountMin: 30
+    dropCountMax: 30
+  - itemID: Ammo.Cal50AE
+    dropCountMin: 30
+    dropCountMax: 30
+  - itemID: Ammo.Cal5p7x28TF
+    dropCountMin: 30
+    dropCountMax: 30
+  - itemID: Ammo.Cal6p5x25Minirocket
+    dropCountMin: 30
+    dropCountMax: 30
+  - itemID: Ammo.Cal8x30RailF
+    dropCountMin: 30
+    dropCountMax: 30
+  - itemID: Ammo.Cal8x30TShot
+    dropCountMin: 30
+    dropCountMax: 30
+  - itemID: Ammo.Cal9p5x35Minirocket
+    dropCountMin: 30
+    dropCountMax: 30
+  - itemID: Ammo.Cal9x19
+    dropCountMin: 30
+    dropCountMax: 30
+  - itemID: Ammo.Cal9x30TF
+    dropCountMin: 30
+    dropCountMax: 30
+
+LootTables.mq008_loot_ammo:
+  lootItems: []
+  lootTableInclusions:
+    - DPAE_QuestLootFix.mq008_pistol_bucket
+
+LootTables.q301_skybridge_pistol_ammo:
+  minItemsToLoot: 1
+  maxItemsToLoot: 1
+  lootItems:
+  - itemID: Ammo.Cal10mmAuto
+    dropCountMin: 120
+    dropCountMax: 180
+  - itemID: Ammo.Cal10x20TF
+    dropCountMin: 120
+    dropCountMax: 180
+  - itemID: Ammo.Cal12p3x41UdaR
+    dropCountMin: 120
+    dropCountMax: 180
+  - itemID: Ammo.Cal14x40TSlug
+    dropCountMin: 120
+    dropCountMax: 180
+  - itemID: Ammo.Cal454Casull
+    dropCountMin: 120
+    dropCountMax: 180
+  - itemID: Ammo.Cal45Super
+    dropCountMin: 120
+    dropCountMax: 180
+  - itemID: Ammo.Cal45WinMag
+    dropCountMin: 120
+    dropCountMax: 180
+  - itemID: Ammo.Cal500Malour
+    dropCountMin: 120
+    dropCountMax: 180
+  - itemID: Ammo.Cal50AE
+    dropCountMin: 120
+    dropCountMax: 180
+  - itemID: Ammo.Cal5p7x28TF
+    dropCountMin: 120
+    dropCountMax: 180
+  - itemID: Ammo.Cal6p5x25Minirocket
+    dropCountMin: 120
+    dropCountMax: 180
+  - itemID: Ammo.Cal8x30RailF
+    dropCountMin: 120
+    dropCountMax: 180
+  - itemID: Ammo.Cal8x30TShot
+    dropCountMin: 120
+    dropCountMax: 180
+  - itemID: Ammo.Cal9p5x35Minirocket
+    dropCountMin: 120
+    dropCountMax: 180
+  - itemID: Ammo.Cal9x19
+    dropCountMin: 120
+    dropCountMax: 180
+  - itemID: Ammo.Cal9x30TF
+    dropCountMin: 120
+    dropCountMax: 180
+
+LootTables.q105_woodman_loot:
+  lootItems:
+    - itemID: Items.Preset_Ajax_Pimp
+      statModifiers:
+        - Quality.MinimumRareQuality
+    - itemID: Ammo.Cal10x40Rocket
+      dropCountMin: 30
+      dropCountMax: 60
+    - itemID: Ammo.Cal10mmAuto
+      dropCountMin: 30
+      dropCountMax: 60
+
+LootTables.Airdrop_sa_ep1_30:
+  lootItems:
+  - itemID: Items.AirdropPermaReward
+  - itemID: Items.Jacket_22_basic_02
+    dropChance: 0.06
+  - itemID: Items.Preset_Copperhead_Krausser
+    statModifiers:
+      - Quality.PlusModifierForRewards
+    $type: RewardWeapon_LootItem
+  - itemID: Ammo.Cal12x45Rocket
+    dropCountMin: 120
+    dropCountMax: 180
+  - itemID: Items.PowerMod1_Rare
+    playerPrereqID: LootPrereqs.PlayerLevelNormalTierPrereq
+  - itemID: Items.ARSMGLMGMod2_Rare
+    playerPrereqID: LootPrereqs.PlayerLevelNormalTierPrereq
+  - itemID: Items.PowerMod1_Epic
+    playerPrereqID: LootPrereqs.PlayerLevelRareTierPrereq
+  - itemID: Items.ARSMGLMGMod2_Epic
+    playerPrereqID: LootPrereqs.PlayerLevelRareTierPrereq
+  - itemID: Items.PowerMod1_Legendary
+    playerPrereqID: LootPrereqs.PlayerLevelEliteTierPrereq
+  - itemID: Items.ARSMGLMGMod2_Legendary
+    playerPrereqID: LootPrereqs.PlayerLevelEliteTierPrereq
+
+LootTables.Airdrop_sa_ep1_31:
+  lootItems:
+  - itemID: Items.AirdropPermaReward
+  - itemID: Items.Preset_Saratoga_Krausser
+    statModifiers:
+      - Quality.PlusModifierForRewards
+    $type: RewardWeapon_LootItem
+  - itemID: Ammo.Cal23x152Sov
+    dropCountMin: 120
+    dropCountMax: 180
+  - itemID: Items.ARSMGLMGMod3_Rare
+    playerPrereqID: LootPrereqs.PlayerLevelNormalTierPrereq
+  - itemID: Items.PowerMod3_Rare
+    playerPrereqID: LootPrereqs.PlayerLevelNormalTierPrereq
+  - itemID: Items.ARSMGLMGMod3_Epic
+    playerPrereqID: LootPrereqs.PlayerLevelRareTierPrereq
+  - itemID: Items.PowerMod3_Epic
+    playerPrereqID: LootPrereqs.PlayerLevelRareTierPrereq
+  - itemID: Items.ARSMGLMGMod3_Legendary
+    playerPrereqID: LootPrereqs.PlayerLevelEliteTierPrereq
+  - itemID: Items.PowerMod3_Legendary
+    playerPrereqID: LootPrereqs.PlayerLevelEliteTierPrereq
+
+LootTables.Airdrop_sa_ep1_32:
+  lootItems:
+  - itemID: Items.AirdropPermaReward
+  - itemID: Items.Coat_05_rich_01
+  - itemID: Items.Preset_Ajax_Krausser
+    statModifiers:
+      - Quality.PlusModifierForRewards
+    $type: RewardWeapon_LootItem
+  - itemID: Ammo.Cal243Win
+    dropCountMin: 120
+    dropCountMax: 180
+  - itemID: Items.TopQualityAlcohol2
+    dropCountMin: 10
+    dropCountMax: 10
+  - itemID: Items.TopQualityAlcohol6
+    dropCountMin: 10
+    dropCountMax: 10
+  - itemID: Items.TopQualityAlcohol7
+    dropCountMin: 10
+    dropCountMax: 10
+  - itemID: Items.ReflexesSkill_Skillbook
+  - itemID: Items.BlackLaceV1
+    dropCountMin: 1
+    dropCountMax: 2
+
+LootTables.Airdrop_sa_ep1_33:
+  lootItems:
+  - itemID: Items.AirdropPermaReward
+  - itemID: Items.Vest_21_old_03
+  - itemID: Items.Pants_17_basic_01
+  - itemID: Items.Helmet_12_rich_02
+  - itemID: Ammo.Cal10x20TF
+    dropCountMin: 120
+    dropCountMax: 180
+  - itemID: Items.Preset_Burya_AirDrop
+    $type: IconicWeapon_LootItem
+
+LootTables.Airdrop_sa_ep1_35:
+  lootItems:
+  - itemID: Items.AirdropPermaReward
+  - itemID: Items.Preset_Tactician_Krausser
+    statModifiers:
+      - Quality.PlusModifierForRewards
+    $type: RewardWeapon_LootItem
+  - itemID: Ammo.Cal10GaugeBuck
+    dropCountMin: 40
+    dropCountMax: 80
+  - itemID: Items.Vest_21_rich_01
+  - itemID: Items.Mask_04_basic_02
+  - itemID: Items.BodySkill_Skillbook
+  - itemID: Items.ShotgunMod3_Rare
+    playerPrereqID: LootPrereqs.PlayerLevelNormalTierPrereq
+  - itemID: Items.ShotgunMod3_Epic
+    playerPrereqID: LootPrereqs.PlayerLevelRareTierPrereq
+  - itemID: Items.ShotgunMod3_Legendary
+    playerPrereqID: LootPrereqs.PlayerLevelEliteTierPrereq
+
+LootTables.Airdrop_sa_ep1_36:
+  lootItems:
+  - itemID: Items.AirdropPermaReward
+  - itemID: Ammo.Cal4p7x10TF
+    dropCountMin: 120
+    dropCountMax: 180
+  - itemID: Items.Preset_Warden_Krausser
+    statModifiers:
+      - Quality.PlusModifierForRewards
+    $type: RewardWeapon_LootItem
+  - itemID: Items.Vest_22_basic_02
+  - itemID: Items.Helmet_09_old_01
+  - itemID: Items.ARSMGLMGMod1_Rare
+    playerPrereqID: LootPrereqs.PlayerLevelNormalTierPrereq
+  - itemID: Items.ARSMGLMGMod1_Epic
+    playerPrereqID: LootPrereqs.PlayerLevelRareTierPrereq
+  - itemID: Items.ARSMGLMGMod1_Legendary
+    playerPrereqID: LootPrereqs.PlayerLevelEliteTierPrereq
+
+LootTables.Airdrop_sa_ep1_38:
+  lootItems:
+  - itemID: Items.AirdropPermaReward
+  - itemID: Items.Pants_17_old_02
+  - itemID: Items.Vest_23_old_01
+  - itemID: Ammo.Cal12p7x70Rocket
+    dropCountMin: 24
+    dropCountMax: 40
+  - itemID: Items.Preset_Grad_AirDrop
+    $type: IconicWeapon_LootItem
+
+LootTables.Airdrop_sa_ep1_39:
+  lootItems:
+  - itemID: Items.AirdropPermaReward
+  - itemID: Items.Preset_Lexington_Krausser
+    statModifiers:
+      - Quality.PlusModifierForRewards
+    $type: RewardWeapon_LootItem
+  - itemID: Ammo.Cal12p3x41UdaR
+    dropCountMin: 120
+    dropCountMax: 180
+  - itemID: Items.HGMod1_Rare
+    playerPrereqID: LootPrereqs.PlayerLevelNormalTierPrereq
+  - itemID: Items.HGMod2_Rare
+    playerPrereqID: LootPrereqs.PlayerLevelNormalTierPrereq
+  - itemID: Items.HGMod1_Epic
+    playerPrereqID: LootPrereqs.PlayerLevelRareTierPrereq
+  - itemID: Items.HGMod2_Epic
+    playerPrereqID: LootPrereqs.PlayerLevelRareTierPrereq
+  - itemID: Items.HGMod1_Legendary
+    playerPrereqID: LootPrereqs.PlayerLevelEliteTierPrereq
+  - itemID: Items.HGMod2_Legendary
+    playerPrereqID: LootPrereqs.PlayerLevelEliteTierPrereq
+
+LootTables.Airdrop_sa_ep1_300:
+  lootItems:
+  - itemID: Items.AirdropPermaReward
+  - itemID: Items.Preset_Crusher_Krausser
+    statModifiers:
+      - Quality.PlusModifierForRewards
+    $type: RewardWeapon_LootItem
+  - itemID: Ammo.Cal10GaugeFlech
+    dropCountMin: 40
+    dropCountMax: 80
+  - itemID: Items.ShotgunMod1_Rare
+    playerPrereqID: LootPrereqs.PlayerLevelNormalTierPrereq
+  - itemID: Items.RangedMod3_Rare
+    playerPrereqID: LootPrereqs.PlayerLevelNormalTierPrereq
+  - itemID: Items.ShotgunMod1_Epic
+    playerPrereqID: LootPrereqs.PlayerLevelRareTierPrereq
+  - itemID: Items.RangedMod3_Epic
+    playerPrereqID: LootPrereqs.PlayerLevelNormalTierPrereq
+  - itemID: Items.ShotgunMod1_Legendary
+    playerPrereqID: LootPrereqs.PlayerLevelEliteTierPrereq
+  - itemID: Items.RangedMod3_Legendary
+    playerPrereqID: LootPrereqs.PlayerLevelNormalTierPrereq
+
+LootTables.Airdrop_sa_ep1_301:
+  lootItems:
+  - itemID: Items.AirdropPermaReward
+  - itemID: Ammo.Cal50APHETIL
+    dropCountMin: 120
+    dropCountMax: 180
+  - itemID: Items.Preset_Kyubi_Krausser
+    statModifiers:
+      - Quality.PlusModifierForRewards
+    $type: RewardWeapon_LootItem
+  - itemID: Items.Vest_22_old_03
+  - itemID: Items.Helmet_11_rich_02
+
+LootTables.Airdrop_sa_ep1_303:
+  lootItems:
+  - itemID: Items.AirdropPermaReward
+  - itemID: Items.Preset_Nekomata_Krausser
+    statModifiers:
+      - Quality.PlusModifierForRewards
+    $type: RewardWeapon_LootItem
+  - itemID: Ammo.Cal15x80TSpike
+    dropCountMin: 24
+    dropCountMax: 40
+  - itemID: Items.TechMod2_Rare
+    playerPrereqID: LootPrereqs.PlayerLevelNormalTierPrereq
+  - itemID: Items.PRSRMod2_Rare
+    playerPrereqID: LootPrereqs.PlayerLevelNormalTierPrereq
+  - itemID: Items.TechMod2_Epic
+    playerPrereqID: LootPrereqs.PlayerLevelRareTierPrereq
+  - itemID: Items.PRSRMod2_Epic
+    playerPrereqID: LootPrereqs.PlayerLevelNormalTierPrereq
+  - itemID: Items.TechMod2_Legendary
+    playerPrereqID: LootPrereqs.PlayerLevelEliteTierPrereq
+  - itemID: Items.PRSRMod2_Legendary
+    playerPrereqID: LootPrereqs.PlayerLevelNormalTierPrereq
+
+LootTables.Airdrop_sa_ep1_304:
+  lootItems:
+  - itemID: Items.AirdropPermaReward
+  - itemID: Items.Balaclava_02_old_02
+  - itemID: Items.Pants_17_rich_04
+  - itemID: Items.Jacket_22_old_01
+  - itemID: Items.Preset_Metel_AirDrop
+    $type: IconicWeapon_LootItem
+  - itemID: Ammo.Cal14x40TSlug
+    dropCountMin: 120
+    dropCountMax: 180
+
+LootTables.Airdrop_sa_ep1_306:
+  lootItems:
+  - itemID: Items.AirdropPermaReward
+  - itemID: Items.Vest_21_rich_04
+  - itemID: Items.Helmet_09_rich_03
+  - itemID: Items.Preset_Pozhar_AirDrop
+    $type: IconicWeapon_LootItem
+  - itemID: Ammo.Cal12Gauge
+    dropCountMin: 100
+    dropCountMax: 100
+
+LootTables.sa_ep1_30_mq304_001:
+  lootItems:
+  - itemID: Items.AirdropPermaReward
+  - itemID: Items.ShotgunMod1_Rare
+    playerPrereqID: LootPrereqs.PlayerLevelNormalTierPrereq
+  - itemID: Items.PowerMod1_Rare
+    playerPrereqID: LootPrereqs.PlayerLevelNormalTierPrereq
+  - itemID: Items.ShotgunMod1_Epic
+    playerPrereqID: LootPrereqs.PlayerLevelRareTierPrereq
+  - itemID: Items.PowerMod1_Epic
+    playerPrereqID: LootPrereqs.PlayerLevelRareTierPrereq
+  - itemID: Items.ShotgunMod1_Legendary
+    playerPrereqID: LootPrereqs.PlayerLevelEliteTierPrereq
+  - itemID: Items.PowerMod1_Legendary
+    playerPrereqID: LootPrereqs.PlayerLevelEliteTierPrereq
+  - itemID: Ammo.Cal15x55Rocket
+    dropCountMin: 40
+    dropCountMax: 80
+  - itemID: Items.Preset_Pozhar_Military
+    statModifiers:
+      - Quality.PlusModifierForRewards
+    $type: RewardWeapon_LootItem
+
+LootTables.sa_ep1_31_mq304:
+  lootItems:
+  - itemID: Items.AirdropPermaReward
+  - itemID: Items.w_att_scope_sniper_01_legendary
+  - itemID: Items.PRSRMod2_Rare
+    playerPrereqID: LootPrereqs.PlayerLevelNormalTierPrereq
+  - itemID: Items.PRSRMod2_Epic
+    playerPrereqID: LootPrereqs.PlayerLevelRareTierPrereq
+  - itemID: Items.PRSRMod2_Legendary
+    playerPrereqID: LootPrereqs.PlayerLevelEliteTierPrereq
+  - itemID: Ammo.Cal20x102Vulcan
+    dropCountMin: 24
+    dropCountMax: 40
+  - itemID: Items.Preset_Grad_Military
+    statModifiers:
+      - Quality.PlusModifierForRewards
+    $type: RewardWeapon_LootItem
+
+LootTables.sa_ep1_37_mq304_02:
+  lootItems:
+  - itemID: Items.AirdropPermaReward
+  - itemID: Items.TechMod1_Rare
+    playerPrereqID: LootPrereqs.PlayerLevelNormalTierPrereq
+  - itemID: Items.TechMod1_Rare
+    playerPrereqID: LootPrereqs.PlayerLevelNormalTierPrereq
+  - itemID: Items.TechMod1_Epic
+    playerPrereqID: LootPrereqs.PlayerLevelRareTierPrereq
+  - itemID: Items.TechMod1_Epic
+    playerPrereqID: LootPrereqs.PlayerLevelRareTierPrereq
+  - itemID: Items.TechMod1_Legendary
+    playerPrereqID: LootPrereqs.PlayerLevelEliteTierPrereq
+  - itemID: Items.TechMod1_Legendary
+    playerPrereqID: LootPrereqs.PlayerLevelEliteTierPrereq
+  - itemID: Ammo.Cal454Casull
+    dropCountMin: 120
+    dropCountMax: 180
+  - itemID: Items.Preset_Burya_Military
+    statModifiers:
+      - Quality.PlusModifierForRewards
+    $type: RewardWeapon_LootItem
+
+LootTables.sa_ep1_34_mq304:
+  lootItems:
+  - itemID: Items.AirdropPermaReward
+  - itemID: Items.w_silencer_03_legendary
+  - itemID: Items.GenericMod1_Rare
+    playerPrereqID: LootPrereqs.PlayerLevelNormalTierPrereq
+  - itemID: Items.RangedMod3_Rare
+    playerPrereqID: LootPrereqs.PlayerLevelNormalTierPrereq
+  - itemID: Items.GenericMod1_Epic
+    playerPrereqID: LootPrereqs.PlayerLevelRareTierPrereq
+  - itemID: Items.RangedMod3_Epic
+    playerPrereqID: LootPrereqs.PlayerLevelRareTierPrereq
+  - itemID: Items.GenericMod1_Legendary
+    playerPrereqID: LootPrereqs.PlayerLevelEliteTierPrereq
+  - itemID: Items.RangedMod3_Legendary
+    playerPrereqID: LootPrereqs.PlayerLevelEliteTierPrereq
+  - itemID: Ammo.Cal45Super
+    dropCountMin: 120
+    dropCountMax: 180
+  - itemID: Items.Preset_Nue_Arasaka_2077
+    statModifiers:
+      - Quality.PlusModifierForRewards
+    $type: RewardWeapon_LootItem
+
+LootTables.sa_ep1_32_mq304:
+  lootItems:
+  - itemID: Items.AirdropPermaReward
+  - itemID: Ammo.Cal50BMG
+    dropCountMin: 120
+    dropCountMax: 180
+  - itemID: Ammo.Cal45WinMag
+    dropCountMin: 120
+    dropCountMax: 180
+  - itemID: Items.Preset_MA70_Military
+    statModifiers:
+      - Quality.PlusModifierForRewards
+    $type: RewardWeapon_LootItem
+  - itemID: Items.Preset_Metel_Military
+    statModifiers:
+      - Quality.PlusModifierForRewards
+    $type: RewardWeapon_LootItem
