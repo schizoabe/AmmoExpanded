@@ -117,7 +117,7 @@ protected cb func OnGameAttached() -> Bool {
   canvas.SetName(n"DPAEAmmoHUDCanvas");
   canvas.SetAnchor(inkEAnchor.BottomRight);
   canvas.SetAnchorPoint(new Vector2(1.0, 1.0));
-  canvas.SetMargin(new inkMargin(0.0, 0.0, 40.0, 160.0));
+  canvas.SetMargin(new inkMargin(0.0, 0.0, 40.0, 220.0));
   canvas.SetSize(new Vector2(260.0, 48.0));
   canvas.Reparent(hudRoot);
 

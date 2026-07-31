@@ -2,6 +2,12 @@
 import FACCarryCapacity.*
 
 @if(ModuleExists("FACCarryCapacity"))
+public func DPAE_IsFACCDummyToken(activeStr: String) -> Bool {
+  return Equals(activeStr, "Ammo.HandgunAmmo") || Equals(activeStr, "Ammo.RifleAmmo")
+    || Equals(activeStr, "Ammo.ShotgunAmmo") || Equals(activeStr, "Ammo.SniperRifleAmmo");
+}
+
+@if(ModuleExists("FACCarryCapacity"))
 public func DPAE_GetFACCCaliberWeight(activeStr: String) -> Float {
   if StrBeginsWith(activeStr, "Ammo.Cal10GaugeBuck") { return 0.095; }
   if StrBeginsWith(activeStr, "Ammo.Cal10GaugeFlech") { return 0.095; }
@@ -54,7 +60,11 @@ public final func GetWeight() -> Float {
   if cfg.modON && cfg.ammoWeightEnabled && Equals(this.GetItemType(), gamedataItemType.Con_Ammo) {
     let data: ref<gameItemData> = this.GetItemData();
     if IsDefined(data) {
-      let perRound = DPAE_GetFACCCaliberWeight(TDBID.ToStringDEBUG(ItemID.GetTDBID(data.GetID())));
+      let tdbidStr = TDBID.ToStringDEBUG(ItemID.GetTDBID(data.GetID()));
+      if DPAE_IsFACCDummyToken(tdbidStr) {
+        return 0.0;
+      }
+      let perRound = DPAE_GetFACCCaliberWeight(tdbidStr);
       if perRound > 0.0 {
         let qty = data.GetQuantity();
         if qty < 1 { qty = 1; }

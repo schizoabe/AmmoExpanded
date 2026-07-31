@@ -71,6 +71,7 @@ Ammo.ShotgunAmmo:
     - Ammo
     - ShowStackPrice
     - ShotgunAmmo
+    - SkipActivityLog
   $type: gamedataItem_Record
   upgradeCostMult: 1
   useHeadgearGarmentAggregator: False
