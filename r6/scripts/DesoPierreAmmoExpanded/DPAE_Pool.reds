@@ -5,6 +5,14 @@ protected cb func OnAmmoStateChangeEvent(evt: ref<AmmoStateChangeEvent>) -> Bool
   if IsDefined(evt.weaponOwner) && evt.weaponOwner.IsPlayer() {
     let player = evt.weaponOwner as PlayerPuppet;
     if IsDefined(player) {
+      if ItemID.IsValid(player.dpae_pending_zero_weapon) && this.GetItemID() == player.dpae_pending_zero_weapon {
+        let confirmedCaliber = player.dpae_pending_zero_caliber;
+        let clearedZeroWeapon: ItemID;
+        player.dpae_pending_zero_weapon  = clearedZeroWeapon;
+        player.dpae_pending_zero_caliber = TDBID.None();
+        player.DPAE_ResolveAmmoSelection(confirmedCaliber);
+        return wrappedMethod(evt);
+      }
       if player.dpae_test_active {
         let ts             = GameInstance.GetTransactionSystem(player.GetGame());
         let thisItemID     = this.GetItemID();

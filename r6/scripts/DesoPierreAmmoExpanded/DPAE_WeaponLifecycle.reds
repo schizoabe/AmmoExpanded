@@ -46,23 +46,6 @@ public func DPAE_ResolveAmmoSelection(caliberTDBID: TweakDBID) -> Void {
   }
 }
 
-public class DPAE_ResumeSelectEvent extends Event {
-  public let caliberTDBID: TweakDBID;
-  public let expectedWeapon: wref<WeaponObject>;
-}
-
-@addMethod(PlayerPuppet)
-protected cb func DPAE_OnResumeSelect(evt: ref<DPAE_ResumeSelectEvent>) -> Bool {
-  let ts    = GameInstance.GetTransactionSystem(this.GetGame());
-  let right = ts.GetItemInSlot(this, t"AttachmentSlots.WeaponRight") as WeaponObject;
-  let left  = ts.GetItemInSlot(this, t"AttachmentSlots.WeaponLeft") as WeaponObject;
-  if !IsDefined(evt.expectedWeapon) || (evt.expectedWeapon != right && evt.expectedWeapon != left) {
-    return true;
-  }
-  this.DPAE_ResolveAmmoSelection(evt.caliberTDBID);
-  return true;
-}
-
 @addMethod(PlayerPuppet)
 private func DPAE_HandleWeaponSlotEvent(slotID: TweakDBID) -> Void {
   let ts      = GameInstance.GetTransactionSystem(this.GetGame());
@@ -81,6 +64,10 @@ private func DPAE_HandleWeaponSlotEvent(slotID: TweakDBID) -> Void {
   } else {
     this.dpae_current_weapon_left = peekItemID;
   }
+
+  let clearedZeroWeapon: ItemID;
+  this.dpae_pending_zero_weapon  = clearedZeroWeapon;
+  this.dpae_pending_zero_caliber = TDBID.None();
 
   let dummyID = this.DPAE_GetDummyItemID();
 
@@ -164,10 +151,8 @@ private func DPAE_HandleWeaponSlotEvent(slotID: TweakDBID) -> Void {
     zeroEvt.count = Cast<Uint32>(0);
     GameInstance.GetDelaySystem(this.GetGame()).DelayEvent(weaponObj, zeroEvt, 0.05, false);
 
-    let resumeEvt = new DPAE_ResumeSelectEvent();
-    resumeEvt.caliberTDBID   = caliberTDBID;
-    resumeEvt.expectedWeapon = weaponObj;
-    GameInstance.GetDelaySystem(this.GetGame()).DelayEvent(this, resumeEvt, 0.15, false);
+    this.dpae_pending_zero_weapon  = weaponItemID;
+    this.dpae_pending_zero_caliber = caliberTDBID;
   } else {
     this.DPAE_ResolveAmmoSelection(caliberTDBID);
   }
@@ -210,6 +195,13 @@ protected cb func OnItemRemovedFromSlot(evt: ref<ItemRemovedFromSlot>) -> Bool {
   }
 
   let itemID = evt.GetItemID();
+
+  if ItemID.IsValid(this.dpae_pending_zero_weapon) && this.dpae_pending_zero_weapon == itemID {
+    let clearedZeroWeapon: ItemID;
+    this.dpae_pending_zero_weapon  = clearedZeroWeapon;
+    this.dpae_pending_zero_caliber = TDBID.None();
+  }
+
   if !ItemID.IsValid(itemID) { return result; }
 
   let weaponRecord = TweakDBInterface.GetItemRecord(ItemID.GetTDBID(itemID)) as WeaponItem_Record;

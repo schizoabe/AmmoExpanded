@@ -77,6 +77,8 @@ public class DPAE_AmmoHUD {
 public class DPAE_AmmoHUDSystem extends ScriptableSystem {
   private let m_hud: ref<DPAE_AmmoHUD>;
 
+  private let m_pendingCycle: Bool;
+
   public func RegisterHUD(hud: ref<DPAE_AmmoHUD>) -> Void {
     this.m_hud = hud;
   }
@@ -91,6 +93,16 @@ public class DPAE_AmmoHUDSystem extends ScriptableSystem {
     if IsDefined(this.m_hud) {
       this.m_hud.Hide();
     }
+  }
+
+  public func RequestCycleAmmo() -> Void {
+    this.m_pendingCycle = true;
+  }
+
+  public func ConsumeCycleAmmoRequest() -> Bool {
+    let v = this.m_pendingCycle;
+    this.m_pendingCycle = false;
+    return v;
   }
 }
 

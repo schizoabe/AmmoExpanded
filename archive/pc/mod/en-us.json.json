@@ -5085,6 +5085,90 @@
               "maleVariant": "",
               "primaryKey": "8100838",
               "secondaryKey": "AmmoExpanded-CausticMod-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "DPAE Hotkeys",
+              "maleVariant": "",
+              "primaryKey": "8100839",
+              "secondaryKey": "AmmoExpanded-Input-Category"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "Cycle Ammo Variant",
+              "maleVariant": "",
+              "primaryKey": "8100842",
+              "secondaryKey": "AmmoExpanded-Input-CycleAmmo"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "Cycles the currently drawn weapon to its next available ammo variant.",
+              "maleVariant": "",
+              "primaryKey": "8100843",
+              "secondaryKey": "AmmoExpanded-Input-CycleAmmo-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "Drop Current Weapon",
+              "maleVariant": "",
+              "primaryKey": "8100844",
+              "secondaryKey": "AmmoExpanded-Input-DropCurrentWeapon"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "Drops the currently equipped weapon without opening the inventory.",
+              "maleVariant": "",
+              "primaryKey": "8100845",
+              "secondaryKey": "AmmoExpanded-Input-DropCurrentWeapon-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "Toggles",
+              "maleVariant": "",
+              "primaryKey": "8100846",
+              "secondaryKey": "AmmoExpanded-Settings-Category"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "Accurate Damage Colors",
+              "maleVariant": "",
+              "primaryKey": "8100847",
+              "secondaryKey": "AmmoExpanded-Settings-AccurateDamageColors"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "Show the real elemental color (Thermal/Electric/Chemical) on the initial hit's damage number when converted ammo is active, instead of vanilla always showing Physical for direct hits. Purely cosmetic — the actual damage dealt is correct either way; this only affects the on-screen number's color.",
+              "maleVariant": "",
+              "primaryKey": "8100848",
+              "secondaryKey": "AmmoExpanded-Settings-AccurateDamageColors-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "True Damage Conversion",
+              "maleVariant": "",
+              "primaryKey": "8100849",
+              "secondaryKey": "AmmoExpanded-Settings-TrueDamageConversion"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "On: elemental ammo (Incendiary/EMP/Chemical) genuinely shifts damage out of Physical into Thermal/Electric/Chemical, same as vanilla Pyro's own conversion. Off: elemental damage is simply added on top of full, unreduced Physical damage instead — a simpler bonus-only behavior.",
+              "maleVariant": "",
+              "primaryKey": "8100850",
+              "secondaryKey": "AmmoExpanded-Settings-TrueDamageConversion-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "Force Reload On Ammo Switch",
+              "maleVariant": "",
+              "primaryKey": "8100851",
+              "secondaryKey": "AmmoExpanded-Settings-ForceReloadOnAmmoSwitch"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "On: manually switching ammo variant mid-fight drains the physical chamber, requiring a real reload before the new variant actually fires — closes the free instant elemental swap a full magazine otherwise allows. Off (default): switching applies immediately with no reload cost. Weapons that can't reload at all (HMGs and a few iconic pistols/revolvers) are never affected by this, regardless of the setting.",
+              "maleVariant": "",
+              "primaryKey": "8100852",
+              "secondaryKey": "AmmoExpanded-Settings-ForceReloadOnAmmoSwitch-Desc"
             }
           ]
         }

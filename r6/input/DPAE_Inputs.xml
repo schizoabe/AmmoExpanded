@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<bindings>
+    <context name="DPAEInputContext">
+        <action name="DPAE_CycleAmmo" map="DPAE_CycleAmmo_Button" />
+        <action name="DPAE_DropCurrentWeapon" map="DPAE_DropCurrentWeapon_Button" />
+    </context>
+
+    <context name="Combat" append="true">
+        <include name="DPAEInputContext" />
+    </context>
+    <context name="Exploration" append="true">
+        <include name="DPAEInputContext" />
+    </context>
+
+    <mapping name="DPAE_CycleAmmo_Button" type="Button">
+        <button id="IK_F7" overridableUI="DPAE_CycleAmmo" />
+    </mapping>
+    <mapping name="DPAE_DropCurrentWeapon_Button" type="Button">
+        <button id="IK_F10" overridableUI="DPAE_DropCurrentWeapon" />
+    </mapping>
+</bindings>

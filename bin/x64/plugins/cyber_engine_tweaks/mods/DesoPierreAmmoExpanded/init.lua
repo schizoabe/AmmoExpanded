@@ -1,5 +1,3 @@
-local windowOpen = true
-
 local ROUND_COLORS = {
     FMJ   = { 0.85, 0.85, 0.85 },
     GEN   = { 0.85, 0.85, 0.85 },
@@ -575,66 +573,6 @@ local function syncActiveID(p)
     end
 end
 
-local function drawPoolUI(p, calLabel, variants, isTube, isLocked)
-    ImGui.TextColored(1.0, 0.9, 0.3, 1.0, isTube and "TUBE-FED WEAPON" or "MAGAZINE-FED WEAPON")
-    ImGui.TextColored(0.65, 0.65, 0.65, 1.0,
-        "Select one ammo type. Each shot consumes one round.")
-    if isLocked then
-        ImGui.TextColored(1.0, 0.7, 0.2, 1.0, "This weapon can only chamber one variant.")
-    end
-    ImGui.Separator()
-
-    if localActiveID ~= "" then
-        local left      = p:DPAE_GetActiveAmmoCount()
-        local shortName = "?"
-        for _, v in ipairs(variants) do
-            if v.id == localActiveID then
-                shortName = v.short; break
-            end
-        end
-        local r, g, b = colorFor(shortName)
-        ImGui.Text("Active: ")
-        ImGui.SameLine()
-        ImGui.TextColored(r, g, b, 1.0, shortName)
-        ImGui.SameLine()
-        ImGui.Text("(" .. left .. " remaining)")
-        ImGui.SameLine()
-        if not isLocked and ImGui.SmallButton("Clear") then
-            p:DPAE_ClearAmmo()
-            localActiveID = ""
-            REMEMBERED[currentCalKey] = ""
-        end
-    else
-        ImGui.TextColored(0.55, 0.55, 0.55, 1.0, "No active type — select below.")
-    end
-
-    ImGui.Separator()
-    ImGui.Text(calLabel .. ":")
-    ImGui.Spacing()
-
-    for _, v in ipairs(variants) do
-        local qty      = getQty(v.id)
-        local r, g, b  = colorFor(v.short)
-        local isActive = (localActiveID == v.id)
-
-        ImGui.TextColored(r, g, b, 1.0, string.format("%-14s", v.label))
-        ImGui.SameLine()
-        ImGui.Text(string.format("x%d", qty))
-        ImGui.SameLine()
-        if isActive then
-            ImGui.TextColored(0.40, 1.00, 0.40, 1.0, "[ACTIVE]")
-        elseif qty > 0 then
-            if ImGui.SmallButton("Select##" .. v.id) then
-                p:DPAE_SelectAmmo(TweakDBID.new(v.id))
-                localActiveID = v.id
-                REMEMBERED[currentCalKey] = v.id
-            end
-        else
-            ImGui.TextDisabled("--")
-        end
-    end
-end
-
 local lastHUDVariant = nil
 local lastHUDQty     = nil
 
@@ -685,24 +623,19 @@ local function updateHUD(p)
 end
 
 
-registerHotkey("DPAE_ToggleWindow", "DPAE: Toggle Ammo Loader", function()
-    windowOpen = not windowOpen
-end)
+local function pollInputRequests(p)
+    local sys = getAmmoHUDSystem()
+    if not sys then return end
 
-registerHotkey("DPAE_CycleAmmo", "DPAE: Cycle Ammo Variant", function()
-    local p = Game.GetPlayer()
-    if not p then return end
-    if not currentCal then return end
-    local effectiveVariants, lockedID = getEffectiveVariants(p, currentCal, currentCal.label)
-    if lockedID ~= "" then return end -- nothing to cycle, only one option
-    cycleToNextVariant(p, effectiveVariants)
-end)
-
-registerHotkey("DPAE_DropCurrentWeapon", "DPAE: Drop Current Weapon", function()
-    local p = Game.GetPlayer()
-    if not p then return end
-    p:DPAE_DropCurrentWeapon()
-end)
+    if sys:ConsumeCycleAmmoRequest() then
+        if currentCal then
+            local effectiveVariants, lockedID = getEffectiveVariants(p, currentCal, currentCal.label)
+            if lockedID == "" then
+                cycleToNextVariant(p, effectiveVariants)
+            end
+        end
+    end
+end
 
 registerForEvent('onDraw', function()
     local p = Game.GetPlayer()
@@ -712,120 +645,5 @@ registerForEvent('onDraw', function()
     healAfterLoad(p)
     syncActiveID(p)
     updateHUD(p)
-
-    if not windowOpen then return end
-
-    local calLabel = currentCal and currentCal.label or "No DPAE weapon drawn"
-    local isTube   = p:DPAE_IsTubeFed()
-    local title    = "DPAE: Ammo Selector — " .. calLabel
-
-    ImGui.SetNextWindowSize(480, 580)
-    if not ImGui.Begin(title) then
-        ImGui.End()
-        return
-    end
-
-    if not currentCal then
-        ImGui.TextColored(1.0, 0.4, 0.4, 1.0,
-            "Draw a weapon with a DPAE_Cal* tag to enable the loader.")
-        ImGui.End()
-        return
-    end
-
-    local effectiveVariants, lockedID = getEffectiveVariants(p, currentCal, calLabel)
-    drawPoolUI(p, calLabel, effectiveVariants, isTube, lockedID ~= "")
-
-    ImGui.End()
-end)
-
-
-local DPAE_settings = {
-    AccurateDamageColors = false,
-    TrueDamageConversion = true,
-    ForceReloadOnAmmoSwitch = false,
-}
-
-local DPAE_SETTINGS_FILE = "settings-DesoPierreAmmoExpanded.json"
-
-function DPAE_BuildSettingsMenu(nativeSettings)
-    if not nativeSettings.pathExists("/PierreMods") then
-        nativeSettings.addTab("/PierreMods", "Pierre Mods")
-    end
-
-    if nativeSettings.pathExists("/PierreMods/DesoPierreAmmoExpanded") then
-        nativeSettings.removeSubcategory("/PierreMods/DesoPierreAmmoExpanded")
-    end
-    nativeSettings.addSubcategory("/PierreMods/DesoPierreAmmoExpanded", "Ammo Expanded")
-
-    nativeSettings.addSwitch("/PierreMods/DesoPierreAmmoExpanded", "Accurate Damage Colors",
-        "Show the real elemental color (Thermal/Electric/Chemical) on the initial hit's damage number when converted ammo is active, instead of vanilla always showing Physical for direct hits. Purely cosmetic — the actual damage dealt is correct either way; this only affects the on-screen number's color.",
-        DPAE_settings.AccurateDamageColors, false, function(state)
-            DPAE_settings.AccurateDamageColors = state
-        end)
-
-    nativeSettings.addSwitch("/PierreMods/DesoPierreAmmoExpanded", "True Damage Conversion",
-        "On: elemental ammo (Incendiary/EMP/Chemical) genuinely shifts damage out of Physical into Thermal/Electric/Chemical, same as vanilla Pyro's own conversion. Off: elemental damage is simply added on top of full, unreduced Physical damage instead — a simpler bonus-only behavior.",
-        DPAE_settings.TrueDamageConversion, true, function(state)
-            DPAE_settings.TrueDamageConversion = state
-        end)
-
-    nativeSettings.addSwitch("/PierreMods/DesoPierreAmmoExpanded", "Force Reload On Ammo Switch",
-        "On: manually switching ammo variant mid-fight drains the physical chamber, requiring a real reload before the new variant actually fires — closes the free instant elemental swap a full magazine otherwise allows. Off (default): switching applies immediately with no reload cost. Weapons that can't reload at all (HMGs and a few iconic pistols/revolvers) are never affected by this, regardless of the setting.",
-        DPAE_settings.ForceReloadOnAmmoSwitch, false, function(state)
-            DPAE_settings.ForceReloadOnAmmoSwitch = state
-        end)
-end
-
-function DPAE_SaveSettings()
-    local validJson, contents = pcall(function() return json.encode(DPAE_settings) end)
-    if validJson and contents ~= nil then
-        local f = io.open(DPAE_SETTINGS_FILE, "w+")
-        if f ~= nil then
-            f:write(contents)
-            f:close()
-        end
-    end
-end
-
-function DPAE_LoadSettings()
-    local file = io.open(DPAE_SETTINGS_FILE, "r")
-    if file ~= nil then
-        local contents = file:read("*a")
-        local validJson, savedState = pcall(function() return json.decode(contents) end)
-        if validJson then
-            file:close()
-            for key, _ in pairs(DPAE_settings) do
-                if savedState[key] ~= nil then
-                    DPAE_settings[key] = savedState[key]
-                end
-            end
-        end
-    end
-end
-
-function DPAE_OverrideConfigFunctions()
-    Override("DesoPierreAmmoExpandedSettings", "AccurateDamageColors;", function()
-        return DPAE_settings.AccurateDamageColors
-    end)
-    Override("DesoPierreAmmoExpandedSettings", "TrueDamageConversion;", function()
-        return DPAE_settings.TrueDamageConversion
-    end)
-    Override("DesoPierreAmmoExpandedSettings", "ForceReloadOnAmmoSwitch;", function()
-        return DPAE_settings.ForceReloadOnAmmoSwitch
-    end)
-end
-
-registerForEvent("onInit", function()
-    local nativeSettings = GetMod("nativeSettings")
-    if not nativeSettings then
-        print("[DPAE] NativeSettings not loaded. Continuing with settings from config file.")
-        return
-    end
-    DPAE_LoadSettings()
-    DPAE_BuildSettingsMenu(nativeSettings)
-    DPAE_OverrideConfigFunctions()
-end)
-
-registerForEvent("onShutdown", function()
-    DPAE_SaveSettings()
+    pollInputRequests(p)
 end)

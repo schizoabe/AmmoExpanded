@@ -6,6 +6,8 @@
 @addField(PlayerPuppet) public let dpae_dummy_ammo: TweakDBID;
 @addField(PlayerPuppet) public let dpae_pending_internal_dummy_qty: Int32;
 @addField(PlayerPuppet) public let dpae_pending_disassembly_caliber: TweakDBID;
+@addField(PlayerPuppet) public let dpae_pending_zero_weapon: ItemID;
+@addField(PlayerPuppet) public let dpae_pending_zero_caliber: TweakDBID;
 @addField(PlayerPuppet) public let dpae_caliber: TweakDBID;
 @addField(PlayerPuppet) public let dpae_locked_variant: TweakDBID;
 @addField(PlayerPuppet) public let dpae_is_tube_fed: Bool;
@@ -27,6 +29,8 @@
 @addField(PlayerPuppet) public let dpae_pending_nl: Bool;
 @addField(PlayerPuppet) public let dpae_remembered_calibers: array<TweakDBID>;
 @addField(PlayerPuppet) public let dpae_remembered_ammo:     array<TweakDBID>;
+
+@addField(PlayerPuppet) public let dpae_input_listener: ref<DPAE_InputListener>;
 
 @addField(PlayerPuppet) public let dpae_slug_proj:         ref<gameStatModifierData>;
 @addField(PlayerPuppet) public let dpae_slug_spreadMaxX:   ref<gameStatModifierData>;
