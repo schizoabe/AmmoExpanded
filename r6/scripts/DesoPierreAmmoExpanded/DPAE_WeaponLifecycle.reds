@@ -59,6 +59,20 @@ private func DPAE_HandleWeaponSlotEvent(slotID: TweakDBID) -> Void {
   if ItemID.IsValid(peekItemID) && peekItemID == previousItemID {
     return;
   }
+
+  let caliberTDBID = ItemID.IsValid(peekItemID) ? DPAE_GetCaliberFromEntity(this, peekItemID) : TDBID.None();
+
+  if !TDBID.IsValid(caliberTDBID) && TDBID.IsValid(this.dpae_caliber) {
+    let otherSlotID = isRightSlot ? t"AttachmentSlots.WeaponLeft" : t"AttachmentSlots.WeaponRight";
+    let otherWeapon = ts.GetItemInSlot(this, otherSlotID) as WeaponObject;
+    if IsDefined(otherWeapon) {
+      let otherItemID = otherWeapon.GetItemID();
+      if ItemID.IsValid(otherItemID) && Equals(DPAE_GetCaliberFromEntity(this, otherItemID), this.dpae_caliber) {
+        return;
+      }
+    }
+  }
+
   if isRightSlot {
     this.dpae_current_weapon_right = peekItemID;
   } else {
@@ -87,7 +101,6 @@ private func DPAE_HandleWeaponSlotEvent(slotID: TweakDBID) -> Void {
   let weaponItemID = peekItemID;
   if !ItemID.IsValid(weaponItemID) { return; }
 
-  let caliberTDBID = DPAE_GetCaliberFromEntity(this, weaponItemID);
   if !TDBID.IsValid(caliberTDBID) {
     this.dpae_caliber        = TDBID.None();
     this.dpae_dummy_ammo     = TDBID.None();
