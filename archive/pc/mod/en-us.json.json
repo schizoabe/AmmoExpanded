@@ -5169,6 +5169,139 @@
               "maleVariant": "",
               "primaryKey": "8100852",
               "secondaryKey": "AmmoExpanded-Settings-ForceReloadOnAmmoSwitch-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": ".308 Winchester",
+              "maleVariant": "",
+              "primaryKey": "8100853",
+              "secondaryKey": "AmmoExpanded-Cal308Win-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": ".308 Winchester Armor Piercing",
+              "maleVariant": "",
+              "primaryKey": "8100854",
+              "secondaryKey": "AmmoExpanded-Cal308Win-AP-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": ".308 Winchester Hollow Point",
+              "maleVariant": "",
+              "primaryKey": "8100855",
+              "secondaryKey": "AmmoExpanded-Cal308Win-HP-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": ".308 Winchester EMP",
+              "maleVariant": "",
+              "primaryKey": "8100856",
+              "secondaryKey": "AmmoExpanded-Cal308Win-EMP-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": ".308 Winchester Incendiary",
+              "maleVariant": "",
+              "primaryKey": "8100857",
+              "secondaryKey": "AmmoExpanded-Cal308Win-INC-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": ".308 Winchester Chemical",
+              "maleVariant": "",
+              "primaryKey": "8100858",
+              "secondaryKey": "AmmoExpanded-Cal308Win-CHEM-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": ".308 Winchester Non-Lethal",
+              "maleVariant": "",
+              "primaryKey": "8100859",
+              "secondaryKey": "AmmoExpanded-Cal308Win-NL-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": ".308 Winchester High Explosive",
+              "maleVariant": "",
+              "primaryKey": "8100860",
+              "secondaryKey": "AmmoExpanded-Cal308Win-HE-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": ".308 Winchester",
+              "maleVariant": "",
+              "primaryKey": "8100861",
+              "secondaryKey": "AmmoExpanded-RecipeCal308Win-Name"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "A classic .308 Winchester rifle cartridge — one of the most widely manufactured centerfire rounds in North America for over half a century, prized by Militech contractors and wasteland scavengers alike for its balance of range, penetration, and universal availability.",
+              "maleVariant": "",
+              "primaryKey": "8100862",
+              "secondaryKey": "AmmoExpanded-Cal308Win-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": ".308 Winchester copper-jacketed lead projectile encapsulating a dense, hardened-tungsten rod core. Improved performance against armor.",
+              "maleVariant": "",
+              "primaryKey": "8100863",
+              "secondaryKey": "AmmoExpanded-Cal308Win-AP-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": ".308 Winchester copper-jacketed lead projectile with an open cavity at the tip. Upon impacting a soft target, the projectile mushrooms outward, leading to increased tissue destruction and heavy bleeding.",
+              "maleVariant": "",
+              "primaryKey": "8100864",
+              "secondaryKey": "AmmoExpanded-Cal308Win-HP-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": ".308 Winchester cartridge containing a micro-capacitor. After penetrating the target, the embedded projectile shatters and the capacitor discharges, delivering a high-voltage shock to the target.",
+              "maleVariant": "",
+              "primaryKey": "8100865",
+              "secondaryKey": "AmmoExpanded-Cal308Win-EMP-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": ".308 Winchester cartridge containing incendiary compound. Upon impacting a target, the compound ignites, covering the target in flames.",
+              "maleVariant": "",
+              "primaryKey": "8100866",
+              "secondaryKey": "AmmoExpanded-Cal308Win-INC-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": ".308 Winchester cartridge containing an engineered rapidly-decaying neurotoxin, delivered directly into the bloodstream on impact.",
+              "maleVariant": "",
+              "primaryKey": "8100867",
+              "secondaryKey": "AmmoExpanded-Cal308Win-CHEM-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": ".308 Winchester cartridge with a rubber projectile. Incapacitates the target.",
+              "maleVariant": "",
+              "primaryKey": "8100868",
+              "secondaryKey": "AmmoExpanded-Cal308Win-NL-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": ".308 Winchester cartridge containing explosive compound. Devastating to all targets.",
+              "maleVariant": "",
+              "primaryKey": "8100869",
+              "secondaryKey": "AmmoExpanded-Cal308Win-HE-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "Ammo Starter Safety Net",
+              "maleVariant": "",
+              "primaryKey": "8100870",
+              "secondaryKey": "AmmoExpanded-Settings-AmmoStarterSafetyNet"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "On: V keeps his ammo topped up during a fixed set of hard, inescapable scripted scenes (tutorial, possession sequences, forced story fights) so he can never run dry mid-scene. Off: strict behavior, ammo only ever comes from what's actually found, bought, or crafted.",
+              "maleVariant": "",
+              "primaryKey": "8100871",
+              "secondaryKey": "AmmoExpanded-Settings-AmmoStarterSafetyNet-Desc"
             }
           ]
         }

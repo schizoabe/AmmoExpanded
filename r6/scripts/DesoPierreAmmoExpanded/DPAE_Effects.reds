@@ -61,6 +61,7 @@ func DPAE_GetCartridgeDoTChance(activeStr: String) -> Float {
   if StrFindFirst(activeStr, "Cal50AE_") > -1 { return 0.50; }
   if StrFindFirst(activeStr, "Cal7p62x39Sov_") > -1 { return 0.50; }
   if StrFindFirst(activeStr, "Cal6p5Arasaka_") > -1 { return 0.50; }
+  if StrFindFirst(activeStr, "Cal308Win_") > -1 { return 0.50; }
   if StrFindFirst(activeStr, "Cal12p3x41UdaR_") > -1 { return 0.50; }
   if StrFindFirst(activeStr, "Cal14x40TSlug_") > -1 { return 0.50; }
   if StrFindFirst(activeStr, "Cal50BeowulfOni_") > -1 { return 0.50; }
@@ -183,6 +184,8 @@ func DPAE_GetArmorPenValue(activeStr: String) -> Float {
   if StrEndsWith(activeStr, "Cal5p56CT") { return 0.10; }
   if StrFindFirst(activeStr, "Cal6p5Arasaka_AP") > -1 { return 0.40; }
   if StrEndsWith(activeStr, "Cal6p5Arasaka") { return 0.10; }
+  if StrFindFirst(activeStr, "Cal308Win_AP") > -1 { return 0.40; }
+  if StrEndsWith(activeStr, "Cal308Win") { return 0.10; }
   if StrFindFirst(activeStr, "Cal50BeowulfOni_AP") > -1 { return 0.25; }
   if StrEndsWith(activeStr, "Cal50BeowulfOni") { return 0.05; }
   if StrFindFirst(activeStr, "Cal7p62x39Sov_AP") > -1 { return 0.30; }
@@ -269,6 +272,7 @@ public func DPAE_GetExplosivePackageForRound(activeStr: String) -> TweakDBID {
   if StrEndsWith(activeStr, "Cal5p45CT_HE")        { return t"DPAE_HE.PhysicalExplosiveBulletPackage"; }
   if StrEndsWith(activeStr, "Cal5p56x45NUSA_HE")   { return t"DPAE_HE.PhysicalExplosiveBulletPackage"; }
   if StrEndsWith(activeStr, "Cal6p5Arasaka_HE")    { return t"DPAE_HE.PhysicalExplosiveBulletPackage"; }
+  if StrEndsWith(activeStr, "Cal308Win_HE")        { return t"DPAE_HE.PhysicalExplosiveBulletPackage"; }
   return t"DPAE_HE.ExplodingBulletLightPackage";
 }
 

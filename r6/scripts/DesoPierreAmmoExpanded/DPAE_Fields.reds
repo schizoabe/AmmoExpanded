@@ -30,6 +30,30 @@
 @addField(PlayerPuppet) public let dpae_remembered_calibers: array<TweakDBID>;
 @addField(PlayerPuppet) public let dpae_remembered_ammo:     array<TweakDBID>;
 
+@addField(PlayerPuppet) public let dpae_starter_granted_calibers: array<TweakDBID>;
+
+@addField(PlayerPuppet) public let dpae_pending_internal_grant_qty: Int32;
+
+@addMethod(PlayerPuppet)
+public func DPAE_GiveAmmoInternal(itemTDBID: TweakDBID, qty: Int32) -> Void {
+  this.dpae_pending_internal_grant_qty += qty;
+  GameInstance.GetTransactionSystem(this.GetGame()).GiveItem(this, ItemID.FromTDBID(itemTDBID), qty);
+}
+
+@addMethod(PlayerPuppet)
+public func DPAE_GetEquippedMagazineCapacity() -> Int32 {
+  let ts = GameInstance.GetTransactionSystem(this.GetGame());
+  let weaponObj = ts.GetItemInSlot(this, t"AttachmentSlots.WeaponRight") as WeaponObject;
+  if !IsDefined(weaponObj) {
+    weaponObj = ts.GetItemInSlot(this, t"AttachmentSlots.WeaponLeft") as WeaponObject;
+  }
+  if IsDefined(weaponObj) {
+    let cap = Cast<Int32>(WeaponObject.GetMagazineCapacity(weaponObj));
+    if cap > 0 { return cap; }
+  }
+  return 20;
+}
+
 @addField(PlayerPuppet) public let dpae_input_listener: ref<DPAE_InputListener>;
 
 @addField(PlayerPuppet) public let dpae_slug_proj:         ref<gameStatModifierData>;
@@ -117,5 +141,22 @@ public func DPAE_GetRememberedAmmo(caliberID: TweakDBID) -> TweakDBID {
     i += 1;
   }
   return TDBID.None();
+}
+
+
+@addMethod(PlayerPuppet)
+public func DPAE_HasCaliberStarterBeenGranted(caliberID: TweakDBID) -> Bool {
+  let i = 0;
+  while i < ArraySize(this.dpae_starter_granted_calibers) {
+    if Equals(this.dpae_starter_granted_calibers[i], caliberID) { return true; }
+    i += 1;
+  }
+  return false;
+}
+
+@addMethod(PlayerPuppet)
+public func DPAE_GrantCaliberStarter(caliberID: TweakDBID, grantID: TweakDBID) -> Void {
+  this.DPAE_GiveAmmoInternal(grantID, this.DPAE_GetEquippedMagazineCapacity());
+  ArrayPush(this.dpae_starter_granted_calibers, caliberID);
 }
 

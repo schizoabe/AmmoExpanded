@@ -38,6 +38,7 @@ public func DPAE_GetFACCCaliberWeight(activeStr: String) -> Float {
   if StrBeginsWith(activeStr, "Ammo.Cal5p45CT") { return 0.018; }
   if StrBeginsWith(activeStr, "Ammo.Cal5p56CT") { return 0.02; }
   if StrBeginsWith(activeStr, "Ammo.Cal6p5Arasaka") { return 0.038; }
+  if StrBeginsWith(activeStr, "Ammo.Cal308Win") { return 0.042; }
   if StrBeginsWith(activeStr, "Ammo.Cal50BeowulfOni") { return 0.09; }
   if StrBeginsWith(activeStr, "Ammo.Cal7p62x39Sov") { return 0.045; }
   if StrBeginsWith(activeStr, "Ammo.Cal6p5x25Minirocket") { return 0.04; }

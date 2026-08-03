@@ -1,0 +1,246 @@
+
+Ammo.Cal308Win:
+  animationParameters: []
+  animFeatureName: ItemData
+  animName: ui_garment_pose
+  animSetResource: ''
+  appearanceSuffixes: []
+  appearanceSuffixesOwnerOverride: []
+  attachmentSlots: []
+  buyPrice:
+    - DPAE_Price.Cal308Win_Base
+    - Price.BuyPrice_StreetCred_Discount
+  cameraForward: {x: 0, y: 0, z: 0}
+  cameraUp: {x: 0, y: 0, z: 0}
+  canDrop: True
+  connections: []
+  CraftingData: Ammo.AmmoBase_inline0
+  crosshair: Crosshairs.None
+  deprecated: False
+  displayName: LocKey#8100853
+  dropObject: ammoDrop
+  effectors: []
+  enableNpcRPGData: False
+  entityName: ammo_box_handgun
+  equipAreas: []
+  equipPrereqs: []
+  friendlyName: '308_winchester'
+  gameplayRestrictions:
+    - GameplayRestriction.VehicleCombatNoInterruptions
+  garmentOffset: 0
+  hairSkinnedMeshComponents: []
+  icon: UIIcon.ItemIcon
+  iconPath: ''
+  isCached: False
+  isCoreCW: False
+  isCustomizable: False
+  isGarment: False
+  isPart: False
+  isSingleInstance: True
+  itemCategory: ItemCategory.General
+  itemType: ItemType.Con_Ammo
+  localizedDescription: LocKey#8100862
+  localizedName: ''
+  mass: 1
+  minigameInstance: minigame_v2.DefaultItemMinigame
+  objectActions:
+    - ItemAction.Drop
+    - ItemAction.Disassemble
+  OnAttach: []
+  OnEquip: []
+  OnLooted: []
+  parts: []
+  placementSlots: []
+  powerLevelDeterminedByParent: False
+  previewBBoxOverride: []
+  quality: Quality.Common
+  qualityRestrictedByParent: False
+  replicateWhenNotActive: False
+  requiredSlots: []
+  savable: False
+  sellPrice:
+    - DPAE_Price.Cal308Win_Base
+  slotPartList: []
+  slotPartListPreset: []
+  statModifierGroups: []
+  statPools: []
+  tags:
+    - Ammo
+    - ShowStackPrice
+    - Cal308Win
+  $base: Ammo.RifleAmmo
+  upgradeCostMult: 1
+  useHeadgearGarmentAggregator: False
+  useNewSpawnMethod: False
+  usesVariants: False
+  variants: []
+  visualTags: []
+  weakspots: []
+
+Ammo.Cal308Win_AP:
+  CraftingData:
+    $type: gamedataCraftingPackage_Record
+    craftingExpModifier: 1
+    overcraftPenaltyModifier: 1
+    craftingRecipe:
+      - $type: gamedataRecipeElement_Record
+        amount: 1
+        ingredient: Ammo.Cal308Win
+      - $type: gamedataRecipeElement_Record
+        amount: 2
+        ingredient: Items.UncommonMaterial1
+  buyPrice:
+    - !append-once DPAE_Price.TierUncommon
+  sellPrice:
+    - !append-once DPAE_Price.TierUncommon
+  quality: Quality.Uncommon
+  $base: Ammo.Cal308Win
+  friendlyName: '308_winchester_armor_piercing'
+  displayName: LocKey#8100854
+  localizedDescription: LocKey#8100863
+  tags:
+    - !append-once DPAE_Cal308Win_AP
+
+Ammo.Cal308Win_HP:
+  CraftingData:
+    $type: gamedataCraftingPackage_Record
+    craftingExpModifier: 1
+    overcraftPenaltyModifier: 1
+    craftingRecipe:
+      - $type: gamedataRecipeElement_Record
+        amount: 1
+        ingredient: Ammo.Cal308Win
+      - $type: gamedataRecipeElement_Record
+        amount: 2
+        ingredient: Items.UncommonMaterial1
+  buyPrice:
+    - !append-once DPAE_Price.TierUncommon
+  sellPrice:
+    - !append-once DPAE_Price.TierUncommon
+  quality: Quality.Uncommon
+  $base: Ammo.Cal308Win
+  friendlyName: '308_winchester_hollow_point'
+  displayName: LocKey#8100855
+  localizedDescription: LocKey#8100864
+  tags:
+    - !append-once DPAE_Cal308Win_HP
+
+Ammo.Cal308Win_NL:
+  CraftingData:
+    $type: gamedataCraftingPackage_Record
+    craftingExpModifier: 1
+    overcraftPenaltyModifier: 1
+    craftingRecipe:
+      - $type: gamedataRecipeElement_Record
+        amount: 1
+        ingredient: Ammo.Cal308Win
+      - $type: gamedataRecipeElement_Record
+        amount: 2
+        ingredient: Items.UncommonMaterial1
+  buyPrice:
+    - !append-once DPAE_Price.TierUncommon
+  sellPrice:
+    - !append-once DPAE_Price.TierUncommon
+  quality: Quality.Uncommon
+  $base: Ammo.Cal308Win
+  friendlyName: '308_winchester_non_lethal'
+  displayName: LocKey#8100859
+  localizedDescription: LocKey#8100868
+  tags:
+    - !append-once DPAE_Cal308Win_NL
+
+Ammo.Cal308Win_EMP:
+  CraftingData:
+    $type: gamedataCraftingPackage_Record
+    craftingExpModifier: 1
+    overcraftPenaltyModifier: 1
+    craftingRecipe:
+      - $type: gamedataRecipeElement_Record
+        amount: 1
+        ingredient: Ammo.Cal308Win
+      - $type: gamedataRecipeElement_Record
+        amount: 3
+        ingredient: Items.RareMaterial1
+  buyPrice:
+    - !append-once DPAE_Price.TierRare
+  sellPrice:
+    - !append-once DPAE_Price.TierRare
+  quality: Quality.Rare
+  $base: Ammo.Cal308Win
+  friendlyName: '308_winchester_emp'
+  displayName: LocKey#8100856
+  localizedDescription: LocKey#8100865
+  tags:
+    - !append-once DPAE_Cal308Win_EMP
+
+Ammo.Cal308Win_INC:
+  CraftingData:
+    $type: gamedataCraftingPackage_Record
+    craftingExpModifier: 1
+    overcraftPenaltyModifier: 1
+    craftingRecipe:
+      - $type: gamedataRecipeElement_Record
+        amount: 1
+        ingredient: Ammo.Cal308Win
+      - $type: gamedataRecipeElement_Record
+        amount: 3
+        ingredient: Items.RareMaterial1
+  buyPrice:
+    - !append-once DPAE_Price.TierRare
+  sellPrice:
+    - !append-once DPAE_Price.TierRare
+  quality: Quality.Rare
+  $base: Ammo.Cal308Win
+  friendlyName: '308_winchester_incendiary'
+  displayName: LocKey#8100857
+  localizedDescription: LocKey#8100866
+  tags:
+    - !append-once DPAE_Cal308Win_INC
+
+Ammo.Cal308Win_CHEM:
+  CraftingData:
+    $type: gamedataCraftingPackage_Record
+    craftingExpModifier: 1
+    overcraftPenaltyModifier: 1
+    craftingRecipe:
+      - $type: gamedataRecipeElement_Record
+        amount: 1
+        ingredient: Ammo.Cal308Win
+      - $type: gamedataRecipeElement_Record
+        amount: 3
+        ingredient: Items.RareMaterial1
+  buyPrice:
+    - !append-once DPAE_Price.TierRare
+  sellPrice:
+    - !append-once DPAE_Price.TierRare
+  quality: Quality.Rare
+  $base: Ammo.Cal308Win
+  friendlyName: '308_winchester_chemical'
+  displayName: LocKey#8100858
+  localizedDescription: LocKey#8100867
+  tags:
+    - !append-once DPAE_Cal308Win_CHEM
+
+Ammo.Cal308Win_HE:
+  CraftingData:
+    $type: gamedataCraftingPackage_Record
+    craftingExpModifier: 1
+    overcraftPenaltyModifier: 1
+    craftingRecipe:
+      - $type: gamedataRecipeElement_Record
+        amount: 1
+        ingredient: Ammo.Cal308Win
+      - $type: gamedataRecipeElement_Record
+        amount: 4
+        ingredient: Items.EpicMaterial1
+  buyPrice:
+    - !append-once DPAE_Price.TierEpic
+  sellPrice:
+    - !append-once DPAE_Price.TierEpic
+  quality: Quality.Epic
+  $base: Ammo.Cal308Win
+  friendlyName: '308_winchester_high_explosive'
+  displayName: LocKey#8100860
+  localizedDescription: LocKey#8100869
+  tags:
+    - !append-once DPAE_Cal308Win_HE

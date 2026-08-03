@@ -91,6 +91,10 @@ Ammo.AmmoLootTable:
     - dropChance: 0.0208
       dropCountMin: 90
       dropCountMax: 180
+      itemID: Ammo.Cal308Win
+    - dropChance: 0.0208
+      dropCountMin: 90
+      dropCountMax: 180
       itemID: Ammo.Cal4p7x10TF
     - dropChance: 0.0208
       dropCountMin: 90

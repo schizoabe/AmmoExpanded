@@ -124,6 +124,12 @@ Ammo.Cal6p5Arasaka_VendorQty:
   statType: BaseStats.Quantity
   value: 300
 
+Ammo.Cal308Win_VendorQty:
+  $type: gamedataConstantStatModifier_Record
+  modifierType: Additive
+  statType: BaseStats.Quantity
+  value: 300
+
 Ammo.Cal243Win_VendorQty:
   $type: gamedataConstantStatModifier_Record
   modifierType: Additive
@@ -387,6 +393,13 @@ Ammo.Cal6p5Arasaka_VendorItem:
   quantity:
     - Ammo.Cal6p5Arasaka_VendorQty
 
+Ammo.Cal308Win_VendorItem:
+  $type: gamedataVendorItem_Record
+  item: Ammo.Cal308Win
+  generationPrereqs: []
+  quantity:
+    - Ammo.Cal308Win_VendorQty
+
 Ammo.Cal243Win_VendorItem:
   $type: gamedataVendorItem_Record
   item: Ammo.Cal243Win
@@ -575,6 +588,7 @@ Vendors.$(mv):
     - !append-once Ammo.Cal5p7x28TF_VendorItem
     - !append-once Ammo.Cal6p5Arasaka_VendorItem
     - !append-once Ammo.Cal243Win_VendorItem
+    - !append-once Ammo.Cal308Win_VendorItem
     - !append-once Ammo.Cal4p7x10TF_VendorItem
     - !append-once Ammo.Cal8x30RailF_VendorItem
     - !append-once Ammo.Cal8x30TShot_VendorItem

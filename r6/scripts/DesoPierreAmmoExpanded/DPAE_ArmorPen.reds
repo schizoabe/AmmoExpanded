@@ -28,6 +28,7 @@ func DPAE_GetHPUnarmoredBonus(activeStr: String) -> Float {
   if StrFindFirst(activeStr, "Cal5p45CT_HP") > -1 { return 0.60; }
   if StrFindFirst(activeStr, "Cal5p56CT_HP") > -1 { return 0.60; }
   if StrFindFirst(activeStr, "Cal6p5Arasaka_HP") > -1 { return 0.60; }
+  if StrFindFirst(activeStr, "Cal308Win_HP") > -1 { return 0.60; }
   if StrFindFirst(activeStr, "Cal50BeowulfOni_HP") > -1 { return 0.40; }
   if StrFindFirst(activeStr, "Cal7p62x39Sov_HP") > -1 { return 0.60; }
   if StrFindFirst(activeStr, "Cal5p56x45NUSA_HP") > -1 { return 0.60; }

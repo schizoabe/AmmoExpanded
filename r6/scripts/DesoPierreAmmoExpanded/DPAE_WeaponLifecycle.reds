@@ -3,19 +3,55 @@
 @addMethod(PlayerPuppet)
 public func DPAE_ResolveAmmoSelection(caliberTDBID: TweakDBID) -> Void {
   let ts = GameInstance.GetTransactionSystem(this.GetGame());
+  LogChannel(n"DEBUG", "[DPAE_NARRATIVE_GRANT] DPAE_ResolveAmmoSelection ENTRY caliber=" + TDBID.ToStringDEBUG(caliberTDBID) + " locked=" + TDBID.ToStringDEBUG(this.dpae_locked_variant) + " isReplacer=" + BoolToString(this.IsReplacer()) + " isJohnny=" + BoolToString(this.DPAE_IsJohnnyPossession()));
 
   if TDBID.IsValid(this.dpae_locked_variant) {
+    if DesoPierreAmmoExpandedSettings.AmmoStarterSafetyNet()
+      && ts.GetItemQuantity(this, ItemID.FromTDBID(this.dpae_locked_variant)) <= 0 {
+      if !this.DPAE_HasCaliberStarterBeenGranted(caliberTDBID) {
+        LogChannel(n"DEBUG", "[DPAE_NARRATIVE_GRANT] locked-variant STARTER grant, caliber=" + TDBID.ToStringDEBUG(caliberTDBID) + " item=" + TDBID.ToStringDEBUG(this.dpae_locked_variant) + " qty=" + IntToString(this.DPAE_GetEquippedMagazineCapacity()));
+        this.DPAE_GrantCaliberStarter(caliberTDBID, this.dpae_locked_variant);
+      } else if this.DPAE_IsNarrativeAmmoWindowActive() {
+        let lockedGrantQty = this.DPAE_GetEquippedMagazineCapacity();
+        LogChannel(n"DEBUG", "[DPAE_NARRATIVE_GRANT] locked-variant NARRATIVE-WINDOW grant, caliber=" + TDBID.ToStringDEBUG(caliberTDBID) + " item=" + TDBID.ToStringDEBUG(this.dpae_locked_variant) + " qty=" + IntToString(lockedGrantQty));
+        this.DPAE_GiveAmmoInternal(this.dpae_locked_variant, lockedGrantQty);
+      }
+    }
     this.DPAE_SelectAmmo(this.dpae_locked_variant);
     return;
   }
 
+  if DesoPierreAmmoExpandedSettings.AmmoStarterSafetyNet() && this.DPAE_IsJohnnyPossession() {
+    let johnnySignatureID = DPAE_GetCaliberHEVariant(caliberTDBID);
+    if TDBID.IsValid(johnnySignatureID) {
+      if ts.GetItemQuantity(this, ItemID.FromTDBID(johnnySignatureID)) <= 0 {
+        let johnnyGrantQty = this.DPAE_GetEquippedMagazineCapacity();
+        LogChannel(n"DEBUG", "[DPAE_NARRATIVE_GRANT] Johnny HE override grant, item=" + TDBID.ToStringDEBUG(johnnySignatureID) + " qty=" + IntToString(johnnyGrantQty));
+        this.DPAE_GiveAmmoInternal(johnnySignatureID, johnnyGrantQty);
+      }
+      this.DPAE_SelectAmmo(johnnySignatureID);
+      return;
+    }
+  }
+
   let rememberedID = this.DPAE_GetRememberedAmmo(caliberTDBID);
   if TDBID.IsValid(rememberedID) && ts.GetItemQuantity(this, ItemID.FromTDBID(rememberedID)) > 0 {
+    LogChannel(n"DEBUG", "[DPAE_NARRATIVE_GRANT] resolved via REMEMBERED selection, item=" + TDBID.ToStringDEBUG(rememberedID));
     this.DPAE_SelectAmmo(rememberedID);
   } else {
     let largestID = DPAE_GetLargestAmmoVariant(this, caliberTDBID);
     if TDBID.IsValid(largestID) {
+      LogChannel(n"DEBUG", "[DPAE_NARRATIVE_GRANT] resolved via LARGEST-OWNED selection, item=" + TDBID.ToStringDEBUG(largestID));
       this.DPAE_SelectAmmo(largestID);
+    } else if DesoPierreAmmoExpandedSettings.AmmoStarterSafetyNet() && !this.DPAE_HasCaliberStarterBeenGranted(caliberTDBID) {
+      LogChannel(n"DEBUG", "[DPAE_NARRATIVE_GRANT] general STARTER grant, caliber=" + TDBID.ToStringDEBUG(caliberTDBID) + " qty=" + IntToString(this.DPAE_GetEquippedMagazineCapacity()));
+      this.DPAE_GrantCaliberStarter(caliberTDBID, caliberTDBID);
+      this.DPAE_SelectAmmo(caliberTDBID);
+    } else if DesoPierreAmmoExpandedSettings.AmmoStarterSafetyNet() && this.DPAE_IsNarrativeAmmoWindowActive() {
+      let generalGrantQty = this.DPAE_GetEquippedMagazineCapacity();
+      LogChannel(n"DEBUG", "[DPAE_NARRATIVE_GRANT] general NARRATIVE-WINDOW grant, caliber=" + TDBID.ToStringDEBUG(caliberTDBID) + " qty=" + IntToString(generalGrantQty));
+      this.DPAE_GiveAmmoInternal(caliberTDBID, generalGrantQty);
+      this.DPAE_SelectAmmo(caliberTDBID);
     } else {
       this.dpae_active_ammo = TDBID.None();
       StatusEffectHelper.RemoveStatusEffect(this, t"DPAE_StatusEffect.AP_Pierce");

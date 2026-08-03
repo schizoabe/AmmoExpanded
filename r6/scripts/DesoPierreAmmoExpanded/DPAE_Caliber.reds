@@ -9,6 +9,7 @@ func DPAE_GetCaliberFromEntity(entity: ref<GameObject>, itemID: ItemID) -> Tweak
   if ts.HasTag(entity, n"DPAE_Cal14x70TSlugHE",  itemID) { return t"Ammo.Cal14x70TSlugHE"; }
   if ts.HasTag(entity, n"DPAE_Cal9x19",          itemID) { return t"Ammo.Cal9x19"; }
   if ts.HasTag(entity, n"DPAE_Cal243Win",        itemID) { return t"Ammo.Cal243Win"; }
+  if ts.HasTag(entity, n"DPAE_Cal308Win",        itemID) { return t"Ammo.Cal308Win"; }
   if ts.HasTag(entity, n"DPAE_Cal454Casull",     itemID) { return t"Ammo.Cal454Casull"; }
   if ts.HasTag(entity, n"DPAE_Cal50AE",          itemID) { return t"Ammo.Cal50AE"; }
   if ts.HasTag(entity, n"DPAE_Cal50BMG",         itemID) { return t"Ammo.Cal50BMG"; }
@@ -70,6 +71,7 @@ public func DPAE_GetCaliberString() -> String {
   if !TDBID.IsValid(this.dpae_caliber) { return ""; }
   if Equals(this.dpae_caliber, t"Ammo.Cal9x19")            { return "Cal9x19"; }
   if Equals(this.dpae_caliber, t"Ammo.Cal243Win")          { return "Cal243Win"; }
+  if Equals(this.dpae_caliber, t"Ammo.Cal308Win")          { return "Cal308Win"; }
   if Equals(this.dpae_caliber, t"Ammo.Cal45Super")         { return "Cal45Super"; }
   if Equals(this.dpae_caliber, t"Ammo.Cal45WinMag")        { return "Cal45WinMag"; }
   if Equals(this.dpae_caliber, t"Ammo.Cal454Casull")       { return "Cal454Casull"; }

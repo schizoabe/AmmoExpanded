@@ -25,6 +25,13 @@ public class DPAE_ToggleSettings extends ScriptableSystem {
   @runtimeProperty("ModSettings.category.order", "1")
   let forceReloadOnAmmoSwitch: Bool = false;
 
+  @runtimeProperty("ModSettings.mod", "AmmoExpanded")
+  @runtimeProperty("ModSettings.displayName", "AmmoExpanded-Settings-AmmoStarterSafetyNet")
+  @runtimeProperty("ModSettings.description", "AmmoExpanded-Settings-AmmoStarterSafetyNet-Desc")
+  @runtimeProperty("ModSettings.category", "AmmoExpanded-Settings-Category")
+  @runtimeProperty("ModSettings.category.order", "1")
+  let ammoStarterSafetyNet: Bool = true;
+
   public static func Get() -> ref<DPAE_ToggleSettings> {
     return GameInstance.GetScriptableSystemsContainer(GetGameInstance()).Get(n"DPAE_ToggleSettings") as DPAE_ToggleSettings;
   }
@@ -58,6 +65,12 @@ public class DesoPierreAmmoExpandedSettings {
     if IsDefined(s) { return s.forceReloadOnAmmoSwitch; }
     return false;
   }
+
+  public static func AmmoStarterSafetyNet() -> Bool {
+    let s = DPAE_ToggleSettings.Get();
+    if IsDefined(s) { return s.ammoStarterSafetyNet; }
+    return true;
+  }
 }
 
 @if(!ModuleExists("ModSettingsModule"))
@@ -65,4 +78,5 @@ public class DesoPierreAmmoExpandedSettings {
   public static func AccurateDamageColors() -> Bool { return false; }
   public static func TrueDamageConversion() -> Bool { return true; }
   public static func ForceReloadOnAmmoSwitch() -> Bool { return false; }
+  public static func AmmoStarterSafetyNet() -> Bool { return true; }
 }

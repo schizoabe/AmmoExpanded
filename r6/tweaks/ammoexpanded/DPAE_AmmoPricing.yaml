@@ -155,6 +155,10 @@ DPAE_Price.Cal7p62x39Sov_Base:
   $base: Price.PriceAdditive
   value: 5
 
+DPAE_Price.Cal308Win_Base:
+  $base: Price.PriceAdditive
+  value: 6
+
 DPAE_Price.Cal8x30RailF_Base:
   $base: Price.PriceAdditive
   value: 5

@@ -59,13 +59,24 @@ protected cb func OnAmmoStateChangeEvent(evt: ref<AmmoStateChangeEvent>) -> Bool
 
             let left = ts.GetItemQuantity(player, activeID);
 
+            if left <= 10 && DesoPierreAmmoExpandedSettings.AmmoStarterSafetyNet() && player.DPAE_IsNarrativeAmmoWindowActive() {
+              let topUpGiveAmount = 30 - left;
+              LogChannel(n"DEBUG", "[DPAE_NARRATIVE_TOPUP] before=" + IntToString(left) + " giving=" + IntToString(topUpGiveAmount) + " item=" + TDBID.ToStringDEBUG(player.dpae_active_ammo));
+              ts.GiveItem(player, activeID, topUpGiveAmount);
+              left = ts.GetItemQuantity(player, activeID);
+              LogChannel(n"DEBUG", "[DPAE_NARRATIVE_TOPUP] after=" + IntToString(left));
+            }
+
             let dummyLeft = ts.GetItemQuantity(player, player.DPAE_GetDummyItemID());
+            LogChannel(n"DEBUG", "[DPAE_NARRATIVE_TOPUP] post-check state: left=" + IntToString(left) + " dummyLeft=" + IntToString(dummyLeft) + " currentPct=" + FloatToStringPrec(currentPct, 4));
             if (currentPct < 0.001 && dummyLeft <= 0) || left <= 0 {
+              LogChannel(n"DEBUG", "[DPAE_NARRATIVE_TOPUP] DEPLETION BRANCH TRIGGERED — stripping left=" + IntToString(left) + " (this fires even if the top-up above JUST ran, since dummyLeft is stale/not-yet-cascaded when read synchronously)");
               if left > 0 { ts.RemoveItem(player, activeID, left); }
               player.dpae_active_ammo = TDBID.None();
               player.dpae_test_active = false;
 
               let swapID = DPAE_GetNextAutoSwapVariant(player, player.dpae_caliber);
+              LogChannel(n"DEBUG", "[DPAE_NARRATIVE_TOPUP] auto-swap candidate=" + TDBID.ToStringDEBUG(swapID) + " valid=" + BoolToString(TDBID.IsValid(swapID)));
               if TDBID.IsValid(swapID) {
                 player.DPAE_SelectAmmo(swapID);
               } else {
@@ -96,14 +107,23 @@ protected cb func OnAmmoStateChangeEvent(evt: ref<AmmoStateChangeEvent>) -> Bool
 protected cb func OnItemChangedEvent(evt: ref<ItemChangedEvent>) -> Bool {
   let result = wrappedMethod(evt);
 
+  if evt.difference > 0 && ItemID.IsValid(evt.itemID) && this.dpae_pending_internal_grant_qty > 0 {
+    let grantConsumed = Min(evt.difference, this.dpae_pending_internal_grant_qty);
+    this.dpae_pending_internal_grant_qty -= grantConsumed;
+    LogChannel(n"DEBUG", "[DPAE_GRANTECHO] item=" + TDBID.ToStringDEBUG(ItemID.GetTDBID(evt.itemID)) + " diff=" + IntToString(evt.difference) + " SUPPRESSED as internal-grant echo — consumed=" + IntToString(grantConsumed) + " pendingLeft=" + IntToString(this.dpae_pending_internal_grant_qty));
+    return result;
+  }
+
   if evt.difference > 0 && ItemID.IsValid(evt.itemID) {
     let changedTDBID = ItemID.GetTDBID(evt.itemID);
-    if this.dpae_pending_internal_dummy_qty > 0 {
+    if this.dpae_pending_internal_dummy_qty > 0 && Equals(changedTDBID, ItemID.GetTDBID(this.DPAE_GetDummyItemID())) {
       let consumed = Min(evt.difference, this.dpae_pending_internal_dummy_qty);
       this.dpae_pending_internal_dummy_qty -= consumed;
+      LogChannel(n"DEBUG", "[DPAE_CONVERT] item=" + TDBID.ToStringDEBUG(changedTDBID) + " diff=" + IntToString(evt.difference) + " ABSORBED BY PENDING — consumed=" + IntToString(consumed) + " pendingLeft=" + IntToString(this.dpae_pending_internal_dummy_qty));
     } else {
       let vanillaClass = DPAE_VanillaAmmoClassOf(changedTDBID);
       if !Equals(vanillaClass, "") {
+        LogChannel(n"DEBUG", "[DPAE_CONVERT] item=" + TDBID.ToStringDEBUG(changedTDBID) + " diff=" + IntToString(evt.difference) + " class=" + vanillaClass + " pending=0 — treating as GENUINE external pickup, converting");
         let replacement = TDBID.None();
         if TDBID.IsValid(this.dpae_pending_disassembly_caliber)
           && Equals(DPAE_ClassOfCaliber(this.dpae_pending_disassembly_caliber), vanillaClass) {
@@ -113,6 +133,7 @@ protected cb func OnItemChangedEvent(evt: ref<ItemChangedEvent>) -> Bool {
         }
         this.dpae_pending_disassembly_caliber = TDBID.None();
         if TDBID.IsValid(replacement) {
+          LogChannel(n"DEBUG", "[DPAE_CONVERT] CONVERTING item=" + TDBID.ToStringDEBUG(changedTDBID) + " qty=" + IntToString(evt.difference) + " -> replacement=" + TDBID.ToStringDEBUG(replacement));
           let ts = GameInstance.GetTransactionSystem(this.GetGame());
           ts.RemoveItem(this, evt.itemID, evt.difference);
           ts.GiveItem(this, ItemID.FromTDBID(replacement), evt.difference);
@@ -123,6 +144,7 @@ protected cb func OnItemChangedEvent(evt: ref<ItemChangedEvent>) -> Bool {
 
   if this.dpae_test_active && evt.difference > 0 && ItemID.IsValid(evt.itemID) && TDBID.IsValid(this.dpae_active_ammo)
     && Equals(ItemID.GetTDBID(evt.itemID), this.dpae_active_ammo) {
+    LogChannel(n"DEBUG", "[DPAE_RESYNC] active-variant qty increased by " + IntToString(evt.difference) + " (item=" + TDBID.ToStringDEBUG(this.dpae_active_ammo) + ") — cascading dummy top-up, pendingBefore=" + IntToString(this.dpae_pending_internal_dummy_qty));
     this.dpae_pending_internal_dummy_qty += evt.difference;
     GameInstance.GetTransactionSystem(this.GetGame()).GiveItem(this, this.DPAE_GetDummyItemID(), evt.difference);
   }
@@ -146,9 +168,9 @@ func DPAE_GetCaliberBucket(ammoClass: String) -> array<String> {
               "Ammo.Cal8x30TShot", "Ammo.Cal9p5x35Minirocket", "Ammo.Cal9x19", "Ammo.Cal9x30TF"];
   } else if Equals(ammoClass, "Rifle") {
     bucket = ["Ammo.Cal10x40Rocket", "Ammo.Cal12x45Rocket", "Ammo.Cal23x152Sov", "Ammo.Cal243Win",
-              "Ammo.Cal4p7x10TF", "Ammo.Cal50APHETIL", "Ammo.Cal50BMG", "Ammo.Cal50BeowulfOni",
-              "Ammo.Cal5p45CT", "Ammo.Cal5p56CT", "Ammo.Cal5p56x45NUSA", "Ammo.Cal6p5Arasaka",
-              "Ammo.Cal7p62x39Sov"];
+              "Ammo.Cal308Win", "Ammo.Cal4p7x10TF", "Ammo.Cal50APHETIL", "Ammo.Cal50BMG",
+              "Ammo.Cal50BeowulfOni", "Ammo.Cal5p45CT", "Ammo.Cal5p56CT", "Ammo.Cal5p56x45NUSA",
+              "Ammo.Cal6p5Arasaka", "Ammo.Cal7p62x39Sov"];
   } else if Equals(ammoClass, "Shotgun") {
     bucket = ["Ammo.Cal10GaugeBuck", "Ammo.Cal10GaugeFlech", "Ammo.Cal12Gauge",
               "Ammo.Cal15x55Rocket", "Ammo.Cal18x70Rocket", "Ammo.Cal4Gauge"];
