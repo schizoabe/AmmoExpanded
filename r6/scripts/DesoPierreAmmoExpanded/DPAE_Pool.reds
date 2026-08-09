@@ -60,23 +60,17 @@ protected cb func OnAmmoStateChangeEvent(evt: ref<AmmoStateChangeEvent>) -> Bool
             let left = ts.GetItemQuantity(player, activeID);
 
             if left <= 10 && DesoPierreAmmoExpandedSettings.AmmoStarterSafetyNet() && player.DPAE_IsNarrativeAmmoWindowActive() {
-              let topUpGiveAmount = 30 - left;
-              LogChannel(n"DEBUG", "[DPAE_NARRATIVE_TOPUP] before=" + IntToString(left) + " giving=" + IntToString(topUpGiveAmount) + " item=" + TDBID.ToStringDEBUG(player.dpae_active_ammo));
-              ts.GiveItem(player, activeID, topUpGiveAmount);
+              ts.GiveItem(player, activeID, 30 - left);
               left = ts.GetItemQuantity(player, activeID);
-              LogChannel(n"DEBUG", "[DPAE_NARRATIVE_TOPUP] after=" + IntToString(left));
             }
 
             let dummyLeft = ts.GetItemQuantity(player, player.DPAE_GetDummyItemID());
-            LogChannel(n"DEBUG", "[DPAE_NARRATIVE_TOPUP] post-check state: left=" + IntToString(left) + " dummyLeft=" + IntToString(dummyLeft) + " currentPct=" + FloatToStringPrec(currentPct, 4));
             if (currentPct < 0.001 && dummyLeft <= 0) || left <= 0 {
-              LogChannel(n"DEBUG", "[DPAE_NARRATIVE_TOPUP] DEPLETION BRANCH TRIGGERED — stripping left=" + IntToString(left) + " (this fires even if the top-up above JUST ran, since dummyLeft is stale/not-yet-cascaded when read synchronously)");
               if left > 0 { ts.RemoveItem(player, activeID, left); }
               player.dpae_active_ammo = TDBID.None();
               player.dpae_test_active = false;
 
               let swapID = DPAE_GetNextAutoSwapVariant(player, player.dpae_caliber);
-              LogChannel(n"DEBUG", "[DPAE_NARRATIVE_TOPUP] auto-swap candidate=" + TDBID.ToStringDEBUG(swapID) + " valid=" + BoolToString(TDBID.IsValid(swapID)));
               if TDBID.IsValid(swapID) {
                 player.DPAE_SelectAmmo(swapID);
               } else {
@@ -110,7 +104,6 @@ protected cb func OnItemChangedEvent(evt: ref<ItemChangedEvent>) -> Bool {
   if evt.difference > 0 && ItemID.IsValid(evt.itemID) && this.dpae_pending_internal_grant_qty > 0 {
     let grantConsumed = Min(evt.difference, this.dpae_pending_internal_grant_qty);
     this.dpae_pending_internal_grant_qty -= grantConsumed;
-    LogChannel(n"DEBUG", "[DPAE_GRANTECHO] item=" + TDBID.ToStringDEBUG(ItemID.GetTDBID(evt.itemID)) + " diff=" + IntToString(evt.difference) + " SUPPRESSED as internal-grant echo — consumed=" + IntToString(grantConsumed) + " pendingLeft=" + IntToString(this.dpae_pending_internal_grant_qty));
     return result;
   }
 
@@ -119,11 +112,9 @@ protected cb func OnItemChangedEvent(evt: ref<ItemChangedEvent>) -> Bool {
     if this.dpae_pending_internal_dummy_qty > 0 && Equals(changedTDBID, ItemID.GetTDBID(this.DPAE_GetDummyItemID())) {
       let consumed = Min(evt.difference, this.dpae_pending_internal_dummy_qty);
       this.dpae_pending_internal_dummy_qty -= consumed;
-      LogChannel(n"DEBUG", "[DPAE_CONVERT] item=" + TDBID.ToStringDEBUG(changedTDBID) + " diff=" + IntToString(evt.difference) + " ABSORBED BY PENDING — consumed=" + IntToString(consumed) + " pendingLeft=" + IntToString(this.dpae_pending_internal_dummy_qty));
     } else {
       let vanillaClass = DPAE_VanillaAmmoClassOf(changedTDBID);
       if !Equals(vanillaClass, "") {
-        LogChannel(n"DEBUG", "[DPAE_CONVERT] item=" + TDBID.ToStringDEBUG(changedTDBID) + " diff=" + IntToString(evt.difference) + " class=" + vanillaClass + " pending=0 — treating as GENUINE external pickup, converting");
         let replacement = TDBID.None();
         if TDBID.IsValid(this.dpae_pending_disassembly_caliber)
           && Equals(DPAE_ClassOfCaliber(this.dpae_pending_disassembly_caliber), vanillaClass) {
@@ -133,7 +124,6 @@ protected cb func OnItemChangedEvent(evt: ref<ItemChangedEvent>) -> Bool {
         }
         this.dpae_pending_disassembly_caliber = TDBID.None();
         if TDBID.IsValid(replacement) {
-          LogChannel(n"DEBUG", "[DPAE_CONVERT] CONVERTING item=" + TDBID.ToStringDEBUG(changedTDBID) + " qty=" + IntToString(evt.difference) + " -> replacement=" + TDBID.ToStringDEBUG(replacement));
           let ts = GameInstance.GetTransactionSystem(this.GetGame());
           ts.RemoveItem(this, evt.itemID, evt.difference);
           ts.GiveItem(this, ItemID.FromTDBID(replacement), evt.difference);
@@ -144,7 +134,6 @@ protected cb func OnItemChangedEvent(evt: ref<ItemChangedEvent>) -> Bool {
 
   if this.dpae_test_active && evt.difference > 0 && ItemID.IsValid(evt.itemID) && TDBID.IsValid(this.dpae_active_ammo)
     && Equals(ItemID.GetTDBID(evt.itemID), this.dpae_active_ammo) {
-    LogChannel(n"DEBUG", "[DPAE_RESYNC] active-variant qty increased by " + IntToString(evt.difference) + " (item=" + TDBID.ToStringDEBUG(this.dpae_active_ammo) + ") — cascading dummy top-up, pendingBefore=" + IntToString(this.dpae_pending_internal_dummy_qty));
     this.dpae_pending_internal_dummy_qty += evt.difference;
     GameInstance.GetTransactionSystem(this.GetGame()).GiveItem(this, this.DPAE_GetDummyItemID(), evt.difference);
   }

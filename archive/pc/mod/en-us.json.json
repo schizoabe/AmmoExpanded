@@ -5291,17 +5291,24 @@
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "Ammo Starter Safety Net",
+              "femaleVariant": "EXPERIMENTAL: Ammo Starter Safety Net",
               "maleVariant": "",
               "primaryKey": "8100870",
               "secondaryKey": "AmmoExpanded-Settings-AmmoStarterSafetyNet"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "On: V keeps his ammo topped up during a fixed set of hard, inescapable scripted scenes (tutorial, possession sequences, forced story fights) so he can never run dry mid-scene. Off: strict behavior, ammo only ever comes from what's actually found, bought, or crafted.",
+              "femaleVariant": "On: Keeps his ammo topped up during a fixed set of hard, inescapable scripted scenes (tutorial, possession sequences, forced story fights) so he can never run dry mid-scene. Off: strict behavior, ammo only ever comes from what's actually found, bought, or crafted.",
               "maleVariant": "",
               "primaryKey": "8100871",
               "secondaryKey": "AmmoExpanded-Settings-AmmoStarterSafetyNet-Desc"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "Ammo:",
+              "maleVariant": "",
+              "primaryKey": "8100872",
+              "secondaryKey": "AmmoExpanded-Tooltip-AmmoLabel"
             }
           ]
         }
