@@ -5151,21 +5151,21 @@
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "On: elemental ammo (Incendiary/EMP/Chemical) genuinely shifts damage out of Physical into Thermal/Electric/Chemical, same as vanilla Pyro's own conversion. Off: elemental damage is simply added on top of full, unreduced Physical damage instead — a simpler bonus-only behavior.",
+              "femaleVariant": "On: elemental ammo (Incendiary/EMP/Chemical) genuinely shifts damage out of Physical into Thermal/Electric/Chemical, same as vanilla Pyro's own conversion. Off: elemental damage is simply added on top of full, unreduced Physical damage instead.",
               "maleVariant": "",
               "primaryKey": "8100850",
               "secondaryKey": "AmmoExpanded-Settings-TrueDamageConversion-Desc"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "Force Reload On Ammo Switch",
+              "femaleVariant": "Realistic Magazine",
               "maleVariant": "",
               "primaryKey": "8100851",
               "secondaryKey": "AmmoExpanded-Settings-ForceReloadOnAmmoSwitch"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "On: manually switching ammo variant mid-fight drains the physical chamber, requiring a real reload before the new variant actually fires — closes the free instant elemental swap a full magazine otherwise allows. Off (default): switching applies immediately with no reload cost. Weapons that can't reload at all (HMGs and a few iconic pistols/revolvers) are never affected by this, regardless of the setting.",
+              "femaleVariant": "Turn on to waste ammo when reloading with a non-empty mag, switching variant. Turn off if babby shit.",
               "maleVariant": "",
               "primaryKey": "8100852",
               "secondaryKey": "AmmoExpanded-Settings-ForceReloadOnAmmoSwitch-Desc"
@@ -5291,14 +5291,14 @@
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "EXPERIMENTAL: Ammo Starter Safety Net",
+              "femaleVariant": "EXPERTIMENTAL: Ammo Starter Safety Net",
               "maleVariant": "",
               "primaryKey": "8100870",
               "secondaryKey": "AmmoExpanded-Settings-AmmoStarterSafetyNet"
             },
             {
               "$type": "localizationPersistenceOnScreenEntry",
-              "femaleVariant": "On: Keeps his ammo topped up during a fixed set of hard, inescapable scripted scenes (tutorial, possession sequences, forced story fights) so he can never run dry mid-scene. Off: strict behavior, ammo only ever comes from what's actually found, bought, or crafted.",
+              "femaleVariant": "On: Keeps V's ammo topped up during a fixed set of hard, inescapable scripted scenes (tutorial, possession sequences, forced story fights) so he can never run dry mid-scene. Off: strict behavior, ammo only ever comes from what's actually found, bought, or crafted.",
               "maleVariant": "",
               "primaryKey": "8100871",
               "secondaryKey": "AmmoExpanded-Settings-AmmoStarterSafetyNet-Desc"
@@ -5309,6 +5309,20 @@
               "maleVariant": "",
               "primaryKey": "8100872",
               "secondaryKey": "AmmoExpanded-Tooltip-AmmoLabel"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "Debug Ammo Logging",
+              "maleVariant": "",
+              "primaryKey": "8100873",
+              "secondaryKey": "AmmoExpanded-Settings-DebugAmmoLogging"
+            },
+            {
+              "$type": "localizationPersistenceOnScreenEntry",
+              "femaleVariant": "Important logging send to Pierre the results if u want to help out.",
+              "maleVariant": "",
+              "primaryKey": "8100874",
+              "secondaryKey": "AmmoExpanded-Settings-DebugAmmoLogging-Desc"
             }
           ]
         }

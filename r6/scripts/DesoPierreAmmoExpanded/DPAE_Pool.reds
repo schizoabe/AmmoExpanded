@@ -13,6 +13,13 @@ protected cb func OnAmmoStateChangeEvent(evt: ref<AmmoStateChangeEvent>) -> Bool
         player.DPAE_ResolveAmmoSelection(confirmedCaliber);
         return wrappedMethod(evt);
       }
+
+      if ItemID.IsValid(player.dpae_pending_restore_weapon) && this.GetItemID() == player.dpae_pending_restore_weapon {
+        let clearedRestoreWeapon: ItemID;
+        player.dpae_pending_restore_weapon = clearedRestoreWeapon;
+        return wrappedMethod(evt);
+      }
+
       if player.dpae_test_active {
         let ts             = GameInstance.GetTransactionSystem(player.GetGame());
         let thisItemID     = this.GetItemID();
@@ -58,6 +65,15 @@ protected cb func OnAmmoStateChangeEvent(evt: ref<AmmoStateChangeEvent>) -> Bool
             player.dpae_pending_nl     = DPAE_RoundIsNL(player.dpae_active_ammo);
 
             let left = ts.GetItemQuantity(player, activeID);
+
+            if DesoPierreAmmoExpandedSettings.DebugAmmoLogging() {
+              LogChannel(n"DEBUG", "[DPAE_AMMOLOG] caliber=" + TDBID.ToStringDEBUG(player.dpae_caliber)
+                + " active=" + TDBID.ToStringDEBUG(player.dpae_active_ammo)
+                + " roundsConsumed=" + ToString(roundsConsumed)
+                + " realLeft=" + ToString(left)
+                + " dummyQty=" + ToString(currentDummyQty)
+                + " magPct=" + ToString(currentPct));
+            }
 
             if left <= 10 && DesoPierreAmmoExpandedSettings.AmmoStarterSafetyNet() && player.DPAE_IsNarrativeAmmoWindowActive() {
               ts.GiveItem(player, activeID, 30 - left);
@@ -237,7 +253,8 @@ public func DPAE_SelectAmmo(activeTDBID: TweakDBID) -> Void {
     return;
   }
 
-  let isVariantSwitch = TDBID.IsValid(this.dpae_active_ammo) && !Equals(this.dpae_active_ammo, requestedTDBID);
+  let isVariantSwitch = TDBID.IsValid(this.dpae_active_ammo) && !Equals(this.dpae_active_ammo, requestedTDBID)
+    && IsDefined(weaponObj) && weaponObj.GetItemID() == this.dpae_active_ammo_weapon;
   let settingOn = DesoPierreAmmoExpandedSettings.ForceReloadOnAmmoSwitch();
 
   if this.dpae_pending_forced_drain_pending && IsDefined(weaponObj) && weaponObj.GetItemID() == this.dpae_pending_forced_drain_weapon {
@@ -268,6 +285,8 @@ public func DPAE_SelectAmmo(activeTDBID: TweakDBID) -> Void {
 
   this.dpae_test_active = false;
   this.dpae_active_ammo = TDBID.None();
+  let clearedPreSelectWeapon: ItemID;
+  this.dpae_active_ammo_weapon = clearedPreSelectWeapon;
   this.DPAE_RemoveSlugModifiers();
   this.DPAE_RemoveArmorPenModifier();
   this.DPAE_RemoveSnakeshotModifiers();
@@ -282,14 +301,21 @@ public func DPAE_SelectAmmo(activeTDBID: TweakDBID) -> Void {
   }
   this.dpae_masked_first_shot_owed = this.dpae_is_masked_ammo;
 
-  let leftover = ts.GetItemQuantity(this, dummyID);
-  if leftover > 0 { ts.RemoveItem(this, dummyID, leftover); }
-  this.dpae_pending_internal_dummy_qty += giveQty;
-  ts.GiveItem(this, dummyID, giveQty);
+  if this.dpae_resync_only {
+    this.dpae_prev_mag_pct   = IsDefined(weaponObj) ? WeaponObject.GetMagazinePercentage(weaponObj) : 0.0;
+    this.dpae_prev_dummy_qty = ts.GetItemQuantity(this, dummyID);
+  } else {
+    let leftover = ts.GetItemQuantity(this, dummyID);
+    if leftover > 0 { ts.RemoveItem(this, dummyID, leftover); }
+    this.dpae_pending_internal_dummy_qty += giveQty;
+    ts.GiveItem(this, dummyID, giveQty);
 
-  this.dpae_prev_mag_pct   = IsDefined(weaponObj) ? WeaponObject.GetMagazinePercentage(weaponObj) : 0.0;
-  this.dpae_prev_dummy_qty = giveQty;
+    this.dpae_prev_mag_pct   = IsDefined(weaponObj) ? WeaponObject.GetMagazinePercentage(weaponObj) : 0.0;
+    this.dpae_prev_dummy_qty = giveQty;
+  }
   this.dpae_active_ammo  = requestedTDBID;
+  let clearedActiveWeapon: ItemID;
+  this.dpae_active_ammo_weapon = IsDefined(weaponObj) ? weaponObj.GetItemID() : clearedActiveWeapon;
   let activeStr = TDBID.ToStringDEBUG(requestedTDBID);
   if StrEndsWith(activeStr, "_Slug") {
     this.DPAE_ApplySlugModifiers(weaponObj);
@@ -317,6 +343,41 @@ public func DPAE_SelectAmmo(activeTDBID: TweakDBID) -> Void {
   if IsDefined(weaponObj) {
     let chamberCount = Cast<Uint32>(this.dpae_prev_mag_pct * Cast<Float>(WeaponObject.GetMagazineCapacity(weaponObj)) + 0.5);
     this.DPAE_RecordWeaponState(weaponObj.GetItemID(), requestedTDBID, chamberCount);
+    this.DPAE_RecordVariantForSave(weaponObj.GetItemID(), requestedTDBID);
+  }
+}
+
+@addMethod(PlayerPuppet)
+public func DPAE_TacticalReloadDrain(weaponItemID: ItemID, chamberedRounds: Uint32) -> Void {
+  if !DesoPierreAmmoExpandedSettings.ForceReloadOnAmmoSwitch() {
+    return;
+  }
+  if this.dpae_is_tube_fed {
+    return;
+  }
+  if !TDBID.IsValid(this.dpae_active_ammo) {
+    return;
+  }
+  if chamberedRounds == Cast<Uint32>(0) {
+    return;
+  }
+  let ts = GameInstance.GetTransactionSystem(this.GetGame());
+  if ItemID.IsValid(weaponItemID) && ts.HasTag(this, n"DiscardOnEmpty", weaponItemID) {
+    return;
+  }
+  let variantID = ItemID.FromTDBID(this.dpae_active_ammo);
+  let ownedQty = ts.GetItemQuantity(this, variantID);
+  let dummyID = this.DPAE_GetDummyItemID();
+  let dummyQtyBefore = ts.GetItemQuantity(this, dummyID);
+  let chargeAmount = Cast<Int32>(chamberedRounds);
+  if chargeAmount > ownedQty { chargeAmount = ownedQty; }
+  if chargeAmount > 0 {
+    ts.RemoveItem(this, variantID, chargeAmount);
+  }
+  let dummyChargeAmount = chargeAmount;
+  if dummyChargeAmount > dummyQtyBefore { dummyChargeAmount = dummyQtyBefore; }
+  if dummyChargeAmount > 0 {
+    ts.RemoveItem(this, dummyID, dummyChargeAmount);
   }
 }
 
@@ -334,6 +395,8 @@ public func DPAE_ClearAmmo() -> Void {
   }
 
   this.dpae_active_ammo = TDBID.None();
+  let clearedClearAmmoWeapon: ItemID;
+  this.dpae_active_ammo_weapon = clearedClearAmmoWeapon;
   this.DPAE_RemoveSlugModifiers();
   this.DPAE_RemoveArmorPenModifier();
   this.DPAE_RemoveSnakeshotModifiers();
@@ -429,24 +492,24 @@ func DPAE_SuffixToExclusiveTag(suffix: String) -> CName {
 func DPAE_GetExclusiveVariantSuffixes(caliberStr: String) -> array<String> {
   let suffixes: array<String>;
   if Equals(caliberStr, "Ammo.Cal23x152Sov") {
-    ArrayPush(suffixes, "_HE");         // Borzaya / O'Five (pre-existing, unrelated)
-    ArrayPush(suffixes, "_Sparky_EMP"); // Sparky's own signature round
+    ArrayPush(suffixes, "_HE");
+    ArrayPush(suffixes, "_Sparky_EMP");
   } else if Equals(caliberStr, "Ammo.Cal45Super") {
-    ArrayPush(suffixes, "_HE");   // Seraph
+    ArrayPush(suffixes, "_HE");
   } else if Equals(caliberStr, "Ammo.Cal12p3x41UdaR") {
-    ArrayPush(suffixes, "_HE");   // Doom Doom
+    ArrayPush(suffixes, "_HE");
   } else if Equals(caliberStr, "Ammo.Cal5p56CT") {
-    ArrayPush(suffixes, "_HE");   // Psalm 11:6
+    ArrayPush(suffixes, "_HE");
   } else if Equals(caliberStr, "Ammo.Cal4Gauge") {
-    ArrayPush(suffixes, "_EMP");  // Mox
+    ArrayPush(suffixes, "_EMP");
   } else if Equals(caliberStr, "Ammo.Cal10x40Rocket") {
-    ArrayPush(suffixes, "_Divided_CHEM");  // Divided We Stand's own signature round
+    ArrayPush(suffixes, "_Divided_CHEM");
   } else if Equals(caliberStr, "Ammo.Cal9p5x35Minirocket") {
-    ArrayPush(suffixes, "_Yinglong_EMP");  // Yinglong's own signature round
+    ArrayPush(suffixes, "_Yinglong_EMP");
   } else if Equals(caliberStr, "Ammo.Cal12x45Rocket") {
-    ArrayPush(suffixes, "_Hercules_CHEM"); // Hercules's own signature round
+    ArrayPush(suffixes, "_Hercules_CHEM");
   } else if Equals(caliberStr, "Ammo.Cal10GaugeBuck") {
-    ArrayPush(suffixes, "_Dezerter_HE");   // Dezerter's own signature round
+    ArrayPush(suffixes, "_Dezerter_HE");
   }
   return suffixes;
 }

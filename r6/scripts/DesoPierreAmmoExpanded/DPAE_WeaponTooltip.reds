@@ -44,7 +44,7 @@ func DPAE_GetCaliberFromRecordTags(tags: array<CName>) -> TweakDBID {
   return TDBID.None();
 }
 
-func DPAE_GetAmmoTooltipLine(itemData: wref<gameItemData>) -> String {
+func DPAE_GetAmmoTooltipValue(itemData: wref<gameItemData>) -> String {
   if !IsDefined(itemData) { return ""; }
   let itemID = itemData.GetID();
   if !ItemID.IsValid(itemID) { return ""; }
@@ -70,9 +70,7 @@ func DPAE_GetAmmoTooltipLine(itemData: wref<gameItemData>) -> String {
   if !IsDefined(ammoRecord) { ammoRecord = TweakDBInterface.GetItemRecord(caliberTDBID); }
   if !IsDefined(ammoRecord) { return ""; }
 
-  let name = GetLocalizedTextByKey(ammoRecord.DisplayName());
-  if StrLen(name) == 0 { return ""; }
-  return GetLocalizedTextByKey(n"AmmoExpanded-Tooltip-AmmoLabel") + " " + name;
+  return GetLocalizedTextByKey(ammoRecord.DisplayName());
 }
 
 @wrapMethod(NewItemTooltipDetailsStatsModule)
@@ -91,19 +89,19 @@ public func Update(data: ref<MinimalItemTooltipData>) -> Void {
 
 @addMethod(NewItemTooltipDetailsStatsModule)
 public func DPAECreateAmmoStatement(itemData: wref<gameItemData>) -> Void {
-  let text = DPAE_GetAmmoTooltipLine(itemData);
-  if StrLen(text) == 0 { return; }
+  let value = DPAE_GetAmmoTooltipValue(itemData);
+  if StrLen(value) == 0 { return; }
   let widget = this.SpawnFromLocal(inkWidgetRef.Get(this.m_statsContainer), n"itemDetailsStat");
   let controller = widget.GetController() as ItemTooltipStatController;
   if !IsDefined(controller) { return; }
-  controller.DPAESetAmmoDetail(text);
+  controller.DPAESetAmmoDetail(GetLocalizedTextByKey(n"AmmoExpanded-Tooltip-AmmoLabel"), value);
 }
 
 @addMethod(ItemTooltipStatController)
-public final func DPAESetAmmoDetail(text: String) -> Void {
-  let color: HDRColor;
-  color.Red = 0.75; color.Green = 0.80; color.Blue = 0.85; color.Alpha = 1.0;
-  inkTextRef.SetText(this.m_statName, text);
-  inkWidgetRef.SetTintColor(this.m_statName, color);
-  inkTextRef.SetText(this.m_statValue, "");
+public final func DPAESetAmmoDetail(label: String, value: String) -> Void {
+  let white: HDRColor;
+  white.Red = 1.0; white.Green = 1.0; white.Blue = 1.0; white.Alpha = 1.0;
+  inkTextRef.SetText(this.m_statValue, label);
+  inkTextRef.SetText(this.m_statName, value);
+  inkWidgetRef.SetTintColor(this.m_statName, white);
 }

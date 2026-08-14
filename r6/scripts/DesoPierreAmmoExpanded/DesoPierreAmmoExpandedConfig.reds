@@ -32,6 +32,13 @@ public class DPAE_ToggleSettings extends ScriptableSystem {
   @runtimeProperty("ModSettings.category.order", "1")
   let ammoStarterSafetyNet: Bool = true;
 
+  @runtimeProperty("ModSettings.mod", "AmmoExpanded")
+  @runtimeProperty("ModSettings.displayName", "AmmoExpanded-Settings-DebugAmmoLogging")
+  @runtimeProperty("ModSettings.description", "AmmoExpanded-Settings-DebugAmmoLogging-Desc")
+  @runtimeProperty("ModSettings.category", "AmmoExpanded-Settings-Category")
+  @runtimeProperty("ModSettings.category.order", "1")
+  let debugAmmoLogging: Bool = false;
+
   public static func Get() -> ref<DPAE_ToggleSettings> {
     return GameInstance.GetScriptableSystemsContainer(GetGameInstance()).Get(n"DPAE_ToggleSettings") as DPAE_ToggleSettings;
   }
@@ -71,6 +78,12 @@ public class DesoPierreAmmoExpandedSettings {
     if IsDefined(s) { return s.ammoStarterSafetyNet; }
     return true;
   }
+
+  public static func DebugAmmoLogging() -> Bool {
+    let s = DPAE_ToggleSettings.Get();
+    if IsDefined(s) { return s.debugAmmoLogging; }
+    return false;
+  }
 }
 
 @if(!ModuleExists("ModSettingsModule"))
@@ -79,4 +92,5 @@ public class DesoPierreAmmoExpandedSettings {
   public static func TrueDamageConversion() -> Bool { return true; }
   public static func ForceReloadOnAmmoSwitch() -> Bool { return false; }
   public static func AmmoStarterSafetyNet() -> Bool { return true; }
+  public static func DebugAmmoLogging() -> Bool { return false; }
 }

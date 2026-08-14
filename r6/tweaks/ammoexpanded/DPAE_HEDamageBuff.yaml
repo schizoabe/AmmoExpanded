@@ -342,6 +342,7 @@ DPAE_HE.ExplosiveBulletEffect:
 DPAE_HE.PhysicalExplosiveBullet:
   $base: Attacks.PhysicalExplosiveBullet
   playerAttack: DPAE_HE.ExplosiveBulletEffect
+  playerTimeDilated: DPAE_HE.ExplosiveBulletEffect
 
 DPAE_HE.PhysicalExplosiveBulletPackage:
   $base: Attacks.PhysicalExplosiveBulletPackage
@@ -394,6 +395,7 @@ DPAE_HE.ExplodingBulletLightEffect:
 DPAE_HE.ExplodingBulletLight:
   $base: Attacks.ExplodingBulletLight
   playerAttack: DPAE_HE.ExplodingBulletLightEffect
+  playerTimeDilated: DPAE_HE.ExplodingBulletLightEffect
 
 DPAE_HE.ExplodingBulletLightPackage:
   $base: Attacks.ExplodingBulletLightPackage
@@ -446,6 +448,7 @@ DPAE_HE.ExplodingBulletMediumEffect:
 DPAE_HE.ExplodingBulletMedium:
   $base: Attacks.ExplodingBulletMedium
   playerAttack: DPAE_HE.ExplodingBulletMediumEffect
+  playerTimeDilated: DPAE_HE.ExplodingBulletMediumEffect
 
 DPAE_HE.ExplodingBulletMediumPackage:
   $base: Attacks.ExplodingBulletMediumPackage
@@ -551,6 +554,7 @@ DPAE_HE.RocketEffect:
 DPAE_HE.RocketAttack:
   $base: Attacks.RocketAttack
   playerAttack: DPAE_HE.RocketEffect
+  playerTimeDilated: DPAE_HE.RocketEffect
 
 DPAE_HE.RocketChargedExplosion:
   $base: Attacks.RocketChargedExplosion
@@ -597,6 +601,7 @@ DPAE_HE.RocketChargedEffect:
 DPAE_HE.RocketChargedAttack:
   $base: Attacks.RocketChargedAttack
   playerAttack: DPAE_HE.RocketChargedEffect
+  playerTimeDilated: DPAE_HE.RocketChargedEffect
   explosionAttack: DPAE_HE.RocketChargedExplosion
 
 DPAE_HE.RocketProjectilePackage:

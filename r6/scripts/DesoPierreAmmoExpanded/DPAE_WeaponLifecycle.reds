@@ -43,6 +43,8 @@ public func DPAE_ResolveAmmoSelection(caliberTDBID: TweakDBID) -> Void {
       this.DPAE_SelectAmmo(caliberTDBID);
     } else {
       this.dpae_active_ammo = TDBID.None();
+      let clearedResolveWeapon: ItemID;
+      this.dpae_active_ammo_weapon = clearedResolveWeapon;
       StatusEffectHelper.RemoveStatusEffect(this, t"DPAE_StatusEffect.AP_Pierce");
       StatusEffectHelper.RemoveStatusEffect(this, t"DPAE_StatusEffect.INC_Burn");
       StatusEffectHelper.RemoveStatusEffect(this, t"DPAE_StatusEffect.HP_Bleed");
@@ -72,7 +74,7 @@ public func DPAE_ResolveAmmoSelection(caliberTDBID: TweakDBID) -> Void {
 }
 
 @addMethod(PlayerPuppet)
-private func DPAE_HandleWeaponSlotEvent(slotID: TweakDBID) -> Void {
+private func DPAE_HandleWeaponSlotEvent(slotID: TweakDBID, isSessionLoad: Bool) -> Void {
   let ts      = GameInstance.GetTransactionSystem(this.GetGame());
 
   let isRightSlot = Equals(slotID, t"AttachmentSlots.WeaponRight");
@@ -107,11 +109,15 @@ private func DPAE_HandleWeaponSlotEvent(slotID: TweakDBID) -> Void {
   let clearedZeroWeapon: ItemID;
   this.dpae_pending_zero_weapon  = clearedZeroWeapon;
   this.dpae_pending_zero_caliber = TDBID.None();
+  let clearedRestoreWeapon: ItemID;
+  this.dpae_pending_restore_weapon = clearedRestoreWeapon;
 
   let dummyID = this.DPAE_GetDummyItemID();
 
-  let leftover = ts.GetItemQuantity(this, dummyID);
-  if leftover > 0 { ts.RemoveItem(this, dummyID, leftover); }
+  if !isSessionLoad {
+    let leftover = ts.GetItemQuantity(this, dummyID);
+    if leftover > 0 { ts.RemoveItem(this, dummyID, leftover); }
+  }
   this.dpae_test_active       = false;
   let dpaeNoEffects: array<TweakDBID>;
   this.dpae_pending_effect    = dpaeNoEffects;
@@ -161,9 +167,11 @@ private func DPAE_HandleWeaponSlotEvent(slotID: TweakDBID) -> Void {
   this.dpae_is_masked_ammo = ts.HasTag(this, n"DPAE_MaskedAmmo", weaponItemID);
   this.dpae_locked_variant = DPAE_GetLockedVariant(this, weaponItemID, caliberTDBID);
 
-  let newDummyID = this.DPAE_GetDummyItemID();
-  let staleTokens = ts.GetItemQuantity(this, newDummyID);
-  if staleTokens > 0 { ts.RemoveItem(this, newDummyID, staleTokens); }
+  if !isSessionLoad {
+    let newDummyID = this.DPAE_GetDummyItemID();
+    let staleTokens = ts.GetItemQuantity(this, newDummyID);
+    if staleTokens > 0 { ts.RemoveItem(this, newDummyID, staleTokens); }
+  }
 
   if !TDBID.IsValid(this.dpae_locked_variant) {
     let knownIdx = this.DPAE_FindKnownWeaponIndex(weaponItemID);
@@ -171,7 +179,23 @@ private func DPAE_HandleWeaponSlotEvent(slotID: TweakDBID) -> Void {
       let rememberedAmmoID  = this.dpae_known_weapon_ammo[knownIdx];
       let rememberedChamber = this.dpae_known_weapon_chamber[knownIdx];
       if TDBID.IsValid(rememberedAmmoID) && ts.GetItemQuantity(this, ItemID.FromTDBID(rememberedAmmoID)) > 0 {
+        if DesoPierreAmmoExpandedSettings.DebugAmmoLogging() {
+          LogChannel(n"DEBUG", "[DPAE_SWAPLOG] known-weapon restore ENTRY ammo=" + TDBID.ToStringDEBUG(rememberedAmmoID)
+            + " rememberedChamber=" + ToString(rememberedChamber)
+            + " realQtyBefore=" + ToString(ts.GetItemQuantity(this, ItemID.FromTDBID(rememberedAmmoID)))
+            + " dummyQtyBefore=" + ToString(ts.GetItemQuantity(this, this.DPAE_GetDummyItemID())));
+        }
+
         this.DPAE_SelectAmmo(rememberedAmmoID);
+
+        if DesoPierreAmmoExpandedSettings.DebugAmmoLogging() {
+          LogChannel(n"DEBUG", "[DPAE_SWAPLOG] known-weapon restore POST-SELECT"
+            + " realQtyAfter=" + ToString(ts.GetItemQuantity(this, ItemID.FromTDBID(rememberedAmmoID)))
+            + " dummyQtyAfter=" + ToString(ts.GetItemQuantity(this, this.DPAE_GetDummyItemID()))
+            + " chamberPctNow=" + ToString(WeaponObject.GetMagazinePercentage(weaponObj)));
+        }
+
+        this.dpae_pending_restore_weapon = weaponItemID;
 
         let restoreEvt = new SetAmmoCountEvent();
         restoreEvt.ammoTypeID = WeaponObject.GetAmmoType(weaponObj);
@@ -180,6 +204,18 @@ private func DPAE_HandleWeaponSlotEvent(slotID: TweakDBID) -> Void {
         return;
       }
     }
+  }
+
+  if isSessionLoad {
+    let savedVariant = this.DPAE_GetSavedVariant(isRightSlot, caliberTDBID);
+    if TDBID.IsValid(savedVariant) && ts.GetItemQuantity(this, ItemID.FromTDBID(savedVariant)) > 0 {
+      this.DPAE_RememberAmmo(caliberTDBID, savedVariant);
+    }
+
+    this.dpae_resync_only = true;
+    this.DPAE_ResolveAmmoSelection(caliberTDBID);
+    this.dpae_resync_only = false;
+    return;
   }
 
   let currentPct = WeaponObject.GetMagazinePercentage(weaponObj);
@@ -205,15 +241,25 @@ protected cb func OnItemAddedToSlot(evt: ref<ItemAddedToSlot>) -> Bool {
     return result;
   }
 
-  this.DPAE_HandleWeaponSlotEvent(slotID);
+  let isRightSlot = Equals(slotID, t"AttachmentSlots.WeaponRight");
+  let isLoadRequip = isRightSlot ? this.dpae_pending_load_requip_right : this.dpae_pending_load_requip_left;
+  if isRightSlot {
+    this.dpae_pending_load_requip_right = false;
+  } else {
+    this.dpae_pending_load_requip_left = false;
+  }
+
+  this.DPAE_HandleWeaponSlotEvent(slotID, isLoadRequip);
   return result;
 }
 
 @wrapMethod(PlayerPuppet)
 protected cb func OnGameAttached() -> Bool {
   let result = wrappedMethod();
-  this.DPAE_HandleWeaponSlotEvent(t"AttachmentSlots.WeaponRight");
-  this.DPAE_HandleWeaponSlotEvent(t"AttachmentSlots.WeaponLeft");
+  this.dpae_pending_load_requip_right = true;
+  this.dpae_pending_load_requip_left  = true;
+  this.DPAE_HandleWeaponSlotEvent(t"AttachmentSlots.WeaponRight", true);
+  this.DPAE_HandleWeaponSlotEvent(t"AttachmentSlots.WeaponLeft", true);
   return result;
 }
 
@@ -238,6 +284,10 @@ protected cb func OnItemRemovedFromSlot(evt: ref<ItemRemovedFromSlot>) -> Bool {
     let clearedZeroWeapon: ItemID;
     this.dpae_pending_zero_weapon  = clearedZeroWeapon;
     this.dpae_pending_zero_caliber = TDBID.None();
+  }
+  if ItemID.IsValid(this.dpae_pending_restore_weapon) && this.dpae_pending_restore_weapon == itemID {
+    let clearedRestoreWeapon: ItemID;
+    this.dpae_pending_restore_weapon = clearedRestoreWeapon;
   }
 
   if !ItemID.IsValid(itemID) { return result; }

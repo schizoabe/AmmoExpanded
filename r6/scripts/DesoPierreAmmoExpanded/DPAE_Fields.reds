@@ -8,6 +8,7 @@
 @addField(PlayerPuppet) public let dpae_pending_disassembly_caliber: TweakDBID;
 @addField(PlayerPuppet) public let dpae_pending_zero_weapon: ItemID;
 @addField(PlayerPuppet) public let dpae_pending_zero_caliber: TweakDBID;
+@addField(PlayerPuppet) public let dpae_pending_restore_weapon: ItemID;
 @addField(PlayerPuppet) public let dpae_caliber: TweakDBID;
 @addField(PlayerPuppet) public let dpae_locked_variant: TweakDBID;
 @addField(PlayerPuppet) public let dpae_is_tube_fed: Bool;
@@ -17,11 +18,15 @@
 @addField(PlayerPuppet) public let dpae_pending_forced_drain_weapon: ItemID;
 @addField(PlayerPuppet) public let dpae_pending_forced_drain_pad: Uint32;
 @addField(PlayerPuppet) public let dpae_active_ammo: TweakDBID;
+@addField(PlayerPuppet) public let dpae_active_ammo_weapon: ItemID;
 @addField(PlayerPuppet) public let dpae_known_weapons: array<ItemID>;
 @addField(PlayerPuppet) public let dpae_known_weapon_ammo: array<TweakDBID>;
 @addField(PlayerPuppet) public let dpae_known_weapon_chamber: array<Uint32>;
 @addField(PlayerPuppet) public let dpae_current_weapon_right: ItemID;
 @addField(PlayerPuppet) public let dpae_current_weapon_left: ItemID;
+@addField(PlayerPuppet) public let dpae_pending_load_requip_right: Bool;
+@addField(PlayerPuppet) public let dpae_pending_load_requip_left: Bool;
+@addField(PlayerPuppet) public let dpae_resync_only: Bool;
 @addField(PlayerPuppet) public let dpae_pyro_qualities: array<Int32>;
 @addField(PlayerPuppet) public let dpae_caustic_qualities: array<Int32>;
 @addField(PlayerPuppet) public let dpae_arc_qualities: array<Int32>;
@@ -29,9 +34,7 @@
 @addField(PlayerPuppet) public let dpae_pending_nl: Bool;
 @addField(PlayerPuppet) public let dpae_remembered_calibers: array<TweakDBID>;
 @addField(PlayerPuppet) public let dpae_remembered_ammo:     array<TweakDBID>;
-
 @addField(PlayerPuppet) public let dpae_starter_granted_calibers: array<TweakDBID>;
-
 @addField(PlayerPuppet) public let dpae_pending_internal_grant_qty: Int32;
 
 @addMethod(PlayerPuppet)
@@ -141,6 +144,71 @@ public func DPAE_GetRememberedAmmo(caliberID: TweakDBID) -> TweakDBID {
     i += 1;
   }
   return TDBID.None();
+}
+
+func DPAE_SuffixToIndex(suffix: String) -> Int32 {
+  if Equals(suffix, "_HP") { return 2; }
+  if Equals(suffix, "_AP") { return 3; }
+  if Equals(suffix, "_NL") { return 4; }
+  if Equals(suffix, "_EMP") { return 5; }
+  if Equals(suffix, "_INC") { return 6; }
+  if Equals(suffix, "_CHEM") { return 7; }
+  if Equals(suffix, "_Slug") { return 8; }
+  if Equals(suffix, "_Snakeshot") { return 9; }
+  if Equals(suffix, "_HE") { return 10; }
+  return 1;
+}
+
+func DPAE_SuffixFromIndex(index: Int32) -> String {
+  switch index {
+    case 2: return "_HP";
+    case 3: return "_AP";
+    case 4: return "_NL";
+    case 5: return "_EMP";
+    case 6: return "_INC";
+    case 7: return "_CHEM";
+    case 8: return "_Slug";
+    case 9: return "_Snakeshot";
+    case 10: return "_HE";
+    default: return "";
+  }
+}
+
+@addMethod(PlayerPuppet)
+public func DPAE_RecordVariantForSave(itemID: ItemID, activeTDBID: TweakDBID) -> Void {
+  let ts = GameInstance.GetTransactionSystem(this.GetGame());
+  let qs = GameInstance.GetQuestsSystem(this.GetGame());
+  let activeStr = TDBID.ToStringDEBUG(activeTDBID);
+  let suffixes: array<String> = ["_HP", "_AP", "_NL", "_EMP", "_INC", "_CHEM", "_Slug", "_Snakeshot", "_HE"];
+  let suffixIndex = 1;
+  let i = 0;
+  while i < ArraySize(suffixes) {
+    if StrEndsWith(activeStr, suffixes[i]) {
+      suffixIndex = DPAE_SuffixToIndex(suffixes[i]);
+      break;
+    }
+    i += 1;
+  }
+  let rightWeapon = ts.GetItemInSlot(this, t"AttachmentSlots.WeaponRight") as WeaponObject;
+  if IsDefined(rightWeapon) && rightWeapon.GetItemID() == itemID {
+    qs.SetFactStr("DPAE_SavedVariantRight", suffixIndex);
+    return;
+  }
+  let leftWeapon = ts.GetItemInSlot(this, t"AttachmentSlots.WeaponLeft") as WeaponObject;
+  if IsDefined(leftWeapon) && leftWeapon.GetItemID() == itemID {
+    qs.SetFactStr("DPAE_SavedVariantLeft", suffixIndex);
+  }
+}
+
+@addMethod(PlayerPuppet)
+public func DPAE_GetSavedVariant(isRightSlot: Bool, caliberTDBID: TweakDBID) -> TweakDBID {
+  let qs = GameInstance.GetQuestsSystem(this.GetGame());
+  let index = isRightSlot ? qs.GetFact(n"DPAE_SavedVariantRight") : qs.GetFact(n"DPAE_SavedVariantLeft");
+  if index <= 0 { return TDBID.None(); }
+  if index == 1 { return caliberTDBID; }
+  let suffix = DPAE_SuffixFromIndex(index);
+  if StrLen(suffix) == 0 { return TDBID.None(); }
+  return TDBID.Create(TDBID.ToStringDEBUG(caliberTDBID) + suffix);
 }
 
 

@@ -635,6 +635,25 @@ local function updateHUD(p)
     sys:UpdateDisplay(currentCal.label, variantLabel, qty, r, g, b)
 end
 
+local pendingReloadWeapon = nil
+
+registerForEvent('onInit', function()
+    Observe('WeaponObject', 'StartReload', function(weapon, _durationOverride)
+        if not weapon:GetOwner():IsPlayer() then return end
+        pendingReloadWeapon = weapon
+    end)
+
+    Observe('WeaponObject', 'StopReload', function(weapon, reloadStatus)
+        if not weapon:GetOwner():IsPlayer() then return end
+        local wasGenuineReload = pendingReloadWeapon ~= nil
+        pendingReloadWeapon = nil
+        if not wasGenuineReload then return end
+        if reloadStatus ~= gameweaponReloadStatus.Standard then return end
+        local p = Game.GetPlayer()
+        if not p then return end
+        p:DPAE_TacticalReloadDrain(weapon:GetItemID(), weapon:GetMagazineAmmoCount())
+    end)
+end)
 
 local function pollInputRequests(p)
     local sys = getAmmoHUDSystem()

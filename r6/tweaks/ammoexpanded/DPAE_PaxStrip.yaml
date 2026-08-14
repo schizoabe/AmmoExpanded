@@ -8,3 +8,10 @@ Items.GenericMod1_Base:
               - Perks.IsPlayerOutOfCombatOrInStealthPSMState
               - Perks.IsHitTargetAlive
           value: 1.2
+        - $base: Effectors.BluntMod1_KnockdownEffector
+          prereqRecord:
+            $base: Prereqs.ORPrereq
+            nestedPrereqs:
+              - Perks.IsWeaponMelee
+              - Perks.IsWeaponRanged
+          statusEffect: BaseStatusEffect.NPCForceStagger
