@@ -1,12 +1,13 @@
 
-
 func DPAE_GetCaliberFromEntity(entity: ref<GameObject>, itemID: ItemID) -> TweakDBID {
   let ts = GameInstance.GetTransactionSystem(entity.GetGame());
+
   if ts.HasTag(entity, n"DPAE_Cal10mmAuto",      itemID) { return t"Ammo.Cal10mmAuto"; }
   if ts.HasTag(entity, n"DPAE_Cal45WinMag",      itemID) { return t"Ammo.Cal45WinMag"; }
   if ts.HasTag(entity, n"DPAE_Cal45Super",       itemID) { return t"Ammo.Cal45Super"; }
   if ts.HasTag(entity, n"DPAE_Cal50BeowulfOni",  itemID) { return t"Ammo.Cal50BeowulfOni"; }
   if ts.HasTag(entity, n"DPAE_Cal14x70TSlugHE",  itemID) { return t"Ammo.Cal14x70TSlugHE"; }
+
   if ts.HasTag(entity, n"DPAE_Cal9x19",          itemID) { return t"Ammo.Cal9x19"; }
   if ts.HasTag(entity, n"DPAE_Cal243Win",        itemID) { return t"Ammo.Cal243Win"; }
   if ts.HasTag(entity, n"DPAE_Cal308Win",        itemID) { return t"Ammo.Cal308Win"; }
@@ -64,7 +65,6 @@ public func DPAE_GetNPCForcedVariant(entity: ref<GameObject>, itemID: ItemID, ca
   if ts.HasTag(entity, n"DPAE_NPCForcedAmmo_INC", itemID) { return TDBID.Create(baseStr + "_INC"); }
   return TDBID.None();
 }
-
 
 @addMethod(PlayerPuppet)
 public func DPAE_GetCaliberString() -> String {
@@ -126,6 +126,20 @@ public func DPAE_IsHMGEquipped() -> Bool {
   return ts.HasTag(this, n"HMG", itemID);
 }
 
+@addMethod(PlayerPuppet)
+public func DPAE_IsWeaponStowed() -> Bool {
+  let activeWeapon = GameObject.GetActiveWeapon(this);
+  if !IsDefined(activeWeapon) { return true; }
+  let itemID = activeWeapon.GetItemID();
+  if !ItemID.IsValid(itemID) { return true; }
+  return WeaponObject.IsFists(itemID);
+}
+
+@addMethod(PlayerPuppet)
+public func DPAE_RefreshOnDraw() -> Void {
+  if !TDBID.IsValid(this.dpae_caliber) || !TDBID.IsValid(this.dpae_active_ammo) { return; }
+  this.DPAE_SelectAmmo(this.dpae_active_ammo);
+}
 
 @addMethod(PlayerPuppet)
 public func DPAE_GetDummyItemID() -> ItemID {

@@ -76,7 +76,6 @@ Ammo.Cal10x20TF:
   visualTags: []
   weakspots: []
 
-
 Ammo.Cal10x20TF_EMP:
 
   CraftingData:

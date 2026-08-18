@@ -1,6 +1,6 @@
 
 Vendors.Gunsmith:
-  itemQueries:
+  itemStock:
     - !append-once
       item: Items.CausticMod1_Common
       quantity:
@@ -42,7 +42,7 @@ LootTables.GenericTreasureChest:
   lootItems:
     - !append-once
       playerPrereqID:
-        $type: PlayerLevel_Tier_4_Start_Prereq
+        $base: LootPrereqs.PlayerLevel_Tier_4_Start_Prereq
         comparisonType: Less
       dropChance: 0.01
       itemID: Items.CausticMod1_Rare
@@ -56,7 +56,7 @@ LootTables.GenericTreasureChest:
       itemID: Items.CausticMod1_Legendary
     - !append-once
       playerPrereqID:
-        $type: PlayerLevel_Tier_4_Start_Prereq
+        $base: LootPrereqs.PlayerLevel_Tier_4_Start_Prereq
         comparisonType: Less
       dropChance: 0.01
       itemID: Items.ArcMod1_Rare

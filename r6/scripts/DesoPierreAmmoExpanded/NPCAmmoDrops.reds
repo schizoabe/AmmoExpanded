@@ -32,7 +32,6 @@ private func DPAE_RecordAmmoRoll(weaponItemID: ItemID, ammoTDBID: TweakDBID, wea
   ArrayPush(this.dpae_weaponItemTypes, weaponItemType);
 }
 
-
 func DPAE_GetSpecialVariants(caliberTDBID: TweakDBID) -> array<TweakDBID> {
   let validSpecial: array<TweakDBID>;
   if !TDBID.IsValid(caliberTDBID) { return validSpecial; }
@@ -46,8 +45,11 @@ func DPAE_GetSpecialVariants(caliberTDBID: TweakDBID) -> array<TweakDBID> {
   ArrayPush(suffixes, "_INC");
   ArrayPush(suffixes, "_CHEM");
   ArrayPush(suffixes, "_Slug");
+
   ArrayPush(suffixes, "_Snakeshot");
+
   ArrayPush(suffixes, "_HE");
+
   ArrayPush(suffixes, "HE");
 
   let i = 0;
@@ -143,6 +145,7 @@ protected cb func OnItemAddedToSlot(evt: ref<ItemAddedToSlot>) -> Bool {
   if TDBID.IsValid(lockedVariant) {
     this.dpae_npc_ammo = lockedVariant;
   } else {
+
     let forcedVariant = DPAE_GetNPCForcedVariant(this, weaponItemID, caliberTDBID);
     this.dpae_npc_ammo = TDBID.IsValid(forcedVariant) ? forcedVariant : DPAE_RollNPCAmmoVariant(caliberTDBID);
   }
@@ -189,11 +192,13 @@ public func DPAE_CacheAmmoDropData() -> Void {
   if !IsDefined(weapon) { weapon = ScriptedPuppet.GetWeaponLeft(this); }
   if IsDefined(weapon) && !weapon.IsMelee() {
     let ts = GameInstance.GetTransactionSystem(this.GetGame());
+
     if !ts.HasTag(this, n"HMG", weapon.GetItemID()) {
       let weaponRecord = TweakDBInterface.GetItemRecord(ItemID.GetTDBID(weapon.GetItemID())) as WeaponItem_Record;
       if IsDefined(weaponRecord) {
         let ammoRecord = weaponRecord.Ammo();
         if IsDefined(ammoRecord) && TDBID.IsValid(ammoRecord.GetID()) {
+
           let fallbackAmmoTDBID = ammoRecord.GetID();
           if TDBID.IsValid(this.dpae_npc_ammo) {
             fallbackAmmoTDBID = this.dpae_npc_ammo;
@@ -288,7 +293,6 @@ func DPAE_AmmoBaseQty(itemType: gamedataItemType) -> Int32 {
     default:                                   return 15;
   }
 }
-
 
 @addMethod(PlayerPuppet)
 public func DPAE_DropCurrentWeapon() -> Void {

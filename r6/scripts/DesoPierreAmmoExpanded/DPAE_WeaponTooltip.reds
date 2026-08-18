@@ -1,10 +1,12 @@
 
 func DPAE_GetCaliberFromRecordTags(tags: array<CName>) -> TweakDBID {
+
   if ArrayContains(tags, n"DPAE_Cal10mmAuto")      { return t"Ammo.Cal10mmAuto"; }
   if ArrayContains(tags, n"DPAE_Cal45WinMag")      { return t"Ammo.Cal45WinMag"; }
   if ArrayContains(tags, n"DPAE_Cal45Super")       { return t"Ammo.Cal45Super"; }
   if ArrayContains(tags, n"DPAE_Cal50BeowulfOni")  { return t"Ammo.Cal50BeowulfOni"; }
   if ArrayContains(tags, n"DPAE_Cal14x70TSlugHE")  { return t"Ammo.Cal14x70TSlugHE"; }
+
   if ArrayContains(tags, n"DPAE_Cal9x19")          { return t"Ammo.Cal9x19"; }
   if ArrayContains(tags, n"DPAE_Cal243Win")        { return t"Ammo.Cal243Win"; }
   if ArrayContains(tags, n"DPAE_Cal308Win")        { return t"Ammo.Cal308Win"; }

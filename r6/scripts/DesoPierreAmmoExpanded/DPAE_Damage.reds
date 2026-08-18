@@ -9,6 +9,7 @@ func DPAE_ComputeConversionPercent(instigator: wref<GameObject>, weapon: ref<Wea
       let ts = GameInstance.GetTransactionSystem(player.GetGame());
       let weaponItemID = weapon.GetItemID();
       if ItemID.IsValid(weaponItemID) {
+
         let isIconicElemental = (Equals(elementalType, gamedataDamageType.Electric) && ts.HasTag(player, n"DPAE_IconicElemental_Electric", weaponItemID))
           || (Equals(elementalType, gamedataDamageType.Chemical) && ts.HasTag(player, n"DPAE_IconicElemental_Chemical", weaponItemID))
           || (Equals(elementalType, gamedataDamageType.Thermal) && ts.HasTag(player, n"DPAE_IconicElemental_Thermal", weaponItemID));
@@ -20,6 +21,7 @@ func DPAE_ComputeConversionPercent(instigator: wref<GameObject>, weapon: ref<Wea
         };
       };
     };
+
     let qualities: array<Int32>;
     if Equals(elementalType, gamedataDamageType.Electric) {
       qualities = player.dpae_arc_qualities;
@@ -34,11 +36,13 @@ func DPAE_ComputeConversionPercent(instigator: wref<GameObject>, weapon: ref<Wea
       i += 1;
     };
   };
+
   return MinF(pct, 1.0);
 }
 
 func DPAE_ApplyConversion(hitEvent: ref<gameHitEvent>, elementalType: gamedataDamageType, pct: Float) -> Void {
   let physicalValue = hitEvent.attackComputed.GetAttackValue(gamedataDamageType.Physical);
+
   if physicalValue <= 0.0 {
     return;
   }
@@ -78,6 +82,7 @@ public final func ProcessArmor(hitEvent: ref<gameHitEvent>) -> Void {
           if StrEndsWith(ammoStr, "_CHEM") {
             DPAE_ApplyConversion(hitEvent, gamedataDamageType.Chemical, DPAE_ComputeConversionPercent(instigator, weapon, gamedataDamageType.Chemical));
           } else {
+
             let player = instigator as PlayerPuppet;
             if StrEndsWith(ammoStr, "_HE") && IsDefined(player) && IsDefined(weapon) && ItemID.IsValid(weapon.GetItemID())
               && GameInstance.GetTransactionSystem(player.GetGame()).HasTag(player, n"DPAE_ThermalOnHE", weapon.GetItemID()) {
@@ -99,12 +104,14 @@ public final func ProcessArmor(hitEvent: ref<gameHitEvent>) -> Void {
         if IsDefined(target) {
           let targetSS = GameInstance.GetStatsSystem(target.GetGame());
           let targetArmor = targetSS.GetStatValue(Cast<StatsObjectID>(target.GetEntityID()), gamedataStatType.Armor);
+
           let targetNPC = target as NPCPuppet;
           let ceIntegrity = IsDefined(targetNPC) ? targetNPC.DPAE_GetCEArmorIntegrity() : -1.0;
           let isUnarmored = ceIntegrity >= 0.0 ? (ceIntegrity <= 0.0) : (targetArmor <= 0.0);
           if isUnarmored {
             let physVal = hitEvent.attackComputed.GetAttackValue(gamedataDamageType.Physical);
             hitEvent.attackComputed.SetAttackValue(physVal * (1.0 + hpBonus), gamedataDamageType.Physical);
+
             StatusEffectHelper.ApplyStatusEffect(target, t"BaseStatusEffect.Bleeding", hpInstigator.GetEntityID());
           };
         };

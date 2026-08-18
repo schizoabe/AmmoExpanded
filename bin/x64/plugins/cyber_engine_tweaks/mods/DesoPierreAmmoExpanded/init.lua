@@ -1,3 +1,4 @@
+
 local ROUND_COLORS = {
     FMJ   = { 0.85, 0.85, 0.85 },
     GEN   = { 0.85, 0.85, 0.85 },
@@ -12,6 +13,7 @@ local ROUND_COLORS = {
     TECH  = { 1.00, 0.70, 0.30 },
     CHEM  = { 0.55, 0.90, 0.35 },
     SNAKE = { 0.55, 0.85, 0.25 },
+
     SIG   = { 1.00, 0.95, 0.55 },
 }
 
@@ -139,6 +141,7 @@ local CALIBER_VARIANTS = {
             { id = "Ammo.Cal10GaugeBuck_Slug",        label = "Slug",            short = "SLUG" },
             { id = "Ammo.Cal10GaugeBuck_INC",         label = "Incendiary",      short = "INC" },
             { id = "Ammo.Cal10GaugeBuck_HE",          label = "High Explosive",  short = "HE" },
+
             { id = "Ammo.Cal10GaugeBuck_Dezerter_HE", label = "Signature Round", short = "SIG" },
         },
     },
@@ -159,6 +162,7 @@ local CALIBER_VARIANTS = {
             { id = "Ammo.Cal10x40Rocket_INC",          label = "Incendiary",      short = "INC" },
             { id = "Ammo.Cal10x40Rocket_CHEM",         label = "Chemical",        short = "CHEM" },
             { id = "Ammo.Cal10x40Rocket_EMP",          label = "EMP",             short = "EMP" },
+
             { id = "Ammo.Cal10x40Rocket_Divided_CHEM", label = "Signature Round", short = "SIG" },
         },
     },
@@ -223,6 +227,7 @@ local CALIBER_VARIANTS = {
             { id = "Ammo.Cal12x45Rocket_INC",           label = "Incendiary",      short = "INC" },
             { id = "Ammo.Cal12x45Rocket_CHEM",          label = "Chemical",        short = "CHEM" },
             { id = "Ammo.Cal12x45Rocket_EMP",           label = "EMP",             short = "EMP" },
+
             { id = "Ammo.Cal12x45Rocket_Hercules_CHEM", label = "Signature Round", short = "SIG" },
         },
     },
@@ -299,6 +304,7 @@ local CALIBER_VARIANTS = {
             { id = "Ammo.Cal23x152Sov_INC",        label = "Incendiary",                short = "INC" },
             { id = "Ammo.Cal23x152Sov_EMP",        label = "EMP",                       short = "EMP" },
             { id = "Ammo.Cal23x152Sov_CHEM",       label = "Chemical",                  short = "CHEM" },
+
             { id = "Ammo.Cal23x152Sov_Sparky_EMP", label = "Signature Round",           short = "SIG" },
         },
     },
@@ -437,6 +443,7 @@ local CALIBER_VARIANTS = {
             { id = "Ammo.Cal9p5x35Minirocket_INC",          label = "Incendiary",      short = "INC" },
             { id = "Ammo.Cal9p5x35Minirocket_CHEM",         label = "Chemical",        short = "CHEM" },
             { id = "Ammo.Cal9p5x35Minirocket_HE",           label = "High Explosive",  short = "HE" },
+
             { id = "Ammo.Cal9p5x35Minirocket_Yinglong_EMP", label = "Signature Round", short = "SIG" },
         },
     },
@@ -487,6 +494,7 @@ local function refreshCaliber(p)
     if key == currentCalKey then return end
     currentCalKey = key
     currentCal    = CALIBER_VARIANTS[key]
+
     localActiveID = p:DPAE_GetActiveAmmoID()
     if localActiveID ~= "" and startsWith(localActiveID, "Ammo." .. key) then
         REMEMBERED[key] = localActiveID
@@ -586,8 +594,10 @@ local function syncActiveID(p)
     end
 end
 
-local lastHUDVariant = nil
-local lastHUDQty     = nil
+local lastHUDVariant  = nil
+local lastHUDQty      = nil
+
+local wasWeaponStowed = true
 
 local function getAmmoHUDSystem()
     return Game.GetScriptableSystemsContainer():Get("DPAE_AmmoHUDSystem")
@@ -596,6 +606,21 @@ end
 local function updateHUD(p)
     local sys = getAmmoHUDSystem()
     if not sys then return end
+
+    local isStowed = p:DPAE_IsWeaponStowed()
+    if isStowed then
+        if lastHUDVariant ~= nil then
+            sys:HideDisplay()
+            lastHUDVariant = nil
+            lastHUDQty     = nil
+        end
+        wasWeaponStowed = true
+        return
+    end
+    if wasWeaponStowed then
+        p:DPAE_RefreshOnDraw()
+    end
+    wasWeaponStowed = false
 
     if p:DPAE_IsHMGEquipped() then
         if lastHUDVariant ~= "Belt-Fed" then
@@ -679,3 +704,4 @@ registerForEvent('onDraw', function()
     updateHUD(p)
     pollInputRequests(p)
 end)
+

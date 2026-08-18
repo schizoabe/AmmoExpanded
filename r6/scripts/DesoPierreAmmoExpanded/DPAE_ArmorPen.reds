@@ -1,6 +1,6 @@
+
 @if(ModuleExists("GangBattlePower"))
 import GangBattlePower.*
-
 
 @if(ModuleExists("GangBattlePower"))
 @addMethod(NPCPuppet)
@@ -21,6 +21,7 @@ func DPAE_GetHPUnarmoredBonus(activeStr: String) -> Float {
   if StrFindFirst(activeStr, "Cal10mmAuto_HP") > -1 { return 0.25; }
   if StrFindFirst(activeStr, "Cal50AE_HP") > -1 { return 0.40; }
   if StrFindFirst(activeStr, "Cal12p3x41UdaR_HP") > -1 { return 0.40; }
+
   if StrFindFirst(activeStr, "Cal454Casull_Snakeshot") > -1 { return 0.40; }
   if StrFindFirst(activeStr, "Cal45Super_Snakeshot") > -1 { return 0.30; }
   if StrFindFirst(activeStr, "Cal45WinMag_Snakeshot") > -1 { return 0.30; }
@@ -34,9 +35,11 @@ func DPAE_GetHPUnarmoredBonus(activeStr: String) -> Float {
   if StrFindFirst(activeStr, "Cal5p56x45NUSA_HP") > -1 { return 0.60; }
   if StrFindFirst(activeStr, "Cal243Win_HP") > -1 { return 0.65; }
   if StrFindFirst(activeStr, "Cal9x19_HP") > -1 { return 0.25; }
+
   if StrEndsWith(activeStr, "Cal10GaugeBuck") { return 0.55; }
   if StrEndsWith(activeStr, "Cal12Gauge") { return 0.50; }
   if StrEndsWith(activeStr, "Cal4Gauge") { return 0.65; }
+
   return 0.0;
 }
 
@@ -128,7 +131,9 @@ public func DPAE_UpdateIconicElementalBonus(activeStr: String, weapon: ref<Weapo
   let isElectric = false;
   let isChemical = false;
   let isThermal = false;
+
   let isChemicalRateBonus = false;
+
   let isThermalRateBonus = false;
   if IsDefined(weapon) {
     let ts = GameInstance.GetTransactionSystem(this.GetGame());
@@ -139,6 +144,7 @@ public func DPAE_UpdateIconicElementalBonus(activeStr: String, weapon: ref<Weapo
       isThermal  = ts.HasTag(this, n"DPAE_IconicElemental_Thermal",  weaponItemID) && StrEndsWith(activeStr, "_INC");
       isChemicalRateBonus = ts.HasTag(this, n"DPAE_IconicElementalRateBonus_Chemical", weaponItemID) && StrEndsWith(activeStr, "_CHEM");
       isThermalRateBonus  = ts.HasTag(this, n"DPAE_IconicElementalRateBonus_Thermal",  weaponItemID) && StrEndsWith(activeStr, "_INC");
+
       if !isThermal && StrEndsWith(activeStr, "_HE") && ts.HasTag(this, n"DPAE_ThermalOnHE", weaponItemID) {
         isThermal = true;
         isThermalRateBonus = ts.HasTag(this, n"DPAE_IconicElementalRateBonus_Thermal", weaponItemID);
@@ -183,6 +189,7 @@ public func DPAE_UpdateIconicRateBonus(activeStr: String, weapon: ref<WeaponObje
     if ItemID.IsValid(weaponItemID) {
       isSparky      = ts.HasTag(this, n"DPAE_IconicRateBonus_Sparky",      weaponItemID) && StrEndsWith(activeStr, "_EMP");
       isBorzaya     = ts.HasTag(this, n"DPAE_IconicRateBonus_Borzaya",     weaponItemID) && StrEndsWith(activeStr, "_INC");
+
       isBloodyMaria = ts.HasTag(this, n"DPAE_IconicRateBonus_BloodyMaria", weaponItemID) && StrEndsWith(activeStr, "Cal12Gauge");
     }
   }
@@ -275,8 +282,6 @@ public func DPAE_RoundIsNL(roundID: TweakDBID) -> Bool {
   return StrEndsWith(TDBID.ToStringDEBUG(roundID), "_NL");
 }
 
-
-
 @addMethod(PlayerPuppet)
 public func DPAE_ApplySlugModifiers(weapon: ref<WeaponObject>) -> Void {
   if !IsDefined(weapon) { return; }
@@ -285,6 +290,7 @@ public func DPAE_ApplySlugModifiers(weapon: ref<WeaponObject>) -> Void {
   this.dpae_slug_entity      = weapon.GetEntityID();
 
   let projBefore = ss.GetStatValue(objID, gamedataStatType.ProjectilesPerShotBase);
+
   this.dpae_slug_proj        = RPGManager.CreateStatModifier(gamedataStatType.ProjectilesPerShotBase, gameStatModifierType.Additive,    1.0 - projBefore);
   this.dpae_slug_spreadMaxX  = RPGManager.CreateStatModifier(gamedataStatType.SpreadMaxX,             gameStatModifierType.Multiplier, 0.0);
   this.dpae_slug_spreadMaxY  = RPGManager.CreateStatModifier(gamedataStatType.SpreadMaxY,             gameStatModifierType.Multiplier, 0.0);
@@ -400,5 +406,4 @@ public func DPAE_RemoveSnakeshotModifiersNPC() -> Void {
   ss.RemoveModifier(objID, this.dpae_npcsnake_proj);
   this.dpae_npcsnake_proj = null;
 }
-
 

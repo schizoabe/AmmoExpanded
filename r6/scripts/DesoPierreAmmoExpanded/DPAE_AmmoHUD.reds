@@ -1,5 +1,4 @@
 
-
 public class DPAE_AmmoHUD {
   private let m_canvas:       ref<inkCanvas>;
   private let m_bg:           ref<inkImage>;
@@ -73,7 +72,6 @@ public class DPAE_AmmoHUD {
   }
 }
 
-
 public class DPAE_AmmoHUDSystem extends ScriptableSystem {
   private let m_hud: ref<DPAE_AmmoHUD>;
 
@@ -106,7 +104,6 @@ public class DPAE_AmmoHUDSystem extends ScriptableSystem {
   }
 }
 
-
 @wrapMethod(PlayerPuppet)
 protected cb func OnGameAttached() -> Bool {
   let result: Bool = wrappedMethod();
@@ -129,6 +126,7 @@ protected cb func OnGameAttached() -> Bool {
   canvas.SetName(n"DPAEAmmoHUDCanvas");
   canvas.SetAnchor(inkEAnchor.BottomRight);
   canvas.SetAnchorPoint(new Vector2(1.0, 1.0));
+
   canvas.SetMargin(new inkMargin(0.0, 0.0, 40.0, 220.0));
   canvas.SetSize(new Vector2(260.0, 48.0));
   canvas.Reparent(hudRoot);

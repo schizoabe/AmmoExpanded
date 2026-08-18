@@ -1,5 +1,6 @@
 
 StreetKidStarting:
+  $type: StartingBuild
   startingItems:
     - item: Items.money
       quantity: 300
@@ -15,6 +16,7 @@ StreetKidStarting:
       quantity: 1
 
 CorporateStarting:
+  $type: StartingBuild
   startingItems:
     - item: Items.money
       quantity: 121994
@@ -30,6 +32,7 @@ CorporateStarting:
       quantity: 1
 
 NomadStarting:
+  $type: StartingBuild
   startingItems:
     - item: Items.money
       quantity: 300

@@ -1,3 +1,4 @@
+
 @if(ModuleExists("FACCarryCapacity"))
 import FACCarryCapacity.*
 
@@ -53,7 +54,6 @@ public func DPAE_GetFACCCaliberWeight(activeStr: String) -> Float {
   return 0.0;
 }
 
-
 @if(ModuleExists("FACCarryCapacity"))
 @wrapMethod(UIInventoryItem)
 public final func GetWeight() -> Float {
@@ -62,6 +62,7 @@ public final func GetWeight() -> Float {
     let data: ref<gameItemData> = this.GetItemData();
     if IsDefined(data) {
       let tdbidStr = TDBID.ToStringDEBUG(ItemID.GetTDBID(data.GetID()));
+
       if DPAE_IsFACCDummyToken(tdbidStr) {
         return 0.0;
       }

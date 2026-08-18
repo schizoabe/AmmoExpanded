@@ -1,5 +1,4 @@
 
-
 Items.Base_Sidewinder:  # Cal10x40Rocket -> SmartBulletLowExplosivePackage (2m)
   attacks:
     - !append-once Attacks.SmartBulletHighExplosive
@@ -93,7 +92,6 @@ Items.Base_Warden:  # Cal9p5x35Minirocket (Warden, Chesapeake, Pizdets). Fixed 2
   attacks:
     - !append-once Attacks.SmartBulletHighExplosive
     - !append-once DPAE_HE.SmartBulletHighExplosive
-
 
 Items.Preset_Silverhand_3516:  # Cal500Malour (Malorian Arms 3516, the actual iconic item record — OnLooted/Quest/IconicWeapon-tagged, inherits from Items.Base_Silverhand). Was Items.Silverhand_Malorian, which IS a real record but is an unrelated quest 3D-prop base (Base_Arasaka3D_Gun, mws_se5_03_weapon.tweak) — never the player's actual weapon. Registered directly on the Preset (not Base_Silverhand) to match this file's own convention for other single-preset-exclusive iconics (Preset_Burya_Comrade, Preset_Lexington_Wilson).
   attacks:

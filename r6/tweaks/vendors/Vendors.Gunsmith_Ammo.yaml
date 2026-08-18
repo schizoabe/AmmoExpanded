@@ -533,7 +533,6 @@ Ammo.Cal3x10FlechCluster_VendorItem:
   quantity:
     - Ammo.Cal3x10FlechCluster_VendorQty
 
-
 Vendors.$(sv):
   $instances:
     - { sv: wat_kab_gunsmith_01 }     # Watson / Kabuki
@@ -560,7 +559,6 @@ Vendors.$(sv):
     - !append-once Ammo.Cal5p56x45NUSA_VendorItem
     - !append-once Ammo.Cal5p56CT_VendorItem
     - !append-once Ammo.Cal5p45CT_VendorItem
-
 
 Vendors.$(mv):
   $instances:
@@ -596,7 +594,6 @@ Vendors.$(mv):
     - !append-once Ammo.Cal15x80TSpike_VendorItem
     - !append-once Ammo.Cal50BMG_VendorItem
 
-
 Vendors.$(spv):
   $instances:
     - { spv: wbr_jpn_gunsmith_01 }     # Westbrook / Japantown
@@ -616,7 +613,6 @@ Vendors.$(spv):
     - !append-once Ammo.Cal20x102Vulcan_VendorItem
     - !append-once Ammo.Cal22x126AC_VendorItem
     - !append-once Ammo.Cal23x152Sov_VendorItem
-
 
 Vendors.cct_dtn_guns_01:
   itemStock:

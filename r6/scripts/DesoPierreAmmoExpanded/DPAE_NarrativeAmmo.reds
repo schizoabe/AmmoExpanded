@@ -1,3 +1,4 @@
+
 @addMethod(PlayerPuppet)
 public func DPAE_IsNarrativeAmmoWindowActive() -> Bool {
   let qs = GameInstance.GetQuestsSystem(this.GetGame());

@@ -29,9 +29,6 @@ DPAE_StatusEffect.AP_Pierce:
             $base: Perks.ApplyStatGroupOnWeapon
             statGroup: DPAE_StatusEffect.AP_Pierce_Group
 
-
-
-
 DPAE_StatusEffect.INC_Burn_ThermalGain:
   $type: gamedataCombinedStatModifier_Record
   modifierType: Additive
@@ -126,8 +123,6 @@ DPAE_StatusEffect.INC_Thermal_Debuff:
           modifierType: Multiplier
           value: 0.7
 
-
-
 DPAE_StatusEffect.HP_Bleed_RateBoost:
   $type: gamedataConstantStatModifier_Record
   modifierType: Additive
@@ -188,7 +183,6 @@ DPAE_StatusEffect.HP_Bleed_NPCBonus:
           removeWithEffector: true
           statGroup: DPAE_StatusEffect.HP_Bleed_NPCBonus_Group
 
-
 DPAE_StatusEffect.EMP_Shock_ElectricGain:
   $type: gamedataCombinedStatModifier_Record
   modifierType: Additive
@@ -223,8 +217,6 @@ DPAE_StatusEffect.EMP_Shock:
           applicationTarget: Weapon
           removeWithEffector: true
           statGroup: DPAE_StatusEffect.EMP_Shock_Group
-
-
 
 DPAE_StatusEffect.CHEM_Poison_ChemicalGain:
   $type: gamedataCombinedStatModifier_Record
@@ -327,9 +319,6 @@ DPAE_StatusEffect.CHEM_Poison_Debuff:
           modifierType: Additive
           value: -0.5
 
-
-
-
 DPAE_StatusEffect.IconicElectric_Bonus_ElectricGain:
   $type: gamedataCombinedStatModifier_Record
   modifierType: Additive
@@ -391,7 +380,6 @@ DPAE_StatusEffect.IconicChemical_Bonus:
           applicationTarget: Weapon
           removeWithEffector: true
           statGroup: DPAE_StatusEffect.IconicChemical_Bonus_Group
-
 
 DPAE_StatusEffect.IconicThermal_Bonus_ThermalGain:
   $type: gamedataCombinedStatModifier_Record
@@ -634,8 +622,6 @@ DPAE_StatusEffect.DezerterSignature_Active:
   packages: []
   gameplayTags:
     - DPAE_Dezerter_Signature_Active
-
-
 
 DPAE_StatusEffect.INC_Burn_PyroBonus_T0_DamageGain:
   $type: gamedataCombinedStatModifier_Record

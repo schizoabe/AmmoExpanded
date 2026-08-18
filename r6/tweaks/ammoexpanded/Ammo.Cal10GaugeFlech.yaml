@@ -76,7 +76,6 @@ Ammo.Cal10GaugeFlech:
   visualTags: []
   weakspots: []
 
-
 Ammo.Cal10GaugeFlech_EMP:
 
   CraftingData:

@@ -76,7 +76,6 @@ Ammo.Cal15x80TSpike:
   visualTags: []
   weakspots: []
 
-
 Ammo.Cal15x80TSpike_EMP:
 
   CraftingData:

@@ -76,7 +76,6 @@ Ammo.Cal8x30TShot:
   visualTags: []
   weakspots: []
 
-
 Ammo.Cal8x30TShot_EMP:
 
   CraftingData:

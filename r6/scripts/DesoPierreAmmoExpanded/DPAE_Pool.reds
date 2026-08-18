@@ -1,10 +1,10 @@
 
-
 @wrapMethod(WeaponObject)
 protected cb func OnAmmoStateChangeEvent(evt: ref<AmmoStateChangeEvent>) -> Bool {
   if IsDefined(evt.weaponOwner) && evt.weaponOwner.IsPlayer() {
     let player = evt.weaponOwner as PlayerPuppet;
     if IsDefined(player) {
+
       if ItemID.IsValid(player.dpae_pending_zero_weapon) && this.GetItemID() == player.dpae_pending_zero_weapon {
         let confirmedCaliber = player.dpae_pending_zero_caliber;
         let clearedZeroWeapon: ItemID;
@@ -21,12 +21,14 @@ protected cb func OnAmmoStateChangeEvent(evt: ref<AmmoStateChangeEvent>) -> Bool
       }
 
       if player.dpae_test_active {
+
         let ts             = GameInstance.GetTransactionSystem(player.GetGame());
         let thisItemID     = this.GetItemID();
         let thisCaliberID  = ItemID.IsValid(thisItemID) ? DPAE_GetCaliberFromEntity(player, thisItemID) : TDBID.None();
         if !Equals(thisCaliberID, player.dpae_caliber) {
           return wrappedMethod(evt);
         }
+
         let currentPct  = WeaponObject.GetMagazinePercentage(this);
         let statsSystem = GameInstance.GetStatsSystem(player.GetGame());
         let magCapacity = statsSystem.GetStatValue(Cast<StatsObjectID>(this.GetEntityID()), gamedataStatType.MagazineCapacity);
@@ -47,9 +49,11 @@ protected cb func OnAmmoStateChangeEvent(evt: ref<AmmoStateChangeEvent>) -> Bool
 
             let roundsConsumed = 1;
             if dummyDroppedWithNoPercentChange {
+
               roundsConsumed = player.dpae_prev_dummy_qty - currentDummyQty;
               if roundsConsumed < 1 { roundsConsumed = 1; }
             } else if magCapacity > 0.0 {
+
               roundsConsumed = Cast<Int32>((player.dpae_prev_mag_pct - currentPct) * magCapacity + 0.5);
               if roundsConsumed < 1 { roundsConsumed = 1; }
             }
@@ -81,6 +85,7 @@ protected cb func OnAmmoStateChangeEvent(evt: ref<AmmoStateChangeEvent>) -> Bool
             }
 
             let dummyLeft = ts.GetItemQuantity(player, player.DPAE_GetDummyItemID());
+
             if (currentPct < 0.001 && dummyLeft <= 0) || left <= 0 {
               if left > 0 { ts.RemoveItem(player, activeID, left); }
               player.dpae_active_ammo = TDBID.None();
@@ -89,23 +94,28 @@ protected cb func OnAmmoStateChangeEvent(evt: ref<AmmoStateChangeEvent>) -> Bool
               let swapID = DPAE_GetNextAutoSwapVariant(player, player.dpae_caliber);
               if TDBID.IsValid(swapID) {
                 player.DPAE_SelectAmmo(swapID);
+
               } else {
+
                 player.DPAE_RecordWeaponState(this.GetItemID(), TDBID.None(), Cast<Uint32>(0));
 
                 let residual = ts.GetItemQuantity(player, player.DPAE_GetDummyItemID());
                 if residual > 0 { ts.RemoveItem(player, player.DPAE_GetDummyItemID(), residual); }
               }
             } else if player.dpae_is_masked_ammo && Cast<Int32>(magCapacity + 0.5) == 1 && dummyLeft <= 1 {
+
               player.dpae_pending_internal_dummy_qty += 5 - dummyLeft;
               ts.GiveItem(player, player.DPAE_GetDummyItemID(), 5 - dummyLeft);
             }
           }
         }
+
         if TDBID.IsValid(player.dpae_active_ammo) && magCapacity > 0.0 {
           let chamberCount = Cast<Uint32>(currentPct * magCapacity + 0.5);
           player.DPAE_RecordWeaponState(this.GetItemID(), player.dpae_active_ammo, chamberCount);
         }
         player.dpae_prev_mag_pct = currentPct;
+
         player.dpae_prev_dummy_qty = ts.GetItemQuantity(player, player.DPAE_GetDummyItemID());
       }
     }
@@ -125,12 +135,14 @@ protected cb func OnItemChangedEvent(evt: ref<ItemChangedEvent>) -> Bool {
 
   if evt.difference > 0 && ItemID.IsValid(evt.itemID) {
     let changedTDBID = ItemID.GetTDBID(evt.itemID);
+
     if this.dpae_pending_internal_dummy_qty > 0 && Equals(changedTDBID, ItemID.GetTDBID(this.DPAE_GetDummyItemID())) {
       let consumed = Min(evt.difference, this.dpae_pending_internal_dummy_qty);
       this.dpae_pending_internal_dummy_qty -= consumed;
     } else {
       let vanillaClass = DPAE_VanillaAmmoClassOf(changedTDBID);
       if !Equals(vanillaClass, "") {
+
         let replacement = TDBID.None();
         if TDBID.IsValid(this.dpae_pending_disassembly_caliber)
           && Equals(DPAE_ClassOfCaliber(this.dpae_pending_disassembly_caliber), vanillaClass) {
@@ -208,8 +220,6 @@ func DPAE_ClassOfCaliber(caliber: TweakDBID) -> String {
   return "";
 }
 
-
-
 @addMethod(PlayerPuppet)
 public func DPAE_SelectAmmo(activeTDBID: TweakDBID) -> Void {
   let ts      = GameInstance.GetTransactionSystem(this.GetGame());
@@ -267,6 +277,7 @@ public func DPAE_SelectAmmo(activeTDBID: TweakDBID) -> Void {
     let canReload = !(ItemID.IsValid(switchWeaponItemID) && ts.HasTag(this, n"DiscardOnEmpty", switchWeaponItemID));
     let chamberedRounds = WeaponObject.GetMagazineAmmoCount(weaponObj);
     if canReload && chamberedRounds > Cast<Uint32>(0) {
+
       if TDBID.IsValid(this.dpae_active_ammo) {
         let oldVariantID = ItemID.FromTDBID(this.dpae_active_ammo);
         let oldVariantQty = ts.GetItemQuantity(this, oldVariantID);
@@ -296,6 +307,7 @@ public func DPAE_SelectAmmo(activeTDBID: TweakDBID) -> Void {
   if this.dpae_is_masked_ammo && magCap == 1 && qty <= magCap {
     giveQty = magCap + 4;
   }
+
   if this.dpae_pending_forced_drain_pad > Cast<Uint32>(0) {
     giveQty += Cast<Int32>(this.dpae_pending_forced_drain_pad);
   }
@@ -352,6 +364,7 @@ public func DPAE_TacticalReloadDrain(weaponItemID: ItemID, chamberedRounds: Uint
   if !DesoPierreAmmoExpandedSettings.ForceReloadOnAmmoSwitch() {
     return;
   }
+
   if this.dpae_is_tube_fed {
     return;
   }
@@ -463,7 +476,6 @@ public func DPAE_UpdateIconicSignatureAmmo(activeStr: String) -> Void {
   }
 }
 
-
 func DPAE_SuffixToExclusiveTag(suffix: String) -> CName {
   if Equals(suffix, "_EMP") {
     return n"DPAE_VariantExclusive_EMP";
@@ -532,6 +544,7 @@ public func DPAE_GetRestrictedVariantSuffixes() -> String {
     weaponItemID = weaponObj.GetItemID();
     hasWeapon = ItemID.IsValid(weaponItemID);
   }
+
   let result = "";
   let i = 0;
   while i < ArraySize(exclusiveSuffixes) {

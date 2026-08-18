@@ -1,10 +1,12 @@
 
 public func DPAE_GetEffectForRound(roundID: TweakDBID, instigator: wref<GameObject>, weapon: ref<WeaponObject>) -> array<TweakDBID> {
   let result: array<TweakDBID>;
+
   let activeStr = TDBID.ToStringDEBUG(roundID);
   let dotID: TweakDBID;
   let gimmickID: TweakDBID;
   let rateBonusTag: CName;
+
   let qualities: array<Int32>;
   let player = instigator as PlayerPuppet;
   if StrEndsWith(activeStr, "_EMP") {
@@ -41,6 +43,7 @@ public func DPAE_GetEffectForRound(roundID: TweakDBID, instigator: wref<GameObje
 }
 
 func DPAE_GetCartridgeDoTChance(activeStr: String) -> Float {
+
   if StrFindFirst(activeStr, "Cal23x152Sov_") > -1 { return 1.0; }
 
   if StrFindFirst(activeStr, "Cal500Malour_") > -1 { return 0.70; }
@@ -108,6 +111,7 @@ func DPAE_ComputeElementalDoTChance(instigator: wref<GameObject>, weapon: ref<We
       if ItemID.IsValid(weaponItemID) && ts.HasTag(player, rateBonusTag, weaponItemID) {
         let iconicTier = DPAE_GetWeaponQualityTier(weapon);
         if iconicTier >= 0 {
+
           chance += 0.15 + 0.10 * Cast<Float>(iconicTier);
         };
       };
@@ -145,12 +149,16 @@ func DPAE_ComputeElementalGimmickChance(instigator: wref<GameObject>, weapon: re
     i += 1;
   };
   if isIconicTuned && iconicTier >= 0 {
+
     chance += 0.10 + 0.05 * Cast<Float>(iconicTier);
   };
   return MinF(chance, 0.60);
 }
 
 func DPAE_ApplyRoundEffects(target: ref<GameObject>, effectIDs: array<TweakDBID>, instigatorEntityID: EntityID) -> Void {
+  if IsDefined(target) && target.GetEntityID() == instigatorEntityID {
+    return;
+  }
   let i = 0;
   while i < ArraySize(effectIDs) {
     StatusEffectHelper.ApplyStatusEffect(target, effectIDs[i], instigatorEntityID);
@@ -159,49 +167,71 @@ func DPAE_ApplyRoundEffects(target: ref<GameObject>, effectIDs: array<TweakDBID>
 }
 
 func DPAE_GetArmorPenValue(activeStr: String) -> Float {
+
   if StrFindFirst(activeStr, "Cal454Casull_AP") > -1 { return 0.25; }
   if StrEndsWith(activeStr, "Cal454Casull") { return 0.05; }
+
   if StrFindFirst(activeStr, "Cal45Super_AP") > -1 { return 0.20; }
   if StrEndsWith(activeStr, "Cal45Super") { return 0.0; }
+
   if StrFindFirst(activeStr, "Cal45WinMag_AP") > -1 { return 0.20; }
   if StrEndsWith(activeStr, "Cal45WinMag") { return 0.0; }
+
   if StrFindFirst(activeStr, "Cal10mmAuto_AP") > -1 { return 0.20; }
   if StrEndsWith(activeStr, "Cal10mmAuto") { return 0.0; }
+
   if StrFindFirst(activeStr, "Cal50AE_AP") > -1 { return 0.25; }
   if StrEndsWith(activeStr, "Cal50AE") { return 0.05; }
+
   if StrFindFirst(activeStr, "Cal12p3x41UdaR_AP") > -1 { return 0.25; }
   if StrEndsWith(activeStr, "Cal12p3x41UdaR") { return 0.05; }
+
   if StrFindFirst(activeStr, "Cal500Malour_AP") > -1 { return 0.40; }
   if StrEndsWith(activeStr, "Cal500Malour") { return 0.10; }
+
   if StrFindFirst(activeStr, "Cal50BMG_AP") > -1 { return 0.50; }
   if StrEndsWith(activeStr, "Cal50BMG") { return 0.20; }
+
   if StrEndsWith(activeStr, "Cal22x126AC") { return 0.60; }
   if StrEndsWith(activeStr, "Cal23x152Sov") { return 0.80; }
   if StrEndsWith(activeStr, "Cal20x102Vulcan") { return 0.60; }
+
   if StrFindFirst(activeStr, "Cal5p45CT_AP") > -1 { return 0.35; }
   if StrEndsWith(activeStr, "Cal5p45CT") { return 0.10; }
+
   if StrFindFirst(activeStr, "Cal5p56CT_AP") > -1 { return 0.35; }
   if StrEndsWith(activeStr, "Cal5p56CT") { return 0.10; }
+
   if StrFindFirst(activeStr, "Cal6p5Arasaka_AP") > -1 { return 0.40; }
   if StrEndsWith(activeStr, "Cal6p5Arasaka") { return 0.10; }
+
   if StrFindFirst(activeStr, "Cal308Win_AP") > -1 { return 0.40; }
   if StrEndsWith(activeStr, "Cal308Win") { return 0.10; }
+
   if StrFindFirst(activeStr, "Cal50BeowulfOni_AP") > -1 { return 0.25; }
   if StrEndsWith(activeStr, "Cal50BeowulfOni") { return 0.05; }
+
   if StrFindFirst(activeStr, "Cal7p62x39Sov_AP") > -1 { return 0.30; }
   if StrEndsWith(activeStr, "Cal7p62x39Sov") { return 0.05; }
+
   if StrFindFirst(activeStr, "Cal5p56x45NUSA_AP") > -1 { return 0.35; }
   if StrEndsWith(activeStr, "Cal5p56x45NUSA") { return 0.10; }
+
   if StrFindFirst(activeStr, "Cal243Win_AP") > -1 { return 0.40; }
   if StrEndsWith(activeStr, "Cal243Win") { return 0.10; }
+
   if StrFindFirst(activeStr, "Cal9x19_AP") > -1 { return 0.20; }
   if StrEndsWith(activeStr, "Cal9x19") { return 0.0; }
+
   if StrFindFirst(activeStr, "Cal10GaugeBuck_Slug") > -1 { return 0.20; }
   if StrEndsWith(activeStr, "Cal10GaugeBuck") { return 0.0; }
+
   if StrFindFirst(activeStr, "Cal12Gauge_Slug") > -1 { return 0.20; }
   if StrEndsWith(activeStr, "Cal12Gauge") { return 0.0; }
+
   if StrFindFirst(activeStr, "Cal4Gauge_Slug") > -1 { return 0.25; }
   if StrEndsWith(activeStr, "Cal4Gauge") { return 0.05; }
+
   if StrEndsWith(activeStr, "Cal10x40Rocket") { return 0.0; }
   if StrEndsWith(activeStr, "Cal12x45Rocket") { return 0.0; }
   if StrEndsWith(activeStr, "Cal12p7x70Rocket") { return 0.0; }
@@ -209,11 +239,14 @@ func DPAE_GetArmorPenValue(activeStr: String) -> Float {
   if StrEndsWith(activeStr, "Cal18x70Rocket") { return 0.0; }
   if StrEndsWith(activeStr, "Cal6p5x25Minirocket") { return 0.0; }
   if StrEndsWith(activeStr, "Cal9p5x35Minirocket") { return 0.0; }
+
   if StrEndsWith(activeStr, "Cal3x10FlechCluster") { return 0.10; }
+
   if StrEndsWith(activeStr, "Cal10GaugeFlech") { return 0.15; }
   if StrEndsWith(activeStr, "Cal10x20TF") { return 0.10; }
   if StrEndsWith(activeStr, "Cal5p7x28TF") { return 0.10; }
   if StrEndsWith(activeStr, "Cal14x40TSlug") { return 0.25; }
+
   if StrEndsWith(activeStr, "Cal14x70TSlugHE") { return 0.25; }
   if StrEndsWith(activeStr, "Cal15x80TSpike") { return 0.30; }
   if StrEndsWith(activeStr, "Cal4p7x10TF") { return 0.20; }
@@ -225,22 +258,22 @@ func DPAE_GetArmorPenValue(activeStr: String) -> Float {
 }
 
 func DPAE_GetFlechetteChargeBonus(activeStr: String) -> Float {
-  if StrEndsWith(activeStr, "Cal10GaugeFlech") { return 0.50; }  // uncharged 0.15 / charged 0.65
-  if StrEndsWith(activeStr, "Cal10x20TF") { return 0.50; }       // uncharged 0.10 / charged 0.60
-  if StrEndsWith(activeStr, "Cal5p7x28TF") { return 0.50; }      // uncharged 0.10 / charged 0.60
-  if StrEndsWith(activeStr, "Cal14x40TSlug") { return 0.60; }    // uncharged 0.25 / charged 0.85
-  if StrEndsWith(activeStr, "Cal14x70TSlugHE") { return 0.60; }  // uncharged 0.25 / charged 0.85 (Comrade's Hammer, never had _AP)
-  if StrEndsWith(activeStr, "Cal15x80TSpike") { return 0.70; }   // uncharged 0.30 / charged 1.00
-  if StrEndsWith(activeStr, "Cal4p7x10TF") { return 0.55; }      // uncharged 0.20 / charged 0.75
-  if StrEndsWith(activeStr, "Cal8x30RailF") { return 0.50; }     // uncharged 0.05 / charged 0.55
-  if StrEndsWith(activeStr, "Cal8x30TShot") { return 0.50; }     // uncharged 0.05 / charged 0.55
-  if StrEndsWith(activeStr, "Cal9x30TF") { return 0.50; }        // uncharged 0.05 / charged 0.55
+
+  if StrEndsWith(activeStr, "Cal10GaugeFlech") { return 0.50; }
+  if StrEndsWith(activeStr, "Cal10x20TF") { return 0.50; }
+  if StrEndsWith(activeStr, "Cal5p7x28TF") { return 0.50; }
+  if StrEndsWith(activeStr, "Cal14x40TSlug") { return 0.60; }
+  if StrEndsWith(activeStr, "Cal14x70TSlugHE") { return 0.60; }
+  if StrEndsWith(activeStr, "Cal15x80TSpike") { return 0.70; }
+  if StrEndsWith(activeStr, "Cal4p7x10TF") { return 0.55; }
+  if StrEndsWith(activeStr, "Cal8x30RailF") { return 0.50; }
+  if StrEndsWith(activeStr, "Cal8x30TShot") { return 0.50; }
+  if StrEndsWith(activeStr, "Cal9x30TF") { return 0.50; }
   return 0.0;
 }
 
-
-
 public func DPAE_GetExplosivePackageForRound(activeStr: String) -> TweakDBID {
+
   if StrEndsWith(activeStr, "Cal45Super_HE")      { return t"DPAE_HE.PhysicalExplosiveBulletPackage"; }
   if StrEndsWith(activeStr, "Cal500Malour_HE")    { return t"DPAE_HE.PhysicalExplosiveBulletPackage"; }
   if StrEndsWith(activeStr, "Cal22x126AC_HE")     { return t"DPAE_HE.ExplodingBulletLightPackage"; }
@@ -248,6 +281,7 @@ public func DPAE_GetExplosivePackageForRound(activeStr: String) -> TweakDBID {
   if StrEndsWith(activeStr, "Cal14x70TSlugHE")    { return t"DPAE_HE.ExplodingBulletMediumPackage"; }
   if StrEndsWith(activeStr, "Cal20x102Vulcan_HE") { return t"DPAE_HE.ExplodingBulletLightPackage"; }
   if StrEndsWith(activeStr, "Cal23x152Sov_HE")    { return t"DPAE_HE.RocketProjectilePackage"; }
+
   if StrEndsWith(activeStr, "Cal10x40Rocket_HE")   { return t"DPAE_HE.SmartBulletLowExplosivePackage"; }
   if StrEndsWith(activeStr, "Cal12x45Rocket_HE")   { return t"DPAE_HE.HerculesBulletPackage"; }
   if StrEndsWith(activeStr, "Cal12p7x70Rocket_HE") { return t"DPAE_HE.SmartBulletMedExplosivePackage"; }
@@ -257,10 +291,13 @@ public func DPAE_GetExplosivePackageForRound(activeStr: String) -> TweakDBID {
   if StrEndsWith(activeStr, "Cal9p5x35Minirocket_HE") { return t"DPAE_HE.SmartBulletHighExplosivePackage"; }
   if StrEndsWith(activeStr, "Cal5p56CT_HE")       { return t"DPAE_HE.PhysicalExplosiveBulletPackage"; }
   if StrEndsWith(activeStr, "Cal12p3x41UdaR_HE")  { return t"DPAE_HE.PhysicalExplosiveBulletPackage"; }
+
   if StrEndsWith(activeStr, "Cal7p62x39Sov_HE")   { return t"DPAE_HE.PhysicalExplosiveBulletPackage"; }
+
   if StrEndsWith(activeStr, "Cal14x40TSlug_HE")   { return t"DPAE_HE.ExplodingBulletLightPackage"; }
   if StrEndsWith(activeStr, "Cal50AE_HE")         { return t"DPAE_HE.ExplodingBulletLightPackage"; }
   if StrEndsWith(activeStr, "Cal10GaugeBuck_HE")  { return t"DPAE_HE.PhysicalExplosiveBulletPackage"; }
+
   if StrEndsWith(activeStr, "Cal9x19_HE")          { return t"DPAE_HE.PhysicalExplosiveBulletPackage"; }
   if StrEndsWith(activeStr, "Cal10mmAuto_HE")      { return t"DPAE_HE.PhysicalExplosiveBulletPackage"; }
   if StrEndsWith(activeStr, "Cal12Gauge_HE")       { return t"DPAE_HE.PhysicalExplosiveBulletPackage"; }
@@ -298,19 +335,19 @@ public func DPAE_UpdateExplosiveOverride(activeStr: String, weapon: ref<WeaponOb
   if isHE && DPAE_IsFirecrackerGatedHE(activeStr) {
     let firecrackerQualities = this.DPAE_GetAttachedModQualities(weapon, "Items.ChimeraPowerMod");
     if ArraySize(firecrackerQualities) <= 0 {
+
       isHE = false;
     }
   }
   if isHE {
     weapon.OverrideRangedAttackPackage(TweakDBInterface.GetRangedAttackPackageRecord(DPAE_GetExplosivePackageForRound(activeStr)));
+
     StatusEffectHelper.ApplyStatusEffect(this, t"DPAE_StatusEffect.HE_Active", this.GetEntityID());
   } else {
     weapon.DefaultRangedAttackPackage();
     StatusEffectHelper.RemoveStatusEffect(this, t"DPAE_StatusEffect.HE_Active");
   }
 }
-
-
 
 @wrapMethod(HitReactionComponent)
 public func EvaluateHit(newHitEvent: ref<gameHitEvent>) -> Void {
@@ -329,6 +366,7 @@ public func EvaluateHit(newHitEvent: ref<gameHitEvent>) -> Void {
   wrappedMethod(newHitEvent);
 
   if IsDefined(player) {
+
     let target = newHitEvent.target as GameObject;
     if ArraySize(player.dpae_pending_effect) > 0 && IsDefined(target) {
       DPAE_ApplyRoundEffects(target, player.dpae_pending_effect, player.GetEntityID());
@@ -350,7 +388,6 @@ public func EvaluateHit(newHitEvent: ref<gameHitEvent>) -> Void {
   }
 }
 
-
 @addField(sampleBullet) public let dpae_effect:     array<TweakDBID>;
 @addField(sampleBullet) public let dpae_instigator: EntityID;
 
@@ -359,6 +396,7 @@ protected cb func OnProjectileInitialize(eventData: ref<gameprojectileSetUpEvent
   let result = wrappedMethod(eventData);
   let player = GameInstance.GetPlayerSystem(this.GetGame()).GetLocalPlayerMainGameObject() as PlayerPuppet;
   if !IsDefined(player) || !player.dpae_test_active { return result; }
+
   let weapon = eventData.weapon as WeaponObject;
   if IsDefined(weapon) {
     let ts          = GameInstance.GetTransactionSystem(this.GetGame());

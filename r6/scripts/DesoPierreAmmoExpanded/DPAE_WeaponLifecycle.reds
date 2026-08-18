@@ -1,5 +1,4 @@
 
-
 @addMethod(PlayerPuppet)
 public func DPAE_ResolveAmmoSelection(caliberTDBID: TweakDBID) -> Void {
   let ts = GameInstance.GetTransactionSystem(this.GetGame());
@@ -10,6 +9,7 @@ public func DPAE_ResolveAmmoSelection(caliberTDBID: TweakDBID) -> Void {
       if !this.DPAE_HasCaliberStarterBeenGranted(caliberTDBID) {
         this.DPAE_GrantCaliberStarter(caliberTDBID, this.dpae_locked_variant);
       } else if this.DPAE_IsNarrativeAmmoWindowActive() {
+
         this.DPAE_GiveAmmoInternal(this.dpae_locked_variant, this.DPAE_GetEquippedMagazineCapacity());
       }
     }
@@ -32,13 +32,16 @@ public func DPAE_ResolveAmmoSelection(caliberTDBID: TweakDBID) -> Void {
   if TDBID.IsValid(rememberedID) && ts.GetItemQuantity(this, ItemID.FromTDBID(rememberedID)) > 0 {
     this.DPAE_SelectAmmo(rememberedID);
   } else {
+
     let largestID = DPAE_GetLargestAmmoVariant(this, caliberTDBID);
     if TDBID.IsValid(largestID) {
       this.DPAE_SelectAmmo(largestID);
     } else if DesoPierreAmmoExpandedSettings.AmmoStarterSafetyNet() && !this.DPAE_HasCaliberStarterBeenGranted(caliberTDBID) {
+
       this.DPAE_GrantCaliberStarter(caliberTDBID, caliberTDBID);
       this.DPAE_SelectAmmo(caliberTDBID);
     } else if DesoPierreAmmoExpandedSettings.AmmoStarterSafetyNet() && this.DPAE_IsNarrativeAmmoWindowActive() {
+
       this.DPAE_GiveAmmoInternal(caliberTDBID, this.DPAE_GetEquippedMagazineCapacity());
       this.DPAE_SelectAmmo(caliberTDBID);
     } else {
@@ -133,6 +136,7 @@ private func DPAE_HandleWeaponSlotEvent(slotID: TweakDBID, isSessionLoad: Bool) 
   if !ItemID.IsValid(weaponItemID) { return; }
 
   if !TDBID.IsValid(caliberTDBID) {
+
     this.dpae_caliber        = TDBID.None();
     this.dpae_dummy_ammo     = TDBID.None();
     this.dpae_is_tube_fed    = false;
@@ -207,6 +211,7 @@ private func DPAE_HandleWeaponSlotEvent(slotID: TweakDBID, isSessionLoad: Bool) 
   }
 
   if isSessionLoad {
+
     let savedVariant = this.DPAE_GetSavedVariant(isRightSlot, caliberTDBID);
     if TDBID.IsValid(savedVariant) && ts.GetItemQuantity(this, ItemID.FromTDBID(savedVariant)) > 0 {
       this.DPAE_RememberAmmo(caliberTDBID, savedVariant);
@@ -320,5 +325,4 @@ protected cb func OnItemRemovedFromSlot(evt: ref<ItemRemovedFromSlot>) -> Bool {
 
   return result;
 }
-
 

@@ -213,7 +213,6 @@ Items.Base_Satara:
     - !append-once DPAE_Cal10GaugeFlech
     - !append-once DPAE_TubeFed
 
-
 Items.Preset_Liberty_Rogue:
   tags:
     - !append-once DPAE_Cal10mmAuto

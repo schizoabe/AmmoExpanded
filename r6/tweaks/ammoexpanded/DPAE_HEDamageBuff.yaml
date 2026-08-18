@@ -1,5 +1,4 @@
 
-
 DPAE_HE.BulletSmartBulletHighExplosion:
   $base: Attacks.BulletSmartBulletHighExplosion
   statModifiers:
@@ -51,8 +50,6 @@ DPAE_HE.SmartBulletHighExplosivePackage:
   $base: Attacks.SmartBulletHighExplosivePackage
   defaultFire: DPAE_HE.SmartBulletHighExplosiveFire
   chargeFire: DPAE_HE.SmartBulletHighExplosiveFire
-
-
 
 DPAE_HE.BulletSmartLowExplosion:
   $base: Attacks.BulletSmartBulletHighExplosion
@@ -107,7 +104,6 @@ DPAE_HE.SmartBulletLowExplosivePackage:
   defaultFire: DPAE_HE.SmartBulletLowExplosiveFire
   chargeFire: DPAE_HE.SmartBulletLowExplosiveFire
 
-
 DPAE_HE.BulletSmartMedExplosion:
   $base: Attacks.BulletSmartBulletHighExplosion
   range: 2.5
@@ -160,7 +156,6 @@ DPAE_HE.SmartBulletMedExplosivePackage:
   $base: Attacks.SmartBulletHighExplosivePackage
   defaultFire: DPAE_HE.SmartBulletMedExplosiveFire
   chargeFire: DPAE_HE.SmartBulletMedExplosiveFire
-
 
 DPAE_HE.BulletSmartTwoStageExplosion:
   $base: Attacks.BulletSmartBulletHighExplosion
@@ -215,7 +210,6 @@ DPAE_HE.SmartBulletTwoStageExplosivePackage:
   defaultFire: DPAE_HE.SmartBulletTwoStageExplosiveFire
   chargeFire: DPAE_HE.SmartBulletTwoStageExplosiveFire
 
-
 DPAE_HE.HerculesHipBulletExplosion:
   $base: Attacks.HerculesHipBulletExplosion
   statModifiers:
@@ -267,7 +261,6 @@ DPAE_HE.HerculesBulletPackage:
   $base: Attacks.HerculesBulletPackage
   defaultFire: DPAE_HE.HerculesBulletFire
   chargeFire: DPAE_HE.HerculesBulletFire
-
 
 DPAE_HE.BulletExplosion:
   $base: Attacks.BulletExplosion
@@ -349,7 +342,6 @@ DPAE_HE.PhysicalExplosiveBulletPackage:
   defaultFire: DPAE_HE.PhysicalExplosiveBullet
   chargeFire: DPAE_HE.PhysicalExplosiveBullet
 
-
 DPAE_HE.BulletLightExplosion:
   $base: Attacks.BulletLightExplosion
   statModifiers:
@@ -401,7 +393,6 @@ DPAE_HE.ExplodingBulletLightPackage:
   $base: Attacks.ExplodingBulletLightPackage
   defaultFire: DPAE_HE.ExplodingBulletLight
   chargeFire: DPAE_HE.ExplodingBulletLight
-
 
 DPAE_HE.BulletMediumExplosion:
   $base: Attacks.BulletMediumExplosion
@@ -455,7 +446,6 @@ DPAE_HE.ExplodingBulletMediumPackage:
   defaultFire: DPAE_HE.ExplodingBulletMedium
   chargeFire: DPAE_HE.ExplodingBulletMedium
 
-
 DPAE_HE.ZhuoBulletHighExplosion:
   $base: Attacks.ZhuoBulletHighExplosion
   statModifiers:
@@ -507,7 +497,6 @@ DPAE_HE.ZhuoBulletHighExplosivePackage:
   $base: Attacks.ZhuoBulletHighExplosivePackage
   defaultFire: DPAE_HE.ZhuoBulletHighExplosiveFire
   chargeFire: DPAE_HE.ZhuoBulletHighExplosiveFire
-
 
 DPAE_HE.RocketExplosion:
   $base: Attacks.RocketExplosion

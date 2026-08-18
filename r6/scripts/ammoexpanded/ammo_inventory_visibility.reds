@@ -10,6 +10,7 @@ public final static func GetBlacklistedTags() -> array<CName> {
         }
         i -= 1;
     }
+
     ArrayPush(tags, n"HandgunAmmo");
     ArrayPush(tags, n"RifleAmmo");
     ArrayPush(tags, n"ShotgunAmmo");

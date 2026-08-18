@@ -1,5 +1,4 @@
 
-
 Items.CausticMod1_Base:
   $base: Items.PowerMod1_Base
   displayName: LocKey#8100614
@@ -122,7 +121,6 @@ Items.CausticMod1_Legendary:
       - $type: gamedataRecipeElement_Record
         amount: 2
         ingredient: Items.CausticMod1_Epic
-
 
 Items.ArcMod1_Base:
   $base: Items.PowerMod1_Base

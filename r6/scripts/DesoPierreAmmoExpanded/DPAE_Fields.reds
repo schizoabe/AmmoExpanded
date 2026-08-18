@@ -1,40 +1,65 @@
 
-
 @addField(PlayerPuppet) public let dpae_test_active: Bool;
 @addField(PlayerPuppet) public let dpae_prev_mag_pct: Float;
+
 @addField(PlayerPuppet) public let dpae_prev_dummy_qty: Int32;
+
 @addField(PlayerPuppet) public let dpae_dummy_ammo: TweakDBID;
+
 @addField(PlayerPuppet) public let dpae_pending_internal_dummy_qty: Int32;
+
 @addField(PlayerPuppet) public let dpae_pending_disassembly_caliber: TweakDBID;
+
 @addField(PlayerPuppet) public let dpae_pending_zero_weapon: ItemID;
 @addField(PlayerPuppet) public let dpae_pending_zero_caliber: TweakDBID;
+
 @addField(PlayerPuppet) public let dpae_pending_restore_weapon: ItemID;
+
 @addField(PlayerPuppet) public let dpae_caliber: TweakDBID;
+
 @addField(PlayerPuppet) public let dpae_locked_variant: TweakDBID;
+
 @addField(PlayerPuppet) public let dpae_is_tube_fed: Bool;
+
 @addField(PlayerPuppet) public let dpae_is_masked_ammo: Bool;
+
 @addField(PlayerPuppet) public let dpae_masked_first_shot_owed: Bool;
+
 @addField(PlayerPuppet) public let dpae_pending_forced_drain_pending: Bool;
+
 @addField(PlayerPuppet) public let dpae_pending_forced_drain_weapon: ItemID;
+
 @addField(PlayerPuppet) public let dpae_pending_forced_drain_pad: Uint32;
+
 @addField(PlayerPuppet) public let dpae_active_ammo: TweakDBID;
+
 @addField(PlayerPuppet) public let dpae_active_ammo_weapon: ItemID;
+
 @addField(PlayerPuppet) public let dpae_known_weapons: array<ItemID>;
 @addField(PlayerPuppet) public let dpae_known_weapon_ammo: array<TweakDBID>;
 @addField(PlayerPuppet) public let dpae_known_weapon_chamber: array<Uint32>;
+
 @addField(PlayerPuppet) public let dpae_current_weapon_right: ItemID;
 @addField(PlayerPuppet) public let dpae_current_weapon_left: ItemID;
+
 @addField(PlayerPuppet) public let dpae_pending_load_requip_right: Bool;
 @addField(PlayerPuppet) public let dpae_pending_load_requip_left: Bool;
+
 @addField(PlayerPuppet) public let dpae_resync_only: Bool;
+
 @addField(PlayerPuppet) public let dpae_pyro_qualities: array<Int32>;
 @addField(PlayerPuppet) public let dpae_caustic_qualities: array<Int32>;
 @addField(PlayerPuppet) public let dpae_arc_qualities: array<Int32>;
+
 @addField(PlayerPuppet) public let dpae_pending_effect: array<TweakDBID>;
+
 @addField(PlayerPuppet) public let dpae_pending_nl: Bool;
+
 @addField(PlayerPuppet) public let dpae_remembered_calibers: array<TweakDBID>;
 @addField(PlayerPuppet) public let dpae_remembered_ammo:     array<TweakDBID>;
+
 @addField(PlayerPuppet) public let dpae_starter_granted_calibers: array<TweakDBID>;
+
 @addField(PlayerPuppet) public let dpae_pending_internal_grant_qty: Int32;
 
 @addMethod(PlayerPuppet)
@@ -86,8 +111,6 @@ public func DPAE_GetEquippedMagazineCapacity() -> Int32 {
 @addField(NPCPuppet) public let dpae_npcarmorpen_mod:      ref<gameStatModifierData>;
 @addField(NPCPuppet) public let dpae_npcarmorpen_entity:   EntityID;
 
-
-
 @addMethod(PlayerPuppet)
 private func DPAE_FindKnownWeaponIndex(itemID: ItemID) -> Int32 {
   let i = 0;
@@ -112,13 +135,11 @@ public func DPAE_RecordWeaponState(itemID: ItemID, ammoID: TweakDBID, chamberCou
   }
 }
 
-
 @addMethod(PlayerPuppet)
 public func DPAE_IsActive() -> Bool { return this.dpae_test_active; }
 
 @addMethod(PlayerPuppet)
 public func DPAE_IsTubeFed() -> Bool { return this.dpae_is_tube_fed; }
-
 
 @addMethod(PlayerPuppet)
 public func DPAE_RememberAmmo(caliberID: TweakDBID, ammoID: TweakDBID) -> Void {
@@ -210,7 +231,6 @@ public func DPAE_GetSavedVariant(isRightSlot: Bool, caliberTDBID: TweakDBID) -> 
   if StrLen(suffix) == 0 { return TDBID.None(); }
   return TDBID.Create(TDBID.ToStringDEBUG(caliberTDBID) + suffix);
 }
-
 
 @addMethod(PlayerPuppet)
 public func DPAE_HasCaliberStarterBeenGranted(caliberID: TweakDBID) -> Bool {
