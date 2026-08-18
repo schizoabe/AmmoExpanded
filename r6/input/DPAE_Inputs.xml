@@ -1,15 +1,5 @@
 <?xml version="1.0"?>
 <bindings>
-    <!-- DPAE hotkeys, ported off CET's registerHotkey (init.lua) to Input Loader
-         + native redscript IInputEventListener + Mod Settings (jackhumbert's
-         RED4ext plugin, ModSettingsModule) for the in-menu rebind picker.
-         Defaults chosen to avoid every IK_ key already claimed by another
-         installed mod (grep-checked) and Cyberpunk's own reserved F5
-         (QuickSave) / F9 (QuickLoad). overridableUI is the link Mod Settings
-         uses to remap these at runtime — see DPAE_ModSettings.reds for the
-         matching @runtimeProperty EInputKey fields (same pairing "Trigger
-         Mode Control" ships live with, overridableUI="SwapFiremode"). -->
-
     <context name="DPAEInputContext">
         <action name="DPAE_CycleAmmo" map="DPAE_CycleAmmo_Button" />
         <action name="DPAE_DropCurrentWeapon" map="DPAE_DropCurrentWeapon_Button" />
