@@ -232,3 +232,7 @@ Items.Preset_Masamune_Rogue:
 Items.Preset_Burya_Comrade:
   tags:
     - !append-once DPAE_Cal14x70TSlugHE
+
+Items.Preset_Kolac_Tiny_Mike:
+  tags:
+    - !append-once DPAE_Cal22x126AC

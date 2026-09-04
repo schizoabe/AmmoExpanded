@@ -1,6 +1,48 @@
 
 func DPAE_GetCaliberFromRecordTags(tags: array<CName>) -> TweakDBID {
 
+  if ArrayContains(tags, n"DPAE_ForcedCal_Cal10mmAuto")      { return t"Ammo.Cal10mmAuto"; }
+  if ArrayContains(tags, n"DPAE_ForcedCal_Cal45WinMag")      { return t"Ammo.Cal45WinMag"; }
+  if ArrayContains(tags, n"DPAE_ForcedCal_Cal45Super")       { return t"Ammo.Cal45Super"; }
+  if ArrayContains(tags, n"DPAE_ForcedCal_Cal50BeowulfOni")  { return t"Ammo.Cal50BeowulfOni"; }
+  if ArrayContains(tags, n"DPAE_ForcedCal_Cal14x70TSlugHE")  { return t"Ammo.Cal14x70TSlugHE"; }
+  if ArrayContains(tags, n"DPAE_ForcedCal_Cal9x19")          { return t"Ammo.Cal9x19"; }
+  if ArrayContains(tags, n"DPAE_ForcedCal_Cal243Win")        { return t"Ammo.Cal243Win"; }
+  if ArrayContains(tags, n"DPAE_ForcedCal_Cal308Win")        { return t"Ammo.Cal308Win"; }
+  if ArrayContains(tags, n"DPAE_ForcedCal_Cal454Casull")     { return t"Ammo.Cal454Casull"; }
+  if ArrayContains(tags, n"DPAE_ForcedCal_Cal50AE")          { return t"Ammo.Cal50AE"; }
+  if ArrayContains(tags, n"DPAE_ForcedCal_Cal50BMG")         { return t"Ammo.Cal50BMG"; }
+  if ArrayContains(tags, n"DPAE_ForcedCal_Cal500Malour")     { return t"Ammo.Cal500Malour"; }
+  if ArrayContains(tags, n"DPAE_ForcedCal_Cal10GaugeBuck")   { return t"Ammo.Cal10GaugeBuck"; }
+  if ArrayContains(tags, n"DPAE_ForcedCal_Cal10GaugeFlech")  { return t"Ammo.Cal10GaugeFlech"; }
+  if ArrayContains(tags, n"DPAE_ForcedCal_Cal10x40Rocket")   { return t"Ammo.Cal10x40Rocket"; }
+  if ArrayContains(tags, n"DPAE_ForcedCal_Cal10x20TF")       { return t"Ammo.Cal10x20TF"; }
+  if ArrayContains(tags, n"DPAE_ForcedCal_Cal12Gauge")       { return t"Ammo.Cal12Gauge"; }
+  if ArrayContains(tags, n"DPAE_ForcedCal_Cal12p3x41UdaR")   { return t"Ammo.Cal12p3x41UdaR"; }
+  if ArrayContains(tags, n"DPAE_ForcedCal_Cal12p7x70Rocket") { return t"Ammo.Cal12p7x70Rocket"; }
+  if ArrayContains(tags, n"DPAE_ForcedCal_Cal12x45Rocket")   { return t"Ammo.Cal12x45Rocket"; }
+  if ArrayContains(tags, n"DPAE_ForcedCal_Cal14x40TSlug")    { return t"Ammo.Cal14x40TSlug"; }
+  if ArrayContains(tags, n"DPAE_ForcedCal_Cal15x55Rocket")   { return t"Ammo.Cal15x55Rocket"; }
+  if ArrayContains(tags, n"DPAE_ForcedCal_Cal15x80TSpike")   { return t"Ammo.Cal15x80TSpike"; }
+  if ArrayContains(tags, n"DPAE_ForcedCal_Cal18x70Rocket")   { return t"Ammo.Cal18x70Rocket"; }
+  if ArrayContains(tags, n"DPAE_ForcedCal_Cal20x102Vulcan")  { return t"Ammo.Cal20x102Vulcan"; }
+  if ArrayContains(tags, n"DPAE_ForcedCal_Cal22x126AC")      { return t"Ammo.Cal22x126AC"; }
+  if ArrayContains(tags, n"DPAE_ForcedCal_Cal23x152Sov")     { return t"Ammo.Cal23x152Sov"; }
+  if ArrayContains(tags, n"DPAE_ForcedCal_Cal3x10FlechCluster") { return t"Ammo.Cal3x10FlechCluster"; }
+  if ArrayContains(tags, n"DPAE_ForcedCal_Cal4Gauge")        { return t"Ammo.Cal4Gauge"; }
+  if ArrayContains(tags, n"DPAE_ForcedCal_Cal4p7x10TF")      { return t"Ammo.Cal4p7x10TF"; }
+  if ArrayContains(tags, n"DPAE_ForcedCal_Cal5p45CT")        { return t"Ammo.Cal5p45CT"; }
+  if ArrayContains(tags, n"DPAE_ForcedCal_Cal5p56x45NUSA")   { return t"Ammo.Cal5p56x45NUSA"; }
+  if ArrayContains(tags, n"DPAE_ForcedCal_Cal5p56CT")        { return t"Ammo.Cal5p56CT"; }
+  if ArrayContains(tags, n"DPAE_ForcedCal_Cal5p7x28TF")      { return t"Ammo.Cal5p7x28TF"; }
+  if ArrayContains(tags, n"DPAE_ForcedCal_Cal6p5x25Minirocket") { return t"Ammo.Cal6p5x25Minirocket"; }
+  if ArrayContains(tags, n"DPAE_ForcedCal_Cal6p5Arasaka")    { return t"Ammo.Cal6p5Arasaka"; }
+  if ArrayContains(tags, n"DPAE_ForcedCal_Cal7p62x39Sov")    { return t"Ammo.Cal7p62x39Sov"; }
+  if ArrayContains(tags, n"DPAE_ForcedCal_Cal8x30RailF")     { return t"Ammo.Cal8x30RailF"; }
+  if ArrayContains(tags, n"DPAE_ForcedCal_Cal8x30TShot")     { return t"Ammo.Cal8x30TShot"; }
+  if ArrayContains(tags, n"DPAE_ForcedCal_Cal9p5x35Minirocket") { return t"Ammo.Cal9p5x35Minirocket"; }
+  if ArrayContains(tags, n"DPAE_ForcedCal_Cal9x30TF")        { return t"Ammo.Cal9x30TF"; }
+
   if ArrayContains(tags, n"DPAE_Cal10mmAuto")      { return t"Ammo.Cal10mmAuto"; }
   if ArrayContains(tags, n"DPAE_Cal45WinMag")      { return t"Ammo.Cal45WinMag"; }
   if ArrayContains(tags, n"DPAE_Cal45Super")       { return t"Ammo.Cal45Super"; }

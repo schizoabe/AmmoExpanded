@@ -103,17 +103,6 @@ Ammo.Cal9p5x35Minirocket_EMP:
 
 Ammo.Cal9p5x35Minirocket_Yinglong_EMP:
 
-  CraftingData:
-    $type: gamedataCraftingPackage_Record
-    craftingExpModifier: 1
-    overcraftPenaltyModifier: 1
-    craftingRecipe:
-      - $type: gamedataRecipeElement_Record
-        amount: 1
-        ingredient: Ammo.Cal9p5x35Minirocket_EMP
-      - $type: gamedataRecipeElement_Record
-        amount: 5
-        ingredient: Items.LegendaryMaterial1
   buyPrice:
     - DPAE_Price.Cal9p5x35Minirocket_Base
     - Price.BuyPrice_StreetCred_Discount

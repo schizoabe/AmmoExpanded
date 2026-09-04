@@ -39,6 +39,14 @@ public func DPAE_GetEffectForRound(roundID: TweakDBID, instigator: wref<GameObje
   if gimmickHit {
     ArrayPush(result, gimmickID);
   };
+
+  if DesoPierreAmmoExpandedSettings.DebugAmmoLogging() {
+    let weaponIDStr = "";
+    if IsDefined(weapon) { weaponIDStr = TDBID.ToStringDEBUG(ItemID.GetTDBID(weapon.GetItemID())); };
+    LogChannel(n"DEBUG", "[DPAE_DOTLOG] weapon=" + weaponIDStr + " round=" + activeStr
+      + " dotChance=" + ToString(dotChance) + " dotRoll=" + ToString(dotRoll) + " dotHit=" + ToString(dotHit)
+      + " gimmickChance=" + ToString(gimmickChance) + " gimmickRoll=" + ToString(gimmickRoll) + " gimmickHit=" + ToString(gimmickHit));
+  }
   return result;
 }
 

@@ -153,17 +153,6 @@ Ammo.Cal12x45Rocket_CHEM:
 
 Ammo.Cal12x45Rocket_Hercules_CHEM:
 
-  CraftingData:
-    $type: gamedataCraftingPackage_Record
-    craftingExpModifier: 1
-    overcraftPenaltyModifier: 1
-    craftingRecipe:
-      - $type: gamedataRecipeElement_Record
-        amount: 1
-        ingredient: Ammo.Cal12x45Rocket_CHEM
-      - $type: gamedataRecipeElement_Record
-        amount: 5
-        ingredient: Items.LegendaryMaterial1
   buyPrice:
     - DPAE_Price.Cal12x45Rocket_Base
     - Price.BuyPrice_StreetCred_Discount

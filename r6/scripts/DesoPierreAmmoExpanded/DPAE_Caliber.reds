@@ -2,6 +2,48 @@
 func DPAE_GetCaliberFromEntity(entity: ref<GameObject>, itemID: ItemID) -> TweakDBID {
   let ts = GameInstance.GetTransactionSystem(entity.GetGame());
 
+  if ts.HasTag(entity, n"DPAE_ForcedCal_Cal10mmAuto",      itemID) { return t"Ammo.Cal10mmAuto"; }
+  if ts.HasTag(entity, n"DPAE_ForcedCal_Cal45WinMag",      itemID) { return t"Ammo.Cal45WinMag"; }
+  if ts.HasTag(entity, n"DPAE_ForcedCal_Cal45Super",       itemID) { return t"Ammo.Cal45Super"; }
+  if ts.HasTag(entity, n"DPAE_ForcedCal_Cal50BeowulfOni",  itemID) { return t"Ammo.Cal50BeowulfOni"; }
+  if ts.HasTag(entity, n"DPAE_ForcedCal_Cal14x70TSlugHE",  itemID) { return t"Ammo.Cal14x70TSlugHE"; }
+  if ts.HasTag(entity, n"DPAE_ForcedCal_Cal9x19",          itemID) { return t"Ammo.Cal9x19"; }
+  if ts.HasTag(entity, n"DPAE_ForcedCal_Cal243Win",        itemID) { return t"Ammo.Cal243Win"; }
+  if ts.HasTag(entity, n"DPAE_ForcedCal_Cal308Win",        itemID) { return t"Ammo.Cal308Win"; }
+  if ts.HasTag(entity, n"DPAE_ForcedCal_Cal454Casull",     itemID) { return t"Ammo.Cal454Casull"; }
+  if ts.HasTag(entity, n"DPAE_ForcedCal_Cal50AE",          itemID) { return t"Ammo.Cal50AE"; }
+  if ts.HasTag(entity, n"DPAE_ForcedCal_Cal50BMG",         itemID) { return t"Ammo.Cal50BMG"; }
+  if ts.HasTag(entity, n"DPAE_ForcedCal_Cal500Malour",     itemID) { return t"Ammo.Cal500Malour"; }
+  if ts.HasTag(entity, n"DPAE_ForcedCal_Cal10GaugeBuck",   itemID) { return t"Ammo.Cal10GaugeBuck"; }
+  if ts.HasTag(entity, n"DPAE_ForcedCal_Cal10GaugeFlech",  itemID) { return t"Ammo.Cal10GaugeFlech"; }
+  if ts.HasTag(entity, n"DPAE_ForcedCal_Cal10x40Rocket",   itemID) { return t"Ammo.Cal10x40Rocket"; }
+  if ts.HasTag(entity, n"DPAE_ForcedCal_Cal10x20TF",       itemID) { return t"Ammo.Cal10x20TF"; }
+  if ts.HasTag(entity, n"DPAE_ForcedCal_Cal12Gauge",       itemID) { return t"Ammo.Cal12Gauge"; }
+  if ts.HasTag(entity, n"DPAE_ForcedCal_Cal12p3x41UdaR",   itemID) { return t"Ammo.Cal12p3x41UdaR"; }
+  if ts.HasTag(entity, n"DPAE_ForcedCal_Cal12p7x70Rocket", itemID) { return t"Ammo.Cal12p7x70Rocket"; }
+  if ts.HasTag(entity, n"DPAE_ForcedCal_Cal12x45Rocket",   itemID) { return t"Ammo.Cal12x45Rocket"; }
+  if ts.HasTag(entity, n"DPAE_ForcedCal_Cal14x40TSlug",    itemID) { return t"Ammo.Cal14x40TSlug"; }
+  if ts.HasTag(entity, n"DPAE_ForcedCal_Cal15x55Rocket",   itemID) { return t"Ammo.Cal15x55Rocket"; }
+  if ts.HasTag(entity, n"DPAE_ForcedCal_Cal15x80TSpike",   itemID) { return t"Ammo.Cal15x80TSpike"; }
+  if ts.HasTag(entity, n"DPAE_ForcedCal_Cal18x70Rocket",   itemID) { return t"Ammo.Cal18x70Rocket"; }
+  if ts.HasTag(entity, n"DPAE_ForcedCal_Cal20x102Vulcan",  itemID) { return t"Ammo.Cal20x102Vulcan"; }
+  if ts.HasTag(entity, n"DPAE_ForcedCal_Cal22x126AC",      itemID) { return t"Ammo.Cal22x126AC"; }
+  if ts.HasTag(entity, n"DPAE_ForcedCal_Cal23x152Sov",     itemID) { return t"Ammo.Cal23x152Sov"; }
+  if ts.HasTag(entity, n"DPAE_ForcedCal_Cal3x10FlechCluster", itemID) { return t"Ammo.Cal3x10FlechCluster"; }
+  if ts.HasTag(entity, n"DPAE_ForcedCal_Cal4Gauge",        itemID) { return t"Ammo.Cal4Gauge"; }
+  if ts.HasTag(entity, n"DPAE_ForcedCal_Cal4p7x10TF",      itemID) { return t"Ammo.Cal4p7x10TF"; }
+  if ts.HasTag(entity, n"DPAE_ForcedCal_Cal5p45CT",        itemID) { return t"Ammo.Cal5p45CT"; }
+  if ts.HasTag(entity, n"DPAE_ForcedCal_Cal5p56x45NUSA",   itemID) { return t"Ammo.Cal5p56x45NUSA"; }
+  if ts.HasTag(entity, n"DPAE_ForcedCal_Cal5p56CT",        itemID) { return t"Ammo.Cal5p56CT"; }
+  if ts.HasTag(entity, n"DPAE_ForcedCal_Cal5p7x28TF",      itemID) { return t"Ammo.Cal5p7x28TF"; }
+  if ts.HasTag(entity, n"DPAE_ForcedCal_Cal6p5x25Minirocket", itemID) { return t"Ammo.Cal6p5x25Minirocket"; }
+  if ts.HasTag(entity, n"DPAE_ForcedCal_Cal6p5Arasaka",    itemID) { return t"Ammo.Cal6p5Arasaka"; }
+  if ts.HasTag(entity, n"DPAE_ForcedCal_Cal7p62x39Sov",    itemID) { return t"Ammo.Cal7p62x39Sov"; }
+  if ts.HasTag(entity, n"DPAE_ForcedCal_Cal8x30RailF",     itemID) { return t"Ammo.Cal8x30RailF"; }
+  if ts.HasTag(entity, n"DPAE_ForcedCal_Cal8x30TShot",     itemID) { return t"Ammo.Cal8x30TShot"; }
+  if ts.HasTag(entity, n"DPAE_ForcedCal_Cal9p5x35Minirocket", itemID) { return t"Ammo.Cal9p5x35Minirocket"; }
+  if ts.HasTag(entity, n"DPAE_ForcedCal_Cal9x30TF",        itemID) { return t"Ammo.Cal9x30TF"; }
+
   if ts.HasTag(entity, n"DPAE_Cal10mmAuto",      itemID) { return t"Ammo.Cal10mmAuto"; }
   if ts.HasTag(entity, n"DPAE_Cal45WinMag",      itemID) { return t"Ammo.Cal45WinMag"; }
   if ts.HasTag(entity, n"DPAE_Cal45Super",       itemID) { return t"Ammo.Cal45Super"; }
