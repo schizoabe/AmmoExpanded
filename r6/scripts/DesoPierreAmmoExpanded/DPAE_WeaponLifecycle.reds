@@ -182,7 +182,10 @@ private func DPAE_HandleWeaponSlotEvent(slotID: TweakDBID, isSessionLoad: Bool) 
     if knownIdx >= 0 {
       let rememberedAmmoID  = this.dpae_known_weapon_ammo[knownIdx];
       let rememberedChamber = this.dpae_known_weapon_chamber[knownIdx];
-      if TDBID.IsValid(rememberedAmmoID) && ts.GetItemQuantity(this, ItemID.FromTDBID(rememberedAmmoID)) > 0 {
+
+      let rememberedBelongsToCaliber = TDBID.IsValid(rememberedAmmoID)
+        && StrBeginsWith(TDBID.ToStringDEBUG(rememberedAmmoID), TDBID.ToStringDEBUG(caliberTDBID));
+      if rememberedBelongsToCaliber && ts.GetItemQuantity(this, ItemID.FromTDBID(rememberedAmmoID)) > 0 {
         if DesoPierreAmmoExpandedSettings.DebugAmmoLogging() {
           LogChannel(n"DEBUG", "[DPAE_SWAPLOG] known-weapon restore ENTRY ammo=" + TDBID.ToStringDEBUG(rememberedAmmoID)
             + " rememberedChamber=" + ToString(rememberedChamber)
