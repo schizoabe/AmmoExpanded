@@ -3,7 +3,6 @@ public class DPAE_AmmoHUD {
   private let m_canvas:       ref<inkCanvas>;
   private let m_bg:           ref<inkImage>;
   private let m_variantLabel: ref<inkText>;
-  private let m_detailLabel:  ref<inkText>;
 
   public static func Create(parent: ref<inkCompoundWidget>) -> ref<DPAE_AmmoHUD> {
     let hud = new DPAE_AmmoHUD();
@@ -12,8 +11,8 @@ public class DPAE_AmmoHUD {
   }
 
   private func Build(parent: ref<inkCompoundWidget>) -> Void {
-    let w: Float = 260.0;
-    let h: Float = 48.0;
+    let w: Float = 140.0;
+    let h: Float = 30.0;
 
     let canvas = new inkCanvas();
     canvas.SetName(n"DPAEAmmoHUDInner");
@@ -41,28 +40,17 @@ public class DPAE_AmmoHUD {
     variantLabel.SetFontSize(20);
     variantLabel.SetLetterCase(textLetterCase.UpperCase);
     variantLabel.SetAnchor(inkEAnchor.TopLeft);
-    variantLabel.SetMargin(new inkMargin(12.0, 6.0, 12.0, 0.0));
+    variantLabel.SetMargin(new inkMargin(12.0, 5.0, 12.0, 0.0));
     variantLabel.SetTintColor(new HDRColor(1.0, 1.0, 1.0, 1.0));
     variantLabel.SetText("");
     variantLabel.Reparent(canvas);
     this.m_variantLabel = variantLabel;
-
-    let detailLabel = new inkText();
-    detailLabel.SetFontFamily("base\\gameplay\\gui\\fonts\\raj\\raj.inkfontfamily");
-    detailLabel.SetFontSize(13);
-    detailLabel.SetAnchor(inkEAnchor.TopLeft);
-    detailLabel.SetMargin(new inkMargin(12.0, 28.0, 12.0, 0.0));
-    detailLabel.SetTintColor(new HDRColor(0.75, 0.75, 0.75, 0.85));
-    detailLabel.SetText("");
-    detailLabel.Reparent(canvas);
-    this.m_detailLabel = detailLabel;
   }
 
-  public func Show(caliberLabel: String, variantLabel: String, remaining: Int32, r: Float, g: Float, b: Float) -> Void {
+  public func Show(variantLabel: String, r: Float, g: Float, b: Float) -> Void {
     if !IsDefined(this.m_canvas) { return; }
     this.m_variantLabel.SetText(variantLabel);
     this.m_variantLabel.SetTintColor(new HDRColor(r, g, b, 1.0));
-    this.m_detailLabel.SetText(caliberLabel);
     this.m_canvas.SetVisible(true);
   }
 
@@ -81,9 +69,9 @@ public class DPAE_AmmoHUDSystem extends ScriptableSystem {
     this.m_hud = hud;
   }
 
-  public func UpdateDisplay(caliberLabel: String, variantLabel: String, remaining: Int32, r: Float, g: Float, b: Float) -> Void {
+  public func UpdateDisplay(variantLabel: String, r: Float, g: Float, b: Float) -> Void {
     if IsDefined(this.m_hud) {
-      this.m_hud.Show(caliberLabel, variantLabel, remaining, r, g, b);
+      this.m_hud.Show(variantLabel, r, g, b);
     }
   }
 
@@ -128,7 +116,7 @@ protected cb func OnGameAttached() -> Bool {
   canvas.SetAnchorPoint(new Vector2(1.0, 1.0));
 
   canvas.SetMargin(new inkMargin(0.0, 0.0, 40.0, 220.0));
-  canvas.SetSize(new Vector2(260.0, 48.0));
+  canvas.SetSize(new Vector2(140.0, 30.0));
   canvas.Reparent(hudRoot);
 
   sys.RegisterHUD(DPAE_AmmoHUD.Create(canvas));

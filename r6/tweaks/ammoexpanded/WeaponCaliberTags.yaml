@@ -3,10 +3,6 @@ Items.Base_Lexington:
   tags:
     - !append-once DPAE_Cal9x19
 
-Items.Base_Slaughtomatic:
-  tags:
-    - !append-once DPAE_Cal9x19
-
 Items.Base_Guillotine:
   tags:
     - !append-once DPAE_Cal9x19

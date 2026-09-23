@@ -45,6 +45,8 @@
 @addField(PlayerPuppet) public let dpae_pending_load_requip_right: Bool;
 @addField(PlayerPuppet) public let dpae_pending_load_requip_left: Bool;
 
+@addField(PlayerPuppet) public let dpae_load_attach_time: Float;
+
 @addField(PlayerPuppet) public let dpae_resync_only: Bool;
 
 @addField(PlayerPuppet) public let dpae_pyro_qualities: array<Int32>;

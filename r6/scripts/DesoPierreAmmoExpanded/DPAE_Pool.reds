@@ -259,7 +259,15 @@ public func DPAE_SelectAmmo(activeTDBID: TweakDBID) -> Void {
 
   let activeItemID = ItemID.FromTDBID(requestedTDBID);
   let qty          = ts.GetItemQuantity(this, activeItemID);
+  if DesoPierreAmmoExpandedSettings.DebugAmmoLogging() {
+    LogChannel(n"DEBUG", "[DPAE_LOADFIX] SelectAmmo ENTRY requested=" + TDBID.ToStringDEBUG(requestedTDBID)
+      + " qtyOwned=" + ToString(qty) + " resyncOnly=" + ToString(this.dpae_resync_only));
+  }
   if qty <= 0 {
+    if DesoPierreAmmoExpandedSettings.DebugAmmoLogging() {
+      LogChannel(n"DEBUG", "[DPAE_LOADFIX] SelectAmmo BAIL qty<=0, dpae_active_ammo left untouched at "
+        + TDBID.ToStringDEBUG(this.dpae_active_ammo));
+    }
     return;
   }
 
@@ -313,9 +321,22 @@ public func DPAE_SelectAmmo(activeTDBID: TweakDBID) -> Void {
   }
   this.dpae_masked_first_shot_owed = this.dpae_is_masked_ammo;
 
+  let resyncFoundExistingState = false;
   if this.dpae_resync_only {
+    let existingDummyQty = ts.GetItemQuantity(this, dummyID);
+    let existingMagPct   = IsDefined(weaponObj) ? WeaponObject.GetMagazinePercentage(weaponObj) : 0.0;
+    resyncFoundExistingState = existingDummyQty > 0 || existingMagPct > 0.001;
+  }
+
+  if this.dpae_resync_only && resyncFoundExistingState {
     this.dpae_prev_mag_pct   = IsDefined(weaponObj) ? WeaponObject.GetMagazinePercentage(weaponObj) : 0.0;
     this.dpae_prev_dummy_qty = ts.GetItemQuantity(this, dummyID);
+    if DesoPierreAmmoExpandedSettings.DebugAmmoLogging() {
+      LogChannel(n"DEBUG", "[DPAE_LOADFIX] SelectAmmo RESYNC-ONLY dummyID=" + TDBID.ToStringDEBUG(ItemID.GetTDBID(dummyID))
+        + " existingDummyQty=" + ToString(this.dpae_prev_dummy_qty)
+        + " magPct=" + ToString(this.dpae_prev_mag_pct)
+        + " (no GiveItem call made this branch)");
+    }
   } else {
     let leftover = ts.GetItemQuantity(this, dummyID);
     if leftover > 0 { ts.RemoveItem(this, dummyID, leftover); }
@@ -324,6 +345,11 @@ public func DPAE_SelectAmmo(activeTDBID: TweakDBID) -> Void {
 
     this.dpae_prev_mag_pct   = IsDefined(weaponObj) ? WeaponObject.GetMagazinePercentage(weaponObj) : 0.0;
     this.dpae_prev_dummy_qty = giveQty;
+    if DesoPierreAmmoExpandedSettings.DebugAmmoLogging() {
+      LogChannel(n"DEBUG", "[DPAE_LOADFIX] SelectAmmo REAL-GIVE dummyID=" + TDBID.ToStringDEBUG(ItemID.GetTDBID(dummyID))
+        + " leftoverWiped=" + ToString(leftover) + " gaveQty=" + ToString(giveQty)
+        + " wasResyncFallback=" + ToString(this.dpae_resync_only));
+    }
   }
   this.dpae_active_ammo  = requestedTDBID;
   let clearedActiveWeapon: ItemID;
@@ -477,9 +503,6 @@ public func DPAE_UpdateIconicSignatureAmmo(activeStr: String) -> Void {
 }
 
 func DPAE_SuffixToExclusiveTag(suffix: String) -> CName {
-  if Equals(suffix, "_EMP") {
-    return n"DPAE_VariantExclusive_EMP";
-  }
   if Equals(suffix, "_CHEM") {
     return n"DPAE_VariantExclusive_CHEM";
   }
@@ -512,8 +535,6 @@ func DPAE_GetExclusiveVariantSuffixes(caliberStr: String) -> array<String> {
     ArrayPush(suffixes, "_HE");
   } else if Equals(caliberStr, "Ammo.Cal5p56CT") {
     ArrayPush(suffixes, "_HE");
-  } else if Equals(caliberStr, "Ammo.Cal4Gauge") {
-    ArrayPush(suffixes, "_EMP");
   } else if Equals(caliberStr, "Ammo.Cal10x40Rocket") {
     ArrayPush(suffixes, "_Divided_CHEM");
   } else if Equals(caliberStr, "Ammo.Cal9p5x35Minirocket") {

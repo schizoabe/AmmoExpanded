@@ -214,8 +214,18 @@ private func DPAE_HandleWeaponSlotEvent(slotID: TweakDBID, isSessionLoad: Bool) 
   }
 
   if isSessionLoad {
+    if DesoPierreAmmoExpandedSettings.DebugAmmoLogging() {
+      LogChannel(n"DEBUG", "[DPAE_LOADFIX] HandleWeaponSlotEvent SESSION-LOAD branch slot=" + (isRightSlot ? "Right" : "Left")
+        + " caliber=" + TDBID.ToStringDEBUG(caliberTDBID)
+        + " weaponMagPct=" + ToString(WeaponObject.GetMagazinePercentage(weaponObj))
+        + " lockedVariant=" + TDBID.ToStringDEBUG(this.dpae_locked_variant));
+    }
 
     let savedVariant = this.DPAE_GetSavedVariant(isRightSlot, caliberTDBID);
+    if DesoPierreAmmoExpandedSettings.DebugAmmoLogging() {
+      LogChannel(n"DEBUG", "[DPAE_LOADFIX] savedVariant=" + TDBID.ToStringDEBUG(savedVariant)
+        + " ownedQty=" + (TDBID.IsValid(savedVariant) ? ToString(ts.GetItemQuantity(this, ItemID.FromTDBID(savedVariant))) : "n/a"));
+    }
     if TDBID.IsValid(savedVariant) && ts.GetItemQuantity(this, ItemID.FromTDBID(savedVariant)) > 0 {
       this.DPAE_RememberAmmo(caliberTDBID, savedVariant);
     }
@@ -223,6 +233,11 @@ private func DPAE_HandleWeaponSlotEvent(slotID: TweakDBID, isSessionLoad: Bool) 
     this.dpae_resync_only = true;
     this.DPAE_ResolveAmmoSelection(caliberTDBID);
     this.dpae_resync_only = false;
+    if DesoPierreAmmoExpandedSettings.DebugAmmoLogging() {
+      LogChannel(n"DEBUG", "[DPAE_LOADFIX] POST-resolve activeAmmo=" + TDBID.ToStringDEBUG(this.dpae_active_ammo)
+        + " dummyQtyNow=" + ToString(ts.GetItemQuantity(this, dummyID))
+        + " magPctNow=" + ToString(WeaponObject.GetMagazinePercentage(weaponObj)));
+    }
     return;
   }
 
@@ -251,6 +266,16 @@ protected cb func OnItemAddedToSlot(evt: ref<ItemAddedToSlot>) -> Bool {
 
   let isRightSlot = Equals(slotID, t"AttachmentSlots.WeaponRight");
   let isLoadRequip = isRightSlot ? this.dpae_pending_load_requip_right : this.dpae_pending_load_requip_left;
+  let elapsedSinceAttach = EngineTime.ToFloat(GameInstance.GetSimTime(this.GetGame())) - this.dpae_load_attach_time;
+  if isLoadRequip && elapsedSinceAttach > 5.0 {
+    isLoadRequip = false;
+  }
+  if DesoPierreAmmoExpandedSettings.DebugAmmoLogging() {
+    LogChannel(n"DEBUG", "[DPAE_LOADFIX] OnItemAddedToSlot slot=" + (isRightSlot ? "Right" : "Left")
+      + " flagWasSet=" + ToString(isRightSlot ? this.dpae_pending_load_requip_right : this.dpae_pending_load_requip_left)
+      + " elapsed=" + ToString(elapsedSinceAttach)
+      + " -> isLoadRequip=" + ToString(isLoadRequip));
+  }
   if isRightSlot {
     this.dpae_pending_load_requip_right = false;
   } else {
@@ -264,8 +289,14 @@ protected cb func OnItemAddedToSlot(evt: ref<ItemAddedToSlot>) -> Bool {
 @wrapMethod(PlayerPuppet)
 protected cb func OnGameAttached() -> Bool {
   let result = wrappedMethod();
+
+  this.dpae_load_attach_time = EngineTime.ToFloat(GameInstance.GetSimTime(this.GetGame()));
   this.dpae_pending_load_requip_right = true;
   this.dpae_pending_load_requip_left  = true;
+  if DesoPierreAmmoExpandedSettings.DebugAmmoLogging() {
+    LogChannel(n"DEBUG", "[DPAE_LOADFIX] OnGameAttached stamp=" + ToString(this.dpae_load_attach_time)
+      + " armed both pending flags");
+  }
   this.DPAE_HandleWeaponSlotEvent(t"AttachmentSlots.WeaponRight", true);
   this.DPAE_HandleWeaponSlotEvent(t"AttachmentSlots.WeaponLeft", true);
   return result;

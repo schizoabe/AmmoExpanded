@@ -19,10 +19,6 @@ Items.Preset_Copperhead_Genesis:  # Psalm 11:6 — Cal5p56CT (D5 Copperhead lose
   tags:
     - !append-once DPAE_VariantExclusive_HE
 
-Items.Preset_Carnage_Mox:
-  tags:
-    - !append-once DPAE_VariantExclusive_EMP
-
 Items.Preset_Sidewinder_Divided:  # Divided We Stand — Cal10x40Rocket. Exclusive to its own NEW
   tags:
     - !append-once DPAE_VariantExclusive_Divided

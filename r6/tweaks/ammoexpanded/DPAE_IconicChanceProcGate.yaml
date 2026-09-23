@@ -1,4 +1,30 @@
 
+Items.MoxCarnageWeaponModAbility:
+  effectors:
+    - $type: AddStatusEffectToAttackEffector
+      prereqRecord:
+        $base: Prereqs.ProcessHitTriggered
+        conditions:
+          - $base: Prereqs.DistanceCoveredHitPrereqCondition
+            distanceRequired: 3.0
+            comparisonType: LessOrEqual
+          - $base: Prereqs.StatusEffectPresentHitPrereqCondition
+            tagToCheck: DPAE_EMP_Active
+            checkType: CheckType.Tag
+            objectToCheck: Instigator
+      statusEffect: BaseStatusEffect.Electrocuted
+      applicationChance:
+        - $base: BaseStats.ApplicationChanceModifier
+          value: 0.33
+    - $base: Perks.ApplyStatusEffectOnPlayer
+      prereqRecord:
+        $base: Prereqs.ProcessHitTriggered
+        conditions:
+          - $base: Prereqs.DistanceCoveredHitPrereqCondition
+            distanceRequired: 3.0
+            comparisonType: LessOrEqual
+      statusEffect: BaseStatusEffect.Mox_Buff
+
 Items.KenshinSpyWeaponModAbility:
   effectors:
     - $base: Effectors.ApplyQuickhackEffector

@@ -1,22 +1,4 @@
 
-local ROUND_COLORS = {
-    FMJ  = { 0.85, 0.85, 0.85 },
-    GEN  = { 0.85, 0.85, 0.85 },
-    BUCK = { 0.85, 0.85, 0.85 },
-    HP   = { 1.00, 0.45, 0.45 },
-    AP   = { 0.45, 0.75, 1.00 },
-    NL   = { 0.45, 1.00, 0.45 },
-    EMP  = { 0.80, 0.45, 1.00 },
-    INC  = { 1.00, 0.55, 0.15 },
-    HE   = { 1.00, 0.80, 0.20 },
-    SLUG = { 0.95, 0.85, 0.50 },
-    TECH  = { 1.00, 0.70, 0.30 },
-    CHEM  = { 0.55, 0.90, 0.35 },
-    SNAKE = { 0.55, 0.85, 0.25 },
-
-    SIG   = { 1.00, 0.95, 0.55 },
-}
-
 local CALIBER_VARIANTS = {
     Cal243Win = {
         label    = ".243 Winchester",
@@ -479,15 +461,9 @@ local function getQty(ammoId)
     )
 end
 
-local function startsWith(s, prefix)
-    return s:sub(1, #prefix) == prefix
-end
-
 local currentCalKey  = ""
 local currentCal     = nil
 local localActiveID  = ""
-
-local REMEMBERED = {}
 
 local function refreshCaliber(p)
     local key = p:DPAE_GetCaliberString()
@@ -496,26 +472,6 @@ local function refreshCaliber(p)
     currentCal     = CALIBER_VARIANTS[key]
 
     localActiveID  = p:DPAE_GetActiveAmmoID()
-    if localActiveID ~= "" and startsWith(localActiveID, "Ammo." .. key) then
-        REMEMBERED[key] = localActiveID
-    end
-end
-
-local function healAfterLoad(p)
-    if not currentCal then return end
-    if p:DPAE_GetActiveAmmoID() ~= "" then return end
-    local remembered = REMEMBERED[currentCalKey]
-    if not remembered or remembered == "" then return end
-    if not startsWith(remembered, "Ammo." .. currentCalKey) then return end
-    if getQty(remembered) <= 0 then return end
-    p:DPAE_SelectAmmo(TweakDBID.new(remembered))
-    localActiveID = remembered
-end
-
-local function colorFor(shortName)
-    local c = ROUND_COLORS[shortName]
-    if c then return c[1], c[2], c[3] end
-    return 0.7, 0.7, 0.7
 end
 
 local function endsWith(s, suffix)
@@ -576,7 +532,6 @@ local function cycleToNextVariant(p, variants)
         if getQty(v.id) > 0 then
             p:DPAE_SelectAmmo(TweakDBID.new(v.id))
             localActiveID = v.id
-            REMEMBERED[currentCalKey] = v.id
             return
         end
     end
@@ -586,14 +541,8 @@ local function syncActiveID(p)
     local actualActiveID = p:DPAE_GetActiveAmmoID()
     if actualActiveID ~= localActiveID then
         localActiveID = actualActiveID
-        if localActiveID ~= "" then
-            REMEMBERED[currentCalKey] = localActiveID
-        end
     end
 end
-
-local lastHUDVariant = nil
-local lastHUDQty      = nil
 
 local wasWeaponStowed = true
 
@@ -602,60 +551,17 @@ local function getAmmoHUDSystem()
 end
 
 local function updateHUD(p)
-    local sys = getAmmoHUDSystem()
-    if not sys then return end
-
     local isStowed = p:DPAE_IsWeaponStowed()
     if isStowed then
-        if lastHUDVariant ~= nil then
-            sys:HideDisplay()
-            lastHUDVariant = nil
-            lastHUDQty     = nil
-        end
         wasWeaponStowed = true
+        p:DPAE_RefreshAmmoHUD()
         return
     end
     if wasWeaponStowed then
         p:DPAE_RefreshOnDraw()
     end
     wasWeaponStowed = false
-
-    if p:DPAE_IsHMGEquipped() then
-        if lastHUDVariant ~= "Belt-Fed" then
-            lastHUDVariant = "Belt-Fed"
-            lastHUDQty     = nil
-            sys:UpdateDisplay(".50 BMG APHET-IL", "Belt-Fed", 0, 1.0, 0.75, 0.35)
-        end
-        return
-    end
-
-    if not currentCal or localActiveID == "" then
-        if lastHUDVariant ~= nil then
-            sys:HideDisplay()
-            lastHUDVariant = nil
-            lastHUDQty     = nil
-        end
-        return
-    end
-
-    local effectiveVariants = getEffectiveVariants(p, currentCal, currentCal.label)
-    local variantLabel = "?"
-    local shortName    = "?"
-    for _, v in ipairs(effectiveVariants) do
-        if v.id == localActiveID then
-            variantLabel = v.label
-            shortName    = v.short
-            break
-        end
-    end
-    local qty = p:DPAE_GetActiveAmmoCount()
-
-    if variantLabel == lastHUDVariant and qty == lastHUDQty then return end
-    lastHUDVariant = variantLabel
-    lastHUDQty     = qty
-
-    local r, g, b = colorFor(shortName)
-    sys:UpdateDisplay(currentCal.label, variantLabel, qty, r, g, b)
+    p:DPAE_RefreshAmmoHUD()
 end
 
 local pendingReloadWeapon = nil
@@ -697,7 +603,6 @@ registerForEvent('onDraw', function()
     if not p then return end
 
     refreshCaliber(p)
-    healAfterLoad(p)
     syncActiveID(p)
     updateHUD(p)
     pollInputRequests(p)

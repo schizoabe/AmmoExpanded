@@ -180,6 +180,15 @@ public func DPAE_IsWeaponStowed() -> Bool {
 @addMethod(PlayerPuppet)
 public func DPAE_RefreshOnDraw() -> Void {
   if !TDBID.IsValid(this.dpae_caliber) || !TDBID.IsValid(this.dpae_active_ammo) { return; }
+
+  if !StrBeginsWith(TDBID.ToStringDEBUG(this.dpae_active_ammo), TDBID.ToStringDEBUG(this.dpae_caliber)) {
+    if DesoPierreAmmoExpandedSettings.DebugAmmoLogging() {
+      LogChannel(n"DEBUG", "[DPAE_LOADFIX] RefreshOnDraw SKIPPED stale caliber mismatch activeAmmo="
+        + TDBID.ToStringDEBUG(this.dpae_active_ammo) + " currentCaliber=" + TDBID.ToStringDEBUG(this.dpae_caliber));
+    }
+    return;
+  }
+
   this.DPAE_SelectAmmo(this.dpae_active_ammo);
 }
 
