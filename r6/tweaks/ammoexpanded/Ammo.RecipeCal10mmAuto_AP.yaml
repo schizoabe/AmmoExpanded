@@ -17,7 +17,7 @@ Ammo.RecipeCal10mmAuto_AP:
   craftingResult: Ammo.RecipeCal10mmAuto_AP_inline0
   crosshair: Crosshairs.None
   deprecated: False
-  displayName: LocKey#8100369
+  displayName: LocKey#AmmoExpanded-Cal10mmAuto-AP-Name
   dropObject: defaultItemDrop
   effectors: []
   enableNpcRPGData: False

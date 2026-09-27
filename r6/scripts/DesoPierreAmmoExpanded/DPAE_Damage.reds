@@ -56,10 +56,13 @@ func DPAE_ApplyConversion(hitEvent: ref<gameHitEvent>, elementalType: gamedataDa
 func DPAE_GetInstigatorAmmoString(instigator: wref<GameObject>) -> String {
   let player = instigator as PlayerPuppet;
   if IsDefined(player) {
+
+    if !TDBID.IsValid(player.dpae_active_ammo) { return ""; }
     return TDBID.ToStringDEBUG(player.dpae_active_ammo);
   }
   let npc = instigator as NPCPuppet;
   if IsDefined(npc) {
+    if !TDBID.IsValid(npc.dpae_npc_ammo) { return ""; }
     return TDBID.ToStringDEBUG(npc.dpae_npc_ammo);
   }
   return "";
@@ -67,11 +70,28 @@ func DPAE_GetInstigatorAmmoString(instigator: wref<GameObject>) -> String {
 
 @wrapMethod(DamageSystem)
 public final func ProcessArmor(hitEvent: ref<gameHitEvent>) -> Void {
+
+  let dpaeInstigator: wref<GameObject>;
+  let dpaeAmmoStr = "";
+  let dpaeAttackType = IsDefined(hitEvent.attackData) ? hitEvent.attackData.GetAttackType() : gamedataAttackType.Invalid;
+  let dpaeNotAShot = AttackData.IsMelee(dpaeAttackType) || AttackData.IsThrown(dpaeAttackType)
+    || AttackData.IsWhip(dpaeAttackType) || Equals(dpaeAttackType, gamedataAttackType.Hack);
+  if IsDefined(hitEvent.attackData) && !AttackData.IsDoT(hitEvent.attackData) && !dpaeNotAShot {
+    dpaeInstigator = hitEvent.attackData.GetInstigator();
+    if IsDefined(dpaeInstigator) {
+      dpaeAmmoStr = DPAE_GetInstigatorAmmoString(dpaeInstigator);
+    }
+  }
+  if StrLen(dpaeAmmoStr) == 0 {
+    wrappedMethod(hitEvent);
+    return;
+  }
+
   let toggle = DesoPierreAmmoExpandedSettings.TrueDamageConversion();
-  if toggle && IsDefined(hitEvent.attackData) && !AttackData.IsDoT(hitEvent.attackData) {
-    let instigator = hitEvent.attackData.GetInstigator();
+  if toggle {
+    let instigator = dpaeInstigator;
     if IsDefined(instigator) {
-      let ammoStr = DPAE_GetInstigatorAmmoString(instigator);
+      let ammoStr = dpaeAmmoStr;
       let weapon = hitEvent.attackData.GetWeapon();
       if StrEndsWith(ammoStr, "_INC") {
         DPAE_ApplyConversion(hitEvent, gamedataDamageType.Thermal, DPAE_ComputeConversionPercent(instigator, weapon, gamedataDamageType.Thermal));
@@ -94,10 +114,10 @@ public final func ProcessArmor(hitEvent: ref<gameHitEvent>) -> Void {
     };
   };
 
-  if IsDefined(hitEvent.attackData) && !AttackData.IsDoT(hitEvent.attackData) {
-    let hpInstigator = hitEvent.attackData.GetInstigator();
+  if IsDefined(dpaeInstigator) {
+    let hpInstigator = dpaeInstigator;
     if IsDefined(hpInstigator) {
-      let hpAmmoStr = DPAE_GetInstigatorAmmoString(hpInstigator);
+      let hpAmmoStr = dpaeAmmoStr;
       let hpBonus = DPAE_GetHPUnarmoredBonus(hpAmmoStr);
       if hpBonus > 0.0 {
         let target = hitEvent.target as GameObject;
@@ -119,13 +139,15 @@ public final func ProcessArmor(hitEvent: ref<gameHitEvent>) -> Void {
     };
   };
 
-  if IsDefined(hitEvent.attackData) && !AttackData.IsDoT(hitEvent.attackData) {
-    let fcInstigator = hitEvent.attackData.GetInstigator() as PlayerPuppet;
+  if IsDefined(dpaeInstigator) {
+    let fcInstigator = dpaeInstigator as PlayerPuppet;
     if IsDefined(fcInstigator) {
-      let fcAmmoStr = DPAE_GetInstigatorAmmoString(fcInstigator);
+      let fcAmmoStr = dpaeAmmoStr;
       if StrEndsWith(fcAmmoStr, "_HE") {
         let fcWeapon = hitEvent.attackData.GetWeapon();
-        if IsDefined(fcWeapon) && ArraySize(fcInstigator.DPAE_GetAttachedModQualities(fcWeapon, "Items.ChimeraPowerMod")) > 0 {
+
+        let fcQualities = fcInstigator.DPAE_GetAttachedModQualities(fcWeapon, "Items.ChimeraPowerMod");
+        if IsDefined(fcWeapon) && ArraySize(fcQualities) > 0 {
           let fcPhysVal = hitEvent.attackComputed.GetAttackValue(gamedataDamageType.Physical);
           hitEvent.attackComputed.SetAttackValue(fcPhysVal * (1.0 + DPAE_FirecrackerHEDamageBonus()), gamedataDamageType.Physical);
         };
@@ -136,10 +158,10 @@ public final func ProcessArmor(hitEvent: ref<gameHitEvent>) -> Void {
   let flechetteMod: ref<gameStatModifierData>;
   let flechetteSS: ref<StatsSystem>;
   let flechetteObjID: StatsObjectID;
-  if IsDefined(hitEvent.attackData) && !AttackData.IsDoT(hitEvent.attackData) {
-    let fInstigator = hitEvent.attackData.GetInstigator();
+  if IsDefined(dpaeInstigator) {
+    let fInstigator = dpaeInstigator;
     if IsDefined(fInstigator) {
-      let fAmmoStr = DPAE_GetInstigatorAmmoString(fInstigator);
+      let fAmmoStr = dpaeAmmoStr;
       let chargeBonus = DPAE_GetFlechetteChargeBonus(fAmmoStr);
       if chargeBonus > 0.0 {
         let fWeapon = hitEvent.attackData.GetWeapon();

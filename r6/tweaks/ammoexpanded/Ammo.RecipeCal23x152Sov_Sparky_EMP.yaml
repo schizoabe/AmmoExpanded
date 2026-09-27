@@ -17,7 +17,7 @@ Ammo.RecipeCal23x152Sov_Sparky_EMP:
   craftingResult: Ammo.RecipeCal23x152Sov_Sparky_EMP_inline0
   crosshair: Crosshairs.None
   deprecated: False
-  displayName: LocKey#8100644
+  displayName: LocKey#AmmoExpanded-Cal23x152Sov-EMP-SignatureName
   dropObject: defaultItemDrop
   effectors: []
   enableNpcRPGData: False

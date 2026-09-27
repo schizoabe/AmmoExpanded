@@ -43,7 +43,7 @@ public func DPAE_GetEffectForRound(roundID: TweakDBID, instigator: wref<GameObje
   if DesoPierreAmmoExpandedSettings.DebugAmmoLogging() {
     let weaponIDStr = "";
     if IsDefined(weapon) { weaponIDStr = TDBID.ToStringDEBUG(ItemID.GetTDBID(weapon.GetItemID())); };
-    LogChannel(n"DEBUG", "[DPAE_DOTLOG] weapon=" + weaponIDStr + " round=" + activeStr
+    DPAE_LogDebug("[DPAE_DOTLOG] weapon=" + weaponIDStr + " round=" + activeStr
       + " dotChance=" + ToString(dotChance) + " dotRoll=" + ToString(dotRoll) + " dotHit=" + ToString(dotHit)
       + " gimmickChance=" + ToString(gimmickChance) + " gimmickRoll=" + ToString(gimmickRoll) + " gimmickHit=" + ToString(gimmickHit));
   }
@@ -363,7 +363,13 @@ public func EvaluateHit(newHitEvent: ref<gameHitEvent>) -> Void {
   let npc        = newHitEvent.attackData.GetInstigator() as NPCPuppet;
   let npcHasAmmo = IsDefined(npc) && TDBID.IsValid(npc.dpae_npc_ammo);
 
-  if IsDefined(player) && player.dpae_pending_nl {
+  let fromPendingShot = false;
+  if IsDefined(player) && !AttackData.IsDoT(newHitEvent.attackData) && !AttackData.IsMelee(newHitEvent.attackData.GetAttackType()) {
+    let hitWeapon = newHitEvent.attackData.GetWeapon();
+    fromPendingShot = IsDefined(hitWeapon) && hitWeapon.GetItemID() == player.dpae_pending_weapon;
+  }
+
+  if fromPendingShot && player.dpae_pending_nl {
     newHitEvent.attackData.AddFlag(hitFlag.Nonlethal, n"DPAE_NL");
     player.dpae_pending_nl = false;
   }
@@ -376,8 +382,12 @@ public func EvaluateHit(newHitEvent: ref<gameHitEvent>) -> Void {
   if IsDefined(player) {
 
     let target = newHitEvent.target as GameObject;
-    if ArraySize(player.dpae_pending_effect) > 0 && IsDefined(target) {
-      DPAE_ApplyRoundEffects(target, player.dpae_pending_effect, player.GetEntityID());
+    if fromPendingShot && ArraySize(player.dpae_pending_effect) > 0 && IsDefined(target) {
+
+      let viaBullet = IsDefined(newHitEvent.attackData.GetSource() as sampleBullet);
+      if !viaBullet {
+        DPAE_ApplyRoundEffects(target, player.dpae_pending_effect, player.GetEntityID());
+      }
       let dpaeNoEffects: array<TweakDBID>;
       player.dpae_pending_effect = dpaeNoEffects;
     }
@@ -399,6 +409,8 @@ public func EvaluateHit(newHitEvent: ref<gameHitEvent>) -> Void {
 @addField(sampleBullet) public let dpae_effect:     array<TweakDBID>;
 @addField(sampleBullet) public let dpae_instigator: EntityID;
 
+@addField(sampleBullet) public let dpae_weapon:     ItemID;
+
 @wrapMethod(sampleBullet)
 protected cb func OnProjectileInitialize(eventData: ref<gameprojectileSetUpEvent>) -> Bool {
   let result = wrappedMethod(eventData);
@@ -406,14 +418,15 @@ protected cb func OnProjectileInitialize(eventData: ref<gameprojectileSetUpEvent
   if !IsDefined(player) || !player.dpae_test_active { return result; }
 
   let weapon = eventData.weapon as WeaponObject;
-  if IsDefined(weapon) {
-    let ts          = GameInstance.GetTransactionSystem(this.GetGame());
-    let rightWeapon = ts.GetItemInSlot(player, t"AttachmentSlots.WeaponRight") as WeaponObject;
-    let leftWeapon  = ts.GetItemInSlot(player, t"AttachmentSlots.WeaponLeft")  as WeaponObject;
-    if weapon != rightWeapon && weapon != leftWeapon { return result; }
-  }
+  if !IsDefined(weapon) { return result; }
+  let ts          = GameInstance.GetTransactionSystem(this.GetGame());
+  let rightWeapon = ts.GetItemInSlot(player, t"AttachmentSlots.WeaponRight") as WeaponObject;
+  let leftWeapon  = ts.GetItemInSlot(player, t"AttachmentSlots.WeaponLeft")  as WeaponObject;
+  if weapon != rightWeapon && weapon != leftWeapon { return result; }
+
   this.dpae_effect     = DPAE_GetEffectForRound(player.dpae_active_ammo, player, weapon);
   this.dpae_instigator = player.GetEntityID();
+  this.dpae_weapon     = weapon.GetItemID();
   return result;
 }
 
@@ -431,6 +444,11 @@ protected cb func OnCollision(eventData: ref<gameprojectileHitEvent>) -> Bool {
     }
     let dpaeNoEffects: array<TweakDBID>;
     this.dpae_effect = dpaeNoEffects;
+
+    let player = GameInstance.GetPlayerSystem(this.GetGame()).GetLocalPlayerMainGameObject() as PlayerPuppet;
+    if IsDefined(player) && player.GetEntityID() == this.dpae_instigator && player.dpae_pending_weapon == this.dpae_weapon {
+      player.dpae_pending_effect = dpaeNoEffects;
+    }
   }
   return result;
 }

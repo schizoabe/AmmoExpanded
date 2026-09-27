@@ -16,7 +16,7 @@ Ammo.Cal14x40TSlug:
   CraftingData: Ammo.AmmoBase_inline0
   crosshair: Crosshairs.None
   deprecated: False
-  displayName: LocKey#8100394
+  displayName: LocKey#AmmoExpanded-Cal14x40TSlug-Name
   dropObject: ammoDrop
   effectors: []
   enableNpcRPGData: False
@@ -38,7 +38,7 @@ Ammo.Cal14x40TSlug:
   isSingleInstance: True
   itemCategory: ItemCategory.General
   itemType: ItemType.Con_Ammo
-  localizedDescription: LocKey#8100573
+  localizedDescription: LocKey#AmmoExpanded-Cal14x40TSlug-Desc
   localizedName: ''
   mass: 1
   minigameInstance: minigame_v2.DefaultItemMinigame
@@ -96,8 +96,8 @@ Ammo.Cal14x40TSlug_EMP:
   quality: Quality.Rare
   $base: Ammo.Cal14x40TSlug
   friendlyName: '14x40mm_tungsten_slug_emp'
-  displayName: LocKey#8100397
-  localizedDescription: LocKey#8100688
+  displayName: LocKey#AmmoExpanded-Cal14x40TSlug-EMP-Name
+  localizedDescription: LocKey#AmmoExpanded-Cal14x40TSlug-EMP-Desc
   tags:
     - !append-once DPAE_Cal14x40TSlug_EMP
 
@@ -121,8 +121,8 @@ Ammo.Cal14x40TSlug_INC:
   quality: Quality.Rare
   $base: Ammo.Cal14x40TSlug
   friendlyName: '14x40mm_tungsten_slug_incendiary'
-  displayName: LocKey#8100398
-  localizedDescription: LocKey#8100687
+  displayName: LocKey#AmmoExpanded-Cal14x40TSlug-INC-Name
+  localizedDescription: LocKey#AmmoExpanded-Cal14x40TSlug-INC-Desc
   tags:
     - !append-once DPAE_Cal14x40TSlug_INC
 
@@ -146,8 +146,8 @@ Ammo.Cal14x40TSlug_CHEM:
   quality: Quality.Rare
   $base: Ammo.Cal14x40TSlug
   friendlyName: '14x40mm_tungsten_slug_chemical'
-  displayName: LocKey#8100399
-  localizedDescription: LocKey#8100686
+  displayName: LocKey#AmmoExpanded-Cal14x40TSlug-CHEM-Name
+  localizedDescription: LocKey#AmmoExpanded-Cal14x40TSlug-CHEM-Desc
   tags:
     - !append-once DPAE_Cal14x40TSlug_CHEM
 
@@ -171,7 +171,7 @@ Ammo.Cal14x40TSlug_HE:
   quality: Quality.Epic
   $base: Ammo.Cal14x40TSlug
   friendlyName: '14x40mm_tungsten_slug_high_explosive'
-  displayName: LocKey#8100561
-  localizedDescription: LocKey#8100685
+  displayName: LocKey#AmmoExpanded-Cal14x40TSlug-HE-Name
+  localizedDescription: LocKey#AmmoExpanded-Cal14x40TSlug-HE-Desc
   tags:
     - !append-once DPAE_Cal14x40TSlug_HE

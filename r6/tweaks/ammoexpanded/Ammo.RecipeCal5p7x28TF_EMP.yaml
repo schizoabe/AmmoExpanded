@@ -17,7 +17,7 @@ Ammo.RecipeCal5p7x28TF_EMP:
   craftingResult: Ammo.RecipeCal5p7x28TF_EMP_inline0
   crosshair: Crosshairs.None
   deprecated: False
-  displayName: LocKey#8100457
+  displayName: LocKey#AmmoExpanded-Cal5p7x28TF-EMP-Name
   dropObject: defaultItemDrop
   effectors: []
   enableNpcRPGData: False

@@ -12,8 +12,16 @@ public func DPAE_RefreshAmmoHUD() -> Void {
     return;
   }
 
+  let shownWeapon: ItemID;
+  let activeWeapon = GameObject.GetActiveWeapon(this);
+  if IsDefined(activeWeapon) {
+    shownWeapon = activeWeapon.GetItemID();
+  }
+
   if this.DPAE_IsHMGEquipped() {
-    sys.UpdateDisplay("APHET-IL", 1.0, 0.75, 0.35);
+    if sys.IsShowing(1, TDBID.None(), TDBID.None(), shownWeapon) { return; }
+    sys.UpdateDisplay(this.DPAE_HUDItemName(t"Ammo.Cal50APHETIL"), GetLocalizedTextByKey(n"AmmoExpanded-HUD-BeltFed"), 1.0, 0.75, 0.35);
+    sys.RememberShown(1, TDBID.None(), TDBID.None(), shownWeapon);
     return;
   }
 
@@ -22,31 +30,33 @@ public func DPAE_RefreshAmmoHUD() -> Void {
     return;
   }
 
+  if sys.IsShowing(2, this.dpae_active_ammo, this.dpae_caliber, shownWeapon) { return; }
+
   let activeStr = TDBID.ToStringDEBUG(this.dpae_active_ammo);
   let mainLabel: String = "";
   let r: Float = 0.85;
   let g: Float = 0.85;
   let b: Float = 0.85;
   if StrEndsWith(activeStr, "_AP") {
-    mainLabel = "AP";       r = 0.45; g = 0.75; b = 1.00;
+    mainLabel = GetLocalizedTextByKey(n"AmmoExpanded-HUD-AP");       r = 0.45; g = 0.75; b = 1.00;
   } else if StrEndsWith(activeStr, "_HP") {
-    mainLabel = "HP";       r = 1.00; g = 0.45; b = 0.45;
+    mainLabel = GetLocalizedTextByKey(n"AmmoExpanded-HUD-HP");       r = 1.00; g = 0.45; b = 0.45;
   } else if StrEndsWith(activeStr, "_EMP") {
-    mainLabel = "EMP";      r = 0.80; g = 0.45; b = 1.00;
+    mainLabel = GetLocalizedTextByKey(n"AmmoExpanded-HUD-EMP");      r = 0.80; g = 0.45; b = 1.00;
   } else if StrEndsWith(activeStr, "_INC") {
-    mainLabel = "INC";      r = 1.00; g = 0.55; b = 0.15;
+    mainLabel = GetLocalizedTextByKey(n"AmmoExpanded-HUD-INC");      r = 1.00; g = 0.55; b = 0.15;
   } else if StrEndsWith(activeStr, "_CHEM") {
-    mainLabel = "CHEM";     r = 0.55; g = 0.90; b = 0.35;
+    mainLabel = GetLocalizedTextByKey(n"AmmoExpanded-HUD-CHEM");     r = 0.55; g = 0.90; b = 0.35;
   } else if StrEndsWith(activeStr, "_NL") {
-    mainLabel = "NL";       r = 0.45; g = 1.00; b = 0.45;
+    mainLabel = GetLocalizedTextByKey(n"AmmoExpanded-HUD-NL");       r = 0.45; g = 1.00; b = 0.45;
   } else if StrEndsWith(activeStr, "_HE") {
-    mainLabel = "HE";       r = 1.00; g = 0.80; b = 0.20;
+    mainLabel = GetLocalizedTextByKey(n"AmmoExpanded-HUD-HE");       r = 1.00; g = 0.80; b = 0.20;
   } else if StrEndsWith(activeStr, "_Snakeshot") {
-    mainLabel = "Snake";    r = 0.55; g = 0.85; b = 0.25;
+    mainLabel = GetLocalizedTextByKey(n"AmmoExpanded-HUD-Snakeshot");    r = 0.55; g = 0.85; b = 0.25;
   } else if StrEndsWith(activeStr, "_Slug") {
-    mainLabel = "Slug";     r = 0.95; g = 0.85; b = 0.50;
+    mainLabel = GetLocalizedTextByKey(n"AmmoExpanded-HUD-Slug");     r = 0.95; g = 0.85; b = 0.50;
   } else if this.dpae_is_tube_fed {
-    mainLabel = "Buckshot";
+    mainLabel = GetLocalizedTextByKey(n"AmmoExpanded-HUD-Buckshot");
   } else {
     let ts = GameInstance.GetTransactionSystem(this.GetGame());
     let weaponObj = ts.GetItemInSlot(this, t"AttachmentSlots.WeaponRight") as WeaponObject;
@@ -54,8 +64,21 @@ public func DPAE_RefreshAmmoHUD() -> Void {
       weaponObj = ts.GetItemInSlot(this, t"AttachmentSlots.WeaponLeft") as WeaponObject;
     }
     let evolution = IsDefined(weaponObj) ? RPGManager.GetWeaponEvolution(weaponObj.GetItemID()) : gamedataWeaponEvolution.Power;
-    mainLabel = Equals(evolution, gamedataWeaponEvolution.Power) ? "FMJ" : "Standard";
+    mainLabel = Equals(evolution, gamedataWeaponEvolution.Power) ? GetLocalizedTextByKey(n"AmmoExpanded-HUD-FMJ") : GetLocalizedTextByKey(n"AmmoExpanded-HUD-Standard");
   }
 
-  sys.UpdateDisplay(mainLabel, r, g, b);
+  let caliberName = this.DPAE_HUDItemName(this.dpae_caliber);
+  if StrEndsWith(caliberName, ")") && StrContains(caliberName, " (") {
+    caliberName = StrBeforeLast(caliberName, " (");
+  }
+
+  sys.UpdateDisplay(caliberName, mainLabel, r, g, b);
+  sys.RememberShown(2, this.dpae_active_ammo, this.dpae_caliber, shownWeapon);
+}
+
+@addMethod(PlayerPuppet)
+private func DPAE_HUDItemName(id: TweakDBID) -> String {
+  let rec = TweakDBInterface.GetItemRecord(id);
+  if !IsDefined(rec) { return ""; }
+  return GetLocalizedTextByKey(rec.DisplayName());
 }

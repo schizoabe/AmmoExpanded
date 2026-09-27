@@ -17,7 +17,7 @@ Ammo.RecipeCal50BeowulfOni_EMP:
   craftingResult: Ammo.RecipeCal50BeowulfOni_EMP_inline0
   crosshair: Crosshairs.None
   deprecated: False
-  displayName: LocKey#8100341
+  displayName: LocKey#AmmoExpanded-Cal50BeowulfOni-EMP-Name
   dropObject: defaultItemDrop
   effectors: []
   enableNpcRPGData: False

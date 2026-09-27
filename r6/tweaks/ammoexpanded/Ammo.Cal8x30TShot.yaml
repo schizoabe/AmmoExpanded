@@ -16,7 +16,7 @@ Ammo.Cal8x30TShot:
   CraftingData: Ammo.AmmoBase_inline0
   crosshair: Crosshairs.None
   deprecated: False
-  displayName: LocKey#8100486
+  displayName: LocKey#AmmoExpanded-Cal8x30TShot-Name
   dropObject: ammoDrop
   effectors: []
   enableNpcRPGData: False
@@ -38,7 +38,7 @@ Ammo.Cal8x30TShot:
   isSingleInstance: True
   itemCategory: ItemCategory.General
   itemType: ItemType.Con_Ammo
-  localizedDescription: LocKey#8100600
+  localizedDescription: LocKey#AmmoExpanded-Cal8x30TShot-Desc
   localizedName: ''
   mass: 1
   minigameInstance: minigame_v2.DefaultItemMinigame
@@ -96,8 +96,8 @@ Ammo.Cal8x30TShot_EMP:
   quality: Quality.Rare
   $base: Ammo.Cal8x30TShot
   friendlyName: '8x30mm_tungsten_shot_emp'
-  displayName: LocKey#8100489
-  localizedDescription: LocKey#8100821
+  displayName: LocKey#AmmoExpanded-Cal8x30TShot-EMP-Name
+  localizedDescription: LocKey#AmmoExpanded-Cal8x30TShot-EMP-Desc
   tags:
     - !append-once DPAE_Cal8x30TShot_EMP
 
@@ -121,8 +121,8 @@ Ammo.Cal8x30TShot_INC:
   quality: Quality.Rare
   $base: Ammo.Cal8x30TShot
   friendlyName: '8x30mm_tungsten_shot_incendiary'
-  displayName: LocKey#8100490
-  localizedDescription: LocKey#8100820
+  displayName: LocKey#AmmoExpanded-Cal8x30TShot-INC-Name
+  localizedDescription: LocKey#AmmoExpanded-Cal8x30TShot-INC-Desc
   tags:
     - !append-once DPAE_Cal8x30TShot_INC
 
@@ -146,7 +146,7 @@ Ammo.Cal8x30TShot_CHEM:
   quality: Quality.Rare
   $base: Ammo.Cal8x30TShot
   friendlyName: '8x30mm_tungsten_shot_chemical'
-  displayName: LocKey#8100491
-  localizedDescription: LocKey#8100819
+  displayName: LocKey#AmmoExpanded-Cal8x30TShot-CHEM-Name
+  localizedDescription: LocKey#AmmoExpanded-Cal8x30TShot-CHEM-Desc
   tags:
     - !append-once DPAE_Cal8x30TShot_CHEM

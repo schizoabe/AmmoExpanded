@@ -17,7 +17,7 @@ Ammo.RecipeCal308Win_AP:
   craftingResult: Ammo.RecipeCal308Win_AP_inline0
   crosshair: Crosshairs.None
   deprecated: False
-  displayName: LocKey#8100854
+  displayName: LocKey#AmmoExpanded-Cal308Win-AP-Name
   dropObject: defaultItemDrop
   effectors: []
   enableNpcRPGData: False

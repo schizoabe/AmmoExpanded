@@ -16,7 +16,7 @@ Ammo.Cal10x40Rocket:
   CraftingData: Ammo.AmmoBase_inline0
   crosshair: Crosshairs.None
   deprecated: False
-  displayName: LocKey#8100365
+  displayName: LocKey#AmmoExpanded-Cal10x40Rocket-Name
   dropObject: ammoDrop
   effectors: []
   enableNpcRPGData: False
@@ -38,7 +38,7 @@ Ammo.Cal10x40Rocket:
   isSingleInstance: True
   itemCategory: ItemCategory.General
   itemType: ItemType.Con_Ammo
-  localizedDescription: LocKey#8100568
+  localizedDescription: LocKey#AmmoExpanded-Cal10x40Rocket-Desc
   localizedName: ''
   mass: 1
   minigameInstance: minigame_v2.DefaultItemMinigame
@@ -96,8 +96,8 @@ Ammo.Cal10x40Rocket_HE:
   quality: Quality.Epic
   $base: Ammo.Cal10x40Rocket
   friendlyName: '10x40mm_guided_rocket_high_explosive'
-  displayName: LocKey#8100366
-  localizedDescription: LocKey#8100667
+  displayName: LocKey#AmmoExpanded-Cal10x40Rocket-HE-Name
+  localizedDescription: LocKey#AmmoExpanded-Cal10x40Rocket-HE-Desc
   tags:
     - !append-once DPAE_Cal10x40Rocket_HE
 
@@ -121,8 +121,8 @@ Ammo.Cal10x40Rocket_INC:
   quality: Quality.Rare
   $base: Ammo.Cal10x40Rocket
   friendlyName: '10x40mm_guided_rocket_incendiary'
-  displayName: LocKey#8100367
-  localizedDescription: LocKey#8100666
+  displayName: LocKey#AmmoExpanded-Cal10x40Rocket-INC-Name
+  localizedDescription: LocKey#AmmoExpanded-Cal10x40Rocket-INC-Desc
   tags:
     - !append-once DPAE_Cal10x40Rocket_INC
 
@@ -146,8 +146,8 @@ Ammo.Cal10x40Rocket_EMP:
   quality: Quality.Rare
   $base: Ammo.Cal10x40Rocket
   friendlyName: '10x40mm_guided_rocket_emp'
-  displayName: LocKey#8100605
-  localizedDescription: LocKey#8100665
+  displayName: LocKey#AmmoExpanded-Cal10x40Rocket-EMP-Name
+  localizedDescription: LocKey#AmmoExpanded-Cal10x40Rocket-EMP-Desc
   tags:
     - !append-once DPAE_Cal10x40Rocket_EMP
 
@@ -171,8 +171,8 @@ Ammo.Cal10x40Rocket_CHEM:
   quality: Quality.Rare
   $base: Ammo.Cal10x40Rocket
   friendlyName: '10x40mm_guided_rocket_chemical'
-  displayName: LocKey#8100558
-  localizedDescription: LocKey#8100664
+  displayName: LocKey#AmmoExpanded-Cal10x40Rocket-CHEM-Name
+  localizedDescription: LocKey#AmmoExpanded-Cal10x40Rocket-CHEM-Desc
   tags:
     - !append-once DPAE_Cal10x40Rocket_CHEM
 
@@ -188,7 +188,7 @@ Ammo.Cal10x40Rocket_Divided_CHEM:
   quality: Quality.Legendary
   $base: Ammo.Cal10x40Rocket_CHEM
   friendlyName: '10x40mm_guided_rocket_divided_signature'
-  displayName: LocKey#8100638
-  localizedDescription: LocKey#8100639
+  displayName: LocKey#AmmoExpanded-Cal10x40Rocket-CHEM-SignatureName
+  localizedDescription: LocKey#AmmoExpanded-Cal10x40Rocket-CHEM-SignatureDesc
   tags:
     - !append-once DPAE_Cal10x40Rocket_Divided_CHEM

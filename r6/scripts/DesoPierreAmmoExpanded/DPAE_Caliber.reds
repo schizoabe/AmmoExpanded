@@ -183,7 +183,7 @@ public func DPAE_RefreshOnDraw() -> Void {
 
   if !StrBeginsWith(TDBID.ToStringDEBUG(this.dpae_active_ammo), TDBID.ToStringDEBUG(this.dpae_caliber)) {
     if DesoPierreAmmoExpandedSettings.DebugAmmoLogging() {
-      LogChannel(n"DEBUG", "[DPAE_LOADFIX] RefreshOnDraw SKIPPED stale caliber mismatch activeAmmo="
+      DPAE_LogDebug("[DPAE_LOADFIX] RefreshOnDraw SKIPPED stale caliber mismatch activeAmmo="
         + TDBID.ToStringDEBUG(this.dpae_active_ammo) + " currentCaliber=" + TDBID.ToStringDEBUG(this.dpae_caliber));
     }
     return;

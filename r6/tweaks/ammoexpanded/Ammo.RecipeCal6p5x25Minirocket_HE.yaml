@@ -17,7 +17,7 @@ Ammo.RecipeCal6p5x25Minirocket_HE:
   craftingResult: Ammo.RecipeCal6p5x25Minirocket_HE_inline0
   crosshair: Crosshairs.None
   deprecated: False
-  displayName: LocKey#8100552
+  displayName: LocKey#AmmoExpanded-Cal6p5x25Minirocket-HE-Name
   dropObject: defaultItemDrop
   effectors: []
   enableNpcRPGData: False

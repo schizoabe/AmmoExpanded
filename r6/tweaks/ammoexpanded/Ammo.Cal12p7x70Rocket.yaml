@@ -16,7 +16,7 @@ Ammo.Cal12p7x70Rocket:
   CraftingData: Ammo.AmmoBase_inline0
   crosshair: Crosshairs.None
   deprecated: False
-  displayName: LocKey#8100388
+  displayName: LocKey#AmmoExpanded-Cal12p7x70Rocket-Name
   dropObject: ammoDrop
   effectors: []
   enableNpcRPGData: False
@@ -38,7 +38,7 @@ Ammo.Cal12p7x70Rocket:
   isSingleInstance: True
   itemCategory: ItemCategory.General
   itemType: ItemType.Con_Ammo
-  localizedDescription: LocKey#8100571
+  localizedDescription: LocKey#AmmoExpanded-Cal12p7x70Rocket-Desc
   localizedName: ''
   mass: 1
   minigameInstance: minigame_v2.DefaultItemMinigame
@@ -96,8 +96,8 @@ Ammo.Cal12p7x70Rocket_HE:
   quality: Quality.Epic
   $base: Ammo.Cal12p7x70Rocket
   friendlyName: '127x70mm_guided_rocket_high_explosive'
-  displayName: LocKey#8100389
-  localizedDescription: LocKey#8100680
+  displayName: LocKey#AmmoExpanded-Cal12p7x70Rocket-HE-Name
+  localizedDescription: LocKey#AmmoExpanded-Cal12p7x70Rocket-HE-Desc
   tags:
     - !append-once DPAE_Cal12p7x70Rocket_HE
 
@@ -121,8 +121,8 @@ Ammo.Cal12p7x70Rocket_INC:
   quality: Quality.Rare
   $base: Ammo.Cal12p7x70Rocket
   friendlyName: '127x70mm_guided_rocket_incendiary'
-  displayName: LocKey#8100390
-  localizedDescription: LocKey#8100679
+  displayName: LocKey#AmmoExpanded-Cal12p7x70Rocket-INC-Name
+  localizedDescription: LocKey#AmmoExpanded-Cal12p7x70Rocket-INC-Desc
   tags:
     - !append-once DPAE_Cal12p7x70Rocket_INC
 
@@ -146,8 +146,8 @@ Ammo.Cal12p7x70Rocket_EMP:
   quality: Quality.Rare
   $base: Ammo.Cal12p7x70Rocket
   friendlyName: '127x70mm_guided_rocket_emp'
-  displayName: LocKey#8100607
-  localizedDescription: LocKey#8100678
+  displayName: LocKey#AmmoExpanded-Cal12p7x70Rocket-EMP-Name
+  localizedDescription: LocKey#AmmoExpanded-Cal12p7x70Rocket-EMP-Desc
   tags:
     - !append-once DPAE_Cal12p7x70Rocket_EMP
 
@@ -171,7 +171,7 @@ Ammo.Cal12p7x70Rocket_CHEM:
   quality: Quality.Rare
   $base: Ammo.Cal12p7x70Rocket
   friendlyName: '127x70mm_guided_rocket_chemical'
-  displayName: LocKey#8100608
-  localizedDescription: LocKey#8100677
+  displayName: LocKey#AmmoExpanded-Cal12p7x70Rocket-CHEM-Name
+  localizedDescription: LocKey#AmmoExpanded-Cal12p7x70Rocket-CHEM-Desc
   tags:
     - !append-once DPAE_Cal12p7x70Rocket_CHEM

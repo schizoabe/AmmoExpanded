@@ -16,7 +16,7 @@ Ammo.Cal12p3x41UdaR:
   CraftingData: Ammo.AmmoBase_inline0
   crosshair: Crosshairs.None
   deprecated: False
-  displayName: LocKey#8100384
+  displayName: LocKey#AmmoExpanded-Cal12p3x41UdaR-Name
   dropObject: ammoDrop
   effectors: []
   enableNpcRPGData: False
@@ -38,7 +38,7 @@ Ammo.Cal12p3x41UdaR:
   isSingleInstance: True
   itemCategory: ItemCategory.General
   itemType: ItemType.Con_Ammo
-  localizedDescription: LocKey#8100570
+  localizedDescription: LocKey#AmmoExpanded-Cal12p3x41UdaR-Desc
   localizedName: ''
   mass: 1
   minigameInstance: minigame_v2.DefaultItemMinigame
@@ -96,8 +96,8 @@ Ammo.Cal12p3x41UdaR_AP:
   quality: Quality.Uncommon
   $base: Ammo.Cal12p3x41UdaR
   friendlyName: '123x41mm_udar_armor_piercing'
-  displayName: LocKey#8100385
-  localizedDescription: LocKey#8100676
+  displayName: LocKey#AmmoExpanded-Cal12p3x41UdaR-AP-Name
+  localizedDescription: LocKey#AmmoExpanded-Cal12p3x41UdaR-AP-Desc
   tags:
     - !append-once DPAE_Cal12p3x41UdaR_AP
 
@@ -121,8 +121,8 @@ Ammo.Cal12p3x41UdaR_HP:
   quality: Quality.Uncommon
   $base: Ammo.Cal12p3x41UdaR
   friendlyName: '123x41mm_udar_hollow_point'
-  displayName: LocKey#8100386
-  localizedDescription: LocKey#8100675
+  displayName: LocKey#AmmoExpanded-Cal12p3x41UdaR-HP-Name
+  localizedDescription: LocKey#AmmoExpanded-Cal12p3x41UdaR-HP-Desc
   tags:
     - !append-once DPAE_Cal12p3x41UdaR_HP
 
@@ -146,8 +146,8 @@ Ammo.Cal12p3x41UdaR_INC:
   quality: Quality.Rare
   $base: Ammo.Cal12p3x41UdaR
   friendlyName: '123x41mm_udar_incendiary'
-  displayName: LocKey#8100387
-  localizedDescription: LocKey#8100674
+  displayName: LocKey#AmmoExpanded-Cal12p3x41UdaR-INC-Name
+  localizedDescription: LocKey#AmmoExpanded-Cal12p3x41UdaR-INC-Desc
   tags:
     - !append-once DPAE_Cal12p3x41UdaR_INC
 
@@ -171,8 +171,8 @@ Ammo.Cal12p3x41UdaR_HE:
   quality: Quality.Epic
   $base: Ammo.Cal12p3x41UdaR
   friendlyName: '123x41mm_udar_high_explosive'
-  displayName: LocKey#8100555
-  localizedDescription: LocKey#8100673
+  displayName: LocKey#AmmoExpanded-Cal12p3x41UdaR-HE-Name
+  localizedDescription: LocKey#AmmoExpanded-Cal12p3x41UdaR-HE-Desc
   tags:
     - !append-once DPAE_Cal12p3x41UdaR_HE
 
@@ -196,8 +196,8 @@ Ammo.Cal12p3x41UdaR_CHEM:
   quality: Quality.Rare
   $base: Ammo.Cal12p3x41UdaR
   friendlyName: '123x41mm_udar_chemical'
-  displayName: LocKey#8100559
-  localizedDescription: LocKey#8100672
+  displayName: LocKey#AmmoExpanded-Cal12p3x41UdaR-CHEM-Name
+  localizedDescription: LocKey#AmmoExpanded-Cal12p3x41UdaR-CHEM-Desc
   tags:
     - !append-once DPAE_Cal12p3x41UdaR_CHEM
 
@@ -221,7 +221,7 @@ Ammo.Cal12p3x41UdaR_Snakeshot:
   quality: Quality.Uncommon
   $base: Ammo.Cal12p3x41UdaR
   friendlyName: '123x41mm_udar_snakeshot'
-  displayName: LocKey#8100619
-  localizedDescription: LocKey#8100671
+  displayName: LocKey#AmmoExpanded-Cal12p3x41UdaR-Snakeshot-Name
+  localizedDescription: LocKey#AmmoExpanded-Cal12p3x41UdaR-Snakeshot-Desc
   tags:
     - !append-once DPAE_Cal12p3x41UdaR_Snakeshot

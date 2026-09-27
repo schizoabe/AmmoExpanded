@@ -17,7 +17,7 @@ Ammo.RecipeCal8x30TShot_EMP:
   craftingResult: Ammo.RecipeCal8x30TShot_EMP_inline0
   crosshair: Crosshairs.None
   deprecated: False
-  displayName: LocKey#8100489
+  displayName: LocKey#AmmoExpanded-Cal8x30TShot-EMP-Name
   dropObject: defaultItemDrop
   effectors: []
   enableNpcRPGData: False

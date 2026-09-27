@@ -17,7 +17,7 @@ Ammo.RecipeCal15x55Rocket_HE:
   craftingResult: Ammo.RecipeCal15x55Rocket_HE_inline0
   crosshair: Crosshairs.None
   deprecated: False
-  displayName: LocKey#8100402
+  displayName: LocKey#AmmoExpanded-Cal15x55Rocket-HE-Name
   dropObject: defaultItemDrop
   effectors: []
   enableNpcRPGData: False

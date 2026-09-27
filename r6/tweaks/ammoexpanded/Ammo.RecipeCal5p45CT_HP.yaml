@@ -17,7 +17,7 @@ Ammo.RecipeCal5p45CT_HP:
   craftingResult: Ammo.RecipeCal5p45CT_HP_inline0
   crosshair: Crosshairs.None
   deprecated: False
-  displayName: LocKey#8100435
+  displayName: LocKey#AmmoExpanded-Cal5p45CT-HP-Name
   dropObject: defaultItemDrop
   effectors: []
   enableNpcRPGData: False

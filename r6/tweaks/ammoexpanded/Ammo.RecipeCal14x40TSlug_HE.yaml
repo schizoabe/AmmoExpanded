@@ -17,7 +17,7 @@ Ammo.RecipeCal14x40TSlug_HE:
   craftingResult: Ammo.RecipeCal14x40TSlug_HE_inline0
   crosshair: Crosshairs.None
   deprecated: False
-  displayName: LocKey#8100561
+  displayName: LocKey#AmmoExpanded-Cal14x40TSlug-HE-Name
   dropObject: defaultItemDrop
   effectors: []
   enableNpcRPGData: False

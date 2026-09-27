@@ -16,7 +16,7 @@ Ammo.Cal45Super:
   CraftingData: Ammo.AmmoBase_inline0
   crosshair: Crosshairs.None
   deprecated: False
-  displayName: LocKey#8100310
+  displayName: LocKey#AmmoExpanded-Cal45Super-Name
   dropObject: ammoDrop
   effectors: []
   enableNpcRPGData: False
@@ -38,7 +38,7 @@ Ammo.Cal45Super:
   isSingleInstance: True
   itemCategory: ItemCategory.General
   itemType: ItemType.Con_Ammo
-  localizedDescription: LocKey#8100584
+  localizedDescription: LocKey#AmmoExpanded-Cal45Super-Desc
   localizedName: ''
   mass: 1
   minigameInstance: minigame_v2.DefaultItemMinigame
@@ -96,8 +96,8 @@ Ammo.Cal45Super_AP:
   quality: Quality.Uncommon
   $base: Ammo.Cal45Super
   friendlyName: '45_super_armor_piercing'
-  displayName: LocKey#8100311
-  localizedDescription: LocKey#8100734
+  displayName: LocKey#AmmoExpanded-Cal45Super-AP-Name
+  localizedDescription: LocKey#AmmoExpanded-Cal45Super-AP-Desc
   tags:
     - !append-once DPAE_Cal45Super_AP
 
@@ -121,8 +121,8 @@ Ammo.Cal45Super_HP:
   quality: Quality.Uncommon
   $base: Ammo.Cal45Super
   friendlyName: '45_super_hollow_point'
-  displayName: LocKey#8100312
-  localizedDescription: LocKey#8100733
+  displayName: LocKey#AmmoExpanded-Cal45Super-HP-Name
+  localizedDescription: LocKey#AmmoExpanded-Cal45Super-HP-Desc
   tags:
     - !append-once DPAE_Cal45Super_HP
 
@@ -146,8 +146,8 @@ Ammo.Cal45Super_EMP:
   quality: Quality.Rare
   $base: Ammo.Cal45Super
   friendlyName: '45_super_emp'
-  displayName: LocKey#8100313
-  localizedDescription: LocKey#8100732
+  displayName: LocKey#AmmoExpanded-Cal45Super-EMP-Name
+  localizedDescription: LocKey#AmmoExpanded-Cal45Super-EMP-Desc
   tags:
     - !append-once DPAE_Cal45Super_EMP
 
@@ -171,8 +171,8 @@ Ammo.Cal45Super_INC:
   quality: Quality.Rare
   $base: Ammo.Cal45Super
   friendlyName: '45_super_incendiary'
-  displayName: LocKey#8100314
-  localizedDescription: LocKey#8100731
+  displayName: LocKey#AmmoExpanded-Cal45Super-INC-Name
+  localizedDescription: LocKey#AmmoExpanded-Cal45Super-INC-Desc
   tags:
     - !append-once DPAE_Cal45Super_INC
 
@@ -196,8 +196,8 @@ Ammo.Cal45Super_CHEM:
   quality: Quality.Rare
   $base: Ammo.Cal45Super
   friendlyName: '45_super_chemical'
-  displayName: LocKey#8100315
-  localizedDescription: LocKey#8100730
+  displayName: LocKey#AmmoExpanded-Cal45Super-CHEM-Name
+  localizedDescription: LocKey#AmmoExpanded-Cal45Super-CHEM-Desc
   tags:
     - !append-once DPAE_Cal45Super_CHEM
 
@@ -221,8 +221,8 @@ Ammo.Cal45Super_NL:
   quality: Quality.Uncommon
   $base: Ammo.Cal45Super
   friendlyName: '45_super_non-lethal'
-  displayName: LocKey#8100316
-  localizedDescription: LocKey#8100729
+  displayName: LocKey#AmmoExpanded-Cal45Super-NL-Name
+  localizedDescription: LocKey#AmmoExpanded-Cal45Super-NL-Desc
   tags:
     - !append-once DPAE_Cal45Super_NL
 
@@ -246,8 +246,8 @@ Ammo.Cal45Super_Snakeshot:
   quality: Quality.Uncommon
   $base: Ammo.Cal45Super
   friendlyName: '45_super_snakeshot'
-  displayName: LocKey#8100617
-  localizedDescription: LocKey#8100728
+  displayName: LocKey#AmmoExpanded-Cal45Super-Snakeshot-Name
+  localizedDescription: LocKey#AmmoExpanded-Cal45Super-Snakeshot-Desc
   tags:
     - !append-once DPAE_Cal45Super_Snakeshot
 
@@ -271,7 +271,7 @@ Ammo.Cal45Super_HE:
   quality: Quality.Epic
   $base: Ammo.Cal45Super
   friendlyName: '45_super_high_explosive'
-  displayName: LocKey#8100511
-  localizedDescription: LocKey#8100727
+  displayName: LocKey#AmmoExpanded-Cal45Super-HE-Name
+  localizedDescription: LocKey#AmmoExpanded-Cal45Super-HE-Desc
   tags:
     - !append-once DPAE_Cal45Super_HE

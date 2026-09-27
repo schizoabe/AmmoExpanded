@@ -1,56 +1,66 @@
 
-StreetKidStarting:
-  $type: StartingBuild
-  startingItems:
-    - item: Items.money
-      quantity: 300
-    - item: Items.FirstAidWhiffV0
-      quantity: 1
-    - item: Items.BonesMcCoy70V0
-      quantity: 1
-    - item: Items.GrenadeFragRegular
-      quantity: 1
-    - item: Items.GrenadeEMPRegular
-      quantity: 1
-    - item: Items.GrenadeFlashRegular
-      quantity: 1
+ProgressionBuilds.StreetKidStarting_inline1:   # Ammo.RecipeHandgunAmmo
+  item: ""
+  quantity: 0
+ProgressionBuilds.StreetKidStarting_inline2:   # Ammo.RecipeShotgunAmmo
+  item: ""
+  quantity: 0
+ProgressionBuilds.StreetKidStarting_inline3:   # Ammo.RecipeRifleAmmo
+  item: ""
+  quantity: 0
+ProgressionBuilds.StreetKidStarting_inline4:   # Ammo.RecipeSniperRifleAmmo
+  item: ""
+  quantity: 0
+ProgressionBuilds.StreetKidStarting_inline10:  # Ammo.HandgunAmmo (600)
+  item: ""
+  quantity: 0
+ProgressionBuilds.StreetKidStarting_inline11:  # Ammo.RifleAmmo (600)
+  item: ""
+  quantity: 0
+ProgressionBuilds.StreetKidStarting_inline12:  # Ammo.ShotgunAmmo (120)
+  item: ""
+  quantity: 0
 
-CorporateStarting:
-  $type: StartingBuild
-  startingItems:
-    - item: Items.money
-      quantity: 121994
-    - item: Items.FirstAidWhiffV0
-      quantity: 1
-    - item: Items.BonesMcCoy70V0
-      quantity: 1
-    - item: Items.GrenadeFragRegular
-      quantity: 1
-    - item: Items.GrenadeEMPRegular
-      quantity: 1
-    - item: Items.GrenadeFlashRegular
-      quantity: 1
+ProgressionBuilds.CorporateStarting_inline1:   # Ammo.RecipeHandgunAmmo
+  item: ""
+  quantity: 0
+ProgressionBuilds.CorporateStarting_inline2:   # Ammo.RecipeShotgunAmmo
+  item: ""
+  quantity: 0
+ProgressionBuilds.CorporateStarting_inline3:   # Ammo.RecipeRifleAmmo
+  item: ""
+  quantity: 0
+ProgressionBuilds.CorporateStarting_inline4:   # Ammo.RecipeSniperRifleAmmo
+  item: ""
+  quantity: 0
+ProgressionBuilds.CorporateStarting_inline10:  # Ammo.HandgunAmmo (600)
+  item: ""
+  quantity: 0
+ProgressionBuilds.CorporateStarting_inline11:  # Ammo.RifleAmmo (600)
+  item: ""
+  quantity: 0
+ProgressionBuilds.CorporateStarting_inline12:  # Ammo.ShotgunAmmo (120)
+  item: ""
+  quantity: 0
 
-NomadStarting:
-  $type: StartingBuild
-  startingItems:
-    - item: Items.money
-      quantity: 300
-    - item: Items.NomadsDrink1
-      quantity: 3
-    - item: Items.NomadsFood1
-      quantity: 3
-    - item: Items.CommonMaterial1
-      quantity: 10
-    - item: Items.UncommonMaterial1
-      quantity: 5
-    - item: Items.FirstAidWhiffV0
-      quantity: 1
-    - item: Items.BonesMcCoy70V0
-      quantity: 1
-    - item: Items.GrenadeFragRegular
-      quantity: 1
-    - item: Items.GrenadeEMPRegular
-      quantity: 1
-    - item: Items.GrenadeFlashRegular
-      quantity: 1
+ProgressionBuilds.NomadStarting_inline10:  # Ammo.RecipeHandgunAmmo
+  item: ""
+  quantity: 0
+ProgressionBuilds.NomadStarting_inline11:  # Ammo.RecipeShotgunAmmo
+  item: ""
+  quantity: 0
+ProgressionBuilds.NomadStarting_inline12:  # Ammo.RecipeRifleAmmo
+  item: ""
+  quantity: 0
+ProgressionBuilds.NomadStarting_inline13:  # Ammo.RecipeSniperRifleAmmo
+  item: ""
+  quantity: 0
+ProgressionBuilds.NomadStarting_inline14:  # was Ammo.HandgunAmmo (600)
+  item: "Ammo.Cal12p3x41UdaR"
+  quantity: 120
+ProgressionBuilds.NomadStarting_inline15:  # Ammo.RifleAmmo (600)
+  item: ""
+  quantity: 0
+ProgressionBuilds.NomadStarting_inline16:  # Ammo.ShotgunAmmo (120)
+  item: ""
+  quantity: 0

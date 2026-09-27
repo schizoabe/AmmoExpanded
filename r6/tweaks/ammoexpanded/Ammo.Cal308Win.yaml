@@ -17,7 +17,7 @@ Ammo.Cal308Win:
   CraftingData: Ammo.AmmoBase_inline0
   crosshair: Crosshairs.None
   deprecated: False
-  displayName: LocKey#8100853
+  displayName: LocKey#AmmoExpanded-Cal308Win-Name
   dropObject: ammoDrop
   effectors: []
   enableNpcRPGData: False
@@ -39,7 +39,7 @@ Ammo.Cal308Win:
   isSingleInstance: True
   itemCategory: ItemCategory.General
   itemType: ItemType.Con_Ammo
-  localizedDescription: LocKey#8100862
+  localizedDescription: LocKey#AmmoExpanded-Cal308Win-Desc
   localizedName: ''
   mass: 1
   minigameInstance: minigame_v2.DefaultItemMinigame
@@ -96,8 +96,8 @@ Ammo.Cal308Win_AP:
   quality: Quality.Uncommon
   $base: Ammo.Cal308Win
   friendlyName: '308_winchester_armor_piercing'
-  displayName: LocKey#8100854
-  localizedDescription: LocKey#8100863
+  displayName: LocKey#AmmoExpanded-Cal308Win-AP-Name
+  localizedDescription: LocKey#AmmoExpanded-Cal308Win-AP-Desc
   tags:
     - !append-once DPAE_Cal308Win_AP
 
@@ -120,8 +120,8 @@ Ammo.Cal308Win_HP:
   quality: Quality.Uncommon
   $base: Ammo.Cal308Win
   friendlyName: '308_winchester_hollow_point'
-  displayName: LocKey#8100855
-  localizedDescription: LocKey#8100864
+  displayName: LocKey#AmmoExpanded-Cal308Win-HP-Name
+  localizedDescription: LocKey#AmmoExpanded-Cal308Win-HP-Desc
   tags:
     - !append-once DPAE_Cal308Win_HP
 
@@ -144,8 +144,8 @@ Ammo.Cal308Win_NL:
   quality: Quality.Uncommon
   $base: Ammo.Cal308Win
   friendlyName: '308_winchester_non_lethal'
-  displayName: LocKey#8100859
-  localizedDescription: LocKey#8100868
+  displayName: LocKey#AmmoExpanded-Cal308Win-NL-Name
+  localizedDescription: LocKey#AmmoExpanded-Cal308Win-NL-Desc
   tags:
     - !append-once DPAE_Cal308Win_NL
 
@@ -168,8 +168,8 @@ Ammo.Cal308Win_EMP:
   quality: Quality.Rare
   $base: Ammo.Cal308Win
   friendlyName: '308_winchester_emp'
-  displayName: LocKey#8100856
-  localizedDescription: LocKey#8100865
+  displayName: LocKey#AmmoExpanded-Cal308Win-EMP-Name
+  localizedDescription: LocKey#AmmoExpanded-Cal308Win-EMP-Desc
   tags:
     - !append-once DPAE_Cal308Win_EMP
 
@@ -192,8 +192,8 @@ Ammo.Cal308Win_INC:
   quality: Quality.Rare
   $base: Ammo.Cal308Win
   friendlyName: '308_winchester_incendiary'
-  displayName: LocKey#8100857
-  localizedDescription: LocKey#8100866
+  displayName: LocKey#AmmoExpanded-Cal308Win-INC-Name
+  localizedDescription: LocKey#AmmoExpanded-Cal308Win-INC-Desc
   tags:
     - !append-once DPAE_Cal308Win_INC
 
@@ -216,8 +216,8 @@ Ammo.Cal308Win_CHEM:
   quality: Quality.Rare
   $base: Ammo.Cal308Win
   friendlyName: '308_winchester_chemical'
-  displayName: LocKey#8100858
-  localizedDescription: LocKey#8100867
+  displayName: LocKey#AmmoExpanded-Cal308Win-CHEM-Name
+  localizedDescription: LocKey#AmmoExpanded-Cal308Win-CHEM-Desc
   tags:
     - !append-once DPAE_Cal308Win_CHEM
 
@@ -240,7 +240,7 @@ Ammo.Cal308Win_HE:
   quality: Quality.Epic
   $base: Ammo.Cal308Win
   friendlyName: '308_winchester_high_explosive'
-  displayName: LocKey#8100860
-  localizedDescription: LocKey#8100869
+  displayName: LocKey#AmmoExpanded-Cal308Win-HE-Name
+  localizedDescription: LocKey#AmmoExpanded-Cal308Win-HE-Desc
   tags:
     - !append-once DPAE_Cal308Win_HE

@@ -16,7 +16,7 @@ Ammo.Cal50AE:
   CraftingData: Ammo.AmmoBase_inline0
   crosshair: Crosshairs.None
   deprecated: False
-  displayName: LocKey#8100331
+  displayName: LocKey#AmmoExpanded-Cal50AE-Name
   dropObject: ammoDrop
   effectors: []
   enableNpcRPGData: False
@@ -38,7 +38,7 @@ Ammo.Cal50AE:
   isSingleInstance: True
   itemCategory: ItemCategory.General
   itemType: ItemType.Con_Ammo
-  localizedDescription: LocKey#8100589
+  localizedDescription: LocKey#AmmoExpanded-Cal50AE-Desc
   localizedName: ''
   mass: 1
   minigameInstance: minigame_v2.DefaultItemMinigame
@@ -96,8 +96,8 @@ Ammo.Cal50AE_AP:
   quality: Quality.Uncommon
   $base: Ammo.Cal50AE
   friendlyName: '50_ae_armor_piercing'
-  displayName: LocKey#8100332
-  localizedDescription: LocKey#8100759
+  displayName: LocKey#AmmoExpanded-Cal50AE-AP-Name
+  localizedDescription: LocKey#AmmoExpanded-Cal50AE-AP-Desc
   tags:
     - !append-once DPAE_Cal50AE_AP
 
@@ -121,8 +121,8 @@ Ammo.Cal50AE_HP:
   quality: Quality.Uncommon
   $base: Ammo.Cal50AE
   friendlyName: '50_ae_hollow_point'
-  displayName: LocKey#8100333
-  localizedDescription: LocKey#8100758
+  displayName: LocKey#AmmoExpanded-Cal50AE-HP-Name
+  localizedDescription: LocKey#AmmoExpanded-Cal50AE-HP-Desc
   tags:
     - !append-once DPAE_Cal50AE_HP
 
@@ -146,8 +146,8 @@ Ammo.Cal50AE_EMP:
   quality: Quality.Rare
   $base: Ammo.Cal50AE
   friendlyName: '50_ae_emp'
-  displayName: LocKey#8100334
-  localizedDescription: LocKey#8100757
+  displayName: LocKey#AmmoExpanded-Cal50AE-EMP-Name
+  localizedDescription: LocKey#AmmoExpanded-Cal50AE-EMP-Desc
   tags:
     - !append-once DPAE_Cal50AE_EMP
 
@@ -171,8 +171,8 @@ Ammo.Cal50AE_INC:
   quality: Quality.Rare
   $base: Ammo.Cal50AE
   friendlyName: '50_ae_incendiary'
-  displayName: LocKey#8100335
-  localizedDescription: LocKey#8100756
+  displayName: LocKey#AmmoExpanded-Cal50AE-INC-Name
+  localizedDescription: LocKey#AmmoExpanded-Cal50AE-INC-Desc
   tags:
     - !append-once DPAE_Cal50AE_INC
 
@@ -196,8 +196,8 @@ Ammo.Cal50AE_CHEM:
   quality: Quality.Rare
   $base: Ammo.Cal50AE
   friendlyName: '50_ae_chemical'
-  displayName: LocKey#8100336
-  localizedDescription: LocKey#8100755
+  displayName: LocKey#AmmoExpanded-Cal50AE-CHEM-Name
+  localizedDescription: LocKey#AmmoExpanded-Cal50AE-CHEM-Desc
   tags:
     - !append-once DPAE_Cal50AE_CHEM
 
@@ -221,8 +221,8 @@ Ammo.Cal50AE_NL:
   quality: Quality.Uncommon
   $base: Ammo.Cal50AE
   friendlyName: '50_ae_non-lethal'
-  displayName: LocKey#8100337
-  localizedDescription: LocKey#8100754
+  displayName: LocKey#AmmoExpanded-Cal50AE-NL-Name
+  localizedDescription: LocKey#AmmoExpanded-Cal50AE-NL-Desc
   tags:
     - !append-once DPAE_Cal50AE_NL
 
@@ -246,7 +246,7 @@ Ammo.Cal50AE_HE:
   quality: Quality.Epic
   $base: Ammo.Cal50AE
   friendlyName: '50_ae_high_explosive'
-  displayName: LocKey#8100562
-  localizedDescription: LocKey#8100753
+  displayName: LocKey#AmmoExpanded-Cal50AE-HE-Name
+  localizedDescription: LocKey#AmmoExpanded-Cal50AE-HE-Desc
   tags:
     - !append-once DPAE_Cal50AE_HE

@@ -17,7 +17,7 @@ Ammo.Cal50APHETIL:
   CraftingData: Ammo.AmmoBase_inline0
   crosshair: Crosshairs.None
   deprecated: False
-  displayName: LocKey#8100620
+  displayName: LocKey#AmmoExpanded-Cal50APHETIL-Name
   dropObject: ammoDrop
   effectors: []
   enableNpcRPGData: False
@@ -39,7 +39,7 @@ Ammo.Cal50APHETIL:
   isSingleInstance: True
   itemCategory: ItemCategory.General
   itemType: ItemType.Con_Ammo
-  localizedDescription: LocKey#8100621
+  localizedDescription: LocKey#AmmoExpanded-Cal50APHETIL-Desc
   localizedName: ''
   mass: 1
   minigameInstance: minigame_v2.DefaultItemMinigame

@@ -16,7 +16,7 @@ Ammo.Cal10GaugeBuck:
   CraftingData: Ammo.AmmoBase_inline0
   crosshair: Crosshairs.None
   deprecated: False
-  displayName: LocKey#8100356
+  displayName: LocKey#AmmoExpanded-Cal10GaugeBuck-Name
   dropObject: ammoDrop
   effectors: []
   enableNpcRPGData: False
@@ -38,7 +38,7 @@ Ammo.Cal10GaugeBuck:
   isSingleInstance: True
   itemCategory: ItemCategory.General
   itemType: ItemType.Con_Ammo
-  localizedDescription: LocKey#8100564
+  localizedDescription: LocKey#AmmoExpanded-Cal10GaugeBuck-Desc
   localizedName: ''
   mass: 1
   minigameInstance: minigame_v2.DefaultItemMinigame
@@ -96,8 +96,8 @@ Ammo.Cal10GaugeBuck_Slug:
   quality: Quality.Uncommon
   $base: Ammo.Cal10GaugeBuck
   friendlyName: '10_gauge_buckshot_slug'
-  displayName: LocKey#8100357
-  localizedDescription: LocKey#8100650
+  displayName: LocKey#AmmoExpanded-Cal10GaugeBuck-Slug-Name
+  localizedDescription: LocKey#AmmoExpanded-Cal10GaugeBuck-Slug-Desc
   tags:
     - !append-once DPAE_Cal10GaugeBuck_Slug
 
@@ -121,8 +121,8 @@ Ammo.Cal10GaugeBuck_INC:
   quality: Quality.Rare
   $base: Ammo.Cal10GaugeBuck
   friendlyName: '10_gauge_buckshot_incendiary'
-  displayName: LocKey#8100358
-  localizedDescription: LocKey#8100649
+  displayName: LocKey#AmmoExpanded-Cal10GaugeBuck-INC-Name
+  localizedDescription: LocKey#AmmoExpanded-Cal10GaugeBuck-INC-Desc
   tags:
     - !append-once DPAE_Cal10GaugeBuck_INC
 
@@ -146,8 +146,8 @@ Ammo.Cal10GaugeBuck_HE:
   quality: Quality.Epic
   $base: Ammo.Cal10GaugeBuck
   friendlyName: '10_gauge_buckshot_high_explosive'
-  displayName: LocKey#8100563
-  localizedDescription: LocKey#8100648
+  displayName: LocKey#AmmoExpanded-Cal10GaugeBuck-HE-Name
+  localizedDescription: LocKey#AmmoExpanded-Cal10GaugeBuck-HE-Desc
   tags:
     - !append-once DPAE_Cal10GaugeBuck_HE
 
@@ -163,7 +163,7 @@ Ammo.Cal10GaugeBuck_Dezerter_HE:
   quality: Quality.Legendary
   $base: Ammo.Cal10GaugeBuck_HE
   friendlyName: '10_gauge_buckshot_dezerter_signature'
-  displayName: LocKey#8100646
-  localizedDescription: LocKey#8100647
+  displayName: LocKey#AmmoExpanded-Cal10GaugeBuck-HE-SignatureName
+  localizedDescription: LocKey#AmmoExpanded-Cal10GaugeBuck-HE-SignatureDesc
   tags:
     - !append-once DPAE_Cal10GaugeBuck_Dezerter_HE

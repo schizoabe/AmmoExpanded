@@ -17,7 +17,7 @@ Ammo.Cal3x10FlechCluster:
   CraftingData: Ammo.AmmoBase_inline0
   crosshair: Crosshairs.None
   deprecated: False
-  displayName: LocKey#8100422
+  displayName: LocKey#AmmoExpanded-Cal3x10FlechCluster-Name
   dropObject: ammoDrop
   effectors: []
   enableNpcRPGData: False
@@ -39,7 +39,7 @@ Ammo.Cal3x10FlechCluster:
   isSingleInstance: True
   itemCategory: ItemCategory.General
   itemType: ItemType.Con_Ammo
-  localizedDescription: LocKey#8100582
+  localizedDescription: LocKey#AmmoExpanded-Cal3x10FlechCluster-Desc
   localizedName: ''
   mass: 1
   minigameInstance: minigame_v2.DefaultItemMinigame

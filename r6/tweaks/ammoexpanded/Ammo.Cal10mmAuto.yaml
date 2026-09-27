@@ -16,7 +16,7 @@ Ammo.Cal10mmAuto:
   CraftingData: Ammo.AmmoBase_inline0
   crosshair: Crosshairs.None
   deprecated: False
-  displayName: LocKey#8100368
+  displayName: LocKey#AmmoExpanded-Cal10mmAuto-Name
   dropObject: ammoDrop
   effectors: []
   enableNpcRPGData: False
@@ -38,7 +38,7 @@ Ammo.Cal10mmAuto:
   isSingleInstance: True
   itemCategory: ItemCategory.General
   itemType: ItemType.Con_Ammo
-  localizedDescription: LocKey#8100566
+  localizedDescription: LocKey#AmmoExpanded-Cal10mmAuto-Desc
   localizedName: ''
   mass: 1
   minigameInstance: minigame_v2.DefaultItemMinigame
@@ -96,8 +96,8 @@ Ammo.Cal10mmAuto_AP:
   quality: Quality.Uncommon
   $base: Ammo.Cal10mmAuto
   friendlyName: '10mm_auto_armor_piercing'
-  displayName: LocKey#8100369
-  localizedDescription: LocKey#8100660
+  displayName: LocKey#AmmoExpanded-Cal10mmAuto-AP-Name
+  localizedDescription: LocKey#AmmoExpanded-Cal10mmAuto-AP-Desc
   tags:
     - !append-once DPAE_Cal10mmAuto_AP
 
@@ -121,8 +121,8 @@ Ammo.Cal10mmAuto_HP:
   quality: Quality.Uncommon
   $base: Ammo.Cal10mmAuto
   friendlyName: '10mm_auto_hollow_point'
-  displayName: LocKey#8100370
-  localizedDescription: LocKey#8100659
+  displayName: LocKey#AmmoExpanded-Cal10mmAuto-HP-Name
+  localizedDescription: LocKey#AmmoExpanded-Cal10mmAuto-HP-Desc
   tags:
     - !append-once DPAE_Cal10mmAuto_HP
 
@@ -146,8 +146,8 @@ Ammo.Cal10mmAuto_EMP:
   quality: Quality.Rare
   $base: Ammo.Cal10mmAuto
   friendlyName: '10mm_auto_emp'
-  displayName: LocKey#8100371
-  localizedDescription: LocKey#8100658
+  displayName: LocKey#AmmoExpanded-Cal10mmAuto-EMP-Name
+  localizedDescription: LocKey#AmmoExpanded-Cal10mmAuto-EMP-Desc
   tags:
     - !append-once DPAE_Cal10mmAuto_EMP
 
@@ -171,8 +171,8 @@ Ammo.Cal10mmAuto_INC:
   quality: Quality.Rare
   $base: Ammo.Cal10mmAuto
   friendlyName: '10mm_auto_incendiary'
-  displayName: LocKey#8100372
-  localizedDescription: LocKey#8100657
+  displayName: LocKey#AmmoExpanded-Cal10mmAuto-INC-Name
+  localizedDescription: LocKey#AmmoExpanded-Cal10mmAuto-INC-Desc
   tags:
     - !append-once DPAE_Cal10mmAuto_INC
 
@@ -196,8 +196,8 @@ Ammo.Cal10mmAuto_CHEM:
   quality: Quality.Rare
   $base: Ammo.Cal10mmAuto
   friendlyName: '10mm_auto_chemical'
-  displayName: LocKey#8100373
-  localizedDescription: LocKey#8100656
+  displayName: LocKey#AmmoExpanded-Cal10mmAuto-CHEM-Name
+  localizedDescription: LocKey#AmmoExpanded-Cal10mmAuto-CHEM-Desc
   tags:
     - !append-once DPAE_Cal10mmAuto_CHEM
 
@@ -221,8 +221,8 @@ Ammo.Cal10mmAuto_NL:
   quality: Quality.Uncommon
   $base: Ammo.Cal10mmAuto
   friendlyName: '10mm_auto_non-lethal'
-  displayName: LocKey#8100374
-  localizedDescription: LocKey#8100655
+  displayName: LocKey#AmmoExpanded-Cal10mmAuto-NL-Name
+  localizedDescription: LocKey#AmmoExpanded-Cal10mmAuto-NL-Desc
   tags:
     - !append-once DPAE_Cal10mmAuto_NL
 
@@ -246,7 +246,7 @@ Ammo.Cal10mmAuto_HE:
   quality: Quality.Epic
   $base: Ammo.Cal10mmAuto
   friendlyName: '10mm_auto_high_explosive'
-  displayName: LocKey#8100628
-  localizedDescription: LocKey#8100654
+  displayName: LocKey#AmmoExpanded-Cal10mmAuto-HE-Name
+  localizedDescription: LocKey#AmmoExpanded-Cal10mmAuto-HE-Desc
   tags:
     - !append-once DPAE_Cal10mmAuto_HE

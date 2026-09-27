@@ -13,6 +13,8 @@
 @addField(PlayerPuppet) public let dpae_pending_zero_weapon: ItemID;
 @addField(PlayerPuppet) public let dpae_pending_zero_caliber: TweakDBID;
 
+@addField(PlayerPuppet) public let dpae_pending_zero_chamber: Int32;
+
 @addField(PlayerPuppet) public let dpae_pending_restore_weapon: ItemID;
 
 @addField(PlayerPuppet) public let dpae_caliber: TweakDBID;
@@ -57,16 +59,28 @@
 
 @addField(PlayerPuppet) public let dpae_pending_nl: Bool;
 
+@addField(PlayerPuppet) public let dpae_pending_weapon: ItemID;
+
+@addField(PlayerPuppet) public let dpae_shot_caliber_item: ItemID;
+@addField(PlayerPuppet) public let dpae_shot_caliber_id: TweakDBID;
+
 @addField(PlayerPuppet) public let dpae_remembered_calibers: array<TweakDBID>;
 @addField(PlayerPuppet) public let dpae_remembered_ammo:     array<TweakDBID>;
 
 @addField(PlayerPuppet) public let dpae_starter_granted_calibers: array<TweakDBID>;
 
-@addField(PlayerPuppet) public let dpae_pending_internal_grant_qty: Int32;
+@addField(PlayerPuppet) public let dpae_pending_grant_items: array<TweakDBID>;
+@addField(PlayerPuppet) public let dpae_pending_grant_qtys: array<Int32>;
 
 @addMethod(PlayerPuppet)
 public func DPAE_GiveAmmoInternal(itemTDBID: TweakDBID, qty: Int32) -> Void {
-  this.dpae_pending_internal_grant_qty += qty;
+  let idx = ArrayFindFirst(this.dpae_pending_grant_items, itemTDBID);
+  if idx >= 0 {
+    this.dpae_pending_grant_qtys[idx] += qty;
+  } else {
+    ArrayPush(this.dpae_pending_grant_items, itemTDBID);
+    ArrayPush(this.dpae_pending_grant_qtys, qty);
+  }
   GameInstance.GetTransactionSystem(this.GetGame()).GiveItem(this, ItemID.FromTDBID(itemTDBID), qty);
 }
 
@@ -127,7 +141,9 @@ private func DPAE_FindKnownWeaponIndex(itemID: ItemID) -> Int32 {
 public func DPAE_RecordWeaponState(itemID: ItemID, ammoID: TweakDBID, chamberCount: Uint32) -> Void {
   if !ItemID.IsValid(itemID) { return; }
   let idx = this.DPAE_FindKnownWeaponIndex(itemID);
+  let chamberChanged = true;
   if idx >= 0 {
+    chamberChanged = this.dpae_known_weapon_chamber[idx] != chamberCount;
     this.dpae_known_weapon_ammo[idx]    = ammoID;
     this.dpae_known_weapon_chamber[idx] = chamberCount;
   } else {
@@ -135,6 +151,50 @@ public func DPAE_RecordWeaponState(itemID: ItemID, ammoID: TweakDBID, chamberCou
     ArrayPush(this.dpae_known_weapon_ammo, ammoID);
     ArrayPush(this.dpae_known_weapon_chamber, chamberCount);
   }
+
+  if chamberChanged {
+    GameInstance.GetQuestsSystem(this.GetGame()).SetFactStr(DPAE_ChamberFactName(itemID), Cast<Int32>(chamberCount));
+  }
+}
+
+func DPAE_ChamberFactName(itemID: ItemID) -> String {
+  return "DPAE_Chamber_" + ToString(ItemID.GetCombinedHash(itemID));
+}
+
+@addMethod(PlayerPuppet)
+public func DPAE_GetSavedChamber(itemID: ItemID) -> Int32 {
+  if !ItemID.IsValid(itemID) || this.DPAE_FindKnownWeaponIndex(itemID) >= 0 { return 0; }
+  return GameInstance.GetQuestsSystem(this.GetGame()).GetFactStr(DPAE_ChamberFactName(itemID));
+}
+
+@addMethod(PlayerPuppet)
+public func DPAE_RestoreSavedChamber(weaponItemID: ItemID, savedChamber: Int32) -> Void {
+  if savedChamber <= 0 || !ItemID.IsValid(weaponItemID) { return; }
+  if !TDBID.IsValid(this.dpae_active_ammo) || this.dpae_active_ammo_weapon != weaponItemID { return; }
+  let ts = GameInstance.GetTransactionSystem(this.GetGame());
+  let weaponObj = ts.GetItemInSlot(this, t"AttachmentSlots.WeaponRight") as WeaponObject;
+  if !IsDefined(weaponObj) || weaponObj.GetItemID() != weaponItemID {
+    weaponObj = ts.GetItemInSlot(this, t"AttachmentSlots.WeaponLeft") as WeaponObject;
+  }
+  if !IsDefined(weaponObj) || weaponObj.GetItemID() != weaponItemID { return; }
+
+  let count = savedChamber;
+  let cap = Cast<Int32>(WeaponObject.GetMagazineCapacity(weaponObj));
+  if cap > 0 && count > cap { count = cap; }
+  let owned = ts.GetItemQuantity(this, ItemID.FromTDBID(this.dpae_active_ammo));
+  if count > owned { count = owned; }
+  if count <= 0 { return; }
+
+  if DesoPierreAmmoExpandedSettings.DebugAmmoLogging() {
+    DPAE_LogDebug("[DPAE_LOADFIX] restore chamber from save: saved=" + ToString(savedChamber)
+      + " restored=" + ToString(count) + " ammo=" + TDBID.ToStringDEBUG(this.dpae_active_ammo));
+  }
+  this.dpae_pending_restore_weapon = weaponItemID;
+  let restoreEvt = new SetAmmoCountEvent();
+  restoreEvt.ammoTypeID = WeaponObject.GetAmmoType(weaponObj);
+  restoreEvt.count      = Cast<Uint32>(count);
+  GameInstance.GetDelaySystem(this.GetGame()).DelayEvent(weaponObj, restoreEvt, 0.05, false);
+  this.DPAE_RecordWeaponState(weaponItemID, this.dpae_active_ammo, Cast<Uint32>(count));
 }
 
 @addMethod(PlayerPuppet)
@@ -236,6 +296,8 @@ public func DPAE_GetSavedVariant(isRightSlot: Bool, caliberTDBID: TweakDBID) -> 
 
 @addMethod(PlayerPuppet)
 public func DPAE_HasCaliberStarterBeenGranted(caliberID: TweakDBID) -> Bool {
+
+  if GameInstance.GetQuestsSystem(this.GetGame()).GetFactStr(DPAE_StarterFactName(caliberID)) > 0 { return true; }
   let i = 0;
   while i < ArraySize(this.dpae_starter_granted_calibers) {
     if Equals(this.dpae_starter_granted_calibers[i], caliberID) { return true; }
@@ -248,5 +310,10 @@ public func DPAE_HasCaliberStarterBeenGranted(caliberID: TweakDBID) -> Bool {
 public func DPAE_GrantCaliberStarter(caliberID: TweakDBID, grantID: TweakDBID) -> Void {
   this.DPAE_GiveAmmoInternal(grantID, this.DPAE_GetEquippedMagazineCapacity());
   ArrayPush(this.dpae_starter_granted_calibers, caliberID);
+  GameInstance.GetQuestsSystem(this.GetGame()).SetFactStr(DPAE_StarterFactName(caliberID), 1);
+}
+
+func DPAE_StarterFactName(caliberID: TweakDBID) -> String {
+  return "DPAE_StarterGranted_" + ToString(TDBID.ToNumber(caliberID));
 }
 

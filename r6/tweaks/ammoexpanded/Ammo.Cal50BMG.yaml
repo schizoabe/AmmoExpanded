@@ -16,7 +16,7 @@ Ammo.Cal50BMG:
   CraftingData: Ammo.AmmoBase_inline0
   crosshair: Crosshairs.None
   deprecated: False
-  displayName: LocKey#8100345
+  displayName: LocKey#AmmoExpanded-Cal50BMG-Name
   dropObject: ammoDrop
   effectors: []
   enableNpcRPGData: False
@@ -38,7 +38,7 @@ Ammo.Cal50BMG:
   isSingleInstance: True
   itemCategory: ItemCategory.General
   itemType: ItemType.Con_Ammo
-  localizedDescription: LocKey#8100590
+  localizedDescription: LocKey#AmmoExpanded-Cal50BMG-Desc
   localizedName: ''
   mass: 1
   minigameInstance: minigame_v2.DefaultItemMinigame
@@ -96,8 +96,8 @@ Ammo.Cal50BMG_AP:
   quality: Quality.Uncommon
   $base: Ammo.Cal50BMG
   friendlyName: '50_bmg_nusa_armor_piercing'
-  displayName: LocKey#8100346
-  localizedDescription: LocKey#8100766
+  displayName: LocKey#AmmoExpanded-Cal50BMG-AP-Name
+  localizedDescription: LocKey#AmmoExpanded-Cal50BMG-AP-Desc
   tags:
     - !append-once DPAE_Cal50BMG_AP
 
@@ -121,8 +121,8 @@ Ammo.Cal50BMG_HP:
   quality: Quality.Uncommon
   $base: Ammo.Cal50BMG
   friendlyName: '50_bmg_nusa_hollow_point'
-  displayName: LocKey#8100347
-  localizedDescription: LocKey#8100765
+  displayName: LocKey#AmmoExpanded-Cal50BMG-HP-Name
+  localizedDescription: LocKey#AmmoExpanded-Cal50BMG-HP-Desc
   tags:
     - !append-once DPAE_Cal50BMG_HP
 
@@ -146,8 +146,8 @@ Ammo.Cal50BMG_EMP:
   quality: Quality.Rare
   $base: Ammo.Cal50BMG
   friendlyName: '50_bmg_nusa_emp'
-  displayName: LocKey#8100348
-  localizedDescription: LocKey#8100764
+  displayName: LocKey#AmmoExpanded-Cal50BMG-EMP-Name
+  localizedDescription: LocKey#AmmoExpanded-Cal50BMG-EMP-Desc
   tags:
     - !append-once DPAE_Cal50BMG_EMP
 
@@ -171,8 +171,8 @@ Ammo.Cal50BMG_INC:
   quality: Quality.Rare
   $base: Ammo.Cal50BMG
   friendlyName: '50_bmg_nusa_incendiary'
-  displayName: LocKey#8100349
-  localizedDescription: LocKey#8100763
+  displayName: LocKey#AmmoExpanded-Cal50BMG-INC-Name
+  localizedDescription: LocKey#AmmoExpanded-Cal50BMG-INC-Desc
   tags:
     - !append-once DPAE_Cal50BMG_INC
 
@@ -196,8 +196,8 @@ Ammo.Cal50BMG_CHEM:
   quality: Quality.Rare
   $base: Ammo.Cal50BMG
   friendlyName: '50_bmg_nusa_chemical'
-  displayName: LocKey#8100350
-  localizedDescription: LocKey#8100762
+  displayName: LocKey#AmmoExpanded-Cal50BMG-CHEM-Name
+  localizedDescription: LocKey#AmmoExpanded-Cal50BMG-CHEM-Desc
   tags:
     - !append-once DPAE_Cal50BMG_CHEM
 
@@ -221,8 +221,8 @@ Ammo.Cal50BMG_NL:
   quality: Quality.Uncommon
   $base: Ammo.Cal50BMG
   friendlyName: '50_bmg_nusa_non-lethal'
-  displayName: LocKey#8100351
-  localizedDescription: LocKey#8100761
+  displayName: LocKey#AmmoExpanded-Cal50BMG-NL-Name
+  localizedDescription: LocKey#AmmoExpanded-Cal50BMG-NL-Desc
   tags:
     - !append-once DPAE_Cal50BMG_NL
 
@@ -246,7 +246,7 @@ Ammo.Cal50BMG_HE:
   quality: Quality.Epic
   $base: Ammo.Cal50BMG
   friendlyName: '50_bmg_nusa_high_explosive'
-  displayName: LocKey#8100634
-  localizedDescription: LocKey#8100760
+  displayName: LocKey#AmmoExpanded-Cal50BMG-HE-Name
+  localizedDescription: LocKey#AmmoExpanded-Cal50BMG-HE-Desc
   tags:
     - !append-once DPAE_Cal50BMG_HE

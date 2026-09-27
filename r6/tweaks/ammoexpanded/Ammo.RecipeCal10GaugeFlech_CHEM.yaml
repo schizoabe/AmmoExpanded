@@ -17,7 +17,7 @@ Ammo.RecipeCal10GaugeFlech_CHEM:
   craftingResult: Ammo.RecipeCal10GaugeFlech_CHEM_inline0
   crosshair: Crosshairs.None
   deprecated: False
-  displayName: LocKey#8100364
+  displayName: LocKey#AmmoExpanded-Cal10GaugeFlech-CHEM-Name
   dropObject: defaultItemDrop
   effectors: []
   enableNpcRPGData: False

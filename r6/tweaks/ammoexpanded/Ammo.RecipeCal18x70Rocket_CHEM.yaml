@@ -17,7 +17,7 @@ Ammo.RecipeCal18x70Rocket_CHEM:
   craftingResult: Ammo.RecipeCal18x70Rocket_CHEM_inline0
   crosshair: Crosshairs.None
   deprecated: False
-  displayName: LocKey#8100612
+  displayName: LocKey#AmmoExpanded-Cal18x70Rocket-CHEM-Name
   dropObject: defaultItemDrop
   effectors: []
   enableNpcRPGData: False

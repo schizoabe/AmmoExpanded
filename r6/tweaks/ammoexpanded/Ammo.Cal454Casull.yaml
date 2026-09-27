@@ -16,7 +16,7 @@ Ammo.Cal454Casull:
   CraftingData: Ammo.AmmoBase_inline0
   crosshair: Crosshairs.None
   deprecated: False
-  displayName: LocKey#8100324
+  displayName: LocKey#AmmoExpanded-Cal454Casull-Name
   dropObject: ammoDrop
   effectors: []
   enableNpcRPGData: False
@@ -38,7 +38,7 @@ Ammo.Cal454Casull:
   isSingleInstance: True
   itemCategory: ItemCategory.General
   itemType: ItemType.Con_Ammo
-  localizedDescription: LocKey#8100583
+  localizedDescription: LocKey#AmmoExpanded-Cal454Casull-Desc
   localizedName: ''
   mass: 1
   minigameInstance: minigame_v2.DefaultItemMinigame
@@ -96,8 +96,8 @@ Ammo.Cal454Casull_AP:
   quality: Quality.Uncommon
   $base: Ammo.Cal454Casull
   friendlyName: '454_casull_armor_piercing'
-  displayName: LocKey#8100325
-  localizedDescription: LocKey#8100726
+  displayName: LocKey#AmmoExpanded-Cal454Casull-AP-Name
+  localizedDescription: LocKey#AmmoExpanded-Cal454Casull-AP-Desc
   tags:
     - !append-once DPAE_Cal454Casull_AP
 
@@ -121,8 +121,8 @@ Ammo.Cal454Casull_HP:
   quality: Quality.Uncommon
   $base: Ammo.Cal454Casull
   friendlyName: '454_casull_hollow_point'
-  displayName: LocKey#8100326
-  localizedDescription: LocKey#8100725
+  displayName: LocKey#AmmoExpanded-Cal454Casull-HP-Name
+  localizedDescription: LocKey#AmmoExpanded-Cal454Casull-HP-Desc
   tags:
     - !append-once DPAE_Cal454Casull_HP
 
@@ -146,8 +146,8 @@ Ammo.Cal454Casull_EMP:
   quality: Quality.Rare
   $base: Ammo.Cal454Casull
   friendlyName: '454_casull_emp'
-  displayName: LocKey#8100327
-  localizedDescription: LocKey#8100724
+  displayName: LocKey#AmmoExpanded-Cal454Casull-EMP-Name
+  localizedDescription: LocKey#AmmoExpanded-Cal454Casull-EMP-Desc
   tags:
     - !append-once DPAE_Cal454Casull_EMP
 
@@ -171,8 +171,8 @@ Ammo.Cal454Casull_INC:
   quality: Quality.Rare
   $base: Ammo.Cal454Casull
   friendlyName: '454_casull_incendiary'
-  displayName: LocKey#8100328
-  localizedDescription: LocKey#8100723
+  displayName: LocKey#AmmoExpanded-Cal454Casull-INC-Name
+  localizedDescription: LocKey#AmmoExpanded-Cal454Casull-INC-Desc
   tags:
     - !append-once DPAE_Cal454Casull_INC
 
@@ -196,8 +196,8 @@ Ammo.Cal454Casull_CHEM:
   quality: Quality.Rare
   $base: Ammo.Cal454Casull
   friendlyName: '454_casull_chemical'
-  displayName: LocKey#8100329
-  localizedDescription: LocKey#8100722
+  displayName: LocKey#AmmoExpanded-Cal454Casull-CHEM-Name
+  localizedDescription: LocKey#AmmoExpanded-Cal454Casull-CHEM-Desc
   tags:
     - !append-once DPAE_Cal454Casull_CHEM
 
@@ -221,8 +221,8 @@ Ammo.Cal454Casull_NL:
   quality: Quality.Uncommon
   $base: Ammo.Cal454Casull
   friendlyName: '454_casull_non-lethal'
-  displayName: LocKey#8100330
-  localizedDescription: LocKey#8100721
+  displayName: LocKey#AmmoExpanded-Cal454Casull-NL-Name
+  localizedDescription: LocKey#AmmoExpanded-Cal454Casull-NL-Desc
   tags:
     - !append-once DPAE_Cal454Casull_NL
 
@@ -246,8 +246,8 @@ Ammo.Cal454Casull_Snakeshot:
   quality: Quality.Uncommon
   $base: Ammo.Cal454Casull
   friendlyName: '454_casull_snakeshot'
-  displayName: LocKey#8100616
-  localizedDescription: LocKey#8100720
+  displayName: LocKey#AmmoExpanded-Cal454Casull-Snakeshot-Name
+  localizedDescription: LocKey#AmmoExpanded-Cal454Casull-Snakeshot-Desc
   tags:
     - !append-once DPAE_Cal454Casull_Snakeshot
 
@@ -271,7 +271,7 @@ Ammo.Cal454Casull_HE:
   quality: Quality.Epic
   $base: Ammo.Cal454Casull
   friendlyName: '454_casull_high_explosive'
-  displayName: LocKey#8100631
-  localizedDescription: LocKey#8100719
+  displayName: LocKey#AmmoExpanded-Cal454Casull-HE-Name
+  localizedDescription: LocKey#AmmoExpanded-Cal454Casull-HE-Desc
   tags:
     - !append-once DPAE_Cal454Casull_HE

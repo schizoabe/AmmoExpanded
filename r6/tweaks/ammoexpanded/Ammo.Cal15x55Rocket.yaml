@@ -16,7 +16,7 @@ Ammo.Cal15x55Rocket:
   CraftingData: Ammo.AmmoBase_inline0
   crosshair: Crosshairs.None
   deprecated: False
-  displayName: LocKey#8100401
+  displayName: LocKey#AmmoExpanded-Cal15x55Rocket-Name
   dropObject: ammoDrop
   effectors: []
   enableNpcRPGData: False
@@ -38,7 +38,7 @@ Ammo.Cal15x55Rocket:
   isSingleInstance: True
   itemCategory: ItemCategory.General
   itemType: ItemType.Con_Ammo
-  localizedDescription: LocKey#8100575
+  localizedDescription: LocKey#AmmoExpanded-Cal15x55Rocket-Desc
   localizedName: ''
   mass: 1
   minigameInstance: minigame_v2.DefaultItemMinigame
@@ -96,8 +96,8 @@ Ammo.Cal15x55Rocket_HE:
   quality: Quality.Epic
   $base: Ammo.Cal15x55Rocket
   friendlyName: '15x55mm_guided_rocket_high_explosive'
-  displayName: LocKey#8100402
-  localizedDescription: LocKey#8100692
+  displayName: LocKey#AmmoExpanded-Cal15x55Rocket-HE-Name
+  localizedDescription: LocKey#AmmoExpanded-Cal15x55Rocket-HE-Desc
   tags:
     - !append-once DPAE_Cal15x55Rocket_HE
 
@@ -121,8 +121,8 @@ Ammo.Cal15x55Rocket_INC:
   quality: Quality.Rare
   $base: Ammo.Cal15x55Rocket
   friendlyName: '15x55mm_guided_rocket_incendiary'
-  displayName: LocKey#8100403
-  localizedDescription: LocKey#8100691
+  displayName: LocKey#AmmoExpanded-Cal15x55Rocket-INC-Name
+  localizedDescription: LocKey#AmmoExpanded-Cal15x55Rocket-INC-Desc
   tags:
     - !append-once DPAE_Cal15x55Rocket_INC
 
@@ -146,8 +146,8 @@ Ammo.Cal15x55Rocket_EMP:
   quality: Quality.Rare
   $base: Ammo.Cal15x55Rocket
   friendlyName: '15x55mm_guided_rocket_emp'
-  displayName: LocKey#8100609
-  localizedDescription: LocKey#8100690
+  displayName: LocKey#AmmoExpanded-Cal15x55Rocket-EMP-Name
+  localizedDescription: LocKey#AmmoExpanded-Cal15x55Rocket-EMP-Desc
   tags:
     - !append-once DPAE_Cal15x55Rocket_EMP
 
@@ -171,7 +171,7 @@ Ammo.Cal15x55Rocket_CHEM:
   quality: Quality.Rare
   $base: Ammo.Cal15x55Rocket
   friendlyName: '15x55mm_guided_rocket_chemical'
-  displayName: LocKey#8100610
-  localizedDescription: LocKey#8100689
+  displayName: LocKey#AmmoExpanded-Cal15x55Rocket-CHEM-Name
+  localizedDescription: LocKey#AmmoExpanded-Cal15x55Rocket-CHEM-Desc
   tags:
     - !append-once DPAE_Cal15x55Rocket_CHEM

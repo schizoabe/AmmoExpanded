@@ -16,7 +16,7 @@ Ammo.Cal500Malour:
   CraftingData: Ammo.AmmoBase_inline0
   crosshair: Crosshairs.None
   deprecated: False
-  displayName: LocKey#8100352
+  displayName: LocKey#AmmoExpanded-Cal500Malour-Name
   dropObject: ammoDrop
   effectors: []
   enableNpcRPGData: False
@@ -38,7 +38,7 @@ Ammo.Cal500Malour:
   isSingleInstance: True
   itemCategory: ItemCategory.General
   itemType: ItemType.Con_Ammo
-  localizedDescription: LocKey#8100588
+  localizedDescription: LocKey#AmmoExpanded-Cal500Malour-Desc
   localizedName: ''
   mass: 1
   minigameInstance: minigame_v2.DefaultItemMinigame
@@ -96,8 +96,8 @@ Ammo.Cal500Malour_AP:
   quality: Quality.Uncommon
   $base: Ammo.Cal500Malour
   friendlyName: '500_malour_armor_piercing'
-  displayName: LocKey#8100353
-  localizedDescription: LocKey#8100752
+  displayName: LocKey#AmmoExpanded-Cal500Malour-AP-Name
+  localizedDescription: LocKey#AmmoExpanded-Cal500Malour-AP-Desc
   tags:
     - !append-once DPAE_Cal500Malour_AP
 
@@ -121,8 +121,8 @@ Ammo.Cal500Malour_INC:
   quality: Quality.Rare
   $base: Ammo.Cal500Malour
   friendlyName: '500_malour_incendiary'
-  displayName: LocKey#8100354
-  localizedDescription: LocKey#8100751
+  displayName: LocKey#AmmoExpanded-Cal500Malour-INC-Name
+  localizedDescription: LocKey#AmmoExpanded-Cal500Malour-INC-Desc
   tags:
     - !append-once DPAE_Cal500Malour_INC
 
@@ -146,7 +146,7 @@ Ammo.Cal500Malour_HE:
   quality: Quality.Epic
   $base: Ammo.Cal500Malour
   friendlyName: '500_malour_high_explosive'
-  displayName: LocKey#8100355
-  localizedDescription: LocKey#8100750
+  displayName: LocKey#AmmoExpanded-Cal500Malour-HE-Name
+  localizedDescription: LocKey#AmmoExpanded-Cal500Malour-HE-Desc
   tags:
     - !append-once DPAE_Cal500Malour_HE

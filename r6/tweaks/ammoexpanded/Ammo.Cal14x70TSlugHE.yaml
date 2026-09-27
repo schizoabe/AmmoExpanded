@@ -17,7 +17,7 @@ Ammo.Cal14x70TSlugHE:
   CraftingData: Ammo.AmmoBase_inline0
   crosshair: Crosshairs.None
   deprecated: False
-  displayName: LocKey#8100400
+  displayName: LocKey#AmmoExpanded-Cal14x70TSlugHE-Name
   dropObject: ammoDrop
   effectors: []
   enableNpcRPGData: False
@@ -39,7 +39,7 @@ Ammo.Cal14x70TSlugHE:
   isSingleInstance: True
   itemCategory: ItemCategory.General
   itemType: ItemType.Con_Ammo
-  localizedDescription: LocKey#8100574
+  localizedDescription: LocKey#AmmoExpanded-Cal14x70TSlugHE-Desc
   localizedName: ''
   mass: 1
   minigameInstance: minigame_v2.DefaultItemMinigame

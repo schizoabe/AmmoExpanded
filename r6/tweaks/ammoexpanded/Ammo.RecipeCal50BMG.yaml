@@ -17,7 +17,7 @@ Ammo.RecipeCal50BMG:
   craftingResult: Ammo.RecipeCal50BMG_inline0
   crosshair: Crosshairs.None
   deprecated: False
-  displayName: LocKey#8100518
+  displayName: LocKey#AmmoExpanded-RecipeCal50BMG-Name
   dropObject: defaultItemDrop
   effectors: []
   enableNpcRPGData: False

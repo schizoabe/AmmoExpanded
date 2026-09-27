@@ -11,12 +11,16 @@ protected cb func OnAmmoStateChangeEvent(evt: ref<AmmoStateChangeEvent>) -> Bool
         player.dpae_pending_zero_weapon  = clearedZeroWeapon;
         player.dpae_pending_zero_caliber = TDBID.None();
         player.DPAE_ResolveAmmoSelection(confirmedCaliber);
+
+        player.DPAE_RestoreSavedChamber(this.GetItemID(), player.dpae_pending_zero_chamber);
         return wrappedMethod(evt);
       }
 
       if ItemID.IsValid(player.dpae_pending_restore_weapon) && this.GetItemID() == player.dpae_pending_restore_weapon {
         let clearedRestoreWeapon: ItemID;
         player.dpae_pending_restore_weapon = clearedRestoreWeapon;
+
+        player.dpae_prev_mag_pct = WeaponObject.GetMagazinePercentage(this);
         return wrappedMethod(evt);
       }
 
@@ -24,7 +28,17 @@ protected cb func OnAmmoStateChangeEvent(evt: ref<AmmoStateChangeEvent>) -> Bool
 
         let ts             = GameInstance.GetTransactionSystem(player.GetGame());
         let thisItemID     = this.GetItemID();
-        let thisCaliberID  = ItemID.IsValid(thisItemID) ? DPAE_GetCaliberFromEntity(player, thisItemID) : TDBID.None();
+
+        let thisCaliberID  = TDBID.None();
+        if ItemID.IsValid(thisItemID) {
+          if thisItemID == player.dpae_shot_caliber_item {
+            thisCaliberID = player.dpae_shot_caliber_id;
+          } else {
+            thisCaliberID = DPAE_GetCaliberFromEntity(player, thisItemID);
+            player.dpae_shot_caliber_item = thisItemID;
+            player.dpae_shot_caliber_id   = thisCaliberID;
+          }
+        }
         if !Equals(thisCaliberID, player.dpae_caliber) {
           return wrappedMethod(evt);
         }
@@ -68,10 +82,12 @@ protected cb func OnAmmoStateChangeEvent(evt: ref<AmmoStateChangeEvent>) -> Bool
             player.dpae_pending_effect = DPAE_GetEffectForRound(player.dpae_active_ammo, player, this);
             player.dpae_pending_nl     = DPAE_RoundIsNL(player.dpae_active_ammo);
 
+            player.dpae_pending_weapon = thisItemID;
+
             let left = ts.GetItemQuantity(player, activeID);
 
             if DesoPierreAmmoExpandedSettings.DebugAmmoLogging() {
-              LogChannel(n"DEBUG", "[DPAE_AMMOLOG] caliber=" + TDBID.ToStringDEBUG(player.dpae_caliber)
+              DPAE_LogDebug("[DPAE_AMMOLOG] caliber=" + TDBID.ToStringDEBUG(player.dpae_caliber)
                 + " active=" + TDBID.ToStringDEBUG(player.dpae_active_ammo)
                 + " roundsConsumed=" + ToString(roundsConsumed)
                 + " realLeft=" + ToString(left)
@@ -127,10 +143,17 @@ protected cb func OnAmmoStateChangeEvent(evt: ref<AmmoStateChangeEvent>) -> Bool
 protected cb func OnItemChangedEvent(evt: ref<ItemChangedEvent>) -> Bool {
   let result = wrappedMethod(evt);
 
-  if evt.difference > 0 && ItemID.IsValid(evt.itemID) && this.dpae_pending_internal_grant_qty > 0 {
-    let grantConsumed = Min(evt.difference, this.dpae_pending_internal_grant_qty);
-    this.dpae_pending_internal_grant_qty -= grantConsumed;
-    return result;
+  if evt.difference > 0 && ItemID.IsValid(evt.itemID) && ArraySize(this.dpae_pending_grant_items) > 0 {
+    let grantIdx = ArrayFindFirst(this.dpae_pending_grant_items, ItemID.GetTDBID(evt.itemID));
+    if grantIdx >= 0 {
+      let grantConsumed = Min(evt.difference, this.dpae_pending_grant_qtys[grantIdx]);
+      this.dpae_pending_grant_qtys[grantIdx] -= grantConsumed;
+      if this.dpae_pending_grant_qtys[grantIdx] <= 0 {
+        ArrayErase(this.dpae_pending_grant_items, grantIdx);
+        ArrayErase(this.dpae_pending_grant_qtys, grantIdx);
+      }
+      return result;
+    }
   }
 
   if evt.difference > 0 && ItemID.IsValid(evt.itemID) {
@@ -260,12 +283,12 @@ public func DPAE_SelectAmmo(activeTDBID: TweakDBID) -> Void {
   let activeItemID = ItemID.FromTDBID(requestedTDBID);
   let qty          = ts.GetItemQuantity(this, activeItemID);
   if DesoPierreAmmoExpandedSettings.DebugAmmoLogging() {
-    LogChannel(n"DEBUG", "[DPAE_LOADFIX] SelectAmmo ENTRY requested=" + TDBID.ToStringDEBUG(requestedTDBID)
+    DPAE_LogDebug("[DPAE_LOADFIX] SelectAmmo ENTRY requested=" + TDBID.ToStringDEBUG(requestedTDBID)
       + " qtyOwned=" + ToString(qty) + " resyncOnly=" + ToString(this.dpae_resync_only));
   }
   if qty <= 0 {
     if DesoPierreAmmoExpandedSettings.DebugAmmoLogging() {
-      LogChannel(n"DEBUG", "[DPAE_LOADFIX] SelectAmmo BAIL qty<=0, dpae_active_ammo left untouched at "
+      DPAE_LogDebug("[DPAE_LOADFIX] SelectAmmo BAIL qty<=0, dpae_active_ammo left untouched at "
         + TDBID.ToStringDEBUG(this.dpae_active_ammo));
     }
     return;
@@ -332,7 +355,7 @@ public func DPAE_SelectAmmo(activeTDBID: TweakDBID) -> Void {
     this.dpae_prev_mag_pct   = IsDefined(weaponObj) ? WeaponObject.GetMagazinePercentage(weaponObj) : 0.0;
     this.dpae_prev_dummy_qty = ts.GetItemQuantity(this, dummyID);
     if DesoPierreAmmoExpandedSettings.DebugAmmoLogging() {
-      LogChannel(n"DEBUG", "[DPAE_LOADFIX] SelectAmmo RESYNC-ONLY dummyID=" + TDBID.ToStringDEBUG(ItemID.GetTDBID(dummyID))
+      DPAE_LogDebug("[DPAE_LOADFIX] SelectAmmo RESYNC-ONLY dummyID=" + TDBID.ToStringDEBUG(ItemID.GetTDBID(dummyID))
         + " existingDummyQty=" + ToString(this.dpae_prev_dummy_qty)
         + " magPct=" + ToString(this.dpae_prev_mag_pct)
         + " (no GiveItem call made this branch)");
@@ -346,7 +369,7 @@ public func DPAE_SelectAmmo(activeTDBID: TweakDBID) -> Void {
     this.dpae_prev_mag_pct   = IsDefined(weaponObj) ? WeaponObject.GetMagazinePercentage(weaponObj) : 0.0;
     this.dpae_prev_dummy_qty = giveQty;
     if DesoPierreAmmoExpandedSettings.DebugAmmoLogging() {
-      LogChannel(n"DEBUG", "[DPAE_LOADFIX] SelectAmmo REAL-GIVE dummyID=" + TDBID.ToStringDEBUG(ItemID.GetTDBID(dummyID))
+      DPAE_LogDebug("[DPAE_LOADFIX] SelectAmmo REAL-GIVE dummyID=" + TDBID.ToStringDEBUG(ItemID.GetTDBID(dummyID))
         + " leftoverWiped=" + ToString(leftover) + " gaveQty=" + ToString(giveQty)
         + " wasResyncFallback=" + ToString(this.dpae_resync_only));
     }

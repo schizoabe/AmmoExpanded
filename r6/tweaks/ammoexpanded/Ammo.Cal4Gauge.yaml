@@ -16,7 +16,7 @@ Ammo.Cal4Gauge:
   CraftingData: Ammo.AmmoBase_inline0
   crosshair: Crosshairs.None
   deprecated: False
-  displayName: LocKey#8100423
+  displayName: LocKey#AmmoExpanded-Cal4Gauge-Name
   dropObject: ammoDrop
   effectors: []
   enableNpcRPGData: False
@@ -38,7 +38,7 @@ Ammo.Cal4Gauge:
   isSingleInstance: True
   itemCategory: ItemCategory.General
   itemType: ItemType.Con_Ammo
-  localizedDescription: LocKey#8100586
+  localizedDescription: LocKey#AmmoExpanded-Cal4Gauge-Desc
   localizedName: ''
   mass: 1
   minigameInstance: minigame_v2.DefaultItemMinigame
@@ -96,8 +96,8 @@ Ammo.Cal4Gauge_Slug:
   quality: Quality.Uncommon
   $base: Ammo.Cal4Gauge
   friendlyName: '4_gauge_buckshot_slug'
-  displayName: LocKey#8100424
-  localizedDescription: LocKey#8100746
+  displayName: LocKey#AmmoExpanded-Cal4Gauge-Slug-Name
+  localizedDescription: LocKey#AmmoExpanded-Cal4Gauge-Slug-Desc
   tags:
     - !append-once DPAE_Cal4Gauge_Slug
 
@@ -121,8 +121,8 @@ Ammo.Cal4Gauge_INC:
   quality: Quality.Rare
   $base: Ammo.Cal4Gauge
   friendlyName: '4_gauge_buckshot_incendiary'
-  displayName: LocKey#8100425
-  localizedDescription: LocKey#8100745
+  displayName: LocKey#AmmoExpanded-Cal4Gauge-INC-Name
+  localizedDescription: LocKey#AmmoExpanded-Cal4Gauge-INC-Desc
   tags:
     - !append-once DPAE_Cal4Gauge_INC
 
@@ -146,8 +146,8 @@ Ammo.Cal4Gauge_HE:
   quality: Quality.Epic
   $base: Ammo.Cal4Gauge
   friendlyName: '4_gauge_buckshot_high_explosive'
-  displayName: LocKey#8100426
-  localizedDescription: LocKey#8100744
+  displayName: LocKey#AmmoExpanded-Cal4Gauge-HE-Name
+  localizedDescription: LocKey#AmmoExpanded-Cal4Gauge-HE-Desc
   tags:
     - !append-once DPAE_Cal4Gauge_HE
 
@@ -171,7 +171,7 @@ Ammo.Cal4Gauge_EMP:
   quality: Quality.Rare
   $base: Ammo.Cal4Gauge
   friendlyName: '4_gauge_buckshot_emp'
-  displayName: LocKey#8100556
-  localizedDescription: LocKey#8100743
+  displayName: LocKey#AmmoExpanded-Cal4Gauge-EMP-Name
+  localizedDescription: LocKey#AmmoExpanded-Cal4Gauge-EMP-Desc
   tags:
     - !append-once DPAE_Cal4Gauge_EMP

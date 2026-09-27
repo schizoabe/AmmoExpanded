@@ -108,7 +108,7 @@ DPAE_StatusEffect.INC_Thermal_Debuff:
   VFX: []
   uiData:
     $type: gamedataStatusEffectUIData_Record
-    displayName: Overheating
+    displayName: LocKey#AmmoExpanded-Status-Overheating
     iconPath: decreased_stats_icon
     priority: -8.0
   packages:
@@ -300,7 +300,7 @@ DPAE_StatusEffect.CHEM_Poison_Debuff:
   VFX: []
   uiData:
     $type: gamedataStatusEffectUIData_Record
-    displayName: Corroded
+    displayName: LocKey#AmmoExpanded-Status-Corroded
     iconPath: decreased_stats_icon
     priority: -7.0
   packages:
@@ -1424,7 +1424,7 @@ DPAE_StatusEffect.EMP_ShockMalfunction_DoT:
     - name: status_electrocuted
   uiData:
     $type: gamedataStatusEffectUIData_Record
-    displayName: Shocked
+    displayName: LocKey#AmmoExpanded-Status-Shocked
     iconPath: electricuted
   packages:
     - $type: gamedataGameplayLogicPackage_Record

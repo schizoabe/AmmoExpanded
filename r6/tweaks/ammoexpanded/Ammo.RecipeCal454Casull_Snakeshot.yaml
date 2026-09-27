@@ -17,7 +17,7 @@ Ammo.RecipeCal454Casull_Snakeshot:
   craftingResult: Ammo.RecipeCal454Casull_Snakeshot_inline0
   crosshair: Crosshairs.None
   deprecated: False
-  displayName: LocKey#8100616
+  displayName: LocKey#AmmoExpanded-Cal454Casull-Snakeshot-Name
   dropObject: defaultItemDrop
   effectors: []
   enableNpcRPGData: False

@@ -17,7 +17,7 @@
   CraftingData: Ammo.AmmoBase_inline0
   crosshair: Crosshairs.None
   deprecated: False
-  displayName: LocKey#8100051
+  displayName: LocKey#AmmoExpanded-MilitechPrototype-Name
   dropObject: ammoDrop
   effectors: []
   enableNpcRPGData: False
@@ -39,7 +39,7 @@
   isSingleInstance: True
   itemCategory: ItemCategory.General
   itemType: ItemType.Con_Ammo
-  localizedDescription: LocKey#8100052
+  localizedDescription: LocKey#AmmoExpanded-MilitechPrototype-Desc
   localizedName: ''
   mass: 1
   minigameInstance: minigame_v2.DefaultItemMinigame

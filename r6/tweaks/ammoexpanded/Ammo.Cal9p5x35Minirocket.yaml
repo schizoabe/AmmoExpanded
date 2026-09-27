@@ -16,7 +16,7 @@ Ammo.Cal9p5x35Minirocket:
   CraftingData: Ammo.AmmoBase_inline0
   crosshair: Crosshairs.None
   deprecated: False
-  displayName: LocKey#8100492
+  displayName: LocKey#AmmoExpanded-Cal9p5x35Minirocket-Name
   dropObject: ammoDrop
   effectors: []
   enableNpcRPGData: False
@@ -38,7 +38,7 @@ Ammo.Cal9p5x35Minirocket:
   isSingleInstance: True
   itemCategory: ItemCategory.General
   itemType: ItemType.Con_Ammo
-  localizedDescription: LocKey#8100601
+  localizedDescription: LocKey#AmmoExpanded-Cal9p5x35Minirocket-Desc
   localizedName: ''
   mass: 1
   minigameInstance: minigame_v2.DefaultItemMinigame
@@ -96,8 +96,8 @@ Ammo.Cal9p5x35Minirocket_EMP:
   quality: Quality.Rare
   $base: Ammo.Cal9p5x35Minirocket
   friendlyName: '95x35mm_guided_minirocket_emp'
-  displayName: LocKey#8100495
-  localizedDescription: LocKey#8100825
+  displayName: LocKey#AmmoExpanded-Cal9p5x35Minirocket-EMP-Name
+  localizedDescription: LocKey#AmmoExpanded-Cal9p5x35Minirocket-EMP-Desc
   tags:
     - !append-once DPAE_Cal9p5x35Minirocket_EMP
 
@@ -113,8 +113,8 @@ Ammo.Cal9p5x35Minirocket_Yinglong_EMP:
   quality: Quality.Legendary
   $base: Ammo.Cal9p5x35Minirocket_EMP
   friendlyName: '95x35mm_guided_minirocket_yinglong_signature'
-  displayName: LocKey#8100640
-  localizedDescription: LocKey#8100641
+  displayName: LocKey#AmmoExpanded-Cal9p5x35Minirocket-EMP-SignatureName
+  localizedDescription: LocKey#AmmoExpanded-Cal9p5x35Minirocket-EMP-SignatureDesc
   tags:
     - !append-once DPAE_Cal9p5x35Minirocket_Yinglong_EMP
 
@@ -138,8 +138,8 @@ Ammo.Cal9p5x35Minirocket_INC:
   quality: Quality.Rare
   $base: Ammo.Cal9p5x35Minirocket
   friendlyName: '95x35mm_guided_minirocket_incendiary'
-  displayName: LocKey#8100496
-  localizedDescription: LocKey#8100824
+  displayName: LocKey#AmmoExpanded-Cal9p5x35Minirocket-INC-Name
+  localizedDescription: LocKey#AmmoExpanded-Cal9p5x35Minirocket-INC-Desc
   tags:
     - !append-once DPAE_Cal9p5x35Minirocket_INC
 
@@ -163,8 +163,8 @@ Ammo.Cal9p5x35Minirocket_CHEM:
   quality: Quality.Rare
   $base: Ammo.Cal9p5x35Minirocket
   friendlyName: '95x35mm_guided_minirocket_chemical'
-  displayName: LocKey#8100497
-  localizedDescription: LocKey#8100823
+  displayName: LocKey#AmmoExpanded-Cal9p5x35Minirocket-CHEM-Name
+  localizedDescription: LocKey#AmmoExpanded-Cal9p5x35Minirocket-CHEM-Desc
   tags:
     - !append-once DPAE_Cal9p5x35Minirocket_CHEM
 
@@ -188,7 +188,7 @@ Ammo.Cal9p5x35Minirocket_HE:
   quality: Quality.Epic
   $base: Ammo.Cal9p5x35Minirocket
   friendlyName: '95x35mm_guided_minirocket_high_explosive'
-  displayName: LocKey#8100553
-  localizedDescription: LocKey#8100822
+  displayName: LocKey#AmmoExpanded-Cal9p5x35Minirocket-HE-Name
+  localizedDescription: LocKey#AmmoExpanded-Cal9p5x35Minirocket-HE-Desc
   tags:
     - !append-once DPAE_Cal9p5x35Minirocket_HE

@@ -16,7 +16,7 @@ Ammo.Cal50BeowulfOni:
   CraftingData: Ammo.AmmoBase_inline0
   crosshair: Crosshairs.None
   deprecated: False
-  displayName: LocKey#8100338
+  displayName: LocKey#AmmoExpanded-Cal50BeowulfOni-Name
   dropObject: ammoDrop
   effectors: []
   enableNpcRPGData: False
@@ -38,7 +38,7 @@ Ammo.Cal50BeowulfOni:
   isSingleInstance: True
   itemCategory: ItemCategory.General
   itemType: ItemType.Con_Ammo
-  localizedDescription: LocKey#8100591
+  localizedDescription: LocKey#AmmoExpanded-Cal50BeowulfOni-Desc
   localizedName: ''
   mass: 1
   minigameInstance: minigame_v2.DefaultItemMinigame
@@ -96,8 +96,8 @@ Ammo.Cal50BeowulfOni_AP:
   quality: Quality.Uncommon
   $base: Ammo.Cal50BeowulfOni
   friendlyName: '50_beowulf_oni_armor_piercing'
-  displayName: LocKey#8100339
-  localizedDescription: LocKey#8100773
+  displayName: LocKey#AmmoExpanded-Cal50BeowulfOni-AP-Name
+  localizedDescription: LocKey#AmmoExpanded-Cal50BeowulfOni-AP-Desc
   tags:
     - !append-once DPAE_Cal50BeowulfOni_AP
 
@@ -121,8 +121,8 @@ Ammo.Cal50BeowulfOni_HP:
   quality: Quality.Uncommon
   $base: Ammo.Cal50BeowulfOni
   friendlyName: '50_beowulf_oni_hollow_point'
-  displayName: LocKey#8100340
-  localizedDescription: LocKey#8100772
+  displayName: LocKey#AmmoExpanded-Cal50BeowulfOni-HP-Name
+  localizedDescription: LocKey#AmmoExpanded-Cal50BeowulfOni-HP-Desc
   tags:
     - !append-once DPAE_Cal50BeowulfOni_HP
 
@@ -146,8 +146,8 @@ Ammo.Cal50BeowulfOni_EMP:
   quality: Quality.Rare
   $base: Ammo.Cal50BeowulfOni
   friendlyName: '50_beowulf_oni_emp'
-  displayName: LocKey#8100341
-  localizedDescription: LocKey#8100771
+  displayName: LocKey#AmmoExpanded-Cal50BeowulfOni-EMP-Name
+  localizedDescription: LocKey#AmmoExpanded-Cal50BeowulfOni-EMP-Desc
   tags:
     - !append-once DPAE_Cal50BeowulfOni_EMP
 
@@ -171,8 +171,8 @@ Ammo.Cal50BeowulfOni_INC:
   quality: Quality.Rare
   $base: Ammo.Cal50BeowulfOni
   friendlyName: '50_beowulf_oni_incendiary'
-  displayName: LocKey#8100342
-  localizedDescription: LocKey#8100770
+  displayName: LocKey#AmmoExpanded-Cal50BeowulfOni-INC-Name
+  localizedDescription: LocKey#AmmoExpanded-Cal50BeowulfOni-INC-Desc
   tags:
     - !append-once DPAE_Cal50BeowulfOni_INC
 
@@ -196,8 +196,8 @@ Ammo.Cal50BeowulfOni_CHEM:
   quality: Quality.Rare
   $base: Ammo.Cal50BeowulfOni
   friendlyName: '50_beowulf_oni_chemical'
-  displayName: LocKey#8100343
-  localizedDescription: LocKey#8100769
+  displayName: LocKey#AmmoExpanded-Cal50BeowulfOni-CHEM-Name
+  localizedDescription: LocKey#AmmoExpanded-Cal50BeowulfOni-CHEM-Desc
   tags:
     - !append-once DPAE_Cal50BeowulfOni_CHEM
 
@@ -221,8 +221,8 @@ Ammo.Cal50BeowulfOni_NL:
   quality: Quality.Uncommon
   $base: Ammo.Cal50BeowulfOni
   friendlyName: '50_beowulf_oni_non-lethal'
-  displayName: LocKey#8100344
-  localizedDescription: LocKey#8100768
+  displayName: LocKey#AmmoExpanded-Cal50BeowulfOni-NL-Name
+  localizedDescription: LocKey#AmmoExpanded-Cal50BeowulfOni-NL-Desc
   tags:
     - !append-once DPAE_Cal50BeowulfOni_NL
 
@@ -246,7 +246,7 @@ Ammo.Cal50BeowulfOni_HE:
   quality: Quality.Epic
   $base: Ammo.Cal50BeowulfOni
   friendlyName: '50_beowulf_oni_high_explosive'
-  displayName: LocKey#8100633
-  localizedDescription: LocKey#8100767
+  displayName: LocKey#AmmoExpanded-Cal50BeowulfOni-HE-Name
+  localizedDescription: LocKey#AmmoExpanded-Cal50BeowulfOni-HE-Desc
   tags:
     - !append-once DPAE_Cal50BeowulfOni_HE

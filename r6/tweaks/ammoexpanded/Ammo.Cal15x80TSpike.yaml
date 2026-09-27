@@ -16,7 +16,7 @@ Ammo.Cal15x80TSpike:
   CraftingData: Ammo.AmmoBase_inline0
   crosshair: Crosshairs.None
   deprecated: False
-  displayName: LocKey#8100404
+  displayName: LocKey#AmmoExpanded-Cal15x80TSpike-Name
   dropObject: ammoDrop
   effectors: []
   enableNpcRPGData: False
@@ -38,7 +38,7 @@ Ammo.Cal15x80TSpike:
   isSingleInstance: True
   itemCategory: ItemCategory.General
   itemType: ItemType.Con_Ammo
-  localizedDescription: LocKey#8100576
+  localizedDescription: LocKey#AmmoExpanded-Cal15x80TSpike-Desc
   localizedName: ''
   mass: 1
   minigameInstance: minigame_v2.DefaultItemMinigame
@@ -96,8 +96,8 @@ Ammo.Cal15x80TSpike_EMP:
   quality: Quality.Rare
   $base: Ammo.Cal15x80TSpike
   friendlyName: '15x80mm_tungsten_spike_emp'
-  displayName: LocKey#8100407
-  localizedDescription: LocKey#8100695
+  displayName: LocKey#AmmoExpanded-Cal15x80TSpike-EMP-Name
+  localizedDescription: LocKey#AmmoExpanded-Cal15x80TSpike-EMP-Desc
   tags:
     - !append-once DPAE_Cal15x80TSpike_EMP
 
@@ -121,8 +121,8 @@ Ammo.Cal15x80TSpike_INC:
   quality: Quality.Rare
   $base: Ammo.Cal15x80TSpike
   friendlyName: '15x80mm_tungsten_spike_incendiary'
-  displayName: LocKey#8100408
-  localizedDescription: LocKey#8100694
+  displayName: LocKey#AmmoExpanded-Cal15x80TSpike-INC-Name
+  localizedDescription: LocKey#AmmoExpanded-Cal15x80TSpike-INC-Desc
   tags:
     - !append-once DPAE_Cal15x80TSpike_INC
 
@@ -146,7 +146,7 @@ Ammo.Cal15x80TSpike_CHEM:
   quality: Quality.Rare
   $base: Ammo.Cal15x80TSpike
   friendlyName: '15x80mm_tungsten_spike_chemical'
-  displayName: LocKey#8100409
-  localizedDescription: LocKey#8100693
+  displayName: LocKey#AmmoExpanded-Cal15x80TSpike-CHEM-Name
+  localizedDescription: LocKey#AmmoExpanded-Cal15x80TSpike-CHEM-Desc
   tags:
     - !append-once DPAE_Cal15x80TSpike_CHEM

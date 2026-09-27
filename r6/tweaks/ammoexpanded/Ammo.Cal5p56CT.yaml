@@ -16,7 +16,7 @@ Ammo.Cal5p56CT:
   CraftingData: Ammo.AmmoBase_inline0
   crosshair: Crosshairs.None
   deprecated: False
-  displayName: LocKey#8100447
+  displayName: LocKey#AmmoExpanded-Cal5p56CT-Name
   dropObject: ammoDrop
   effectors: []
   enableNpcRPGData: False
@@ -38,7 +38,7 @@ Ammo.Cal5p56CT:
   isSingleInstance: True
   itemCategory: ItemCategory.General
   itemType: ItemType.Con_Ammo
-  localizedDescription: LocKey#8100593
+  localizedDescription: LocKey#AmmoExpanded-Cal5p56CT-Desc
   localizedName: ''
   mass: 1
   minigameInstance: minigame_v2.DefaultItemMinigame
@@ -96,8 +96,8 @@ Ammo.Cal5p56CT_AP:
   quality: Quality.Uncommon
   $base: Ammo.Cal5p56CT
   friendlyName: '556mm_ct_armor_piercing'
-  displayName: LocKey#8100448
-  localizedDescription: LocKey#8100787
+  displayName: LocKey#AmmoExpanded-Cal5p56CT-AP-Name
+  localizedDescription: LocKey#AmmoExpanded-Cal5p56CT-AP-Desc
   tags:
     - !append-once DPAE_Cal5p56CT_AP
 
@@ -121,8 +121,8 @@ Ammo.Cal5p56CT_HP:
   quality: Quality.Uncommon
   $base: Ammo.Cal5p56CT
   friendlyName: '556mm_ct_hollow_point'
-  displayName: LocKey#8100449
-  localizedDescription: LocKey#8100786
+  displayName: LocKey#AmmoExpanded-Cal5p56CT-HP-Name
+  localizedDescription: LocKey#AmmoExpanded-Cal5p56CT-HP-Desc
   tags:
     - !append-once DPAE_Cal5p56CT_HP
 
@@ -146,8 +146,8 @@ Ammo.Cal5p56CT_EMP:
   quality: Quality.Rare
   $base: Ammo.Cal5p56CT
   friendlyName: '556mm_ct_emp'
-  displayName: LocKey#8100450
-  localizedDescription: LocKey#8100785
+  displayName: LocKey#AmmoExpanded-Cal5p56CT-EMP-Name
+  localizedDescription: LocKey#AmmoExpanded-Cal5p56CT-EMP-Desc
   tags:
     - !append-once DPAE_Cal5p56CT_EMP
 
@@ -171,8 +171,8 @@ Ammo.Cal5p56CT_INC:
   quality: Quality.Rare
   $base: Ammo.Cal5p56CT
   friendlyName: '556mm_ct_incendiary'
-  displayName: LocKey#8100451
-  localizedDescription: LocKey#8100784
+  displayName: LocKey#AmmoExpanded-Cal5p56CT-INC-Name
+  localizedDescription: LocKey#AmmoExpanded-Cal5p56CT-INC-Desc
   tags:
     - !append-once DPAE_Cal5p56CT_INC
 
@@ -196,8 +196,8 @@ Ammo.Cal5p56CT_CHEM:
   quality: Quality.Rare
   $base: Ammo.Cal5p56CT
   friendlyName: '556mm_ct_chemical'
-  displayName: LocKey#8100452
-  localizedDescription: LocKey#8100783
+  displayName: LocKey#AmmoExpanded-Cal5p56CT-CHEM-Name
+  localizedDescription: LocKey#AmmoExpanded-Cal5p56CT-CHEM-Desc
   tags:
     - !append-once DPAE_Cal5p56CT_CHEM
 
@@ -221,8 +221,8 @@ Ammo.Cal5p56CT_NL:
   quality: Quality.Uncommon
   $base: Ammo.Cal5p56CT
   friendlyName: '556mm_ct_non-lethal'
-  displayName: LocKey#8100453
-  localizedDescription: LocKey#8100782
+  displayName: LocKey#AmmoExpanded-Cal5p56CT-NL-Name
+  localizedDescription: LocKey#AmmoExpanded-Cal5p56CT-NL-Desc
   tags:
     - !append-once DPAE_Cal5p56CT_NL
 
@@ -246,7 +246,7 @@ Ammo.Cal5p56CT_HE:
   quality: Quality.Epic
   $base: Ammo.Cal5p56CT
   friendlyName: '556mm_ct_high_explosive'
-  displayName: LocKey#8100554
-  localizedDescription: LocKey#8100781
+  displayName: LocKey#AmmoExpanded-Cal5p56CT-HE-Name
+  localizedDescription: LocKey#AmmoExpanded-Cal5p56CT-HE-Desc
   tags:
     - !append-once DPAE_Cal5p56CT_HE

@@ -17,7 +17,7 @@ Ammo.RecipeCal45WinMag:
   craftingResult: Ammo.RecipeCal45WinMag_inline0
   crosshair: Crosshairs.None
   deprecated: False
-  displayName: LocKey#8100514
+  displayName: LocKey#AmmoExpanded-RecipeCal45WinMag-Name
   dropObject: defaultItemDrop
   effectors: []
   enableNpcRPGData: False

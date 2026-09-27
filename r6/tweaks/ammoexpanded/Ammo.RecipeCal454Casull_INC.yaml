@@ -17,7 +17,7 @@ Ammo.RecipeCal454Casull_INC:
   craftingResult: Ammo.RecipeCal454Casull_INC_inline0
   crosshair: Crosshairs.None
   deprecated: False
-  displayName: LocKey#8100328
+  displayName: LocKey#AmmoExpanded-Cal454Casull-INC-Name
   dropObject: defaultItemDrop
   effectors: []
   enableNpcRPGData: False

@@ -17,7 +17,7 @@ Ammo.RecipeCal9x19_AP:
   craftingResult: Ammo.RecipeCal9x19_AP_inline0
   crosshair: Crosshairs.None
   deprecated: False
-  displayName: LocKey#8100499
+  displayName: LocKey#AmmoExpanded-Cal9x19-AP-Name
   dropObject: defaultItemDrop
   effectors: []
   enableNpcRPGData: False

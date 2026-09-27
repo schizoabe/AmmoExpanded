@@ -16,7 +16,7 @@ Ammo.Cal9x19:
   CraftingData: Ammo.AmmoBase_inline0
   crosshair: Crosshairs.None
   deprecated: False
-  displayName: LocKey#8100498
+  displayName: LocKey#AmmoExpanded-Cal9x19-Name
   dropObject: ammoDrop
   effectors: []
   enableNpcRPGData: False
@@ -38,7 +38,7 @@ Ammo.Cal9x19:
   isSingleInstance: True
   itemCategory: ItemCategory.General
   itemType: ItemType.Con_Ammo
-  localizedDescription: LocKey#8100602
+  localizedDescription: LocKey#AmmoExpanded-Cal9x19-Desc
   localizedName: ''
   mass: 1
   minigameInstance: minigame_v2.DefaultItemMinigame
@@ -96,8 +96,8 @@ Ammo.Cal9x19_AP:
   quality: Quality.Uncommon
   $base: Ammo.Cal9x19
   friendlyName: '9x19mm_parabellum_armor_piercing'
-  displayName: LocKey#8100499
-  localizedDescription: LocKey#8100832
+  displayName: LocKey#AmmoExpanded-Cal9x19-AP-Name
+  localizedDescription: LocKey#AmmoExpanded-Cal9x19-AP-Desc
   tags:
     - !append-once DPAE_Cal9x19_AP
 
@@ -121,8 +121,8 @@ Ammo.Cal9x19_HP:
   quality: Quality.Uncommon
   $base: Ammo.Cal9x19
   friendlyName: '9x19mm_parabellum_hollow_point'
-  displayName: LocKey#8100500
-  localizedDescription: LocKey#8100831
+  displayName: LocKey#AmmoExpanded-Cal9x19-HP-Name
+  localizedDescription: LocKey#AmmoExpanded-Cal9x19-HP-Desc
   tags:
     - !append-once DPAE_Cal9x19_HP
 
@@ -146,8 +146,8 @@ Ammo.Cal9x19_EMP:
   quality: Quality.Rare
   $base: Ammo.Cal9x19
   friendlyName: '9x19mm_parabellum_emp'
-  displayName: LocKey#8100501
-  localizedDescription: LocKey#8100830
+  displayName: LocKey#AmmoExpanded-Cal9x19-EMP-Name
+  localizedDescription: LocKey#AmmoExpanded-Cal9x19-EMP-Desc
   tags:
     - !append-once DPAE_Cal9x19_EMP
 
@@ -171,8 +171,8 @@ Ammo.Cal9x19_INC:
   quality: Quality.Rare
   $base: Ammo.Cal9x19
   friendlyName: '9x19mm_parabellum_incendiary'
-  displayName: LocKey#8100502
-  localizedDescription: LocKey#8100829
+  displayName: LocKey#AmmoExpanded-Cal9x19-INC-Name
+  localizedDescription: LocKey#AmmoExpanded-Cal9x19-INC-Desc
   tags:
     - !append-once DPAE_Cal9x19_INC
 
@@ -196,8 +196,8 @@ Ammo.Cal9x19_CHEM:
   quality: Quality.Rare
   $base: Ammo.Cal9x19
   friendlyName: '9x19mm_parabellum_chemical'
-  displayName: LocKey#8100503
-  localizedDescription: LocKey#8100828
+  displayName: LocKey#AmmoExpanded-Cal9x19-CHEM-Name
+  localizedDescription: LocKey#AmmoExpanded-Cal9x19-CHEM-Desc
   tags:
     - !append-once DPAE_Cal9x19_CHEM
 
@@ -221,8 +221,8 @@ Ammo.Cal9x19_NL:
   quality: Quality.Uncommon
   $base: Ammo.Cal9x19
   friendlyName: '9x19mm_parabellum_non-lethal'
-  displayName: LocKey#8100504
-  localizedDescription: LocKey#8100827
+  displayName: LocKey#AmmoExpanded-Cal9x19-NL-Name
+  localizedDescription: LocKey#AmmoExpanded-Cal9x19-NL-Desc
   tags:
     - !append-once DPAE_Cal9x19_NL
 
@@ -246,7 +246,7 @@ Ammo.Cal9x19_HE:
   quality: Quality.Epic
   $base: Ammo.Cal9x19
   friendlyName: '9x19mm_parabellum_high_explosive'
-  displayName: LocKey#8100627
-  localizedDescription: LocKey#8100826
+  displayName: LocKey#AmmoExpanded-Cal9x19-HE-Name
+  localizedDescription: LocKey#AmmoExpanded-Cal9x19-HE-Desc
   tags:
     - !append-once DPAE_Cal9x19_HE

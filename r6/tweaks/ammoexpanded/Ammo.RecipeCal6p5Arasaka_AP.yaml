@@ -17,7 +17,7 @@ Ammo.RecipeCal6p5Arasaka_AP:
   craftingResult: Ammo.RecipeCal6p5Arasaka_AP_inline0
   crosshair: Crosshairs.None
   deprecated: False
-  displayName: LocKey#8100467
+  displayName: LocKey#AmmoExpanded-Cal6p5Arasaka-AP-Name
   dropObject: defaultItemDrop
   effectors: []
   enableNpcRPGData: False

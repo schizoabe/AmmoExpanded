@@ -1,11 +1,11 @@
 
 Items.CausticMod1_Base:
   $base: Items.PowerMod1_Base
-  displayName: LocKey#8100614
+  displayName: LocKey#AmmoExpanded-CausticMod1-Name
   statModifiers: []
   OnAttach:
     - UIData:
-        localizedDescription: LocKey#8100838
+        localizedDescription: LocKey#AmmoExpanded-CausticMod-Desc
   icon:
     atlasResourcePath: ammoexpanded\icons\ammoextended-mods-icons.inkatlas
     atlasPartName: slot_02
@@ -124,11 +124,11 @@ Items.CausticMod1_Legendary:
 
 Items.ArcMod1_Base:
   $base: Items.PowerMod1_Base
-  displayName: LocKey#8100615
+  displayName: LocKey#AmmoExpanded-ArcMod1-Name
   statModifiers: []
   OnAttach:
     - UIData:
-        localizedDescription: LocKey#8100837
+        localizedDescription: LocKey#AmmoExpanded-ArcMod-Desc
   icon:
     atlasResourcePath: ammoexpanded\icons\ammoextended-mods-icons.inkatlas
     atlasPartName: slot_01

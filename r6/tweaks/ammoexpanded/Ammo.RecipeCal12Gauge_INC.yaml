@@ -17,7 +17,7 @@ Ammo.RecipeCal12Gauge_INC:
   craftingResult: Ammo.RecipeCal12Gauge_INC_inline0
   crosshair: Crosshairs.None
   deprecated: False
-  displayName: LocKey#8100383
+  displayName: LocKey#AmmoExpanded-Cal12Gauge-INC-Name
   dropObject: defaultItemDrop
   effectors: []
   enableNpcRPGData: False

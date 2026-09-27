@@ -17,7 +17,7 @@ Ammo.RecipeCal500Malour_HE:
   craftingResult: Ammo.RecipeCal500Malour_HE_inline0
   crosshair: Crosshairs.None
   deprecated: False
-  displayName: LocKey#8100355
+  displayName: LocKey#AmmoExpanded-Cal500Malour-HE-Name
   dropObject: defaultItemDrop
   effectors: []
   enableNpcRPGData: False

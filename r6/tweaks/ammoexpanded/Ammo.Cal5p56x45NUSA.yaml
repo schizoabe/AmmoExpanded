@@ -16,7 +16,7 @@ Ammo.Cal5p56x45NUSA:
   CraftingData: Ammo.AmmoBase_inline0
   crosshair: Crosshairs.None
   deprecated: False
-  displayName: LocKey#8100440
+  displayName: LocKey#AmmoExpanded-Cal5p56x45NUSA-Name
   dropObject: ammoDrop
   effectors: []
   enableNpcRPGData: False
@@ -38,7 +38,7 @@ Ammo.Cal5p56x45NUSA:
   isSingleInstance: True
   itemCategory: ItemCategory.General
   itemType: ItemType.Con_Ammo
-  localizedDescription: LocKey#8100594
+  localizedDescription: LocKey#AmmoExpanded-Cal5p56x45NUSA-Desc
   localizedName: ''
   mass: 1
   minigameInstance: minigame_v2.DefaultItemMinigame
@@ -96,8 +96,8 @@ Ammo.Cal5p56x45NUSA_AP:
   quality: Quality.Uncommon
   $base: Ammo.Cal5p56x45NUSA
   friendlyName: '556x45mm_nusa_armor_piercing'
-  displayName: LocKey#8100441
-  localizedDescription: LocKey#8100794
+  displayName: LocKey#AmmoExpanded-Cal5p56x45NUSA-AP-Name
+  localizedDescription: LocKey#AmmoExpanded-Cal5p56x45NUSA-AP-Desc
   tags:
     - !append-once DPAE_Cal5p56x45NUSA_AP
 
@@ -121,8 +121,8 @@ Ammo.Cal5p56x45NUSA_HP:
   quality: Quality.Uncommon
   $base: Ammo.Cal5p56x45NUSA
   friendlyName: '556x45mm_nusa_hollow_point'
-  displayName: LocKey#8100442
-  localizedDescription: LocKey#8100793
+  displayName: LocKey#AmmoExpanded-Cal5p56x45NUSA-HP-Name
+  localizedDescription: LocKey#AmmoExpanded-Cal5p56x45NUSA-HP-Desc
   tags:
     - !append-once DPAE_Cal5p56x45NUSA_HP
 
@@ -146,8 +146,8 @@ Ammo.Cal5p56x45NUSA_EMP:
   quality: Quality.Rare
   $base: Ammo.Cal5p56x45NUSA
   friendlyName: '556x45mm_nusa_emp'
-  displayName: LocKey#8100443
-  localizedDescription: LocKey#8100792
+  displayName: LocKey#AmmoExpanded-Cal5p56x45NUSA-EMP-Name
+  localizedDescription: LocKey#AmmoExpanded-Cal5p56x45NUSA-EMP-Desc
   tags:
     - !append-once DPAE_Cal5p56x45NUSA_EMP
 
@@ -171,8 +171,8 @@ Ammo.Cal5p56x45NUSA_INC:
   quality: Quality.Rare
   $base: Ammo.Cal5p56x45NUSA
   friendlyName: '556x45mm_nusa_incendiary'
-  displayName: LocKey#8100444
-  localizedDescription: LocKey#8100791
+  displayName: LocKey#AmmoExpanded-Cal5p56x45NUSA-INC-Name
+  localizedDescription: LocKey#AmmoExpanded-Cal5p56x45NUSA-INC-Desc
   tags:
     - !append-once DPAE_Cal5p56x45NUSA_INC
 
@@ -196,8 +196,8 @@ Ammo.Cal5p56x45NUSA_CHEM:
   quality: Quality.Rare
   $base: Ammo.Cal5p56x45NUSA
   friendlyName: '556x45mm_nusa_chemical'
-  displayName: LocKey#8100445
-  localizedDescription: LocKey#8100790
+  displayName: LocKey#AmmoExpanded-Cal5p56x45NUSA-CHEM-Name
+  localizedDescription: LocKey#AmmoExpanded-Cal5p56x45NUSA-CHEM-Desc
   tags:
     - !append-once DPAE_Cal5p56x45NUSA_CHEM
 
@@ -221,8 +221,8 @@ Ammo.Cal5p56x45NUSA_NL:
   quality: Quality.Uncommon
   $base: Ammo.Cal5p56x45NUSA
   friendlyName: '556x45mm_nusa_non-lethal'
-  displayName: LocKey#8100446
-  localizedDescription: LocKey#8100789
+  displayName: LocKey#AmmoExpanded-Cal5p56x45NUSA-NL-Name
+  localizedDescription: LocKey#AmmoExpanded-Cal5p56x45NUSA-NL-Desc
   tags:
     - !append-once DPAE_Cal5p56x45NUSA_NL
 
@@ -246,7 +246,7 @@ Ammo.Cal5p56x45NUSA_HE:
   quality: Quality.Epic
   $base: Ammo.Cal5p56x45NUSA
   friendlyName: '556x45mm_nusa_high_explosive'
-  displayName: LocKey#8100636
-  localizedDescription: LocKey#8100788
+  displayName: LocKey#AmmoExpanded-Cal5p56x45NUSA-HE-Name
+  localizedDescription: LocKey#AmmoExpanded-Cal5p56x45NUSA-HE-Desc
   tags:
     - !append-once DPAE_Cal5p56x45NUSA_HE

@@ -17,7 +17,7 @@ Ammo.RecipeCal3x10FlechCluster:
   craftingResult: Ammo.RecipeCal3x10FlechCluster_inline0
   crosshair: Crosshairs.None
   deprecated: False
-  displayName: LocKey#8100537
+  displayName: LocKey#AmmoExpanded-RecipeCal3x10FlechCluster-Name
   dropObject: defaultItemDrop
   effectors: []
   enableNpcRPGData: False

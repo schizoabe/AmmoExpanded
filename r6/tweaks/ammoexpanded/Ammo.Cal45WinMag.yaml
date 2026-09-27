@@ -16,7 +16,7 @@ Ammo.Cal45WinMag:
   CraftingData: Ammo.AmmoBase_inline0
   crosshair: Crosshairs.None
   deprecated: False
-  displayName: LocKey#8100317
+  displayName: LocKey#AmmoExpanded-Cal45WinMag-Name
   dropObject: ammoDrop
   effectors: []
   enableNpcRPGData: False
@@ -38,7 +38,7 @@ Ammo.Cal45WinMag:
   isSingleInstance: True
   itemCategory: ItemCategory.General
   itemType: ItemType.Con_Ammo
-  localizedDescription: LocKey#8100585
+  localizedDescription: LocKey#AmmoExpanded-Cal45WinMag-Desc
   localizedName: ''
   mass: 1
   minigameInstance: minigame_v2.DefaultItemMinigame
@@ -96,8 +96,8 @@ Ammo.Cal45WinMag_AP:
   quality: Quality.Uncommon
   $base: Ammo.Cal45WinMag
   friendlyName: '45_winchester_magnum_armor_piercing'
-  displayName: LocKey#8100318
-  localizedDescription: LocKey#8100742
+  displayName: LocKey#AmmoExpanded-Cal45WinMag-AP-Name
+  localizedDescription: LocKey#AmmoExpanded-Cal45WinMag-AP-Desc
   tags:
     - !append-once DPAE_Cal45WinMag_AP
 
@@ -121,8 +121,8 @@ Ammo.Cal45WinMag_HP:
   quality: Quality.Uncommon
   $base: Ammo.Cal45WinMag
   friendlyName: '45_winchester_magnum_hollow_point'
-  displayName: LocKey#8100319
-  localizedDescription: LocKey#8100741
+  displayName: LocKey#AmmoExpanded-Cal45WinMag-HP-Name
+  localizedDescription: LocKey#AmmoExpanded-Cal45WinMag-HP-Desc
   tags:
     - !append-once DPAE_Cal45WinMag_HP
 
@@ -146,8 +146,8 @@ Ammo.Cal45WinMag_EMP:
   quality: Quality.Rare
   $base: Ammo.Cal45WinMag
   friendlyName: '45_winchester_magnum_emp'
-  displayName: LocKey#8100320
-  localizedDescription: LocKey#8100740
+  displayName: LocKey#AmmoExpanded-Cal45WinMag-EMP-Name
+  localizedDescription: LocKey#AmmoExpanded-Cal45WinMag-EMP-Desc
   tags:
     - !append-once DPAE_Cal45WinMag_EMP
 
@@ -171,8 +171,8 @@ Ammo.Cal45WinMag_INC:
   quality: Quality.Rare
   $base: Ammo.Cal45WinMag
   friendlyName: '45_winchester_magnum_incendiary'
-  displayName: LocKey#8100321
-  localizedDescription: LocKey#8100739
+  displayName: LocKey#AmmoExpanded-Cal45WinMag-INC-Name
+  localizedDescription: LocKey#AmmoExpanded-Cal45WinMag-INC-Desc
   tags:
     - !append-once DPAE_Cal45WinMag_INC
 
@@ -196,8 +196,8 @@ Ammo.Cal45WinMag_CHEM:
   quality: Quality.Rare
   $base: Ammo.Cal45WinMag
   friendlyName: '45_winchester_magnum_chemical'
-  displayName: LocKey#8100322
-  localizedDescription: LocKey#8100738
+  displayName: LocKey#AmmoExpanded-Cal45WinMag-CHEM-Name
+  localizedDescription: LocKey#AmmoExpanded-Cal45WinMag-CHEM-Desc
   tags:
     - !append-once DPAE_Cal45WinMag_CHEM
 
@@ -221,8 +221,8 @@ Ammo.Cal45WinMag_NL:
   quality: Quality.Uncommon
   $base: Ammo.Cal45WinMag
   friendlyName: '45_winchester_magnum_non-lethal'
-  displayName: LocKey#8100323
-  localizedDescription: LocKey#8100737
+  displayName: LocKey#AmmoExpanded-Cal45WinMag-NL-Name
+  localizedDescription: LocKey#AmmoExpanded-Cal45WinMag-NL-Desc
   tags:
     - !append-once DPAE_Cal45WinMag_NL
 
@@ -246,8 +246,8 @@ Ammo.Cal45WinMag_Snakeshot:
   quality: Quality.Uncommon
   $base: Ammo.Cal45WinMag
   friendlyName: '45_winchester_magnum_snakeshot'
-  displayName: LocKey#8100618
-  localizedDescription: LocKey#8100736
+  displayName: LocKey#AmmoExpanded-Cal45WinMag-Snakeshot-Name
+  localizedDescription: LocKey#AmmoExpanded-Cal45WinMag-Snakeshot-Desc
   tags:
     - !append-once DPAE_Cal45WinMag_Snakeshot
 
@@ -271,7 +271,7 @@ Ammo.Cal45WinMag_HE:
   quality: Quality.Epic
   $base: Ammo.Cal45WinMag
   friendlyName: '45_winchester_magnum_high_explosive'
-  displayName: LocKey#8100632
-  localizedDescription: LocKey#8100735
+  displayName: LocKey#AmmoExpanded-Cal45WinMag-HE-Name
+  localizedDescription: LocKey#AmmoExpanded-Cal45WinMag-HE-Desc
   tags:
     - !append-once DPAE_Cal45WinMag_HE

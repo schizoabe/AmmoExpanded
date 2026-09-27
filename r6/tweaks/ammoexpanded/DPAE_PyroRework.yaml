@@ -3,35 +3,35 @@ Items.PowerMod1_Base:
   statModifiers: []
   OnAttach:
     - UIData:
-        localizedDescription: LocKey#8100836
+        localizedDescription: LocKey#AmmoExpanded-PyroMod-Desc
         stats: []
 
 Items.PowerMod1_Common:
   OnAttach:
     - UIData:
-        localizedDescription: LocKey#8100836
+        localizedDescription: LocKey#AmmoExpanded-PyroMod-Desc
         stats: []
 
 Items.PowerMod1_Uncommon:
   OnAttach:
     - UIData:
-        localizedDescription: LocKey#8100836
+        localizedDescription: LocKey#AmmoExpanded-PyroMod-Desc
         stats: []
 
 Items.PowerMod1_Rare:
   OnAttach:
     - UIData:
-        localizedDescription: LocKey#8100836
+        localizedDescription: LocKey#AmmoExpanded-PyroMod-Desc
         stats: []
 
 Items.PowerMod1_Epic:
   OnAttach:
     - UIData:
-        localizedDescription: LocKey#8100836
+        localizedDescription: LocKey#AmmoExpanded-PyroMod-Desc
         stats: []
 
 Items.PowerMod1_Legendary:
   OnAttach:
     - UIData:
-        localizedDescription: LocKey#8100836
+        localizedDescription: LocKey#AmmoExpanded-PyroMod-Desc
         stats: []

@@ -17,7 +17,7 @@ Ammo.RecipeCal20x102Vulcan_HE:
   craftingResult: Ammo.RecipeCal20x102Vulcan_HE_inline0
   crosshair: Crosshairs.None
   deprecated: False
-  displayName: LocKey#8100414
+  displayName: LocKey#AmmoExpanded-Cal20x102Vulcan-HE-Name
   dropObject: defaultItemDrop
   effectors: []
   enableNpcRPGData: False

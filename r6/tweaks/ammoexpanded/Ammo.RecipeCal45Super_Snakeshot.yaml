@@ -17,7 +17,7 @@ Ammo.RecipeCal45Super_Snakeshot:
   craftingResult: Ammo.RecipeCal45Super_Snakeshot_inline0
   crosshair: Crosshairs.None
   deprecated: False
-  displayName: LocKey#8100617
+  displayName: LocKey#AmmoExpanded-Cal45Super-Snakeshot-Name
   dropObject: defaultItemDrop
   effectors: []
   enableNpcRPGData: False

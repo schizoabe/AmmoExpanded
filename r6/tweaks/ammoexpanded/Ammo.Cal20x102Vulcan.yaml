@@ -16,7 +16,7 @@ Ammo.Cal20x102Vulcan:
   CraftingData: Ammo.AmmoBase_inline0
   crosshair: Crosshairs.None
   deprecated: False
-  displayName: LocKey#8100413
+  displayName: LocKey#AmmoExpanded-Cal20x102Vulcan-Name
   dropObject: ammoDrop
   effectors: []
   enableNpcRPGData: False
@@ -38,7 +38,7 @@ Ammo.Cal20x102Vulcan:
   isSingleInstance: True
   itemCategory: ItemCategory.General
   itemType: ItemType.Con_Ammo
-  localizedDescription: LocKey#8100578
+  localizedDescription: LocKey#AmmoExpanded-Cal20x102Vulcan-Desc
   localizedName: ''
   mass: 1
   minigameInstance: minigame_v2.DefaultItemMinigame
@@ -96,8 +96,8 @@ Ammo.Cal20x102Vulcan_HE:
   quality: Quality.Epic
   $base: Ammo.Cal20x102Vulcan
   friendlyName: '20x102mm_vulcan_high_explosive'
-  displayName: LocKey#8100414
-  localizedDescription: LocKey#8100703
+  displayName: LocKey#AmmoExpanded-Cal20x102Vulcan-HE-Name
+  localizedDescription: LocKey#AmmoExpanded-Cal20x102Vulcan-HE-Desc
   tags:
     - !append-once DPAE_Cal20x102Vulcan_HE
 
@@ -121,8 +121,8 @@ Ammo.Cal20x102Vulcan_INC:
   quality: Quality.Rare
   $base: Ammo.Cal20x102Vulcan
   friendlyName: '20x102mm_vulcan_incendiary'
-  displayName: LocKey#8100415
-  localizedDescription: LocKey#8100702
+  displayName: LocKey#AmmoExpanded-Cal20x102Vulcan-INC-Name
+  localizedDescription: LocKey#AmmoExpanded-Cal20x102Vulcan-INC-Desc
   tags:
     - !append-once DPAE_Cal20x102Vulcan_INC
 
@@ -146,8 +146,8 @@ Ammo.Cal20x102Vulcan_CHEM:
   quality: Quality.Rare
   $base: Ammo.Cal20x102Vulcan
   friendlyName: '20x102mm_vulcan_chemical'
-  displayName: LocKey#8100622
-  localizedDescription: LocKey#8100701
+  displayName: LocKey#AmmoExpanded-Cal20x102Vulcan-CHEM-Name
+  localizedDescription: LocKey#AmmoExpanded-Cal20x102Vulcan-CHEM-Desc
   tags:
     - !append-once DPAE_Cal20x102Vulcan_CHEM
 
@@ -171,7 +171,7 @@ Ammo.Cal20x102Vulcan_EMP:
   quality: Quality.Rare
   $base: Ammo.Cal20x102Vulcan
   friendlyName: '20x102mm_vulcan_emp'
-  displayName: LocKey#8100623
-  localizedDescription: LocKey#8100700
+  displayName: LocKey#AmmoExpanded-Cal20x102Vulcan-EMP-Name
+  localizedDescription: LocKey#AmmoExpanded-Cal20x102Vulcan-EMP-Desc
   tags:
     - !append-once DPAE_Cal20x102Vulcan_EMP

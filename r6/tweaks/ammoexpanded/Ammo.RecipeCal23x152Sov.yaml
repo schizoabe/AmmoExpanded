@@ -17,7 +17,7 @@ Ammo.RecipeCal23x152Sov:
   craftingResult: Ammo.RecipeCal23x152Sov_inline0
   crosshair: Crosshairs.None
   deprecated: False
-  displayName: LocKey#8100536
+  displayName: LocKey#AmmoExpanded-RecipeCal23x152Sov-Name
   dropObject: defaultItemDrop
   effectors: []
   enableNpcRPGData: False

@@ -17,7 +17,7 @@ Ammo.RecipeCal5p56x45NUSA_EMP:
   craftingResult: Ammo.RecipeCal5p56x45NUSA_EMP_inline0
   crosshair: Crosshairs.None
   deprecated: False
-  displayName: LocKey#8100443
+  displayName: LocKey#AmmoExpanded-Cal5p56x45NUSA-EMP-Name
   dropObject: defaultItemDrop
   effectors: []
   enableNpcRPGData: False

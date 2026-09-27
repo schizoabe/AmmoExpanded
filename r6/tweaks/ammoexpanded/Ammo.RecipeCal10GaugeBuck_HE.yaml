@@ -17,7 +17,7 @@ Ammo.RecipeCal10GaugeBuck_HE:
   craftingResult: Ammo.RecipeCal10GaugeBuck_HE_inline0
   crosshair: Crosshairs.None
   deprecated: False
-  displayName: LocKey#8100563
+  displayName: LocKey#AmmoExpanded-Cal10GaugeBuck-HE-Name
   dropObject: defaultItemDrop
   effectors: []
   enableNpcRPGData: False

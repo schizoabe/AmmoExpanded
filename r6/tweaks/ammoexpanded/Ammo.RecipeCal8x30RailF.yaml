@@ -17,7 +17,7 @@ Ammo.RecipeCal8x30RailF:
   craftingResult: Ammo.RecipeCal8x30RailF_inline0
   crosshair: Crosshairs.None
   deprecated: False
-  displayName: LocKey#8100547
+  displayName: LocKey#AmmoExpanded-RecipeCal8x30RailF-Name
   dropObject: defaultItemDrop
   effectors: []
   enableNpcRPGData: False

@@ -17,7 +17,7 @@ Ammo.RecipeMilitechPrototype:
   craftingResult: Ammo.RecipeMilitechPrototype_inline0
   crosshair: Crosshairs.None
   deprecated: False
-  displayName: LocKey#8100051
+  displayName: LocKey#AmmoExpanded-MilitechPrototype-Name
   dropObject: defaultItemDrop
   effectors: []
   enableNpcRPGData: False

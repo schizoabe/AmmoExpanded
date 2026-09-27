@@ -17,7 +17,7 @@ Ammo.RecipeCal12p3x41UdaR_Snakeshot:
   craftingResult: Ammo.RecipeCal12p3x41UdaR_Snakeshot_inline0
   crosshair: Crosshairs.None
   deprecated: False
-  displayName: LocKey#8100619
+  displayName: LocKey#AmmoExpanded-Cal12p3x41UdaR-Snakeshot-Name
   dropObject: defaultItemDrop
   effectors: []
   enableNpcRPGData: False

@@ -16,7 +16,7 @@ Ammo.Cal5p45CT:
   CraftingData: Ammo.AmmoBase_inline0
   crosshair: Crosshairs.None
   deprecated: False
-  displayName: LocKey#8100433
+  displayName: LocKey#AmmoExpanded-Cal5p45CT-Name
   dropObject: ammoDrop
   effectors: []
   enableNpcRPGData: False
@@ -38,7 +38,7 @@ Ammo.Cal5p45CT:
   isSingleInstance: True
   itemCategory: ItemCategory.General
   itemType: ItemType.Con_Ammo
-  localizedDescription: LocKey#8100592
+  localizedDescription: LocKey#AmmoExpanded-Cal5p45CT-Desc
   localizedName: ''
   mass: 1
   minigameInstance: minigame_v2.DefaultItemMinigame
@@ -96,8 +96,8 @@ Ammo.Cal5p45CT_AP:
   quality: Quality.Uncommon
   $base: Ammo.Cal5p45CT
   friendlyName: '545mm_ct_armor_piercing'
-  displayName: LocKey#8100434
-  localizedDescription: LocKey#8100780
+  displayName: LocKey#AmmoExpanded-Cal5p45CT-AP-Name
+  localizedDescription: LocKey#AmmoExpanded-Cal5p45CT-AP-Desc
   tags:
     - !append-once DPAE_Cal5p45CT_AP
 
@@ -121,8 +121,8 @@ Ammo.Cal5p45CT_HP:
   quality: Quality.Uncommon
   $base: Ammo.Cal5p45CT
   friendlyName: '545mm_ct_hollow_point'
-  displayName: LocKey#8100435
-  localizedDescription: LocKey#8100779
+  displayName: LocKey#AmmoExpanded-Cal5p45CT-HP-Name
+  localizedDescription: LocKey#AmmoExpanded-Cal5p45CT-HP-Desc
   tags:
     - !append-once DPAE_Cal5p45CT_HP
 
@@ -146,8 +146,8 @@ Ammo.Cal5p45CT_EMP:
   quality: Quality.Rare
   $base: Ammo.Cal5p45CT
   friendlyName: '545mm_ct_emp'
-  displayName: LocKey#8100436
-  localizedDescription: LocKey#8100778
+  displayName: LocKey#AmmoExpanded-Cal5p45CT-EMP-Name
+  localizedDescription: LocKey#AmmoExpanded-Cal5p45CT-EMP-Desc
   tags:
     - !append-once DPAE_Cal5p45CT_EMP
 
@@ -171,8 +171,8 @@ Ammo.Cal5p45CT_INC:
   quality: Quality.Rare
   $base: Ammo.Cal5p45CT
   friendlyName: '545mm_ct_incendiary'
-  displayName: LocKey#8100437
-  localizedDescription: LocKey#8100777
+  displayName: LocKey#AmmoExpanded-Cal5p45CT-INC-Name
+  localizedDescription: LocKey#AmmoExpanded-Cal5p45CT-INC-Desc
   tags:
     - !append-once DPAE_Cal5p45CT_INC
 
@@ -196,8 +196,8 @@ Ammo.Cal5p45CT_CHEM:
   quality: Quality.Rare
   $base: Ammo.Cal5p45CT
   friendlyName: '545mm_ct_chemical'
-  displayName: LocKey#8100438
-  localizedDescription: LocKey#8100776
+  displayName: LocKey#AmmoExpanded-Cal5p45CT-CHEM-Name
+  localizedDescription: LocKey#AmmoExpanded-Cal5p45CT-CHEM-Desc
   tags:
     - !append-once DPAE_Cal5p45CT_CHEM
 
@@ -221,8 +221,8 @@ Ammo.Cal5p45CT_NL:
   quality: Quality.Uncommon
   $base: Ammo.Cal5p45CT
   friendlyName: '545mm_ct_non-lethal'
-  displayName: LocKey#8100439
-  localizedDescription: LocKey#8100775
+  displayName: LocKey#AmmoExpanded-Cal5p45CT-NL-Name
+  localizedDescription: LocKey#AmmoExpanded-Cal5p45CT-NL-Desc
   tags:
     - !append-once DPAE_Cal5p45CT_NL
 
@@ -246,7 +246,7 @@ Ammo.Cal5p45CT_HE:
   quality: Quality.Epic
   $base: Ammo.Cal5p45CT
   friendlyName: '545mm_ct_high_explosive'
-  displayName: LocKey#8100635
-  localizedDescription: LocKey#8100774
+  displayName: LocKey#AmmoExpanded-Cal5p45CT-HE-Name
+  localizedDescription: LocKey#AmmoExpanded-Cal5p45CT-HE-Desc
   tags:
     - !append-once DPAE_Cal5p45CT_HE

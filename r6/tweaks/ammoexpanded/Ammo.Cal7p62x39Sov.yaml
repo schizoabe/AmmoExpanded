@@ -16,7 +16,7 @@ Ammo.Cal7p62x39Sov:
   CraftingData: Ammo.AmmoBase_inline0
   crosshair: Crosshairs.None
   deprecated: False
-  displayName: LocKey#8100473
+  displayName: LocKey#AmmoExpanded-Cal7p62x39Sov-Name
   dropObject: ammoDrop
   effectors: []
   enableNpcRPGData: False
@@ -38,7 +38,7 @@ Ammo.Cal7p62x39Sov:
   isSingleInstance: True
   itemCategory: ItemCategory.General
   itemType: ItemType.Con_Ammo
-  localizedDescription: LocKey#8100598
+  localizedDescription: LocKey#AmmoExpanded-Cal7p62x39Sov-Desc
   localizedName: ''
   mass: 1
   minigameInstance: minigame_v2.DefaultItemMinigame
@@ -96,8 +96,8 @@ Ammo.Cal7p62x39Sov_AP:
   quality: Quality.Uncommon
   $base: Ammo.Cal7p62x39Sov
   friendlyName: '762x39mm_soviet_armor_piercing'
-  displayName: LocKey#8100474
-  localizedDescription: LocKey#8100815
+  displayName: LocKey#AmmoExpanded-Cal7p62x39Sov-AP-Name
+  localizedDescription: LocKey#AmmoExpanded-Cal7p62x39Sov-AP-Desc
   tags:
     - !append-once DPAE_Cal7p62x39Sov_AP
 
@@ -121,8 +121,8 @@ Ammo.Cal7p62x39Sov_HP:
   quality: Quality.Uncommon
   $base: Ammo.Cal7p62x39Sov
   friendlyName: '762x39mm_soviet_hollow_point'
-  displayName: LocKey#8100475
-  localizedDescription: LocKey#8100814
+  displayName: LocKey#AmmoExpanded-Cal7p62x39Sov-HP-Name
+  localizedDescription: LocKey#AmmoExpanded-Cal7p62x39Sov-HP-Desc
   tags:
     - !append-once DPAE_Cal7p62x39Sov_HP
 
@@ -146,8 +146,8 @@ Ammo.Cal7p62x39Sov_EMP:
   quality: Quality.Rare
   $base: Ammo.Cal7p62x39Sov
   friendlyName: '762x39mm_soviet_emp'
-  displayName: LocKey#8100476
-  localizedDescription: LocKey#8100813
+  displayName: LocKey#AmmoExpanded-Cal7p62x39Sov-EMP-Name
+  localizedDescription: LocKey#AmmoExpanded-Cal7p62x39Sov-EMP-Desc
   tags:
     - !append-once DPAE_Cal7p62x39Sov_EMP
 
@@ -171,8 +171,8 @@ Ammo.Cal7p62x39Sov_INC:
   quality: Quality.Rare
   $base: Ammo.Cal7p62x39Sov
   friendlyName: '762x39mm_soviet_incendiary'
-  displayName: LocKey#8100477
-  localizedDescription: LocKey#8100812
+  displayName: LocKey#AmmoExpanded-Cal7p62x39Sov-INC-Name
+  localizedDescription: LocKey#AmmoExpanded-Cal7p62x39Sov-INC-Desc
   tags:
     - !append-once DPAE_Cal7p62x39Sov_INC
 
@@ -196,8 +196,8 @@ Ammo.Cal7p62x39Sov_CHEM:
   quality: Quality.Rare
   $base: Ammo.Cal7p62x39Sov
   friendlyName: '762x39mm_soviet_chemical'
-  displayName: LocKey#8100478
-  localizedDescription: LocKey#8100811
+  displayName: LocKey#AmmoExpanded-Cal7p62x39Sov-CHEM-Name
+  localizedDescription: LocKey#AmmoExpanded-Cal7p62x39Sov-CHEM-Desc
   tags:
     - !append-once DPAE_Cal7p62x39Sov_CHEM
 
@@ -221,8 +221,8 @@ Ammo.Cal7p62x39Sov_NL:
   quality: Quality.Uncommon
   $base: Ammo.Cal7p62x39Sov
   friendlyName: '762x39mm_soviet_non-lethal'
-  displayName: LocKey#8100479
-  localizedDescription: LocKey#8100810
+  displayName: LocKey#AmmoExpanded-Cal7p62x39Sov-NL-Name
+  localizedDescription: LocKey#AmmoExpanded-Cal7p62x39Sov-NL-Desc
   tags:
     - !append-once DPAE_Cal7p62x39Sov_NL
 
@@ -246,7 +246,7 @@ Ammo.Cal7p62x39Sov_HE:
   quality: Quality.Epic
   $base: Ammo.Cal7p62x39Sov
   friendlyName: '762x39mm_soviet_high_explosive'
-  displayName: LocKey#8100613
-  localizedDescription: LocKey#8100809
+  displayName: LocKey#AmmoExpanded-Cal7p62x39Sov-HE-Name
+  localizedDescription: LocKey#AmmoExpanded-Cal7p62x39Sov-HE-Desc
   tags:
     - !append-once DPAE_Cal7p62x39Sov_HE

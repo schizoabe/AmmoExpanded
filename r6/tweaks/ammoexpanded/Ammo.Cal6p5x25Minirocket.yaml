@@ -16,7 +16,7 @@ Ammo.Cal6p5x25Minirocket:
   CraftingData: Ammo.AmmoBase_inline0
   crosshair: Crosshairs.None
   deprecated: False
-  displayName: LocKey#8100460
+  displayName: LocKey#AmmoExpanded-Cal6p5x25Minirocket-Name
   dropObject: ammoDrop
   effectors: []
   enableNpcRPGData: False
@@ -38,7 +38,7 @@ Ammo.Cal6p5x25Minirocket:
   isSingleInstance: True
   itemCategory: ItemCategory.General
   itemType: ItemType.Con_Ammo
-  localizedDescription: LocKey#8100597
+  localizedDescription: LocKey#AmmoExpanded-Cal6p5x25Minirocket-Desc
   localizedName: ''
   mass: 1
   minigameInstance: minigame_v2.DefaultItemMinigame
@@ -96,8 +96,8 @@ Ammo.Cal6p5x25Minirocket_EMP:
   quality: Quality.Rare
   $base: Ammo.Cal6p5x25Minirocket
   friendlyName: '65x25mm_guided_minirocket_emp'
-  displayName: LocKey#8100463
-  localizedDescription: LocKey#8100808
+  displayName: LocKey#AmmoExpanded-Cal6p5x25Minirocket-EMP-Name
+  localizedDescription: LocKey#AmmoExpanded-Cal6p5x25Minirocket-EMP-Desc
   tags:
     - !append-once DPAE_Cal6p5x25Minirocket_EMP
 
@@ -121,8 +121,8 @@ Ammo.Cal6p5x25Minirocket_INC:
   quality: Quality.Rare
   $base: Ammo.Cal6p5x25Minirocket
   friendlyName: '65x25mm_guided_minirocket_incendiary'
-  displayName: LocKey#8100464
-  localizedDescription: LocKey#8100807
+  displayName: LocKey#AmmoExpanded-Cal6p5x25Minirocket-INC-Name
+  localizedDescription: LocKey#AmmoExpanded-Cal6p5x25Minirocket-INC-Desc
   tags:
     - !append-once DPAE_Cal6p5x25Minirocket_INC
 
@@ -146,8 +146,8 @@ Ammo.Cal6p5x25Minirocket_CHEM:
   quality: Quality.Rare
   $base: Ammo.Cal6p5x25Minirocket
   friendlyName: '65x25mm_guided_minirocket_chemical'
-  displayName: LocKey#8100465
-  localizedDescription: LocKey#8100806
+  displayName: LocKey#AmmoExpanded-Cal6p5x25Minirocket-CHEM-Name
+  localizedDescription: LocKey#AmmoExpanded-Cal6p5x25Minirocket-CHEM-Desc
   tags:
     - !append-once DPAE_Cal6p5x25Minirocket_CHEM
 
@@ -171,7 +171,7 @@ Ammo.Cal6p5x25Minirocket_HE:
   quality: Quality.Epic
   $base: Ammo.Cal6p5x25Minirocket
   friendlyName: '65x25mm_guided_minirocket_high_explosive'
-  displayName: LocKey#8100552
-  localizedDescription: LocKey#8100805
+  displayName: LocKey#AmmoExpanded-Cal6p5x25Minirocket-HE-Name
+  localizedDescription: LocKey#AmmoExpanded-Cal6p5x25Minirocket-HE-Desc
   tags:
     - !append-once DPAE_Cal6p5x25Minirocket_HE

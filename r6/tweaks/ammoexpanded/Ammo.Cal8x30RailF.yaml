@@ -16,7 +16,7 @@ Ammo.Cal8x30RailF:
   CraftingData: Ammo.AmmoBase_inline0
   crosshair: Crosshairs.None
   deprecated: False
-  displayName: LocKey#8100480
+  displayName: LocKey#AmmoExpanded-Cal8x30RailF-Name
   dropObject: ammoDrop
   effectors: []
   enableNpcRPGData: False
@@ -38,7 +38,7 @@ Ammo.Cal8x30RailF:
   isSingleInstance: True
   itemCategory: ItemCategory.General
   itemType: ItemType.Con_Ammo
-  localizedDescription: LocKey#8100599
+  localizedDescription: LocKey#AmmoExpanded-Cal8x30RailF-Desc
   localizedName: ''
   mass: 1
   minigameInstance: minigame_v2.DefaultItemMinigame
@@ -96,8 +96,8 @@ Ammo.Cal8x30RailF_EMP:
   quality: Quality.Rare
   $base: Ammo.Cal8x30RailF
   friendlyName: '8x30mm_rail_flechettes_emp'
-  displayName: LocKey#8100483
-  localizedDescription: LocKey#8100818
+  displayName: LocKey#AmmoExpanded-Cal8x30RailF-EMP-Name
+  localizedDescription: LocKey#AmmoExpanded-Cal8x30RailF-EMP-Desc
   tags:
     - !append-once DPAE_Cal8x30RailF_EMP
 
@@ -121,8 +121,8 @@ Ammo.Cal8x30RailF_INC:
   quality: Quality.Rare
   $base: Ammo.Cal8x30RailF
   friendlyName: '8x30mm_rail_flechettes_incendiary'
-  displayName: LocKey#8100484
-  localizedDescription: LocKey#8100817
+  displayName: LocKey#AmmoExpanded-Cal8x30RailF-INC-Name
+  localizedDescription: LocKey#AmmoExpanded-Cal8x30RailF-INC-Desc
   tags:
     - !append-once DPAE_Cal8x30RailF_INC
 
@@ -146,7 +146,7 @@ Ammo.Cal8x30RailF_CHEM:
   quality: Quality.Rare
   $base: Ammo.Cal8x30RailF
   friendlyName: '8x30mm_rail_flechettes_chemical'
-  displayName: LocKey#8100485
-  localizedDescription: LocKey#8100816
+  displayName: LocKey#AmmoExpanded-Cal8x30RailF-CHEM-Name
+  localizedDescription: LocKey#AmmoExpanded-Cal8x30RailF-CHEM-Desc
   tags:
     - !append-once DPAE_Cal8x30RailF_CHEM

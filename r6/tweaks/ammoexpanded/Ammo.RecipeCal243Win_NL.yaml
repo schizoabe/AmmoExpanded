@@ -17,7 +17,7 @@ Ammo.RecipeCal243Win_NL:
   craftingResult: Ammo.RecipeCal243Win_NL_inline0
   crosshair: Crosshairs.None
   deprecated: False
-  displayName: LocKey#8100309
+  displayName: LocKey#AmmoExpanded-Cal243Win-NL-Name
   dropObject: defaultItemDrop
   effectors: []
   enableNpcRPGData: False

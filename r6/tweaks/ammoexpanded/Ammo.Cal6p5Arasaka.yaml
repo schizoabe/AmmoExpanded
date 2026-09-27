@@ -16,7 +16,7 @@ Ammo.Cal6p5Arasaka:
   CraftingData: Ammo.AmmoBase_inline0
   crosshair: Crosshairs.None
   deprecated: False
-  displayName: LocKey#8100466
+  displayName: LocKey#AmmoExpanded-Cal6p5Arasaka-Name
   dropObject: ammoDrop
   effectors: []
   enableNpcRPGData: False
@@ -38,7 +38,7 @@ Ammo.Cal6p5Arasaka:
   isSingleInstance: True
   itemCategory: ItemCategory.General
   itemType: ItemType.Con_Ammo
-  localizedDescription: LocKey#8100596
+  localizedDescription: LocKey#AmmoExpanded-Cal6p5Arasaka-Desc
   localizedName: ''
   mass: 1
   minigameInstance: minigame_v2.DefaultItemMinigame
@@ -96,8 +96,8 @@ Ammo.Cal6p5Arasaka_AP:
   quality: Quality.Uncommon
   $base: Ammo.Cal6p5Arasaka
   friendlyName: '65mm_arasaka_armor_piercing'
-  displayName: LocKey#8100467
-  localizedDescription: LocKey#8100804
+  displayName: LocKey#AmmoExpanded-Cal6p5Arasaka-AP-Name
+  localizedDescription: LocKey#AmmoExpanded-Cal6p5Arasaka-AP-Desc
   tags:
     - !append-once DPAE_Cal6p5Arasaka_AP
 
@@ -121,8 +121,8 @@ Ammo.Cal6p5Arasaka_HP:
   quality: Quality.Uncommon
   $base: Ammo.Cal6p5Arasaka
   friendlyName: '65mm_arasaka_hollow_point'
-  displayName: LocKey#8100468
-  localizedDescription: LocKey#8100803
+  displayName: LocKey#AmmoExpanded-Cal6p5Arasaka-HP-Name
+  localizedDescription: LocKey#AmmoExpanded-Cal6p5Arasaka-HP-Desc
   tags:
     - !append-once DPAE_Cal6p5Arasaka_HP
 
@@ -146,8 +146,8 @@ Ammo.Cal6p5Arasaka_EMP:
   quality: Quality.Rare
   $base: Ammo.Cal6p5Arasaka
   friendlyName: '65mm_arasaka_emp'
-  displayName: LocKey#8100469
-  localizedDescription: LocKey#8100802
+  displayName: LocKey#AmmoExpanded-Cal6p5Arasaka-EMP-Name
+  localizedDescription: LocKey#AmmoExpanded-Cal6p5Arasaka-EMP-Desc
   tags:
     - !append-once DPAE_Cal6p5Arasaka_EMP
 
@@ -171,8 +171,8 @@ Ammo.Cal6p5Arasaka_INC:
   quality: Quality.Rare
   $base: Ammo.Cal6p5Arasaka
   friendlyName: '65mm_arasaka_incendiary'
-  displayName: LocKey#8100470
-  localizedDescription: LocKey#8100801
+  displayName: LocKey#AmmoExpanded-Cal6p5Arasaka-INC-Name
+  localizedDescription: LocKey#AmmoExpanded-Cal6p5Arasaka-INC-Desc
   tags:
     - !append-once DPAE_Cal6p5Arasaka_INC
 
@@ -196,8 +196,8 @@ Ammo.Cal6p5Arasaka_CHEM:
   quality: Quality.Rare
   $base: Ammo.Cal6p5Arasaka
   friendlyName: '65mm_arasaka_chemical'
-  displayName: LocKey#8100471
-  localizedDescription: LocKey#8100800
+  displayName: LocKey#AmmoExpanded-Cal6p5Arasaka-CHEM-Name
+  localizedDescription: LocKey#AmmoExpanded-Cal6p5Arasaka-CHEM-Desc
   tags:
     - !append-once DPAE_Cal6p5Arasaka_CHEM
 
@@ -221,8 +221,8 @@ Ammo.Cal6p5Arasaka_NL:
   quality: Quality.Uncommon
   $base: Ammo.Cal6p5Arasaka
   friendlyName: '65mm_arasaka_non-lethal'
-  displayName: LocKey#8100472
-  localizedDescription: LocKey#8100799
+  displayName: LocKey#AmmoExpanded-Cal6p5Arasaka-NL-Name
+  localizedDescription: LocKey#AmmoExpanded-Cal6p5Arasaka-NL-Desc
   tags:
     - !append-once DPAE_Cal6p5Arasaka_NL
 
@@ -246,7 +246,7 @@ Ammo.Cal6p5Arasaka_HE:
   quality: Quality.Epic
   $base: Ammo.Cal6p5Arasaka
   friendlyName: '65mm_arasaka_high_explosive'
-  displayName: LocKey#8100637
-  localizedDescription: LocKey#8100798
+  displayName: LocKey#AmmoExpanded-Cal6p5Arasaka-HE-Name
+  localizedDescription: LocKey#AmmoExpanded-Cal6p5Arasaka-HE-Desc
   tags:
     - !append-once DPAE_Cal6p5Arasaka_HE

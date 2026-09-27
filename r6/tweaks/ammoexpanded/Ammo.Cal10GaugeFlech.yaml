@@ -16,7 +16,7 @@ Ammo.Cal10GaugeFlech:
   CraftingData: Ammo.AmmoBase_inline0
   crosshair: Crosshairs.None
   deprecated: False
-  displayName: LocKey#8100359
+  displayName: LocKey#AmmoExpanded-Cal10GaugeFlech-Name
   dropObject: ammoDrop
   effectors: []
   enableNpcRPGData: False
@@ -38,7 +38,7 @@ Ammo.Cal10GaugeFlech:
   isSingleInstance: True
   itemCategory: ItemCategory.General
   itemType: ItemType.Con_Ammo
-  localizedDescription: LocKey#8100565
+  localizedDescription: LocKey#AmmoExpanded-Cal10GaugeFlech-Desc
   localizedName: ''
   mass: 1
   minigameInstance: minigame_v2.DefaultItemMinigame
@@ -96,8 +96,8 @@ Ammo.Cal10GaugeFlech_EMP:
   quality: Quality.Rare
   $base: Ammo.Cal10GaugeFlech
   friendlyName: '10_gauge_flechettes_emp'
-  displayName: LocKey#8100362
-  localizedDescription: LocKey#8100653
+  displayName: LocKey#AmmoExpanded-Cal10GaugeFlech-EMP-Name
+  localizedDescription: LocKey#AmmoExpanded-Cal10GaugeFlech-EMP-Desc
   tags:
     - !append-once DPAE_Cal10GaugeFlech_EMP
 
@@ -121,8 +121,8 @@ Ammo.Cal10GaugeFlech_INC:
   quality: Quality.Rare
   $base: Ammo.Cal10GaugeFlech
   friendlyName: '10_gauge_flechettes_incendiary'
-  displayName: LocKey#8100363
-  localizedDescription: LocKey#8100652
+  displayName: LocKey#AmmoExpanded-Cal10GaugeFlech-INC-Name
+  localizedDescription: LocKey#AmmoExpanded-Cal10GaugeFlech-INC-Desc
   tags:
     - !append-once DPAE_Cal10GaugeFlech_INC
 
@@ -146,7 +146,7 @@ Ammo.Cal10GaugeFlech_CHEM:
   quality: Quality.Rare
   $base: Ammo.Cal10GaugeFlech
   friendlyName: '10_gauge_flechettes_chemical'
-  displayName: LocKey#8100364
-  localizedDescription: LocKey#8100651
+  displayName: LocKey#AmmoExpanded-Cal10GaugeFlech-CHEM-Name
+  localizedDescription: LocKey#AmmoExpanded-Cal10GaugeFlech-CHEM-Desc
   tags:
     - !append-once DPAE_Cal10GaugeFlech_CHEM

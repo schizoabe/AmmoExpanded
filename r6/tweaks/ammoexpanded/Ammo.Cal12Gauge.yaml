@@ -16,7 +16,7 @@ Ammo.Cal12Gauge:
   CraftingData: Ammo.AmmoBase_inline0
   crosshair: Crosshairs.None
   deprecated: False
-  displayName: LocKey#8100381
+  displayName: LocKey#AmmoExpanded-Cal12Gauge-Name
   dropObject: ammoDrop
   effectors: []
   enableNpcRPGData: False
@@ -38,7 +38,7 @@ Ammo.Cal12Gauge:
   isSingleInstance: True
   itemCategory: ItemCategory.General
   itemType: ItemType.Con_Ammo
-  localizedDescription: LocKey#8100569
+  localizedDescription: LocKey#AmmoExpanded-Cal12Gauge-Desc
   localizedName: ''
   mass: 1
   minigameInstance: minigame_v2.DefaultItemMinigame
@@ -96,8 +96,8 @@ Ammo.Cal12Gauge_Slug:
   quality: Quality.Uncommon
   $base: Ammo.Cal12Gauge
   friendlyName: '12_gauge_buckshot_slug'
-  displayName: LocKey#8100382
-  localizedDescription: LocKey#8100670
+  displayName: LocKey#AmmoExpanded-Cal12Gauge-Slug-Name
+  localizedDescription: LocKey#AmmoExpanded-Cal12Gauge-Slug-Desc
   tags:
     - !append-once DPAE_Cal12Gauge_Slug
 
@@ -121,8 +121,8 @@ Ammo.Cal12Gauge_INC:
   quality: Quality.Rare
   $base: Ammo.Cal12Gauge
   friendlyName: '12_gauge_buckshot_incendiary'
-  displayName: LocKey#8100383
-  localizedDescription: LocKey#8100669
+  displayName: LocKey#AmmoExpanded-Cal12Gauge-INC-Name
+  localizedDescription: LocKey#AmmoExpanded-Cal12Gauge-INC-Desc
   tags:
     - !append-once DPAE_Cal12Gauge_INC
 
@@ -146,8 +146,8 @@ Ammo.Cal12Gauge_HE:
   quality: Quality.Epic
   $base: Ammo.Cal12Gauge
   friendlyName: '12_gauge_buckshot_high_explosive'
-  displayName: LocKey#8100629
-  localizedDescription: LocKey#8100668
+  displayName: LocKey#AmmoExpanded-Cal12Gauge-HE-Name
+  localizedDescription: LocKey#AmmoExpanded-Cal12Gauge-HE-Desc
   tags:
     - !append-once DPAE_Cal12Gauge_HE
 

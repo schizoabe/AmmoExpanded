@@ -16,7 +16,7 @@ Ammo.Cal9x30TF:
   CraftingData: Ammo.AmmoBase_inline0
   crosshair: Crosshairs.None
   deprecated: False
-  displayName: LocKey#8100505
+  displayName: LocKey#AmmoExpanded-Cal9x30TF-Name
   dropObject: ammoDrop
   effectors: []
   enableNpcRPGData: False
@@ -38,7 +38,7 @@ Ammo.Cal9x30TF:
   isSingleInstance: True
   itemCategory: ItemCategory.General
   itemType: ItemType.Con_Ammo
-  localizedDescription: LocKey#8100603
+  localizedDescription: LocKey#AmmoExpanded-Cal9x30TF-Desc
   localizedName: ''
   mass: 1
   minigameInstance: minigame_v2.DefaultItemMinigame
@@ -96,8 +96,8 @@ Ammo.Cal9x30TF_EMP:
   quality: Quality.Rare
   $base: Ammo.Cal9x30TF
   friendlyName: '9x30mm_tungsten_flechettes_emp'
-  displayName: LocKey#8100508
-  localizedDescription: LocKey#8100835
+  displayName: LocKey#AmmoExpanded-Cal9x30TF-EMP-Name
+  localizedDescription: LocKey#AmmoExpanded-Cal9x30TF-EMP-Desc
   tags:
     - !append-once DPAE_Cal9x30TF_EMP
 
@@ -121,8 +121,8 @@ Ammo.Cal9x30TF_INC:
   quality: Quality.Rare
   $base: Ammo.Cal9x30TF
   friendlyName: '9x30mm_tungsten_flechettes_incendiary'
-  displayName: LocKey#8100509
-  localizedDescription: LocKey#8100834
+  displayName: LocKey#AmmoExpanded-Cal9x30TF-INC-Name
+  localizedDescription: LocKey#AmmoExpanded-Cal9x30TF-INC-Desc
   tags:
     - !append-once DPAE_Cal9x30TF_INC
 
@@ -146,7 +146,7 @@ Ammo.Cal9x30TF_CHEM:
   quality: Quality.Rare
   $base: Ammo.Cal9x30TF
   friendlyName: '9x30mm_tungsten_flechettes_chemical'
-  displayName: LocKey#8100510
-  localizedDescription: LocKey#8100833
+  displayName: LocKey#AmmoExpanded-Cal9x30TF-CHEM-Name
+  localizedDescription: LocKey#AmmoExpanded-Cal9x30TF-CHEM-Desc
   tags:
     - !append-once DPAE_Cal9x30TF_CHEM

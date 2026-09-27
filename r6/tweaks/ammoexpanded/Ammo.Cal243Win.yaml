@@ -16,7 +16,7 @@ Ammo.Cal243Win:
   CraftingData: Ammo.AmmoBase_inline0
   crosshair: Crosshairs.None
   deprecated: False
-  displayName: LocKey#8100303
+  displayName: LocKey#AmmoExpanded-Cal243Win-Name
   dropObject: ammoDrop
   effectors: []
   enableNpcRPGData: False
@@ -38,7 +38,7 @@ Ammo.Cal243Win:
   isSingleInstance: True
   itemCategory: ItemCategory.General
   itemType: ItemType.Con_Ammo
-  localizedDescription: LocKey#8100581
+  localizedDescription: LocKey#AmmoExpanded-Cal243Win-Desc
   localizedName: ''
   mass: 1
   minigameInstance: minigame_v2.DefaultItemMinigame
@@ -96,8 +96,8 @@ Ammo.Cal243Win_AP:
   quality: Quality.Uncommon
   $base: Ammo.Cal243Win
   friendlyName: '243_winchester_armor_piercing'
-  displayName: LocKey#8100304
-  localizedDescription: LocKey#8100718
+  displayName: LocKey#AmmoExpanded-Cal243Win-AP-Name
+  localizedDescription: LocKey#AmmoExpanded-Cal243Win-AP-Desc
   tags:
     - !append-once DPAE_Cal243Win_AP
 
@@ -121,8 +121,8 @@ Ammo.Cal243Win_HP:
   quality: Quality.Uncommon
   $base: Ammo.Cal243Win
   friendlyName: '243_winchester_hollow_point'
-  displayName: LocKey#8100305
-  localizedDescription: LocKey#8100717
+  displayName: LocKey#AmmoExpanded-Cal243Win-HP-Name
+  localizedDescription: LocKey#AmmoExpanded-Cal243Win-HP-Desc
   tags:
     - !append-once DPAE_Cal243Win_HP
 
@@ -146,8 +146,8 @@ Ammo.Cal243Win_EMP:
   quality: Quality.Rare
   $base: Ammo.Cal243Win
   friendlyName: '243_winchester_emp'
-  displayName: LocKey#8100306
-  localizedDescription: LocKey#8100716
+  displayName: LocKey#AmmoExpanded-Cal243Win-EMP-Name
+  localizedDescription: LocKey#AmmoExpanded-Cal243Win-EMP-Desc
   tags:
     - !append-once DPAE_Cal243Win_EMP
 
@@ -171,8 +171,8 @@ Ammo.Cal243Win_INC:
   quality: Quality.Rare
   $base: Ammo.Cal243Win
   friendlyName: '243_winchester_incendiary'
-  displayName: LocKey#8100307
-  localizedDescription: LocKey#8100715
+  displayName: LocKey#AmmoExpanded-Cal243Win-INC-Name
+  localizedDescription: LocKey#AmmoExpanded-Cal243Win-INC-Desc
   tags:
     - !append-once DPAE_Cal243Win_INC
 
@@ -196,8 +196,8 @@ Ammo.Cal243Win_CHEM:
   quality: Quality.Rare
   $base: Ammo.Cal243Win
   friendlyName: '243_winchester_chemical'
-  displayName: LocKey#8100308
-  localizedDescription: LocKey#8100714
+  displayName: LocKey#AmmoExpanded-Cal243Win-CHEM-Name
+  localizedDescription: LocKey#AmmoExpanded-Cal243Win-CHEM-Desc
   tags:
     - !append-once DPAE_Cal243Win_CHEM
 
@@ -221,8 +221,8 @@ Ammo.Cal243Win_NL:
   quality: Quality.Uncommon
   $base: Ammo.Cal243Win
   friendlyName: '243_winchester_non-lethal'
-  displayName: LocKey#8100309
-  localizedDescription: LocKey#8100713
+  displayName: LocKey#AmmoExpanded-Cal243Win-NL-Name
+  localizedDescription: LocKey#AmmoExpanded-Cal243Win-NL-Desc
   tags:
     - !append-once DPAE_Cal243Win_NL
 
@@ -246,7 +246,7 @@ Ammo.Cal243Win_HE:
   quality: Quality.Epic
   $base: Ammo.Cal243Win
   friendlyName: '243_winchester_high_explosive'
-  displayName: LocKey#8100630
-  localizedDescription: LocKey#8100712
+  displayName: LocKey#AmmoExpanded-Cal243Win-HE-Name
+  localizedDescription: LocKey#AmmoExpanded-Cal243Win-HE-Desc
   tags:
     - !append-once DPAE_Cal243Win_HE
