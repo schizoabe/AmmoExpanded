@@ -21,6 +21,8 @@ public class DPAE_LocEnglish extends ModLocalizationPackage {
     this.Text("DPAE.ForceReload.Desc", "Turn on to waste ammo when reloading with a non-empty mag, switching variant. Turn off if babby shit.");
     this.Text("DPAE.SafetyNet.Name", "EXPERIMENTAL: Ammo Starter Safety Net");
     this.Text("DPAE.SafetyNet.Desc", "On: Keeps V's ammo topped up during a fixed set of hard, inescapable scripted scenes (tutorial, possession sequences, forced story fights) so he can never run dry mid-scene. Off: strict behavior, ammo only ever comes from what's actually found, bought, or crafted.");
+    this.Text("DPAE.DowngradeSpecialAmmo.Name", "Downgrade Special Ammo in Loot");
+    this.Text("DPAE.DowngradeSpecialAmmo.Desc", "On: a special variant (AP/HP/EMP/etc.) an NPC was carrying has a chance to drop as the plain caliber round instead, so it's rarer to farm off corpses. Off: whatever they rolled drops as-is. Either way, NPCs still fire the variant they rolled just as often in combat — this only affects loot.");
     this.Text("DPAE.DebugLog.Name", "Debug Ammo Logging");
     this.Text("DPAE.DebugLog.Desc", "Writes a detailed ammo log to r6/logs/mods/AmmoExpanded__*.log (needs RedLogger; also viewable in the hub under LOGS). Send it to Pierre if you want to help out.");
 
@@ -558,7 +560,7 @@ public class DPAE_LocEnglish extends ModLocalizationPackage {
     this.Text("AmmoExpanded-Cal308Win-HE-Desc", ".308 Winchester cartridge containing explosive compound. Devastating to all targets.");
     this.Text("AmmoExpanded-Tooltip-AmmoLabel", "Ammo:");
 
-    this.Text("AmmoExpanded-HUD-BeltFed", "Belt Fed");
+    this.Text("AmmoExpanded-HUD-BeltFed", "Belt-Fed");
     this.Text("AmmoExpanded-HUD-AP", "AP");
     this.Text("AmmoExpanded-HUD-HP", "HP");
     this.Text("AmmoExpanded-HUD-EMP", "EMP");

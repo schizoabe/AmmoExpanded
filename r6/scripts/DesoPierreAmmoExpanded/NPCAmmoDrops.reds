@@ -1,8 +1,10 @@
 
-func DPAE_DropChance() -> Float { return 1.00; }
+func DPAE_DropChance() -> Float { return 0.60; }
 
-func DPAE_QtyMinPct() -> Float { return 0.40; }
-func DPAE_QtyMaxPct() -> Float { return 1.00; }
+func DPAE_QtyMinPct() -> Float { return 0.25; }
+func DPAE_QtyMaxPct() -> Float { return 0.60; }
+
+func DPAE_DropKeepSpecialChance() -> Float { return 0.44; }
 
 @addField(NPCPuppet)
 public let dpae_hasAmmoData: Bool;
@@ -14,13 +16,16 @@ public let dpae_recorded_weapon_ids: array<ItemID>;
 public let dpae_ammoTDBIDs: array<TweakDBID>;
 
 @addField(NPCPuppet)
+public let dpae_caliberTDBIDs: array<TweakDBID>;
+
+@addField(NPCPuppet)
 public let dpae_weaponItemTypes: array<gamedataItemType>;
 
 @addField(NPCPuppet)
 public let dpae_npc_ammo: TweakDBID;
 
 @addMethod(NPCPuppet)
-private func DPAE_RecordAmmoRoll(weaponItemID: ItemID, ammoTDBID: TweakDBID, weaponItemType: gamedataItemType) -> Void {
+private func DPAE_RecordAmmoRoll(weaponItemID: ItemID, ammoTDBID: TweakDBID, caliberTDBID: TweakDBID, weaponItemType: gamedataItemType) -> Void {
   if !ItemID.IsValid(weaponItemID) || !TDBID.IsValid(ammoTDBID) { return; }
   let i = 0;
   while i < ArraySize(this.dpae_recorded_weapon_ids) {
@@ -29,6 +34,7 @@ private func DPAE_RecordAmmoRoll(weaponItemID: ItemID, ammoTDBID: TweakDBID, wea
   }
   ArrayPush(this.dpae_recorded_weapon_ids, weaponItemID);
   ArrayPush(this.dpae_ammoTDBIDs, ammoTDBID);
+  ArrayPush(this.dpae_caliberTDBIDs, caliberTDBID);
   ArrayPush(this.dpae_weaponItemTypes, weaponItemType);
 }
 
@@ -152,7 +158,7 @@ protected cb func OnItemAddedToSlot(evt: ref<ItemAddedToSlot>) -> Bool {
 
   let recordItemType = TweakDBInterface.GetItemRecord(ItemID.GetTDBID(weaponItemID)) as WeaponItem_Record;
   if IsDefined(recordItemType) {
-    this.DPAE_RecordAmmoRoll(weaponItemID, this.dpae_npc_ammo, recordItemType.ItemType().Type());
+    this.DPAE_RecordAmmoRoll(weaponItemID, this.dpae_npc_ammo, caliberTDBID, recordItemType.ItemType().Type());
   }
 
   let npcAmmoStrHE = TDBID.ToStringDEBUG(this.dpae_npc_ammo);
@@ -200,13 +206,15 @@ public func DPAE_CacheAmmoDropData() -> Void {
         if IsDefined(ammoRecord) && TDBID.IsValid(ammoRecord.GetID()) {
 
           let fallbackAmmoTDBID = ammoRecord.GetID();
+          let fallbackCaliberTDBID = ammoRecord.GetID();
+          let dpaeCaliberTDBID = DPAE_GetCaliberFromEntity(this, weapon.GetItemID());
+          if TDBID.IsValid(dpaeCaliberTDBID) { fallbackCaliberTDBID = dpaeCaliberTDBID; }
           if TDBID.IsValid(this.dpae_npc_ammo) {
             fallbackAmmoTDBID = this.dpae_npc_ammo;
           } else {
-            let dpaeCaliberTDBID = DPAE_GetCaliberFromEntity(this, weapon.GetItemID());
-            if TDBID.IsValid(dpaeCaliberTDBID) { fallbackAmmoTDBID = dpaeCaliberTDBID; }
+            fallbackAmmoTDBID = fallbackCaliberTDBID;
           }
-          this.DPAE_RecordAmmoRoll(weapon.GetItemID(), fallbackAmmoTDBID, weaponRecord.ItemType().Type());
+          this.DPAE_RecordAmmoRoll(weapon.GetItemID(), fallbackAmmoTDBID, fallbackCaliberTDBID, weaponRecord.ItemType().Type());
         }
       }
     }
@@ -256,7 +264,13 @@ private final func EvaluateLootQuality() -> Bool {
         let pct = DPAE_QtyMinPct() + RandF() * (DPAE_QtyMaxPct() - DPAE_QtyMinPct());
         let qty = Max(1, RoundMath(Cast<Float>(baseQty) * pct));
 
-        ts.GiveItem(this, ItemID.FromTDBID(npc.dpae_ammoTDBIDs[i]), qty);
+        let dropAmmoTDBID = npc.dpae_ammoTDBIDs[i];
+        let dropCaliberTDBID = npc.dpae_caliberTDBIDs[i];
+        if DesoPierreAmmoExpandedSettings.DowngradeSpecialAmmoLoot()
+          && TDBID.IsValid(dropCaliberTDBID) && !Equals(dropAmmoTDBID, dropCaliberTDBID) && RandF() > DPAE_DropKeepSpecialChance() {
+          dropAmmoTDBID = dropCaliberTDBID;
+        }
+        ts.GiveItem(this, ItemID.FromTDBID(dropAmmoTDBID), qty);
       }
       i += 1;
     }

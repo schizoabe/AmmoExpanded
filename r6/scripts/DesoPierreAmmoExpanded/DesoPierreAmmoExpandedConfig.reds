@@ -10,6 +10,8 @@ public class DPAE_Config extends ScriptableSystem {
   public let trueDamageConversion: Bool = true;
   public let forceReloadOnAmmoSwitch: Bool = false;
   public let ammoStarterSafetyNet: Bool = true;
+
+  public let downgradeSpecialAmmoLoot: Bool = false;
   public let debugAmmoLogging: Bool = false;
 
   public let cycleAmmoKey: EInputKey = EInputKey.IK_F7;
@@ -42,6 +44,7 @@ public class DPAE_Config extends ScriptableSystem {
       + " trueDamageConversion=" + ToString(this.trueDamageConversion)
       + " forceReloadOnAmmoSwitch=" + ToString(this.forceReloadOnAmmoSwitch)
       + " ammoStarterSafetyNet=" + ToString(this.ammoStarterSafetyNet)
+      + " downgradeSpecialAmmoLoot=" + ToString(this.downgradeSpecialAmmoLoot)
       + " debugAmmoLogging=" + ToString(this.debugAmmoLogging)
       + " redFunctions=" + DPAE_RedFunctionsVersion());
 
@@ -75,6 +78,8 @@ public class DPAE_ConfigProvider extends DVRCF_Provider {
     b.Tip("DPAE.ForceReload.Desc");
     b.Toggle("ammoStarterSafetyNet", "DPAE.SafetyNet.Name");
     b.Tip("DPAE.SafetyNet.Desc");
+    b.Toggle("downgradeSpecialAmmoLoot", "DPAE.DowngradeSpecialAmmo.Name");
+    b.Tip("DPAE.DowngradeSpecialAmmo.Desc");
     b.Section("DPAE.sec.Debug");
     b.Toggle("debugAmmoLogging", "DPAE.DebugLog.Name");
     b.Tip("DPAE.DebugLog.Desc");
@@ -88,6 +93,7 @@ public class DPAE_ConfigProvider extends DVRCF_Provider {
     if Equals(key, "trueDamageConversion") { return c.trueDamageConversion; }
     if Equals(key, "forceReloadOnAmmoSwitch") { return c.forceReloadOnAmmoSwitch; }
     if Equals(key, "ammoStarterSafetyNet") { return c.ammoStarterSafetyNet; }
+    if Equals(key, "downgradeSpecialAmmoLoot") { return c.downgradeSpecialAmmoLoot; }
     if Equals(key, "debugAmmoLogging") { return c.debugAmmoLogging; }
     return false;
   }
@@ -113,6 +119,11 @@ public class DPAE_ConfigProvider extends DVRCF_Provider {
     if Equals(key, "ammoStarterSafetyNet") {
       if Equals(c.ammoStarterSafetyNet, value) { return; }
       c.ammoStarterSafetyNet = value;
+      return;
+    }
+    if Equals(key, "downgradeSpecialAmmoLoot") {
+      if Equals(c.downgradeSpecialAmmoLoot, value) { return; }
+      c.downgradeSpecialAmmoLoot = value;
       return;
     }
     if Equals(key, "debugAmmoLogging") {
@@ -170,6 +181,12 @@ public class DesoPierreAmmoExpandedSettings {
     let s = DPAE_Config.Get();
     if IsDefined(s) { return s.ammoStarterSafetyNet; }
     return true;
+  }
+
+  public static func DowngradeSpecialAmmoLoot() -> Bool {
+    let s = DPAE_Config.Get();
+    if IsDefined(s) { return s.downgradeSpecialAmmoLoot; }
+    return false;
   }
 
   public static func DebugAmmoLogging() -> Bool {

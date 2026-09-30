@@ -45,7 +45,6 @@ Ammo.Cal3x10FlechCluster:
   minigameInstance: minigame_v2.DefaultItemMinigame
   objectActions:
     - ItemAction.Drop
-    - ItemAction.Disassemble
   OnAttach: []
   OnEquip: []
   OnLooted: []

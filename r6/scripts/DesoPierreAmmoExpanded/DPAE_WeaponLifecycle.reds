@@ -271,7 +271,10 @@ private func DPAE_HandleWeaponSlotEvent(slotID: TweakDBID, isSessionLoad: Bool) 
       this.DPAE_RememberAmmo(caliberTDBID, savedVariant);
     }
 
-    let savedChamber = this.DPAE_GetSavedChamber(weaponItemID);
+    let savedChamber = 0;
+    if WeaponObject.GetMagazinePercentage(weaponObj) < 0.001 {
+      savedChamber = this.DPAE_GetSavedChamber(weaponItemID);
+    }
     this.dpae_resync_only = true;
     this.DPAE_ResolveAmmoSelection(caliberTDBID);
     this.dpae_resync_only = false;

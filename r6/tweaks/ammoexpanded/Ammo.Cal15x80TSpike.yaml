@@ -44,7 +44,6 @@ Ammo.Cal15x80TSpike:
   minigameInstance: minigame_v2.DefaultItemMinigame
   objectActions:
     - ItemAction.Drop
-    - ItemAction.Disassemble
   OnAttach: []
   OnEquip: []
   OnLooted: []

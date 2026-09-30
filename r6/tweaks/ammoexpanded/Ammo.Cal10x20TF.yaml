@@ -44,7 +44,6 @@ Ammo.Cal10x20TF:
   minigameInstance: minigame_v2.DefaultItemMinigame
   objectActions:
     - ItemAction.Drop
-    - ItemAction.Disassemble
   OnAttach: []
   OnEquip: []
   OnLooted: []

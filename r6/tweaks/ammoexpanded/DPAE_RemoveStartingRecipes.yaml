@@ -1,66 +1,67 @@
 
-ProgressionBuilds.StreetKidStarting_inline1:   # Ammo.RecipeHandgunAmmo
+ProgressionBuilds.CorporateStarting_inline4:
+  item: "Ammo.RecipeCal45Super"
+  quantity: 1
+ProgressionBuilds.CorporateStarting_inline5:
   item: ""
   quantity: 0
-ProgressionBuilds.StreetKidStarting_inline2:   # Ammo.RecipeShotgunAmmo
+ProgressionBuilds.CorporateStarting_inline6:
   item: ""
   quantity: 0
-ProgressionBuilds.StreetKidStarting_inline3:   # Ammo.RecipeRifleAmmo
+ProgressionBuilds.CorporateStarting_inline7:
   item: ""
   quantity: 0
-ProgressionBuilds.StreetKidStarting_inline4:   # Ammo.RecipeSniperRifleAmmo
+ProgressionBuilds.CorporateStarting_inline13:
+  item: "Ammo.Cal45Super"
+  quantity: 120
+ProgressionBuilds.CorporateStarting_inline14:
   item: ""
   quantity: 0
-ProgressionBuilds.StreetKidStarting_inline10:  # Ammo.HandgunAmmo (600)
-  item: ""
-  quantity: 0
-ProgressionBuilds.StreetKidStarting_inline11:  # Ammo.RifleAmmo (600)
-  item: ""
-  quantity: 0
-ProgressionBuilds.StreetKidStarting_inline12:  # Ammo.ShotgunAmmo (120)
-  item: ""
-  quantity: 0
-
-ProgressionBuilds.CorporateStarting_inline1:   # Ammo.RecipeHandgunAmmo
-  item: ""
-  quantity: 0
-ProgressionBuilds.CorporateStarting_inline2:   # Ammo.RecipeShotgunAmmo
-  item: ""
-  quantity: 0
-ProgressionBuilds.CorporateStarting_inline3:   # Ammo.RecipeRifleAmmo
-  item: ""
-  quantity: 0
-ProgressionBuilds.CorporateStarting_inline4:   # Ammo.RecipeSniperRifleAmmo
-  item: ""
-  quantity: 0
-ProgressionBuilds.CorporateStarting_inline10:  # Ammo.HandgunAmmo (600)
-  item: ""
-  quantity: 0
-ProgressionBuilds.CorporateStarting_inline11:  # Ammo.RifleAmmo (600)
-  item: ""
-  quantity: 0
-ProgressionBuilds.CorporateStarting_inline12:  # Ammo.ShotgunAmmo (120)
+ProgressionBuilds.CorporateStarting_inline15:
   item: ""
   quantity: 0
 
-ProgressionBuilds.NomadStarting_inline10:  # Ammo.RecipeHandgunAmmo
+ProgressionBuilds.CorporateStarting_inline14:
+  item: "Ammo.RecipeCal45Super"
+  quantity: 1
+ProgressionBuilds.NomadStarting_inline15:
   item: ""
   quantity: 0
-ProgressionBuilds.NomadStarting_inline11:  # Ammo.RecipeShotgunAmmo
+ProgressionBuilds.NomadStarting_inline16:
   item: ""
   quantity: 0
-ProgressionBuilds.NomadStarting_inline12:  # Ammo.RecipeRifleAmmo
+ProgressionBuilds.NomadStarting_inline17:
   item: ""
   quantity: 0
-ProgressionBuilds.NomadStarting_inline13:  # Ammo.RecipeSniperRifleAmmo
-  item: ""
-  quantity: 0
-ProgressionBuilds.NomadStarting_inline14:  # was Ammo.HandgunAmmo (600)
+ProgressionBuilds.NomadStarting_inline18:
   item: "Ammo.Cal12p3x41UdaR"
   quantity: 120
-ProgressionBuilds.NomadStarting_inline15:  # Ammo.RifleAmmo (600)
+ProgressionBuilds.NomadStarting_inline19:
+  item: "Ammo.Cal45Super"
+  quantity: 120
+ProgressionBuilds.NomadStarting_inline20:
   item: ""
   quantity: 0
-ProgressionBuilds.NomadStarting_inline16:  # Ammo.ShotgunAmmo (120)
+
+ProgressionBuilds.StreetKidStarting_inline4:
+  item: "Ammo.RecipeCal45Super"
+  quantity: 1
+ProgressionBuilds.StreetKidStarting_inline5:
   item: ""
   quantity: 0
+ProgressionBuilds.StreetKidStarting_inline6:
+  item: ""
+  quantity: 0
+ProgressionBuilds.StreetKidStarting_inline7:
+  item: ""
+  quantity: 0
+ProgressionBuilds.StreetKidStarting_inline13:
+  item: "Ammo.Cal45Super"
+  quantity: 120
+ProgressionBuilds.StreetKidStarting_inline14:
+  item: ""
+  quantity: 0
+ProgressionBuilds.StreetKidStarting_inline15:
+  item: ""
+  quantity: 0
+
