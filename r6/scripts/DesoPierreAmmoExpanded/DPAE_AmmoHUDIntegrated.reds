@@ -1,4 +1,3 @@
-
 public class DPAE_IntegratedAmmoHUD {
   private let m_panel:        ref<inkHorizontalPanel>;
   private let m_icon:         ref<inkImage>;
@@ -228,7 +227,6 @@ protected cb func OnInitialize() -> Bool {
     let hud = DPAE_IntegratedAmmoHUD.Create(ammoCounter, isE3HUD);
     sys.RegisterHUD(hud);
 
-    player.DPAE_RefreshOnDraw();
     player.DPAE_RefreshAmmoHUD();
   }
 }
@@ -238,7 +236,6 @@ protected cb func OnWeaponDataChanged(value: Variant) -> Bool {
   wrappedMethod(value);
   let player = this.GetPlayerControlledObject() as PlayerPuppet;
   if IsDefined(player) {
-    player.DPAE_RefreshOnDraw();
     player.DPAE_RefreshAmmoHUD();
   }
 }
@@ -248,7 +245,6 @@ protected cb func OnMountingEvent(evt: ref<MountingEvent>) -> Bool {
   wrappedMethod(evt);
   let player = this.GetPlayerControlledObject() as PlayerPuppet;
   if IsDefined(player) {
-    player.DPAE_RefreshOnDraw();
     player.DPAE_RefreshAmmoHUD();
   }
 }
