@@ -15,15 +15,12 @@ ProgressionBuilds.CorporateStarting_inline13:
   item: "Ammo.Cal45Super"
   quantity: 120
 ProgressionBuilds.CorporateStarting_inline14:
-  item: ""
-  quantity: 0
+  item: "Ammo.RecipeCal45Super"
+  quantity: 1
 ProgressionBuilds.CorporateStarting_inline15:
   item: ""
   quantity: 0
 
-ProgressionBuilds.CorporateStarting_inline14:
-  item: "Ammo.RecipeCal45Super"
-  quantity: 1
 ProgressionBuilds.NomadStarting_inline15:
   item: ""
   quantity: 0

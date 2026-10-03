@@ -1,5 +1,5 @@
 
-func DPAE_DropChance() -> Float { return 0.60; }
+func DPAE_DropChance() -> Float { return DesoPierreAmmoExpandedSettings.NpcAmmoDropChance(); }
 
 func DPAE_QtyMinPct() -> Float { return 0.25; }
 func DPAE_QtyMaxPct() -> Float { return 0.60; }

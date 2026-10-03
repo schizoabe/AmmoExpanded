@@ -12,6 +12,8 @@ public class DPAE_Config extends ScriptableSystem {
   public let ammoStarterSafetyNet: Bool = true;
 
   public let downgradeSpecialAmmoLoot: Bool = false;
+
+  public let npcAmmoDropChancePct: Int32 = 90;
   public let debugAmmoLogging: Bool = false;
 
   public let cycleAmmoKey: EInputKey = EInputKey.IK_F7;
@@ -45,6 +47,7 @@ public class DPAE_Config extends ScriptableSystem {
       + " forceReloadOnAmmoSwitch=" + ToString(this.forceReloadOnAmmoSwitch)
       + " ammoStarterSafetyNet=" + ToString(this.ammoStarterSafetyNet)
       + " downgradeSpecialAmmoLoot=" + ToString(this.downgradeSpecialAmmoLoot)
+      + " npcAmmoDropChancePct=" + ToString(this.npcAmmoDropChancePct)
       + " debugAmmoLogging=" + ToString(this.debugAmmoLogging)
       + " redFunctions=" + DPAE_RedFunctionsVersion());
 
@@ -80,6 +83,8 @@ public class DPAE_ConfigProvider extends DVRCF_Provider {
     b.Tip("DPAE.SafetyNet.Desc");
     b.Toggle("downgradeSpecialAmmoLoot", "DPAE.DowngradeSpecialAmmo.Name");
     b.Tip("DPAE.DowngradeSpecialAmmo.Desc");
+    b.Slider("npcAmmoDropChancePct", "DPAE.NpcDropChance.Name", 0.0, 100.0, 5.0, true);
+    b.Tip("DPAE.NpcDropChance.Desc");
     b.Section("DPAE.sec.Debug");
     b.Toggle("debugAmmoLogging", "DPAE.DebugLog.Name");
     b.Tip("DPAE.DebugLog.Desc");
@@ -138,6 +143,8 @@ public class DPAE_ConfigProvider extends DVRCF_Provider {
     if !IsDefined(c) { return 0; }
     if Equals(key, "DPAE_CycleAmmo") { return EnumInt(c.cycleAmmoKey); }
     if Equals(key, "DPAE_DropCurrentWeapon") { return EnumInt(c.dropWeaponKey); }
+
+    if Equals(key, "npcAmmoDropChancePct") { return c.npcAmmoDropChancePct; }
     return 0;
   }
 
@@ -152,6 +159,11 @@ public class DPAE_ConfigProvider extends DVRCF_Provider {
     if Equals(key, "DPAE_DropCurrentWeapon") {
       if EnumInt(c.dropWeaponKey) == value { return; }
       c.dropWeaponKey = IntEnum<EInputKey>(value);
+      return;
+    }
+    if Equals(key, "npcAmmoDropChancePct") {
+      if c.npcAmmoDropChancePct == value { return; }
+      c.npcAmmoDropChancePct = value;
       return;
     }
   }
@@ -187,6 +199,12 @@ public class DesoPierreAmmoExpandedSettings {
     let s = DPAE_Config.Get();
     if IsDefined(s) { return s.downgradeSpecialAmmoLoot; }
     return false;
+  }
+
+  public static func NpcAmmoDropChance() -> Float {
+    let s = DPAE_Config.Get();
+    if IsDefined(s) { return Cast<Float>(s.npcAmmoDropChancePct) / 100.0; }
+    return 0.90;
   }
 
   public static func DebugAmmoLogging() -> Bool {
