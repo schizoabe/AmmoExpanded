@@ -249,3 +249,17 @@ Ammo.Cal5p56CT_HE:
   localizedDescription: LocKey#AmmoExpanded-Cal5p56CT-HE-Desc
   tags:
     - !append-once DPAE_Cal5p56CT_HE
+
+Ammo.Cal5p56CT_Psalm_HE:
+
+  buyPrice:
+    - DPAE_Price.TierLegendary
+  sellPrice:
+    - DPAE_Price.TierLegendary
+  $base: Ammo.Cal5p56CT_HE
+  friendlyName: '556mm_ct_psalm_signature'
+  displayName: LocKey#AmmoExpanded-Cal5p56CT-Psalm-SignatureName
+  localizedDescription: LocKey#AmmoExpanded-Cal5p56CT-Psalm-SignatureDesc
+  quality: Quality.Legendary
+  tags:
+    - !append-once DPAE_Cal5p56CT_Psalm_HE

@@ -15,9 +15,9 @@ Items.Preset_Nova_Doom_Doom:  # Doom Doom — Cal12p3x41UdaR (DR5 Nova, Mancinel
   tags:
     - !append-once DPAE_VariantExclusive_HE
 
-Items.Preset_Copperhead_Genesis:  # Psalm 11:6 — Cal5p56CT (D5 Copperhead loses HE access)
+Items.Preset_Copperhead_Genesis:  # Psalm 11:6 — Cal5p56CT. Owns the exclusive signature round Ammo.Cal5p56CT_Psalm_HE; plain HE is free to every Cal5p56CT weapon.
   tags:
-    - !append-once DPAE_VariantExclusive_HE
+    - !append-once DPAE_VariantExclusive_Psalm
 
 Items.Preset_Sidewinder_Divided:  # Divided We Stand — Cal10x40Rocket. Exclusive to its own NEW
   tags:

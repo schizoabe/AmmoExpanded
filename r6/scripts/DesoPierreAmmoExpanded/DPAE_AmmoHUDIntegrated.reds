@@ -1,3 +1,4 @@
+
 public class DPAE_IntegratedAmmoHUD {
   private let m_panel:        ref<inkHorizontalPanel>;
   private let m_icon:         ref<inkImage>;

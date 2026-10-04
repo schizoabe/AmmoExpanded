@@ -351,6 +351,8 @@ public class DPAE_LocEnglish extends ModLocalizationPackage {
     this.Text("AmmoExpanded-Cal12x45Rocket-CHEM-SignatureDesc", "12x45mm guided rocket containing a highly volatile chemical payload. Upon impacting a target, the chemical builds up in the target until, right before death, the chemical explodes violently. The experimental payload is only chambered in a custom rocket engineered for the Hercules 3AX, a Militech prototype. ");
     this.Text("AmmoExpanded-Cal23x152Sov-EMP-SignatureName", "Sparky 23x152mm Custom");
     this.Text("AmmoExpanded-Cal23x152Sov-EMP-SignatureDesc", "23x152 cartridge containing a juiced up micro-capacitor. After penetrating the target, the embedded projectile shatters and the capacitor discharges, delivering an extremely high voltage shock to the target and others within 7m. Only chambered in the Sparky variant of the SPT32 Grad. ");
+    this.Text("AmmoExpanded-Cal5p56CT-Psalm-SignatureName", "Psalm 11:6 5.56mm Custom");
+    this.Text("AmmoExpanded-Cal5p56CT-Psalm-SignatureDesc", "5.56 CT cartridge with a two-stage payload. A high-explosive core detonates on impact, and an incendiary compound ignites whatever survives the blast.");
     this.Text("AmmoExpanded-Cal10GaugeBuck-HE-SignatureName", "Dezerter 10 Gauge");
     this.Text("AmmoExpanded-Cal10GaugeBuck-HE-SignatureDesc", "10 gauge shell cartridge containing an abnormal amount of explosive compound. Only able to be used in the Dezerter 10 gauge shotgun. Devastating to all targets, as well as the user. ");
     this.Text("AmmoExpanded-Cal10GaugeBuck-HE-Desc", "10 gauge shell containing explosive compound. Devastating to all targets.");

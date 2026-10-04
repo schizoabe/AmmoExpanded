@@ -1,4 +1,28 @@
 
+DPAE_HE.DamageMult_Physical:
+  $type: gamedataConstantStatModifier_Record
+  statType: BaseStats.PhysicalDamage
+  modifierType: Multiplier
+  value: 1.5
+
+DPAE_HE.DamageMult_Thermal:
+  $type: gamedataConstantStatModifier_Record
+  statType: BaseStats.ThermalDamage
+  modifierType: Multiplier
+  value: 1.5
+
+DPAE_HE.DamageMult_Chemical:
+  $type: gamedataConstantStatModifier_Record
+  statType: BaseStats.ChemicalDamage
+  modifierType: Multiplier
+  value: 1.5
+
+DPAE_HE.DamageMult_Electric:
+  $type: gamedataConstantStatModifier_Record
+  statType: BaseStats.ElectricDamage
+  modifierType: Multiplier
+  value: 1.5
+
 DPAE_HE.BulletSmartBulletHighExplosion:
   $base: Attacks.BulletSmartBulletHighExplosion
   statModifiers:
@@ -24,22 +48,10 @@ DPAE_HE.SmartBulletHighExplosive:
   $base: Attacks.SmartBulletHighExplosive
   explosionAttack: DPAE_HE.BulletSmartBulletHighExplosion
   statModifiers:
-    - $type: gamedataConstantStatModifier_Record
-      statType: BaseStats.PhysicalDamage
-      modifierType: Multiplier
-      value: 1.5
-    - $type: gamedataConstantStatModifier_Record
-      statType: BaseStats.ThermalDamage
-      modifierType: Multiplier
-      value: 1.5
-    - $type: gamedataConstantStatModifier_Record
-      statType: BaseStats.ChemicalDamage
-      modifierType: Multiplier
-      value: 1.5
-    - $type: gamedataConstantStatModifier_Record
-      statType: BaseStats.ElectricDamage
-      modifierType: Multiplier
-      value: 1.5
+    - !append-once DPAE_HE.DamageMult_Physical
+    - !append-once DPAE_HE.DamageMult_Thermal
+    - !append-once DPAE_HE.DamageMult_Chemical
+    - !append-once DPAE_HE.DamageMult_Electric
 
 DPAE_HE.SmartBulletHighExplosiveFire:
   $base: Attacks.SmartBulletHighExplosiveFire
@@ -77,22 +89,10 @@ DPAE_HE.SmartBulletLowExplosive:
   $base: Attacks.SmartBulletHighExplosive
   explosionAttack: DPAE_HE.BulletSmartLowExplosion
   statModifiers:
-    - $type: gamedataConstantStatModifier_Record
-      statType: BaseStats.PhysicalDamage
-      modifierType: Multiplier
-      value: 1.5
-    - $type: gamedataConstantStatModifier_Record
-      statType: BaseStats.ThermalDamage
-      modifierType: Multiplier
-      value: 1.5
-    - $type: gamedataConstantStatModifier_Record
-      statType: BaseStats.ChemicalDamage
-      modifierType: Multiplier
-      value: 1.5
-    - $type: gamedataConstantStatModifier_Record
-      statType: BaseStats.ElectricDamage
-      modifierType: Multiplier
-      value: 1.5
+    - !append-once DPAE_HE.DamageMult_Physical
+    - !append-once DPAE_HE.DamageMult_Thermal
+    - !append-once DPAE_HE.DamageMult_Chemical
+    - !append-once DPAE_HE.DamageMult_Electric
 
 DPAE_HE.SmartBulletLowExplosiveFire:
   $base: Attacks.SmartBulletHighExplosiveFire
@@ -130,22 +130,10 @@ DPAE_HE.SmartBulletMedExplosive:
   $base: Attacks.SmartBulletHighExplosive
   explosionAttack: DPAE_HE.BulletSmartMedExplosion
   statModifiers:
-    - $type: gamedataConstantStatModifier_Record
-      statType: BaseStats.PhysicalDamage
-      modifierType: Multiplier
-      value: 1.5
-    - $type: gamedataConstantStatModifier_Record
-      statType: BaseStats.ThermalDamage
-      modifierType: Multiplier
-      value: 1.5
-    - $type: gamedataConstantStatModifier_Record
-      statType: BaseStats.ChemicalDamage
-      modifierType: Multiplier
-      value: 1.5
-    - $type: gamedataConstantStatModifier_Record
-      statType: BaseStats.ElectricDamage
-      modifierType: Multiplier
-      value: 1.5
+    - !append-once DPAE_HE.DamageMult_Physical
+    - !append-once DPAE_HE.DamageMult_Thermal
+    - !append-once DPAE_HE.DamageMult_Chemical
+    - !append-once DPAE_HE.DamageMult_Electric
 
 DPAE_HE.SmartBulletMedExplosiveFire:
   $base: Attacks.SmartBulletHighExplosiveFire
@@ -183,22 +171,10 @@ DPAE_HE.SmartBulletTwoStageExplosive:
   $base: Attacks.SmartBulletHighExplosive
   explosionAttack: DPAE_HE.BulletSmartTwoStageExplosion
   statModifiers:
-    - $type: gamedataConstantStatModifier_Record
-      statType: BaseStats.PhysicalDamage
-      modifierType: Multiplier
-      value: 1.5
-    - $type: gamedataConstantStatModifier_Record
-      statType: BaseStats.ThermalDamage
-      modifierType: Multiplier
-      value: 1.5
-    - $type: gamedataConstantStatModifier_Record
-      statType: BaseStats.ChemicalDamage
-      modifierType: Multiplier
-      value: 1.5
-    - $type: gamedataConstantStatModifier_Record
-      statType: BaseStats.ElectricDamage
-      modifierType: Multiplier
-      value: 1.5
+    - !append-once DPAE_HE.DamageMult_Physical
+    - !append-once DPAE_HE.DamageMult_Thermal
+    - !append-once DPAE_HE.DamageMult_Chemical
+    - !append-once DPAE_HE.DamageMult_Electric
 
 DPAE_HE.SmartBulletTwoStageExplosiveFire:
   $base: Attacks.SmartBulletHighExplosiveFire
@@ -235,22 +211,10 @@ DPAE_HE.HerculesProjectile:
   $base: Attacks.HerculesProjectile
   explosionAttack: DPAE_HE.HerculesHipBulletExplosion
   statModifiers:
-    - $type: gamedataConstantStatModifier_Record
-      statType: BaseStats.PhysicalDamage
-      modifierType: Multiplier
-      value: 1.5
-    - $type: gamedataConstantStatModifier_Record
-      statType: BaseStats.ThermalDamage
-      modifierType: Multiplier
-      value: 1.5
-    - $type: gamedataConstantStatModifier_Record
-      statType: BaseStats.ChemicalDamage
-      modifierType: Multiplier
-      value: 1.5
-    - $type: gamedataConstantStatModifier_Record
-      statType: BaseStats.ElectricDamage
-      modifierType: Multiplier
-      value: 1.5
+    - !append-once DPAE_HE.DamageMult_Physical
+    - !append-once DPAE_HE.DamageMult_Thermal
+    - !append-once DPAE_HE.DamageMult_Chemical
+    - !append-once DPAE_HE.DamageMult_Electric
 
 DPAE_HE.HerculesBulletFire:
   $base: Attacks.HerculesBulletFire
@@ -315,22 +279,10 @@ DPAE_HE.ExplosiveBulletEffect:
   $base: Attacks.ExplosiveBulletEffect
   explosionAttack: DPAE_HE.BulletExplosion
   statModifiers:
-    - $type: gamedataConstantStatModifier_Record
-      statType: BaseStats.PhysicalDamage
-      modifierType: Multiplier
-      value: 1.5
-    - $type: gamedataConstantStatModifier_Record
-      statType: BaseStats.ThermalDamage
-      modifierType: Multiplier
-      value: 1.5
-    - $type: gamedataConstantStatModifier_Record
-      statType: BaseStats.ChemicalDamage
-      modifierType: Multiplier
-      value: 1.5
-    - $type: gamedataConstantStatModifier_Record
-      statType: BaseStats.ElectricDamage
-      modifierType: Multiplier
-      value: 1.5
+    - !append-once DPAE_HE.DamageMult_Physical
+    - !append-once DPAE_HE.DamageMult_Thermal
+    - !append-once DPAE_HE.DamageMult_Chemical
+    - !append-once DPAE_HE.DamageMult_Electric
 
 DPAE_HE.PhysicalExplosiveBullet:
   $base: Attacks.PhysicalExplosiveBullet
@@ -367,22 +319,10 @@ DPAE_HE.ExplodingBulletLightEffect:
   $base: Attacks.ExplodingBulletLightEffect
   explosionAttack: DPAE_HE.BulletLightExplosion
   statModifiers:
-    - $type: gamedataConstantStatModifier_Record
-      statType: BaseStats.PhysicalDamage
-      modifierType: Multiplier
-      value: 1.5
-    - $type: gamedataConstantStatModifier_Record
-      statType: BaseStats.ThermalDamage
-      modifierType: Multiplier
-      value: 1.5
-    - $type: gamedataConstantStatModifier_Record
-      statType: BaseStats.ChemicalDamage
-      modifierType: Multiplier
-      value: 1.5
-    - $type: gamedataConstantStatModifier_Record
-      statType: BaseStats.ElectricDamage
-      modifierType: Multiplier
-      value: 1.5
+    - !append-once DPAE_HE.DamageMult_Physical
+    - !append-once DPAE_HE.DamageMult_Thermal
+    - !append-once DPAE_HE.DamageMult_Chemical
+    - !append-once DPAE_HE.DamageMult_Electric
 
 DPAE_HE.ExplodingBulletLight:
   $base: Attacks.ExplodingBulletLight
@@ -419,22 +359,10 @@ DPAE_HE.ExplodingBulletMediumEffect:
   $base: Attacks.ExplodingBulletMediumEffect
   explosionAttack: DPAE_HE.BulletMediumExplosion
   statModifiers:
-    - $type: gamedataConstantStatModifier_Record
-      statType: BaseStats.PhysicalDamage
-      modifierType: Multiplier
-      value: 1.5
-    - $type: gamedataConstantStatModifier_Record
-      statType: BaseStats.ThermalDamage
-      modifierType: Multiplier
-      value: 1.5
-    - $type: gamedataConstantStatModifier_Record
-      statType: BaseStats.ChemicalDamage
-      modifierType: Multiplier
-      value: 1.5
-    - $type: gamedataConstantStatModifier_Record
-      statType: BaseStats.ElectricDamage
-      modifierType: Multiplier
-      value: 1.5
+    - !append-once DPAE_HE.DamageMult_Physical
+    - !append-once DPAE_HE.DamageMult_Thermal
+    - !append-once DPAE_HE.DamageMult_Chemical
+    - !append-once DPAE_HE.DamageMult_Electric
 
 DPAE_HE.ExplodingBulletMedium:
   $base: Attacks.ExplodingBulletMedium
@@ -471,22 +399,10 @@ DPAE_HE.ZhuoBulletHighExplosive:
   $base: Attacks.ZhuoBulletHighExplosive
   explosionAttack: DPAE_HE.ZhuoBulletHighExplosion
   statModifiers:
-    - $type: gamedataConstantStatModifier_Record
-      statType: BaseStats.PhysicalDamage
-      modifierType: Multiplier
-      value: 1.5
-    - $type: gamedataConstantStatModifier_Record
-      statType: BaseStats.ThermalDamage
-      modifierType: Multiplier
-      value: 1.5
-    - $type: gamedataConstantStatModifier_Record
-      statType: BaseStats.ChemicalDamage
-      modifierType: Multiplier
-      value: 1.5
-    - $type: gamedataConstantStatModifier_Record
-      statType: BaseStats.ElectricDamage
-      modifierType: Multiplier
-      value: 1.5
+    - !append-once DPAE_HE.DamageMult_Physical
+    - !append-once DPAE_HE.DamageMult_Thermal
+    - !append-once DPAE_HE.DamageMult_Chemical
+    - !append-once DPAE_HE.DamageMult_Electric
 
 DPAE_HE.ZhuoBulletHighExplosiveFire:
   $base: Attacks.ZhuoBulletHighExplosiveFire
@@ -523,22 +439,10 @@ DPAE_HE.RocketEffect:
   $base: Attacks.RocketEffect
   explosionAttack: DPAE_HE.RocketExplosion
   statModifiers:
-    - $type: gamedataConstantStatModifier_Record
-      statType: BaseStats.PhysicalDamage
-      modifierType: Multiplier
-      value: 1.5
-    - $type: gamedataConstantStatModifier_Record
-      statType: BaseStats.ThermalDamage
-      modifierType: Multiplier
-      value: 1.5
-    - $type: gamedataConstantStatModifier_Record
-      statType: BaseStats.ChemicalDamage
-      modifierType: Multiplier
-      value: 1.5
-    - $type: gamedataConstantStatModifier_Record
-      statType: BaseStats.ElectricDamage
-      modifierType: Multiplier
-      value: 1.5
+    - !append-once DPAE_HE.DamageMult_Physical
+    - !append-once DPAE_HE.DamageMult_Thermal
+    - !append-once DPAE_HE.DamageMult_Chemical
+    - !append-once DPAE_HE.DamageMult_Electric
 
 DPAE_HE.RocketAttack:
   $base: Attacks.RocketAttack
@@ -570,22 +474,10 @@ DPAE_HE.RocketChargedEffect:
   $base: Attacks.RocketChargedEffect
   explosionAttack: DPAE_HE.RocketChargedExplosion
   statModifiers:
-    - $type: gamedataConstantStatModifier_Record
-      statType: BaseStats.PhysicalDamage
-      modifierType: Multiplier
-      value: 1.5
-    - $type: gamedataConstantStatModifier_Record
-      statType: BaseStats.ThermalDamage
-      modifierType: Multiplier
-      value: 1.5
-    - $type: gamedataConstantStatModifier_Record
-      statType: BaseStats.ChemicalDamage
-      modifierType: Multiplier
-      value: 1.5
-    - $type: gamedataConstantStatModifier_Record
-      statType: BaseStats.ElectricDamage
-      modifierType: Multiplier
-      value: 1.5
+    - !append-once DPAE_HE.DamageMult_Physical
+    - !append-once DPAE_HE.DamageMult_Thermal
+    - !append-once DPAE_HE.DamageMult_Chemical
+    - !append-once DPAE_HE.DamageMult_Electric
 
 DPAE_HE.RocketChargedAttack:
   $base: Attacks.RocketChargedAttack

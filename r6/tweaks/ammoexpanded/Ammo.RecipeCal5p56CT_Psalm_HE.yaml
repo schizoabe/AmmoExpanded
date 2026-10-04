@@ -1,4 +1,4 @@
-Ammo.MilitechPrototype:
+Ammo.RecipeCal5p56CT_Psalm_HE:
   animationParameters: []
   animFeatureName: ItemData
   animName: ui_garment_pose
@@ -7,28 +7,29 @@ Ammo.MilitechPrototype:
   appearanceSuffixesOwnerOverride: []
   attachmentSlots: []
   buyPrice:
-    - Price.Ammo
+    - Price.Recipe
+    - Price.ItemQualityMultiplier
     - Price.BuyPrice_StreetCred_Discount
-    - Price.PowerAmmo
   cameraForward: {x: 0, y: 0, z: 0}
   cameraUp: {x: 0, y: 0, z: 0}
   canDrop: True
   connections: []
-  CraftingData: Ammo.AmmoBase_inline0
+  craftingResult: Ammo.RecipeCal5p56CT_Psalm_HE_inline0
   crosshair: Crosshairs.None
   deprecated: False
-  displayName: LocKey#AmmoExpanded-MilitechPrototype-Name
-  dropObject: ammoDrop
+  displayName: LocKey#AmmoExpanded-Cal5p56CT-Psalm-SignatureName
+  dropObject: defaultItemDrop
   effectors: []
   enableNpcRPGData: False
   entityName: ammo_box_handgun
   equipAreas: []
   equipPrereqs: []
-  friendlyName: 'militech_prototype'
+  friendlyName: ''
   gameplayRestrictions:
     - GameplayRestriction.VehicleCombatNoInterruptions
   garmentOffset: 0
   hairSkinnedMeshComponents: []
+  hideOnItemsAdded: []
   icon: UIIcon.ItemIcon
   iconPath: ''
   isCached: False
@@ -37,14 +38,13 @@ Ammo.MilitechPrototype:
   isGarment: False
   isPart: False
   isSingleInstance: True
-  itemCategory: ItemCategory.General
-  itemType: ItemType.Con_Ammo
-  localizedDescription: LocKey#AmmoExpanded-MilitechPrototype-Desc
+  itemType: ItemType.Gen_Misc
   localizedName: ''
   mass: 1
   minigameInstance: minigame_v2.DefaultItemMinigame
   objectActions:
     - ItemAction.Drop
+    - ItemAction.Disassemble
   OnAttach: []
   OnEquip: []
   OnLooted: []
@@ -58,19 +58,19 @@ Ammo.MilitechPrototype:
   requiredSlots: []
   savable: False
   sellPrice:
-    - Price.Ammo
-    - Price.PowerAmmo
+    - Price.Recipe
+    - Price.ItemQualityMultiplier
+    - Price.SellMultiplier
   slotPartList: []
   slotPartListPreset: []
   statModifierGroups: []
-  statModifiers:
-    - Ammo.MilitechPrototype_inline0
+  statModifiers: []
   statPools: []
   tags:
-    - Ammo
-    - ShowStackPrice
-    - MilitechPrototype
-  $base: Ammo.SniperRifleAmmo
+    - Recipe
+    - SkipActivityLogOnRemove
+    - HideInBackpackUI
+  $type: gamedataItemRecipe_Record
   upgradeCostMult: 1
   useHeadgearGarmentAggregator: False
   useNewSpawnMethod: False
@@ -78,3 +78,8 @@ Ammo.MilitechPrototype:
   variants: []
   visualTags: []
   weakspots: []
+
+Ammo.RecipeCal5p56CT_Psalm_HE_inline0:
+  amount: 1
+  item: Ammo.Cal5p56CT_Psalm_HE
+  $type: gamedataCraftingResult_Record

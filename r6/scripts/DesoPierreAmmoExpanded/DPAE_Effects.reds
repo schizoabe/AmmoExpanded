@@ -24,6 +24,11 @@ public func DPAE_GetEffectForRound(roundID: TweakDBID, instigator: wref<GameObje
     gimmickID = t"DPAE_StatusEffect.CHEM_Poison_Debuff";
     rateBonusTag = n"DPAE_IconicElementalRateBonus_Chemical";
     if IsDefined(player) { qualities = player.dpae_caustic_qualities; };
+  } else if StrEndsWith(activeStr, "_Psalm_HE") {
+    dotID = t"DPAE_StatusEffect.INC_Burn_DoT";
+    gimmickID = t"DPAE_StatusEffect.INC_Thermal_Debuff";
+    rateBonusTag = n"DPAE_IconicElementalRateBonus_Thermal";
+    if IsDefined(player) { qualities = player.dpae_pyro_qualities; };
   } else {
     return result;
   };
@@ -298,6 +303,7 @@ public func DPAE_GetExplosivePackageForRound(activeStr: String) -> TweakDBID {
   if StrEndsWith(activeStr, "Cal6p5x25Minirocket_HE") { return t"DPAE_HE.SmartBulletHighExplosivePackage"; }
   if StrEndsWith(activeStr, "Cal9p5x35Minirocket_HE") { return t"DPAE_HE.SmartBulletHighExplosivePackage"; }
   if StrEndsWith(activeStr, "Cal5p56CT_HE")       { return t"DPAE_HE.PhysicalExplosiveBulletPackage"; }
+  if StrEndsWith(activeStr, "Cal5p56CT_Psalm_HE") { return t"DPAE_HE.PhysicalExplosiveBulletPackage"; }
   if StrEndsWith(activeStr, "Cal12p3x41UdaR_HE")  { return t"DPAE_HE.PhysicalExplosiveBulletPackage"; }
 
   if StrEndsWith(activeStr, "Cal7p62x39Sov_HE")   { return t"DPAE_HE.PhysicalExplosiveBulletPackage"; }

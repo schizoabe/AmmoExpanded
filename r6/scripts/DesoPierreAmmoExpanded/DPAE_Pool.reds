@@ -544,6 +544,9 @@ func DPAE_SuffixToExclusiveTag(suffix: String) -> CName {
   if Equals(suffix, "_Dezerter_HE") {
     return n"DPAE_VariantExclusive_Dezerter";
   }
+  if Equals(suffix, "_Psalm_HE") {
+    return n"DPAE_VariantExclusive_Psalm";
+  }
   return n"DPAE_VariantExclusive_HE";
 }
 
@@ -557,7 +560,7 @@ func DPAE_GetExclusiveVariantSuffixes(caliberStr: String) -> array<String> {
   } else if Equals(caliberStr, "Ammo.Cal12p3x41UdaR") {
     ArrayPush(suffixes, "_HE");
   } else if Equals(caliberStr, "Ammo.Cal5p56CT") {
-    ArrayPush(suffixes, "_HE");
+    ArrayPush(suffixes, "_Psalm_HE");
   } else if Equals(caliberStr, "Ammo.Cal10x40Rocket") {
     ArrayPush(suffixes, "_Divided_CHEM");
   } else if Equals(caliberStr, "Ammo.Cal9p5x35Minirocket") {
