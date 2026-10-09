@@ -1434,3 +1434,17 @@ DPAE_StatusEffect.EMP_ShockMalfunction_DoT:
           effectorClassName: TriggerContinuousAttackEffector
           delayTime: 0.5
           attackRecord: Attacks.ElectricDamageOverTime
+
+DPAE_StatusEffect.PsalmSignature_Active:
+  $base: BaseStatusEffect.Stat_Buff
+  duration:
+    $type: gamedataStatModifierGroup_Record
+    statModifiers:
+      - $type: gamedataConstantStatModifier_Record
+        statType: BaseStats.MaxDuration
+        modifierType: Additive
+        value: 9999
+  packages: []
+  gameplayTags:
+    - DPAE_Psalm_Signature_Active
+

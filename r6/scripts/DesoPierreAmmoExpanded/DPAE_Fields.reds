@@ -27,6 +27,7 @@
 
 @addField(PlayerPuppet) public let dpae_masked_first_shot_owed: Bool;
 
+@addField(PlayerPuppet) public let dpae_psalm_signature_active: Bool;
 @addField(PlayerPuppet) public let dpae_pending_forced_drain_pending: Bool;
 
 @addField(PlayerPuppet) public let dpae_pending_forced_drain_weapon: ItemID;

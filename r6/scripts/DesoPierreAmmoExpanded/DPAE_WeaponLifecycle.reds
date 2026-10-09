@@ -96,6 +96,8 @@ public func DPAE_ResolveAmmoSelection(caliberTDBID: TweakDBID) -> Void {
       StatusEffectHelper.RemoveStatusEffect(this, t"DPAE_StatusEffect.YinglongSignature_Active");
       StatusEffectHelper.RemoveStatusEffect(this, t"DPAE_StatusEffect.HerculesSignature_Active");
       StatusEffectHelper.RemoveStatusEffect(this, t"DPAE_StatusEffect.SparkySignature_Active");
+      StatusEffectHelper.RemoveStatusEffect(this, t"DPAE_StatusEffect.PsalmSignature_Active");
+      this.dpae_psalm_signature_active = false;
       StatusEffectHelper.RemoveStatusEffect(this, t"DPAE_StatusEffect.DezerterSignature_Active");
       this.DPAE_ClearAllPyroBonuses();
       let weaponObj = ts.GetItemInSlot(this, t"AttachmentSlots.WeaponRight") as WeaponObject;
@@ -116,6 +118,17 @@ private func DPAE_HandleWeaponSlotEvent(slotID: TweakDBID, isSessionLoad: Bool) 
   let peekItemID: ItemID;
   if IsDefined(weaponObjPeek) { peekItemID = weaponObjPeek.GetItemID(); }
 
+  if DesoPierreAmmoExpandedSettings.DebugAmmoLogging() {
+    let dualRight = ts.GetItemInSlot(this, t"AttachmentSlots.WeaponRight") as WeaponObject;
+    let dualLeft = ts.GetItemInSlot(this, t"AttachmentSlots.WeaponLeft") as WeaponObject;
+    DPAE_LogDebug("[DPAE_DUAL] slotEvent slot=" + (isRightSlot ? "Right" : "Left")
+      + " peek=" + TDBID.ToStringDEBUG(ItemID.GetTDBID(peekItemID))
+      + " handRight=" + (IsDefined(dualRight) ? TDBID.ToStringDEBUG(ItemID.GetTDBID(dualRight.GetItemID())) : "none")
+      + " handLeft=" + (IsDefined(dualLeft) ? TDBID.ToStringDEBUG(ItemID.GetTDBID(dualLeft.GetItemID())) : "none")
+      + " trackedCaliber=" + TDBID.ToStringDEBUG(this.dpae_caliber)
+      + " trackedActive=" + TDBID.ToStringDEBUG(this.dpae_active_ammo)
+      + " isSessionLoad=" + ToString(isSessionLoad));
+  }
   let previousItemID = isRightSlot ? this.dpae_current_weapon_right : this.dpae_current_weapon_left;
   if ItemID.IsValid(peekItemID) && peekItemID == previousItemID {
     if DesoPierreAmmoExpandedSettings.DebugAmmoLogging() {
@@ -200,6 +213,8 @@ private func DPAE_HandleWeaponSlotEvent(slotID: TweakDBID, isSessionLoad: Bool) 
     StatusEffectHelper.RemoveStatusEffect(this, t"DPAE_StatusEffect.YinglongSignature_Active");
     StatusEffectHelper.RemoveStatusEffect(this, t"DPAE_StatusEffect.HerculesSignature_Active");
     StatusEffectHelper.RemoveStatusEffect(this, t"DPAE_StatusEffect.SparkySignature_Active");
+    StatusEffectHelper.RemoveStatusEffect(this, t"DPAE_StatusEffect.PsalmSignature_Active");
+    this.dpae_psalm_signature_active = false;
     StatusEffectHelper.RemoveStatusEffect(this, t"DPAE_StatusEffect.DezerterSignature_Active");
     this.DPAE_ClearAllPyroBonuses();
     weaponObj.DefaultRangedAttackPackage();

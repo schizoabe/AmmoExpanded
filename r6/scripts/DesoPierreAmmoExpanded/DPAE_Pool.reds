@@ -92,7 +92,9 @@ protected cb func OnAmmoStateChangeEvent(evt: ref<AmmoStateChangeEvent>) -> Bool
                 + " roundsConsumed=" + ToString(roundsConsumed)
                 + " realLeft=" + ToString(left)
                 + " dummyQty=" + ToString(currentDummyQty)
-                + " magPct=" + ToString(currentPct));
+                + " magPct=" + ToString(currentPct)
+                + " shotWeapon=" + TDBID.ToStringDEBUG(ItemID.GetTDBID(thisItemID))
+                + " trackedWeapon=" + TDBID.ToStringDEBUG(ItemID.GetTDBID(player.dpae_active_ammo_weapon)));
             }
 
             if left <= 10 && DesoPierreAmmoExpandedSettings.AmmoStarterSafetyNet() && player.DPAE_IsNarrativeAmmoWindowActive() {
@@ -479,6 +481,8 @@ public func DPAE_ClearAmmo() -> Void {
   StatusEffectHelper.RemoveStatusEffect(this, t"DPAE_StatusEffect.YinglongSignature_Active");
   StatusEffectHelper.RemoveStatusEffect(this, t"DPAE_StatusEffect.HerculesSignature_Active");
   StatusEffectHelper.RemoveStatusEffect(this, t"DPAE_StatusEffect.SparkySignature_Active");
+  StatusEffectHelper.RemoveStatusEffect(this, t"DPAE_StatusEffect.PsalmSignature_Active");
+  this.dpae_psalm_signature_active = false;
   StatusEffectHelper.RemoveStatusEffect(this, t"DPAE_StatusEffect.DezerterSignature_Active");
   this.DPAE_ClearAllPyroBonuses();
   if IsDefined(weaponObj) { weaponObj.DefaultRangedAttackPackage(); }
@@ -511,6 +515,8 @@ public func DPAE_UpdateIconicSignatureAmmo(activeStr: String) -> Void {
   StatusEffectHelper.RemoveStatusEffect(this, t"DPAE_StatusEffect.YinglongSignature_Active");
   StatusEffectHelper.RemoveStatusEffect(this, t"DPAE_StatusEffect.HerculesSignature_Active");
   StatusEffectHelper.RemoveStatusEffect(this, t"DPAE_StatusEffect.SparkySignature_Active");
+  StatusEffectHelper.RemoveStatusEffect(this, t"DPAE_StatusEffect.PsalmSignature_Active");
+  this.dpae_psalm_signature_active = false;
   StatusEffectHelper.RemoveStatusEffect(this, t"DPAE_StatusEffect.DezerterSignature_Active");
   if StrEndsWith(activeStr, "_Divided_CHEM") {
     StatusEffectHelper.ApplyStatusEffect(this, t"DPAE_StatusEffect.DividedSignature_Active", this.GetEntityID());
@@ -522,6 +528,9 @@ public func DPAE_UpdateIconicSignatureAmmo(activeStr: String) -> Void {
     StatusEffectHelper.ApplyStatusEffect(this, t"DPAE_StatusEffect.SparkySignature_Active", this.GetEntityID());
   } else if StrEndsWith(activeStr, "_Dezerter_HE") {
     StatusEffectHelper.ApplyStatusEffect(this, t"DPAE_StatusEffect.DezerterSignature_Active", this.GetEntityID());
+  } else if StrEndsWith(activeStr, "_Psalm_HE") {
+    StatusEffectHelper.ApplyStatusEffect(this, t"DPAE_StatusEffect.PsalmSignature_Active", this.GetEntityID());
+    this.dpae_psalm_signature_active = true;
   }
 }
 

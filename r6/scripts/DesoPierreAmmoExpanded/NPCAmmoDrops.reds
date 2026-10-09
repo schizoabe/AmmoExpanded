@@ -252,6 +252,21 @@ protected cb func OnStatusEffectApplied(evt: ref<ApplyStatusEffectEvent>) -> Boo
 @wrapMethod(ScriptedPuppet)
 private final func EvaluateLootQuality() -> Bool {
   let npc = this as NPCPuppet;
+  let logTs = GameInstance.GetTransactionSystem(this.GetGame());
+  if DesoPierreAmmoExpandedSettings.DebugAmmoLogging() {
+    let preItems: array<wref<gameItemData>>;
+    logTs.GetItemList(this, preItems);
+    let p = 0;
+    while p < ArraySize(preItems) {
+      if IsDefined(preItems[p]) {
+        let pid = preItems[p].GetID();
+        DPAE_LogDebug("[DPAE_LOOT] npc=" + ToString(this.GetEntityID()) + " hasDpaeAmmo=" + ToString(IsDefined(npc) && npc.dpae_hasAmmoData)
+          + " preExisting item=" + TDBID.ToStringDEBUG(ItemID.GetTDBID(pid))
+          + " qty=" + ToString(logTs.GetItemQuantity(this, pid)));
+      }
+      p += 1;
+    }
+  }
   if IsDefined(npc) && npc.dpae_hasAmmoData {
     npc.dpae_hasAmmoData = false;
 
@@ -269,6 +284,10 @@ private final func EvaluateLootQuality() -> Bool {
         if DesoPierreAmmoExpandedSettings.DowngradeSpecialAmmoLoot()
           && TDBID.IsValid(dropCaliberTDBID) && !Equals(dropAmmoTDBID, dropCaliberTDBID) && RandF() > DPAE_DropKeepSpecialChance() {
           dropAmmoTDBID = dropCaliberTDBID;
+        }
+        if DesoPierreAmmoExpandedSettings.DebugAmmoLogging() {
+          DPAE_LogDebug("[DPAE_LOOT] npc=" + ToString(this.GetEntityID()) + " inject item=" + TDBID.ToStringDEBUG(dropAmmoTDBID)
+            + " qty=" + ToString(qty) + " weaponType=" + ToString(npc.dpae_weaponItemTypes[i]));
         }
         ts.GiveItem(this, ItemID.FromTDBID(dropAmmoTDBID), qty);
       }

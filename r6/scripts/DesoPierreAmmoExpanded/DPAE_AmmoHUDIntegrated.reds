@@ -18,7 +18,7 @@ public class DPAE_IntegratedAmmoHUD {
 
     if isE3HUD {
       panel.SetHAlign(inkEHorizontalAlign.Left);
-      panel.SetMargin(new inkMargin(0.0, -24.0, 0.0, 24.0));
+      panel.SetMargin(new inkMargin(0.0, -28.0, 0.0, 10.0));
     } else {
       panel.SetHAlign(inkEHorizontalAlign.Right);
       panel.SetMargin(new inkMargin(0.0, 4.0, 50.0, 4.0));
@@ -44,7 +44,11 @@ public class DPAE_IntegratedAmmoHUD {
     variantLabel.SetStyle(r"base\\gameplay\\gui\\fullscreen\\fullscreen_main_colors.inkstyle");
     variantLabel.SetLetterCase(textLetterCase.UpperCase);
     variantLabel.SetMargin(new inkMargin(0.0, 0.0, 12.0, 0.0));
-    variantLabel.BindProperty(n"tintColor", n"MainColors.White");
+    if isE3HUD {
+      variantLabel.BindProperty(n"tintColor", n"MainColors.SupBlue");
+    } else {
+      variantLabel.BindProperty(n"tintColor", n"MainColors.White");
+    }
     variantLabel.SetText("");
     variantLabel.Reparent(panel);
     this.m_variantLabel = variantLabel;
@@ -259,15 +263,22 @@ protected cb func OnUnmountingEvent(evt: ref<UnmountingEvent>) -> Bool {
   }
 }
 
+@addField(WeaponRosterGameController)
+private let dpae_foldState: Int32;
+
 @wrapMethod(WeaponRosterGameController)
 private final func Fold() -> Void {
   wrappedMethod();
+  if this.dpae_foldState == 1 { return; }
+  this.dpae_foldState = 1;
   this.DPAE_SyncWrapperAnimation(true);
 }
 
 @wrapMethod(WeaponRosterGameController)
 private final func Unfold() -> Void {
   wrappedMethod();
+  if this.dpae_foldState == 2 { return; }
+  this.dpae_foldState = 2;
   this.DPAE_SyncWrapperAnimation(false);
 }
 

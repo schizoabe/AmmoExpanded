@@ -24,7 +24,7 @@ public func DPAE_GetEffectForRound(roundID: TweakDBID, instigator: wref<GameObje
     gimmickID = t"DPAE_StatusEffect.CHEM_Poison_Debuff";
     rateBonusTag = n"DPAE_IconicElementalRateBonus_Chemical";
     if IsDefined(player) { qualities = player.dpae_caustic_qualities; };
-  } else if StrEndsWith(activeStr, "_Psalm_HE") {
+  } else if StrEndsWith(activeStr, "_Psalm_HE") && IsDefined(player) && player.dpae_psalm_signature_active {
     dotID = t"DPAE_StatusEffect.INC_Burn_DoT";
     gimmickID = t"DPAE_StatusEffect.INC_Thermal_Debuff";
     rateBonusTag = n"DPAE_IconicElementalRateBonus_Thermal";
