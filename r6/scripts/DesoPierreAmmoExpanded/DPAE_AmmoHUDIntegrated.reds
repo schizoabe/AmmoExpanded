@@ -118,7 +118,7 @@ public class DPAE_IntegratedAmmoHUDSystem extends ScriptableSystem {
     this.m_shownWeapon  = weapon;
   }
 
-  private func GetAmmoIconForWeapon(weaponID: ItemID) -> CName {
+  public func GetAmmoIconForWeapon(weaponID: ItemID) -> CName {
     let rec = TweakDBInterface.GetWeaponItemRecord(ItemID.GetTDBID(weaponID));
     if !IsDefined(rec) { return n"ammo_rifle"; }
 

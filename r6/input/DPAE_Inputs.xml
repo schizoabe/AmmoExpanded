@@ -12,10 +12,24 @@
         <include name="DPAEInputContext" />
     </context>
 
+    <context name="DPAE_RadialWheel" >
+        <action name="DPAE_CycleAmmoUp" map="DPAE_CycleAmmoUp" />
+    </context>
+
+    <context name="UI_DPad_Wheel" append="true">
+        <include name="DPAE_RadialWheel" />
+    </context>
+
     <mapping name="DPAE_CycleAmmo_Button" type="Button">
         <button id="IK_F7" overridableUI="DPAE_CycleAmmo" />
     </mapping>
     <mapping name="DPAE_DropCurrentWeapon_Button" type="Button">
         <button id="IK_F10" overridableUI="DPAE_DropCurrentWeapon" />
+    </mapping>
+    <mapping name="DPAE_CycleAmmoUp" type="Button" >
+        <!-- D-Pad Up for Controller -->
+        <button id="IK_Pad_DigitUp" />
+        <!-- W for Mouse&Keyboard -->
+        <button id="IK_W" />
     </mapping>
 </bindings>

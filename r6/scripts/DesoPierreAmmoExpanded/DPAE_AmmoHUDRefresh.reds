@@ -78,7 +78,7 @@ public func DPAE_RefreshAmmoHUD() -> Void {
 }
 
 @addMethod(PlayerPuppet)
-private func DPAE_HUDItemName(id: TweakDBID) -> String {
+public func DPAE_HUDItemName(id: TweakDBID) -> String {
   let rec = TweakDBInterface.GetItemRecord(id);
   if !IsDefined(rec) { return ""; }
   return GetLocalizedTextByKey(rec.DisplayName());
