@@ -1,4 +1,4 @@
 Ammo.RecipeShotgunAmmo_inline0:
-  amount: 40
+  amount: 1
   item: Ammo.ShotgunAmmo
   $type: gamedataCraftingResult_Record

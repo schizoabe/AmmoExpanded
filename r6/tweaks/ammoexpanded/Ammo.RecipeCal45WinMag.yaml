@@ -80,6 +80,6 @@ Ammo.RecipeCal45WinMag:
   weakspots: []
 
 Ammo.RecipeCal45WinMag_inline0:
-  amount: 90
+  amount: 1
   item: Ammo.Cal45WinMag
   $type: gamedataCraftingResult_Record

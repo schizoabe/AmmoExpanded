@@ -80,6 +80,6 @@ Ammo.RecipeCal50AE:
   weakspots: []
 
 Ammo.RecipeCal50AE_inline0:
-  amount: 90
+  amount: 1
   item: Ammo.Cal50AE
   $type: gamedataCraftingResult_Record

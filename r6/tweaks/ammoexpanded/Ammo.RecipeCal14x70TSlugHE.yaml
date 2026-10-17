@@ -80,6 +80,6 @@ Ammo.RecipeCal14x70TSlugHE:
   weakspots: []
 
 Ammo.RecipeCal14x70TSlugHE_inline0:
-  amount: 5
+  amount: 1
   item: Ammo.Cal14x70TSlugHE
   $type: gamedataCraftingResult_Record

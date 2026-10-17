@@ -80,6 +80,6 @@ Ammo.RecipeCal10x40Rocket:
   weakspots: []
 
 Ammo.RecipeCal10x40Rocket_inline0:
-  amount: 50
+  amount: 1
   item: Ammo.Cal10x40Rocket
   $type: gamedataCraftingResult_Record

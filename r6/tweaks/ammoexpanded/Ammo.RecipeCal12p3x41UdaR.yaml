@@ -80,6 +80,6 @@ Ammo.RecipeCal12p3x41UdaR:
   weakspots: []
 
 Ammo.RecipeCal12p3x41UdaR_inline0:
-  amount: 40
+  amount: 1
   item: Ammo.Cal12p3x41UdaR
   $type: gamedataCraftingResult_Record

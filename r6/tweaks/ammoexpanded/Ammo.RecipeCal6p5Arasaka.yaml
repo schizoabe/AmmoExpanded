@@ -80,6 +80,6 @@ Ammo.RecipeCal6p5Arasaka:
   weakspots: []
 
 Ammo.RecipeCal6p5Arasaka_inline0:
-  amount: 90
+  amount: 1
   item: Ammo.Cal6p5Arasaka
   $type: gamedataCraftingResult_Record

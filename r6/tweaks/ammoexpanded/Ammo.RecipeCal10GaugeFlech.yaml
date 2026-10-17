@@ -80,6 +80,6 @@ Ammo.RecipeCal10GaugeFlech:
   weakspots: []
 
 Ammo.RecipeCal10GaugeFlech_inline0:
-  amount: 60
+  amount: 1
   item: Ammo.Cal10GaugeFlech
   $type: gamedataCraftingResult_Record

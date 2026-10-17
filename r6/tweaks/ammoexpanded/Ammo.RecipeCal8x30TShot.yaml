@@ -80,6 +80,6 @@ Ammo.RecipeCal8x30TShot:
   weakspots: []
 
 Ammo.RecipeCal8x30TShot_inline0:
-  amount: 60
+  amount: 1
   item: Ammo.Cal8x30TShot
   $type: gamedataCraftingResult_Record

@@ -80,6 +80,6 @@ Ammo.RecipeCal3x10FlechCluster:
   weakspots: []
 
 Ammo.RecipeCal3x10FlechCluster_inline0:
-  amount: 5
+  amount: 1
   item: Ammo.Cal3x10FlechCluster
   $type: gamedataCraftingResult_Record

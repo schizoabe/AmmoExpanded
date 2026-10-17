@@ -80,6 +80,6 @@ Ammo.RecipeCal243Win:
   weakspots: []
 
 Ammo.RecipeCal243Win_inline0:
-  amount: 90
+  amount: 1
   item: Ammo.Cal243Win
   $type: gamedataCraftingResult_Record

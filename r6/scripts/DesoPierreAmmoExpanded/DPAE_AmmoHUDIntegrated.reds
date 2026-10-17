@@ -19,15 +19,26 @@ public class DPAE_IntegratedAmmoHUD {
     if isE3HUD {
       panel.SetHAlign(inkEHorizontalAlign.Left);
       panel.SetMargin(new inkMargin(0.0, -28.0, 0.0, 10.0));
+      panel.Reparent(parent);
+      this.m_panel = panel;
+
+      parent.ReorderChild(panel, 1);
     } else {
       panel.SetHAlign(inkEHorizontalAlign.Right);
       panel.SetMargin(new inkMargin(0.0, 4.0, 50.0, 4.0));
+
+      let dummyAnimCatcher = new inkCanvas();
+      dummyAnimCatcher.SetName(n"DPAEDummyAnimCatcher");
+      dummyAnimCatcher.SetSize(new Vector2(0.0, 0.0));
+      dummyAnimCatcher.SetVisible(false);
+      dummyAnimCatcher.Reparent(parent);
+      parent.ReorderChild(dummyAnimCatcher, 1);
+
+      panel.Reparent(parent);
+      this.m_panel = panel;
+
+      parent.ReorderChild(panel, 2);
     }
-
-    panel.Reparent(parent);
-    this.m_panel = panel;
-
-    parent.ReorderChild(panel, 1);
 
     let icon = new inkImage();
     icon.SetName(n"DPAEVariantIcon");
@@ -223,6 +234,7 @@ protected cb func OnInitialize() -> Bool {
   }
 
   ammoCounter.RemoveChildByName(n"DPAEAmmoHUDInner");
+  ammoCounter.RemoveChildByName(n"DPAEDummyAnimCatcher");
 
   let player = this.GetPlayerControlledObject() as PlayerPuppet;
   if !IsDefined(player) { return false; }
@@ -304,6 +316,8 @@ private func DPAE_SyncWrapperAnimation(isFold: Bool) -> Void {
 
   let ammoWrapper = weaponWrapper.GetWidget(n"ammo_wrapper");
 
+  let customAmmoPanel = ammoCounter.GetWidget(n"DPAEAmmoHUDInner");
+
   if IsDefined(weaponHolder) {
     let animDef = new inkAnimDef();
     let alpha = new inkAnimTransparency();
@@ -354,5 +368,8 @@ private func DPAE_SyncWrapperAnimation(isFold: Bool) -> Void {
     animDef.AddInterpolator(alpha);
     animDef.AddInterpolator(trans);
     ammoWrapper.PlayAnimation(animDef);
+    if IsDefined(customAmmoPanel) {
+      customAmmoPanel.PlayAnimation(animDef);
+    }
   }
 }

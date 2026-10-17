@@ -80,6 +80,6 @@ Ammo.RecipeCal500Malour:
   weakspots: []
 
 Ammo.RecipeCal500Malour_inline0:
-  amount: 40
+  amount: 1
   item: Ammo.Cal500Malour
   $type: gamedataCraftingResult_Record

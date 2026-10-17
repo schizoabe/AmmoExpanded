@@ -80,6 +80,6 @@ Ammo.RecipeCal23x152Sov:
   weakspots: []
 
 Ammo.RecipeCal23x152Sov_inline0:
-  amount: 5
+  amount: 1
   item: Ammo.Cal23x152Sov
   $type: gamedataCraftingResult_Record

@@ -80,6 +80,6 @@ Ammo.RecipeCal454Casull:
   weakspots: []
 
 Ammo.RecipeCal454Casull_inline0:
-  amount: 90
+  amount: 1
   item: Ammo.Cal454Casull
   $type: gamedataCraftingResult_Record

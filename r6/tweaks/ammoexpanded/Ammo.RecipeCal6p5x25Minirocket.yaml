@@ -80,6 +80,6 @@ Ammo.RecipeCal6p5x25Minirocket:
   weakspots: []
 
 Ammo.RecipeCal6p5x25Minirocket_inline0:
-  amount: 50
+  amount: 1
   item: Ammo.Cal6p5x25Minirocket
   $type: gamedataCraftingResult_Record

@@ -80,6 +80,6 @@ Ammo.RecipeCal20x102Vulcan:
   weakspots: []
 
 Ammo.RecipeCal20x102Vulcan_inline0:
-  amount: 5
+  amount: 1
   item: Ammo.Cal20x102Vulcan
   $type: gamedataCraftingResult_Record

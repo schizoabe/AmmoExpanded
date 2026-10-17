@@ -80,6 +80,6 @@ Ammo.RecipeCal15x80TSpike:
   weakspots: []
 
 Ammo.RecipeCal15x80TSpike_inline0:
-  amount: 60
+  amount: 1
   item: Ammo.Cal15x80TSpike
   $type: gamedataCraftingResult_Record
